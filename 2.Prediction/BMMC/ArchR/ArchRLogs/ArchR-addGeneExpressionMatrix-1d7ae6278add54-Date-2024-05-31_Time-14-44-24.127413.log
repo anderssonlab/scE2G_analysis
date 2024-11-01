@@ -1,0 +1,669 @@
+
+           ___      .______        ______  __    __  .______      
+          /   \     |   _  \      /      ||  |  |  | |   _  \     
+         /  ^  \    |  |_)  |    |  ,----'|  |__|  | |  |_)  |    
+        /  /_\  \   |      /     |  |     |   __   | |      /     
+       /  _____  \  |  |\  \\___ |  `----.|  |  |  | |  |\  \\___.
+      /__/     \__\ | _| `._____| \______||__|  |__| | _| `._____|
+    
+Logging With ArchR!
+
+Start Time : 2024-05-31 14:44:24.307304
+
+------- ArchR Info
+
+ArchRThreads = 16
+ArchRGenome = Hg38
+
+------- System Info
+
+Computer OS = unix
+Total Cores = 192
+
+------- Session Info
+
+R version 4.3.3 (2024-02-29)
+Platform: x86_64-conda-linux-gnu (64-bit)
+Running under: Red Hat Enterprise Linux 8.9 (Ootpa)
+
+Matrix products: default
+BLAS/LAPACK: /maps/projects/ralab/people/lpm537/software/anaconda3/envs/Notebook_E2G_240505/lib/libopenblasp-r0.3.27.so;  LAPACK version 3.12.0
+
+Random number generation:
+ RNG:     L'Ecuyer-CMRG 
+ Normal:  Inversion 
+ Sample:  Rejection 
+ 
+locale:
+ [1] LC_CTYPE=en_US.UTF-8       LC_NUMERIC=C              
+ [3] LC_TIME=en_US.UTF-8        LC_COLLATE=en_US.UTF-8    
+ [5] LC_MONETARY=en_US.UTF-8    LC_MESSAGES=en_US.UTF-8   
+ [7] LC_PAPER=en_US.UTF-8       LC_NAME=C                 
+ [9] LC_ADDRESS=C               LC_TELEPHONE=C            
+[11] LC_MEASUREMENT=en_US.UTF-8 LC_IDENTIFICATION=C       
+
+time zone: Europe/Copenhagen
+tzcode source: system (glibc)
+
+attached base packages:
+ [1] parallel  stats4    grid      stats     graphics  grDevices utils    
+ [8] datasets  methods   base     
+
+other attached packages:
+ [1] uwot_0.1.16                       nabor_0.5.0                      
+ [3] BSgenome.Hsapiens.UCSC.hg38_1.4.5 BSgenome_1.68.0                  
+ [5] rtracklayer_1.60.1                Biostrings_2.70.1                
+ [7] XVector_0.42.0                    genomation_1.34.0                
+ [9] Signac_1.13.0                     Seurat_5.0.3                     
+[11] SeuratObject_5.0.1                sp_2.1-4                         
+[13] rhdf5_2.44.0                      SummarizedExperiment_1.30.2      
+[15] Biobase_2.60.0                    MatrixGenerics_1.12.3            
+[17] Rcpp_1.0.12                       Matrix_1.6-5                     
+[19] GenomicRanges_1.54.1              GenomeInfoDb_1.38.1              
+[21] IRanges_2.36.0                    S4Vectors_0.40.2                 
+[23] BiocGenerics_0.48.1               matrixStats_1.3.0                
+[25] data.table_1.15.2                 stringr_1.5.1                    
+[27] plyr_1.8.9                        magrittr_2.0.3                   
+[29] ggplot2_3.5.1                     gtable_0.3.5                     
+[31] gtools_3.9.5                      gridExtra_2.3                    
+[33] ArchR_1.0.2                      
+
+loaded via a namespace (and not attached):
+  [1] RcppAnnoy_0.0.22         splines_4.3.3            later_1.3.2             
+  [4] pbdZMQ_0.3-11            BiocIO_1.10.0            bitops_1.0-7            
+  [7] tibble_3.2.1             polyclip_1.10-6          XML_3.99-0.16.1         
+ [10] fastDummies_1.7.3        lifecycle_1.0.4          globals_0.16.3          
+ [13] lattice_0.22-6           MASS_7.3-60              plotly_4.10.4           
+ [16] plotrix_3.8-4            yaml_2.3.8               httpuv_1.6.15           
+ [19] sctransform_0.4.1        spam_2.10-0              spatstat.sparse_3.0-3   
+ [22] reticulate_1.36.1        cowplot_1.1.3            pbapply_1.7-2           
+ [25] RColorBrewer_1.1-3       abind_1.4-5              zlibbioc_1.48.0         
+ [28] Rtsne_0.17               purrr_1.0.2              RCurl_1.98-1.14         
+ [31] GenomeInfoDbData_1.2.11  ggrepel_0.9.5            irlba_2.3.5.1           
+ [34] listenv_0.9.1            spatstat.utils_3.0-4     goftest_1.2-3           
+ [37] RSpectra_0.16-1          spatstat.random_3.2-3    fitdistrplus_1.1-11     
+ [40] parallelly_1.37.1        leiden_0.4.3.1           codetools_0.2-20        
+ [43] DelayedArray_0.26.7      RcppRoll_0.3.0           tidyselect_1.2.1        
+ [46] farver_2.1.1             base64enc_0.1-3          spatstat.explore_3.2-6  
+ [49] GenomicAlignments_1.36.0 jsonlite_1.8.8           progressr_0.14.0        
+ [52] ggridges_0.5.6           survival_3.6-4           tools_4.3.3             
+ [55] ica_1.0-3                glue_1.7.0               IRdisplay_1.1           
+ [58] dplyr_1.1.4              withr_3.0.0              fastmap_1.1.1           
+ [61] rhdf5filters_1.12.1      fansi_1.0.6              digest_0.6.35           
+ [64] R6_2.5.1                 mime_0.12                seqPattern_1.34.0       
+ [67] colorspace_2.1-0         Cairo_1.6-2              scattermore_1.2         
+ [70] tensor_1.5               spatstat.data_3.0-4      utf8_1.2.4              
+ [73] tidyr_1.3.1              generics_0.1.3           httr_1.4.7              
+ [76] htmlwidgets_1.6.4        S4Arrays_1.2.1           pkgconfig_2.0.3         
+ [79] impute_1.76.0            lmtest_0.9-40            htmltools_0.5.8.1       
+ [82] dotCall64_1.1-1          scales_1.3.0             png_0.1-8               
+ [85] tzdb_0.4.0               reshape2_1.4.4           rjson_0.2.21            
+ [88] uuid_1.2-0               nlme_3.1-164             repr_1.1.7              
+ [91] zoo_1.8-12               KernSmooth_2.23-22       miniUI_0.1.1.1          
+ [94] restfulr_0.0.15          pillar_1.9.0             vctrs_0.6.5             
+ [97] RANN_2.6.1               promises_1.3.0           xtable_1.8-4            
+[100] cluster_2.1.6            evaluate_0.23            readr_2.1.5             
+[103] cli_3.6.2                compiler_4.3.3           Rsamtools_2.18.0        
+[106] rlang_1.1.3              crayon_1.5.2             future.apply_1.11.2     
+[109] labeling_0.4.3           stringi_1.8.3            gridBase_0.4-7          
+[112] viridisLite_0.4.2        deldir_2.0-4             BiocParallel_1.36.0     
+[115] munsell_0.5.1            lazyeval_0.2.2           spatstat.geom_3.2-9     
+[118] IRkernel_1.3.2           RcppHNSW_0.6.0           hms_1.1.3               
+[121] patchwork_1.2.0          future_1.33.2            Rhdf5lib_1.22.1         
+[124] shiny_1.8.1.1            ROCR_1.0-11              igraph_2.0.3            
+[127] fastmatch_1.1-4         
+
+
+------- Log Info
+
+
+2024-05-31 14:44:24.586127 : addGeneExpressionMatrix Input-Parameters, Class = list
+
+addGeneExpressionMatrix Input-Parameters$input: length = 1
+
+addGeneExpressionMatrix Input-Parameters$seRNA: length = 61165
+class: RangedSummarizedExperiment 
+dim: 6 55479 
+metadata(0):
+assays(1): counts
+rownames(6): DDX11L1 MIR6859-1 ... MIR1302-2 FAM138A
+rowData names(5): feature_type genome id interval name
+colnames(55479): s3d10#GTAGCTGTCAGCAAAG-1 s3d10#AACTAGTGTTACCTGT-1 ...
+  s3d6#TCACCGGCAGCCTTGG-1 s3d6#GAACCTGTCGTTACAA-1
+colData names(0):
+
+
+addGeneExpressionMatrix Input-Parameters$chromSizes: length = 24
+GRanges object with 6 ranges and 0 metadata columns:
+      seqnames      ranges strand
+         <Rle>   <IRanges>  <Rle>
+  [1]     chr1 1-248956422      *
+  [2]     chr2 1-242193529      *
+  [3]     chr3 1-198295559      *
+  [4]     chr4 1-190214555      *
+  [5]     chr5 1-181538259      *
+  [6]     chr6 1-170805979      *
+  -------
+  seqinfo: 24 sequences from an unspecified genome
+
+
+addGeneExpressionMatrix Input-Parameters$excludeChr: length = 2
+[1] "chrM" "chrY"
+
+
+addGeneExpressionMatrix Input-Parameters$scaleTo: length = 1
+[1] 10000
+
+
+addGeneExpressionMatrix Input-Parameters$verbose: length = 1
+[1] TRUE
+
+
+addGeneExpressionMatrix Input-Parameters$threads: length = 1
+[1] 16
+
+
+addGeneExpressionMatrix Input-Parameters$parallelParam: length = 0
+NULL
+
+
+addGeneExpressionMatrix Input-Parameters$strictMatch: length = 1
+[1] TRUE
+
+
+addGeneExpressionMatrix Input-Parameters$force: length = 1
+[1] TRUE
+
+
+addGeneExpressionMatrix Input-Parameters$logFile: length = 1
+[1] "ArchRLogs/ArchR-addGeneExpressionMatrix-1d7ae6278add54-Date-2024-05-31_Time-14-44-24.127413.log"
+
+
+
+2024-05-31 14:44:25.62968 : 
+
+2024-05-31 14:44:25.729049 : 
+
+2024-05-31 14:44:34.424786 : qcInfo, Class = DFrame
+DataFrame with 55479 rows and 4 columns
+                          Gex_nUMI Gex_nGenes Gex_MitoRatio Gex_RiboRatio
+                         <numeric>  <numeric>     <numeric>     <numeric>
+s3d10#GTAGCTGTCAGCAAAG-1      7496       3536    0.00360192     0.0414888
+s3d10#AACTAGTGTTACCTGT-1      8870       3995    0.00417136     0.0383315
+s3d10#CGGATAAAGTTAGGCT-1     10018       4406    0.00349371     0.0351368
+s3d10#CTAGCGGGTGATCAGC-1      5917       2811    0.00371810     0.0116613
+s3d10#CTTCAGGAGTAAAGGT-1      8600       3897    0.00453488     0.0137209
+...                            ...        ...           ...           ...
+s3d6#AGGTCCGGTTGTGACA-1       1335        917    0.00299625    0.00973783
+s3d6#GCAAACCGTCATTACC-1        677        524    0.00295421    0.01329394
+s3d6#GATTATGTCCTTGTTG-1       2821       1489    0.00319036    0.01169798
+s3d6#TCACCGGCAGCCTTGG-1       6755       2825    0.00340489    0.01376758
+s3d6#GAACCTGTCGTTACAA-1       3752       2080    0.00293177    0.02478678
+
+2024-05-31 14:44:34.438031 : Batch Execution w/ safelapply!, 0 mins elapsed.
+
+2024-05-31 14:44:35.827207 : featureDF, Class = data.frame
+featureDF: nRows = 60591, nCols = 6
+  seqnames idx start   end        name strand
+1     chr1   1 12009 12010     DDX11L1      3
+2     chr1   2 17435 17436   MIR6859-1      3
+3     chr1   3 29553 30267 MIR1302-2HG      3
+4     chr1   4 29569 29570      WASH7P      3
+5     chr1   5 30365 30366   MIR1302-2      3
+6     chr1   6 36080 36081     FAM138A      3
+
+
+
+2024-05-31 14:44:36.001289 : featureDF, Class = data.frame
+featureDF: nRows = 60591, nCols = 6
+  seqnames idx start   end        name strand
+1     chr1   1 12009 12010     DDX11L1      3
+2     chr1   2 17435 17436   MIR6859-1      3
+3     chr1   3 29553 30267 MIR1302-2HG      3
+4     chr1   4 29569 29570      WASH7P      3
+5     chr1   5 30365 30366   MIR1302-2      3
+6     chr1   6 36080 36081     FAM138A      3
+
+
+
+2024-05-31 14:44:36.378996 : featureDF, Class = data.frame
+featureDF: nRows = 60591, nCols = 6
+  seqnames idx start   end        name strand
+1     chr1   1 12009 12010     DDX11L1      3
+2     chr1   2 17435 17436   MIR6859-1      3
+3     chr1   3 29553 30267 MIR1302-2HG      3
+4     chr1   4 29569 29570      WASH7P      3
+5     chr1   5 30365 30366   MIR1302-2      3
+6     chr1   6 36080 36081     FAM138A      3
+
+
+
+2024-05-31 14:44:36.6854 : featureDF, Class = data.frame
+featureDF: nRows = 60591, nCols = 6
+  seqnames idx start   end        name strand
+1     chr1   1 12009 12010     DDX11L1      3
+2     chr1   2 17435 17436   MIR6859-1      3
+3     chr1   3 29553 30267 MIR1302-2HG      3
+4     chr1   4 29569 29570      WASH7P      3
+5     chr1   5 30365 30366   MIR1302-2      3
+6     chr1   6 36080 36081     FAM138A      3
+
+
+2024-05-31 14:44:36.78458 : Adding s3d10 to GeneExpressionMatrix for Chr (1 of 23)!, 0.039 mins elapsed.
+2024-05-31 14:44:36.878212 : Adding s4d8 to GeneExpressionMatrix for Chr (1 of 23)!, 0.041 mins elapsed.
+2024-05-31 14:44:37.23162 : Adding s4d1 to GeneExpressionMatrix for Chr (1 of 23)!, 0.047 mins elapsed.
+2024-05-31 14:44:37.448971 : Adding s3d3 to GeneExpressionMatrix for Chr (1 of 23)!, 0.05 mins elapsed.
+
+2024-05-31 14:44:37.454854 : featureDF, Class = data.frame
+featureDF: nRows = 60591, nCols = 6
+  seqnames idx start   end        name strand
+1     chr1   1 12009 12010     DDX11L1      3
+2     chr1   2 17435 17436   MIR6859-1      3
+3     chr1   3 29553 30267 MIR1302-2HG      3
+4     chr1   4 29569 29570      WASH7P      3
+5     chr1   5 30365 30366   MIR1302-2      3
+6     chr1   6 36080 36081     FAM138A      3
+
+
+
+2024-05-31 14:44:37.483804 : featureDF, Class = data.frame
+featureDF: nRows = 60591, nCols = 6
+  seqnames idx start   end        name strand
+1     chr1   1 12009 12010     DDX11L1      3
+2     chr1   2 17435 17436   MIR6859-1      3
+3     chr1   3 29553 30267 MIR1302-2HG      3
+4     chr1   4 29569 29570      WASH7P      3
+5     chr1   5 30365 30366   MIR1302-2      3
+6     chr1   6 36080 36081     FAM138A      3
+
+
+
+2024-05-31 14:44:37.748817 : featureDF, Class = data.frame
+featureDF: nRows = 60591, nCols = 6
+  seqnames idx start   end        name strand
+1     chr1   1 12009 12010     DDX11L1      3
+2     chr1   2 17435 17436   MIR6859-1      3
+3     chr1   3 29553 30267 MIR1302-2HG      3
+4     chr1   4 29569 29570      WASH7P      3
+5     chr1   5 30365 30366   MIR1302-2      3
+6     chr1   6 36080 36081     FAM138A      3
+
+
+
+2024-05-31 14:44:38.045897 : featureDF, Class = data.frame
+featureDF: nRows = 60591, nCols = 6
+  seqnames idx start   end        name strand
+1     chr1   1 12009 12010     DDX11L1      3
+2     chr1   2 17435 17436   MIR6859-1      3
+3     chr1   3 29553 30267 MIR1302-2HG      3
+4     chr1   4 29569 29570      WASH7P      3
+5     chr1   5 30365 30366   MIR1302-2      3
+6     chr1   6 36080 36081     FAM138A      3
+
+
+2024-05-31 14:44:38.322299 : Adding s1d2 to GeneExpressionMatrix for Chr (1 of 23)!, 0.065 mins elapsed.
+2024-05-31 14:44:38.4471 : Adding s1d1 to GeneExpressionMatrix for Chr (1 of 23)!, 0.067 mins elapsed.
+
+2024-05-31 14:44:38.551387 : featureDF, Class = data.frame
+featureDF: nRows = 60591, nCols = 6
+  seqnames idx start   end        name strand
+1     chr1   1 12009 12010     DDX11L1      3
+2     chr1   2 17435 17436   MIR6859-1      3
+3     chr1   3 29553 30267 MIR1302-2HG      3
+4     chr1   4 29569 29570      WASH7P      3
+5     chr1   5 30365 30366   MIR1302-2      3
+6     chr1   6 36080 36081     FAM138A      3
+
+
+2024-05-31 14:44:38.609671 : Adding s1d3 to GeneExpressionMatrix for Chr (1 of 23)!, 0.069 mins elapsed.
+2024-05-31 14:44:38.863866 : Adding s3d7 to GeneExpressionMatrix for Chr (1 of 23)!, 0.074 mins elapsed.
+
+2024-05-31 14:44:39.015509 : featureDF, Class = data.frame
+featureDF: nRows = 60591, nCols = 6
+  seqnames idx start   end        name strand
+1     chr1   1 12009 12010     DDX11L1      3
+2     chr1   2 17435 17436   MIR6859-1      3
+3     chr1   3 29553 30267 MIR1302-2HG      3
+4     chr1   4 29569 29570      WASH7P      3
+5     chr1   5 30365 30366   MIR1302-2      3
+6     chr1   6 36080 36081     FAM138A      3
+
+
+2024-05-31 14:44:39.427923 : Adding s2d5 to GeneExpressionMatrix for Chr (1 of 23)!, 0.083 mins elapsed.
+
+2024-05-31 14:44:39.693967 : featureDF, Class = data.frame
+featureDF: nRows = 60591, nCols = 6
+  seqnames idx start   end        name strand
+1     chr1   1 12009 12010     DDX11L1      3
+2     chr1   2 17435 17436   MIR6859-1      3
+3     chr1   3 29553 30267 MIR1302-2HG      3
+4     chr1   4 29569 29570      WASH7P      3
+5     chr1   5 30365 30366   MIR1302-2      3
+6     chr1   6 36080 36081     FAM138A      3
+
+
+2024-05-31 14:44:39.889565 : Adding s2d1 to GeneExpressionMatrix for Chr (1 of 23)!, 0.091 mins elapsed.
+
+2024-05-31 14:44:40.102896 : featureDF, Class = data.frame
+featureDF: nRows = 60591, nCols = 6
+  seqnames idx start   end        name strand
+1     chr1   1 12009 12010     DDX11L1      3
+2     chr1   2 17435 17436   MIR6859-1      3
+3     chr1   3 29553 30267 MIR1302-2HG      3
+4     chr1   4 29569 29570      WASH7P      3
+5     chr1   5 30365 30366   MIR1302-2      3
+6     chr1   6 36080 36081     FAM138A      3
+
+
+
+2024-05-31 14:44:40.195605 : featureDF, Class = data.frame
+featureDF: nRows = 60591, nCols = 6
+  seqnames idx start   end        name strand
+1     chr1   1 12009 12010     DDX11L1      3
+2     chr1   2 17435 17436   MIR6859-1      3
+3     chr1   3 29553 30267 MIR1302-2HG      3
+4     chr1   4 29569 29570      WASH7P      3
+5     chr1   5 30365 30366   MIR1302-2      3
+6     chr1   6 36080 36081     FAM138A      3
+
+
+2024-05-31 14:44:40.647549 : Adding s2d4 to GeneExpressionMatrix for Chr (1 of 23)!, 0.103 mins elapsed.
+2024-05-31 14:44:40.829692 : Adding s4d9 to GeneExpressionMatrix for Chr (1 of 23)!, 0.106 mins elapsed.
+2024-05-31 14:44:41.005015 : Adding s3d6 to GeneExpressionMatrix for Chr (1 of 23)!, 0.109 mins elapsed.
+2024-05-31 14:44:48.909387 : Adding s4d1 to GeneExpressionMatrix for Chr (2 of 23)!, 0.241 mins elapsed.
+2024-05-31 14:44:49.123561 : Adding s4d8 to GeneExpressionMatrix for Chr (2 of 23)!, 0.245 mins elapsed.
+2024-05-31 14:44:49.869838 : Adding s3d3 to GeneExpressionMatrix for Chr (2 of 23)!, 0.257 mins elapsed.
+2024-05-31 14:44:50.570013 : Adding s1d1 to GeneExpressionMatrix for Chr (2 of 23)!, 0.269 mins elapsed.
+2024-05-31 14:44:50.595754 : Adding s3d10 to GeneExpressionMatrix for Chr (2 of 23)!, 0.269 mins elapsed.
+2024-05-31 14:44:50.82597 : Adding s1d3 to GeneExpressionMatrix for Chr (2 of 23)!, 0.273 mins elapsed.
+2024-05-31 14:44:51.384292 : Adding s2d5 to GeneExpressionMatrix for Chr (2 of 23)!, 0.282 mins elapsed.
+2024-05-31 14:44:51.483883 : Adding s3d7 to GeneExpressionMatrix for Chr (2 of 23)!, 0.284 mins elapsed.
+2024-05-31 14:44:52.033662 : Adding s1d2 to GeneExpressionMatrix for Chr (2 of 23)!, 0.293 mins elapsed.
+2024-05-31 14:44:52.053382 : Adding s2d1 to GeneExpressionMatrix for Chr (2 of 23)!, 0.294 mins elapsed.
+2024-05-31 14:44:52.678524 : Adding s4d9 to GeneExpressionMatrix for Chr (2 of 23)!, 0.304 mins elapsed.
+2024-05-31 14:44:52.68086 : Adding s2d4 to GeneExpressionMatrix for Chr (2 of 23)!, 0.304 mins elapsed.
+2024-05-31 14:44:52.771839 : Adding s3d6 to GeneExpressionMatrix for Chr (2 of 23)!, 0.306 mins elapsed.
+2024-05-31 14:44:58.819281 : Adding s4d1 to GeneExpressionMatrix for Chr (3 of 23)!, 0.406 mins elapsed.
+2024-05-31 14:44:59.717961 : Adding s4d8 to GeneExpressionMatrix for Chr (3 of 23)!, 0.421 mins elapsed.
+2024-05-31 14:45:00.107266 : Adding s3d7 to GeneExpressionMatrix for Chr (3 of 23)!, 0.428 mins elapsed.
+2024-05-31 14:45:00.228107 : Adding s3d3 to GeneExpressionMatrix for Chr (3 of 23)!, 0.43 mins elapsed.
+2024-05-31 14:45:00.834983 : Adding s1d1 to GeneExpressionMatrix for Chr (3 of 23)!, 0.44 mins elapsed.
+2024-05-31 14:45:01.018276 : Adding s3d10 to GeneExpressionMatrix for Chr (3 of 23)!, 0.443 mins elapsed.
+2024-05-31 14:45:01.072665 : Adding s1d3 to GeneExpressionMatrix for Chr (3 of 23)!, 0.444 mins elapsed.
+2024-05-31 14:45:01.335489 : Adding s2d1 to GeneExpressionMatrix for Chr (3 of 23)!, 0.448 mins elapsed.
+2024-05-31 14:45:01.736528 : Adding s2d5 to GeneExpressionMatrix for Chr (3 of 23)!, 0.455 mins elapsed.
+2024-05-31 14:45:02.757758 : Adding s3d6 to GeneExpressionMatrix for Chr (3 of 23)!, 0.472 mins elapsed.
+2024-05-31 14:45:02.75773 : Adding s2d4 to GeneExpressionMatrix for Chr (3 of 23)!, 0.472 mins elapsed.
+2024-05-31 14:45:02.850886 : Adding s4d9 to GeneExpressionMatrix for Chr (3 of 23)!, 0.474 mins elapsed.
+2024-05-31 14:45:03.287923 : Adding s1d2 to GeneExpressionMatrix for Chr (3 of 23)!, 0.481 mins elapsed.
+2024-05-31 14:45:09.640067 : Adding s3d3 to GeneExpressionMatrix for Chr (4 of 23)!, 0.587 mins elapsed.
+2024-05-31 14:45:10.396347 : Adding s4d1 to GeneExpressionMatrix for Chr (4 of 23)!, 0.599 mins elapsed.
+2024-05-31 14:45:10.740574 : Adding s4d8 to GeneExpressionMatrix for Chr (4 of 23)!, 0.605 mins elapsed.
+2024-05-31 14:45:10.844797 : Adding s3d10 to GeneExpressionMatrix for Chr (4 of 23)!, 0.607 mins elapsed.
+2024-05-31 14:45:11.553665 : Adding s2d1 to GeneExpressionMatrix for Chr (4 of 23)!, 0.619 mins elapsed.
+2024-05-31 14:45:12.46014 : Adding s3d7 to GeneExpressionMatrix for Chr (4 of 23)!, 0.634 mins elapsed.
+2024-05-31 14:45:14.998206 : Adding s1d1 to GeneExpressionMatrix for Chr (4 of 23)!, 0.676 mins elapsed.
+2024-05-31 14:45:16.030368 : Adding s2d5 to GeneExpressionMatrix for Chr (4 of 23)!, 0.693 mins elapsed.
+2024-05-31 14:45:16.056344 : Adding s1d3 to GeneExpressionMatrix for Chr (4 of 23)!, 0.694 mins elapsed.
+2024-05-31 14:45:16.53702 : Adding s1d2 to GeneExpressionMatrix for Chr (4 of 23)!, 0.702 mins elapsed.
+2024-05-31 14:45:17.112621 : Adding s3d6 to GeneExpressionMatrix for Chr (4 of 23)!, 0.711 mins elapsed.
+2024-05-31 14:45:17.283571 : Adding s4d1 to GeneExpressionMatrix for Chr (5 of 23)!, 0.714 mins elapsed.
+2024-05-31 14:45:17.515702 : Adding s3d3 to GeneExpressionMatrix for Chr (5 of 23)!, 0.718 mins elapsed.
+2024-05-31 14:45:17.594553 : Adding s4d9 to GeneExpressionMatrix for Chr (4 of 23)!, 0.719 mins elapsed.
+2024-05-31 14:45:17.668572 : Adding s2d4 to GeneExpressionMatrix for Chr (4 of 23)!, 0.72 mins elapsed.
+2024-05-31 14:45:17.950508 : Adding s4d8 to GeneExpressionMatrix for Chr (5 of 23)!, 0.725 mins elapsed.
+2024-05-31 14:45:18.189875 : Adding s3d10 to GeneExpressionMatrix for Chr (5 of 23)!, 0.729 mins elapsed.
+2024-05-31 14:45:19.315736 : Adding s3d7 to GeneExpressionMatrix for Chr (5 of 23)!, 0.748 mins elapsed.
+2024-05-31 14:45:20.632166 : Adding s2d1 to GeneExpressionMatrix for Chr (5 of 23)!, 0.77 mins elapsed.
+2024-05-31 14:45:22.939524 : Adding s2d5 to GeneExpressionMatrix for Chr (5 of 23)!, 0.808 mins elapsed.
+2024-05-31 14:45:24.260221 : Adding s4d1 to GeneExpressionMatrix for Chr (6 of 23)!, 0.83 mins elapsed.
+2024-05-31 14:45:24.479131 : Adding s3d3 to GeneExpressionMatrix for Chr (6 of 23)!, 0.834 mins elapsed.
+2024-05-31 14:45:24.671349 : Adding s4d8 to GeneExpressionMatrix for Chr (6 of 23)!, 0.837 mins elapsed.
+2024-05-31 14:45:25.062178 : Adding s3d10 to GeneExpressionMatrix for Chr (6 of 23)!, 0.844 mins elapsed.
+2024-05-31 14:45:25.396487 : Adding s1d1 to GeneExpressionMatrix for Chr (5 of 23)!, 0.849 mins elapsed.
+2024-05-31 14:45:25.787427 : Adding s1d3 to GeneExpressionMatrix for Chr (5 of 23)!, 0.856 mins elapsed.
+2024-05-31 14:45:26.10123 : Adding s3d7 to GeneExpressionMatrix for Chr (6 of 23)!, 0.861 mins elapsed.
+2024-05-31 14:45:26.620506 : Adding s3d6 to GeneExpressionMatrix for Chr (5 of 23)!, 0.87 mins elapsed.
+2024-05-31 14:45:27.234916 : Adding s2d1 to GeneExpressionMatrix for Chr (6 of 23)!, 0.88 mins elapsed.
+2024-05-31 14:45:27.527293 : Adding s4d9 to GeneExpressionMatrix for Chr (5 of 23)!, 0.885 mins elapsed.
+2024-05-31 14:45:27.884314 : Adding s2d4 to GeneExpressionMatrix for Chr (5 of 23)!, 0.891 mins elapsed.
+2024-05-31 14:45:28.816953 : Adding s1d2 to GeneExpressionMatrix for Chr (5 of 23)!, 0.906 mins elapsed.
+2024-05-31 14:45:29.450249 : Adding s2d5 to GeneExpressionMatrix for Chr (6 of 23)!, 0.917 mins elapsed.
+2024-05-31 14:45:33.193114 : Adding s1d3 to GeneExpressionMatrix for Chr (6 of 23)!, 0.979 mins elapsed.
+2024-05-31 14:45:34.22275 : Adding s3d6 to GeneExpressionMatrix for Chr (6 of 23)!, 0.996 mins elapsed.
+2024-05-31 14:45:34.540448 : Adding s3d3 to GeneExpressionMatrix for Chr (7 of 23)!, 1.002 mins elapsed.
+2024-05-31 14:45:34.596817 : Adding s4d1 to GeneExpressionMatrix for Chr (7 of 23)!, 1.003 mins elapsed.
+2024-05-31 14:45:35.535766 : Adding s1d1 to GeneExpressionMatrix for Chr (6 of 23)!, 1.018 mins elapsed.
+2024-05-31 14:45:35.876744 : Adding s3d10 to GeneExpressionMatrix for Chr (7 of 23)!, 1.024 mins elapsed.
+2024-05-31 14:45:36.188512 : Adding s3d7 to GeneExpressionMatrix for Chr (7 of 23)!, 1.029 mins elapsed.
+2024-05-31 14:45:37.852312 : Adding s4d9 to GeneExpressionMatrix for Chr (6 of 23)!, 1.057 mins elapsed.
+2024-05-31 14:45:38.285411 : Adding s2d4 to GeneExpressionMatrix for Chr (6 of 23)!, 1.064 mins elapsed.
+2024-05-31 14:45:38.596466 : Adding s2d1 to GeneExpressionMatrix for Chr (7 of 23)!, 1.069 mins elapsed.
+2024-05-31 14:45:39.209296 : Adding s2d5 to GeneExpressionMatrix for Chr (7 of 23)!, 1.079 mins elapsed.
+2024-05-31 14:45:39.271676 : Adding s4d8 to GeneExpressionMatrix for Chr (7 of 23)!, 1.081 mins elapsed.
+2024-05-31 14:45:39.423612 : Adding s1d2 to GeneExpressionMatrix for Chr (6 of 23)!, 1.083 mins elapsed.
+2024-05-31 14:45:41.725728 : Adding s3d3 to GeneExpressionMatrix for Chr (8 of 23)!, 1.121 mins elapsed.
+2024-05-31 14:45:41.835157 : Adding s4d1 to GeneExpressionMatrix for Chr (8 of 23)!, 1.123 mins elapsed.
+2024-05-31 14:45:43.793182 : Adding s3d10 to GeneExpressionMatrix for Chr (8 of 23)!, 1.156 mins elapsed.
+2024-05-31 14:45:43.860903 : Adding s3d7 to GeneExpressionMatrix for Chr (8 of 23)!, 1.157 mins elapsed.
+2024-05-31 14:45:44.709579 : Adding s3d6 to GeneExpressionMatrix for Chr (7 of 23)!, 1.171 mins elapsed.
+2024-05-31 14:45:45.613463 : Adding s1d3 to GeneExpressionMatrix for Chr (7 of 23)!, 1.186 mins elapsed.
+2024-05-31 14:45:46.04942 : Adding s1d1 to GeneExpressionMatrix for Chr (7 of 23)!, 1.193 mins elapsed.
+2024-05-31 14:45:46.654991 : Adding s2d1 to GeneExpressionMatrix for Chr (8 of 23)!, 1.204 mins elapsed.
+2024-05-31 14:45:47.677974 : Adding s2d5 to GeneExpressionMatrix for Chr (8 of 23)!, 1.221 mins elapsed.
+2024-05-31 14:45:48.853044 : Adding s4d1 to GeneExpressionMatrix for Chr (9 of 23)!, 1.24 mins elapsed.
+2024-05-31 14:45:49.138789 : Adding s4d8 to GeneExpressionMatrix for Chr (8 of 23)!, 1.245 mins elapsed.
+2024-05-31 14:45:51.732312 : Adding s3d7 to GeneExpressionMatrix for Chr (9 of 23)!, 1.288 mins elapsed.
+2024-05-31 14:45:51.842416 : Adding s3d10 to GeneExpressionMatrix for Chr (9 of 23)!, 1.29 mins elapsed.
+2024-05-31 14:45:52.192738 : Adding s3d6 to GeneExpressionMatrix for Chr (8 of 23)!, 1.296 mins elapsed.
+2024-05-31 14:45:52.475639 : Adding s4d9 to GeneExpressionMatrix for Chr (7 of 23)!, 1.301 mins elapsed.
+2024-05-31 14:45:52.817592 : Adding s2d4 to GeneExpressionMatrix for Chr (7 of 23)!, 1.306 mins elapsed.
+2024-05-31 14:45:53.112938 : Adding s1d3 to GeneExpressionMatrix for Chr (8 of 23)!, 1.311 mins elapsed.
+2024-05-31 14:45:53.54139 : Adding s3d3 to GeneExpressionMatrix for Chr (9 of 23)!, 1.318 mins elapsed.
+2024-05-31 14:45:53.727185 : Adding s1d1 to GeneExpressionMatrix for Chr (8 of 23)!, 1.321 mins elapsed.
+2024-05-31 14:45:54.653424 : Adding s1d2 to GeneExpressionMatrix for Chr (7 of 23)!, 1.337 mins elapsed.
+2024-05-31 14:45:55.205354 : Adding s2d5 to GeneExpressionMatrix for Chr (9 of 23)!, 1.346 mins elapsed.
+2024-05-31 14:45:55.51055 : Adding s2d1 to GeneExpressionMatrix for Chr (9 of 23)!, 1.351 mins elapsed.
+2024-05-31 14:45:58.92155 : Adding s4d1 to GeneExpressionMatrix for Chr (10 of 23)!, 1.408 mins elapsed.
+2024-05-31 14:45:59.131656 : Adding s3d6 to GeneExpressionMatrix for Chr (9 of 23)!, 1.412 mins elapsed.
+2024-05-31 14:45:59.933846 : Adding s4d8 to GeneExpressionMatrix for Chr (9 of 23)!, 1.425 mins elapsed.
+2024-05-31 14:46:00.111113 : Adding s1d3 to GeneExpressionMatrix for Chr (9 of 23)!, 1.428 mins elapsed.
+2024-05-31 14:46:00.847424 : Adding s1d1 to GeneExpressionMatrix for Chr (9 of 23)!, 1.44 mins elapsed.
+2024-05-31 14:46:02.019062 : Adding s3d7 to GeneExpressionMatrix for Chr (10 of 23)!, 1.46 mins elapsed.
+2024-05-31 14:46:02.212098 : Adding s3d10 to GeneExpressionMatrix for Chr (10 of 23)!, 1.463 mins elapsed.
+2024-05-31 14:46:02.298373 : Adding s1d2 to GeneExpressionMatrix for Chr (8 of 23)!, 1.464 mins elapsed.
+2024-05-31 14:46:02.404396 : Adding s4d9 to GeneExpressionMatrix for Chr (8 of 23)!, 1.466 mins elapsed.
+2024-05-31 14:46:02.917809 : Adding s2d4 to GeneExpressionMatrix for Chr (8 of 23)!, 1.475 mins elapsed.
+2024-05-31 14:46:06.098664 : Adding s2d1 to GeneExpressionMatrix for Chr (10 of 23)!, 1.528 mins elapsed.
+2024-05-31 14:46:06.32143 : Adding s4d1 to GeneExpressionMatrix for Chr (11 of 23)!, 1.531 mins elapsed.
+2024-05-31 14:46:07.644591 : Adding s2d5 to GeneExpressionMatrix for Chr (10 of 23)!, 1.553 mins elapsed.
+2024-05-31 14:46:08.231169 : Adding s3d3 to GeneExpressionMatrix for Chr (10 of 23)!, 1.563 mins elapsed.
+2024-05-31 14:46:08.958503 : Adding s3d7 to GeneExpressionMatrix for Chr (11 of 23)!, 1.575 mins elapsed.
+2024-05-31 14:46:09.401993 : Adding s3d6 to GeneExpressionMatrix for Chr (10 of 23)!, 1.583 mins elapsed.
+2024-05-31 14:46:09.457269 : Adding s3d10 to GeneExpressionMatrix for Chr (11 of 23)!, 1.584 mins elapsed.
+2024-05-31 14:46:09.943086 : Adding s1d3 to GeneExpressionMatrix for Chr (10 of 23)!, 1.592 mins elapsed.
+2024-05-31 14:46:10.716577 : Adding s1d1 to GeneExpressionMatrix for Chr (10 of 23)!, 1.605 mins elapsed.
+2024-05-31 14:46:10.847172 : Adding s2d4 to GeneExpressionMatrix for Chr (9 of 23)!, 1.607 mins elapsed.
+2024-05-31 14:46:11.507349 : Adding s1d2 to GeneExpressionMatrix for Chr (9 of 23)!, 1.618 mins elapsed.
+2024-05-31 14:46:11.68227 : Adding s4d9 to GeneExpressionMatrix for Chr (9 of 23)!, 1.621 mins elapsed.
+2024-05-31 14:46:13.056894 : Adding s2d1 to GeneExpressionMatrix for Chr (11 of 23)!, 1.644 mins elapsed.
+2024-05-31 14:46:13.272706 : Adding s4d1 to GeneExpressionMatrix for Chr (12 of 23)!, 1.647 mins elapsed.
+2024-05-31 14:46:13.298171 : Adding s4d8 to GeneExpressionMatrix for Chr (10 of 23)!, 1.648 mins elapsed.
+2024-05-31 14:46:16.345354 : Adding s3d7 to GeneExpressionMatrix for Chr (12 of 23)!, 1.698 mins elapsed.
+2024-05-31 14:46:16.603618 : Adding s3d6 to GeneExpressionMatrix for Chr (11 of 23)!, 1.703 mins elapsed.
+2024-05-31 14:46:16.72547 : Adding s3d10 to GeneExpressionMatrix for Chr (12 of 23)!, 1.705 mins elapsed.
+2024-05-31 14:46:17.340006 : Adding s1d3 to GeneExpressionMatrix for Chr (11 of 23)!, 1.715 mins elapsed.
+2024-05-31 14:46:17.745296 : Adding s2d5 to GeneExpressionMatrix for Chr (11 of 23)!, 1.722 mins elapsed.
+2024-05-31 14:46:18.991652 : Adding s3d3 to GeneExpressionMatrix for Chr (11 of 23)!, 1.743 mins elapsed.
+2024-05-31 14:46:19.079845 : Adding s1d1 to GeneExpressionMatrix for Chr (11 of 23)!, 1.744 mins elapsed.
+2024-05-31 14:46:20.276874 : Adding s2d1 to GeneExpressionMatrix for Chr (12 of 23)!, 1.764 mins elapsed.
+2024-05-31 14:46:20.499269 : Adding s4d8 to GeneExpressionMatrix for Chr (11 of 23)!, 1.768 mins elapsed.
+2024-05-31 14:46:20.934185 : Adding s2d4 to GeneExpressionMatrix for Chr (10 of 23)!, 1.775 mins elapsed.
+2024-05-31 14:46:23.362776 : Adding s4d1 to GeneExpressionMatrix for Chr (13 of 23)!, 1.815 mins elapsed.
+2024-05-31 14:46:23.674711 : Adding s3d6 to GeneExpressionMatrix for Chr (12 of 23)!, 1.821 mins elapsed.
+2024-05-31 14:46:24.319261 : Adding s1d3 to GeneExpressionMatrix for Chr (12 of 23)!, 1.831 mins elapsed.
+2024-05-31 14:46:24.951657 : Adding s4d9 to GeneExpressionMatrix for Chr (10 of 23)!, 1.842 mins elapsed.
+2024-05-31 14:46:25.881423 : Adding s3d7 to GeneExpressionMatrix for Chr (13 of 23)!, 1.857 mins elapsed.
+2024-05-31 14:46:26.20156 : Adding s1d2 to GeneExpressionMatrix for Chr (10 of 23)!, 1.863 mins elapsed.
+2024-05-31 14:46:26.704479 : Adding s3d10 to GeneExpressionMatrix for Chr (13 of 23)!, 1.871 mins elapsed.
+2024-05-31 14:46:27.63446 : Adding s3d3 to GeneExpressionMatrix for Chr (12 of 23)!, 1.887 mins elapsed.
+2024-05-31 14:46:27.647872 : Adding s4d8 to GeneExpressionMatrix for Chr (12 of 23)!, 1.887 mins elapsed.
+2024-05-31 14:46:27.92091 : Adding s2d5 to GeneExpressionMatrix for Chr (12 of 23)!, 1.891 mins elapsed.
+2024-05-31 14:46:28.085003 : Adding s2d4 to GeneExpressionMatrix for Chr (11 of 23)!, 1.894 mins elapsed.
+2024-05-31 14:46:29.702997 : Adding s1d1 to GeneExpressionMatrix for Chr (12 of 23)!, 1.921 mins elapsed.
+2024-05-31 14:46:30.589586 : Adding s4d1 to GeneExpressionMatrix for Chr (14 of 23)!, 1.936 mins elapsed.
+2024-05-31 14:46:31.773892 : Adding s2d1 to GeneExpressionMatrix for Chr (13 of 23)!, 1.956 mins elapsed.
+2024-05-31 14:46:34.402658 : Adding s4d9 to GeneExpressionMatrix for Chr (11 of 23)!, 1.999 mins elapsed.
+2024-05-31 14:46:35.085711 : Adding s3d7 to GeneExpressionMatrix for Chr (14 of 23)!, 2.011 mins elapsed.
+2024-05-31 14:46:35.145793 : Adding s1d3 to GeneExpressionMatrix for Chr (13 of 23)!, 2.012 mins elapsed.
+2024-05-31 14:46:35.461027 : Adding s2d4 to GeneExpressionMatrix for Chr (12 of 23)!, 2.017 mins elapsed.
+2024-05-31 14:46:35.988717 : Adding s1d2 to GeneExpressionMatrix for Chr (11 of 23)!, 2.026 mins elapsed.
+2024-05-31 14:46:36.596364 : Adding s3d10 to GeneExpressionMatrix for Chr (14 of 23)!, 2.036 mins elapsed.
+2024-05-31 14:46:37.431412 : Adding s4d8 to GeneExpressionMatrix for Chr (13 of 23)!, 2.05 mins elapsed.
+2024-05-31 14:46:37.607398 : Adding s4d1 to GeneExpressionMatrix for Chr (15 of 23)!, 2.053 mins elapsed.
+2024-05-31 14:46:37.826941 : Adding s3d3 to GeneExpressionMatrix for Chr (13 of 23)!, 2.056 mins elapsed.
+2024-05-31 14:46:38.438463 : Adding s3d6 to GeneExpressionMatrix for Chr (13 of 23)!, 2.067 mins elapsed.
+2024-05-31 14:46:42.085607 : Adding s2d5 to GeneExpressionMatrix for Chr (13 of 23)!, 2.127 mins elapsed.
+2024-05-31 14:46:42.121412 : Adding s2d1 to GeneExpressionMatrix for Chr (14 of 23)!, 2.128 mins elapsed.
+2024-05-31 14:46:43.212886 : Adding s4d9 to GeneExpressionMatrix for Chr (12 of 23)!, 2.146 mins elapsed.
+2024-05-31 14:46:44.069738 : Adding s1d2 to GeneExpressionMatrix for Chr (12 of 23)!, 2.161 mins elapsed.
+2024-05-31 14:46:44.106387 : Adding s4d8 to GeneExpressionMatrix for Chr (14 of 23)!, 2.161 mins elapsed.
+2024-05-31 14:46:44.522118 : Adding s1d3 to GeneExpressionMatrix for Chr (14 of 23)!, 2.168 mins elapsed.
+2024-05-31 14:46:44.780544 : Adding s1d1 to GeneExpressionMatrix for Chr (13 of 23)!, 2.172 mins elapsed.
+2024-05-31 14:46:45.107074 : Adding s3d6 to GeneExpressionMatrix for Chr (14 of 23)!, 2.178 mins elapsed.
+2024-05-31 14:46:45.158022 : Adding s2d4 to GeneExpressionMatrix for Chr (13 of 23)!, 2.179 mins elapsed.
+2024-05-31 14:46:46.385571 : Adding s3d7 to GeneExpressionMatrix for Chr (15 of 23)!, 2.199 mins elapsed.
+2024-05-31 14:46:46.396394 : Adding s3d10 to GeneExpressionMatrix for Chr (15 of 23)!, 2.199 mins elapsed.
+2024-05-31 14:46:47.016863 : Adding s3d3 to GeneExpressionMatrix for Chr (14 of 23)!, 2.21 mins elapsed.
+2024-05-31 14:46:47.340969 : Adding s4d1 to GeneExpressionMatrix for Chr (16 of 23)!, 2.215 mins elapsed.
+2024-05-31 14:46:50.80602 : Adding s4d8 to GeneExpressionMatrix for Chr (15 of 23)!, 2.273 mins elapsed.
+2024-05-31 14:46:51.246699 : Adding s2d5 to GeneExpressionMatrix for Chr (14 of 23)!, 2.28 mins elapsed.
+2024-05-31 14:46:51.744882 : Adding s2d1 to GeneExpressionMatrix for Chr (15 of 23)!, 2.288 mins elapsed.
+2024-05-31 14:46:52.106366 : Adding s3d6 to GeneExpressionMatrix for Chr (15 of 23)!, 2.294 mins elapsed.
+2024-05-31 14:46:52.210758 : Adding s2d4 to GeneExpressionMatrix for Chr (14 of 23)!, 2.296 mins elapsed.
+2024-05-31 14:46:52.797461 : Adding s1d1 to GeneExpressionMatrix for Chr (14 of 23)!, 2.306 mins elapsed.
+2024-05-31 14:46:54.831671 : Adding s1d3 to GeneExpressionMatrix for Chr (15 of 23)!, 2.34 mins elapsed.
+2024-05-31 14:46:56.6387 : Adding s4d9 to GeneExpressionMatrix for Chr (13 of 23)!, 2.37 mins elapsed.
+2024-05-31 14:46:56.683165 : Adding s4d1 to GeneExpressionMatrix for Chr (17 of 23)!, 2.371 mins elapsed.
+2024-05-31 14:46:57.30976 : Adding s1d2 to GeneExpressionMatrix for Chr (13 of 23)!, 2.381 mins elapsed.
+2024-05-31 14:46:57.915983 : Adding s3d3 to GeneExpressionMatrix for Chr (15 of 23)!, 2.391 mins elapsed.
+2024-05-31 14:46:58.772478 : Adding s2d4 to GeneExpressionMatrix for Chr (15 of 23)!, 2.406 mins elapsed.
+2024-05-31 14:46:59.550388 : Adding s1d1 to GeneExpressionMatrix for Chr (15 of 23)!, 2.419 mins elapsed.
+2024-05-31 14:47:00.105837 : Adding s2d5 to GeneExpressionMatrix for Chr (15 of 23)!, 2.428 mins elapsed.
+2024-05-31 14:47:00.310146 : Adding s3d10 to GeneExpressionMatrix for Chr (16 of 23)!, 2.431 mins elapsed.
+2024-05-31 14:47:00.791196 : Adding s4d8 to GeneExpressionMatrix for Chr (16 of 23)!, 2.439 mins elapsed.
+2024-05-31 14:47:01.093787 : Adding s2d1 to GeneExpressionMatrix for Chr (16 of 23)!, 2.444 mins elapsed.
+2024-05-31 14:47:01.559486 : Adding s3d6 to GeneExpressionMatrix for Chr (16 of 23)!, 2.452 mins elapsed.
+2024-05-31 14:47:02.505162 : Adding s3d7 to GeneExpressionMatrix for Chr (16 of 23)!, 2.468 mins elapsed.
+2024-05-31 14:47:04.925245 : Adding s1d3 to GeneExpressionMatrix for Chr (16 of 23)!, 2.508 mins elapsed.
+2024-05-31 14:47:05.070597 : Adding s1d2 to GeneExpressionMatrix for Chr (14 of 23)!, 2.511 mins elapsed.
+2024-05-31 14:47:06.15797 : Adding s4d9 to GeneExpressionMatrix for Chr (14 of 23)!, 2.529 mins elapsed.
+2024-05-31 14:47:06.777306 : Adding s4d8 to GeneExpressionMatrix for Chr (17 of 23)!, 2.539 mins elapsed.
+2024-05-31 14:47:07.063254 : Adding s2d1 to GeneExpressionMatrix for Chr (17 of 23)!, 2.544 mins elapsed.
+2024-05-31 14:47:07.141658 : Adding s4d1 to GeneExpressionMatrix for Chr (18 of 23)!, 2.545 mins elapsed.
+2024-05-31 14:47:07.553046 : Adding s2d4 to GeneExpressionMatrix for Chr (16 of 23)!, 2.552 mins elapsed.
+2024-05-31 14:47:07.635132 : Adding s3d6 to GeneExpressionMatrix for Chr (17 of 23)!, 2.553 mins elapsed.
+2024-05-31 14:47:08.188367 : Adding s1d1 to GeneExpressionMatrix for Chr (16 of 23)!, 2.562 mins elapsed.
+2024-05-31 14:47:09.806841 : Adding s3d10 to GeneExpressionMatrix for Chr (17 of 23)!, 2.589 mins elapsed.
+2024-05-31 14:47:10.69493 : Adding s1d3 to GeneExpressionMatrix for Chr (17 of 23)!, 2.604 mins elapsed.
+2024-05-31 14:47:10.953511 : Adding s1d2 to GeneExpressionMatrix for Chr (15 of 23)!, 2.609 mins elapsed.
+2024-05-31 14:47:11.045139 : Adding s3d3 to GeneExpressionMatrix for Chr (16 of 23)!, 2.61 mins elapsed.
+2024-05-31 14:47:12.128213 : Adding s3d7 to GeneExpressionMatrix for Chr (17 of 23)!, 2.628 mins elapsed.
+2024-05-31 14:47:12.465232 : Adding s2d5 to GeneExpressionMatrix for Chr (16 of 23)!, 2.634 mins elapsed.
+2024-05-31 14:47:12.482561 : Adding s4d8 to GeneExpressionMatrix for Chr (18 of 23)!, 2.634 mins elapsed.
+2024-05-31 14:47:12.722361 : Adding s2d1 to GeneExpressionMatrix for Chr (18 of 23)!, 2.638 mins elapsed.
+2024-05-31 14:47:13.355045 : Adding s3d6 to GeneExpressionMatrix for Chr (18 of 23)!, 2.649 mins elapsed.
+2024-05-31 14:47:13.357757 : Adding s2d4 to GeneExpressionMatrix for Chr (17 of 23)!, 2.649 mins elapsed.
+2024-05-31 14:47:13.720622 : Adding s4d9 to GeneExpressionMatrix for Chr (15 of 23)!, 2.655 mins elapsed.
+2024-05-31 14:47:13.982617 : Adding s1d1 to GeneExpressionMatrix for Chr (17 of 23)!, 2.659 mins elapsed.
+2024-05-31 14:47:16.086161 : Adding s1d3 to GeneExpressionMatrix for Chr (18 of 23)!, 2.694 mins elapsed.
+2024-05-31 14:47:16.553835 : Adding s3d3 to GeneExpressionMatrix for Chr (17 of 23)!, 2.702 mins elapsed.
+2024-05-31 14:47:17.716158 : Adding s3d10 to GeneExpressionMatrix for Chr (18 of 23)!, 2.721 mins elapsed.
+2024-05-31 14:47:18.562365 : Adding s1d2 to GeneExpressionMatrix for Chr (16 of 23)!, 2.735 mins elapsed.
+2024-05-31 14:47:19.000103 : Adding s2d4 to GeneExpressionMatrix for Chr (18 of 23)!, 2.743 mins elapsed.
+2024-05-31 14:47:19.076983 : Adding s4d1 to GeneExpressionMatrix for Chr (19 of 23)!, 2.744 mins elapsed.
+2024-05-31 14:47:19.311484 : Adding s2d5 to GeneExpressionMatrix for Chr (17 of 23)!, 2.748 mins elapsed.
+2024-05-31 14:47:19.578392 : Adding s3d7 to GeneExpressionMatrix for Chr (18 of 23)!, 2.752 mins elapsed.
+2024-05-31 14:47:20.429239 : Adding s2d1 to GeneExpressionMatrix for Chr (19 of 23)!, 2.767 mins elapsed.
+2024-05-31 14:47:20.559834 : Adding s4d8 to GeneExpressionMatrix for Chr (19 of 23)!, 2.769 mins elapsed.
+2024-05-31 14:47:21.12656 : Adding s3d6 to GeneExpressionMatrix for Chr (19 of 23)!, 2.778 mins elapsed.
+2024-05-31 14:47:22.372692 : Adding s3d3 to GeneExpressionMatrix for Chr (18 of 23)!, 2.799 mins elapsed.
+2024-05-31 14:47:22.491857 : Adding s4d9 to GeneExpressionMatrix for Chr (16 of 23)!, 2.801 mins elapsed.
+2024-05-31 14:47:22.5662 : Adding s1d1 to GeneExpressionMatrix for Chr (18 of 23)!, 2.802 mins elapsed.
+2024-05-31 14:47:23.807363 : Adding s1d2 to GeneExpressionMatrix for Chr (17 of 23)!, 2.823 mins elapsed.
+2024-05-31 14:47:24.003483 : Adding s1d3 to GeneExpressionMatrix for Chr (19 of 23)!, 2.826 mins elapsed.
+2024-05-31 14:47:25.394863 : Adding s2d5 to GeneExpressionMatrix for Chr (18 of 23)!, 2.849 mins elapsed.
+2024-05-31 14:47:25.922279 : Adding s2d1 to GeneExpressionMatrix for Chr (20 of 23)!, 2.858 mins elapsed.
+2024-05-31 14:47:26.152267 : Adding s4d8 to GeneExpressionMatrix for Chr (20 of 23)!, 2.862 mins elapsed.
+2024-05-31 14:47:26.340211 : Adding s3d6 to GeneExpressionMatrix for Chr (20 of 23)!, 2.865 mins elapsed.
+2024-05-31 14:47:26.408986 : Adding s2d4 to GeneExpressionMatrix for Chr (19 of 23)!, 2.866 mins elapsed.
+2024-05-31 14:47:27.081691 : Adding s4d1 to GeneExpressionMatrix for Chr (20 of 23)!, 2.877 mins elapsed.
+2024-05-31 14:47:28.135535 : Adding s3d10 to GeneExpressionMatrix for Chr (19 of 23)!, 2.895 mins elapsed.
+2024-05-31 14:47:28.277617 : Adding s4d9 to GeneExpressionMatrix for Chr (17 of 23)!, 2.897 mins elapsed.
+2024-05-31 14:47:29.717915 : Adding s3d3 to GeneExpressionMatrix for Chr (19 of 23)!, 2.921 mins elapsed.
+2024-05-31 14:47:30.001086 : Adding s1d2 to GeneExpressionMatrix for Chr (18 of 23)!, 2.926 mins elapsed.
+2024-05-31 14:47:30.337566 : Adding s3d7 to GeneExpressionMatrix for Chr (19 of 23)!, 2.932 mins elapsed.
+2024-05-31 14:47:30.457592 : Adding s1d3 to GeneExpressionMatrix for Chr (20 of 23)!, 2.934 mins elapsed.
+2024-05-31 14:47:31.396793 : Adding s1d1 to GeneExpressionMatrix for Chr (19 of 23)!, 2.949 mins elapsed.
+2024-05-31 14:47:33.0541 : Adding s4d8 to GeneExpressionMatrix for Chr (21 of 23)!, 2.977 mins elapsed.
+2024-05-31 14:47:33.222075 : Adding s3d6 to GeneExpressionMatrix for Chr (21 of 23)!, 2.98 mins elapsed.
+2024-05-31 14:47:33.702046 : Adding s2d4 to GeneExpressionMatrix for Chr (20 of 23)!, 2.988 mins elapsed.
+2024-05-31 14:47:34.637761 : Adding s2d1 to GeneExpressionMatrix for Chr (21 of 23)!, 3.003 mins elapsed.
+2024-05-31 14:47:35.034968 : Adding s2d5 to GeneExpressionMatrix for Chr (19 of 23)!, 3.01 mins elapsed.
+2024-05-31 14:47:35.253413 : Adding s4d9 to GeneExpressionMatrix for Chr (18 of 23)!, 3.014 mins elapsed.
+2024-05-31 14:47:36.565032 : Adding s3d3 to GeneExpressionMatrix for Chr (20 of 23)!, 3.035 mins elapsed.
+2024-05-31 14:47:37.309633 : Adding s4d1 to GeneExpressionMatrix for Chr (21 of 23)!, 3.048 mins elapsed.
+2024-05-31 14:47:37.577921 : Adding s3d10 to GeneExpressionMatrix for Chr (20 of 23)!, 3.052 mins elapsed.
+2024-05-31 14:47:37.61549 : Adding s1d3 to GeneExpressionMatrix for Chr (21 of 23)!, 3.053 mins elapsed.
+2024-05-31 14:47:39.759697 : Adding s3d7 to GeneExpressionMatrix for Chr (20 of 23)!, 3.089 mins elapsed.
+2024-05-31 14:47:39.78703 : Adding s1d1 to GeneExpressionMatrix for Chr (20 of 23)!, 3.089 mins elapsed.
+2024-05-31 14:47:41.015596 : Adding s2d4 to GeneExpressionMatrix for Chr (21 of 23)!, 3.11 mins elapsed.
+2024-05-31 14:47:41.401271 : Adding s1d2 to GeneExpressionMatrix for Chr (19 of 23)!, 3.116 mins elapsed.
+2024-05-31 14:47:43.431822 : Adding s3d6 to GeneExpressionMatrix for Chr (22 of 23)!, 3.15 mins elapsed.
+2024-05-31 14:47:43.595819 : Adding s2d5 to GeneExpressionMatrix for Chr (20 of 23)!, 3.153 mins elapsed.
+2024-05-31 14:47:43.616084 : Adding s3d3 to GeneExpressionMatrix for Chr (21 of 23)!, 3.153 mins elapsed.
+2024-05-31 14:47:44.58862 : Adding s4d8 to GeneExpressionMatrix for Chr (22 of 23)!, 3.169 mins elapsed.
+2024-05-31 14:47:44.892946 : Adding s2d1 to GeneExpressionMatrix for Chr (22 of 23)!, 3.174 mins elapsed.
+2024-05-31 14:47:45.789829 : Adding s4d9 to GeneExpressionMatrix for Chr (19 of 23)!, 3.189 mins elapsed.
+2024-05-31 14:47:46.35631 : Adding s1d1 to GeneExpressionMatrix for Chr (21 of 23)!, 3.199 mins elapsed.
+2024-05-31 14:47:46.73972 : Adding s3d10 to GeneExpressionMatrix for Chr (21 of 23)!, 3.205 mins elapsed.
+2024-05-31 14:47:47.374448 : Adding s1d3 to GeneExpressionMatrix for Chr (22 of 23)!, 3.216 mins elapsed.
+2024-05-31 14:47:48.379109 : Adding s3d7 to GeneExpressionMatrix for Chr (21 of 23)!, 3.232 mins elapsed.
+2024-05-31 14:47:49.480966 : Adding s2d4 to GeneExpressionMatrix for Chr (22 of 23)!, 3.251 mins elapsed.
+2024-05-31 14:47:49.886371 : Adding s2d5 to GeneExpressionMatrix for Chr (21 of 23)!, 3.257 mins elapsed.
+2024-05-31 14:47:50.289186 : Adding s2d1 to GeneExpressionMatrix for Chr (23 of 23)!, 3.264 mins elapsed.
+2024-05-31 14:47:50.347367 : Adding s4d1 to GeneExpressionMatrix for Chr (22 of 23)!, 3.265 mins elapsed.
+2024-05-31 14:47:50.450055 : Adding s4d8 to GeneExpressionMatrix for Chr (23 of 23)!, 3.267 mins elapsed.
+2024-05-31 14:47:50.536074 : Adding s1d2 to GeneExpressionMatrix for Chr (20 of 23)!, 3.268 mins elapsed.
+2024-05-31 14:47:51.403224 : Adding s3d3 to GeneExpressionMatrix for Chr (22 of 23)!, 3.283 mins elapsed.
+2024-05-31 14:47:51.459757 : Adding s4d9 to GeneExpressionMatrix for Chr (20 of 23)!, 3.284 mins elapsed.
+2024-05-31 14:47:52.633028 : Adding s3d6 to GeneExpressionMatrix for Chr (23 of 23)!, 3.303 mins elapsed.
+2024-05-31 14:47:54.062254 : Adding s1d3 to GeneExpressionMatrix for Chr (23 of 23)!, 3.327 mins elapsed.
+2024-05-31 14:47:54.708872 : Adding s1d1 to GeneExpressionMatrix for Chr (22 of 23)!, 3.338 mins elapsed.
+2024-05-31 14:47:55.762866 : Adding s2d4 to GeneExpressionMatrix for Chr (23 of 23)!, 3.355 mins elapsed.
+2024-05-31 14:47:56.309784 : Adding s3d10 to GeneExpressionMatrix for Chr (22 of 23)!, 3.365 mins elapsed.
+2024-05-31 14:47:57.760196 : Adding s3d3 to GeneExpressionMatrix for Chr (23 of 23)!, 3.389 mins elapsed.
+2024-05-31 14:47:58.258435 : Adding s4d9 to GeneExpressionMatrix for Chr (21 of 23)!, 3.397 mins elapsed.
+2024-05-31 14:47:58.915304 : Adding s2d5 to GeneExpressionMatrix for Chr (22 of 23)!, 3.408 mins elapsed.
+2024-05-31 14:47:59.265847 : Adding s1d2 to GeneExpressionMatrix for Chr (21 of 23)!, 3.414 mins elapsed.
+2024-05-31 14:47:59.826114 : Adding s4d1 to GeneExpressionMatrix for Chr (23 of 23)!, 3.423 mins elapsed.
+2024-05-31 14:48:00.644305 : Adding s1d1 to GeneExpressionMatrix for Chr (23 of 23)!, 3.437 mins elapsed.
+2024-05-31 14:48:00.789089 : Adding s3d7 to GeneExpressionMatrix for Chr (22 of 23)!, 3.439 mins elapsed.
+2024-05-31 14:48:03.830038 : Adding s3d10 to GeneExpressionMatrix for Chr (23 of 23)!, 3.49 mins elapsed.
+2024-05-31 14:48:05.313731 : Adding s2d5 to GeneExpressionMatrix for Chr (23 of 23)!, 3.515 mins elapsed.
+2024-05-31 14:48:06.022626 : Adding s4d9 to GeneExpressionMatrix for Chr (22 of 23)!, 3.526 mins elapsed.
+2024-05-31 14:48:07.390984 : Adding s3d7 to GeneExpressionMatrix for Chr (23 of 23)!, 3.549 mins elapsed.
+2024-05-31 14:48:10.901417 : Adding s1d2 to GeneExpressionMatrix for Chr (22 of 23)!, 3.608 mins elapsed.
+2024-05-31 14:48:11.020513 : Adding s4d9 to GeneExpressionMatrix for Chr (23 of 23)!, 3.61 mins elapsed.
+2024-05-31 14:48:18.008368 : Adding s1d2 to GeneExpressionMatrix for Chr (23 of 23)!, 3.726 mins elapsed.
+
+------- Completed
+
+End Time : 2024-05-31 14:48:28.428146
+Elapsed Time Minutes = 4.06848955551783
+Elapsed Time Hours = 0.0678084865543577
+
+-------
+
+
+

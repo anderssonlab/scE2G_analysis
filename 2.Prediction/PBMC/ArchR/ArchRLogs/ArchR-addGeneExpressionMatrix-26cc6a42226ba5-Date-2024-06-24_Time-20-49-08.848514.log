@@ -1,0 +1,298 @@
+
+           ___      .______        ______  __    __  .______      
+          /   \     |   _  \      /      ||  |  |  | |   _  \     
+         /  ^  \    |  |_)  |    |  ,----'|  |__|  | |  |_)  |    
+        /  /_\  \   |      /     |  |     |   __   | |      /     
+       /  _____  \  |  |\  \\___ |  `----.|  |  |  | |  |\  \\___.
+      /__/     \__\ | _| `._____| \______||__|  |__| | _| `._____|
+    
+Logging With ArchR!
+
+Start Time : 2024-06-24 20:49:08.956336
+
+------- ArchR Info
+
+ArchRThreads = 16
+ArchRGenome = Hg38
+
+------- System Info
+
+Computer OS = unix
+Total Cores = 192
+
+------- Session Info
+
+R version 4.3.3 (2024-02-29)
+Platform: x86_64-conda-linux-gnu (64-bit)
+Running under: Red Hat Enterprise Linux 8.9 (Ootpa)
+
+Matrix products: default
+BLAS/LAPACK: /maps/projects/ralab/people/lpm537/software/anaconda3/envs/Notebook_E2G_240505/lib/libopenblasp-r0.3.27.so;  LAPACK version 3.12.0
+
+Random number generation:
+ RNG:     L'Ecuyer-CMRG 
+ Normal:  Inversion 
+ Sample:  Rejection 
+ 
+locale:
+ [1] LC_CTYPE=en_US.UTF-8       LC_NUMERIC=C              
+ [3] LC_TIME=en_US.UTF-8        LC_COLLATE=en_US.UTF-8    
+ [5] LC_MONETARY=en_US.UTF-8    LC_MESSAGES=en_US.UTF-8   
+ [7] LC_PAPER=en_US.UTF-8       LC_NAME=C                 
+ [9] LC_ADDRESS=C               LC_TELEPHONE=C            
+[11] LC_MEASUREMENT=en_US.UTF-8 LC_IDENTIFICATION=C       
+
+time zone: Europe/Copenhagen
+tzcode source: system (glibc)
+
+attached base packages:
+ [1] parallel  stats4    grid      stats     graphics  grDevices utils    
+ [8] datasets  methods   base     
+
+other attached packages:
+ [1] uwot_0.1.16                       nabor_0.5.0                      
+ [3] BSgenome.Hsapiens.UCSC.hg38_1.4.5 BSgenome_1.68.0                  
+ [5] rtracklayer_1.60.1                Biostrings_2.70.1                
+ [7] XVector_0.42.0                    genomation_1.34.0                
+ [9] Signac_1.13.0                     Seurat_5.0.3                     
+[11] SeuratObject_5.0.1                sp_2.1-4                         
+[13] rhdf5_2.44.0                      SummarizedExperiment_1.30.2      
+[15] Biobase_2.60.0                    MatrixGenerics_1.12.3            
+[17] Rcpp_1.0.12                       Matrix_1.6-5                     
+[19] GenomicRanges_1.54.1              GenomeInfoDb_1.38.1              
+[21] IRanges_2.36.0                    S4Vectors_0.40.2                 
+[23] BiocGenerics_0.48.1               matrixStats_1.3.0                
+[25] data.table_1.15.2                 stringr_1.5.1                    
+[27] plyr_1.8.9                        magrittr_2.0.3                   
+[29] ggplot2_3.5.1                     gtable_0.3.5                     
+[31] gtools_3.9.5                      gridExtra_2.3                    
+[33] ArchR_1.0.2                      
+
+loaded via a namespace (and not attached):
+  [1] RcppAnnoy_0.0.22         splines_4.3.3            later_1.3.2             
+  [4] pbdZMQ_0.3-11            BiocIO_1.10.0            bitops_1.0-7            
+  [7] tibble_3.2.1             polyclip_1.10-6          XML_3.99-0.16.1         
+ [10] fastDummies_1.7.3        lifecycle_1.0.4          globals_0.16.3          
+ [13] lattice_0.22-6           MASS_7.3-60              plotly_4.10.4           
+ [16] plotrix_3.8-4            yaml_2.3.8               httpuv_1.6.15           
+ [19] sctransform_0.4.1        spam_2.10-0              spatstat.sparse_3.0-3   
+ [22] reticulate_1.36.1        cowplot_1.1.3            pbapply_1.7-2           
+ [25] RColorBrewer_1.1-3       abind_1.4-5              zlibbioc_1.48.0         
+ [28] Rtsne_0.17               purrr_1.0.2              RCurl_1.98-1.14         
+ [31] GenomeInfoDbData_1.2.11  ggrepel_0.9.5            irlba_2.3.5.1           
+ [34] listenv_0.9.1            spatstat.utils_3.0-4     goftest_1.2-3           
+ [37] RSpectra_0.16-1          spatstat.random_3.2-3    fitdistrplus_1.1-11     
+ [40] parallelly_1.37.1        leiden_0.4.3.1           codetools_0.2-20        
+ [43] DelayedArray_0.26.7      RcppRoll_0.3.0           tidyselect_1.2.1        
+ [46] farver_2.1.1             base64enc_0.1-3          spatstat.explore_3.2-6  
+ [49] GenomicAlignments_1.36.0 jsonlite_1.8.8           progressr_0.14.0        
+ [52] ggridges_0.5.6           survival_3.6-4           tools_4.3.3             
+ [55] ica_1.0-3                glue_1.7.0               IRdisplay_1.1           
+ [58] dplyr_1.1.4              withr_3.0.0              fastmap_1.1.1           
+ [61] rhdf5filters_1.12.1      fansi_1.0.6              digest_0.6.35           
+ [64] R6_2.5.1                 mime_0.12                seqPattern_1.34.0       
+ [67] colorspace_2.1-0         Cairo_1.6-2              scattermore_1.2         
+ [70] tensor_1.5               spatstat.data_3.0-4      utf8_1.2.4              
+ [73] tidyr_1.3.1              generics_0.1.3           httr_1.4.7              
+ [76] htmlwidgets_1.6.4        S4Arrays_1.2.1           pkgconfig_2.0.3         
+ [79] impute_1.76.0            lmtest_0.9-40            htmltools_0.5.8.1       
+ [82] dotCall64_1.1-1          scales_1.3.0             png_0.1-8               
+ [85] tzdb_0.4.0               reshape2_1.4.4           rjson_0.2.21            
+ [88] uuid_1.2-0               nlme_3.1-164             repr_1.1.7              
+ [91] zoo_1.8-12               KernSmooth_2.23-22       miniUI_0.1.1.1          
+ [94] restfulr_0.0.15          pillar_1.9.0             vctrs_0.6.5             
+ [97] RANN_2.6.1               promises_1.3.0           xtable_1.8-4            
+[100] cluster_2.1.6            evaluate_0.23            readr_2.1.5             
+[103] cli_3.6.2                compiler_4.3.3           Rsamtools_2.18.0        
+[106] rlang_1.1.3              crayon_1.5.2             future.apply_1.11.2     
+[109] labeling_0.4.3           stringi_1.8.3            gridBase_0.4-7          
+[112] viridisLite_0.4.2        deldir_2.0-4             BiocParallel_1.36.0     
+[115] munsell_0.5.1            lazyeval_0.2.2           spatstat.geom_3.2-9     
+[118] IRkernel_1.3.2           RcppHNSW_0.6.0           hms_1.1.3               
+[121] patchwork_1.2.0          future_1.33.2            Rhdf5lib_1.22.1         
+[124] shiny_1.8.1.1            ROCR_1.0-11              igraph_2.0.3            
+[127] fastmatch_1.1-4         
+
+
+------- Log Info
+
+
+2024-06-24 20:49:09.199556 : addGeneExpressionMatrix Input-Parameters, Class = list
+
+addGeneExpressionMatrix Input-Parameters$input: length = 1
+
+addGeneExpressionMatrix Input-Parameters$seRNA: length = 61202
+class: RangedSummarizedExperiment 
+dim: 6 18145 
+metadata(0):
+assays(1): counts
+rownames(6): DDX11L1 MIR6859-1 ... MIR1302-2 FAM138A
+rowData names(5): feature_type genome id interval name
+colnames(18145): Multiome10x_05#GCTGTACCAATCATGT-1
+  Multiome10x_05#TTATCCGTCTTAATGG-1 ...
+  Multiome10x_06#AATGGCGCAAACCCTA-1 Multiome10x_06#CACATAATCCTCAGTC-1
+colData names(0):
+
+
+addGeneExpressionMatrix Input-Parameters$chromSizes: length = 24
+GRanges object with 6 ranges and 0 metadata columns:
+      seqnames      ranges strand
+         <Rle>   <IRanges>  <Rle>
+  [1]     chr1 1-248956422      *
+  [2]     chr2 1-242193529      *
+  [3]     chr3 1-198295559      *
+  [4]     chr4 1-190214555      *
+  [5]     chr5 1-181538259      *
+  [6]     chr6 1-170805979      *
+  -------
+  seqinfo: 24 sequences from an unspecified genome
+
+
+addGeneExpressionMatrix Input-Parameters$excludeChr: length = 2
+[1] "chrM" "chrY"
+
+
+addGeneExpressionMatrix Input-Parameters$scaleTo: length = 1
+[1] 10000
+
+
+addGeneExpressionMatrix Input-Parameters$verbose: length = 1
+[1] TRUE
+
+
+addGeneExpressionMatrix Input-Parameters$threads: length = 1
+[1] 16
+
+
+addGeneExpressionMatrix Input-Parameters$parallelParam: length = 0
+NULL
+
+
+addGeneExpressionMatrix Input-Parameters$strictMatch: length = 1
+[1] TRUE
+
+
+addGeneExpressionMatrix Input-Parameters$force: length = 1
+[1] TRUE
+
+
+addGeneExpressionMatrix Input-Parameters$logFile: length = 1
+[1] "ArchRLogs/ArchR-addGeneExpressionMatrix-26cc6a42226ba5-Date-2024-06-24_Time-20-49-08.848514.log"
+
+
+
+2024-06-24 20:49:09.651654 : 
+
+2024-06-24 20:49:09.690893 : 
+
+2024-06-24 20:49:13.59868 : qcInfo, Class = DFrame
+DataFrame with 18145 rows and 4 columns
+                                   Gex_nUMI Gex_nGenes Gex_MitoRatio
+                                  <numeric>  <numeric>     <numeric>
+Multiome10x_05#GCTGTACCAATCATGT-1      8779       3816    0.00444242
+Multiome10x_05#TTATCCGTCTTAATGG-1      7553       3393    0.00383953
+Multiome10x_05#CGCTAATAGCTGAGGG-1      3034       1850    0.00164799
+Multiome10x_05#TCAAGGAAGTAGAGGC-1      6390       3015    0.00328638
+Multiome10x_05#GTTTGTCGTTTGCAGA-1      6720       3191    0.00372024
+...                                     ...        ...           ...
+Multiome10x_06#GGGATAATCAGCTAAC-1      1438        954    0.00347705
+Multiome10x_06#ACATTGCAGGAGTAAT-1       970        691    0.00515464
+Multiome10x_06#TGGTTCCTCCTTCAAT-1      3968       2043    0.00151210
+Multiome10x_06#AATGGCGCAAACCCTA-1      2021       1306    0.00346363
+Multiome10x_06#CACATAATCCTCAGTC-1      4645       2339    0.00129171
+                                  Gex_RiboRatio
+                                      <numeric>
+Multiome10x_05#GCTGTACCAATCATGT-1     0.1032008
+Multiome10x_05#TTATCCGTCTTAATGG-1     0.1387528
+Multiome10x_05#CGCTAATAGCTGAGGG-1     0.0530653
+Multiome10x_05#TCAAGGAAGTAGAGGC-1     0.1075117
+Multiome10x_05#GTTTGTCGTTTGCAGA-1     0.1056548
+...                                         ...
+Multiome10x_06#GGGATAATCAGCTAAC-1     0.0194715
+Multiome10x_06#ACATTGCAGGAGTAAT-1     0.1206186
+Multiome10x_06#TGGTTCCTCCTTCAAT-1     0.0740927
+Multiome10x_06#AATGGCGCAAACCCTA-1     0.0509649
+Multiome10x_06#CACATAATCCTCAGTC-1     0.0592034
+
+2024-06-24 20:49:13.612068 : Batch Execution w/ safelapply!, 0 mins elapsed.
+
+2024-06-24 20:49:14.538378 : featureDF, Class = data.frame
+featureDF: nRows = 60626, nCols = 6
+  seqnames idx start   end        name strand
+1     chr1   1 12009 12010     DDX11L1      3
+2     chr1   2 17435 17436   MIR6859-1      3
+3     chr1   3 29553 30267 MIR1302-2HG      3
+4     chr1   4 29569 29570      WASH7P      3
+5     chr1   5 30365 30366   MIR1302-2      3
+6     chr1   6 36080 36081     FAM138A      3
+
+
+
+2024-06-24 20:49:15.330371 : featureDF, Class = data.frame
+featureDF: nRows = 60626, nCols = 6
+  seqnames idx start   end        name strand
+1     chr1   1 12009 12010     DDX11L1      3
+2     chr1   2 17435 17436   MIR6859-1      3
+3     chr1   3 29553 30267 MIR1302-2HG      3
+4     chr1   4 29569 29570      WASH7P      3
+5     chr1   5 30365 30366   MIR1302-2      3
+6     chr1   6 36080 36081     FAM138A      3
+
+
+2024-06-24 20:49:17.644403 : Adding Multiome10x_05 to GeneExpressionMatrix for Chr (1 of 23)!, 0.067 mins elapsed.
+2024-06-24 20:49:17.950658 : Adding Multiome10x_06 to GeneExpressionMatrix for Chr (1 of 23)!, 0.072 mins elapsed.
+2024-06-24 20:49:27.597315 : Adding Multiome10x_06 to GeneExpressionMatrix for Chr (2 of 23)!, 0.233 mins elapsed.
+2024-06-24 20:49:29.443495 : Adding Multiome10x_05 to GeneExpressionMatrix for Chr (2 of 23)!, 0.264 mins elapsed.
+2024-06-24 20:49:34.26783 : Adding Multiome10x_06 to GeneExpressionMatrix for Chr (3 of 23)!, 0.344 mins elapsed.
+2024-06-24 20:49:38.96326 : Adding Multiome10x_05 to GeneExpressionMatrix for Chr (3 of 23)!, 0.422 mins elapsed.
+2024-06-24 20:49:43.19906 : Adding Multiome10x_06 to GeneExpressionMatrix for Chr (4 of 23)!, 0.493 mins elapsed.
+2024-06-24 20:49:47.567193 : Adding Multiome10x_05 to GeneExpressionMatrix for Chr (4 of 23)!, 0.566 mins elapsed.
+2024-06-24 20:49:51.939095 : Adding Multiome10x_06 to GeneExpressionMatrix for Chr (5 of 23)!, 0.639 mins elapsed.
+2024-06-24 20:49:56.577347 : Adding Multiome10x_05 to GeneExpressionMatrix for Chr (5 of 23)!, 0.716 mins elapsed.
+2024-06-24 20:50:04.22192 : Adding Multiome10x_06 to GeneExpressionMatrix for Chr (6 of 23)!, 0.843 mins elapsed.
+2024-06-24 20:50:09.47429 : Adding Multiome10x_05 to GeneExpressionMatrix for Chr (6 of 23)!, 0.931 mins elapsed.
+2024-06-24 20:50:20.353871 : Adding Multiome10x_06 to GeneExpressionMatrix for Chr (7 of 23)!, 1.112 mins elapsed.
+2024-06-24 20:50:26.217706 : Adding Multiome10x_05 to GeneExpressionMatrix for Chr (7 of 23)!, 1.21 mins elapsed.
+2024-06-24 20:50:31.724161 : Adding Multiome10x_06 to GeneExpressionMatrix for Chr (8 of 23)!, 1.302 mins elapsed.
+2024-06-24 20:50:36.372294 : Adding Multiome10x_05 to GeneExpressionMatrix for Chr (8 of 23)!, 1.379 mins elapsed.
+2024-06-24 20:50:40.1612 : Adding Multiome10x_06 to GeneExpressionMatrix for Chr (9 of 23)!, 1.442 mins elapsed.
+2024-06-24 20:50:43.782951 : Adding Multiome10x_05 to GeneExpressionMatrix for Chr (9 of 23)!, 1.503 mins elapsed.
+2024-06-24 20:50:49.024417 : Adding Multiome10x_06 to GeneExpressionMatrix for Chr (10 of 23)!, 1.59 mins elapsed.
+2024-06-24 20:50:51.690462 : Adding Multiome10x_05 to GeneExpressionMatrix for Chr (10 of 23)!, 1.635 mins elapsed.
+2024-06-24 20:50:53.45665 : Adding Multiome10x_06 to GeneExpressionMatrix for Chr (11 of 23)!, 1.664 mins elapsed.
+2024-06-24 20:50:57.746741 : Adding Multiome10x_05 to GeneExpressionMatrix for Chr (11 of 23)!, 1.736 mins elapsed.
+2024-06-24 20:51:01.245569 : Adding Multiome10x_06 to GeneExpressionMatrix for Chr (12 of 23)!, 1.794 mins elapsed.
+2024-06-24 20:51:04.590669 : Adding Multiome10x_05 to GeneExpressionMatrix for Chr (12 of 23)!, 1.85 mins elapsed.
+2024-06-24 20:51:11.358784 : Adding Multiome10x_06 to GeneExpressionMatrix for Chr (13 of 23)!, 1.962 mins elapsed.
+2024-06-24 20:51:16.748122 : Adding Multiome10x_06 to GeneExpressionMatrix for Chr (14 of 23)!, 2.052 mins elapsed.
+2024-06-24 20:51:18.832247 : Adding Multiome10x_05 to GeneExpressionMatrix for Chr (13 of 23)!, 2.087 mins elapsed.
+2024-06-24 20:51:22.840852 : Adding Multiome10x_06 to GeneExpressionMatrix for Chr (15 of 23)!, 2.154 mins elapsed.
+2024-06-24 20:51:28.905426 : Adding Multiome10x_05 to GeneExpressionMatrix for Chr (14 of 23)!, 2.255 mins elapsed.
+2024-06-24 20:51:32.177937 : Adding Multiome10x_06 to GeneExpressionMatrix for Chr (16 of 23)!, 2.309 mins elapsed.
+2024-06-24 20:51:38.317481 : Adding Multiome10x_05 to GeneExpressionMatrix for Chr (15 of 23)!, 2.412 mins elapsed.
+2024-06-24 20:51:40.736196 : Adding Multiome10x_06 to GeneExpressionMatrix for Chr (17 of 23)!, 2.452 mins elapsed.
+2024-06-24 20:51:47.809619 : Adding Multiome10x_06 to GeneExpressionMatrix for Chr (18 of 23)!, 2.57 mins elapsed.
+2024-06-24 20:51:54.938125 : Adding Multiome10x_05 to GeneExpressionMatrix for Chr (16 of 23)!, 2.689 mins elapsed.
+2024-06-24 20:51:56.904866 : Adding Multiome10x_06 to GeneExpressionMatrix for Chr (19 of 23)!, 2.722 mins elapsed.
+2024-06-24 20:52:02.645028 : Adding Multiome10x_06 to GeneExpressionMatrix for Chr (20 of 23)!, 2.817 mins elapsed.
+2024-06-24 20:52:05.551928 : Adding Multiome10x_05 to GeneExpressionMatrix for Chr (17 of 23)!, 2.866 mins elapsed.
+2024-06-24 20:52:09.205272 : Adding Multiome10x_06 to GeneExpressionMatrix for Chr (21 of 23)!, 2.927 mins elapsed.
+2024-06-24 20:52:16.182518 : Adding Multiome10x_05 to GeneExpressionMatrix for Chr (18 of 23)!, 3.043 mins elapsed.
+2024-06-24 20:52:19.019104 : Adding Multiome10x_06 to GeneExpressionMatrix for Chr (22 of 23)!, 3.09 mins elapsed.
+2024-06-24 20:52:24.345563 : Adding Multiome10x_06 to GeneExpressionMatrix for Chr (23 of 23)!, 3.179 mins elapsed.
+2024-06-24 20:52:27.999079 : Adding Multiome10x_05 to GeneExpressionMatrix for Chr (19 of 23)!, 3.24 mins elapsed.
+2024-06-24 20:52:37.685164 : Adding Multiome10x_05 to GeneExpressionMatrix for Chr (20 of 23)!, 3.401 mins elapsed.
+2024-06-24 20:52:46.314658 : Adding Multiome10x_05 to GeneExpressionMatrix for Chr (21 of 23)!, 3.545 mins elapsed.
+2024-06-24 20:52:55.550357 : Adding Multiome10x_05 to GeneExpressionMatrix for Chr (22 of 23)!, 3.699 mins elapsed.
+2024-06-24 20:53:04.808437 : Adding Multiome10x_05 to GeneExpressionMatrix for Chr (23 of 23)!, 3.853 mins elapsed.
+
+------- Completed
+
+End Time : 2024-06-24 20:53:17.474945
+Elapsed Time Minutes = 4.14191069602966
+Elapsed Time Hours = 0.0690319788455963
+
+-------
+
+
+

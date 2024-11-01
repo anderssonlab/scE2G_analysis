@@ -1,0 +1,604 @@
+
+           ___      .______        ______  __    __  .______      
+          /   \     |   _  \      /      ||  |  |  | |   _  \     
+         /  ^  \    |  |_)  |    |  ,----'|  |__|  | |  |_)  |    
+        /  /_\  \   |      /     |  |     |   __   | |      /     
+       /  _____  \  |  |\  \\___ |  `----.|  |  |  | |  |\  \\___.
+      /__/     \__\ | _| `._____| \______||__|  |__| | _| `._____|
+    
+Logging With ArchR!
+
+Start Time : 2024-05-29 16:57:21.973671
+
+------- ArchR Info
+
+ArchRThreads = 16
+ArchRGenome = Hg38
+
+------- System Info
+
+Computer OS = unix
+Total Cores = 192
+
+------- Session Info
+
+R version 4.3.3 (2024-02-29)
+Platform: x86_64-conda-linux-gnu (64-bit)
+Running under: Red Hat Enterprise Linux 8.9 (Ootpa)
+
+Matrix products: default
+BLAS/LAPACK: /maps/projects/ralab/people/lpm537/software/anaconda3/envs/Notebook_E2G_240505/lib/libopenblasp-r0.3.27.so;  LAPACK version 3.12.0
+
+Random number generation:
+ RNG:     L'Ecuyer-CMRG 
+ Normal:  Inversion 
+ Sample:  Rejection 
+ 
+locale:
+ [1] LC_CTYPE=en_US.UTF-8       LC_NUMERIC=C              
+ [3] LC_TIME=en_US.UTF-8        LC_COLLATE=en_US.UTF-8    
+ [5] LC_MONETARY=en_US.UTF-8    LC_MESSAGES=en_US.UTF-8   
+ [7] LC_PAPER=en_US.UTF-8       LC_NAME=C                 
+ [9] LC_ADDRESS=C               LC_TELEPHONE=C            
+[11] LC_MEASUREMENT=en_US.UTF-8 LC_IDENTIFICATION=C       
+
+time zone: Europe/Copenhagen
+tzcode source: system (glibc)
+
+attached base packages:
+ [1] parallel  stats4    grid      stats     graphics  grDevices utils    
+ [8] datasets  methods   base     
+
+other attached packages:
+ [1] uwot_0.1.16                       nabor_0.5.0                      
+ [3] BSgenome.Hsapiens.UCSC.hg38_1.4.5 BSgenome_1.68.0                  
+ [5] rtracklayer_1.60.1                Biostrings_2.70.1                
+ [7] XVector_0.42.0                    genomation_1.34.0                
+ [9] Signac_1.13.0                     Seurat_5.0.3                     
+[11] SeuratObject_5.0.1                sp_2.1-4                         
+[13] rhdf5_2.44.0                      SummarizedExperiment_1.30.2      
+[15] Biobase_2.60.0                    MatrixGenerics_1.12.3            
+[17] Rcpp_1.0.12                       Matrix_1.6-5                     
+[19] GenomicRanges_1.54.1              GenomeInfoDb_1.38.1              
+[21] IRanges_2.36.0                    S4Vectors_0.40.2                 
+[23] BiocGenerics_0.48.1               matrixStats_1.3.0                
+[25] data.table_1.15.2                 stringr_1.5.1                    
+[27] plyr_1.8.9                        magrittr_2.0.3                   
+[29] ggplot2_3.5.1                     gtable_0.3.5                     
+[31] gtools_3.9.5                      gridExtra_2.3                    
+[33] ArchR_1.0.2                      
+
+loaded via a namespace (and not attached):
+  [1] RcppAnnoy_0.0.22         splines_4.3.3            later_1.3.2             
+  [4] pbdZMQ_0.3-11            BiocIO_1.10.0            bitops_1.0-7            
+  [7] tibble_3.2.1             polyclip_1.10-6          XML_3.99-0.16.1         
+ [10] fastDummies_1.7.3        lifecycle_1.0.4          globals_0.16.3          
+ [13] lattice_0.22-6           MASS_7.3-60              plotly_4.10.4           
+ [16] plotrix_3.8-4            yaml_2.3.8               httpuv_1.6.15           
+ [19] sctransform_0.4.1        spam_2.10-0              spatstat.sparse_3.0-3   
+ [22] reticulate_1.36.1        cowplot_1.1.3            pbapply_1.7-2           
+ [25] RColorBrewer_1.1-3       abind_1.4-5              zlibbioc_1.48.0         
+ [28] Rtsne_0.17               purrr_1.0.2              RCurl_1.98-1.14         
+ [31] GenomeInfoDbData_1.2.11  ggrepel_0.9.5            irlba_2.3.5.1           
+ [34] listenv_0.9.1            spatstat.utils_3.0-4     goftest_1.2-3           
+ [37] RSpectra_0.16-1          spatstat.random_3.2-3    fitdistrplus_1.1-11     
+ [40] parallelly_1.37.1        leiden_0.4.3.1           codetools_0.2-20        
+ [43] DelayedArray_0.26.7      RcppRoll_0.3.0           tidyselect_1.2.1        
+ [46] farver_2.1.1             base64enc_0.1-3          spatstat.explore_3.2-6  
+ [49] GenomicAlignments_1.36.0 jsonlite_1.8.8           progressr_0.14.0        
+ [52] ggridges_0.5.6           survival_3.6-4           tools_4.3.3             
+ [55] ica_1.0-3                glue_1.7.0               IRdisplay_1.1           
+ [58] dplyr_1.1.4              withr_3.0.0              fastmap_1.1.1           
+ [61] rhdf5filters_1.12.1      fansi_1.0.6              digest_0.6.35           
+ [64] R6_2.5.1                 mime_0.12                seqPattern_1.34.0       
+ [67] colorspace_2.1-0         Cairo_1.6-2              scattermore_1.2         
+ [70] tensor_1.5               spatstat.data_3.0-4      utf8_1.2.4              
+ [73] tidyr_1.3.1              generics_0.1.3           httr_1.4.7              
+ [76] htmlwidgets_1.6.4        S4Arrays_1.2.1           pkgconfig_2.0.3         
+ [79] impute_1.76.0            lmtest_0.9-40            htmltools_0.5.8.1       
+ [82] dotCall64_1.1-1          scales_1.3.0             png_0.1-8               
+ [85] tzdb_0.4.0               reshape2_1.4.4           rjson_0.2.21            
+ [88] uuid_1.2-0               nlme_3.1-164             repr_1.1.7              
+ [91] zoo_1.8-12               KernSmooth_2.23-22       miniUI_0.1.1.1          
+ [94] restfulr_0.0.15          pillar_1.9.0             vctrs_0.6.5             
+ [97] RANN_2.6.1               promises_1.3.0           xtable_1.8-4            
+[100] cluster_2.1.6            evaluate_0.23            readr_2.1.5             
+[103] cli_3.6.2                compiler_4.3.3           Rsamtools_2.18.0        
+[106] rlang_1.1.3              crayon_1.5.2             future.apply_1.11.2     
+[109] labeling_0.4.3           stringi_1.8.3            gridBase_0.4-7          
+[112] viridisLite_0.4.2        deldir_2.0-4             BiocParallel_1.36.0     
+[115] munsell_0.5.1            lazyeval_0.2.2           spatstat.geom_3.2-9     
+[118] IRkernel_1.3.2           RcppHNSW_0.6.0           hms_1.1.3               
+[121] patchwork_1.2.0          future_1.33.2            Rhdf5lib_1.22.1         
+[124] shiny_1.8.1.1            ROCR_1.0-11              igraph_2.0.3            
+[127] fastmatch_1.1-4         
+
+
+------- Log Info
+
+
+2024-05-29 16:57:22.259635 : peakSet, Class = GRanges
+GRanges object with 303482 ranges and 3 metadata columns:
+           seqnames              ranges strand |       idx        GC         N
+              <Rle>           <IRanges>  <Rle> | <integer> <numeric> <numeric>
+       [1]     chr1         10010-10512      * |         1    0.5447         0
+       [2]     chr1       115495-115916      * |         2    0.4028         0
+       [3]     chr1       180477-181904      * |         3    0.6471         0
+       [4]     chr1       191243-191960      * |         4    0.5850         0
+       [5]     chr1       267886-268118      * |         5    0.5236         0
+       ...      ...                 ...    ... .       ...       ...       ...
+  [303478]     chrX 156008487-156008683      * |      9095    0.5736         0
+  [303479]     chrX 156008873-156009316      * |      9096    0.4369         0
+  [303480]     chrX 156019835-156020122      * |      9097    0.6319         0
+  [303481]     chrX 156029840-156030373      * |      9098    0.5693         0
+  [303482]     chrX 156030498-156030725      * |      9099    0.5044         0
+  -------
+  seqinfo: 23 sequences from an unspecified genome; no seqlengths
+
+2024-05-29 16:57:22.289923 : Batch Execution w/ safelapply!, 0 mins elapsed.
+
+2024-05-29 16:57:22.893239 : featureDF, Class = data.frame
+featureDF: nRows = 303482, nCols = 4
+  seqnames idx  start    end
+1     chr1   1  10010  10512
+2     chr1   2 115495 115916
+3     chr1   3 180477 181904
+4     chr1   4 191243 191960
+5     chr1   5 267886 268118
+6     chr1   6 271197 271546
+
+
+
+2024-05-29 16:57:23.227741 : featureDF, Class = data.frame
+featureDF: nRows = 303482, nCols = 4
+  seqnames idx  start    end
+1     chr1   1  10010  10512
+2     chr1   2 115495 115916
+3     chr1   3 180477 181904
+4     chr1   4 191243 191960
+5     chr1   5 267886 268118
+6     chr1   6 271197 271546
+
+
+
+2024-05-29 16:57:23.631924 : featureDF, Class = data.frame
+featureDF: nRows = 303482, nCols = 4
+  seqnames idx  start    end
+1     chr1   1  10010  10512
+2     chr1   2 115495 115916
+3     chr1   3 180477 181904
+4     chr1   4 191243 191960
+5     chr1   5 267886 268118
+6     chr1   6 271197 271546
+
+
+
+2024-05-29 16:57:23.868513 : featureDF, Class = data.frame
+featureDF: nRows = 303482, nCols = 4
+  seqnames idx  start    end
+1     chr1   1  10010  10512
+2     chr1   2 115495 115916
+3     chr1   3 180477 181904
+4     chr1   4 191243 191960
+5     chr1   5 267886 268118
+6     chr1   6 271197 271546
+
+
+
+2024-05-29 16:57:24.167893 : featureDF, Class = data.frame
+featureDF: nRows = 303482, nCols = 4
+2024-05-29 16:57:24.171127 : Adding s3d10 to PeakMatrix for Chr (1 of 23)!, 0.023 mins elapsed.
+  seqnames idx  start    end
+1     chr1   1  10010  10512
+2     chr1   2 115495 115916
+3     chr1   3 180477 181904
+4     chr1   4 191243 191960
+5     chr1   5 267886 268118
+6     chr1   6 271197 271546
+
+
+2024-05-29 16:57:24.564276 : Adding s4d8 to PeakMatrix for Chr (1 of 23)!, 0.024 mins elapsed.
+
+2024-05-29 16:57:24.65474 : featureDF, Class = data.frame
+featureDF: nRows = 303482, nCols = 4
+  seqnames idx  start    end
+1     chr1   1  10010  10512
+2     chr1   2 115495 115916
+3     chr1   3 180477 181904
+4     chr1   4 191243 191960
+5     chr1   5 267886 268118
+6     chr1   6 271197 271546
+
+
+
+2024-05-29 16:57:24.896816 : featureDF, Class = data.frame
+featureDF: nRows = 303482, nCols = 4
+  seqnames idx  start    end
+1     chr1   1  10010  10512
+2     chr1   2 115495 115916
+3     chr1   3 180477 181904
+4     chr1   4 191243 191960
+5     chr1   5 267886 268118
+6     chr1   6 271197 271546
+
+
+2024-05-29 16:57:25.138529 : Adding s4d1 to PeakMatrix for Chr (1 of 23)!, 0.026 mins elapsed.
+2024-05-29 16:57:25.208063 : Adding s3d3 to PeakMatrix for Chr (1 of 23)!, 0.023 mins elapsed.
+
+2024-05-29 16:57:25.221574 : featureDF, Class = data.frame
+featureDF: nRows = 303482, nCols = 4
+  seqnames idx  start    end
+1     chr1   1  10010  10512
+2     chr1   2 115495 115916
+3     chr1   3 180477 181904
+4     chr1   4 191243 191960
+5     chr1   5 267886 268118
+6     chr1   6 271197 271546
+
+
+
+2024-05-29 16:57:25.423916 : featureDF, Class = data.frame
+featureDF: nRows = 303482, nCols = 4
+  seqnames idx  start    end
+1     chr1   1  10010  10512
+2     chr1   2 115495 115916
+3     chr1   3 180477 181904
+4     chr1   4 191243 191960
+5     chr1   5 267886 268118
+6     chr1   6 271197 271546
+
+
+2024-05-29 16:57:25.531624 : Adding s1d2 to PeakMatrix for Chr (1 of 23)!, 0.024 mins elapsed.
+
+2024-05-29 16:57:25.780831 : featureDF, Class = data.frame
+featureDF: nRows = 303482, nCols = 4
+  seqnames idx  start    end
+1     chr1   1  10010  10512
+2     chr1   2 115495 115916
+3     chr1   3 180477 181904
+4     chr1   4 191243 191960
+5     chr1   5 267886 268118
+6     chr1   6 271197 271546
+
+
+
+2024-05-29 16:57:26.07469 : featureDF, Class = data.frame
+featureDF: nRows = 303482, nCols = 4
+  seqnames idx  start    end
+1     chr1   1  10010  10512
+2     chr1   2 115495 115916
+3     chr1   3 180477 181904
+4     chr1   4 191243 191960
+5     chr1   5 267886 268118
+6     chr1   6 271197 271546
+
+
+2024-05-29 16:57:26.098173 : Adding s1d1 to PeakMatrix for Chr (1 of 23)!, 0.026 mins elapsed.
+
+2024-05-29 16:57:26.301924 : featureDF, Class = data.frame
+featureDF: nRows = 303482, nCols = 4
+  seqnames idx  start    end
+1     chr1   1  10010  10512
+2     chr1   2 115495 115916
+3     chr1   3 180477 181904
+4     chr1   4 191243 191960
+5     chr1   5 267886 268118
+6     chr1   6 271197 271546
+
+
+2024-05-29 16:57:26.454601 : Adding s1d3 to PeakMatrix for Chr (1 of 23)!, 0.027 mins elapsed.
+
+2024-05-29 16:57:26.665015 : featureDF, Class = data.frame
+featureDF: nRows = 303482, nCols = 4
+  seqnames idx  start    end
+1     chr1   1  10010  10512
+2     chr1   2 115495 115916
+3     chr1   3 180477 181904
+4     chr1   4 191243 191960
+5     chr1   5 267886 268118
+6     chr1   6 271197 271546
+
+
+2024-05-29 16:57:26.807437 : Adding s3d7 to PeakMatrix for Chr (1 of 23)!, 0.027 mins elapsed.
+2024-05-29 16:57:26.937007 : Adding s2d1 to PeakMatrix for Chr (1 of 23)!, 0.026 mins elapsed.
+2024-05-29 16:57:27.299991 : Adding s2d5 to PeakMatrix for Chr (1 of 23)!, 0.026 mins elapsed.
+2024-05-29 16:57:27.531301 : Adding s4d9 to PeakMatrix for Chr (1 of 23)!, 0.022 mins elapsed.
+2024-05-29 16:57:27.532683 : Adding s2d4 to PeakMatrix for Chr (1 of 23)!, 0.025 mins elapsed.
+2024-05-29 16:57:28.190598 : Adding s3d6 to PeakMatrix for Chr (1 of 23)!, 0.027 mins elapsed.
+2024-05-29 16:57:35.523563 : Adding s2d1 to PeakMatrix for Chr (2 of 23)!, 0.169 mins elapsed.
+2024-05-29 16:57:36.110143 : Adding s3d7 to PeakMatrix for Chr (2 of 23)!, 0.183 mins elapsed.
+2024-05-29 16:57:36.328443 : Adding s4d9 to PeakMatrix for Chr (2 of 23)!, 0.168 mins elapsed.
+2024-05-29 16:57:36.54741 : Adding s2d4 to PeakMatrix for Chr (2 of 23)!, 0.176 mins elapsed.
+2024-05-29 16:57:37.11927 : Adding s2d5 to PeakMatrix for Chr (2 of 23)!, 0.19 mins elapsed.
+2024-05-29 16:57:37.23433 : Adding s3d6 to PeakMatrix for Chr (2 of 23)!, 0.177 mins elapsed.
+2024-05-29 16:57:38.082332 : Adding s1d2 to PeakMatrix for Chr (2 of 23)!, 0.233 mins elapsed.
+2024-05-29 16:57:38.202721 : Adding s3d3 to PeakMatrix for Chr (2 of 23)!, 0.24 mins elapsed.
+2024-05-29 16:57:38.374743 : Adding s1d3 to PeakMatrix for Chr (2 of 23)!, 0.226 mins elapsed.
+2024-05-29 16:57:38.464053 : Adding s4d1 to PeakMatrix for Chr (2 of 23)!, 0.249 mins elapsed.
+2024-05-29 16:57:38.541332 : Adding s3d10 to PeakMatrix for Chr (2 of 23)!, 0.262 mins elapsed.
+2024-05-29 16:57:38.860129 : Adding s1d1 to PeakMatrix for Chr (2 of 23)!, 0.238 mins elapsed.
+2024-05-29 16:57:39.11989 : Adding s4d8 to PeakMatrix for Chr (2 of 23)!, 0.266 mins elapsed.
+2024-05-29 16:57:41.22355 : Adding s2d1 to PeakMatrix for Chr (3 of 23)!, 0.264 mins elapsed.
+2024-05-29 16:57:41.790837 : Adding s2d4 to PeakMatrix for Chr (3 of 23)!, 0.263 mins elapsed.
+2024-05-29 16:57:41.805307 : Adding s3d6 to PeakMatrix for Chr (3 of 23)!, 0.254 mins elapsed.
+2024-05-29 16:57:41.944156 : Adding s4d9 to PeakMatrix for Chr (3 of 23)!, 0.262 mins elapsed.
+2024-05-29 16:57:42.125085 : Adding s3d7 to PeakMatrix for Chr (3 of 23)!, 0.283 mins elapsed.
+2024-05-29 16:57:42.78237 : Adding s2d5 to PeakMatrix for Chr (3 of 23)!, 0.285 mins elapsed.
+2024-05-29 16:57:44.646883 : Adding s1d2 to PeakMatrix for Chr (3 of 23)!, 0.343 mins elapsed.
+2024-05-29 16:57:45.098946 : Adding s1d3 to PeakMatrix for Chr (3 of 23)!, 0.338 mins elapsed.
+2024-05-29 16:57:45.41664 : Adding s3d3 to PeakMatrix for Chr (3 of 23)!, 0.36 mins elapsed.
+2024-05-29 16:57:45.689436 : Adding s1d1 to PeakMatrix for Chr (3 of 23)!, 0.352 mins elapsed.
+2024-05-29 16:57:45.835897 : Adding s3d6 to PeakMatrix for Chr (4 of 23)!, 0.319 mins elapsed.
+2024-05-29 16:57:45.836058 : Adding s4d1 to PeakMatrix for Chr (3 of 23)!, 0.369 mins elapsed.
+2024-05-29 16:57:46.218729 : Adding s2d1 to PeakMatrix for Chr (4 of 23)!, 0.348 mins elapsed.
+2024-05-29 16:57:46.628108 : Adding s2d4 to PeakMatrix for Chr (4 of 23)!, 0.344 mins elapsed.
+2024-05-29 16:57:46.722926 : Adding s4d9 to PeakMatrix for Chr (4 of 23)!, 0.342 mins elapsed.
+2024-05-29 16:57:47.123592 : Adding s3d7 to PeakMatrix for Chr (4 of 23)!, 0.366 mins elapsed.
+2024-05-29 16:57:47.308504 : Adding s4d8 to PeakMatrix for Chr (3 of 23)!, 0.403 mins elapsed.
+2024-05-29 16:57:47.849297 : Adding s3d10 to PeakMatrix for Chr (3 of 23)!, 0.417 mins elapsed.
+2024-05-29 16:57:48.050417 : Adding s2d5 to PeakMatrix for Chr (4 of 23)!, 0.372 mins elapsed.
+2024-05-29 16:57:52.988195 : Adding s3d6 to PeakMatrix for Chr (5 of 23)!, 0.44 mins elapsed.
+2024-05-29 16:57:54.694291 : Adding s1d2 to PeakMatrix for Chr (4 of 23)!, 0.51 mins elapsed.
+2024-05-29 16:57:55.175936 : Adding s2d1 to PeakMatrix for Chr (5 of 23)!, 0.497 mins elapsed.
+2024-05-29 16:57:55.826188 : Adding s2d4 to PeakMatrix for Chr (5 of 23)!, 0.497 mins elapsed.
+2024-05-29 16:57:56.506883 : Adding s2d5 to PeakMatrix for Chr (5 of 23)!, 0.513 mins elapsed.
+2024-05-29 16:57:56.536916 : Adding s1d3 to PeakMatrix for Chr (4 of 23)!, 0.528 mins elapsed.
+2024-05-29 16:57:56.571472 : Adding s3d3 to PeakMatrix for Chr (4 of 23)!, 0.546 mins elapsed.
+2024-05-29 16:57:56.649265 : Adding s4d9 to PeakMatrix for Chr (5 of 23)!, 0.507 mins elapsed.
+2024-05-29 16:57:56.81654 : Adding s3d7 to PeakMatrix for Chr (5 of 23)!, 0.528 mins elapsed.
+2024-05-29 16:57:56.946387 : Adding s1d1 to PeakMatrix for Chr (4 of 23)!, 0.54 mins elapsed.
+2024-05-29 16:57:57.947856 : Adding s4d1 to PeakMatrix for Chr (4 of 23)!, 0.573 mins elapsed.
+2024-05-29 16:58:00.210984 : Adding s4d8 to PeakMatrix for Chr (4 of 23)!, 0.618 mins elapsed.
+2024-05-29 16:58:00.409845 : Adding s3d10 to PeakMatrix for Chr (4 of 23)!, 0.627 mins elapsed.
+2024-05-29 16:58:01.048946 : Adding s3d6 to PeakMatrix for Chr (6 of 23)!, 0.574 mins elapsed.
+2024-05-29 16:58:03.920034 : Adding s2d1 to PeakMatrix for Chr (6 of 23)!, 0.643 mins elapsed.
+2024-05-29 16:58:03.950932 : Adding s1d2 to PeakMatrix for Chr (5 of 23)!, 0.664 mins elapsed.
+2024-05-29 16:58:05.317672 : Adding s2d4 to PeakMatrix for Chr (6 of 23)!, 0.655 mins elapsed.
+2024-05-29 16:58:06.611156 : Adding s2d5 to PeakMatrix for Chr (6 of 23)!, 0.682 mins elapsed.
+2024-05-29 16:58:07.015646 : Adding s4d9 to PeakMatrix for Chr (6 of 23)!, 0.68 mins elapsed.
+2024-05-29 16:58:07.281962 : Adding s1d3 to PeakMatrix for Chr (5 of 23)!, 0.708 mins elapsed.
+2024-05-29 16:58:07.325804 : Adding s3d7 to PeakMatrix for Chr (6 of 23)!, 0.703 mins elapsed.
+2024-05-29 16:58:07.543862 : Adding s3d3 to PeakMatrix for Chr (5 of 23)!, 0.729 mins elapsed.
+2024-05-29 16:58:07.707897 : Adding s1d1 to PeakMatrix for Chr (5 of 23)!, 0.719 mins elapsed.
+2024-05-29 16:58:08.078091 : Adding s3d6 to PeakMatrix for Chr (7 of 23)!, 0.691 mins elapsed.
+2024-05-29 16:58:08.325758 : Adding s4d1 to PeakMatrix for Chr (5 of 23)!, 0.746 mins elapsed.
+2024-05-29 16:58:08.445309 : Adding s4d8 to PeakMatrix for Chr (5 of 23)!, 0.755 mins elapsed.
+2024-05-29 16:58:08.681381 : Adding s3d10 to PeakMatrix for Chr (5 of 23)!, 0.764 mins elapsed.
+2024-05-29 16:58:09.469457 : Adding s2d1 to PeakMatrix for Chr (7 of 23)!, 0.735 mins elapsed.
+2024-05-29 16:58:10.024566 : Adding s2d4 to PeakMatrix for Chr (7 of 23)!, 0.734 mins elapsed.
+2024-05-29 16:58:10.47906 : Adding s1d2 to PeakMatrix for Chr (6 of 23)!, 0.773 mins elapsed.
+2024-05-29 16:58:11.370705 : Adding s4d9 to PeakMatrix for Chr (7 of 23)!, 0.752 mins elapsed.
+2024-05-29 16:58:11.510456 : Adding s2d5 to PeakMatrix for Chr (7 of 23)!, 0.763 mins elapsed.
+2024-05-29 16:58:11.79454 : Adding s3d6 to PeakMatrix for Chr (8 of 23)!, 0.753 mins elapsed.
+2024-05-29 16:58:12.238983 : Adding s1d3 to PeakMatrix for Chr (6 of 23)!, 0.79 mins elapsed.
+2024-05-29 16:58:12.498505 : Adding s3d7 to PeakMatrix for Chr (7 of 23)!, 0.789 mins elapsed.
+2024-05-29 16:58:13.100433 : Adding s3d3 to PeakMatrix for Chr (6 of 23)!, 0.822 mins elapsed.
+2024-05-29 16:58:13.498334 : Adding s1d1 to PeakMatrix for Chr (6 of 23)!, 0.816 mins elapsed.
+2024-05-29 16:58:14.338813 : Adding s2d1 to PeakMatrix for Chr (8 of 23)!, 0.816 mins elapsed.
+2024-05-29 16:58:14.863331 : Adding s2d4 to PeakMatrix for Chr (8 of 23)!, 0.814 mins elapsed.
+2024-05-29 16:58:15.056229 : Adding s4d1 to PeakMatrix for Chr (6 of 23)!, 0.858 mins elapsed.
+2024-05-29 16:58:15.316184 : Adding s4d8 to PeakMatrix for Chr (6 of 23)!, 0.869 mins elapsed.
+2024-05-29 16:58:15.52002 : Adding s3d6 to PeakMatrix for Chr (9 of 23)!, 0.816 mins elapsed.
+2024-05-29 16:58:15.833749 : Adding s3d10 to PeakMatrix for Chr (6 of 23)!, 0.884 mins elapsed.
+2024-05-29 16:58:15.873231 : Adding s4d9 to PeakMatrix for Chr (8 of 23)!, 0.827 mins elapsed.
+2024-05-29 16:58:15.883964 : Adding s2d5 to PeakMatrix for Chr (8 of 23)!, 0.836 mins elapsed.
+2024-05-29 16:58:17.076579 : Adding s1d2 to PeakMatrix for Chr (7 of 23)!, 0.883 mins elapsed.
+2024-05-29 16:58:17.101408 : Adding s3d7 to PeakMatrix for Chr (8 of 23)!, 0.866 mins elapsed.
+2024-05-29 16:58:17.570397 : Adding s1d3 to PeakMatrix for Chr (7 of 23)!, 0.879 mins elapsed.
+2024-05-29 16:58:19.000378 : Adding s2d1 to PeakMatrix for Chr (9 of 23)!, 0.894 mins elapsed.
+2024-05-29 16:58:19.151078 : Adding s2d4 to PeakMatrix for Chr (9 of 23)!, 0.886 mins elapsed.
+2024-05-29 16:58:19.161389 : Adding s1d1 to PeakMatrix for Chr (7 of 23)!, 0.91 mins elapsed.
+2024-05-29 16:58:19.24681 : Adding s3d6 to PeakMatrix for Chr (10 of 23)!, 0.878 mins elapsed.
+2024-05-29 16:58:19.334466 : Adding s3d3 to PeakMatrix for Chr (7 of 23)!, 0.926 mins elapsed.
+2024-05-29 16:58:19.904572 : Adding s2d5 to PeakMatrix for Chr (9 of 23)!, 0.903 mins elapsed.
+2024-05-29 16:58:20.216763 : Adding s4d9 to PeakMatrix for Chr (9 of 23)!, 0.9 mins elapsed.
+2024-05-29 16:58:21.338503 : Adding s4d1 to PeakMatrix for Chr (7 of 23)!, 0.963 mins elapsed.
+2024-05-29 16:58:21.467624 : Adding s3d7 to PeakMatrix for Chr (9 of 23)!, 0.939 mins elapsed.
+2024-05-29 16:58:22.545264 : Adding s1d2 to PeakMatrix for Chr (8 of 23)!, 0.974 mins elapsed.
+2024-05-29 16:58:22.899786 : Adding s1d3 to PeakMatrix for Chr (8 of 23)!, 0.968 mins elapsed.
+2024-05-29 16:58:22.927139 : Adding s4d8 to PeakMatrix for Chr (7 of 23)!, 0.996 mins elapsed.
+2024-05-29 16:58:23.055045 : Adding s3d10 to PeakMatrix for Chr (7 of 23)!, 1.004 mins elapsed.
+2024-05-29 16:58:23.30527 : Adding s2d4 to PeakMatrix for Chr (10 of 23)!, 0.955 mins elapsed.
+2024-05-29 16:58:23.690735 : Adding s3d6 to PeakMatrix for Chr (11 of 23)!, 0.952 mins elapsed.
+2024-05-29 16:58:23.8058 : Adding s2d1 to PeakMatrix for Chr (10 of 23)!, 0.974 mins elapsed.
+2024-05-29 16:58:23.982625 : Adding s2d5 to PeakMatrix for Chr (10 of 23)!, 0.971 mins elapsed.
+2024-05-29 16:58:24.13235 : Adding s4d9 to PeakMatrix for Chr (10 of 23)!, 0.965 mins elapsed.
+2024-05-29 16:58:24.381032 : Adding s1d1 to PeakMatrix for Chr (8 of 23)!, 0.997 mins elapsed.
+2024-05-29 16:58:24.767412 : Adding s3d3 to PeakMatrix for Chr (8 of 23)!, 1.016 mins elapsed.
+2024-05-29 16:58:25.66512 : Adding s3d7 to PeakMatrix for Chr (10 of 23)!, 1.008 mins elapsed.
+2024-05-29 16:58:26.577363 : Adding s4d1 to PeakMatrix for Chr (8 of 23)!, 1.05 mins elapsed.
+2024-05-29 16:58:27.002565 : Adding s1d2 to PeakMatrix for Chr (9 of 23)!, 1.048 mins elapsed.
+2024-05-29 16:58:27.139303 : Adding s2d4 to PeakMatrix for Chr (11 of 23)!, 1.019 mins elapsed.
+2024-05-29 16:58:27.257023 : Adding s1d3 to PeakMatrix for Chr (9 of 23)!, 1.041 mins elapsed.
+2024-05-29 16:58:27.656009 : Adding s3d6 to PeakMatrix for Chr (12 of 23)!, 1.018 mins elapsed.
+2024-05-29 16:58:28.111392 : Adding s2d5 to PeakMatrix for Chr (11 of 23)!, 1.04 mins elapsed.
+2024-05-29 16:58:28.138907 : Adding s4d9 to PeakMatrix for Chr (11 of 23)!, 1.032 mins elapsed.
+2024-05-29 16:58:28.369303 : Adding s2d1 to PeakMatrix for Chr (11 of 23)!, 1.05 mins elapsed.
+2024-05-29 16:58:28.962173 : Adding s1d1 to PeakMatrix for Chr (9 of 23)!, 1.073 mins elapsed.
+2024-05-29 16:58:29.33601 : Adding s4d8 to PeakMatrix for Chr (8 of 23)!, 1.103 mins elapsed.
+2024-05-29 16:58:29.645884 : Adding s3d10 to PeakMatrix for Chr (8 of 23)!, 1.114 mins elapsed.
+2024-05-29 16:58:29.976618 : Adding s3d7 to PeakMatrix for Chr (11 of 23)!, 1.08 mins elapsed.
+2024-05-29 16:58:30.192268 : Adding s3d3 to PeakMatrix for Chr (9 of 23)!, 1.107 mins elapsed.
+2024-05-29 16:58:31.334277 : Adding s4d1 to PeakMatrix for Chr (9 of 23)!, 1.13 mins elapsed.
+2024-05-29 16:58:31.447173 : Adding s3d6 to PeakMatrix for Chr (13 of 23)!, 1.081 mins elapsed.
+2024-05-29 16:58:31.666519 : Adding s1d2 to PeakMatrix for Chr (10 of 23)!, 1.126 mins elapsed.
+2024-05-29 16:58:31.78425 : Adding s1d3 to PeakMatrix for Chr (10 of 23)!, 1.116 mins elapsed.
+2024-05-29 16:58:32.280879 : Adding s2d4 to PeakMatrix for Chr (12 of 23)!, 1.105 mins elapsed.
+2024-05-29 16:58:32.965692 : Adding s2d5 to PeakMatrix for Chr (12 of 23)!, 1.121 mins elapsed.
+2024-05-29 16:58:33.239588 : Adding s2d1 to PeakMatrix for Chr (12 of 23)!, 1.131 mins elapsed.
+2024-05-29 16:58:33.661169 : Adding s4d9 to PeakMatrix for Chr (12 of 23)!, 1.124 mins elapsed.
+2024-05-29 16:58:34.82357 : Adding s1d1 to PeakMatrix for Chr (10 of 23)!, 1.171 mins elapsed.
+2024-05-29 16:58:34.899618 : Adding s3d7 to PeakMatrix for Chr (12 of 23)!, 1.162 mins elapsed.
+2024-05-29 16:58:35.254074 : Adding s3d6 to PeakMatrix for Chr (14 of 23)!, 1.144 mins elapsed.
+2024-05-29 16:58:35.303044 : Adding s3d3 to PeakMatrix for Chr (10 of 23)!, 1.192 mins elapsed.
+2024-05-29 16:58:35.336607 : Adding s4d8 to PeakMatrix for Chr (9 of 23)!, 1.203 mins elapsed.
+2024-05-29 16:58:35.489271 : Adding s3d10 to PeakMatrix for Chr (9 of 23)!, 1.211 mins elapsed.
+2024-05-29 16:58:36.396945 : Adding s1d2 to PeakMatrix for Chr (11 of 23)!, 1.205 mins elapsed.
+2024-05-29 16:58:36.612192 : Adding s1d3 to PeakMatrix for Chr (11 of 23)!, 1.196 mins elapsed.
+2024-05-29 16:58:36.691197 : Adding s4d1 to PeakMatrix for Chr (10 of 23)!, 1.219 mins elapsed.
+2024-05-29 16:58:36.903502 : Adding s2d5 to PeakMatrix for Chr (13 of 23)!, 1.187 mins elapsed.
+2024-05-29 16:58:37.211773 : Adding s2d4 to PeakMatrix for Chr (13 of 23)!, 1.187 mins elapsed.
+2024-05-29 16:58:37.546282 : Adding s2d1 to PeakMatrix for Chr (13 of 23)!, 1.203 mins elapsed.
+2024-05-29 16:58:38.366674 : Adding s4d9 to PeakMatrix for Chr (13 of 23)!, 1.202 mins elapsed.
+2024-05-29 16:58:39.021773 : Adding s3d6 to PeakMatrix for Chr (15 of 23)!, 1.207 mins elapsed.
+2024-05-29 16:58:39.452802 : Adding s3d7 to PeakMatrix for Chr (13 of 23)!, 1.238 mins elapsed.
+2024-05-29 16:58:39.707063 : Adding s1d1 to PeakMatrix for Chr (11 of 23)!, 1.252 mins elapsed.
+2024-05-29 16:58:40.470541 : Adding s3d3 to PeakMatrix for Chr (11 of 23)!, 1.278 mins elapsed.
+2024-05-29 16:58:40.776899 : Adding s2d5 to PeakMatrix for Chr (14 of 23)!, 1.251 mins elapsed.
+2024-05-29 16:58:40.981307 : Adding s2d4 to PeakMatrix for Chr (14 of 23)!, 1.25 mins elapsed.
+2024-05-29 16:58:41.059597 : Adding s4d8 to PeakMatrix for Chr (10 of 23)!, 1.298 mins elapsed.
+2024-05-29 16:58:41.239726 : Adding s2d1 to PeakMatrix for Chr (14 of 23)!, 1.265 mins elapsed.
+2024-05-29 16:58:41.558739 : Adding s3d10 to PeakMatrix for Chr (10 of 23)!, 1.312 mins elapsed.
+2024-05-29 16:58:41.682525 : Adding s1d2 to PeakMatrix for Chr (12 of 23)!, 1.293 mins elapsed.
+2024-05-29 16:58:41.77274 : Adding s1d3 to PeakMatrix for Chr (12 of 23)!, 1.283 mins elapsed.
+2024-05-29 16:58:41.863913 : Adding s4d9 to PeakMatrix for Chr (14 of 23)!, 1.261 mins elapsed.
+2024-05-29 16:58:42.301247 : Adding s4d1 to PeakMatrix for Chr (11 of 23)!, 1.313 mins elapsed.
+2024-05-29 16:58:42.655774 : Adding s3d6 to PeakMatrix for Chr (16 of 23)!, 1.268 mins elapsed.
+2024-05-29 16:58:43.162772 : Adding s3d7 to PeakMatrix for Chr (14 of 23)!, 1.3 mins elapsed.
+2024-05-29 16:58:44.612679 : Adding s2d5 to PeakMatrix for Chr (15 of 23)!, 1.315 mins elapsed.
+2024-05-29 16:58:44.991381 : Adding s2d4 to PeakMatrix for Chr (15 of 23)!, 1.316 mins elapsed.
+2024-05-29 16:58:45.132302 : Adding s1d1 to PeakMatrix for Chr (12 of 23)!, 1.343 mins elapsed.
+2024-05-29 16:58:45.211762 : Adding s2d1 to PeakMatrix for Chr (15 of 23)!, 1.331 mins elapsed.
+2024-05-29 16:58:45.969583 : Adding s4d9 to PeakMatrix for Chr (15 of 23)!, 1.329 mins elapsed.
+2024-05-29 16:58:46.517121 : Adding s3d3 to PeakMatrix for Chr (12 of 23)!, 1.379 mins elapsed.
+2024-05-29 16:58:46.520133 : Adding s3d6 to PeakMatrix for Chr (17 of 23)!, 1.332 mins elapsed.
+2024-05-29 16:58:46.767229 : Adding s1d2 to PeakMatrix for Chr (13 of 23)!, 1.378 mins elapsed.
+2024-05-29 16:58:46.911184 : Adding s1d3 to PeakMatrix for Chr (13 of 23)!, 1.368 mins elapsed.
+2024-05-29 16:58:47.011667 : Adding s3d7 to PeakMatrix for Chr (15 of 23)!, 1.364 mins elapsed.
+2024-05-29 16:58:47.41571 : Adding s4d8 to PeakMatrix for Chr (11 of 23)!, 1.404 mins elapsed.
+2024-05-29 16:58:47.632755 : Adding s3d10 to PeakMatrix for Chr (11 of 23)!, 1.414 mins elapsed.
+2024-05-29 16:58:49.062518 : Adding s4d1 to PeakMatrix for Chr (12 of 23)!, 1.425 mins elapsed.
+2024-05-29 16:58:49.38207 : Adding s2d5 to PeakMatrix for Chr (16 of 23)!, 1.395 mins elapsed.
+2024-05-29 16:58:49.386905 : Adding s2d4 to PeakMatrix for Chr (16 of 23)!, 1.39 mins elapsed.
+2024-05-29 16:58:50.407227 : Adding s2d1 to PeakMatrix for Chr (16 of 23)!, 1.417 mins elapsed.
+2024-05-29 16:58:50.63055 : Adding s4d9 to PeakMatrix for Chr (16 of 23)!, 1.407 mins elapsed.
+2024-05-29 16:58:50.842503 : Adding s3d6 to PeakMatrix for Chr (18 of 23)!, 1.404 mins elapsed.
+2024-05-29 16:58:51.602206 : Adding s1d1 to PeakMatrix for Chr (13 of 23)!, 1.451 mins elapsed.
+2024-05-29 16:58:51.607378 : Adding s3d7 to PeakMatrix for Chr (16 of 23)!, 1.441 mins elapsed.
+2024-05-29 16:58:51.694579 : Adding s1d2 to PeakMatrix for Chr (14 of 23)!, 1.46 mins elapsed.
+2024-05-29 16:58:51.814332 : Adding s1d3 to PeakMatrix for Chr (14 of 23)!, 1.45 mins elapsed.
+2024-05-29 16:58:52.238551 : Adding s3d3 to PeakMatrix for Chr (13 of 23)!, 1.474 mins elapsed.
+2024-05-29 16:58:53.989212 : Adding s2d4 to PeakMatrix for Chr (17 of 23)!, 1.466 mins elapsed.
+2024-05-29 16:58:54.064014 : Adding s2d5 to PeakMatrix for Chr (17 of 23)!, 1.473 mins elapsed.
+2024-05-29 16:58:54.683523 : Adding s3d6 to PeakMatrix for Chr (19 of 23)!, 1.468 mins elapsed.
+2024-05-29 16:58:54.731924 : Adding s4d8 to PeakMatrix for Chr (12 of 23)!, 1.526 mins elapsed.
+2024-05-29 16:58:55.155074 : Adding s4d9 to PeakMatrix for Chr (17 of 23)!, 1.482 mins elapsed.
+2024-05-29 16:58:55.217782 : Adding s2d1 to PeakMatrix for Chr (17 of 23)!, 1.498 mins elapsed.
+2024-05-29 16:58:55.3259 : Adding s3d10 to PeakMatrix for Chr (12 of 23)!, 1.542 mins elapsed.
+2024-05-29 16:58:55.37736 : Adding s4d1 to PeakMatrix for Chr (13 of 23)!, 1.531 mins elapsed.
+2024-05-29 16:58:55.642735 : Adding s1d1 to PeakMatrix for Chr (14 of 23)!, 1.518 mins elapsed.
+2024-05-29 16:58:55.911192 : Adding s3d7 to PeakMatrix for Chr (17 of 23)!, 1.513 mins elapsed.
+2024-05-29 16:58:56.447379 : Adding s1d3 to PeakMatrix for Chr (15 of 23)!, 1.527 mins elapsed.
+2024-05-29 16:58:56.886307 : Adding s1d2 to PeakMatrix for Chr (15 of 23)!, 1.546 mins elapsed.
+2024-05-29 16:58:57.27009 : Adding s3d3 to PeakMatrix for Chr (14 of 23)!, 1.558 mins elapsed.
+2024-05-29 16:58:59.282833 : Adding s2d4 to PeakMatrix for Chr (18 of 23)!, 1.555 mins elapsed.
+2024-05-29 16:58:59.920958 : Adding s3d6 to PeakMatrix for Chr (20 of 23)!, 1.556 mins elapsed.
+2024-05-29 16:59:01.703079 : Adding s2d5 to PeakMatrix for Chr (18 of 23)!, 1.6 mins elapsed.
+2024-05-29 16:59:02.061193 : Adding s4d9 to PeakMatrix for Chr (18 of 23)!, 1.597 mins elapsed.
+2024-05-29 16:59:02.283708 : Adding s4d1 to PeakMatrix for Chr (14 of 23)!, 1.646 mins elapsed.
+2024-05-29 16:59:02.531238 : Adding s3d7 to PeakMatrix for Chr (18 of 23)!, 1.623 mins elapsed.
+2024-05-29 16:59:02.776449 : Adding s1d1 to PeakMatrix for Chr (15 of 23)!, 1.637 mins elapsed.
+2024-05-29 16:59:02.843706 : Adding s4d8 to PeakMatrix for Chr (13 of 23)!, 1.662 mins elapsed.
+2024-05-29 16:59:02.849701 : Adding s2d1 to PeakMatrix for Chr (18 of 23)!, 1.625 mins elapsed.
+2024-05-29 16:59:03.033975 : Adding s1d3 to PeakMatrix for Chr (16 of 23)!, 1.637 mins elapsed.
+2024-05-29 16:59:04.042772 : Adding s1d2 to PeakMatrix for Chr (16 of 23)!, 1.666 mins elapsed.
+2024-05-29 16:59:04.146046 : Adding s3d3 to PeakMatrix for Chr (15 of 23)!, 1.672 mins elapsed.
+2024-05-29 16:59:04.378273 : Adding s2d4 to PeakMatrix for Chr (19 of 23)!, 1.64 mins elapsed.
+2024-05-29 16:59:04.801716 : Adding s3d10 to PeakMatrix for Chr (13 of 23)!, 1.7 mins elapsed.
+2024-05-29 16:59:05.406926 : Adding s3d6 to PeakMatrix for Chr (21 of 23)!, 1.647 mins elapsed.
+2024-05-29 16:59:06.204406 : Adding s4d9 to PeakMatrix for Chr (19 of 23)!, 1.666 mins elapsed.
+2024-05-29 16:59:06.681949 : Adding s2d5 to PeakMatrix for Chr (19 of 23)!, 1.683 mins elapsed.
+2024-05-29 16:59:06.873264 : Adding s3d7 to PeakMatrix for Chr (19 of 23)!, 1.695 mins elapsed.
+2024-05-29 16:59:06.954707 : Adding s2d1 to PeakMatrix for Chr (19 of 23)!, 1.693 mins elapsed.
+2024-05-29 16:59:07.979911 : Adding s4d8 to PeakMatrix for Chr (14 of 23)!, 1.747 mins elapsed.
+2024-05-29 16:59:08.047414 : Adding s1d1 to PeakMatrix for Chr (16 of 23)!, 1.725 mins elapsed.
+2024-05-29 16:59:08.119876 : Adding s4d1 to PeakMatrix for Chr (15 of 23)!, 1.743 mins elapsed.
+2024-05-29 16:59:08.44113 : Adding s1d3 to PeakMatrix for Chr (17 of 23)!, 1.727 mins elapsed.
+2024-05-29 16:59:09.673166 : Adding s3d6 to PeakMatrix for Chr (22 of 23)!, 1.718 mins elapsed.
+2024-05-29 16:59:10.032194 : Adding s2d4 to PeakMatrix for Chr (20 of 23)!, 1.734 mins elapsed.
+2024-05-29 16:59:10.092531 : Adding s3d10 to PeakMatrix for Chr (14 of 23)!, 1.788 mins elapsed.
+2024-05-29 16:59:10.251493 : Adding s3d3 to PeakMatrix for Chr (16 of 23)!, 1.774 mins elapsed.
+2024-05-29 16:59:10.683779 : Adding s1d2 to PeakMatrix for Chr (17 of 23)!, 1.776 mins elapsed.
+2024-05-29 16:59:11.214675 : Adding s4d9 to PeakMatrix for Chr (20 of 23)!, 1.75 mins elapsed.
+2024-05-29 16:59:11.328892 : Adding s2d5 to PeakMatrix for Chr (20 of 23)!, 1.76 mins elapsed.
+2024-05-29 16:59:11.874777 : Adding s3d7 to PeakMatrix for Chr (20 of 23)!, 1.779 mins elapsed.
+2024-05-29 16:59:11.93412 : Adding s2d1 to PeakMatrix for Chr (20 of 23)!, 1.776 mins elapsed.
+2024-05-29 16:59:13.124967 : Adding s4d1 to PeakMatrix for Chr (16 of 23)!, 1.826 mins elapsed.
+2024-05-29 16:59:13.464785 : Adding s1d1 to PeakMatrix for Chr (17 of 23)!, 1.815 mins elapsed.
+2024-05-29 16:59:13.725985 : Adding s3d6 to PeakMatrix for Chr (23 of 23)!, 1.786 mins elapsed.
+2024-05-29 16:59:13.900459 : Adding s1d3 to PeakMatrix for Chr (18 of 23)!, 1.818 mins elapsed.
+2024-05-29 16:59:13.915916 : Adding s2d4 to PeakMatrix for Chr (21 of 23)!, 1.799 mins elapsed.
+2024-05-29 16:59:14.67076 : Adding s4d8 to PeakMatrix for Chr (15 of 23)!, 1.859 mins elapsed.
+2024-05-29 16:59:14.86973 : Adding s4d9 to PeakMatrix for Chr (21 of 23)!, 1.811 mins elapsed.
+2024-05-29 16:59:15.25435 : Adding s2d5 to PeakMatrix for Chr (21 of 23)!, 1.826 mins elapsed.
+2024-05-29 16:59:15.524469 : Adding s3d3 to PeakMatrix for Chr (17 of 23)!, 1.862 mins elapsed.
+2024-05-29 16:59:15.897786 : Adding s3d10 to PeakMatrix for Chr (15 of 23)!, 1.885 mins elapsed.
+2024-05-29 16:59:15.918462 : Adding s2d1 to PeakMatrix for Chr (21 of 23)!, 1.843 mins elapsed.
+2024-05-29 16:59:15.94136 : Adding s3d7 to PeakMatrix for Chr (21 of 23)!, 1.846 mins elapsed.
+2024-05-29 16:59:16.759651 : Adding s1d2 to PeakMatrix for Chr (18 of 23)!, 1.878 mins elapsed.
+2024-05-29 16:59:17.644211 : Adding s2d4 to PeakMatrix for Chr (22 of 23)!, 1.861 mins elapsed.
+2024-05-29 16:59:17.874721 : Adding s1d3 to PeakMatrix for Chr (19 of 23)!, 1.884 mins elapsed.
+2024-05-29 16:59:18.839607 : Adding s4d1 to PeakMatrix for Chr (17 of 23)!, 1.922 mins elapsed.
+2024-05-29 16:59:18.984337 : Adding s2d5 to PeakMatrix for Chr (22 of 23)!, 1.888 mins elapsed.
+2024-05-29 16:59:19.184482 : Adding s4d9 to PeakMatrix for Chr (22 of 23)!, 1.883 mins elapsed.
+2024-05-29 16:59:19.625775 : Adding s1d1 to PeakMatrix for Chr (18 of 23)!, 1.918 mins elapsed.
+2024-05-29 16:59:19.789562 : Adding s2d1 to PeakMatrix for Chr (22 of 23)!, 1.907 mins elapsed.
+2024-05-29 16:59:20.036609 : Adding s3d7 to PeakMatrix for Chr (22 of 23)!, 1.915 mins elapsed.
+2024-05-29 16:59:20.457523 : Adding s4d8 to PeakMatrix for Chr (16 of 23)!, 1.955 mins elapsed.
+2024-05-29 16:59:21.435114 : Adding s1d2 to PeakMatrix for Chr (19 of 23)!, 1.956 mins elapsed.
+2024-05-29 16:59:21.815434 : Adding s2d4 to PeakMatrix for Chr (23 of 23)!, 1.93 mins elapsed.
+2024-05-29 16:59:21.964293 : Adding s3d10 to PeakMatrix for Chr (16 of 23)!, 1.986 mins elapsed.
+2024-05-29 16:59:23.162971 : Adding s3d3 to PeakMatrix for Chr (18 of 23)!, 1.989 mins elapsed.
+2024-05-29 16:59:23.170878 : Adding s2d5 to PeakMatrix for Chr (23 of 23)!, 1.958 mins elapsed.
+2024-05-29 16:59:23.568063 : Adding s4d9 to PeakMatrix for Chr (23 of 23)!, 1.956 mins elapsed.
+2024-05-29 16:59:24.142212 : Adding s1d1 to PeakMatrix for Chr (19 of 23)!, 1.993 mins elapsed.
+2024-05-29 16:59:24.206824 : Adding s2d1 to PeakMatrix for Chr (23 of 23)!, 1.981 mins elapsed.
+2024-05-29 16:59:24.246425 : Adding s1d3 to PeakMatrix for Chr (20 of 23)!, 1.99 mins elapsed.
+2024-05-29 16:59:24.311652 : Adding s3d7 to PeakMatrix for Chr (23 of 23)!, 1.986 mins elapsed.
+2024-05-29 16:59:25.402085 : Adding s4d1 to PeakMatrix for Chr (18 of 23)!, 2.031 mins elapsed.
+2024-05-29 16:59:26.582899 : Adding s4d8 to PeakMatrix for Chr (17 of 23)!, 2.057 mins elapsed.
+2024-05-29 16:59:27.645026 : Adding s3d3 to PeakMatrix for Chr (19 of 23)!, 2.064 mins elapsed.
+2024-05-29 16:59:28.864777 : Adding s3d10 to PeakMatrix for Chr (17 of 23)!, 2.101 mins elapsed.
+2024-05-29 16:59:29.225895 : Adding s1d3 to PeakMatrix for Chr (21 of 23)!, 2.073 mins elapsed.
+2024-05-29 16:59:29.559044 : Adding s1d2 to PeakMatrix for Chr (20 of 23)!, 2.091 mins elapsed.
+2024-05-29 16:59:29.842244 : Adding s4d1 to PeakMatrix for Chr (19 of 23)!, 2.105 mins elapsed.
+2024-05-29 16:59:30.674603 : Adding s1d1 to PeakMatrix for Chr (20 of 23)!, 2.102 mins elapsed.
+2024-05-29 16:59:32.969658 : Adding s1d3 to PeakMatrix for Chr (22 of 23)!, 2.136 mins elapsed.
+2024-05-29 16:59:33.998034 : Adding s1d2 to PeakMatrix for Chr (21 of 23)!, 2.165 mins elapsed.
+2024-05-29 16:59:34.660899 : Adding s4d8 to PeakMatrix for Chr (18 of 23)!, 2.192 mins elapsed.
+2024-05-29 16:59:34.672296 : Adding s3d3 to PeakMatrix for Chr (20 of 23)!, 2.181 mins elapsed.
+2024-05-29 16:59:35.418593 : Adding s1d1 to PeakMatrix for Chr (21 of 23)!, 2.181 mins elapsed.
+2024-05-29 16:59:36.889394 : Adding s4d1 to PeakMatrix for Chr (20 of 23)!, 2.222 mins elapsed.
+2024-05-29 16:59:37.641049 : Adding s1d3 to PeakMatrix for Chr (23 of 23)!, 2.214 mins elapsed.
+2024-05-29 16:59:38.239862 : Adding s1d2 to PeakMatrix for Chr (22 of 23)!, 2.236 mins elapsed.
+2024-05-29 16:59:38.260851 : Adding s3d10 to PeakMatrix for Chr (18 of 23)!, 2.257 mins elapsed.
+2024-05-29 16:59:39.546265 : Adding s1d1 to PeakMatrix for Chr (22 of 23)!, 2.25 mins elapsed.
+2024-05-29 16:59:40.125556 : Adding s4d8 to PeakMatrix for Chr (19 of 23)!, 2.283 mins elapsed.
+2024-05-29 16:59:40.727151 : Adding s3d3 to PeakMatrix for Chr (21 of 23)!, 2.282 mins elapsed.
+2024-05-29 16:59:42.783506 : Adding s1d2 to PeakMatrix for Chr (23 of 23)!, 2.311 mins elapsed.
+2024-05-29 16:59:43.03326 : Adding s4d1 to PeakMatrix for Chr (21 of 23)!, 2.325 mins elapsed.
+2024-05-29 16:59:43.078046 : Adding s3d10 to PeakMatrix for Chr (19 of 23)!, 2.338 mins elapsed.
+2024-05-29 16:59:44.391248 : Adding s1d1 to PeakMatrix for Chr (23 of 23)!, 2.331 mins elapsed.
+2024-05-29 16:59:45.118083 : Adding s3d3 to PeakMatrix for Chr (22 of 23)!, 2.355 mins elapsed.
+2024-05-29 16:59:47.467093 : Adding s4d1 to PeakMatrix for Chr (22 of 23)!, 2.399 mins elapsed.
+2024-05-29 16:59:48.989794 : Adding s4d8 to PeakMatrix for Chr (20 of 23)!, 2.431 mins elapsed.
+2024-05-29 16:59:49.681529 : Adding s3d3 to PeakMatrix for Chr (23 of 23)!, 2.431 mins elapsed.
+2024-05-29 16:59:51.064899 : Adding s3d10 to PeakMatrix for Chr (20 of 23)!, 2.471 mins elapsed.
+2024-05-29 16:59:52.809136 : Adding s4d1 to PeakMatrix for Chr (23 of 23)!, 2.488 mins elapsed.
+2024-05-29 16:59:53.647162 : Adding s4d8 to PeakMatrix for Chr (21 of 23)!, 2.508 mins elapsed.
+2024-05-29 16:59:55.847606 : Adding s3d10 to PeakMatrix for Chr (21 of 23)!, 2.551 mins elapsed.
+2024-05-29 16:59:58.81687 : Adding s4d8 to PeakMatrix for Chr (22 of 23)!, 2.594 mins elapsed.
+2024-05-29 17:00:01.350146 : Adding s3d10 to PeakMatrix for Chr (22 of 23)!, 2.642 mins elapsed.
+2024-05-29 17:00:03.428647 : Adding s4d8 to PeakMatrix for Chr (23 of 23)!, 2.671 mins elapsed.
+2024-05-29 17:00:06.861196 : Adding s3d10 to PeakMatrix for Chr (23 of 23)!, 2.734 mins elapsed.
+
+------- Completed
+
+End Time : 2024-05-29 17:00:12.164783
+Elapsed Time Minutes = 2.83614218235016
+Elapsed Time Hours = 0.0472691809468799
+
+-------
+
+
+

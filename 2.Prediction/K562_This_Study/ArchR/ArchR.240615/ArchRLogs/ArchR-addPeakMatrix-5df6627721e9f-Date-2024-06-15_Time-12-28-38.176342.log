@@ -1,0 +1,219 @@
+
+           ___      .______        ______  __    __  .______      
+          /   \     |   _  \      /      ||  |  |  | |   _  \     
+         /  ^  \    |  |_)  |    |  ,----'|  |__|  | |  |_)  |    
+        /  /_\  \   |      /     |  |     |   __   | |      /     
+       /  _____  \  |  |\  \\___ |  `----.|  |  |  | |  |\  \\___.
+      /__/     \__\ | _| `._____| \______||__|  |__| | _| `._____|
+    
+Logging With ArchR!
+
+Start Time : 2024-06-15 12:28:38.634042
+
+------- ArchR Info
+
+ArchRThreads = 16
+ArchRGenome = Hg38
+
+------- System Info
+
+Computer OS = unix
+Total Cores = 104
+
+------- Session Info
+
+R version 4.3.3 (2024-02-29)
+Platform: x86_64-conda-linux-gnu (64-bit)
+Running under: Red Hat Enterprise Linux 8.9 (Ootpa)
+
+Matrix products: default
+BLAS/LAPACK: /maps/projects/ralab/people/lpm537/software/anaconda3/envs/Notebook_E2G_240505/lib/libopenblasp-r0.3.27.so;  LAPACK version 3.12.0
+
+Random number generation:
+ RNG:     L'Ecuyer-CMRG 
+ Normal:  Inversion 
+ Sample:  Rejection 
+ 
+locale:
+ [1] LC_CTYPE=en_US.UTF-8       LC_NUMERIC=C              
+ [3] LC_TIME=en_US.UTF-8        LC_COLLATE=en_US.UTF-8    
+ [5] LC_MONETARY=en_US.UTF-8    LC_MESSAGES=en_US.UTF-8   
+ [7] LC_PAPER=en_US.UTF-8       LC_NAME=C                 
+ [9] LC_ADDRESS=C               LC_TELEPHONE=C            
+[11] LC_MEASUREMENT=en_US.UTF-8 LC_IDENTIFICATION=C       
+
+time zone: Europe/Copenhagen
+tzcode source: system (glibc)
+
+attached base packages:
+ [1] parallel  stats4    grid      stats     graphics  grDevices utils    
+ [8] datasets  methods   base     
+
+other attached packages:
+ [1] uwot_0.1.16                       BSgenome.Hsapiens.UCSC.hg38_1.4.5
+ [3] BSgenome_1.68.0                   rtracklayer_1.60.1               
+ [5] Biostrings_2.70.1                 XVector_0.42.0                   
+ [7] genomation_1.34.0                 Signac_1.13.0                    
+ [9] Seurat_5.0.3                      SeuratObject_5.0.1               
+[11] sp_2.1-4                          rhdf5_2.44.0                     
+[13] SummarizedExperiment_1.30.2       Biobase_2.60.0                   
+[15] MatrixGenerics_1.12.3             Rcpp_1.0.12                      
+[17] Matrix_1.6-5                      GenomicRanges_1.54.1             
+[19] GenomeInfoDb_1.38.1               IRanges_2.36.0                   
+[21] S4Vectors_0.40.2                  BiocGenerics_0.48.1              
+[23] matrixStats_1.3.0                 data.table_1.15.2                
+[25] stringr_1.5.1                     plyr_1.8.9                       
+[27] magrittr_2.0.3                    ggplot2_3.5.1                    
+[29] gtable_0.3.5                      gtools_3.9.5                     
+[31] gridExtra_2.3                     ArchR_1.0.2                      
+
+loaded via a namespace (and not attached):
+  [1] RcppAnnoy_0.0.22         splines_4.3.3            later_1.3.2             
+  [4] pbdZMQ_0.3-11            BiocIO_1.10.0            bitops_1.0-7            
+  [7] tibble_3.2.1             polyclip_1.10-6          XML_3.99-0.16.1         
+ [10] fastDummies_1.7.3        lifecycle_1.0.4          vroom_1.6.5             
+ [13] globals_0.16.3           lattice_0.22-6           MASS_7.3-60             
+ [16] plotly_4.10.4            plotrix_3.8-4            yaml_2.3.8              
+ [19] httpuv_1.6.15            sctransform_0.4.1        spam_2.10-0             
+ [22] spatstat.sparse_3.0-3    reticulate_1.36.1        cowplot_1.1.3           
+ [25] pbapply_1.7-2            RColorBrewer_1.1-3       abind_1.4-5             
+ [28] zlibbioc_1.48.0          Rtsne_0.17               purrr_1.0.2             
+ [31] RCurl_1.98-1.14          GenomeInfoDbData_1.2.11  ggrepel_0.9.5           
+ [34] irlba_2.3.5.1            listenv_0.9.1            spatstat.utils_3.0-4    
+ [37] goftest_1.2-3            RSpectra_0.16-1          spatstat.random_3.2-3   
+ [40] fitdistrplus_1.1-11      parallelly_1.37.1        leiden_0.4.3.1          
+ [43] codetools_0.2-20         DelayedArray_0.26.7      RcppRoll_0.3.0          
+ [46] tidyselect_1.2.1         farver_2.1.1             base64enc_0.1-3         
+ [49] spatstat.explore_3.2-6   GenomicAlignments_1.36.0 jsonlite_1.8.8          
+ [52] progressr_0.14.0         ggridges_0.5.6           survival_3.6-4          
+ [55] tools_4.3.3              ica_1.0-3                glue_1.7.0              
+ [58] IRdisplay_1.1            dplyr_1.1.4              withr_3.0.0             
+ [61] fastmap_1.1.1            rhdf5filters_1.12.1      fansi_1.0.6             
+ [64] digest_0.6.35            R6_2.5.1                 mime_0.12               
+ [67] seqPattern_1.34.0        colorspace_2.1-0         Cairo_1.6-2             
+ [70] scattermore_1.2          tensor_1.5               spatstat.data_3.0-4     
+ [73] utf8_1.2.4               tidyr_1.3.1              generics_0.1.3          
+ [76] httr_1.4.7               htmlwidgets_1.6.4        S4Arrays_1.2.1          
+ [79] pkgconfig_2.0.3          impute_1.76.0            lmtest_0.9-40           
+ [82] htmltools_0.5.8.1        dotCall64_1.1-1          scales_1.3.0            
+ [85] png_0.1-8                tzdb_0.4.0               reshape2_1.4.4          
+ [88] rjson_0.2.21             uuid_1.2-0               nlme_3.1-164            
+ [91] repr_1.1.7               zoo_1.8-12               KernSmooth_2.23-22      
+ [94] miniUI_0.1.1.1           restfulr_0.0.15          pillar_1.9.0            
+ [97] vctrs_0.6.5              RANN_2.6.1               promises_1.3.0          
+[100] xtable_1.8-4             cluster_2.1.6            evaluate_0.23           
+[103] readr_2.1.5              cli_3.6.2                compiler_4.3.3          
+[106] Rsamtools_2.18.0         rlang_1.1.3              crayon_1.5.2            
+[109] future.apply_1.11.2      labeling_0.4.3           stringi_1.8.3           
+[112] gridBase_0.4-7           viridisLite_0.4.2        deldir_2.0-4            
+[115] BiocParallel_1.36.0      munsell_0.5.1            lazyeval_0.2.2          
+[118] spatstat.geom_3.2-9      IRkernel_1.3.2           RcppHNSW_0.6.0          
+[121] hms_1.1.3                patchwork_1.2.0          bit64_4.0.5             
+[124] future_1.33.2            Rhdf5lib_1.22.1          shiny_1.8.1.1           
+[127] ROCR_1.0-11              igraph_2.0.3             fastmatch_1.1-4         
+[130] bit_4.0.5               
+
+
+------- Log Info
+
+
+2024-06-15 12:28:41.533954 : peakSet, Class = GRanges
+GRanges object with 153222 ranges and 3 metadata columns:
+           seqnames              ranges strand |       idx        GC         N
+              <Rle>           <IRanges>  <Rle> | <integer> <numeric> <numeric>
+       [1]     chr1         10028-10438      * |         1    0.5207         0
+       [2]     chr1       115520-115916      * |         2    0.4156         0
+       [3]     chr1       138922-139279      * |         3    0.5754         0
+       [4]     chr1       180739-181862      * |         4    0.6770         0
+       [5]     chr1       267886-268152      * |         5    0.5131         0
+       ...      ...                 ...    ... .       ...       ...       ...
+  [153218]     chrX 156002463-156003206      * |      5081    0.5645         0
+  [153219]     chrX 156016528-156016739      * |      5082    0.6557         0
+  [153220]     chrX 156019809-156020136      * |      5083    0.6098         0
+  [153221]     chrX 156029672-156030380      * |      5084    0.5628         0
+  [153222]     chrX 156030503-156030824      * |      5085    0.5248         0
+  -------
+  seqinfo: 23 sequences from an unspecified genome; no seqlengths
+
+2024-06-15 12:28:41.782642 : Batch Execution w/ safelapply!, 0 mins elapsed.
+
+2024-06-15 12:28:47.727262 : featureDF, Class = data.frame
+featureDF: nRows = 153222, nCols = 4
+  seqnames idx  start    end
+1     chr1   1  10028  10438
+2     chr1   2 115520 115916
+3     chr1   3 138922 139279
+4     chr1   4 180739 181862
+5     chr1   5 267886 268152
+6     chr1   6 586092 586306
+
+
+
+2024-06-15 12:28:48.288996 : featureDF, Class = data.frame
+featureDF: nRows = 153222, nCols = 4
+  seqnames idx  start    end
+1     chr1   1  10028  10438
+2     chr1   2 115520 115916
+3     chr1   3 138922 139279
+4     chr1   4 180739 181862
+5     chr1   5 267886 268152
+6     chr1   6 586092 586306
+
+
+2024-06-15 12:28:52.495347 : Adding e10l2 to PeakMatrix for Chr (1 of 23)!, 0.086 mins elapsed.
+2024-06-15 12:28:54.317289 : Adding e10l1 to PeakMatrix for Chr (1 of 23)!, 0.111 mins elapsed.
+2024-06-15 12:29:36.232699 : Adding e10l2 to PeakMatrix for Chr (2 of 23)!, 0.815 mins elapsed.
+2024-06-15 12:29:39.189338 : Adding e10l1 to PeakMatrix for Chr (2 of 23)!, 0.859 mins elapsed.
+2024-06-15 12:29:58.846992 : Adding e10l2 to PeakMatrix for Chr (3 of 23)!, 1.192 mins elapsed.
+2024-06-15 12:30:00.256328 : Adding e10l1 to PeakMatrix for Chr (3 of 23)!, 1.21 mins elapsed.
+2024-06-15 12:30:19.290188 : Adding e10l2 to PeakMatrix for Chr (4 of 23)!, 1.532 mins elapsed.
+2024-06-15 12:30:20.810717 : Adding e10l1 to PeakMatrix for Chr (4 of 23)!, 1.553 mins elapsed.
+2024-06-15 12:30:30.147805 : Adding e10l2 to PeakMatrix for Chr (5 of 23)!, 1.713 mins elapsed.
+2024-06-15 12:30:31.96491 : Adding e10l1 to PeakMatrix for Chr (5 of 23)!, 1.739 mins elapsed.
+2024-06-15 12:30:40.457781 : Adding e10l2 to PeakMatrix for Chr (6 of 23)!, 1.885 mins elapsed.
+2024-06-15 12:30:42.611953 : Adding e10l1 to PeakMatrix for Chr (6 of 23)!, 1.916 mins elapsed.
+2024-06-15 12:30:51.636966 : Adding e10l2 to PeakMatrix for Chr (7 of 23)!, 2.071 mins elapsed.
+2024-06-15 12:30:53.129345 : Adding e10l1 to PeakMatrix for Chr (7 of 23)!, 2.092 mins elapsed.
+2024-06-15 12:31:03.694042 : Adding e10l2 to PeakMatrix for Chr (8 of 23)!, 2.272 mins elapsed.
+2024-06-15 12:31:08.477529 : Adding e10l1 to PeakMatrix for Chr (8 of 23)!, 2.347 mins elapsed.
+2024-06-15 12:31:27.783626 : Adding e10l2 to PeakMatrix for Chr (9 of 23)!, 2.674 mins elapsed.
+2024-06-15 12:31:33.18951 : Adding e10l1 to PeakMatrix for Chr (9 of 23)!, 2.759 mins elapsed.
+2024-06-15 12:31:38.136998 : Adding e10l2 to PeakMatrix for Chr (10 of 23)!, 2.846 mins elapsed.
+2024-06-15 12:31:42.986081 : Adding e10l1 to PeakMatrix for Chr (10 of 23)!, 2.923 mins elapsed.
+2024-06-15 12:31:51.375656 : Adding e10l2 to PeakMatrix for Chr (11 of 23)!, 3.067 mins elapsed.
+2024-06-15 12:31:53.420459 : Adding e10l1 to PeakMatrix for Chr (11 of 23)!, 3.096 mins elapsed.
+2024-06-15 12:32:00.592485 : Adding e10l2 to PeakMatrix for Chr (12 of 23)!, 3.221 mins elapsed.
+2024-06-15 12:32:03.511428 : Adding e10l1 to PeakMatrix for Chr (12 of 23)!, 3.265 mins elapsed.
+2024-06-15 12:32:11.404693 : Adding e10l2 to PeakMatrix for Chr (13 of 23)!, 3.401 mins elapsed.
+2024-06-15 12:32:18.248254 : Adding e10l1 to PeakMatrix for Chr (13 of 23)!, 3.51 mins elapsed.
+2024-06-15 12:32:34.159971 : Adding e10l2 to PeakMatrix for Chr (14 of 23)!, 3.78 mins elapsed.
+2024-06-15 12:32:34.923742 : Adding e10l1 to PeakMatrix for Chr (14 of 23)!, 3.788 mins elapsed.
+2024-06-15 12:32:45.243662 : Adding e10l2 to PeakMatrix for Chr (15 of 23)!, 3.965 mins elapsed.
+2024-06-15 12:32:47.063981 : Adding e10l1 to PeakMatrix for Chr (15 of 23)!, 3.99 mins elapsed.
+2024-06-15 12:32:55.161494 : Adding e10l2 to PeakMatrix for Chr (16 of 23)!, 4.13 mins elapsed.
+2024-06-15 12:32:56.861127 : Adding e10l1 to PeakMatrix for Chr (16 of 23)!, 4.154 mins elapsed.
+2024-06-15 12:33:03.105735 : Adding e10l2 to PeakMatrix for Chr (17 of 23)!, 4.263 mins elapsed.
+2024-06-15 12:33:04.371612 : Adding e10l1 to PeakMatrix for Chr (17 of 23)!, 4.279 mins elapsed.
+2024-06-15 12:33:13.754076 : Adding e10l2 to PeakMatrix for Chr (18 of 23)!, 4.44 mins elapsed.
+2024-06-15 12:33:19.149426 : Adding e10l1 to PeakMatrix for Chr (18 of 23)!, 4.525 mins elapsed.
+2024-06-15 12:33:37.873774 : Adding e10l2 to PeakMatrix for Chr (19 of 23)!, 4.842 mins elapsed.
+2024-06-15 12:33:41.207351 : Adding e10l1 to PeakMatrix for Chr (19 of 23)!, 4.893 mins elapsed.
+2024-06-15 12:33:46.816172 : Adding e10l2 to PeakMatrix for Chr (20 of 23)!, 4.991 mins elapsed.
+2024-06-15 12:33:52.598876 : Adding e10l1 to PeakMatrix for Chr (20 of 23)!, 5.083 mins elapsed.
+2024-06-15 12:34:13.755335 : Adding e10l2 to PeakMatrix for Chr (21 of 23)!, 5.44 mins elapsed.
+2024-06-15 12:34:15.354463 : Adding e10l1 to PeakMatrix for Chr (21 of 23)!, 5.462 mins elapsed.
+2024-06-15 12:34:21.139564 : Adding e10l2 to PeakMatrix for Chr (22 of 23)!, 5.563 mins elapsed.
+2024-06-15 12:34:27.459984 : Adding e10l1 to PeakMatrix for Chr (22 of 23)!, 5.664 mins elapsed.
+2024-06-15 12:34:32.388222 : Adding e10l2 to PeakMatrix for Chr (23 of 23)!, 5.751 mins elapsed.
+2024-06-15 12:34:43.689261 : Adding e10l1 to PeakMatrix for Chr (23 of 23)!, 5.934 mins elapsed.
+
+------- Completed
+
+End Time : 2024-06-15 12:34:54.870863
+Elapsed Time Minutes = 6.2705483396848
+Elapsed Time Hours = 0.104509261846542
+
+-------
+
+
+
