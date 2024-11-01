@@ -1,6 +1,7 @@
-Scripts and notebooks for data preprocessing and analyses performed in Qiu, Sheth, et al. 2024 ([`BioRxiv`])
+## scE2G manuscript analyses
 
-## Notes:
+Scripts and notebooks for data preprocessing and analyses performed in Sheth, Qiu, et al. 2024 (add link)
+
 * For the scE2G tool, please refer to the scE2G model and pipeline [`repo`](https://github.com/EngreitzLab/sc-E2G)
 * For the scE2G prediction results, please see (insert link to NNFC page or Google bucket)
 
