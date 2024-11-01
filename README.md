@@ -1,17 +1,19 @@
+Scripts and notebooks for data preprocessing and analyses performed in Qiu, Sheth, et al. 2024 (insert BioRxiv link)
+
+For the scE2G tool, please refer to the scE2G model and pipeline [repo]("https://github.com/EngreitzLab/sc-E2G")
+For the scE2G prediction results, please see (insert link to NNFC page or Google bucket)
+
 # 1.Preprocess_Data
-Generate input files for E2G prediction models
+Code for generating input files for E2G prediction models
 
 # 2.Prediction
-Apply existing methods for E2G prediction, not include scE2G prediction.  
-scE2G pipeline: https://github.com/EngreitzLab/sc-E2G  
-scE2G prediction results: XXX
+Code for applying published models for E2G prediction 
 
 # 3.Benchmarking
-CRISPR, eQTL and GWAS benchmarking
+Code for CRISPR, eQTL and GWAS benchmarking analyses
 
 # 4.Robustness_Evaluation
-Evaluate model robustness basing on downsapling data
+Code for evaluation of model robustness basing on downsapling data
 
 # 5.Cell_Type_Specificity
-Evaluate cell-type specific E2G prediction
-
+Code for evaluation of cell-type specific E2G predictions
