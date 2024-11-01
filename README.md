@@ -2,8 +2,9 @@
 
 Scripts and notebooks for data preprocessing and analyses performed in Sheth, Qiu, et al. 2024 (add link)
 
-* For the scE2G tool, please refer to the scE2G model and pipeline [`repo`](https://github.com/EngreitzLab/sc-E2G)
+* For the scE2G tool, please see to the scE2G model and pipeline [`repo`](https://github.com/EngreitzLab/sc-E2G)
 * For the scE2G prediction results, please see (insert link to NNFC page or Google bucket)
+* For the benchmarking pipelines, please see to the individual benchmarking repos for [`CRISPR`](https://github.com/EngreitzLab/CRISPR_comparison/tree/main), [`eQTL`](https://github.com/EngreitzLab/eQTLEnrichment/tree/integrated), and [`GWAS`](https://github.com/EngreitzLab/GWAS_E2G_benchmarking)
 
 ## Contents:
 
