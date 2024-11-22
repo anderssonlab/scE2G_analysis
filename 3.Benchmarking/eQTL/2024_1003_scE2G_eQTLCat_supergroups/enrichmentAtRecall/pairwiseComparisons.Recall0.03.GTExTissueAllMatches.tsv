@@ -1,0 +1,46 @@
+group1	group2	p	p_adjust	significant
+scE2G (Multiome) (all_matches)	scE2G (scATAC) (all_matches)	6.67957242003439e-07	3.00580758901547e-05	TRUE
+scE2G (Multiome) (all_matches)	In element (ABC) & distance to TSS (all_matches)	4.9261944466665e-06	0.000221678750099993	TRUE
+scE2G (Multiome) (all_matches)	STARE (gABC, power law) (all_matches)	9.69019065317532e-18	4.36058579392889e-16	TRUE
+scE2G (Multiome) (all_matches)	SnapATAC (p-value) (all_matches)	3.54569613234834e-241	1.59556325955675e-239	TRUE
+scE2G (Multiome) (all_matches)	Signac (p-value) (all_matches)	0	0	TRUE
+scE2G (Multiome) (all_matches)	FigR (p-value) (all_matches)	5.43301297185776e-305	2.44485583733599e-303	TRUE
+scE2G (Multiome) (all_matches)	SCENT (FDR) (all_matches)	7.27633341908977e-86	3.2743500385904e-84	TRUE
+scE2G (Multiome) (all_matches)	SCENIC+ (importance) (all_matches)	2.9623929911667e-241	1.33307684602502e-239	TRUE
+scE2G (Multiome) (all_matches)	ENCODE-rE2G (A=DNase, C=average Hi-C) (all_matches)	0.221877985947271	1	FALSE
+scE2G (scATAC) (all_matches)	In element (ABC) & distance to TSS (all_matches)	0.694851922470044	1	FALSE
+scE2G (scATAC) (all_matches)	STARE (gABC, power law) (all_matches)	0.000198605895208136	0.00893726528436611	TRUE
+scE2G (scATAC) (all_matches)	SnapATAC (p-value) (all_matches)	3.6042117310569e-173	1.62189527897561e-171	TRUE
+scE2G (scATAC) (all_matches)	Signac (p-value) (all_matches)	2.62658593352834e-236	1.18196367008775e-234	TRUE
+scE2G (scATAC) (all_matches)	FigR (p-value) (all_matches)	3.6874406995838e-228	1.65934831481271e-226	TRUE
+scE2G (scATAC) (all_matches)	SCENT (FDR) (all_matches)	3.004269067444e-43	1.3519210803498e-41	TRUE
+scE2G (scATAC) (all_matches)	SCENIC+ (importance) (all_matches)	2.85526072850837e-173	1.28486732782877e-171	TRUE
+scE2G (scATAC) (all_matches)	ENCODE-rE2G (A=DNase, C=average Hi-C) (all_matches)	7.37779894388839e-05	0.00332000952474977	TRUE
+In element (ABC) & distance to TSS (all_matches)	STARE (gABC, power law) (all_matches)	4.20141179933041e-05	0.00189063530969868	TRUE
+In element (ABC) & distance to TSS (all_matches)	SnapATAC (p-value) (all_matches)	3.7644269442083e-177	1.69399212489374e-175	TRUE
+In element (ABC) & distance to TSS (all_matches)	Signac (p-value) (all_matches)	1.07127498178768e-240	4.82073741804455e-239	TRUE
+In element (ABC) & distance to TSS (all_matches)	FigR (p-value) (all_matches)	1.70822050911975e-232	7.68699229103886e-231	TRUE
+In element (ABC) & distance to TSS (all_matches)	SCENT (FDR) (all_matches)	8.40651471748291e-46	3.78293162286731e-44	TRUE
+In element (ABC) & distance to TSS (all_matches)	SCENIC+ (importance) (all_matches)	2.98769945948496e-177	1.34446475676823e-175	TRUE
+In element (ABC) & distance to TSS (all_matches)	ENCODE-rE2G (A=DNase, C=average Hi-C) (all_matches)	0.000179166503823756	0.00806249267206902	TRUE
+STARE (gABC, power law) (all_matches)	SnapATAC (p-value) (all_matches)	1.24580417108044e-120	5.60611876986199e-119	TRUE
+STARE (gABC, power law) (all_matches)	Signac (p-value) (all_matches)	8.87221000160192e-172	3.99249450072086e-170	TRUE
+STARE (gABC, power law) (all_matches)	FigR (p-value) (all_matches)	1.89920947318428e-165	8.54644262932928e-164	TRUE
+STARE (gABC, power law) (all_matches)	SCENT (FDR) (all_matches)	5.9797952397099e-19	2.69090785786946e-17	TRUE
+STARE (gABC, power law) (all_matches)	SCENIC+ (importance) (all_matches)	9.56842371819517e-121	4.30579067318783e-119	TRUE
+STARE (gABC, power law) (all_matches)	ENCODE-rE2G (A=DNase, C=average Hi-C) (all_matches)	2.19365287023814e-09	9.87143791607165e-08	TRUE
+SnapATAC (p-value) (all_matches)	Signac (p-value) (all_matches)	3.12079160367764e-07	1.40435622165494e-05	TRUE
+SnapATAC (p-value) (all_matches)	FigR (p-value) (all_matches)	3.10637393482511e-06	0.00013978682706713	TRUE
+SnapATAC (p-value) (all_matches)	SCENT (FDR) (all_matches)	1.25277914423879e-102	5.63750614907457e-101	TRUE
+SnapATAC (p-value) (all_matches)	SCENIC+ (importance) (all_matches)	0.974921201287479	1	FALSE
+SnapATAC (p-value) (all_matches)	ENCODE-rE2G (A=DNase, C=average Hi-C) (all_matches)	4.94469384349344e-71	2.22511222957205e-69	TRUE
+Signac (p-value) (all_matches)	FigR (p-value) (all_matches)	0.684941851122627	1	FALSE
+Signac (p-value) (all_matches)	SCENT (FDR) (all_matches)	3.50436259406134e-177	1.5769631673276e-175	TRUE
+Signac (p-value) (all_matches)	SCENIC+ (importance) (all_matches)	3.80484382700362e-07	1.71217972215163e-05	TRUE
+Signac (p-value) (all_matches)	ENCODE-rE2G (A=DNase, C=average Hi-C) (all_matches)	3.49047959854892e-88	1.57071581934701e-86	TRUE
+FigR (p-value) (all_matches)	SCENT (FDR) (all_matches)	2.74007193191986e-166	1.23303236936394e-164	TRUE
+FigR (p-value) (all_matches)	SCENIC+ (importance) (all_matches)	3.70888367318107e-06	0.000166899765293148	TRUE
+FigR (p-value) (all_matches)	ENCODE-rE2G (A=DNase, C=average Hi-C) (all_matches)	1.54447759531989e-86	6.9501491789395e-85	TRUE
+SCENT (FDR) (all_matches)	SCENIC+ (importance) (all_matches)	1.01271128278817e-102	4.55720077254675e-101	TRUE
+SCENT (FDR) (all_matches)	ENCODE-rE2G (A=DNase, C=average Hi-C) (all_matches)	9.61753125344225e-26	4.32788906404901e-24	TRUE
+SCENIC+ (importance) (all_matches)	ENCODE-rE2G (A=DNase, C=average Hi-C) (all_matches)	4.13796606655828e-71	1.86208472995122e-69	TRUE

@@ -1,0 +1,121 @@
+group1	group2	p	p_adjust	significant
+scE2G (Multiome) (BMMC22_G_M_prog)	scE2G (Multiome) (BMMC22_HSC)	0.822834811580041	1	FALSE
+scE2G (Multiome) (BMMC22_G_M_prog)	scE2G (Multiome) (BMMC22_Lymph_prog)	0.629572744926694	1	FALSE
+scE2G (Multiome) (BMMC22_G_M_prog)	scE2G (Multiome) (BMMC22_MK_E_prog)	0.736072258494304	1	FALSE
+scE2G (Multiome) (BMMC22_G_M_prog)	scE2G (scATAC) (BMMC22_G_M_prog)	0.857233239102329	1	FALSE
+scE2G (Multiome) (BMMC22_G_M_prog)	scE2G (scATAC) (BMMC22_HSC)	0.647299073278996	1	FALSE
+scE2G (Multiome) (BMMC22_G_M_prog)	scE2G (scATAC) (BMMC22_Lymph_prog)	0.56448481891325	1	FALSE
+scE2G (Multiome) (BMMC22_G_M_prog)	scE2G (scATAC) (BMMC22_MK_E_prog)	0.693463832052639	1	FALSE
+scE2G (Multiome) (BMMC22_G_M_prog)	ABC (A=scATAC, C=power law) (BMMC22_G_M_prog)	0.129072077886399	1	FALSE
+scE2G (Multiome) (BMMC22_G_M_prog)	ABC (A=scATAC, C=power law) (BMMC22_HSC)	0.00072065003798312	0.0864780045579744	FALSE
+scE2G (Multiome) (BMMC22_G_M_prog)	ABC (A=scATAC, C=power law) (BMMC22_Lymph_prog)	0.377741073572283	1	FALSE
+scE2G (Multiome) (BMMC22_G_M_prog)	ABC (A=scATAC, C=power law) (BMMC22_MK_E_prog)	0.000144151034199915	0.0172981241039898	TRUE
+scE2G (Multiome) (BMMC22_G_M_prog)	In element (ABC) & distance to TSS (BMMC22_G_M_prog)	0.0956796354690187	1	FALSE
+scE2G (Multiome) (BMMC22_G_M_prog)	In element (ABC) & distance to TSS (BMMC22_HSC)	2.53546927660251e-05	0.00304256313192301	TRUE
+scE2G (Multiome) (BMMC22_G_M_prog)	In element (ABC) & distance to TSS (BMMC22_Lymph_prog)	0.907568890353741	1	FALSE
+scE2G (Multiome) (BMMC22_G_M_prog)	In element (ABC) & distance to TSS (BMMC22_MK_E_prog)	1.7158094175903e-06	0.000205897130110836	TRUE
+scE2G (Multiome) (BMMC22_HSC)	scE2G (Multiome) (BMMC22_Lymph_prog)	0.477297909154683	1	FALSE
+scE2G (Multiome) (BMMC22_HSC)	scE2G (Multiome) (BMMC22_MK_E_prog)	0.905568247112604	1	FALSE
+scE2G (Multiome) (BMMC22_HSC)	scE2G (scATAC) (BMMC22_G_M_prog)	0.686003345169328	1	FALSE
+scE2G (Multiome) (BMMC22_HSC)	scE2G (scATAC) (BMMC22_HSC)	0.807803307772906	1	FALSE
+scE2G (Multiome) (BMMC22_HSC)	scE2G (scATAC) (BMMC22_Lymph_prog)	0.421275798578708	1	FALSE
+scE2G (Multiome) (BMMC22_HSC)	scE2G (scATAC) (BMMC22_MK_E_prog)	0.85741850516721	1	FALSE
+scE2G (Multiome) (BMMC22_HSC)	ABC (A=scATAC, C=power law) (BMMC22_G_M_prog)	0.186500599981933	1	FALSE
+scE2G (Multiome) (BMMC22_HSC)	ABC (A=scATAC, C=power law) (BMMC22_HSC)	0.00129141145071436	0.154969374085723	FALSE
+scE2G (Multiome) (BMMC22_HSC)	ABC (A=scATAC, C=power law) (BMMC22_Lymph_prog)	0.498585817360772	1	FALSE
+scE2G (Multiome) (BMMC22_HSC)	ABC (A=scATAC, C=power law) (BMMC22_MK_E_prog)	0.000268104397824624	0.0321725277389549	TRUE
+scE2G (Multiome) (BMMC22_HSC)	In element (ABC) & distance to TSS (BMMC22_G_M_prog)	0.140574421344635	1	FALSE
+scE2G (Multiome) (BMMC22_HSC)	In element (ABC) & distance to TSS (BMMC22_HSC)	4.89502647848624e-05	0.00587403177418348	TRUE
+scE2G (Multiome) (BMMC22_HSC)	In element (ABC) & distance to TSS (BMMC22_Lymph_prog)	0.736138899185791	1	FALSE
+scE2G (Multiome) (BMMC22_HSC)	In element (ABC) & distance to TSS (BMMC22_MK_E_prog)	3.45589178204063e-06	0.000414707013844875	TRUE
+scE2G (Multiome) (BMMC22_Lymph_prog)	scE2G (Multiome) (BMMC22_MK_E_prog)	0.415219168696826	1	FALSE
+scE2G (Multiome) (BMMC22_Lymph_prog)	scE2G (scATAC) (BMMC22_G_M_prog)	0.764144348016972	1	FALSE
+scE2G (Multiome) (BMMC22_Lymph_prog)	scE2G (scATAC) (BMMC22_HSC)	0.35296624366641	1	FALSE
+scE2G (Multiome) (BMMC22_Lymph_prog)	scE2G (scATAC) (BMMC22_Lymph_prog)	0.923452097911232	1	FALSE
+scE2G (Multiome) (BMMC22_Lymph_prog)	scE2G (scATAC) (BMMC22_MK_E_prog)	0.387184536268086	1	FALSE
+scE2G (Multiome) (BMMC22_Lymph_prog)	ABC (A=scATAC, C=power law) (BMMC22_G_M_prog)	0.0484635878952613	1	FALSE
+scE2G (Multiome) (BMMC22_Lymph_prog)	ABC (A=scATAC, C=power law) (BMMC22_HSC)	0.000144289706616316	0.0173147647939579	TRUE
+scE2G (Multiome) (BMMC22_Lymph_prog)	ABC (A=scATAC, C=power law) (BMMC22_Lymph_prog)	0.179305284062629	1	FALSE
+scE2G (Multiome) (BMMC22_Lymph_prog)	ABC (A=scATAC, C=power law) (BMMC22_MK_E_prog)	2.53409569739534e-05	0.00304091483687441	TRUE
+scE2G (Multiome) (BMMC22_Lymph_prog)	In element (ABC) & distance to TSS (BMMC22_G_M_prog)	0.0344234590285956	1	FALSE
+scE2G (Multiome) (BMMC22_Lymph_prog)	In element (ABC) & distance to TSS (BMMC22_HSC)	3.85975283050554e-06	0.000463170339660664	TRUE
+scE2G (Multiome) (BMMC22_Lymph_prog)	In element (ABC) & distance to TSS (BMMC22_Lymph_prog)	0.720403499327794	1	FALSE
+scE2G (Multiome) (BMMC22_Lymph_prog)	In element (ABC) & distance to TSS (BMMC22_MK_E_prog)	2.16815845406486e-07	2.60179014487783e-05	TRUE
+scE2G (Multiome) (BMMC22_MK_E_prog)	scE2G (scATAC) (BMMC22_G_M_prog)	0.607603753034873	1	FALSE
+scE2G (Multiome) (BMMC22_MK_E_prog)	scE2G (scATAC) (BMMC22_HSC)	0.901380275184753	1	FALSE
+scE2G (Multiome) (BMMC22_MK_E_prog)	scE2G (scATAC) (BMMC22_Lymph_prog)	0.364835367481248	1	FALSE
+scE2G (Multiome) (BMMC22_MK_E_prog)	scE2G (scATAC) (BMMC22_MK_E_prog)	0.950766997665064	1	FALSE
+scE2G (Multiome) (BMMC22_MK_E_prog)	ABC (A=scATAC, C=power law) (BMMC22_G_M_prog)	0.235876611846245	1	FALSE
+scE2G (Multiome) (BMMC22_MK_E_prog)	ABC (A=scATAC, C=power law) (BMMC22_HSC)	0.00221870088271643	0.266244105925971	FALSE
+scE2G (Multiome) (BMMC22_MK_E_prog)	ABC (A=scATAC, C=power law) (BMMC22_Lymph_prog)	0.580900929601416	1	FALSE
+scE2G (Multiome) (BMMC22_MK_E_prog)	ABC (A=scATAC, C=power law) (BMMC22_MK_E_prog)	0.000498940159245828	0.0598728191094994	FALSE
+scE2G (Multiome) (BMMC22_MK_E_prog)	In element (ABC) & distance to TSS (BMMC22_G_M_prog)	0.181089706769973	1	FALSE
+scE2G (Multiome) (BMMC22_MK_E_prog)	In element (ABC) & distance to TSS (BMMC22_HSC)	9.99784955258531e-05	0.0119974194631024	TRUE
+scE2G (Multiome) (BMMC22_MK_E_prog)	In element (ABC) & distance to TSS (BMMC22_Lymph_prog)	0.655523190898465	1	FALSE
+scE2G (Multiome) (BMMC22_MK_E_prog)	In element (ABC) & distance to TSS (BMMC22_MK_E_prog)	8.06958117926124e-06	0.000968349741511349	TRUE
+scE2G (scATAC) (BMMC22_G_M_prog)	scE2G (scATAC) (BMMC22_HSC)	0.528037861373206	1	FALSE
+scE2G (scATAC) (BMMC22_G_M_prog)	scE2G (scATAC) (BMMC22_Lymph_prog)	0.693346309428252	1	FALSE
+scE2G (scATAC) (BMMC22_G_M_prog)	scE2G (scATAC) (BMMC22_MK_E_prog)	0.570245210458172	1	FALSE
+scE2G (scATAC) (BMMC22_G_M_prog)	ABC (A=scATAC, C=power law) (BMMC22_G_M_prog)	0.0929415207506846	1	FALSE
+scE2G (scATAC) (BMMC22_G_M_prog)	ABC (A=scATAC, C=power law) (BMMC22_HSC)	0.000428302989328325	0.051396358719399	FALSE
+scE2G (scATAC) (BMMC22_G_M_prog)	ABC (A=scATAC, C=power law) (BMMC22_Lymph_prog)	0.293908915391565	1	FALSE
+scE2G (scATAC) (BMMC22_G_M_prog)	ABC (A=scATAC, C=power law) (BMMC22_MK_E_prog)	8.26566124209111e-05	0.00991879349050933	TRUE
+scE2G (scATAC) (BMMC22_G_M_prog)	In element (ABC) & distance to TSS (BMMC22_G_M_prog)	0.0679340657711495	1	FALSE
+scE2G (scATAC) (BMMC22_G_M_prog)	In element (ABC) & distance to TSS (BMMC22_HSC)	1.40014122076503e-05	0.00168016946491803	TRUE
+scE2G (scATAC) (BMMC22_G_M_prog)	In element (ABC) & distance to TSS (BMMC22_Lymph_prog)	0.951168066515384	1	FALSE
+scE2G (scATAC) (BMMC22_G_M_prog)	In element (ABC) & distance to TSS (BMMC22_MK_E_prog)	9.05271760214941e-07	0.000108632611225793	TRUE
+scE2G (scATAC) (BMMC22_HSC)	scE2G (scATAC) (BMMC22_Lymph_prog)	0.308373099706708	1	FALSE
+scE2G (scATAC) (BMMC22_HSC)	scE2G (scATAC) (BMMC22_MK_E_prog)	0.951265454036481	1	FALSE
+scE2G (scATAC) (BMMC22_HSC)	ABC (A=scATAC, C=power law) (BMMC22_G_M_prog)	0.29313308883392	1	FALSE
+scE2G (scATAC) (BMMC22_HSC)	ABC (A=scATAC, C=power law) (BMMC22_HSC)	0.00359208905001164	0.431050686001397	FALSE
+scE2G (scATAC) (BMMC22_HSC)	ABC (A=scATAC, C=power law) (BMMC22_Lymph_prog)	0.670646076543105	1	FALSE
+scE2G (scATAC) (BMMC22_HSC)	ABC (A=scATAC, C=power law) (BMMC22_MK_E_prog)	0.000863721568281881	0.103646588193826	FALSE
+scE2G (scATAC) (BMMC22_HSC)	In element (ABC) & distance to TSS (BMMC22_G_M_prog)	0.228817514805952	1	FALSE
+scE2G (scATAC) (BMMC22_HSC)	In element (ABC) & distance to TSS (BMMC22_HSC)	0.000186775479488339	0.0224130575386007	TRUE
+scE2G (scATAC) (BMMC22_HSC)	In element (ABC) & distance to TSS (BMMC22_Lymph_prog)	0.573377860266621	1	FALSE
+scE2G (scATAC) (BMMC22_HSC)	In element (ABC) & distance to TSS (BMMC22_MK_E_prog)	1.68036800831794e-05	0.00201644160998153	TRUE
+scE2G (scATAC) (BMMC22_Lymph_prog)	scE2G (scATAC) (BMMC22_MK_E_prog)	0.339731500219752	1	FALSE
+scE2G (scATAC) (BMMC22_Lymph_prog)	ABC (A=scATAC, C=power law) (BMMC22_G_M_prog)	0.0398413019180495	1	FALSE
+scE2G (scATAC) (BMMC22_Lymph_prog)	ABC (A=scATAC, C=power law) (BMMC22_HSC)	0.000109456423608819	0.0131347708330583	TRUE
+scE2G (scATAC) (BMMC22_Lymph_prog)	ABC (A=scATAC, C=power law) (BMMC22_Lymph_prog)	0.153023320866677	1	FALSE
+scE2G (scATAC) (BMMC22_Lymph_prog)	ABC (A=scATAC, C=power law) (BMMC22_MK_E_prog)	1.89757823821301e-05	0.00227709388585561	TRUE
+scE2G (scATAC) (BMMC22_Lymph_prog)	In element (ABC) & distance to TSS (BMMC22_G_M_prog)	0.0281289468752504	1	FALSE
+scE2G (scATAC) (BMMC22_Lymph_prog)	In element (ABC) & distance to TSS (BMMC22_HSC)	2.85306408421531e-06	0.000342367690105838	TRUE
+scE2G (scATAC) (BMMC22_Lymph_prog)	In element (ABC) & distance to TSS (BMMC22_Lymph_prog)	0.652108443548862	1	FALSE
+scE2G (scATAC) (BMMC22_Lymph_prog)	In element (ABC) & distance to TSS (BMMC22_MK_E_prog)	1.58076076240326e-07	1.89691291488391e-05	TRUE
+scE2G (scATAC) (BMMC22_MK_E_prog)	ABC (A=scATAC, C=power law) (BMMC22_G_M_prog)	0.267625838916564	1	FALSE
+scE2G (scATAC) (BMMC22_MK_E_prog)	ABC (A=scATAC, C=power law) (BMMC22_HSC)	0.00306091552439756	0.367309862927707	FALSE
+scE2G (scATAC) (BMMC22_MK_E_prog)	ABC (A=scATAC, C=power law) (BMMC22_Lymph_prog)	0.628181746770194	1	FALSE
+scE2G (scATAC) (BMMC22_MK_E_prog)	ABC (A=scATAC, C=power law) (BMMC22_MK_E_prog)	0.000726234609178795	0.0871481531014554	FALSE
+scE2G (scATAC) (BMMC22_MK_E_prog)	In element (ABC) & distance to TSS (BMMC22_G_M_prog)	0.20781552503766	1	FALSE
+scE2G (scATAC) (BMMC22_MK_E_prog)	In element (ABC) & distance to TSS (BMMC22_HSC)	0.000154907713870872	0.0185889256645046	TRUE
+scE2G (scATAC) (BMMC22_MK_E_prog)	In element (ABC) & distance to TSS (BMMC22_Lymph_prog)	0.616589228382499	1	FALSE
+scE2G (scATAC) (BMMC22_MK_E_prog)	In element (ABC) & distance to TSS (BMMC22_MK_E_prog)	1.37019519063351e-05	0.00164423422876021	TRUE
+ABC (A=scATAC, C=power law) (BMMC22_G_M_prog)	ABC (A=scATAC, C=power law) (BMMC22_HSC)	0.0593203615097943	1	FALSE
+ABC (A=scATAC, C=power law) (BMMC22_G_M_prog)	ABC (A=scATAC, C=power law) (BMMC22_Lymph_prog)	0.537625767013443	1	FALSE
+ABC (A=scATAC, C=power law) (BMMC22_G_M_prog)	ABC (A=scATAC, C=power law) (BMMC22_MK_E_prog)	0.020746977211669	1	FALSE
+ABC (A=scATAC, C=power law) (BMMC22_G_M_prog)	In element (ABC) & distance to TSS (BMMC22_G_M_prog)	0.870589275857105	1	FALSE
+ABC (A=scATAC, C=power law) (BMMC22_G_M_prog)	In element (ABC) & distance to TSS (BMMC22_HSC)	0.00669383849284629	0.803260619141555	FALSE
+ABC (A=scATAC, C=power law) (BMMC22_G_M_prog)	In element (ABC) & distance to TSS (BMMC22_Lymph_prog)	0.109291696665462	1	FALSE
+ABC (A=scATAC, C=power law) (BMMC22_G_M_prog)	In element (ABC) & distance to TSS (BMMC22_MK_E_prog)	0.00104833877850804	0.125800653420965	FALSE
+ABC (A=scATAC, C=power law) (BMMC22_HSC)	ABC (A=scATAC, C=power law) (BMMC22_Lymph_prog)	0.0134495513900125	1	FALSE
+ABC (A=scATAC, C=power law) (BMMC22_HSC)	ABC (A=scATAC, C=power law) (BMMC22_MK_E_prog)	0.667160761709069	1	FALSE
+ABC (A=scATAC, C=power law) (BMMC22_HSC)	In element (ABC) & distance to TSS (BMMC22_G_M_prog)	0.0875241856320966	1	FALSE
+ABC (A=scATAC, C=power law) (BMMC22_HSC)	In element (ABC) & distance to TSS (BMMC22_HSC)	0.417675194671883	1	FALSE
+ABC (A=scATAC, C=power law) (BMMC22_HSC)	In element (ABC) & distance to TSS (BMMC22_Lymph_prog)	0.000608356558433096	0.0730027870119715	FALSE
+ABC (A=scATAC, C=power law) (BMMC22_HSC)	In element (ABC) & distance to TSS (BMMC22_MK_E_prog)	0.173733114818003	1	FALSE
+ABC (A=scATAC, C=power law) (BMMC22_Lymph_prog)	ABC (A=scATAC, C=power law) (BMMC22_MK_E_prog)	0.00384086976154452	0.460904371385343	FALSE
+ABC (A=scATAC, C=power law) (BMMC22_Lymph_prog)	In element (ABC) & distance to TSS (BMMC22_G_M_prog)	0.440301788765428	1	FALSE
+ABC (A=scATAC, C=power law) (BMMC22_Lymph_prog)	In element (ABC) & distance to TSS (BMMC22_HSC)	0.0010027257592798	0.120327091113576	FALSE
+ABC (A=scATAC, C=power law) (BMMC22_Lymph_prog)	In element (ABC) & distance to TSS (BMMC22_Lymph_prog)	0.328025530516139	1	FALSE
+ABC (A=scATAC, C=power law) (BMMC22_Lymph_prog)	In element (ABC) & distance to TSS (BMMC22_MK_E_prog)	0.000117379956923006	0.0140855948307607	TRUE
+ABC (A=scATAC, C=power law) (BMMC22_MK_E_prog)	In element (ABC) & distance to TSS (BMMC22_G_M_prog)	0.0329498743767012	1	FALSE
+ABC (A=scATAC, C=power law) (BMMC22_MK_E_prog)	In element (ABC) & distance to TSS (BMMC22_HSC)	0.707060744978174	1	FALSE
+ABC (A=scATAC, C=power law) (BMMC22_MK_E_prog)	In element (ABC) & distance to TSS (BMMC22_Lymph_prog)	0.000123320915425036	0.0147985098510044	TRUE
+ABC (A=scATAC, C=power law) (BMMC22_MK_E_prog)	In element (ABC) & distance to TSS (BMMC22_MK_E_prog)	0.356830426156283	1	FALSE
+In element (ABC) & distance to TSS (BMMC22_G_M_prog)	In element (ABC) & distance to TSS (BMMC22_HSC)	0.0115035784544867	1	FALSE
+In element (ABC) & distance to TSS (BMMC22_G_M_prog)	In element (ABC) & distance to TSS (BMMC22_Lymph_prog)	0.0807643528056506	1	FALSE
+In element (ABC) & distance to TSS (BMMC22_G_M_prog)	In element (ABC) & distance to TSS (BMMC22_MK_E_prog)	0.00202270390609285	0.242724468731141	FALSE
+In element (ABC) & distance to TSS (BMMC22_HSC)	In element (ABC) & distance to TSS (BMMC22_Lymph_prog)	2.21395613459471e-05	0.00265674736151366	TRUE
+In element (ABC) & distance to TSS (BMMC22_HSC)	In element (ABC) & distance to TSS (BMMC22_MK_E_prog)	0.583865783761329	1	FALSE
+In element (ABC) & distance to TSS (BMMC22_Lymph_prog)	In element (ABC) & distance to TSS (BMMC22_MK_E_prog)	1.55592720245524e-06	0.000186711264294629	TRUE

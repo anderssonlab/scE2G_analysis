@@ -1,0 +1,29 @@
+group1	group2	p	p_adjust	significant
+scE2G (Multiome) (BMMC22_G_M_prog)	scE2G (Multiome) (BMMC22_ID2_hi_myeloid_prog)	0.457704643122151	1	FALSE
+scE2G (Multiome) (BMMC22_G_M_prog)	scE2G (scATAC) (BMMC22_G_M_prog)	0.157200333521494	1	FALSE
+scE2G (Multiome) (BMMC22_G_M_prog)	scE2G (scATAC) (BMMC22_ID2_hi_myeloid_prog)	0.716086315060765	1	FALSE
+scE2G (Multiome) (BMMC22_G_M_prog)	ABC (A=scATAC, C=power law) (BMMC22_G_M_prog)	0.375193324855488	1	FALSE
+scE2G (Multiome) (BMMC22_G_M_prog)	ABC (A=scATAC, C=power law) (BMMC22_ID2_hi_myeloid_prog)	0.982935187410203	1	FALSE
+scE2G (Multiome) (BMMC22_G_M_prog)	In element (ABC) & distance to TSS (BMMC22_G_M_prog)	0.20300215231754	1	FALSE
+scE2G (Multiome) (BMMC22_G_M_prog)	In element (ABC) & distance to TSS (BMMC22_ID2_hi_myeloid_prog)	0.0453349995812254	1	FALSE
+scE2G (Multiome) (BMMC22_ID2_hi_myeloid_prog)	scE2G (scATAC) (BMMC22_G_M_prog)	0.0281852050302138	0.789185740845986	FALSE
+scE2G (Multiome) (BMMC22_ID2_hi_myeloid_prog)	scE2G (scATAC) (BMMC22_ID2_hi_myeloid_prog)	0.253761349757557	1	FALSE
+scE2G (Multiome) (BMMC22_ID2_hi_myeloid_prog)	ABC (A=scATAC, C=power law) (BMMC22_G_M_prog)	0.0978541807094077	1	FALSE
+scE2G (Multiome) (BMMC22_ID2_hi_myeloid_prog)	ABC (A=scATAC, C=power law) (BMMC22_ID2_hi_myeloid_prog)	0.46327470847786	1	FALSE
+scE2G (Multiome) (BMMC22_ID2_hi_myeloid_prog)	In element (ABC) & distance to TSS (BMMC22_G_M_prog)	0.0410368167163922	1	FALSE
+scE2G (Multiome) (BMMC22_ID2_hi_myeloid_prog)	In element (ABC) & distance to TSS (BMMC22_ID2_hi_myeloid_prog)	0.00505012909325197	0.141403614611055	FALSE
+scE2G (scATAC) (BMMC22_G_M_prog)	scE2G (scATAC) (BMMC22_ID2_hi_myeloid_prog)	0.272744798810315	1	FALSE
+scE2G (scATAC) (BMMC22_G_M_prog)	ABC (A=scATAC, C=power law) (BMMC22_G_M_prog)	0.594565721318451	1	FALSE
+scE2G (scATAC) (BMMC22_G_M_prog)	ABC (A=scATAC, C=power law) (BMMC22_ID2_hi_myeloid_prog)	0.14437887988142	1	FALSE
+scE2G (scATAC) (BMMC22_G_M_prog)	In element (ABC) & distance to TSS (BMMC22_G_M_prog)	0.895845759572452	1	FALSE
+scE2G (scATAC) (BMMC22_G_M_prog)	In element (ABC) & distance to TSS (BMMC22_ID2_hi_myeloid_prog)	0.563962015394217	1	FALSE
+scE2G (scATAC) (BMMC22_ID2_hi_myeloid_prog)	ABC (A=scATAC, C=power law) (BMMC22_G_M_prog)	0.581864795737594	1	FALSE
+scE2G (scATAC) (BMMC22_ID2_hi_myeloid_prog)	ABC (A=scATAC, C=power law) (BMMC22_ID2_hi_myeloid_prog)	0.694897853686321	1	FALSE
+scE2G (scATAC) (BMMC22_ID2_hi_myeloid_prog)	In element (ABC) & distance to TSS (BMMC22_G_M_prog)	0.3406833086431	1	FALSE
+scE2G (scATAC) (BMMC22_ID2_hi_myeloid_prog)	In element (ABC) & distance to TSS (BMMC22_ID2_hi_myeloid_prog)	0.0888415838841625	1	FALSE
+ABC (A=scATAC, C=power law) (BMMC22_G_M_prog)	ABC (A=scATAC, C=power law) (BMMC22_ID2_hi_myeloid_prog)	0.355941523228162	1	FALSE
+ABC (A=scATAC, C=power law) (BMMC22_G_M_prog)	In element (ABC) & distance to TSS (BMMC22_G_M_prog)	0.691475473740454	1	FALSE
+ABC (A=scATAC, C=power law) (BMMC22_G_M_prog)	In element (ABC) & distance to TSS (BMMC22_ID2_hi_myeloid_prog)	0.264882323821775	1	FALSE
+ABC (A=scATAC, C=power law) (BMMC22_ID2_hi_myeloid_prog)	In element (ABC) & distance to TSS (BMMC22_G_M_prog)	0.188417856051912	1	FALSE
+ABC (A=scATAC, C=power law) (BMMC22_ID2_hi_myeloid_prog)	In element (ABC) & distance to TSS (BMMC22_ID2_hi_myeloid_prog)	0.0396480873508008	1	FALSE
+In element (ABC) & distance to TSS (BMMC22_G_M_prog)	In element (ABC) & distance to TSS (BMMC22_ID2_hi_myeloid_prog)	0.481235771675011	1	FALSE

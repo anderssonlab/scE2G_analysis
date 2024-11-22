@@ -1,0 +1,15 @@
+##  CONFIG
+results: "results/2024_1003_fine_tissues"
+sample_config: "config/dataset_metadata_subset.tsv"
+thresholdPIP: 0.5
+category_column: "tissue_fine"
+
+## RESOURCE / REFERENCE FILES
+baseDir: "/oak/stanford/groups/engreitz/Users/sheth/Data/eQTL_Catalogue_v7/"
+genes: "/oak/stanford/groups/engreitz/Users/sheth/eQTLEnrichment-integrated/eQTLEnrichment/resources/genome_annotation/CollapsedGeneBounds.hg38.tsv"
+chrSizes : "/oak/stanford/groups/engreitz/Users/sheth/eQTLEnrichment-integrated/eQTLEnrichment/resources/genome_annotation/GRCh38_EBV.chrom.sizes.tsv"
+
+
+
+
+

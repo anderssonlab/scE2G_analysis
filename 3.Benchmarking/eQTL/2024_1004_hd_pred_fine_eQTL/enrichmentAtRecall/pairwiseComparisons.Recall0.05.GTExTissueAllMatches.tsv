@@ -1,0 +1,16 @@
+group1	group2	p	p_adjust	significant
+scE2G (Multiome) (all_matches)	scE2G (scATAC) (all_matches)	1.7727354118107e-08	2.65910311771604e-07	TRUE
+scE2G (Multiome) (all_matches)	ABC (A=scATAC, C=power law) (all_matches)	1.2663907983322e-10	1.8995861974983e-09	TRUE
+scE2G (Multiome) (all_matches)	In element (ABC) & distance to TSS (all_matches)	1.62841942248097e-07	2.44262913372146e-06	TRUE
+scE2G (Multiome) (all_matches)	STARE (gABC, power law) (all_matches)	2.65592697049618e-09	3.98389045574428e-08	TRUE
+scE2G (Multiome) (all_matches)	SCENT (FDR) (all_matches)	3.52557972085536e-95	5.28836958128303e-94	TRUE
+scE2G (scATAC) (all_matches)	ABC (A=scATAC, C=power law) (all_matches)	0.411164652297432	1	FALSE
+scE2G (scATAC) (all_matches)	In element (ABC) & distance to TSS (all_matches)	0.714338457719038	1	FALSE
+scE2G (scATAC) (all_matches)	STARE (gABC, power law) (all_matches)	0.0940997414287194	1	FALSE
+scE2G (scATAC) (all_matches)	SCENT (FDR) (all_matches)	1.0798951785495e-49	1.61984276782425e-48	TRUE
+ABC (A=scATAC, C=power law) (all_matches)	In element (ABC) & distance to TSS (all_matches)	0.237159961003436	1	FALSE
+ABC (A=scATAC, C=power law) (all_matches)	STARE (gABC, power law) (all_matches)	0.296038361537993	1	FALSE
+ABC (A=scATAC, C=power law) (all_matches)	SCENT (FDR) (all_matches)	6.73231666211747e-44	1.00984749931762e-42	TRUE
+In element (ABC) & distance to TSS (all_matches)	STARE (gABC, power law) (all_matches)	0.0514557933795198	0.771836900692796	FALSE
+In element (ABC) & distance to TSS (all_matches)	SCENT (FDR) (all_matches)	1.23053222075487e-51	1.84579833113231e-50	TRUE
+STARE (gABC, power law) (all_matches)	SCENT (FDR) (all_matches)	1.06088646611397e-20	1.59132969917096e-19	TRUE

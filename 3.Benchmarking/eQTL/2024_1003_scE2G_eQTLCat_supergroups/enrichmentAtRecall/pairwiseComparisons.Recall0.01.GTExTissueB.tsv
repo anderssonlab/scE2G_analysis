@@ -1,0 +1,79 @@
+group1	group2	p	p_adjust	significant
+scE2G (Multiome) (BMMC5_B)	scE2G (Multiome) (PBMC5_B)	0.731705055749481	1	FALSE
+scE2G (Multiome) (BMMC5_B)	scE2G (scATAC) (PBMC5_B)	0.679307806647798	1	FALSE
+scE2G (Multiome) (BMMC5_B)	STARE (gABC, power law) (BMMC5_B)	0.246396553158973	1	FALSE
+scE2G (Multiome) (BMMC5_B)	SnapATAC (p-value) (BMMC5_B)	0.0241809084411315	1	FALSE
+scE2G (Multiome) (BMMC5_B)	Signac (p-value) (BMMC5_B)	0.0321466675893139	1	FALSE
+scE2G (Multiome) (BMMC5_B)	Signac (p-value) (PBMC5_B)	0.0316405634723593	1	FALSE
+scE2G (Multiome) (BMMC5_B)	Cicero (co-accessibility) (BMMC5_B)	0.00543964345411873	0.424292189421261	FALSE
+scE2G (Multiome) (BMMC5_B)	Cicero (co-accessibility) (PBMC5_B)	0.0478919590674552	1	FALSE
+scE2G (Multiome) (BMMC5_B)	FigR (p-value) (BMMC5_B)	0.00382354669115935	0.298236641910429	FALSE
+scE2G (Multiome) (BMMC5_B)	FigR (p-value) (PBMC5_B)	0.0667830355650732	1	FALSE
+scE2G (Multiome) (BMMC5_B)	SCENIC+ (importance) (PBMC5_B)	0.195761229335198	1	FALSE
+scE2G (Multiome) (BMMC5_B)	ArchR (high-confidence) (BMMC5_B)	0.0873599919388246	1	FALSE
+scE2G (Multiome) (PBMC5_B)	scE2G (scATAC) (PBMC5_B)	0.440069783202109	1	FALSE
+scE2G (Multiome) (PBMC5_B)	STARE (gABC, power law) (BMMC5_B)	0.127319446199779	1	FALSE
+scE2G (Multiome) (PBMC5_B)	SnapATAC (p-value) (BMMC5_B)	0.00683891096770054	0.533435055480642	FALSE
+scE2G (Multiome) (PBMC5_B)	Signac (p-value) (BMMC5_B)	0.00964488577709668	0.752301090613541	FALSE
+scE2G (Multiome) (PBMC5_B)	Signac (p-value) (PBMC5_B)	0.00774422206783841	0.604049321291396	FALSE
+scE2G (Multiome) (PBMC5_B)	Cicero (co-accessibility) (BMMC5_B)	0.0012426649107187	0.0969278630360588	FALSE
+scE2G (Multiome) (PBMC5_B)	Cicero (co-accessibility) (PBMC5_B)	0.0156380828291012	1	FALSE
+scE2G (Multiome) (PBMC5_B)	FigR (p-value) (BMMC5_B)	0.000659435673370033	0.0514359825228626	FALSE
+scE2G (Multiome) (PBMC5_B)	FigR (p-value) (PBMC5_B)	0.0193124813400096	1	FALSE
+scE2G (Multiome) (PBMC5_B)	SCENIC+ (importance) (PBMC5_B)	0.0810953159817199	1	FALSE
+scE2G (Multiome) (PBMC5_B)	ArchR (high-confidence) (BMMC5_B)	0.0325739805566108	1	FALSE
+scE2G (scATAC) (PBMC5_B)	STARE (gABC, power law) (BMMC5_B)	0.444155029802959	1	FALSE
+scE2G (scATAC) (PBMC5_B)	SnapATAC (p-value) (BMMC5_B)	0.0679839928554413	1	FALSE
+scE2G (scATAC) (PBMC5_B)	Signac (p-value) (BMMC5_B)	0.0866305273224827	1	FALSE
+scE2G (scATAC) (PBMC5_B)	Signac (p-value) (PBMC5_B)	0.0947701737010173	1	FALSE
+scE2G (scATAC) (PBMC5_B)	Cicero (co-accessibility) (BMMC5_B)	0.017959271050186	1	FALSE
+scE2G (scATAC) (PBMC5_B)	Cicero (co-accessibility) (PBMC5_B)	0.121338344165685	1	FALSE
+scE2G (scATAC) (PBMC5_B)	FigR (p-value) (BMMC5_B)	0.0147231045569165	1	FALSE
+scE2G (scATAC) (PBMC5_B)	FigR (p-value) (PBMC5_B)	0.177467930043494	1	FALSE
+scE2G (scATAC) (PBMC5_B)	SCENIC+ (importance) (PBMC5_B)	0.406036513263964	1	FALSE
+scE2G (scATAC) (PBMC5_B)	ArchR (high-confidence) (BMMC5_B)	0.200428555738164	1	FALSE
+STARE (gABC, power law) (BMMC5_B)	SnapATAC (p-value) (BMMC5_B)	0.346454758560089	1	FALSE
+STARE (gABC, power law) (BMMC5_B)	Signac (p-value) (BMMC5_B)	0.40346533190846	1	FALSE
+STARE (gABC, power law) (BMMC5_B)	Signac (p-value) (PBMC5_B)	0.486306147567889	1	FALSE
+STARE (gABC, power law) (BMMC5_B)	Cicero (co-accessibility) (BMMC5_B)	0.136230791536878	1	FALSE
+STARE (gABC, power law) (BMMC5_B)	Cicero (co-accessibility) (PBMC5_B)	0.496845918178966	1	FALSE
+STARE (gABC, power law) (BMMC5_B)	FigR (p-value) (BMMC5_B)	0.141123594924504	1	FALSE
+STARE (gABC, power law) (BMMC5_B)	FigR (p-value) (PBMC5_B)	0.702722228948948	1	FALSE
+STARE (gABC, power law) (BMMC5_B)	SCENIC+ (importance) (PBMC5_B)	0.948799114849775	1	FALSE
+STARE (gABC, power law) (BMMC5_B)	ArchR (high-confidence) (BMMC5_B)	0.671448236603676	1	FALSE
+SnapATAC (p-value) (BMMC5_B)	Signac (p-value) (BMMC5_B)	0.907415440757879	1	FALSE
+SnapATAC (p-value) (BMMC5_B)	Signac (p-value) (PBMC5_B)	0.702461005196044	1	FALSE
+SnapATAC (p-value) (BMMC5_B)	Cicero (co-accessibility) (BMMC5_B)	0.527507724771019	1	FALSE
+SnapATAC (p-value) (BMMC5_B)	Cicero (co-accessibility) (PBMC5_B)	0.773823358425821	1	FALSE
+SnapATAC (p-value) (BMMC5_B)	FigR (p-value) (BMMC5_B)	0.592614553403888	1	FALSE
+SnapATAC (p-value) (BMMC5_B)	FigR (p-value) (PBMC5_B)	0.452941133759315	1	FALSE
+SnapATAC (p-value) (BMMC5_B)	SCENIC+ (importance) (PBMC5_B)	0.232941124068822	1	FALSE
+SnapATAC (p-value) (BMMC5_B)	ArchR (high-confidence) (BMMC5_B)	0.570461112378531	1	FALSE
+Signac (p-value) (BMMC5_B)	Signac (p-value) (PBMC5_B)	0.801771142877051	1	FALSE
+Signac (p-value) (BMMC5_B)	Cicero (co-accessibility) (BMMC5_B)	0.457183215957074	1	FALSE
+Signac (p-value) (BMMC5_B)	Cicero (co-accessibility) (PBMC5_B)	0.864162187969489	1	FALSE
+Signac (p-value) (BMMC5_B)	FigR (p-value) (BMMC5_B)	0.510211333650283	1	FALSE
+Signac (p-value) (BMMC5_B)	FigR (p-value) (PBMC5_B)	0.536809306452621	1	FALSE
+Signac (p-value) (BMMC5_B)	SCENIC+ (importance) (PBMC5_B)	0.286189112624041	1	FALSE
+Signac (p-value) (BMMC5_B)	ArchR (high-confidence) (BMMC5_B)	0.651936369271743	1	FALSE
+Signac (p-value) (PBMC5_B)	Cicero (co-accessibility) (BMMC5_B)	0.285908828156724	1	FALSE
+Signac (p-value) (PBMC5_B)	Cicero (co-accessibility) (PBMC5_B)	0.953403201904368	1	FALSE
+Signac (p-value) (PBMC5_B)	FigR (p-value) (BMMC5_B)	0.305118000814425	1	FALSE
+Signac (p-value) (PBMC5_B)	FigR (p-value) (PBMC5_B)	0.669831339765634	1	FALSE
+Signac (p-value) (PBMC5_B)	SCENIC+ (importance) (PBMC5_B)	0.341461787890321	1	FALSE
+Signac (p-value) (PBMC5_B)	ArchR (high-confidence) (BMMC5_B)	0.797318153289144	1	FALSE
+Cicero (co-accessibility) (BMMC5_B)	Cicero (co-accessibility) (PBMC5_B)	0.36399802273036	1	FALSE
+Cicero (co-accessibility) (BMMC5_B)	FigR (p-value) (BMMC5_B)	0.875916070564525	1	FALSE
+Cicero (co-accessibility) (BMMC5_B)	FigR (p-value) (PBMC5_B)	0.153948910242511	1	FALSE
+Cicero (co-accessibility) (BMMC5_B)	SCENIC+ (importance) (PBMC5_B)	0.0689259967479868	1	FALSE
+Cicero (co-accessibility) (BMMC5_B)	ArchR (high-confidence) (BMMC5_B)	0.239338483832281	1	FALSE
+Cicero (co-accessibility) (PBMC5_B)	FigR (p-value) (BMMC5_B)	0.40084317628325	1	FALSE
+Cicero (co-accessibility) (PBMC5_B)	FigR (p-value) (PBMC5_B)	0.672891568325359	1	FALSE
+Cicero (co-accessibility) (PBMC5_B)	SCENIC+ (importance) (PBMC5_B)	0.378462870028836	1	FALSE
+Cicero (co-accessibility) (PBMC5_B)	ArchR (high-confidence) (BMMC5_B)	0.779480722428444	1	FALSE
+FigR (p-value) (BMMC5_B)	FigR (p-value) (PBMC5_B)	0.150964372942243	1	FALSE
+FigR (p-value) (BMMC5_B)	SCENIC+ (importance) (PBMC5_B)	0.0616692918833365	1	FALSE
+FigR (p-value) (BMMC5_B)	ArchR (high-confidence) (BMMC5_B)	0.255395281289656	1	FALSE
+FigR (p-value) (PBMC5_B)	SCENIC+ (importance) (PBMC5_B)	0.573156430084891	1	FALSE
+FigR (p-value) (PBMC5_B)	ArchR (high-confidence) (BMMC5_B)	0.918534055260338	1	FALSE
+SCENIC+ (importance) (PBMC5_B)	ArchR (high-confidence) (BMMC5_B)	0.564167282430418	1	FALSE

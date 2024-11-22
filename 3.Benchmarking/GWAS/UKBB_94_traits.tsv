@@ -1,0 +1,102 @@
+# cohort: "UKBB" for UK Biobank						
+# trait_id: short identifier or acronym for trait						
+# description: description of trait						
+# definition: identifier for definition of phenotype						
+# n: number of subjects included in analysis of the trait						
+# n_cases: (for qualitative traits) number of subjects with phenotype						
+# n_controls: (for qualitative traits) number of subjects without phenotype						
+cohort	trait_id	description	definition	n	n_cases	n_controls
+UKBB	AFib	Atrial fibrillation	Phecode 427.2	349512	12975	336537
+UKBB	AG	Albumin/Globulin ratio	Albumin (30600) / (Total Protein [30860] - Albumin)	316549	NA	NA
+UKBB	Age_at_Menarche	Age at menarche	2714	188645	NA	NA
+UKBB	Age_at_Menopause	Age at menopause	3581	109110	NA	NA
+UKBB	AID_Combined	Autoimmune disease (Phecode + Self-reported)	Combination of Phecodes (242.1, 244, 250.1, 335, 358.1, 446.4, 555, 557.1, 564.1, 694.1, 695.42, 704.1, 709.2, 709.3, 714.1, 715.2, 717) and non-cancer self-reported illness codes (1154, 1222, 1224, 1225, 1226, 1256, 1260, 1261, 1313, 1372, 1377, 1378, 1381, 1382, 1384, 1437, 1453, 1456, 1461, 1462, 1463, 1464, 1477, 1522, 1661, 1667)	293798	57091	236707
+UKBB	Alb	Albumin	30600	317006	NA	NA
+UKBB	ALP	Alkaline phosphatase	30610	345247	NA	NA
+UKBB	ALT	Alanine aminotransferase	30620	345091	NA	NA
+UKBB	Alzheimer_LTFH	Alzheimer disease (LTFH)	Alzheimer LT-FH (see Hujoel et al. bioRxiv, 2019)	360661	NA	NA
+UKBB	ApoA	Apolipoprotein A	30630	315139	NA	NA
+UKBB	ApoB	Apolipoprotein B	30640	343572	NA	NA
+UKBB	AST	Aspartate aminotransferase	30650	343988	NA	NA
+UKBB	Asthma	Asthma	Phecode 495	354883	23001	331882
+UKBB	Balding_Type4	Balding Type 4	2395 (Pattern 4 as cases vs others)	167000	30876	136124
+UKBB	Baso	Basophil count	30160	350726	NA	NA
+UKBB	BFP	Body fat percentage	23099	354844	NA	NA
+UKBB	Blood_Clot_Lung	Blood clot in the lung	6152	361144	3055	358089
+UKBB	BMI	Body mass index	21001	360023	NA	NA
+UKBB	BrC	Breast cancer	Phecode 174	343346	11412	331934
+UKBB	BW	Body weight	21002	360153	NA	NA
+UKBB	Ca	Calcium	30680	316888	NA	NA
+UKBB	CAD	Coronary artery disease	Phecode 411	360710	27244	333466
+UKBB	Cholelithiasis	Cholelithiasis	Phecode 574.1	358546	12630	345916
+UKBB	CRC	Colorectal cancer	Phecode 153	342123	3977	338146
+UKBB	CRP	C-reactive protein	30710	344503	NA	NA
+UKBB	DBP	Diastolic blood pressure	4079	360865	NA	NA
+UKBB	Depression_GP	Seen doctor (GP) for nerves, anxiety, tension or depression	2090	361144	124906	236238
+UKBB	DVT	Blood clot in the leg	6152	361144	84610	276534
+UKBB	eBMD	Estimated heel bone mineral density	Mean of left and right heel bone mineral density (4105, 4124)	326159	NA	NA
+UKBB	eGFR	Estimated glomerular filtration rate (serum creatinine)	eGFR based on serum creatinine (30700) using the CKD-EPI formula	345067	NA	NA
+UKBB	eGFRcys	Estimated glomerular filtration rate (cystain C)	eGFR based on cystain C (30720) using the CKD-EPI formula	345219	NA	NA
+UKBB	Eosino	Eosinophil count	30150	350726	NA	NA
+UKBB	FedUp_Feelings	Fed-up feelings	1960	353716	143312	210404
+UKBB	FEV1FVC	FEV1/FVC ratio	FEV1 (20150) divided by FVC (20151)	272338	NA	NA
+UKBB	Fibroblastic_Disorders	Fibroblastic disorders	ICD10: M72	361144	3439	357705
+UKBB	GGT	Gamma-glutamyl transferase	30730	345062	NA	NA
+UKBB	Glaucoma_Combined	Glaucoma (Phecode + Self-reported)	Combination of Phecode (365) and self-reported eye problems/disorders (6148)	354399	7143	347256
+UKBB	Glucose	Glucose	30740	316666	NA	NA
+UKBB	Guilty_Feelings	Guilty feelings	2030	351860	100115	251745
+UKBB	Hb	Hemoglobin	30020	351327	NA	NA
+UKBB	HbA1c	Hemoglobin A1c	30750	345271	NA	NA
+UKBB	HDLC	High density lipoprotein cholesterol	30760	316875	NA	NA
+UKBB	Height	Adult height	50	360415	NA	NA
+UKBB	Ht	Hematocrit	30030	351328	NA	NA
+UKBB	Hypothyroidism	Hypothyroidism	Phecode 244	358851	12916	345935
+UKBB	IBD	Inflammatory bowel disease	Phecode 555	300205	3975	296230
+UKBB	IGF1	Insulin-like growth factor 1	30770	343465	NA	NA
+UKBB	Inguinal_Hernia	Inguinal hernia	Phecode Phecode 550.1	333807	14021	319786
+UKBB	Insomnia	Insomnia	1200	360740	NA	NA
+UKBB	Irritability	Irritability	1940	345185	96846	248339
+UKBB	LDLC	Low density lipoprotein cholesterol	30780	344613	NA	NA
+UKBB	LipoA	Lipoprotein A	30790	275456	NA	NA
+UKBB	Loneliness	Loneliness	2020	355535	63497	292038
+UKBB	LOY	Loss of Y	PAR-LOY (see Thompson et al. bioRxiv, 2019)	205011	41791	163220
+UKBB	Lym	Lymphocyte count	30120	350726	NA	NA
+UKBB	MAP	Mean arterial pressure	(SBP [4080] + 2 * DBP [4079]) / 3	360863	NA	NA
+UKBB	MCH	Mean corpuscular hemoglobin	30050	351324	NA	NA
+UKBB	MCHC	Mean corpuscular hemoglobin concentration	30060	351321	NA	NA
+UKBB	MCP	Multi-site chronic pain	Number of body regions with pain during last 3 months (see Johnston et al. PLoS Genetics, 2019)	361187	NA	NA
+UKBB	MCV	Mean corpuscular volume	30040	351327	NA	NA
+UKBB	Migraine_Self	Migraine (Self-reported)	1265	361144	11380	349764
+UKBB	Miserableness	Miserableness	1930	355132	151732	203400
+UKBB	Mono	Monocyte count	30130	350726	NA	NA
+UKBB	Mood_Swings	Mood swings	1920	352557	158960	193597
+UKBB	Morning_Person	Morning person	1180	360203	NA	NA
+UKBB	Nervous_Feelings	Nervous feelings	1970	351779	83110	268669
+UKBB	Neuroticism	Neuroticism	20127	293006	NA	NA
+UKBB	Neutro	Neutrophil count	30140	350726	NA	NA
+UKBB	Plt	Platelet count	30080	351327	NA	NA
+UKBB	PP	Pluse pressure	SBP (4080) - DBP (4079)	360863	NA	NA
+UKBB	PrC	Prostate cancer	Phecode 185	349994	7316	342678
+UKBB	RBC	Red blood cell count	30010	351328	NA	NA
+UKBB	Risk_Taking	Risk taking	2040	348501	90489	258012
+UKBB	SBP	Systolic blood pressure	4080	360863	NA	NA
+UKBB	Sensitivity	Sensitivity	1950	350774	194729	156045
+UKBB	SHBG	Sex hormone binding globulin	30830	313997	NA	NA
+UKBB	Smoking_CPD	Smoking (cigarettes per day)	Combination of current/previous number of cigarettes smoked per day (2887 and 3456)	111293	NA	NA
+UKBB	Smoking_Ever_Never	Smoking (ever vs never)	20116	359657	164617	195040
+UKBB	Suffer_from_Nerves	Suffer from nerves	2010	348038	73931	274107
+UKBB	T2D	Type 2 diabetes	Phecode 250.2	360058	16468	343590
+UKBB	T2D_BMI	Type 2 diabetes (adjusted by BMI)	Phecode 250.2 adjusted by BMI (21001)	358897	16468	343590
+UKBB	TBil	Total bilirubin	30840	343836	NA	NA
+UKBB	TC	Total cholesterol	30690	345235	NA	NA
+UKBB	Tense	Tense	1990	350111	60500	289611
+UKBB	Testosterone	Testosterone	30850	313505	NA	NA
+UKBB	TG	Triglyceride	30870	344952	NA	NA
+UKBB	TP	Total protein	30860	316664	NA	NA
+UKBB	UA	Uric acid	30880	344801	NA	NA
+UKBB	Urea	Urea	30670	345014	NA	NA
+UKBB	VitD	Vitamin D	30890	330456	NA	NA
+UKBB	WBC	White blood cell count	30000	351324	NA	NA
+UKBB	WHRadjBMI	Waist-to-hip ratio (adjusted by BMI)	Waist-to-hip ratio (Waist [48] / Hip [49]) adjusted by BMI (21001)	360505	NA	NA
+UKBB	Worrier	Worrier	1980	351785	199435	152350
+UKBB	Worry_Too_Long	Worry too long after embarrassment	2000	346479	165287	181192

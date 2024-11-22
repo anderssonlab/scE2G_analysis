@@ -1,0 +1,7 @@
+group1	group2	p	p_adjust	significant
+scE2G (Multiome) (PBMC_17_B)	ABC (A=scATAC, C=power law) (PBMC_17_B)	0.231833739640312	1	FALSE
+scE2G (Multiome) (PBMC_17_B)	In element (ABC) & distance to TSS (PBMC_17_B)	0.175661446374262	1	FALSE
+scE2G (Multiome) (PBMC_17_B)	STARE (gABC, power law) (PBMC_17_B)	0.124186346275247	0.745118077651482	FALSE
+ABC (A=scATAC, C=power law) (PBMC_17_B)	In element (ABC) & distance to TSS (PBMC_17_B)	0.87903092841194	1	FALSE
+ABC (A=scATAC, C=power law) (PBMC_17_B)	STARE (gABC, power law) (PBMC_17_B)	0.818641080497609	1	FALSE
+In element (ABC) & distance to TSS (PBMC_17_B)	STARE (gABC, power law) (PBMC_17_B)	0.947895949397113	1	FALSE

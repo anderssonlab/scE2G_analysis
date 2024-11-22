@@ -1,0 +1,232 @@
+group1	group2	p	p_adjust	significant
+scE2G (Multiome) (K562_Xu)	scE2G (Multiome) (BMMC22_Erythroblast)	0.480453917599065	1	FALSE
+scE2G (Multiome) (K562_Xu)	scE2G (Multiome) (BMMC22_Normoblast)	0.876587167858032	1	FALSE
+scE2G (Multiome) (K562_Xu)	scE2G (Multiome) (BMMC22_Proerythroblast)	0.330956851224665	1	FALSE
+scE2G (Multiome) (K562_Xu)	scE2G (scATAC) (K562_Xu)	0.849440899832674	1	FALSE
+scE2G (Multiome) (K562_Xu)	scE2G (scATAC) (BMMC22_Erythroblast)	0.84181540046909	1	FALSE
+scE2G (Multiome) (K562_Xu)	scE2G (scATAC) (BMMC22_Normoblast)	0.281536909804965	1	FALSE
+scE2G (Multiome) (K562_Xu)	scE2G (scATAC) (BMMC22_Proerythroblast)	0.612787060380229	1	FALSE
+scE2G (Multiome) (K562_Xu)	ABC (A=scATAC, C=power law) (K562_Xu)	0.716708315747115	1	FALSE
+scE2G (Multiome) (K562_Xu)	ABC (A=scATAC, C=power law) (BMMC22_Erythroblast)	0.409151947122346	1	FALSE
+scE2G (Multiome) (K562_Xu)	ABC (A=scATAC, C=power law) (BMMC22_Normoblast)	0.14542111315258	1	FALSE
+scE2G (Multiome) (K562_Xu)	ABC (A=scATAC, C=power law) (BMMC22_Proerythroblast)	0.2325084218187	1	FALSE
+scE2G (Multiome) (K562_Xu)	In element (ABC) & distance to TSS (K562_Xu)	0.347448632853045	1	FALSE
+scE2G (Multiome) (K562_Xu)	In element (ABC) & distance to TSS (BMMC22_Erythroblast)	0.16571175978893	1	FALSE
+scE2G (Multiome) (K562_Xu)	In element (ABC) & distance to TSS (BMMC22_Normoblast)	0.0224625572360504	1	FALSE
+scE2G (Multiome) (K562_Xu)	In element (ABC) & distance to TSS (BMMC22_Proerythroblast)	0.119294069156291	1	FALSE
+scE2G (Multiome) (K562_Xu)	STARE (gABC, power law) (K562_Xu)	0.023709463469904	1	FALSE
+scE2G (Multiome) (K562_Xu)	SnapATAC (p-value) (K562_Xu)	8.86673264029109e-55	2.04821523990724e-52	TRUE
+scE2G (Multiome) (K562_Xu)	Signac (p-value) (K562_Xu)	7.16313831472484e-61	1.65468495070144e-58	TRUE
+scE2G (Multiome) (K562_Xu)	Cicero (co-accessibility) (K562_Xu)	6.79059463514295e-61	1.56862736071802e-58	TRUE
+scE2G (Multiome) (K562_Xu)	FigR (p-value) (K562_Xu)	3.04507215442004e-55	7.03411667671029e-53	TRUE
+scE2G (Multiome) (K562_Xu)	SCENIC+ (importance) (K562_Xu)	2.76014088116377e-49	6.37592543548832e-47	TRUE
+scE2G (Multiome) (BMMC22_Erythroblast)	scE2G (Multiome) (BMMC22_Normoblast)	0.58334595980548	1	FALSE
+scE2G (Multiome) (BMMC22_Erythroblast)	scE2G (Multiome) (BMMC22_Proerythroblast)	0.788367534458981	1	FALSE
+scE2G (Multiome) (BMMC22_Erythroblast)	scE2G (scATAC) (K562_Xu)	0.376048789702722	1	FALSE
+scE2G (Multiome) (BMMC22_Erythroblast)	scE2G (scATAC) (BMMC22_Erythroblast)	0.625454594878683	1	FALSE
+scE2G (Multiome) (BMMC22_Erythroblast)	scE2G (scATAC) (BMMC22_Normoblast)	0.714565078078215	1	FALSE
+scE2G (Multiome) (BMMC22_Erythroblast)	scE2G (scATAC) (BMMC22_Proerythroblast)	0.854278755953305	1	FALSE
+scE2G (Multiome) (BMMC22_Erythroblast)	ABC (A=scATAC, C=power law) (K562_Xu)	0.739093326912246	1	FALSE
+scE2G (Multiome) (BMMC22_Erythroblast)	ABC (A=scATAC, C=power law) (BMMC22_Erythroblast)	0.899600781224279	1	FALSE
+scE2G (Multiome) (BMMC22_Erythroblast)	ABC (A=scATAC, C=power law) (BMMC22_Normoblast)	0.453313150351841	1	FALSE
+scE2G (Multiome) (BMMC22_Erythroblast)	ABC (A=scATAC, C=power law) (BMMC22_Proerythroblast)	0.623768809645656	1	FALSE
+scE2G (Multiome) (BMMC22_Erythroblast)	In element (ABC) & distance to TSS (K562_Xu)	0.821226160190621	1	FALSE
+scE2G (Multiome) (BMMC22_Erythroblast)	In element (ABC) & distance to TSS (BMMC22_Erythroblast)	0.494998322737155	1	FALSE
+scE2G (Multiome) (BMMC22_Erythroblast)	In element (ABC) & distance to TSS (BMMC22_Normoblast)	0.121787732229032	1	FALSE
+scE2G (Multiome) (BMMC22_Erythroblast)	In element (ABC) & distance to TSS (BMMC22_Proerythroblast)	0.400591399259607	1	FALSE
+scE2G (Multiome) (BMMC22_Erythroblast)	STARE (gABC, power law) (K562_Xu)	0.00340425142384205	0.786382078907513	FALSE
+scE2G (Multiome) (BMMC22_Erythroblast)	SnapATAC (p-value) (K562_Xu)	3.07604495382815e-58	7.10566384334304e-56	TRUE
+scE2G (Multiome) (BMMC22_Erythroblast)	Signac (p-value) (K562_Xu)	2.2396025006666e-64	5.17348177653985e-62	TRUE
+scE2G (Multiome) (BMMC22_Erythroblast)	Cicero (co-accessibility) (K562_Xu)	2.58890821501366e-64	5.98037797668156e-62	TRUE
+scE2G (Multiome) (BMMC22_Erythroblast)	FigR (p-value) (K562_Xu)	1.04723320596579e-58	2.41910870578098e-56	TRUE
+scE2G (Multiome) (BMMC22_Erythroblast)	SCENIC+ (importance) (K562_Xu)	1.10103986716722e-52	2.54340209315627e-50	TRUE
+scE2G (Multiome) (BMMC22_Normoblast)	scE2G (Multiome) (BMMC22_Proerythroblast)	0.415131307289683	1	FALSE
+scE2G (Multiome) (BMMC22_Normoblast)	scE2G (scATAC) (K562_Xu)	0.73208068928605	1	FALSE
+scE2G (Multiome) (BMMC22_Normoblast)	scE2G (scATAC) (BMMC22_Erythroblast)	0.961881037289074	1	FALSE
+scE2G (Multiome) (BMMC22_Normoblast)	scE2G (scATAC) (BMMC22_Normoblast)	0.358816047708063	1	FALSE
+scE2G (Multiome) (BMMC22_Normoblast)	scE2G (scATAC) (BMMC22_Proerythroblast)	0.723997437376193	1	FALSE
+scE2G (Multiome) (BMMC22_Normoblast)	ABC (A=scATAC, C=power law) (K562_Xu)	0.834580785057059	1	FALSE
+scE2G (Multiome) (BMMC22_Normoblast)	ABC (A=scATAC, C=power law) (BMMC22_Erythroblast)	0.503183793747459	1	FALSE
+scE2G (Multiome) (BMMC22_Normoblast)	ABC (A=scATAC, C=power law) (BMMC22_Normoblast)	0.194645522499736	1	FALSE
+scE2G (Multiome) (BMMC22_Normoblast)	ABC (A=scATAC, C=power law) (BMMC22_Proerythroblast)	0.300112701374427	1	FALSE
+scE2G (Multiome) (BMMC22_Normoblast)	In element (ABC) & distance to TSS (K562_Xu)	0.43535139960965	1	FALSE
+scE2G (Multiome) (BMMC22_Normoblast)	In element (ABC) & distance to TSS (BMMC22_Erythroblast)	0.219497746892066	1	FALSE
+scE2G (Multiome) (BMMC22_Normoblast)	In element (ABC) & distance to TSS (BMMC22_Normoblast)	0.034455261679708	1	FALSE
+scE2G (Multiome) (BMMC22_Normoblast)	In element (ABC) & distance to TSS (BMMC22_Proerythroblast)	0.162730942252312	1	FALSE
+scE2G (Multiome) (BMMC22_Normoblast)	STARE (gABC, power law) (K562_Xu)	0.0162776601760551	1	FALSE
+scE2G (Multiome) (BMMC22_Normoblast)	SnapATAC (p-value) (K562_Xu)	4.20369421531973e-55	9.71053363738858e-53	TRUE
+scE2G (Multiome) (BMMC22_Normoblast)	Signac (p-value) (K562_Xu)	3.80583990611802e-61	8.79149018313263e-59	TRUE
+scE2G (Multiome) (BMMC22_Normoblast)	Cicero (co-accessibility) (K562_Xu)	3.04080021695053e-61	7.02424850115572e-59	TRUE
+scE2G (Multiome) (BMMC22_Normoblast)	FigR (p-value) (K562_Xu)	1.45397012004266e-55	3.35867097729855e-53	TRUE
+scE2G (Multiome) (BMMC22_Normoblast)	SCENIC+ (importance) (K562_Xu)	1.20130412968527e-49	2.77501253957298e-47	TRUE
+scE2G (Multiome) (BMMC22_Proerythroblast)	scE2G (scATAC) (K562_Xu)	0.251094543245569	1	FALSE
+scE2G (Multiome) (BMMC22_Proerythroblast)	scE2G (scATAC) (BMMC22_Erythroblast)	0.453925944948223	1	FALSE
+scE2G (Multiome) (BMMC22_Proerythroblast)	scE2G (scATAC) (BMMC22_Normoblast)	0.92481910294177	1	FALSE
+scE2G (Multiome) (BMMC22_Proerythroblast)	scE2G (scATAC) (BMMC22_Proerythroblast)	0.655669167017961	1	FALSE
+scE2G (Multiome) (BMMC22_Proerythroblast)	ABC (A=scATAC, C=power law) (K562_Xu)	0.550403799246931	1	FALSE
+scE2G (Multiome) (BMMC22_Proerythroblast)	ABC (A=scATAC, C=power law) (BMMC22_Erythroblast)	0.888450797414641	1	FALSE
+scE2G (Multiome) (BMMC22_Proerythroblast)	ABC (A=scATAC, C=power law) (BMMC22_Normoblast)	0.631582932733553	1	FALSE
+scE2G (Multiome) (BMMC22_Proerythroblast)	ABC (A=scATAC, C=power law) (BMMC22_Proerythroblast)	0.824563852495726	1	FALSE
+scE2G (Multiome) (BMMC22_Proerythroblast)	In element (ABC) & distance to TSS (K562_Xu)	0.96335679546042	1	FALSE
+scE2G (Multiome) (BMMC22_Proerythroblast)	In element (ABC) & distance to TSS (BMMC22_Erythroblast)	0.679629621536759	1	FALSE
+scE2G (Multiome) (BMMC22_Proerythroblast)	In element (ABC) & distance to TSS (BMMC22_Normoblast)	0.206148950573682	1	FALSE
+scE2G (Multiome) (BMMC22_Proerythroblast)	In element (ABC) & distance to TSS (BMMC22_Proerythroblast)	0.571511720473973	1	FALSE
+scE2G (Multiome) (BMMC22_Proerythroblast)	STARE (gABC, power law) (K562_Xu)	0.0014953149480139	0.345417752991211	FALSE
+scE2G (Multiome) (BMMC22_Proerythroblast)	SnapATAC (p-value) (K562_Xu)	3.51867636719269e-59	8.12814240821512e-57	TRUE
+scE2G (Multiome) (BMMC22_Proerythroblast)	Signac (p-value) (K562_Xu)	2.78709722340676e-65	6.43819458606961e-63	TRUE
+scE2G (Multiome) (BMMC22_Proerythroblast)	Cicero (co-accessibility) (K562_Xu)	2.85255847971403e-65	6.58941008813941e-63	TRUE
+scE2G (Multiome) (BMMC22_Proerythroblast)	FigR (p-value) (K562_Xu)	1.20381884550192e-59	2.78082153310943e-57	TRUE
+scE2G (Multiome) (BMMC22_Proerythroblast)	SCENIC+ (importance) (K562_Xu)	1.19373012318368e-53	2.7575165845543e-51	TRUE
+scE2G (scATAC) (K562_Xu)	scE2G (scATAC) (BMMC22_Erythroblast)	0.70264603547313	1	FALSE
+scE2G (scATAC) (K562_Xu)	scE2G (scATAC) (BMMC22_Normoblast)	0.210335607669112	1	FALSE
+scE2G (scATAC) (K562_Xu)	scE2G (scATAC) (BMMC22_Proerythroblast)	0.493606764498773	1	FALSE
+scE2G (scATAC) (K562_Xu)	ABC (A=scATAC, C=power law) (K562_Xu)	0.585828724976782	1	FALSE
+scE2G (scATAC) (K562_Xu)	ABC (A=scATAC, C=power law) (BMMC22_Erythroblast)	0.316426057534397	1	FALSE
+scE2G (scATAC) (K562_Xu)	ABC (A=scATAC, C=power law) (BMMC22_Normoblast)	0.104075384265657	1	FALSE
+scE2G (scATAC) (K562_Xu)	ABC (A=scATAC, C=power law) (BMMC22_Proerythroblast)	0.171828973894948	1	FALSE
+scE2G (scATAC) (K562_Xu)	In element (ABC) & distance to TSS (K562_Xu)	0.263653970181808	1	FALSE
+scE2G (scATAC) (K562_Xu)	In element (ABC) & distance to TSS (BMMC22_Erythroblast)	0.119693626837488	1	FALSE
+scE2G (scATAC) (K562_Xu)	In element (ABC) & distance to TSS (BMMC22_Normoblast)	0.0144135611013884	1	FALSE
+scE2G (scATAC) (K562_Xu)	In element (ABC) & distance to TSS (BMMC22_Proerythroblast)	0.0839396293418073	1	FALSE
+scE2G (scATAC) (K562_Xu)	STARE (gABC, power law) (K562_Xu)	0.0404468591313418	1	FALSE
+scE2G (scATAC) (K562_Xu)	SnapATAC (p-value) (K562_Xu)	1.59935383351867e-51	3.69450735542813e-49	TRUE
+scE2G (scATAC) (K562_Xu)	Signac (p-value) (K562_Xu)	2.84874592393558e-57	6.58060308429119e-55	TRUE
+scE2G (scATAC) (K562_Xu)	Cicero (co-accessibility) (K562_Xu)	8.04997038991334e-58	1.85954316006998e-55	TRUE
+scE2G (scATAC) (K562_Xu)	FigR (p-value) (K562_Xu)	5.79159137960457e-52	1.33785760868866e-49	TRUE
+scE2G (scATAC) (K562_Xu)	SCENIC+ (importance) (K562_Xu)	2.50320185375236e-46	5.78239628216795e-44	TRUE
+scE2G (scATAC) (BMMC22_Erythroblast)	scE2G (scATAC) (BMMC22_Normoblast)	0.396157026892141	1	FALSE
+scE2G (scATAC) (BMMC22_Erythroblast)	scE2G (scATAC) (BMMC22_Proerythroblast)	0.765314918295695	1	FALSE
+scE2G (scATAC) (BMMC22_Erythroblast)	ABC (A=scATAC, C=power law) (K562_Xu)	0.875348141634221	1	FALSE
+scE2G (scATAC) (BMMC22_Erythroblast)	ABC (A=scATAC, C=power law) (BMMC22_Erythroblast)	0.543768910458117	1	FALSE
+scE2G (scATAC) (BMMC22_Erythroblast)	ABC (A=scATAC, C=power law) (BMMC22_Normoblast)	0.222312171696968	1	FALSE
+scE2G (scATAC) (BMMC22_Erythroblast)	ABC (A=scATAC, C=power law) (BMMC22_Proerythroblast)	0.33430291471459	1	FALSE
+scE2G (scATAC) (BMMC22_Erythroblast)	In element (ABC) & distance to TSS (K562_Xu)	0.475415105985624	1	FALSE
+scE2G (scATAC) (BMMC22_Erythroblast)	In element (ABC) & distance to TSS (BMMC22_Erythroblast)	0.248880357215502	1	FALSE
+scE2G (scATAC) (BMMC22_Erythroblast)	In element (ABC) & distance to TSS (BMMC22_Normoblast)	0.0437906493486713	1	FALSE
+scE2G (scATAC) (BMMC22_Erythroblast)	In element (ABC) & distance to TSS (BMMC22_Proerythroblast)	0.188286598464085	1	FALSE
+scE2G (scATAC) (BMMC22_Erythroblast)	STARE (gABC, power law) (K562_Xu)	0.0167376001288285	1	FALSE
+scE2G (scATAC) (BMMC22_Erythroblast)	SnapATAC (p-value) (K562_Xu)	1.12397770046086e-51	2.59638848806458e-49	TRUE
+scE2G (scATAC) (BMMC22_Erythroblast)	Signac (p-value) (K562_Xu)	3.19266407783524e-57	7.37505401979941e-55	TRUE
+scE2G (scATAC) (BMMC22_Erythroblast)	Cicero (co-accessibility) (K562_Xu)	4.66457180649021e-58	1.07751608729924e-55	TRUE
+scE2G (scATAC) (BMMC22_Erythroblast)	FigR (p-value) (K562_Xu)	4.19547725694017e-52	9.69155246353178e-50	TRUE
+scE2G (scATAC) (BMMC22_Erythroblast)	SCENIC+ (importance) (K562_Xu)	1.21177556408529e-46	2.79920155303701e-44	TRUE
+scE2G (scATAC) (BMMC22_Normoblast)	scE2G (scATAC) (BMMC22_Proerythroblast)	0.587273253737342	1	FALSE
+scE2G (scATAC) (BMMC22_Normoblast)	ABC (A=scATAC, C=power law) (K562_Xu)	0.486149456975733	1	FALSE
+scE2G (scATAC) (BMMC22_Normoblast)	ABC (A=scATAC, C=power law) (BMMC22_Erythroblast)	0.813877900488716	1	FALSE
+scE2G (scATAC) (BMMC22_Normoblast)	ABC (A=scATAC, C=power law) (BMMC22_Normoblast)	0.696881396344515	1	FALSE
+scE2G (scATAC) (BMMC22_Normoblast)	ABC (A=scATAC, C=power law) (BMMC22_Proerythroblast)	0.896935818748686	1	FALSE
+scE2G (scATAC) (BMMC22_Normoblast)	In element (ABC) & distance to TSS (K562_Xu)	0.887049718041554	1	FALSE
+scE2G (scATAC) (BMMC22_Normoblast)	In element (ABC) & distance to TSS (BMMC22_Erythroblast)	0.746976147092746	1	FALSE
+scE2G (scATAC) (BMMC22_Normoblast)	In element (ABC) & distance to TSS (BMMC22_Normoblast)	0.238498412358789	1	FALSE
+scE2G (scATAC) (BMMC22_Normoblast)	In element (ABC) & distance to TSS (BMMC22_Proerythroblast)	0.634492984585355	1	FALSE
+scE2G (scATAC) (BMMC22_Normoblast)	STARE (gABC, power law) (K562_Xu)	0.000974537222507762	0.225118098399293	FALSE
+scE2G (scATAC) (BMMC22_Normoblast)	SnapATAC (p-value) (K562_Xu)	1.77765863480941e-61	4.10639144640974e-59	TRUE
+scE2G (scATAC) (BMMC22_Normoblast)	Signac (p-value) (K562_Xu)	8.04544479327184e-68	1.85849774724579e-65	TRUE
+scE2G (scATAC) (BMMC22_Normoblast)	Cicero (co-accessibility) (K562_Xu)	2.05248532989373e-67	4.74124111205451e-65	TRUE
+scE2G (scATAC) (BMMC22_Normoblast)	FigR (p-value) (K562_Xu)	5.85997145368888e-62	1.35365340580213e-59	TRUE
+scE2G (scATAC) (BMMC22_Normoblast)	SCENIC+ (importance) (K562_Xu)	9.79862079760773e-56	2.26348140424739e-53	TRUE
+scE2G (scATAC) (BMMC22_Proerythroblast)	ABC (A=scATAC, C=power law) (K562_Xu)	0.885036057860095	1	FALSE
+scE2G (scATAC) (BMMC22_Proerythroblast)	ABC (A=scATAC, C=power law) (BMMC22_Erythroblast)	0.75991381419377	1	FALSE
+scE2G (scATAC) (BMMC22_Proerythroblast)	ABC (A=scATAC, C=power law) (BMMC22_Normoblast)	0.358716847238058	1	FALSE
+scE2G (scATAC) (BMMC22_Proerythroblast)	ABC (A=scATAC, C=power law) (BMMC22_Proerythroblast)	0.507174034987434	1	FALSE
+scE2G (scATAC) (BMMC22_Proerythroblast)	In element (ABC) & distance to TSS (K562_Xu)	0.6843000688338	1	FALSE
+scE2G (scATAC) (BMMC22_Proerythroblast)	In element (ABC) & distance to TSS (BMMC22_Erythroblast)	0.394649886147566	1	FALSE
+scE2G (scATAC) (BMMC22_Proerythroblast)	In element (ABC) & distance to TSS (BMMC22_Normoblast)	0.088382335474718	1	FALSE
+scE2G (scATAC) (BMMC22_Proerythroblast)	In element (ABC) & distance to TSS (BMMC22_Proerythroblast)	0.313060879629637	1	FALSE
+scE2G (scATAC) (BMMC22_Proerythroblast)	STARE (gABC, power law) (K562_Xu)	0.00715525606898941	1	FALSE
+scE2G (scATAC) (BMMC22_Proerythroblast)	SnapATAC (p-value) (K562_Xu)	1.23707396989433e-53	2.85764087045591e-51	TRUE
+scE2G (scATAC) (BMMC22_Proerythroblast)	Signac (p-value) (K562_Xu)	2.86269841196038e-59	6.61283333162849e-57	TRUE
+scE2G (scATAC) (BMMC22_Proerythroblast)	Cicero (co-accessibility) (K562_Xu)	5.65803965634383e-60	1.30700716061542e-57	TRUE
+scE2G (scATAC) (BMMC22_Proerythroblast)	FigR (p-value) (K562_Xu)	4.55105545512756e-54	1.05129381013447e-51	TRUE
+scE2G (scATAC) (BMMC22_Proerythroblast)	SCENIC+ (importance) (K562_Xu)	1.6228530259396e-48	3.74879048992047e-46	TRUE
+ABC (A=scATAC, C=power law) (K562_Xu)	ABC (A=scATAC, C=power law) (BMMC22_Erythroblast)	0.649319527066627	1	FALSE
+ABC (A=scATAC, C=power law) (K562_Xu)	ABC (A=scATAC, C=power law) (BMMC22_Normoblast)	0.283058138310586	1	FALSE
+ABC (A=scATAC, C=power law) (K562_Xu)	ABC (A=scATAC, C=power law) (BMMC22_Proerythroblast)	0.414362184340989	1	FALSE
+ABC (A=scATAC, C=power law) (K562_Xu)	In element (ABC) & distance to TSS (K562_Xu)	0.575749928949413	1	FALSE
+ABC (A=scATAC, C=power law) (K562_Xu)	In element (ABC) & distance to TSS (BMMC22_Erythroblast)	0.314497055757964	1	FALSE
+ABC (A=scATAC, C=power law) (K562_Xu)	In element (ABC) & distance to TSS (BMMC22_Normoblast)	0.0610874479724922	1	FALSE
+ABC (A=scATAC, C=power law) (K562_Xu)	In element (ABC) & distance to TSS (BMMC22_Proerythroblast)	0.242912489477512	1	FALSE
+ABC (A=scATAC, C=power law) (K562_Xu)	STARE (gABC, power law) (K562_Xu)	0.0100681537823444	1	FALSE
+ABC (A=scATAC, C=power law) (K562_Xu)	SnapATAC (p-value) (K562_Xu)	2.68606097888746e-54	6.20480086123002e-52	TRUE
+ABC (A=scATAC, C=power law) (K562_Xu)	Signac (p-value) (K562_Xu)	4.17782347085956e-60	9.6507722176856e-58	TRUE
+ABC (A=scATAC, C=power law) (K562_Xu)	Cicero (co-accessibility) (K562_Xu)	1.47321828601076e-60	3.40313424068487e-58	TRUE
+ABC (A=scATAC, C=power law) (K562_Xu)	FigR (p-value) (K562_Xu)	9.62560227594715e-55	2.22351412574379e-52	TRUE
+ABC (A=scATAC, C=power law) (K562_Xu)	SCENIC+ (importance) (K562_Xu)	4.90686376677753e-49	1.13348553012561e-46	TRUE
+ABC (A=scATAC, C=power law) (BMMC22_Erythroblast)	ABC (A=scATAC, C=power law) (BMMC22_Normoblast)	0.537036272293307	1	FALSE
+ABC (A=scATAC, C=power law) (BMMC22_Erythroblast)	ABC (A=scATAC, C=power law) (BMMC22_Proerythroblast)	0.718442748376237	1	FALSE
+ABC (A=scATAC, C=power law) (BMMC22_Erythroblast)	In element (ABC) & distance to TSS (K562_Xu)	0.923166066941702	1	FALSE
+ABC (A=scATAC, C=power law) (BMMC22_Erythroblast)	In element (ABC) & distance to TSS (BMMC22_Erythroblast)	0.581801786945411	1	FALSE
+ABC (A=scATAC, C=power law) (BMMC22_Erythroblast)	In element (ABC) & distance to TSS (BMMC22_Normoblast)	0.160792741779557	1	FALSE
+ABC (A=scATAC, C=power law) (BMMC22_Erythroblast)	In element (ABC) & distance to TSS (BMMC22_Proerythroblast)	0.480741929625187	1	FALSE
+ABC (A=scATAC, C=power law) (BMMC22_Erythroblast)	STARE (gABC, power law) (K562_Xu)	0.00250940735958116	0.579673100063248	FALSE
+ABC (A=scATAC, C=power law) (BMMC22_Erythroblast)	SnapATAC (p-value) (K562_Xu)	2.25365809610297e-57	5.20595020199786e-55	TRUE
+ABC (A=scATAC, C=power law) (BMMC22_Erythroblast)	Signac (p-value) (K562_Xu)	2.5370733489598e-63	5.86063943609714e-61	TRUE
+ABC (A=scATAC, C=power law) (BMMC22_Erythroblast)	Cicero (co-accessibility) (K562_Xu)	1.48826506096568e-63	3.43789229083072e-61	TRUE
+ABC (A=scATAC, C=power law) (BMMC22_Erythroblast)	FigR (p-value) (K562_Xu)	7.89502521494283e-58	1.82375082465179e-55	TRUE
+ABC (A=scATAC, C=power law) (BMMC22_Erythroblast)	SCENIC+ (importance) (K562_Xu)	5.60286774296996e-52	1.29426244862606e-49	TRUE
+ABC (A=scATAC, C=power law) (BMMC22_Normoblast)	ABC (A=scATAC, C=power law) (BMMC22_Proerythroblast)	0.797226354056766	1	FALSE
+ABC (A=scATAC, C=power law) (BMMC22_Normoblast)	In element (ABC) & distance to TSS (K562_Xu)	0.594853939564698	1	FALSE
+ABC (A=scATAC, C=power law) (BMMC22_Normoblast)	In element (ABC) & distance to TSS (BMMC22_Erythroblast)	0.947937953221779	1	FALSE
+ABC (A=scATAC, C=power law) (BMMC22_Normoblast)	In element (ABC) & distance to TSS (BMMC22_Normoblast)	0.442047247369613	1	FALSE
+ABC (A=scATAC, C=power law) (BMMC22_Normoblast)	In element (ABC) & distance to TSS (BMMC22_Proerythroblast)	0.93661230375821	1	FALSE
+ABC (A=scATAC, C=power law) (BMMC22_Normoblast)	STARE (gABC, power law) (K562_Xu)	0.000270984030878849	0.062597311133014	FALSE
+ABC (A=scATAC, C=power law) (BMMC22_Normoblast)	SnapATAC (p-value) (K562_Xu)	2.87838261175306e-62	6.64906383314957e-60	TRUE
+ABC (A=scATAC, C=power law) (BMMC22_Normoblast)	Signac (p-value) (K562_Xu)	1.76576049015556e-68	4.07890673225935e-66	TRUE
+ABC (A=scATAC, C=power law) (BMMC22_Normoblast)	Cicero (co-accessibility) (K562_Xu)	2.78717108469652e-68	6.43836520564896e-66	TRUE
+ABC (A=scATAC, C=power law) (BMMC22_Normoblast)	FigR (p-value) (K562_Xu)	9.67136422510864e-63	2.23408513600009e-60	TRUE
+ABC (A=scATAC, C=power law) (BMMC22_Normoblast)	SCENIC+ (importance) (K562_Xu)	1.25533709426579e-56	2.89982868775397e-54	TRUE
+ABC (A=scATAC, C=power law) (BMMC22_Proerythroblast)	In element (ABC) & distance to TSS (K562_Xu)	0.786783982127059	1	FALSE
+ABC (A=scATAC, C=power law) (BMMC22_Proerythroblast)	In element (ABC) & distance to TSS (BMMC22_Erythroblast)	0.848443495722948	1	FALSE
+ABC (A=scATAC, C=power law) (BMMC22_Proerythroblast)	In element (ABC) & distance to TSS (BMMC22_Normoblast)	0.301744557077816	1	FALSE
+ABC (A=scATAC, C=power law) (BMMC22_Proerythroblast)	In element (ABC) & distance to TSS (BMMC22_Proerythroblast)	0.733912842131425	1	FALSE
+ABC (A=scATAC, C=power law) (BMMC22_Proerythroblast)	STARE (gABC, power law) (K562_Xu)	0.000712124630492536	0.164500789643776	FALSE
+ABC (A=scATAC, C=power law) (BMMC22_Proerythroblast)	SnapATAC (p-value) (K562_Xu)	2.92665028908811e-60	6.76056216779354e-58	TRUE
+ABC (A=scATAC, C=power law) (BMMC22_Proerythroblast)	Signac (p-value) (K562_Xu)	2.2758568449742e-66	5.2572293118904e-64	TRUE
+ABC (A=scATAC, C=power law) (BMMC22_Proerythroblast)	Cicero (co-accessibility) (K562_Xu)	2.42266899943356e-66	5.59636538869152e-64	TRUE
+ABC (A=scATAC, C=power law) (BMMC22_Proerythroblast)	FigR (p-value) (K562_Xu)	9.99516077519092e-61	2.3088821390691e-58	TRUE
+ABC (A=scATAC, C=power law) (BMMC22_Proerythroblast)	SCENIC+ (importance) (K562_Xu)	1.02380859018769e-54	2.36499784333357e-52	TRUE
+In element (ABC) & distance to TSS (K562_Xu)	In element (ABC) & distance to TSS (BMMC22_Erythroblast)	0.642463384896881	1	FALSE
+In element (ABC) & distance to TSS (K562_Xu)	In element (ABC) & distance to TSS (BMMC22_Normoblast)	0.183733791963439	1	FALSE
+In element (ABC) & distance to TSS (K562_Xu)	In element (ABC) & distance to TSS (BMMC22_Proerythroblast)	0.535145667303861	1	FALSE
+In element (ABC) & distance to TSS (K562_Xu)	STARE (gABC, power law) (K562_Xu)	0.00149679269434401	0.345759112393465	FALSE
+In element (ABC) & distance to TSS (K562_Xu)	SnapATAC (p-value) (K562_Xu)	2.35753660751298e-61	5.44590956335498e-59	TRUE
+In element (ABC) & distance to TSS (K562_Xu)	Signac (p-value) (K562_Xu)	9.06930991478303e-68	2.09501059031488e-65	TRUE
+In element (ABC) & distance to TSS (K562_Xu)	Cicero (co-accessibility) (K562_Xu)	3.00960018190444e-67	6.95217642019925e-65	TRUE
+In element (ABC) & distance to TSS (K562_Xu)	FigR (p-value) (K562_Xu)	7.69183378237793e-62	1.7768136037293e-59	TRUE
+In element (ABC) & distance to TSS (K562_Xu)	SCENIC+ (importance) (K562_Xu)	1.47809812099372e-55	3.4144066594955e-53	TRUE
+In element (ABC) & distance to TSS (BMMC22_Erythroblast)	In element (ABC) & distance to TSS (BMMC22_Normoblast)	0.404204261659581	1	FALSE
+In element (ABC) & distance to TSS (BMMC22_Erythroblast)	In element (ABC) & distance to TSS (BMMC22_Proerythroblast)	0.884294095923237	1	FALSE
+In element (ABC) & distance to TSS (BMMC22_Erythroblast)	STARE (gABC, power law) (K562_Xu)	0.000359193366867038	0.0829736677462857	FALSE
+In element (ABC) & distance to TSS (BMMC22_Erythroblast)	SnapATAC (p-value) (K562_Xu)	2.31656225455875e-61	5.35125880803071e-59	TRUE
+In element (ABC) & distance to TSS (BMMC22_Erythroblast)	Signac (p-value) (K562_Xu)	1.69177017859582e-67	3.90798911255634e-65	TRUE
+In element (ABC) & distance to TSS (BMMC22_Erythroblast)	Cicero (co-accessibility) (K562_Xu)	2.008459971416e-67	4.63954253397095e-65	TRUE
+In element (ABC) & distance to TSS (BMMC22_Erythroblast)	FigR (p-value) (K562_Xu)	7.87515080018865e-62	1.81915983484358e-59	TRUE
+In element (ABC) & distance to TSS (BMMC22_Erythroblast)	SCENIC+ (importance) (K562_Xu)	8.66127856251934e-56	2.00075534794197e-53	TRUE
+In element (ABC) & distance to TSS (BMMC22_Normoblast)	In element (ABC) & distance to TSS (BMMC22_Proerythroblast)	0.48532085552779	1	FALSE
+In element (ABC) & distance to TSS (BMMC22_Normoblast)	STARE (gABC, power law) (K562_Xu)	6.37280396439942e-06	0.00147211771577627	TRUE
+In element (ABC) & distance to TSS (BMMC22_Normoblast)	SnapATAC (p-value) (K562_Xu)	3.7561153035873e-74	8.67662635128665e-72	TRUE
+In element (ABC) & distance to TSS (BMMC22_Normoblast)	Signac (p-value) (K562_Xu)	2.20139539705107e-81	5.08522336718796e-79	TRUE
+In element (ABC) & distance to TSS (BMMC22_Normoblast)	Cicero (co-accessibility) (K562_Xu)	2.31325671772353e-79	5.34362301794135e-77	TRUE
+In element (ABC) & distance to TSS (BMMC22_Normoblast)	FigR (p-value) (K562_Xu)	1.08122390607262e-74	2.49762722302776e-72	TRUE
+In element (ABC) & distance to TSS (BMMC22_Normoblast)	SCENIC+ (importance) (K562_Xu)	1.2844585932388e-67	2.96709935038162e-65	TRUE
+In element (ABC) & distance to TSS (BMMC22_Proerythroblast)	STARE (gABC, power law) (K562_Xu)	0.000161779492587008	0.0373710627875989	TRUE
+In element (ABC) & distance to TSS (BMMC22_Proerythroblast)	SnapATAC (p-value) (K562_Xu)	1.63297530008946e-65	3.77217294320665e-63	TRUE
+In element (ABC) & distance to TSS (BMMC22_Proerythroblast)	Signac (p-value) (K562_Xu)	4.33353441851473e-72	1.0010464506769e-69	TRUE
+In element (ABC) & distance to TSS (BMMC22_Proerythroblast)	Cicero (co-accessibility) (K562_Xu)	2.80205245501046e-71	6.47274117107417e-69	TRUE
+In element (ABC) & distance to TSS (BMMC22_Proerythroblast)	FigR (p-value) (K562_Xu)	5.19196363983657e-66	1.19934360080225e-63	TRUE
+In element (ABC) & distance to TSS (BMMC22_Proerythroblast)	SCENIC+ (importance) (K562_Xu)	1.46762753294239e-59	3.39021960109691e-57	TRUE
+STARE (gABC, power law) (K562_Xu)	SnapATAC (p-value) (K562_Xu)	1.03162231999262e-36	2.38304755918294e-34	TRUE
+STARE (gABC, power law) (K562_Xu)	Signac (p-value) (K562_Xu)	1.91856431621353e-41	4.43188357045325e-39	TRUE
+STARE (gABC, power law) (K562_Xu)	Cicero (co-accessibility) (K562_Xu)	2.48230431269149e-43	5.73412296231734e-41	TRUE
+STARE (gABC, power law) (K562_Xu)	FigR (p-value) (K562_Xu)	4.40465794488882e-37	1.01747598526932e-34	TRUE
+STARE (gABC, power law) (K562_Xu)	SCENIC+ (importance) (K562_Xu)	1.87057072924389e-32	4.32101838455338e-30	TRUE
+SnapATAC (p-value) (K562_Xu)	Signac (p-value) (K562_Xu)	0.308491557927336	1	FALSE
+SnapATAC (p-value) (K562_Xu)	Cicero (co-accessibility) (K562_Xu)	0.00211580019606305	0.488749845290565	FALSE
+SnapATAC (p-value) (K562_Xu)	FigR (p-value) (K562_Xu)	0.925988888031123	1	FALSE
+SnapATAC (p-value) (K562_Xu)	SCENIC+ (importance) (K562_Xu)	0.322603598947155	1	FALSE
+Signac (p-value) (K562_Xu)	Cicero (co-accessibility) (K562_Xu)	0.0221337364623566	1	FALSE
+Signac (p-value) (K562_Xu)	FigR (p-value) (K562_Xu)	0.355599684651923	1	FALSE
+Signac (p-value) (K562_Xu)	SCENIC+ (importance) (K562_Xu)	0.0443333714122253	1	FALSE
+Cicero (co-accessibility) (K562_Xu)	FigR (p-value) (K562_Xu)	0.00272054854917095	0.62844671485849	FALSE
+Cicero (co-accessibility) (K562_Xu)	SCENIC+ (importance) (K562_Xu)	0.00011432132003059	0.0264082249270663	TRUE
+FigR (p-value) (K562_Xu)	SCENIC+ (importance) (K562_Xu)	0.279792479498515	1	FALSE
