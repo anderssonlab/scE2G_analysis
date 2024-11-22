@@ -1,0 +1,12 @@
+metric_id	description
+num_unique_fragments	 number of unique ATAC fragments in cluster
+num_cells	 number of cells in cluster
+num_enh	 number of unique non-promoter elements linked to at least one gene in thresholded predictions
+num_genes_with_enh	 number of genes with at least one non-promoter enhancer in thresholded predictions
+num_enh_gene_links	 number of enhancer-gene links, not including promoters linked to any gene, in thresholded predictions
+mean_num_genes_per_enh	 average number of genes linked to each (non-promoter) enhancer in thresholded predictions
+mean_num_enh_per_gene	 average number of non-promoter enhancers for each gene with at least one non-promoter enhancer in thresholded predictions
+mean_log10_dist_to_tss	 average log10 distance, in base pairs, between midpoint of enhancer and transcription start site across enhancer-gene links (no promoter elements) in thresholded predictions
+mean_enh_region_size	 mean width, in base pairs, of unique non-promoter enhancer elements in thresholded predictions
+num_genes_considered	 number of genes considered for candidate element-gene pairs based on promoter accessibility
+num_genes_not_expressed	 number of genes excluded from predictions due to TPM being below designated threshold (applies to scE2G_Multiome only)

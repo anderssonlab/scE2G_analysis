@@ -1,0 +1,85 @@
+# coding: utf-8
+
+import pandas as pd
+from os.path import join
+
+conda: "mamba"
+
+# make absolute paths 
+config["results"] = os.path.join(config["baseDir"], config["results"])
+config["codeDir"] = os.path.join(config["baseDir"], "workflow", "scripts")
+
+# load  config file
+sample_config_file = config["sample_config"]
+sample_config = pd.read_table(sample_config_file).set_index("dataset_id", drop=False)
+
+# import util rules
+#include: "rules/utils.smk"
+
+# RULES
+rule all:
+	input:
+		variants = os.path.join(config["results"], f"eQTL_catalogue_v7.processed.PIP{config['thresholdPIP']}.tsv.gz"),
+		metadata = os.path.join(config["results"], f"dataset_statistics.PIP{config['thresholdPIP']}.tsv"),
+
+##  RULES
+
+ # download each credible set file; filter by PIP
+ # columns: molecular_trait_id	gene_id	cs_id	variant	rsid	cs_size	pip	pvalue	beta	se	z	cs_min_r2	region
+rule download_files:
+	params:
+		url = lambda wildcards: sample_config.loc[wildcards.dataset_id, "url"],
+		thresholdPIP = config['thresholdPIP'],
+	output:
+		variants_raw = temp(os.path.join(config["results"], "credible_sets_download", "{dataset_id}.tsv.gz")),
+		variants_filt =  temp(os.path.join(config["results"], f"credible_sets_filtered_PIP{config['thresholdPIP']}", "{dataset_id}.tsv.gz"))
+	resources:
+		mem_mb = 16*1000
+	shell:
+		"""
+		set +o pipefail;
+
+		wget {params.url} -O {output.variants_raw}
+
+		# select columns to save, filter on PIP, sort, remove duplicates
+		zcat {output.variants_raw} | csvtk cut -t -f gene_id,variant,pip | sed 1d |  awk '$3>={params.thresholdPIP}' | uniq | gzip > {output.variants_filt}
+		"""
+
+#convert to chr, start, end, varID_hg38, tissue, gene_hgnc,pip (required matching to abc gene list)
+rule process_files: 
+	input:
+		variants_filt =  os.path.join(config["results"], f"credible_sets_filtered_PIP{config['thresholdPIP']}", "{dataset_id}.tsv.gz")
+	params:
+		tissue = lambda wildcards: sample_config.loc[wildcards.dataset_id, config["category_column"]],
+		genes = config["genes"]
+	output:
+		variants_processed =  temp(os.path.join(config["results"],  f"credible_sets_processed_PIP{config['thresholdPIP']}", "{dataset_id}.tsv.gz"))
+	resources:
+		mem_mb = 32*1000
+	script:
+		os.path.join(config["codeDir"], "process_filtered_variants.R")
+
+# merge all files
+rule aggregate_files:
+	input:
+		all_samples = [os.path.join(config["results"],  f"credible_sets_processed_PIP{config['thresholdPIP']}", f"{dataset_id}.tsv.gz") for dataset_id in sample_config['dataset_id']]
+	output:
+		variants = os.path.join(config["results"], f"eQTL_catalogue_v7.processed.PIP{config['thresholdPIP']}.tsv.gz")
+	resources:
+		mem_mb = 128*1000
+	script:
+		os.path.join(config["codeDir"], "aggregate_variants.R")
+
+
+# get list of tissues represented after aggregated and number of variants per tissue
+rule get_stats:
+	input:
+		variants = os.path.join(config["results"], f"eQTL_catalogue_v7.processed.PIP{config['thresholdPIP']}.tsv.gz")
+	output:
+		metadata = os.path.join(config["results"], f"dataset_statistics.PIP{config['thresholdPIP']}.tsv"),
+		plot =  os.path.join(config["results"], f"dataset_statistics.PIP{config['thresholdPIP']}.pdf"),
+	resources:
+		mem_mb = 32*1000
+	script:
+		os.path.join(config["codeDir"], "get_stats.R")
+

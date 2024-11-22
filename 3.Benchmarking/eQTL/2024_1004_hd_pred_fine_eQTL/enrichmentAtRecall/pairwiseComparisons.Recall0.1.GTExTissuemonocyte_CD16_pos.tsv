@@ -1,0 +1,37 @@
+group1	group2	p	p_adjust	significant
+scE2G (Multiome) (BMMC22_CD16_pos_Mono)	scE2G (Multiome) (PBMC_13_CD16.Mono)	0.627086925944498	1	FALSE
+scE2G (Multiome) (BMMC22_CD16_pos_Mono)	scE2G (scATAC) (BMMC22_CD16_pos_Mono)	0.631738708505695	1	FALSE
+scE2G (Multiome) (BMMC22_CD16_pos_Mono)	scE2G (scATAC) (PBMC_13_CD16.Mono)	0.654628698481015	1	FALSE
+scE2G (Multiome) (BMMC22_CD16_pos_Mono)	ABC (A=scATAC, C=power law) (BMMC22_CD16_pos_Mono)	0.312537093898804	1	FALSE
+scE2G (Multiome) (BMMC22_CD16_pos_Mono)	ABC (A=scATAC, C=power law) (PBMC_13_CD16.Mono)	0.512076743014755	1	FALSE
+scE2G (Multiome) (BMMC22_CD16_pos_Mono)	In element (ABC) & distance to TSS (BMMC22_CD16_pos_Mono)	0.178675200653748	1	FALSE
+scE2G (Multiome) (BMMC22_CD16_pos_Mono)	In element (ABC) & distance to TSS (PBMC_13_CD16.Mono)	0.419246116610428	1	FALSE
+scE2G (Multiome) (BMMC22_CD16_pos_Mono)	STARE (gABC, power law) (PBMC_13_CD16.Mono)	0.160548996782376	1	FALSE
+scE2G (Multiome) (PBMC_13_CD16.Mono)	scE2G (scATAC) (BMMC22_CD16_pos_Mono)	0.331815872500099	1	FALSE
+scE2G (Multiome) (PBMC_13_CD16.Mono)	scE2G (scATAC) (PBMC_13_CD16.Mono)	0.348066672599804	1	FALSE
+scE2G (Multiome) (PBMC_13_CD16.Mono)	ABC (A=scATAC, C=power law) (BMMC22_CD16_pos_Mono)	0.132572146138598	1	FALSE
+scE2G (Multiome) (PBMC_13_CD16.Mono)	ABC (A=scATAC, C=power law) (PBMC_13_CD16.Mono)	0.251064932215436	1	FALSE
+scE2G (Multiome) (PBMC_13_CD16.Mono)	In element (ABC) & distance to TSS (BMMC22_CD16_pos_Mono)	0.0648637354683291	1	FALSE
+scE2G (Multiome) (PBMC_13_CD16.Mono)	In element (ABC) & distance to TSS (PBMC_13_CD16.Mono)	0.194290867890392	1	FALSE
+scE2G (Multiome) (PBMC_13_CD16.Mono)	STARE (gABC, power law) (PBMC_13_CD16.Mono)	0.0561252520461723	1	FALSE
+scE2G (scATAC) (BMMC22_CD16_pos_Mono)	scE2G (scATAC) (PBMC_13_CD16.Mono)	0.974378815120635	1	FALSE
+scE2G (scATAC) (BMMC22_CD16_pos_Mono)	ABC (A=scATAC, C=power law) (BMMC22_CD16_pos_Mono)	0.593636022693393	1	FALSE
+scE2G (scATAC) (BMMC22_CD16_pos_Mono)	ABC (A=scATAC, C=power law) (PBMC_13_CD16.Mono)	0.859269473441025	1	FALSE
+scE2G (scATAC) (BMMC22_CD16_pos_Mono)	In element (ABC) & distance to TSS (BMMC22_CD16_pos_Mono)	0.386828982018228	1	FALSE
+scE2G (scATAC) (BMMC22_CD16_pos_Mono)	In element (ABC) & distance to TSS (PBMC_13_CD16.Mono)	0.739226158003654	1	FALSE
+scE2G (scATAC) (BMMC22_CD16_pos_Mono)	STARE (gABC, power law) (PBMC_13_CD16.Mono)	0.357922187278001	1	FALSE
+scE2G (scATAC) (PBMC_13_CD16.Mono)	ABC (A=scATAC, C=power law) (BMMC22_CD16_pos_Mono)	0.571603650837122	1	FALSE
+scE2G (scATAC) (PBMC_13_CD16.Mono)	ABC (A=scATAC, C=power law) (PBMC_13_CD16.Mono)	0.834119534699652	1	FALSE
+scE2G (scATAC) (PBMC_13_CD16.Mono)	In element (ABC) & distance to TSS (BMMC22_CD16_pos_Mono)	0.369269866659124	1	FALSE
+scE2G (scATAC) (PBMC_13_CD16.Mono)	In element (ABC) & distance to TSS (PBMC_13_CD16.Mono)	0.715247181767945	1	FALSE
+scE2G (scATAC) (PBMC_13_CD16.Mono)	STARE (gABC, power law) (PBMC_13_CD16.Mono)	0.341036496568073	1	FALSE
+ABC (A=scATAC, C=power law) (BMMC22_CD16_pos_Mono)	ABC (A=scATAC, C=power law) (PBMC_13_CD16.Mono)	0.721638161255469	1	FALSE
+ABC (A=scATAC, C=power law) (BMMC22_CD16_pos_Mono)	In element (ABC) & distance to TSS (BMMC22_CD16_pos_Mono)	0.744337195814813	1	FALSE
+ABC (A=scATAC, C=power law) (BMMC22_CD16_pos_Mono)	In element (ABC) & distance to TSS (PBMC_13_CD16.Mono)	0.843237413356147	1	FALSE
+ABC (A=scATAC, C=power law) (BMMC22_CD16_pos_Mono)	STARE (gABC, power law) (PBMC_13_CD16.Mono)	0.707949236968153	1	FALSE
+ABC (A=scATAC, C=power law) (PBMC_13_CD16.Mono)	In element (ABC) & distance to TSS (BMMC22_CD16_pos_Mono)	0.492595446935554	1	FALSE
+ABC (A=scATAC, C=power law) (PBMC_13_CD16.Mono)	In element (ABC) & distance to TSS (PBMC_13_CD16.Mono)	0.875598142826856	1	FALSE
+ABC (A=scATAC, C=power law) (PBMC_13_CD16.Mono)	STARE (gABC, power law) (PBMC_13_CD16.Mono)	0.460317615516958	1	FALSE
+In element (ABC) & distance to TSS (BMMC22_CD16_pos_Mono)	In element (ABC) & distance to TSS (PBMC_13_CD16.Mono)	0.600195590493559	1	FALSE
+In element (ABC) & distance to TSS (BMMC22_CD16_pos_Mono)	STARE (gABC, power law) (PBMC_13_CD16.Mono)	0.963547808739942	1	FALSE
+In element (ABC) & distance to TSS (PBMC_13_CD16.Mono)	STARE (gABC, power law) (PBMC_13_CD16.Mono)	0.565766272399768	1	FALSE

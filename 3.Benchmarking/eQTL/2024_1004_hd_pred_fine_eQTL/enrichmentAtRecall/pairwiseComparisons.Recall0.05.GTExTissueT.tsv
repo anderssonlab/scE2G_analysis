@@ -1,0 +1,562 @@
+group1	group2	p	p_adjust	significant
+scE2G (Multiome) (BMMC22_CD4_pos_T_activated)	scE2G (Multiome) (BMMC22_CD4_pos_T_naive)	0.802984544176831	1	FALSE
+scE2G (Multiome) (BMMC22_CD4_pos_T_activated)	scE2G (Multiome) (BMMC22_CD8_pos_T)	0.261667386833369	1	FALSE
+scE2G (Multiome) (BMMC22_CD4_pos_T_activated)	scE2G (Multiome) (BMMC22_CD8_pos_T_naive)	0.820948086522047	1	FALSE
+scE2G (Multiome) (BMMC22_CD4_pos_T_activated)	scE2G (Multiome) (BMMC22_Lymph_prog)	0.417776070228204	1	FALSE
+scE2G (Multiome) (BMMC22_CD4_pos_T_activated)	scE2G (Multiome) (PBMC_20_CD4.N1)	0.703424578178479	1	FALSE
+scE2G (Multiome) (BMMC22_CD4_pos_T_activated)	scE2G (Multiome) (PBMC_22_CD4.M)	0.923734713286459	1	FALSE
+scE2G (Multiome) (BMMC22_CD4_pos_T_activated)	scE2G (Multiome) (PBMC_24_CD8.CM)	0.9820244021708	1	FALSE
+scE2G (Multiome) (BMMC22_CD4_pos_T_activated)	scE2G (scATAC) (BMMC22_CD4_pos_T_activated)	0.382194890363523	1	FALSE
+scE2G (Multiome) (BMMC22_CD4_pos_T_activated)	scE2G (scATAC) (BMMC22_CD4_pos_T_naive)	0.462050903277929	1	FALSE
+scE2G (Multiome) (BMMC22_CD4_pos_T_activated)	scE2G (scATAC) (BMMC22_CD8_pos_T)	0.716091666686224	1	FALSE
+scE2G (Multiome) (BMMC22_CD4_pos_T_activated)	scE2G (scATAC) (BMMC22_CD8_pos_T_naive)	0.632517886128519	1	FALSE
+scE2G (Multiome) (BMMC22_CD4_pos_T_activated)	scE2G (scATAC) (BMMC22_Lymph_prog)	0.214741751130211	1	FALSE
+scE2G (Multiome) (BMMC22_CD4_pos_T_activated)	scE2G (scATAC) (PBMC_20_CD4.N1)	0.186916695534562	1	FALSE
+scE2G (Multiome) (BMMC22_CD4_pos_T_activated)	scE2G (scATAC) (PBMC_22_CD4.M)	0.321403793462138	1	FALSE
+scE2G (Multiome) (BMMC22_CD4_pos_T_activated)	scE2G (scATAC) (PBMC_24_CD8.CM)	0.590537203799645	1	FALSE
+scE2G (Multiome) (BMMC22_CD4_pos_T_activated)	ABC (A=scATAC, C=power law) (BMMC22_CD4_pos_T_activated)	0.291227863216271	1	FALSE
+scE2G (Multiome) (BMMC22_CD4_pos_T_activated)	ABC (A=scATAC, C=power law) (BMMC22_CD4_pos_T_naive)	0.303576053255447	1	FALSE
+scE2G (Multiome) (BMMC22_CD4_pos_T_activated)	ABC (A=scATAC, C=power law) (BMMC22_CD8_pos_T)	0.385041585031383	1	FALSE
+scE2G (Multiome) (BMMC22_CD4_pos_T_activated)	ABC (A=scATAC, C=power law) (BMMC22_Lymph_prog)	0.176551545473116	1	FALSE
+scE2G (Multiome) (BMMC22_CD4_pos_T_activated)	ABC (A=scATAC, C=power law) (PBMC_20_CD4.N1)	0.310540973255379	1	FALSE
+scE2G (Multiome) (BMMC22_CD4_pos_T_activated)	ABC (A=scATAC, C=power law) (PBMC_22_CD4.M)	0.400953725182259	1	FALSE
+scE2G (Multiome) (BMMC22_CD4_pos_T_activated)	ABC (A=scATAC, C=power law) (PBMC_24_CD8.CM)	0.674531668903502	1	FALSE
+scE2G (Multiome) (BMMC22_CD4_pos_T_activated)	In element (ABC) & distance to TSS (BMMC22_CD4_pos_T_activated)	0.282536312081181	1	FALSE
+scE2G (Multiome) (BMMC22_CD4_pos_T_activated)	In element (ABC) & distance to TSS (BMMC22_CD4_pos_T_naive)	0.362888162977126	1	FALSE
+scE2G (Multiome) (BMMC22_CD4_pos_T_activated)	In element (ABC) & distance to TSS (BMMC22_CD8_pos_T)	0.460243464928653	1	FALSE
+scE2G (Multiome) (BMMC22_CD4_pos_T_activated)	In element (ABC) & distance to TSS (BMMC22_CD8_pos_T_naive)	0.655897133723258	1	FALSE
+scE2G (Multiome) (BMMC22_CD4_pos_T_activated)	In element (ABC) & distance to TSS (BMMC22_Lymph_prog)	0.328838131707816	1	FALSE
+scE2G (Multiome) (BMMC22_CD4_pos_T_activated)	In element (ABC) & distance to TSS (PBMC_20_CD4.N1)	0.471697885577711	1	FALSE
+scE2G (Multiome) (BMMC22_CD4_pos_T_activated)	In element (ABC) & distance to TSS (PBMC_22_CD4.M)	0.471954673054172	1	FALSE
+scE2G (Multiome) (BMMC22_CD4_pos_T_activated)	In element (ABC) & distance to TSS (PBMC_24_CD8.CM)	0.762936513482139	1	FALSE
+scE2G (Multiome) (BMMC22_CD4_pos_T_activated)	STARE (gABC, power law) (PBMC_20_CD4.N1)	0.197165134640407	1	FALSE
+scE2G (Multiome) (BMMC22_CD4_pos_T_activated)	STARE (gABC, power law) (PBMC_22_CD4.M)	0.217055979419701	1	FALSE
+scE2G (Multiome) (BMMC22_CD4_pos_T_activated)	STARE (gABC, power law) (PBMC_24_CD8.CM)	0.384587503327045	1	FALSE
+scE2G (Multiome) (BMMC22_CD4_pos_T_naive)	scE2G (Multiome) (BMMC22_CD8_pos_T)	0.376250106694028	1	FALSE
+scE2G (Multiome) (BMMC22_CD4_pos_T_naive)	scE2G (Multiome) (BMMC22_CD8_pos_T_naive)	0.622577735084416	1	FALSE
+scE2G (Multiome) (BMMC22_CD4_pos_T_naive)	scE2G (Multiome) (BMMC22_Lymph_prog)	0.280891375802122	1	FALSE
+scE2G (Multiome) (BMMC22_CD4_pos_T_naive)	scE2G (Multiome) (PBMC_20_CD4.N1)	0.518617228712976	1	FALSE
+scE2G (Multiome) (BMMC22_CD4_pos_T_naive)	scE2G (Multiome) (PBMC_22_CD4.M)	0.722319133928425	1	FALSE
+scE2G (Multiome) (BMMC22_CD4_pos_T_naive)	scE2G (Multiome) (PBMC_24_CD8.CM)	0.817371136451296	1	FALSE
+scE2G (Multiome) (BMMC22_CD4_pos_T_naive)	scE2G (scATAC) (BMMC22_CD4_pos_T_activated)	0.247797630621671	1	FALSE
+scE2G (Multiome) (BMMC22_CD4_pos_T_naive)	scE2G (scATAC) (BMMC22_CD4_pos_T_naive)	0.312107287712192	1	FALSE
+scE2G (Multiome) (BMMC22_CD4_pos_T_naive)	scE2G (scATAC) (BMMC22_CD8_pos_T)	0.529901421864187	1	FALSE
+scE2G (Multiome) (BMMC22_CD4_pos_T_naive)	scE2G (scATAC) (BMMC22_CD8_pos_T_naive)	0.449646824037278	1	FALSE
+scE2G (Multiome) (BMMC22_CD4_pos_T_naive)	scE2G (scATAC) (BMMC22_Lymph_prog)	0.12827573373334	1	FALSE
+scE2G (Multiome) (BMMC22_CD4_pos_T_naive)	scE2G (scATAC) (PBMC_20_CD4.N1)	0.109268684861399	1	FALSE
+scE2G (Multiome) (BMMC22_CD4_pos_T_naive)	scE2G (scATAC) (PBMC_22_CD4.M)	0.202068904926035	1	FALSE
+scE2G (Multiome) (BMMC22_CD4_pos_T_naive)	scE2G (scATAC) (PBMC_24_CD8.CM)	0.418098053516859	1	FALSE
+scE2G (Multiome) (BMMC22_CD4_pos_T_naive)	ABC (A=scATAC, C=power law) (BMMC22_CD4_pos_T_activated)	0.18000090271259	1	FALSE
+scE2G (Multiome) (BMMC22_CD4_pos_T_naive)	ABC (A=scATAC, C=power law) (BMMC22_CD4_pos_T_naive)	0.188978458865436	1	FALSE
+scE2G (Multiome) (BMMC22_CD4_pos_T_naive)	ABC (A=scATAC, C=power law) (BMMC22_CD8_pos_T)	0.24997872741322	1	FALSE
+scE2G (Multiome) (BMMC22_CD4_pos_T_naive)	ABC (A=scATAC, C=power law) (BMMC22_Lymph_prog)	0.100503474998613	1	FALSE
+scE2G (Multiome) (BMMC22_CD4_pos_T_naive)	ABC (A=scATAC, C=power law) (PBMC_20_CD4.N1)	0.195457811200664	1	FALSE
+scE2G (Multiome) (BMMC22_CD4_pos_T_naive)	ABC (A=scATAC, C=power law) (PBMC_22_CD4.M)	0.262233564526583	1	FALSE
+scE2G (Multiome) (BMMC22_CD4_pos_T_naive)	ABC (A=scATAC, C=power law) (PBMC_24_CD8.CM)	0.488226823210898	1	FALSE
+scE2G (Multiome) (BMMC22_CD4_pos_T_naive)	In element (ABC) & distance to TSS (BMMC22_CD4_pos_T_activated)	0.17253034008498	1	FALSE
+scE2G (Multiome) (BMMC22_CD4_pos_T_naive)	In element (ABC) & distance to TSS (BMMC22_CD4_pos_T_naive)	0.233097105313331	1	FALSE
+scE2G (Multiome) (BMMC22_CD4_pos_T_naive)	In element (ABC) & distance to TSS (BMMC22_CD8_pos_T)	0.308811836377008	1	FALSE
+scE2G (Multiome) (BMMC22_CD4_pos_T_naive)	In element (ABC) & distance to TSS (BMMC22_CD8_pos_T_naive)	0.469823940689085	1	FALSE
+scE2G (Multiome) (BMMC22_CD4_pos_T_naive)	In element (ABC) & distance to TSS (BMMC22_Lymph_prog)	0.209017638966024	1	FALSE
+scE2G (Multiome) (BMMC22_CD4_pos_T_naive)	In element (ABC) & distance to TSS (PBMC_20_CD4.N1)	0.321872287501751	1	FALSE
+scE2G (Multiome) (BMMC22_CD4_pos_T_naive)	In element (ABC) & distance to TSS (PBMC_22_CD4.M)	0.318177847869794	1	FALSE
+scE2G (Multiome) (BMMC22_CD4_pos_T_naive)	In element (ABC) & distance to TSS (PBMC_24_CD8.CM)	0.572090361420326	1	FALSE
+scE2G (Multiome) (BMMC22_CD4_pos_T_naive)	STARE (gABC, power law) (PBMC_20_CD4.N1)	0.114230586005035	1	FALSE
+scE2G (Multiome) (BMMC22_CD4_pos_T_naive)	STARE (gABC, power law) (PBMC_22_CD4.M)	0.126761805211658	1	FALSE
+scE2G (Multiome) (BMMC22_CD4_pos_T_naive)	STARE (gABC, power law) (PBMC_24_CD8.CM)	0.249630584959837	1	FALSE
+scE2G (Multiome) (BMMC22_CD8_pos_T)	scE2G (Multiome) (BMMC22_CD8_pos_T_naive)	0.157498426368955	1	FALSE
+scE2G (Multiome) (BMMC22_CD8_pos_T)	scE2G (Multiome) (BMMC22_Lymph_prog)	0.0476656347886441	1	FALSE
+scE2G (Multiome) (BMMC22_CD8_pos_T)	scE2G (Multiome) (PBMC_20_CD4.N1)	0.119824107400288	1	FALSE
+scE2G (Multiome) (BMMC22_CD8_pos_T)	scE2G (Multiome) (PBMC_22_CD4.M)	0.207446461123987	1	FALSE
+scE2G (Multiome) (BMMC22_CD8_pos_T)	scE2G (Multiome) (PBMC_24_CD8.CM)	0.262953801803844	1	FALSE
+scE2G (Multiome) (BMMC22_CD8_pos_T)	scE2G (scATAC) (BMMC22_CD4_pos_T_activated)	0.0355945009937993	1	FALSE
+scE2G (Multiome) (BMMC22_CD8_pos_T)	scE2G (scATAC) (BMMC22_CD4_pos_T_naive)	0.0522656755202425	1	FALSE
+scE2G (Multiome) (BMMC22_CD8_pos_T)	scE2G (scATAC) (BMMC22_CD8_pos_T)	0.124071784801114	1	FALSE
+scE2G (Multiome) (BMMC22_CD8_pos_T)	scE2G (scATAC) (BMMC22_CD8_pos_T_naive)	0.0878085588404408	1	FALSE
+scE2G (Multiome) (BMMC22_CD8_pos_T)	scE2G (scATAC) (BMMC22_Lymph_prog)	0.0144699316833566	1	FALSE
+scE2G (Multiome) (BMMC22_CD8_pos_T)	scE2G (scATAC) (PBMC_20_CD4.N1)	0.0114956858371471	1	FALSE
+scE2G (Multiome) (BMMC22_CD8_pos_T)	scE2G (scATAC) (PBMC_22_CD4.M)	0.0261764743371633	1	FALSE
+scE2G (Multiome) (BMMC22_CD8_pos_T)	scE2G (scATAC) (PBMC_24_CD8.CM)	0.0824852405719922	1	FALSE
+scE2G (Multiome) (BMMC22_CD8_pos_T)	ABC (A=scATAC, C=power law) (BMMC22_CD4_pos_T_activated)	0.0220334846336906	1	FALSE
+scE2G (Multiome) (BMMC22_CD8_pos_T)	ABC (A=scATAC, C=power law) (BMMC22_CD4_pos_T_naive)	0.0236867721890891	1	FALSE
+scE2G (Multiome) (BMMC22_CD8_pos_T)	ABC (A=scATAC, C=power law) (BMMC22_CD8_pos_T)	0.036071299796067	1	FALSE
+scE2G (Multiome) (BMMC22_CD8_pos_T)	ABC (A=scATAC, C=power law) (BMMC22_Lymph_prog)	0.00941212233408328	1	FALSE
+scE2G (Multiome) (BMMC22_CD8_pos_T)	ABC (A=scATAC, C=power law) (PBMC_20_CD4.N1)	0.0257779037923112	1	FALSE
+scE2G (Multiome) (BMMC22_CD8_pos_T)	ABC (A=scATAC, C=power law) (PBMC_22_CD4.M)	0.0387964523322755	1	FALSE
+scE2G (Multiome) (BMMC22_CD8_pos_T)	ABC (A=scATAC, C=power law) (PBMC_24_CD8.CM)	0.102914307168523	1	FALSE
+scE2G (Multiome) (BMMC22_CD8_pos_T)	In element (ABC) & distance to TSS (BMMC22_CD4_pos_T_activated)	0.02001578046562	1	FALSE
+scE2G (Multiome) (BMMC22_CD8_pos_T)	In element (ABC) & distance to TSS (BMMC22_CD4_pos_T_naive)	0.0324459977484102	1	FALSE
+scE2G (Multiome) (BMMC22_CD8_pos_T)	In element (ABC) & distance to TSS (BMMC22_CD8_pos_T)	0.04986404425937	1	FALSE
+scE2G (Multiome) (BMMC22_CD8_pos_T)	In element (ABC) & distance to TSS (BMMC22_CD8_pos_T_naive)	0.0942800087370116	1	FALSE
+scE2G (Multiome) (BMMC22_CD8_pos_T)	In element (ABC) & distance to TSS (BMMC22_Lymph_prog)	0.0284835338447355	1	FALSE
+scE2G (Multiome) (BMMC22_CD8_pos_T)	In element (ABC) & distance to TSS (PBMC_20_CD4.N1)	0.0566069631921505	1	FALSE
+scE2G (Multiome) (BMMC22_CD8_pos_T)	In element (ABC) & distance to TSS (PBMC_22_CD4.M)	0.0522243780940605	1	FALSE
+scE2G (Multiome) (BMMC22_CD8_pos_T)	In element (ABC) & distance to TSS (PBMC_24_CD8.CM)	0.140566661671621	1	FALSE
+scE2G (Multiome) (BMMC22_CD8_pos_T)	STARE (gABC, power law) (PBMC_20_CD4.N1)	0.0113201941892624	1	FALSE
+scE2G (Multiome) (BMMC22_CD8_pos_T)	STARE (gABC, power law) (PBMC_22_CD4.M)	0.0127083215178284	1	FALSE
+scE2G (Multiome) (BMMC22_CD8_pos_T)	STARE (gABC, power law) (PBMC_24_CD8.CM)	0.0359950271716937	1	FALSE
+scE2G (Multiome) (BMMC22_CD8_pos_T_naive)	scE2G (Multiome) (BMMC22_Lymph_prog)	0.535704329384568	1	FALSE
+scE2G (Multiome) (BMMC22_CD8_pos_T_naive)	scE2G (Multiome) (PBMC_20_CD4.N1)	0.868575938758364	1	FALSE
+scE2G (Multiome) (BMMC22_CD8_pos_T_naive)	scE2G (Multiome) (PBMC_22_CD4.M)	0.893493960000819	1	FALSE
+scE2G (Multiome) (BMMC22_CD8_pos_T_naive)	scE2G (Multiome) (PBMC_24_CD8.CM)	0.799369280635916	1	FALSE
+scE2G (Multiome) (BMMC22_CD8_pos_T_naive)	scE2G (scATAC) (BMMC22_CD4_pos_T_activated)	0.497088397002726	1	FALSE
+scE2G (Multiome) (BMMC22_CD8_pos_T_naive)	scE2G (scATAC) (BMMC22_CD4_pos_T_naive)	0.592214470553411	1	FALSE
+scE2G (Multiome) (BMMC22_CD8_pos_T_naive)	scE2G (scATAC) (BMMC22_CD8_pos_T)	0.882662918597548	1	FALSE
+scE2G (Multiome) (BMMC22_CD8_pos_T_naive)	scE2G (scATAC) (BMMC22_CD8_pos_T_naive)	0.795089652018223	1	FALSE
+scE2G (Multiome) (BMMC22_CD8_pos_T_naive)	scE2G (scATAC) (BMMC22_Lymph_prog)	0.285160833855528	1	FALSE
+scE2G (Multiome) (BMMC22_CD8_pos_T_naive)	scE2G (scATAC) (PBMC_20_CD4.N1)	0.249356101761876	1	FALSE
+scE2G (Multiome) (BMMC22_CD8_pos_T_naive)	scE2G (scATAC) (PBMC_22_CD4.M)	0.42192178146065	1	FALSE
+scE2G (Multiome) (BMMC22_CD8_pos_T_naive)	scE2G (scATAC) (PBMC_24_CD8.CM)	0.742953005508621	1	FALSE
+scE2G (Multiome) (BMMC22_CD8_pos_T_naive)	ABC (A=scATAC, C=power law) (BMMC22_CD4_pos_T_activated)	0.384103030195035	1	FALSE
+scE2G (Multiome) (BMMC22_CD8_pos_T_naive)	ABC (A=scATAC, C=power law) (BMMC22_CD4_pos_T_naive)	0.399620203693625	1	FALSE
+scE2G (Multiome) (BMMC22_CD8_pos_T_naive)	ABC (A=scATAC, C=power law) (BMMC22_CD8_pos_T)	0.500575547387576	1	FALSE
+scE2G (Multiome) (BMMC22_CD8_pos_T_naive)	ABC (A=scATAC, C=power law) (BMMC22_Lymph_prog)	0.237122254237502	1	FALSE
+scE2G (Multiome) (BMMC22_CD8_pos_T_naive)	ABC (A=scATAC, C=power law) (PBMC_20_CD4.N1)	0.407254143891058	1	FALSE
+scE2G (Multiome) (BMMC22_CD8_pos_T_naive)	ABC (A=scATAC, C=power law) (PBMC_22_CD4.M)	0.520014653736412	1	FALSE
+scE2G (Multiome) (BMMC22_CD8_pos_T_naive)	ABC (A=scATAC, C=power law) (PBMC_24_CD8.CM)	0.840791889949139	1	FALSE
+scE2G (Multiome) (BMMC22_CD8_pos_T_naive)	In element (ABC) & distance to TSS (BMMC22_CD4_pos_T_activated)	0.374063408607719	1	FALSE
+scE2G (Multiome) (BMMC22_CD8_pos_T_naive)	In element (ABC) & distance to TSS (BMMC22_CD4_pos_T_naive)	0.473361479011559	1	FALSE
+scE2G (Multiome) (BMMC22_CD8_pos_T_naive)	In element (ABC) & distance to TSS (BMMC22_CD8_pos_T)	0.591666248228126	1	FALSE
+scE2G (Multiome) (BMMC22_CD8_pos_T_naive)	In element (ABC) & distance to TSS (BMMC22_CD8_pos_T_naive)	0.821732353256111	1	FALSE
+scE2G (Multiome) (BMMC22_CD8_pos_T_naive)	In element (ABC) & distance to TSS (BMMC22_Lymph_prog)	0.430025927850666	1	FALSE
+scE2G (Multiome) (BMMC22_CD8_pos_T_naive)	In element (ABC) & distance to TSS (PBMC_20_CD4.N1)	0.601952870751672	1	FALSE
+scE2G (Multiome) (BMMC22_CD8_pos_T_naive)	In element (ABC) & distance to TSS (PBMC_22_CD4.M)	0.605675966421636	1	FALSE
+scE2G (Multiome) (BMMC22_CD8_pos_T_naive)	In element (ABC) & distance to TSS (PBMC_24_CD8.CM)	0.934326836730876	1	FALSE
+scE2G (Multiome) (BMMC22_CD8_pos_T_naive)	STARE (gABC, power law) (PBMC_20_CD4.N1)	0.263939915759813	1	FALSE
+scE2G (Multiome) (BMMC22_CD8_pos_T_naive)	STARE (gABC, power law) (PBMC_22_CD4.M)	0.29032489373838	1	FALSE
+scE2G (Multiome) (BMMC22_CD8_pos_T_naive)	STARE (gABC, power law) (PBMC_24_CD8.CM)	0.500019498852978	1	FALSE
+scE2G (Multiome) (BMMC22_Lymph_prog)	scE2G (Multiome) (PBMC_20_CD4.N1)	0.652679734785111	1	FALSE
+scE2G (Multiome) (BMMC22_Lymph_prog)	scE2G (Multiome) (PBMC_22_CD4.M)	0.459202334579197	1	FALSE
+scE2G (Multiome) (BMMC22_Lymph_prog)	scE2G (Multiome) (PBMC_24_CD8.CM)	0.396776026258606	1	FALSE
+scE2G (Multiome) (BMMC22_Lymph_prog)	scE2G (scATAC) (BMMC22_CD4_pos_T_activated)	0.976644520708354	1	FALSE
+scE2G (Multiome) (BMMC22_Lymph_prog)	scE2G (scATAC) (BMMC22_CD4_pos_T_naive)	0.919783317565478	1	FALSE
+scE2G (Multiome) (BMMC22_Lymph_prog)	scE2G (scATAC) (BMMC22_CD8_pos_T)	0.640239080424123	1	FALSE
+scE2G (Multiome) (BMMC22_Lymph_prog)	scE2G (scATAC) (BMMC22_CD8_pos_T_naive)	0.700680681738592	1	FALSE
+scE2G (Multiome) (BMMC22_Lymph_prog)	scE2G (scATAC) (BMMC22_Lymph_prog)	0.670526684293031	1	FALSE
+scE2G (Multiome) (BMMC22_Lymph_prog)	scE2G (scATAC) (PBMC_20_CD4.N1)	0.612871543897097	1	FALSE
+scE2G (Multiome) (BMMC22_Lymph_prog)	scE2G (scATAC) (PBMC_22_CD4.M)	0.881362555625105	1	FALSE
+scE2G (Multiome) (BMMC22_Lymph_prog)	scE2G (scATAC) (PBMC_24_CD8.CM)	0.762809120839911	1	FALSE
+scE2G (Multiome) (BMMC22_Lymph_prog)	ABC (A=scATAC, C=power law) (BMMC22_CD4_pos_T_activated)	0.830300365103708	1	FALSE
+scE2G (Multiome) (BMMC22_Lymph_prog)	ABC (A=scATAC, C=power law) (BMMC22_CD4_pos_T_naive)	0.851526820088153	1	FALSE
+scE2G (Multiome) (BMMC22_Lymph_prog)	ABC (A=scATAC, C=power law) (BMMC22_CD8_pos_T)	0.980883240845839	1	FALSE
+scE2G (Multiome) (BMMC22_Lymph_prog)	ABC (A=scATAC, C=power law) (BMMC22_Lymph_prog)	0.605862727414836	1	FALSE
+scE2G (Multiome) (BMMC22_Lymph_prog)	ABC (A=scATAC, C=power law) (PBMC_20_CD4.N1)	0.854728455914661	1	FALSE
+scE2G (Multiome) (BMMC22_Lymph_prog)	ABC (A=scATAC, C=power law) (PBMC_22_CD4.M)	0.995761339063065	1	FALSE
+scE2G (Multiome) (BMMC22_Lymph_prog)	ABC (A=scATAC, C=power law) (PBMC_24_CD8.CM)	0.664786200699999	1	FALSE
+scE2G (Multiome) (BMMC22_Lymph_prog)	In element (ABC) & distance to TSS (BMMC22_CD4_pos_T_activated)	0.822971752363113	1	FALSE
+scE2G (Multiome) (BMMC22_Lymph_prog)	In element (ABC) & distance to TSS (BMMC22_CD4_pos_T_naive)	0.947393735460727	1	FALSE
+scE2G (Multiome) (BMMC22_Lymph_prog)	In element (ABC) & distance to TSS (BMMC22_CD8_pos_T)	0.913421885050915	1	FALSE
+scE2G (Multiome) (BMMC22_Lymph_prog)	In element (ABC) & distance to TSS (BMMC22_CD8_pos_T_naive)	0.67620980925844	1	FALSE
+scE2G (Multiome) (BMMC22_Lymph_prog)	In element (ABC) & distance to TSS (BMMC22_Lymph_prog)	0.884901931615716	1	FALSE
+scE2G (Multiome) (BMMC22_Lymph_prog)	In element (ABC) & distance to TSS (PBMC_20_CD4.N1)	0.916454722626632	1	FALSE
+scE2G (Multiome) (BMMC22_Lymph_prog)	In element (ABC) & distance to TSS (PBMC_22_CD4.M)	0.897964841742575	1	FALSE
+scE2G (Multiome) (BMMC22_Lymph_prog)	In element (ABC) & distance to TSS (PBMC_24_CD8.CM)	0.595733586802494	1	FALSE
+scE2G (Multiome) (BMMC22_Lymph_prog)	STARE (gABC, power law) (PBMC_20_CD4.N1)	0.650527840291947	1	FALSE
+scE2G (Multiome) (BMMC22_Lymph_prog)	STARE (gABC, power law) (PBMC_22_CD4.M)	0.69904741256942	1	FALSE
+scE2G (Multiome) (BMMC22_Lymph_prog)	STARE (gABC, power law) (PBMC_24_CD8.CM)	0.98020836402375	1	FALSE
+scE2G (Multiome) (PBMC_20_CD4.N1)	scE2G (Multiome) (PBMC_22_CD4.M)	0.768071377887754	1	FALSE
+scE2G (Multiome) (PBMC_20_CD4.N1)	scE2G (Multiome) (PBMC_24_CD8.CM)	0.68116917018694	1	FALSE
+scE2G (Multiome) (PBMC_20_CD4.N1)	scE2G (scATAC) (BMMC22_CD4_pos_T_activated)	0.616649113371572	1	FALSE
+scE2G (Multiome) (PBMC_20_CD4.N1)	scE2G (scATAC) (BMMC22_CD4_pos_T_naive)	0.717389860962497	1	FALSE
+scE2G (Multiome) (PBMC_20_CD4.N1)	scE2G (scATAC) (BMMC22_CD8_pos_T)	0.985952080262112	1	FALSE
+scE2G (Multiome) (PBMC_20_CD4.N1)	scE2G (scATAC) (BMMC22_CD8_pos_T_naive)	0.931796205609856	1	FALSE
+scE2G (Multiome) (PBMC_20_CD4.N1)	scE2G (scATAC) (BMMC22_Lymph_prog)	0.373524369862997	1	FALSE
+scE2G (Multiome) (PBMC_20_CD4.N1)	scE2G (scATAC) (PBMC_20_CD4.N1)	0.331164188177475	1	FALSE
+scE2G (Multiome) (PBMC_20_CD4.N1)	scE2G (scATAC) (PBMC_22_CD4.M)	0.533505668348229	1	FALSE
+scE2G (Multiome) (PBMC_20_CD4.N1)	scE2G (scATAC) (PBMC_24_CD8.CM)	0.874890710772046	1	FALSE
+scE2G (Multiome) (PBMC_20_CD4.N1)	ABC (A=scATAC, C=power law) (BMMC22_CD4_pos_T_activated)	0.490903442771345	1	FALSE
+scE2G (Multiome) (PBMC_20_CD4.N1)	ABC (A=scATAC, C=power law) (BMMC22_CD4_pos_T_naive)	0.50844975908318	1	FALSE
+scE2G (Multiome) (PBMC_20_CD4.N1)	ABC (A=scATAC, C=power law) (BMMC22_CD8_pos_T)	0.620460347319816	1	FALSE
+scE2G (Multiome) (PBMC_20_CD4.N1)	ABC (A=scATAC, C=power law) (BMMC22_Lymph_prog)	0.319344716334722	1	FALSE
+scE2G (Multiome) (PBMC_20_CD4.N1)	ABC (A=scATAC, C=power law) (PBMC_20_CD4.N1)	0.515329992788828	1	FALSE
+scE2G (Multiome) (PBMC_20_CD4.N1)	ABC (A=scATAC, C=power law) (PBMC_22_CD4.M)	0.641635387212929	1	FALSE
+scE2G (Multiome) (PBMC_20_CD4.N1)	ABC (A=scATAC, C=power law) (PBMC_24_CD8.CM)	0.976109771394343	1	FALSE
+scE2G (Multiome) (PBMC_20_CD4.N1)	In element (ABC) & distance to TSS (BMMC22_CD4_pos_T_activated)	0.481066368300163	1	FALSE
+scE2G (Multiome) (PBMC_20_CD4.N1)	In element (ABC) & distance to TSS (BMMC22_CD4_pos_T_naive)	0.590612081280456	1	FALSE
+scE2G (Multiome) (PBMC_20_CD4.N1)	In element (ABC) & distance to TSS (BMMC22_CD8_pos_T)	0.71869837745517	1	FALSE
+scE2G (Multiome) (PBMC_20_CD4.N1)	In element (ABC) & distance to TSS (BMMC22_CD8_pos_T_naive)	0.958726585557479	1	FALSE
+scE2G (Multiome) (PBMC_20_CD4.N1)	In element (ABC) & distance to TSS (BMMC22_Lymph_prog)	0.540815837026628	1	FALSE
+scE2G (Multiome) (PBMC_20_CD4.N1)	In element (ABC) & distance to TSS (PBMC_20_CD4.N1)	0.725717033516977	1	FALSE
+scE2G (Multiome) (PBMC_20_CD4.N1)	In element (ABC) & distance to TSS (PBMC_22_CD4.M)	0.733593427593157	1	FALSE
+scE2G (Multiome) (PBMC_20_CD4.N1)	In element (ABC) & distance to TSS (PBMC_24_CD8.CM)	0.934782236445926	1	FALSE
+scE2G (Multiome) (PBMC_20_CD4.N1)	STARE (gABC, power law) (PBMC_20_CD4.N1)	0.351466593230468	1	FALSE
+scE2G (Multiome) (PBMC_20_CD4.N1)	STARE (gABC, power law) (PBMC_22_CD4.M)	0.384090596761253	1	FALSE
+scE2G (Multiome) (PBMC_20_CD4.N1)	STARE (gABC, power law) (PBMC_24_CD8.CM)	0.619852882783925	1	FALSE
+scE2G (Multiome) (PBMC_22_CD4.M)	scE2G (Multiome) (PBMC_24_CD8.CM)	0.903888869669518	1	FALSE
+scE2G (Multiome) (PBMC_22_CD4.M)	scE2G (scATAC) (BMMC22_CD4_pos_T_activated)	0.421330199997263	1	FALSE
+scE2G (Multiome) (PBMC_22_CD4.M)	scE2G (scATAC) (BMMC22_CD4_pos_T_naive)	0.508419644920906	1	FALSE
+scE2G (Multiome) (PBMC_22_CD4.M)	scE2G (scATAC) (BMMC22_CD8_pos_T)	0.781556519713558	1	FALSE
+scE2G (Multiome) (PBMC_22_CD4.M)	scE2G (scATAC) (BMMC22_CD8_pos_T_naive)	0.694324340304548	1	FALSE
+scE2G (Multiome) (PBMC_22_CD4.M)	scE2G (scATAC) (BMMC22_Lymph_prog)	0.236101338911688	1	FALSE
+scE2G (Multiome) (PBMC_22_CD4.M)	scE2G (scATAC) (PBMC_20_CD4.N1)	0.205273999805447	1	FALSE
+scE2G (Multiome) (PBMC_22_CD4.M)	scE2G (scATAC) (PBMC_22_CD4.M)	0.354355767717375	1	FALSE
+scE2G (Multiome) (PBMC_22_CD4.M)	scE2G (scATAC) (PBMC_24_CD8.CM)	0.64781413651221	1	FALSE
+scE2G (Multiome) (PBMC_22_CD4.M)	ABC (A=scATAC, C=power law) (BMMC22_CD4_pos_T_activated)	0.321011012917919	1	FALSE
+scE2G (Multiome) (PBMC_22_CD4.M)	ABC (A=scATAC, C=power law) (BMMC22_CD4_pos_T_naive)	0.334663316420094	1	FALSE
+scE2G (Multiome) (PBMC_22_CD4.M)	ABC (A=scATAC, C=power law) (BMMC22_CD8_pos_T)	0.424459382909257	1	FALSE
+scE2G (Multiome) (PBMC_22_CD4.M)	ABC (A=scATAC, C=power law) (BMMC22_Lymph_prog)	0.193836277394327	1	FALSE
+scE2G (Multiome) (PBMC_22_CD4.M)	ABC (A=scATAC, C=power law) (PBMC_20_CD4.N1)	0.342157439242062	1	FALSE
+scE2G (Multiome) (PBMC_22_CD4.M)	ABC (A=scATAC, C=power law) (PBMC_22_CD4.M)	0.441938314381223	1	FALSE
+scE2G (Multiome) (PBMC_22_CD4.M)	ABC (A=scATAC, C=power law) (PBMC_24_CD8.CM)	0.738788195851956	1	FALSE
+scE2G (Multiome) (PBMC_22_CD4.M)	In element (ABC) & distance to TSS (BMMC22_CD4_pos_T_activated)	0.311540873340455	1	FALSE
+scE2G (Multiome) (PBMC_22_CD4.M)	In element (ABC) & distance to TSS (BMMC22_CD4_pos_T_naive)	0.400090454359376	1	FALSE
+scE2G (Multiome) (PBMC_22_CD4.M)	In element (ABC) & distance to TSS (BMMC22_CD8_pos_T)	0.506875921736943	1	FALSE
+scE2G (Multiome) (PBMC_22_CD4.M)	In element (ABC) & distance to TSS (BMMC22_CD8_pos_T_naive)	0.719475372822964	1	FALSE
+scE2G (Multiome) (PBMC_22_CD4.M)	In element (ABC) & distance to TSS (BMMC22_Lymph_prog)	0.36233221255518	1	FALSE
+scE2G (Multiome) (PBMC_22_CD4.M)	In element (ABC) & distance to TSS (PBMC_20_CD4.N1)	0.518456418326835	1	FALSE
+scE2G (Multiome) (PBMC_22_CD4.M)	In element (ABC) & distance to TSS (PBMC_22_CD4.M)	0.519665861591146	1	FALSE
+scE2G (Multiome) (PBMC_22_CD4.M)	In element (ABC) & distance to TSS (PBMC_24_CD8.CM)	0.831273136898621	1	FALSE
+scE2G (Multiome) (PBMC_22_CD4.M)	STARE (gABC, power law) (PBMC_20_CD4.N1)	0.216734856448822	1	FALSE
+scE2G (Multiome) (PBMC_22_CD4.M)	STARE (gABC, power law) (PBMC_22_CD4.M)	0.238880841973927	1	FALSE
+scE2G (Multiome) (PBMC_22_CD4.M)	STARE (gABC, power law) (PBMC_24_CD8.CM)	0.423960285070313	1	FALSE
+scE2G (Multiome) (PBMC_24_CD8.CM)	scE2G (scATAC) (BMMC22_CD4_pos_T_activated)	0.360461990799566	1	FALSE
+scE2G (Multiome) (PBMC_24_CD8.CM)	scE2G (scATAC) (BMMC22_CD4_pos_T_naive)	0.439655406397612	1	FALSE
+scE2G (Multiome) (PBMC_24_CD8.CM)	scE2G (scATAC) (BMMC22_CD8_pos_T)	0.693916035485087	1	FALSE
+scE2G (Multiome) (PBMC_24_CD8.CM)	scE2G (scATAC) (BMMC22_CD8_pos_T_naive)	0.608803269133772	1	FALSE
+scE2G (Multiome) (PBMC_24_CD8.CM)	scE2G (scATAC) (BMMC22_Lymph_prog)	0.198327976312261	1	FALSE
+scE2G (Multiome) (PBMC_24_CD8.CM)	scE2G (scATAC) (PBMC_20_CD4.N1)	0.171662159591193	1	FALSE
+scE2G (Multiome) (PBMC_24_CD8.CM)	scE2G (scATAC) (PBMC_22_CD4.M)	0.300925933394257	1	FALSE
+scE2G (Multiome) (PBMC_24_CD8.CM)	scE2G (scATAC) (PBMC_24_CD8.CM)	0.567532304500077	1	FALSE
+scE2G (Multiome) (PBMC_24_CD8.CM)	ABC (A=scATAC, C=power law) (BMMC22_CD4_pos_T_activated)	0.271539958428095	1	FALSE
+scE2G (Multiome) (PBMC_24_CD8.CM)	ABC (A=scATAC, C=power law) (BMMC22_CD4_pos_T_naive)	0.283550374635266	1	FALSE
+scE2G (Multiome) (PBMC_24_CD8.CM)	ABC (A=scATAC, C=power law) (BMMC22_CD8_pos_T)	0.363259946557544	1	FALSE
+scE2G (Multiome) (PBMC_24_CD8.CM)	ABC (A=scATAC, C=power law) (BMMC22_Lymph_prog)	0.161157159427256	1	FALSE
+scE2G (Multiome) (PBMC_24_CD8.CM)	ABC (A=scATAC, C=power law) (PBMC_20_CD4.N1)	0.290708941141799	1	FALSE
+scE2G (Multiome) (PBMC_24_CD8.CM)	ABC (A=scATAC, C=power law) (PBMC_22_CD4.M)	0.378914992151483	1	FALSE
+scE2G (Multiome) (PBMC_24_CD8.CM)	ABC (A=scATAC, C=power law) (PBMC_24_CD8.CM)	0.65134143957677	1	FALSE
+scE2G (Multiome) (PBMC_24_CD8.CM)	In element (ABC) & distance to TSS (BMMC22_CD4_pos_T_activated)	0.262756254208213	1	FALSE
+scE2G (Multiome) (PBMC_24_CD8.CM)	In element (ABC) & distance to TSS (BMMC22_CD4_pos_T_naive)	0.341508570807372	1	FALSE
+scE2G (Multiome) (PBMC_24_CD8.CM)	In element (ABC) & distance to TSS (BMMC22_CD8_pos_T)	0.437461235788751	1	FALSE
+scE2G (Multiome) (PBMC_24_CD8.CM)	In element (ABC) & distance to TSS (BMMC22_CD8_pos_T_naive)	0.632263154106774	1	FALSE
+scE2G (Multiome) (PBMC_24_CD8.CM)	In element (ABC) & distance to TSS (BMMC22_Lymph_prog)	0.308565120834906	1	FALSE
+scE2G (Multiome) (PBMC_24_CD8.CM)	In element (ABC) & distance to TSS (PBMC_20_CD4.N1)	0.449644019952804	1	FALSE
+scE2G (Multiome) (PBMC_24_CD8.CM)	In element (ABC) & distance to TSS (PBMC_22_CD4.M)	0.449062817735585	1	FALSE
+scE2G (Multiome) (PBMC_24_CD8.CM)	In element (ABC) & distance to TSS (PBMC_24_CD8.CM)	0.741124006070896	1	FALSE
+scE2G (Multiome) (PBMC_24_CD8.CM)	STARE (gABC, power law) (PBMC_20_CD4.N1)	0.180820730631888	1	FALSE
+scE2G (Multiome) (PBMC_24_CD8.CM)	STARE (gABC, power law) (PBMC_22_CD4.M)	0.199569207573892	1	FALSE
+scE2G (Multiome) (PBMC_24_CD8.CM)	STARE (gABC, power law) (PBMC_24_CD8.CM)	0.362813582633896	1	FALSE
+scE2G (scATAC) (BMMC22_CD4_pos_T_activated)	scE2G (scATAC) (BMMC22_CD4_pos_T_naive)	0.892006032263536	1	FALSE
+scE2G (scATAC) (BMMC22_CD4_pos_T_activated)	scE2G (scATAC) (BMMC22_CD8_pos_T)	0.603951388157947	1	FALSE
+scE2G (scATAC) (BMMC22_CD4_pos_T_activated)	scE2G (scATAC) (BMMC22_CD8_pos_T_naive)	0.663652674325494	1	FALSE
+scE2G (scATAC) (BMMC22_CD4_pos_T_activated)	scE2G (scATAC) (BMMC22_Lymph_prog)	0.677937484258081	1	FALSE
+scE2G (scATAC) (BMMC22_CD4_pos_T_activated)	scE2G (scATAC) (PBMC_20_CD4.N1)	0.617390708649524	1	FALSE
+scE2G (scATAC) (BMMC22_CD4_pos_T_activated)	scE2G (scATAC) (PBMC_22_CD4.M)	0.899854293844502	1	FALSE
+scE2G (scATAC) (BMMC22_CD4_pos_T_activated)	scE2G (scATAC) (PBMC_24_CD8.CM)	0.729019836799959	1	FALSE
+scE2G (scATAC) (BMMC22_CD4_pos_T_activated)	ABC (A=scATAC, C=power law) (BMMC22_CD4_pos_T_activated)	0.846090741055323	1	FALSE
+scE2G (scATAC) (BMMC22_CD4_pos_T_activated)	ABC (A=scATAC, C=power law) (BMMC22_CD4_pos_T_naive)	0.868446007331764	1	FALSE
+scE2G (scATAC) (BMMC22_CD4_pos_T_activated)	ABC (A=scATAC, C=power law) (BMMC22_CD8_pos_T)	0.995551996558529	1	FALSE
+scE2G (scATAC) (BMMC22_CD4_pos_T_activated)	ABC (A=scATAC, C=power law) (BMMC22_Lymph_prog)	0.609655722379521	1	FALSE
+scE2G (scATAC) (BMMC22_CD4_pos_T_activated)	ABC (A=scATAC, C=power law) (PBMC_20_CD4.N1)	0.871664811934112	1	FALSE
+scE2G (scATAC) (BMMC22_CD4_pos_T_activated)	ABC (A=scATAC, C=power law) (PBMC_22_CD4.M)	0.971056395365437	1	FALSE
+scE2G (scATAC) (BMMC22_CD4_pos_T_activated)	ABC (A=scATAC, C=power law) (PBMC_24_CD8.CM)	0.627491978021085	1	FALSE
+scE2G (scATAC) (BMMC22_CD4_pos_T_activated)	In element (ABC) & distance to TSS (BMMC22_CD4_pos_T_activated)	0.838468622479424	1	FALSE
+scE2G (scATAC) (BMMC22_CD4_pos_T_activated)	In element (ABC) & distance to TSS (BMMC22_CD4_pos_T_naive)	0.969286773710006	1	FALSE
+scE2G (scATAC) (BMMC22_CD4_pos_T_activated)	In element (ABC) & distance to TSS (BMMC22_CD8_pos_T)	0.88489865853839	1	FALSE
+scE2G (scATAC) (BMMC22_CD4_pos_T_activated)	In element (ABC) & distance to TSS (BMMC22_CD8_pos_T_naive)	0.63850705141741	1	FALSE
+scE2G (scATAC) (BMMC22_CD4_pos_T_activated)	In element (ABC) & distance to TSS (BMMC22_Lymph_prog)	0.903383641435053	1	FALSE
+scE2G (scATAC) (BMMC22_CD4_pos_T_activated)	In element (ABC) & distance to TSS (PBMC_20_CD4.N1)	0.8890313895668	1	FALSE
+scE2G (scATAC) (BMMC22_CD4_pos_T_activated)	In element (ABC) & distance to TSS (PBMC_22_CD4.M)	0.868764913520924	1	FALSE
+scE2G (scATAC) (BMMC22_CD4_pos_T_activated)	In element (ABC) & distance to TSS (PBMC_24_CD8.CM)	0.558665783200333	1	FALSE
+scE2G (scATAC) (BMMC22_CD4_pos_T_activated)	STARE (gABC, power law) (PBMC_20_CD4.N1)	0.656666439542744	1	FALSE
+scE2G (scATAC) (BMMC22_CD4_pos_T_activated)	STARE (gABC, power law) (PBMC_22_CD4.M)	0.707711132010434	1	FALSE
+scE2G (scATAC) (BMMC22_CD4_pos_T_activated)	STARE (gABC, power law) (PBMC_24_CD8.CM)	0.996260148020612	1	FALSE
+scE2G (scATAC) (BMMC22_CD4_pos_T_naive)	scE2G (scATAC) (BMMC22_CD8_pos_T)	0.704077101162588	1	FALSE
+scE2G (scATAC) (BMMC22_CD4_pos_T_naive)	scE2G (scATAC) (BMMC22_CD8_pos_T_naive)	0.771196297521565	1	FALSE
+scE2G (scATAC) (BMMC22_CD4_pos_T_naive)	scE2G (scATAC) (BMMC22_Lymph_prog)	0.588244918035129	1	FALSE
+scE2G (scATAC) (BMMC22_CD4_pos_T_naive)	scE2G (scATAC) (PBMC_20_CD4.N1)	0.532300300994831	1	FALSE
+scE2G (scATAC) (BMMC22_CD4_pos_T_naive)	scE2G (scATAC) (PBMC_22_CD4.M)	0.795033223693965	1	FALSE
+scE2G (scATAC) (BMMC22_CD4_pos_T_naive)	scE2G (scATAC) (PBMC_24_CD8.CM)	0.835475230220269	1	FALSE
+scE2G (scATAC) (BMMC22_CD4_pos_T_naive)	ABC (A=scATAC, C=power law) (BMMC22_CD4_pos_T_activated)	0.743629896575563	1	FALSE
+scE2G (scATAC) (BMMC22_CD4_pos_T_naive)	ABC (A=scATAC, C=power law) (BMMC22_CD4_pos_T_naive)	0.76494873909211	1	FALSE
+scE2G (scATAC) (BMMC22_CD4_pos_T_naive)	ABC (A=scATAC, C=power law) (BMMC22_CD8_pos_T)	0.896350715293337	1	FALSE
+scE2G (scATAC) (BMMC22_CD4_pos_T_naive)	ABC (A=scATAC, C=power law) (BMMC22_Lymph_prog)	0.522887376014077	1	FALSE
+scE2G (scATAC) (BMMC22_CD4_pos_T_naive)	ABC (A=scATAC, C=power law) (PBMC_20_CD4.N1)	0.769440872088152	1	FALSE
+scE2G (scATAC) (BMMC22_CD4_pos_T_naive)	ABC (A=scATAC, C=power law) (PBMC_22_CD4.M)	0.92033565333755	1	FALSE
+scE2G (scATAC) (BMMC22_CD4_pos_T_naive)	ABC (A=scATAC, C=power law) (PBMC_24_CD8.CM)	0.732025624691081	1	FALSE
+scE2G (scATAC) (BMMC22_CD4_pos_T_naive)	In element (ABC) & distance to TSS (BMMC22_CD4_pos_T_activated)	0.735082242245006	1	FALSE
+scE2G (scATAC) (BMMC22_CD4_pos_T_naive)	In element (ABC) & distance to TSS (BMMC22_CD4_pos_T_naive)	0.862094305727419	1	FALSE
+scE2G (scATAC) (BMMC22_CD4_pos_T_naive)	In element (ABC) & distance to TSS (BMMC22_CD8_pos_T)	0.994503222155501	1	FALSE
+scE2G (scATAC) (BMMC22_CD4_pos_T_naive)	In element (ABC) & distance to TSS (BMMC22_CD8_pos_T_naive)	0.745029478110313	1	FALSE
+scE2G (scATAC) (BMMC22_CD4_pos_T_naive)	In element (ABC) & distance to TSS (BMMC22_Lymph_prog)	0.799867877769547	1	FALSE
+scE2G (scATAC) (BMMC22_CD4_pos_T_naive)	In element (ABC) & distance to TSS (PBMC_20_CD4.N1)	0.995353836089974	1	FALSE
+scE2G (scATAC) (BMMC22_CD4_pos_T_naive)	In element (ABC) & distance to TSS (PBMC_22_CD4.M)	0.978414446715138	1	FALSE
+scE2G (scATAC) (BMMC22_CD4_pos_T_naive)	In element (ABC) & distance to TSS (PBMC_24_CD8.CM)	0.656309259927854	1	FALSE
+scE2G (scATAC) (BMMC22_CD4_pos_T_naive)	STARE (gABC, power law) (PBMC_20_CD4.N1)	0.566091304293828	1	FALSE
+scE2G (scATAC) (BMMC22_CD4_pos_T_naive)	STARE (gABC, power law) (PBMC_22_CD4.M)	0.612228308576028	1	FALSE
+scE2G (scATAC) (BMMC22_CD4_pos_T_naive)	STARE (gABC, power law) (PBMC_24_CD8.CM)	0.895658796052375	1	FALSE
+scE2G (scATAC) (BMMC22_CD8_pos_T)	scE2G (scATAC) (BMMC22_CD8_pos_T_naive)	0.917217403469083	1	FALSE
+scE2G (scATAC) (BMMC22_CD8_pos_T)	scE2G (scATAC) (BMMC22_Lymph_prog)	0.364143308710656	1	FALSE
+scE2G (scATAC) (BMMC22_CD8_pos_T)	scE2G (scATAC) (PBMC_20_CD4.N1)	0.322477808242432	1	FALSE
+scE2G (scATAC) (BMMC22_CD8_pos_T)	scE2G (scATAC) (PBMC_22_CD4.M)	0.521662333831952	1	FALSE
+scE2G (scATAC) (BMMC22_CD8_pos_T)	scE2G (scATAC) (PBMC_24_CD8.CM)	0.860826141849165	1	FALSE
+scE2G (scATAC) (BMMC22_CD8_pos_T)	ABC (A=scATAC, C=power law) (BMMC22_CD4_pos_T_activated)	0.479570113137181	1	FALSE
+scE2G (scATAC) (BMMC22_CD8_pos_T)	ABC (A=scATAC, C=power law) (BMMC22_CD4_pos_T_naive)	0.496900253619903	1	FALSE
+scE2G (scATAC) (BMMC22_CD8_pos_T)	ABC (A=scATAC, C=power law) (BMMC22_CD8_pos_T)	0.607727768127695	1	FALSE
+scE2G (scATAC) (BMMC22_CD8_pos_T)	ABC (A=scATAC, C=power law) (BMMC22_Lymph_prog)	0.310617657559993	1	FALSE
+scE2G (scATAC) (BMMC22_CD8_pos_T)	ABC (A=scATAC, C=power law) (PBMC_20_CD4.N1)	0.503856559417793	1	FALSE
+scE2G (scATAC) (BMMC22_CD8_pos_T)	ABC (A=scATAC, C=power law) (PBMC_22_CD4.M)	0.628715865506782	1	FALSE
+scE2G (scATAC) (BMMC22_CD8_pos_T)	ABC (A=scATAC, C=power law) (PBMC_24_CD8.CM)	0.961661969928476	1	FALSE
+scE2G (scATAC) (BMMC22_CD8_pos_T)	In element (ABC) & distance to TSS (BMMC22_CD4_pos_T_activated)	0.469715123599166	1	FALSE
+scE2G (scATAC) (BMMC22_CD8_pos_T)	In element (ABC) & distance to TSS (BMMC22_CD4_pos_T_naive)	0.57816242984373	1	FALSE
+scE2G (scATAC) (BMMC22_CD8_pos_T)	In element (ABC) & distance to TSS (BMMC22_CD8_pos_T)	0.705192487762863	1	FALSE
+scE2G (scATAC) (BMMC22_CD8_pos_T)	In element (ABC) & distance to TSS (BMMC22_CD8_pos_T_naive)	0.944109331850141	1	FALSE
+scE2G (scATAC) (BMMC22_CD8_pos_T)	In element (ABC) & distance to TSS (BMMC22_Lymph_prog)	0.529052565211308	1	FALSE
+scE2G (scATAC) (BMMC22_CD8_pos_T)	In element (ABC) & distance to TSS (PBMC_20_CD4.N1)	0.712548286943212	1	FALSE
+scE2G (scATAC) (BMMC22_CD8_pos_T)	In element (ABC) & distance to TSS (PBMC_22_CD4.M)	0.719990861078309	1	FALSE
+scE2G (scATAC) (BMMC22_CD8_pos_T)	In element (ABC) & distance to TSS (PBMC_24_CD8.CM)	0.94879329228244	1	FALSE
+scE2G (scATAC) (BMMC22_CD8_pos_T)	STARE (gABC, power law) (PBMC_20_CD4.N1)	0.342178393817269	1	FALSE
+scE2G (scATAC) (BMMC22_CD8_pos_T)	STARE (gABC, power law) (PBMC_22_CD4.M)	0.37414385129726	1	FALSE
+scE2G (scATAC) (BMMC22_CD8_pos_T)	STARE (gABC, power law) (PBMC_24_CD8.CM)	0.607125834112573	1	FALSE
+scE2G (scATAC) (BMMC22_CD8_pos_T_naive)	scE2G (scATAC) (BMMC22_Lymph_prog)	0.399754781506092	1	FALSE
+scE2G (scATAC) (BMMC22_CD8_pos_T_naive)	scE2G (scATAC) (PBMC_20_CD4.N1)	0.35371174960967	1	FALSE
+scE2G (scATAC) (BMMC22_CD8_pos_T_naive)	scE2G (scATAC) (PBMC_22_CD4.M)	0.573815909337298	1	FALSE
+scE2G (scATAC) (BMMC22_CD8_pos_T_naive)	scE2G (scATAC) (PBMC_24_CD8.CM)	0.938342580626057	1	FALSE
+scE2G (scATAC) (BMMC22_CD8_pos_T_naive)	ABC (A=scATAC, C=power law) (BMMC22_CD4_pos_T_activated)	0.527624406345468	1	FALSE
+scE2G (scATAC) (BMMC22_CD8_pos_T_naive)	ABC (A=scATAC, C=power law) (BMMC22_CD4_pos_T_naive)	0.546660748534604	1	FALSE
+scE2G (scATAC) (BMMC22_CD8_pos_T_naive)	ABC (A=scATAC, C=power law) (BMMC22_CD8_pos_T)	0.667759689704231	1	FALSE
+scE2G (scATAC) (BMMC22_CD8_pos_T_naive)	ABC (A=scATAC, C=power law) (BMMC22_Lymph_prog)	0.340885873017442	1	FALSE
+scE2G (scATAC) (BMMC22_CD8_pos_T_naive)	ABC (A=scATAC, C=power law) (PBMC_20_CD4.N1)	0.553807883297151	1	FALSE
+scE2G (scATAC) (BMMC22_CD8_pos_T_naive)	ABC (A=scATAC, C=power law) (PBMC_22_CD4.M)	0.690559032369348	1	FALSE
+scE2G (scATAC) (BMMC22_CD8_pos_T_naive)	ABC (A=scATAC, C=power law) (PBMC_24_CD8.CM)	0.954533396395695	1	FALSE
+scE2G (scATAC) (BMMC22_CD8_pos_T_naive)	In element (ABC) & distance to TSS (BMMC22_CD4_pos_T_activated)	0.517178842619701	1	FALSE
+scE2G (scATAC) (BMMC22_CD8_pos_T_naive)	In element (ABC) & distance to TSS (BMMC22_CD4_pos_T_naive)	0.635567953938474	1	FALSE
+scE2G (scATAC) (BMMC22_CD8_pos_T_naive)	In element (ABC) & distance to TSS (BMMC22_CD8_pos_T)	0.77324297969081	1	FALSE
+scE2G (scATAC) (BMMC22_CD8_pos_T_naive)	In element (ABC) & distance to TSS (BMMC22_CD8_pos_T_naive)	0.971759227854425	1	FALSE
+scE2G (scATAC) (BMMC22_CD8_pos_T_naive)	In element (ABC) & distance to TSS (BMMC22_Lymph_prog)	0.581376522707701	1	FALSE
+scE2G (scATAC) (BMMC22_CD8_pos_T_naive)	In element (ABC) & distance to TSS (PBMC_20_CD4.N1)	0.779380456261766	1	FALSE
+scE2G (scATAC) (BMMC22_CD8_pos_T_naive)	In element (ABC) & distance to TSS (PBMC_22_CD4.M)	0.789168458493975	1	FALSE
+scE2G (scATAC) (BMMC22_CD8_pos_T_naive)	In element (ABC) & distance to TSS (PBMC_24_CD8.CM)	0.864313372541916	1	FALSE
+scE2G (scATAC) (BMMC22_CD8_pos_T_naive)	STARE (gABC, power law) (PBMC_20_CD4.N1)	0.375903518353278	1	FALSE
+scE2G (scATAC) (BMMC22_CD8_pos_T_naive)	STARE (gABC, power law) (PBMC_22_CD4.M)	0.411542404656095	1	FALSE
+scE2G (scATAC) (BMMC22_CD8_pos_T_naive)	STARE (gABC, power law) (PBMC_24_CD8.CM)	0.667105150228599	1	FALSE
+scE2G (scATAC) (BMMC22_Lymph_prog)	scE2G (scATAC) (PBMC_20_CD4.N1)	0.934741450527538	1	FALSE
+scE2G (scATAC) (BMMC22_Lymph_prog)	scE2G (scATAC) (PBMC_22_CD4.M)	0.769353919198117	1	FALSE
+scE2G (scATAC) (BMMC22_Lymph_prog)	scE2G (scATAC) (PBMC_24_CD8.CM)	0.455739124531131	1	FALSE
+scE2G (scATAC) (BMMC22_Lymph_prog)	ABC (A=scATAC, C=power law) (BMMC22_CD4_pos_T_activated)	0.820415510080053	1	FALSE
+scE2G (scATAC) (BMMC22_Lymph_prog)	ABC (A=scATAC, C=power law) (BMMC22_CD4_pos_T_naive)	0.799008985031191	1	FALSE
+scE2G (scATAC) (BMMC22_Lymph_prog)	ABC (A=scATAC, C=power law) (BMMC22_CD8_pos_T)	0.673984162332735	1	FALSE
+scE2G (scATAC) (BMMC22_Lymph_prog)	ABC (A=scATAC, C=power law) (BMMC22_Lymph_prog)	0.936297246616017	1	FALSE
+scE2G (scATAC) (BMMC22_Lymph_prog)	ABC (A=scATAC, C=power law) (PBMC_20_CD4.N1)	0.800446918273015	1	FALSE
+scE2G (scATAC) (BMMC22_Lymph_prog)	ABC (A=scATAC, C=power law) (PBMC_22_CD4.M)	0.652370858846937	1	FALSE
+scE2G (scATAC) (BMMC22_Lymph_prog)	ABC (A=scATAC, C=power law) (PBMC_24_CD8.CM)	0.375650210509742	1	FALSE
+scE2G (scATAC) (BMMC22_Lymph_prog)	In element (ABC) & distance to TSS (BMMC22_CD4_pos_T_activated)	0.823495026580494	1	FALSE
+scE2G (scATAC) (BMMC22_Lymph_prog)	In element (ABC) & distance to TSS (BMMC22_CD4_pos_T_naive)	0.705478996912042	1	FALSE
+scE2G (scATAC) (BMMC22_Lymph_prog)	In element (ABC) & distance to TSS (BMMC22_CD8_pos_T)	0.57842551788843	1	FALSE
+scE2G (scATAC) (BMMC22_Lymph_prog)	In element (ABC) & distance to TSS (BMMC22_CD8_pos_T_naive)	0.381088264558923	1	FALSE
+scE2G (scATAC) (BMMC22_Lymph_prog)	In element (ABC) & distance to TSS (BMMC22_Lymph_prog)	0.77047775350076	1	FALSE
+scE2G (scATAC) (BMMC22_Lymph_prog)	In element (ABC) & distance to TSS (PBMC_20_CD4.N1)	0.58984302944358	1	FALSE
+scE2G (scATAC) (BMMC22_Lymph_prog)	In element (ABC) & distance to TSS (PBMC_22_CD4.M)	0.564929100168077	1	FALSE
+scE2G (scATAC) (BMMC22_Lymph_prog)	In element (ABC) & distance to TSS (PBMC_24_CD8.CM)	0.331189731943418	1	FALSE
+scE2G (scATAC) (BMMC22_Lymph_prog)	STARE (gABC, power law) (PBMC_20_CD4.N1)	0.987340504842839	1	FALSE
+scE2G (scATAC) (BMMC22_Lymph_prog)	STARE (gABC, power law) (PBMC_22_CD4.M)	0.954342084862717	1	FALSE
+scE2G (scATAC) (BMMC22_Lymph_prog)	STARE (gABC, power law) (PBMC_24_CD8.CM)	0.674612963554465	1	FALSE
+scE2G (scATAC) (PBMC_20_CD4.N1)	scE2G (scATAC) (PBMC_22_CD4.M)	0.705807542238372	1	FALSE
+scE2G (scATAC) (PBMC_20_CD4.N1)	scE2G (scATAC) (PBMC_24_CD8.CM)	0.40710523427105	1	FALSE
+scE2G (scATAC) (PBMC_20_CD4.N1)	ABC (A=scATAC, C=power law) (BMMC22_CD4_pos_T_activated)	0.755585413475721	1	FALSE
+scE2G (scATAC) (PBMC_20_CD4.N1)	ABC (A=scATAC, C=power law) (BMMC22_CD4_pos_T_naive)	0.734683263498047	1	FALSE
+scE2G (scATAC) (PBMC_20_CD4.N1)	ABC (A=scATAC, C=power law) (BMMC22_CD8_pos_T)	0.61358774388097	1	FALSE
+scE2G (scATAC) (PBMC_20_CD4.N1)	ABC (A=scATAC, C=power law) (BMMC22_Lymph_prog)	0.996530926919479	1	FALSE
+scE2G (scATAC) (PBMC_20_CD4.N1)	ABC (A=scATAC, C=power law) (PBMC_20_CD4.N1)	0.736956760859121	1	FALSE
+scE2G (scATAC) (PBMC_20_CD4.N1)	ABC (A=scATAC, C=power law) (PBMC_22_CD4.M)	0.592827209640139	1	FALSE
+scE2G (scATAC) (PBMC_20_CD4.N1)	ABC (A=scATAC, C=power law) (PBMC_24_CD8.CM)	0.331940918041755	1	FALSE
+scE2G (scATAC) (PBMC_20_CD4.N1)	In element (ABC) & distance to TSS (BMMC22_CD4_pos_T_activated)	0.757773101951273	1	FALSE
+scE2G (scATAC) (PBMC_20_CD4.N1)	In element (ABC) & distance to TSS (BMMC22_CD4_pos_T_naive)	0.643932612696932	1	FALSE
+scE2G (scATAC) (PBMC_20_CD4.N1)	In element (ABC) & distance to TSS (BMMC22_CD8_pos_T)	0.522199545796319	1	FALSE
+scE2G (scATAC) (PBMC_20_CD4.N1)	In element (ABC) & distance to TSS (BMMC22_CD8_pos_T_naive)	0.336427797190968	1	FALSE
+scE2G (scATAC) (PBMC_20_CD4.N1)	In element (ABC) & distance to TSS (BMMC22_Lymph_prog)	0.707759101286473	1	FALSE
+scE2G (scATAC) (PBMC_20_CD4.N1)	In element (ABC) & distance to TSS (PBMC_20_CD4.N1)	0.534636305962159	1	FALSE
+scE2G (scATAC) (PBMC_20_CD4.N1)	In element (ABC) & distance to TSS (PBMC_22_CD4.M)	0.509376942097767	1	FALSE
+scE2G (scATAC) (PBMC_20_CD4.N1)	In element (ABC) & distance to TSS (PBMC_24_CD8.CM)	0.292065765177695	1	FALSE
+scE2G (scATAC) (PBMC_20_CD4.N1)	STARE (gABC, power law) (PBMC_20_CD4.N1)	0.945462877187288	1	FALSE
+scE2G (scATAC) (PBMC_20_CD4.N1)	STARE (gABC, power law) (PBMC_22_CD4.M)	0.886598744503672	1	FALSE
+scE2G (scATAC) (PBMC_20_CD4.N1)	STARE (gABC, power law) (PBMC_24_CD8.CM)	0.614192513914402	1	FALSE
+scE2G (scATAC) (PBMC_22_CD4.M)	scE2G (scATAC) (PBMC_24_CD8.CM)	0.638038154284039	1	FALSE
+scE2G (scATAC) (PBMC_22_CD4.M)	ABC (A=scATAC, C=power law) (BMMC22_CD4_pos_T_activated)	0.945576013293814	1	FALSE
+scE2G (scATAC) (PBMC_22_CD4.M)	ABC (A=scATAC, C=power law) (BMMC22_CD4_pos_T_naive)	0.968262703595973	1	FALSE
+scE2G (scATAC) (PBMC_22_CD4.M)	ABC (A=scATAC, C=power law) (BMMC22_CD8_pos_T)	0.895442920899411	1	FALSE
+scE2G (scATAC) (PBMC_22_CD4.M)	ABC (A=scATAC, C=power law) (BMMC22_Lymph_prog)	0.700445140910516	1	FALSE
+scE2G (scATAC) (PBMC_22_CD4.M)	ABC (A=scATAC, C=power law) (PBMC_20_CD4.N1)	0.970062378068913	1	FALSE
+scE2G (scATAC) (PBMC_22_CD4.M)	ABC (A=scATAC, C=power law) (PBMC_22_CD4.M)	0.871204429265427	1	FALSE
+scE2G (scATAC) (PBMC_22_CD4.M)	ABC (A=scATAC, C=power law) (PBMC_24_CD8.CM)	0.54112995897156	1	FALSE
+scE2G (scATAC) (PBMC_22_CD4.M)	In element (ABC) & distance to TSS (BMMC22_CD4_pos_T_activated)	0.939190076059707	1	FALSE
+scE2G (scATAC) (PBMC_22_CD4.M)	In element (ABC) & distance to TSS (BMMC22_CD4_pos_T_naive)	0.930399207684491	1	FALSE
+scE2G (scATAC) (PBMC_22_CD4.M)	In element (ABC) & distance to TSS (BMMC22_CD8_pos_T)	0.786692887267031	1	FALSE
+scE2G (scATAC) (PBMC_22_CD4.M)	In element (ABC) & distance to TSS (BMMC22_CD8_pos_T_naive)	0.550272351337601	1	FALSE
+scE2G (scATAC) (PBMC_22_CD4.M)	In element (ABC) & distance to TSS (BMMC22_Lymph_prog)	0.997904737290973	1	FALSE
+scE2G (scATAC) (PBMC_22_CD4.M)	In element (ABC) & distance to TSS (PBMC_20_CD4.N1)	0.793638464690752	1	FALSE
+scE2G (scATAC) (PBMC_22_CD4.M)	In element (ABC) & distance to TSS (PBMC_22_CD4.M)	0.770995569754182	1	FALSE
+scE2G (scATAC) (PBMC_22_CD4.M)	In element (ABC) & distance to TSS (PBMC_24_CD8.CM)	0.479639336390274	1	FALSE
+scE2G (scATAC) (PBMC_22_CD4.M)	STARE (gABC, power law) (PBMC_20_CD4.N1)	0.749972986315675	1	FALSE
+scE2G (scATAC) (PBMC_22_CD4.M)	STARE (gABC, power law) (PBMC_22_CD4.M)	0.804624096874987	1	FALSE
+scE2G (scATAC) (PBMC_22_CD4.M)	STARE (gABC, power law) (PBMC_24_CD8.CM)	0.896145033421928	1	FALSE
+scE2G (scATAC) (PBMC_24_CD8.CM)	ABC (A=scATAC, C=power law) (BMMC22_CD4_pos_T_activated)	0.590774953585123	1	FALSE
+scE2G (scATAC) (PBMC_24_CD8.CM)	ABC (A=scATAC, C=power law) (BMMC22_CD4_pos_T_naive)	0.61029544236757	1	FALSE
+scE2G (scATAC) (PBMC_24_CD8.CM)	ABC (A=scATAC, C=power law) (BMMC22_CD8_pos_T)	0.733151748038975	1	FALSE
+scE2G (scATAC) (PBMC_24_CD8.CM)	ABC (A=scATAC, C=power law) (BMMC22_Lymph_prog)	0.395567772998515	1	FALSE
+scE2G (scATAC) (PBMC_24_CD8.CM)	ABC (A=scATAC, C=power law) (PBMC_20_CD4.N1)	0.616518358446455	1	FALSE
+scE2G (scATAC) (PBMC_24_CD8.CM)	ABC (A=scATAC, C=power law) (PBMC_22_CD4.M)	0.756048222289176	1	FALSE
+scE2G (scATAC) (PBMC_24_CD8.CM)	ABC (A=scATAC, C=power law) (PBMC_24_CD8.CM)	0.895167303214681	1	FALSE
+scE2G (scATAC) (PBMC_24_CD8.CM)	In element (ABC) & distance to TSS (BMMC22_CD4_pos_T_activated)	0.581065319925347	1	FALSE
+scE2G (scATAC) (PBMC_24_CD8.CM)	In element (ABC) & distance to TSS (BMMC22_CD4_pos_T_naive)	0.700702645987578	1	FALSE
+scE2G (scATAC) (PBMC_24_CD8.CM)	In element (ABC) & distance to TSS (BMMC22_CD8_pos_T)	0.838529922569339	1	FALSE
+scE2G (scATAC) (PBMC_24_CD8.CM)	In element (ABC) & distance to TSS (BMMC22_CD8_pos_T_naive)	0.911027163775983	1	FALSE
+scE2G (scATAC) (PBMC_24_CD8.CM)	In element (ABC) & distance to TSS (BMMC22_Lymph_prog)	0.644653261230415	1	FALSE
+scE2G (scATAC) (PBMC_24_CD8.CM)	In element (ABC) & distance to TSS (PBMC_20_CD4.N1)	0.842515296025053	1	FALSE
+scE2G (scATAC) (PBMC_24_CD8.CM)	In element (ABC) & distance to TSS (PBMC_22_CD4.M)	0.854321990786918	1	FALSE
+scE2G (scATAC) (PBMC_24_CD8.CM)	In element (ABC) & distance to TSS (PBMC_24_CD8.CM)	0.809931330748281	1	FALSE
+scE2G (scATAC) (PBMC_24_CD8.CM)	STARE (gABC, power law) (PBMC_20_CD4.N1)	0.432758366536789	1	FALSE
+scE2G (scATAC) (PBMC_24_CD8.CM)	STARE (gABC, power law) (PBMC_22_CD4.M)	0.47130867442995	1	FALSE
+scE2G (scATAC) (PBMC_24_CD8.CM)	STARE (gABC, power law) (PBMC_24_CD8.CM)	0.732493393948334	1	FALSE
+ABC (A=scATAC, C=power law) (BMMC22_CD4_pos_T_activated)	ABC (A=scATAC, C=power law) (BMMC22_CD4_pos_T_naive)	0.97728248191762	1	FALSE
+ABC (A=scATAC, C=power law) (BMMC22_CD4_pos_T_activated)	ABC (A=scATAC, C=power law) (BMMC22_CD8_pos_T)	0.841728111185763	1	FALSE
+ABC (A=scATAC, C=power law) (BMMC22_CD4_pos_T_activated)	ABC (A=scATAC, C=power law) (BMMC22_Lymph_prog)	0.751656155979581	1	FALSE
+ABC (A=scATAC, C=power law) (BMMC22_CD4_pos_T_activated)	ABC (A=scATAC, C=power law) (PBMC_20_CD4.N1)	0.97627447816227	1	FALSE
+ABC (A=scATAC, C=power law) (BMMC22_CD4_pos_T_activated)	ABC (A=scATAC, C=power law) (PBMC_22_CD4.M)	0.817787085529082	1	FALSE
+ABC (A=scATAC, C=power law) (BMMC22_CD4_pos_T_activated)	ABC (A=scATAC, C=power law) (PBMC_24_CD8.CM)	0.496904484724306	1	FALSE
+ABC (A=scATAC, C=power law) (BMMC22_CD4_pos_T_activated)	In element (ABC) & distance to TSS (BMMC22_CD4_pos_T_activated)	0.994341565004559	1	FALSE
+ABC (A=scATAC, C=power law) (BMMC22_CD4_pos_T_activated)	In element (ABC) & distance to TSS (BMMC22_CD4_pos_T_naive)	0.876343666485354	1	FALSE
+ABC (A=scATAC, C=power law) (BMMC22_CD4_pos_T_activated)	In element (ABC) & distance to TSS (BMMC22_CD8_pos_T)	0.734707020505228	1	FALSE
+ABC (A=scATAC, C=power law) (BMMC22_CD4_pos_T_activated)	In element (ABC) & distance to TSS (BMMC22_CD8_pos_T_naive)	0.505060855990638	1	FALSE
+ABC (A=scATAC, C=power law) (BMMC22_CD4_pos_T_activated)	In element (ABC) & distance to TSS (BMMC22_Lymph_prog)	0.944276446969006	1	FALSE
+ABC (A=scATAC, C=power law) (BMMC22_CD4_pos_T_activated)	In element (ABC) & distance to TSS (PBMC_20_CD4.N1)	0.743064285455182	1	FALSE
+ABC (A=scATAC, C=power law) (BMMC22_CD4_pos_T_activated)	In element (ABC) & distance to TSS (PBMC_22_CD4.M)	0.719343600191557	1	FALSE
+ABC (A=scATAC, C=power law) (BMMC22_CD4_pos_T_activated)	In element (ABC) & distance to TSS (PBMC_24_CD8.CM)	0.439468061360931	1	FALSE
+ABC (A=scATAC, C=power law) (BMMC22_CD4_pos_T_activated)	STARE (gABC, power law) (PBMC_20_CD4.N1)	0.802269002108408	1	FALSE
+ABC (A=scATAC, C=power law) (BMMC22_CD4_pos_T_activated)	STARE (gABC, power law) (PBMC_22_CD4.M)	0.858588551195423	1	FALSE
+ABC (A=scATAC, C=power law) (BMMC22_CD4_pos_T_activated)	STARE (gABC, power law) (PBMC_24_CD8.CM)	0.842422354681675	1	FALSE
+ABC (A=scATAC, C=power law) (BMMC22_CD4_pos_T_naive)	ABC (A=scATAC, C=power law) (BMMC22_CD8_pos_T)	0.86406062652301	1	FALSE
+ABC (A=scATAC, C=power law) (BMMC22_CD4_pos_T_naive)	ABC (A=scATAC, C=power law) (BMMC22_Lymph_prog)	0.73014521733638	1	FALSE
+ABC (A=scATAC, C=power law) (BMMC22_CD4_pos_T_naive)	ABC (A=scATAC, C=power law) (PBMC_20_CD4.N1)	0.998660940568349	1	FALSE
+ABC (A=scATAC, C=power law) (BMMC22_CD4_pos_T_naive)	ABC (A=scATAC, C=power law) (PBMC_22_CD4.M)	0.83998232404551	1	FALSE
+ABC (A=scATAC, C=power law) (BMMC22_CD4_pos_T_naive)	ABC (A=scATAC, C=power law) (PBMC_24_CD8.CM)	0.515115951914626	1	FALSE
+ABC (A=scATAC, C=power law) (BMMC22_CD4_pos_T_naive)	In element (ABC) & distance to TSS (BMMC22_CD4_pos_T_activated)	0.97131667784108	1	FALSE
+ABC (A=scATAC, C=power law) (BMMC22_CD4_pos_T_naive)	In element (ABC) & distance to TSS (BMMC22_CD4_pos_T_naive)	0.898837604543632	1	FALSE
+ABC (A=scATAC, C=power law) (BMMC22_CD4_pos_T_naive)	In element (ABC) & distance to TSS (BMMC22_CD8_pos_T)	0.756260722065336	1	FALSE
+ABC (A=scATAC, C=power law) (BMMC22_CD4_pos_T_naive)	In element (ABC) & distance to TSS (BMMC22_CD8_pos_T_naive)	0.52368007599803	1	FALSE
+ABC (A=scATAC, C=power law) (BMMC22_CD4_pos_T_naive)	In element (ABC) & distance to TSS (BMMC22_Lymph_prog)	0.966630761342067	1	FALSE
+ABC (A=scATAC, C=power law) (BMMC22_CD4_pos_T_naive)	In element (ABC) & distance to TSS (PBMC_20_CD4.N1)	0.76404066419222	1	FALSE
+ABC (A=scATAC, C=power law) (BMMC22_CD4_pos_T_naive)	In element (ABC) & distance to TSS (PBMC_22_CD4.M)	0.740750104900019	1	FALSE
+ABC (A=scATAC, C=power law) (BMMC22_CD4_pos_T_naive)	In element (ABC) & distance to TSS (PBMC_24_CD8.CM)	0.455986001794233	1	FALSE
+ABC (A=scATAC, C=power law) (BMMC22_CD4_pos_T_naive)	STARE (gABC, power law) (PBMC_20_CD4.N1)	0.780331007279846	1	FALSE
+ABC (A=scATAC, C=power law) (BMMC22_CD4_pos_T_naive)	STARE (gABC, power law) (PBMC_22_CD4.M)	0.835981541509975	1	FALSE
+ABC (A=scATAC, C=power law) (BMMC22_CD4_pos_T_naive)	STARE (gABC, power law) (PBMC_24_CD8.CM)	0.864758537055126	1	FALSE
+ABC (A=scATAC, C=power law) (BMMC22_CD8_pos_T)	ABC (A=scATAC, C=power law) (BMMC22_Lymph_prog)	0.605756827516131	1	FALSE
+ABC (A=scATAC, C=power law) (BMMC22_CD8_pos_T)	ABC (A=scATAC, C=power law) (PBMC_20_CD4.N1)	0.867340276111885	1	FALSE
+ABC (A=scATAC, C=power law) (BMMC22_CD8_pos_T)	ABC (A=scATAC, C=power law) (PBMC_22_CD4.M)	0.975501921470882	1	FALSE
+ABC (A=scATAC, C=power law) (BMMC22_CD8_pos_T)	ABC (A=scATAC, C=power law) (PBMC_24_CD8.CM)	0.631451283241245	1	FALSE
+ABC (A=scATAC, C=power law) (BMMC22_CD8_pos_T)	In element (ABC) & distance to TSS (BMMC22_CD4_pos_T_activated)	0.834055107619269	1	FALSE
+ABC (A=scATAC, C=power law) (BMMC22_CD8_pos_T)	In element (ABC) & distance to TSS (BMMC22_CD4_pos_T_naive)	0.9648425430724	1	FALSE
+ABC (A=scATAC, C=power law) (BMMC22_CD8_pos_T)	In element (ABC) & distance to TSS (BMMC22_CD8_pos_T)	0.889302075109978	1	FALSE
+ABC (A=scATAC, C=power law) (BMMC22_CD8_pos_T)	In element (ABC) & distance to TSS (BMMC22_CD8_pos_T_naive)	0.642550118623685	1	FALSE
+ABC (A=scATAC, C=power law) (BMMC22_CD8_pos_T)	In element (ABC) & distance to TSS (BMMC22_Lymph_prog)	0.899033989694506	1	FALSE
+ABC (A=scATAC, C=power law) (BMMC22_CD8_pos_T)	In element (ABC) & distance to TSS (PBMC_20_CD4.N1)	0.893305380596606	1	FALSE
+ABC (A=scATAC, C=power law) (BMMC22_CD8_pos_T)	In element (ABC) & distance to TSS (PBMC_22_CD4.M)	0.873154634797987	1	FALSE
+ABC (A=scATAC, C=power law) (BMMC22_CD8_pos_T)	In element (ABC) & distance to TSS (PBMC_24_CD8.CM)	0.562307563888298	1	FALSE
+ABC (A=scATAC, C=power law) (BMMC22_CD8_pos_T)	STARE (gABC, power law) (PBMC_20_CD4.N1)	0.652641875710499	1	FALSE
+ABC (A=scATAC, C=power law) (BMMC22_CD8_pos_T)	STARE (gABC, power law) (PBMC_22_CD4.M)	0.703512837426375	1	FALSE
+ABC (A=scATAC, C=power law) (BMMC22_CD8_pos_T)	STARE (gABC, power law) (PBMC_24_CD8.CM)	0.999291839285695	1	FALSE
+ABC (A=scATAC, C=power law) (BMMC22_Lymph_prog)	ABC (A=scATAC, C=power law) (PBMC_20_CD4.N1)	0.732658629900325	1	FALSE
+ABC (A=scATAC, C=power law) (BMMC22_Lymph_prog)	ABC (A=scATAC, C=power law) (PBMC_22_CD4.M)	0.584482958150519	1	FALSE
+ABC (A=scATAC, C=power law) (BMMC22_Lymph_prog)	ABC (A=scATAC, C=power law) (PBMC_24_CD8.CM)	0.319335767656125	1	FALSE
+ABC (A=scATAC, C=power law) (BMMC22_Lymph_prog)	In element (ABC) & distance to TSS (BMMC22_CD4_pos_T_activated)	0.753757769435296	1	FALSE
+ABC (A=scATAC, C=power law) (BMMC22_Lymph_prog)	In element (ABC) & distance to TSS (BMMC22_CD4_pos_T_naive)	0.636882421396298	1	FALSE
+ABC (A=scATAC, C=power law) (BMMC22_Lymph_prog)	In element (ABC) & distance to TSS (BMMC22_CD8_pos_T)	0.512257299898334	1	FALSE
+ABC (A=scATAC, C=power law) (BMMC22_Lymph_prog)	In element (ABC) & distance to TSS (BMMC22_CD8_pos_T_naive)	0.323481959208956	1	FALSE
+ABC (A=scATAC, C=power law) (BMMC22_Lymph_prog)	In element (ABC) & distance to TSS (BMMC22_Lymph_prog)	0.702648937716055	1	FALSE
+ABC (A=scATAC, C=power law) (BMMC22_Lymph_prog)	In element (ABC) & distance to TSS (PBMC_20_CD4.N1)	0.525603091057855	1	FALSE
+ABC (A=scATAC, C=power law) (BMMC22_Lymph_prog)	In element (ABC) & distance to TSS (PBMC_22_CD4.M)	0.499172575365934	1	FALSE
+ABC (A=scATAC, C=power law) (BMMC22_Lymph_prog)	In element (ABC) & distance to TSS (PBMC_24_CD8.CM)	0.280131403816083	1	FALSE
+ABC (A=scATAC, C=power law) (BMMC22_Lymph_prog)	STARE (gABC, power law) (PBMC_20_CD4.N1)	0.947342245561715	1	FALSE
+ABC (A=scATAC, C=power law) (BMMC22_Lymph_prog)	STARE (gABC, power law) (PBMC_22_CD4.M)	0.886599042724032	1	FALSE
+ABC (A=scATAC, C=power law) (BMMC22_Lymph_prog)	STARE (gABC, power law) (PBMC_24_CD8.CM)	0.606376814761442	1	FALSE
+ABC (A=scATAC, C=power law) (PBMC_20_CD4.N1)	ABC (A=scATAC, C=power law) (PBMC_22_CD4.M)	0.843593102162906	1	FALSE
+ABC (A=scATAC, C=power law) (PBMC_20_CD4.N1)	ABC (A=scATAC, C=power law) (PBMC_24_CD8.CM)	0.522339861818442	1	FALSE
+ABC (A=scATAC, C=power law) (PBMC_20_CD4.N1)	In element (ABC) & distance to TSS (BMMC22_CD4_pos_T_activated)	0.970389199477299	1	FALSE
+ABC (A=scATAC, C=power law) (PBMC_20_CD4.N1)	In element (ABC) & distance to TSS (BMMC22_CD4_pos_T_naive)	0.901630693230074	1	FALSE
+ABC (A=scATAC, C=power law) (PBMC_20_CD4.N1)	In element (ABC) & distance to TSS (BMMC22_CD8_pos_T)	0.760975675812558	1	FALSE
+ABC (A=scATAC, C=power law) (PBMC_20_CD4.N1)	In element (ABC) & distance to TSS (BMMC22_CD8_pos_T_naive)	0.531017434822871	1	FALSE
+ABC (A=scATAC, C=power law) (PBMC_20_CD4.N1)	In element (ABC) & distance to TSS (BMMC22_Lymph_prog)	0.968421391749046	1	FALSE
+ABC (A=scATAC, C=power law) (PBMC_20_CD4.N1)	In element (ABC) & distance to TSS (PBMC_20_CD4.N1)	0.768425311285678	1	FALSE
+ABC (A=scATAC, C=power law) (PBMC_20_CD4.N1)	In element (ABC) & distance to TSS (PBMC_22_CD4.M)	0.745659940553959	1	FALSE
+ABC (A=scATAC, C=power law) (PBMC_20_CD4.N1)	In element (ABC) & distance to TSS (PBMC_24_CD8.CM)	0.463176827310726	1	FALSE
+ABC (A=scATAC, C=power law) (PBMC_20_CD4.N1)	STARE (gABC, power law) (PBMC_20_CD4.N1)	0.782158261478546	1	FALSE
+ABC (A=scATAC, C=power law) (PBMC_20_CD4.N1)	STARE (gABC, power law) (PBMC_22_CD4.M)	0.837069845153847	1	FALSE
+ABC (A=scATAC, C=power law) (PBMC_20_CD4.N1)	STARE (gABC, power law) (PBMC_24_CD8.CM)	0.868028514031253	1	FALSE
+ABC (A=scATAC, C=power law) (PBMC_22_CD4.M)	ABC (A=scATAC, C=power law) (PBMC_24_CD8.CM)	0.65344855527794	1	FALSE
+ABC (A=scATAC, C=power law) (PBMC_22_CD4.M)	In element (ABC) & distance to TSS (BMMC22_CD4_pos_T_activated)	0.809840506442341	1	FALSE
+ABC (A=scATAC, C=power law) (PBMC_22_CD4.M)	In element (ABC) & distance to TSS (BMMC22_CD4_pos_T_naive)	0.940384806176499	1	FALSE
+ABC (A=scATAC, C=power law) (PBMC_22_CD4.M)	In element (ABC) & distance to TSS (BMMC22_CD8_pos_T)	0.913615916043443	1	FALSE
+ABC (A=scATAC, C=power law) (PBMC_22_CD4.M)	In element (ABC) & distance to TSS (BMMC22_CD8_pos_T_naive)	0.665008905292054	1	FALSE
+ABC (A=scATAC, C=power law) (PBMC_22_CD4.M)	In element (ABC) & distance to TSS (BMMC22_Lymph_prog)	0.875131755714879	1	FALSE
+ABC (A=scATAC, C=power law) (PBMC_22_CD4.M)	In element (ABC) & distance to TSS (PBMC_20_CD4.N1)	0.916900903892787	1	FALSE
+ABC (A=scATAC, C=power law) (PBMC_22_CD4.M)	In element (ABC) & distance to TSS (PBMC_22_CD4.M)	0.897401861844743	1	FALSE
+ABC (A=scATAC, C=power law) (PBMC_22_CD4.M)	In element (ABC) & distance to TSS (PBMC_24_CD8.CM)	0.582571199499403	1	FALSE
+ABC (A=scATAC, C=power law) (PBMC_22_CD4.M)	STARE (gABC, power law) (PBMC_20_CD4.N1)	0.630656036178557	1	FALSE
+ABC (A=scATAC, C=power law) (PBMC_22_CD4.M)	STARE (gABC, power law) (PBMC_22_CD4.M)	0.680551292203787	1	FALSE
+ABC (A=scATAC, C=power law) (PBMC_22_CD4.M)	STARE (gABC, power law) (PBMC_24_CD8.CM)	0.974794104231355	1	FALSE
+ABC (A=scATAC, C=power law) (PBMC_24_CD8.CM)	In element (ABC) & distance to TSS (BMMC22_CD4_pos_T_activated)	0.486590363539648	1	FALSE
+ABC (A=scATAC, C=power law) (PBMC_24_CD8.CM)	In element (ABC) & distance to TSS (BMMC22_CD4_pos_T_naive)	0.600443590738986	1	FALSE
+ABC (A=scATAC, C=power law) (PBMC_24_CD8.CM)	In element (ABC) & distance to TSS (BMMC22_CD8_pos_T)	0.733481620764799	1	FALSE
+ABC (A=scATAC, C=power law) (PBMC_24_CD8.CM)	In element (ABC) & distance to TSS (BMMC22_CD8_pos_T_naive)	0.982365570700969	1	FALSE
+ABC (A=scATAC, C=power law) (PBMC_24_CD8.CM)	In element (ABC) & distance to TSS (BMMC22_Lymph_prog)	0.548781727026847	1	FALSE
+ABC (A=scATAC, C=power law) (PBMC_24_CD8.CM)	In element (ABC) & distance to TSS (PBMC_20_CD4.N1)	0.740546484227217	1	FALSE
+ABC (A=scATAC, C=power law) (PBMC_24_CD8.CM)	In element (ABC) & distance to TSS (PBMC_22_CD4.M)	0.74894366496552	1	FALSE
+ABC (A=scATAC, C=power law) (PBMC_24_CD8.CM)	In element (ABC) & distance to TSS (PBMC_24_CD8.CM)	0.909106066074262	1	FALSE
+ABC (A=scATAC, C=power law) (PBMC_24_CD8.CM)	STARE (gABC, power law) (PBMC_20_CD4.N1)	0.352485335065593	1	FALSE
+ABC (A=scATAC, C=power law) (PBMC_24_CD8.CM)	STARE (gABC, power law) (PBMC_22_CD4.M)	0.386040248993292	1	FALSE
+ABC (A=scATAC, C=power law) (PBMC_24_CD8.CM)	STARE (gABC, power law) (PBMC_24_CD8.CM)	0.630820218658824	1	FALSE
+In element (ABC) & distance to TSS (BMMC22_CD4_pos_T_activated)	In element (ABC) & distance to TSS (BMMC22_CD4_pos_T_naive)	0.869082670643746	1	FALSE
+In element (ABC) & distance to TSS (BMMC22_CD4_pos_T_activated)	In element (ABC) & distance to TSS (BMMC22_CD8_pos_T)	0.725893984437731	1	FALSE
+In element (ABC) & distance to TSS (BMMC22_CD4_pos_T_activated)	In element (ABC) & distance to TSS (BMMC22_CD8_pos_T_naive)	0.494542307253397	1	FALSE
+In element (ABC) & distance to TSS (BMMC22_CD4_pos_T_activated)	In element (ABC) & distance to TSS (BMMC22_Lymph_prog)	0.937980215985459	1	FALSE
+In element (ABC) & distance to TSS (BMMC22_CD4_pos_T_activated)	In element (ABC) & distance to TSS (PBMC_20_CD4.N1)	0.734700837089752	1	FALSE
+In element (ABC) & distance to TSS (BMMC22_CD4_pos_T_activated)	In element (ABC) & distance to TSS (PBMC_22_CD4.M)	0.710386111410171	1	FALSE
+In element (ABC) & distance to TSS (BMMC22_CD4_pos_T_activated)	In element (ABC) & distance to TSS (PBMC_24_CD8.CM)	0.429592762614449	1	FALSE
+In element (ABC) & distance to TSS (BMMC22_CD4_pos_T_activated)	STARE (gABC, power law) (PBMC_20_CD4.N1)	0.805108476398027	1	FALSE
+In element (ABC) & distance to TSS (BMMC22_CD4_pos_T_activated)	STARE (gABC, power law) (PBMC_22_CD4.M)	0.862272200096653	1	FALSE
+In element (ABC) & distance to TSS (BMMC22_CD4_pos_T_activated)	STARE (gABC, power law) (PBMC_24_CD8.CM)	0.834757427871057	1	FALSE
+In element (ABC) & distance to TSS (BMMC22_CD4_pos_T_naive)	In element (ABC) & distance to TSS (BMMC22_CD8_pos_T)	0.854590104374751	1	FALSE
+In element (ABC) & distance to TSS (BMMC22_CD4_pos_T_naive)	In element (ABC) & distance to TSS (BMMC22_CD8_pos_T_naive)	0.610881121381986	1	FALSE
+In element (ABC) & distance to TSS (BMMC22_CD4_pos_T_naive)	In element (ABC) & distance to TSS (BMMC22_Lymph_prog)	0.933497266194103	1	FALSE
+In element (ABC) & distance to TSS (BMMC22_CD4_pos_T_naive)	In element (ABC) & distance to TSS (PBMC_20_CD4.N1)	0.859607138169028	1	FALSE
+In element (ABC) & distance to TSS (BMMC22_CD4_pos_T_naive)	In element (ABC) & distance to TSS (PBMC_22_CD4.M)	0.838564235151285	1	FALSE
+In element (ABC) & distance to TSS (BMMC22_CD4_pos_T_naive)	In element (ABC) & distance to TSS (PBMC_24_CD8.CM)	0.533831012162809	1	FALSE
+In element (ABC) & distance to TSS (BMMC22_CD4_pos_T_naive)	STARE (gABC, power law) (PBMC_20_CD4.N1)	0.684729727917351	1	FALSE
+In element (ABC) & distance to TSS (BMMC22_CD4_pos_T_naive)	STARE (gABC, power law) (PBMC_22_CD4.M)	0.736943998533295	1	FALSE
+In element (ABC) & distance to TSS (BMMC22_CD4_pos_T_naive)	STARE (gABC, power law) (PBMC_24_CD8.CM)	0.965550030033675	1	FALSE
+In element (ABC) & distance to TSS (BMMC22_CD8_pos_T)	In element (ABC) & distance to TSS (BMMC22_CD8_pos_T_naive)	0.746659573358252	1	FALSE
+In element (ABC) & distance to TSS (BMMC22_CD8_pos_T)	In element (ABC) & distance to TSS (BMMC22_Lymph_prog)	0.791746235670375	1	FALSE
+In element (ABC) & distance to TSS (BMMC22_CD8_pos_T)	In element (ABC) & distance to TSS (PBMC_20_CD4.N1)	0.99930059972336	1	FALSE
+In element (ABC) & distance to TSS (BMMC22_CD8_pos_T)	In element (ABC) & distance to TSS (PBMC_22_CD4.M)	0.983672152603073	1	FALSE
+In element (ABC) & distance to TSS (BMMC22_CD8_pos_T)	In element (ABC) & distance to TSS (PBMC_24_CD8.CM)	0.656740091590645	1	FALSE
+In element (ABC) & distance to TSS (BMMC22_CD8_pos_T)	STARE (gABC, power law) (PBMC_20_CD4.N1)	0.5556719021586	1	FALSE
+In element (ABC) & distance to TSS (BMMC22_CD8_pos_T)	STARE (gABC, power law) (PBMC_22_CD4.M)	0.601898932852506	1	FALSE
+In element (ABC) & distance to TSS (BMMC22_CD8_pos_T)	STARE (gABC, power law) (PBMC_24_CD8.CM)	0.888600784303057	1	FALSE
+In element (ABC) & distance to TSS (BMMC22_CD8_pos_T_naive)	In element (ABC) & distance to TSS (BMMC22_Lymph_prog)	0.558033425981047	1	FALSE
+In element (ABC) & distance to TSS (BMMC22_CD8_pos_T_naive)	In element (ABC) & distance to TSS (PBMC_20_CD4.N1)	0.753551353626274	1	FALSE
+In element (ABC) & distance to TSS (BMMC22_CD8_pos_T_naive)	In element (ABC) & distance to TSS (PBMC_22_CD4.M)	0.762421764040385	1	FALSE
+In element (ABC) & distance to TSS (BMMC22_CD8_pos_T_naive)	In element (ABC) & distance to TSS (PBMC_24_CD8.CM)	0.890989244848888	1	FALSE
+In element (ABC) & distance to TSS (BMMC22_CD8_pos_T_naive)	STARE (gABC, power law) (PBMC_20_CD4.N1)	0.357373757125101	1	FALSE
+In element (ABC) & distance to TSS (BMMC22_CD8_pos_T_naive)	STARE (gABC, power law) (PBMC_22_CD4.M)	0.391674719683605	1	FALSE
+In element (ABC) & distance to TSS (BMMC22_CD8_pos_T_naive)	STARE (gABC, power law) (PBMC_24_CD8.CM)	0.641905717220601	1	FALSE
+In element (ABC) & distance to TSS (BMMC22_Lymph_prog)	In element (ABC) & distance to TSS (PBMC_20_CD4.N1)	0.798372425941839	1	FALSE
+In element (ABC) & distance to TSS (BMMC22_Lymph_prog)	In element (ABC) & distance to TSS (PBMC_22_CD4.M)	0.776248491072901	1	FALSE
+In element (ABC) & distance to TSS (BMMC22_Lymph_prog)	In element (ABC) & distance to TSS (PBMC_24_CD8.CM)	0.487277980563603	1	FALSE
+In element (ABC) & distance to TSS (BMMC22_Lymph_prog)	STARE (gABC, power law) (PBMC_20_CD4.N1)	0.751498882429116	1	FALSE
+In element (ABC) & distance to TSS (BMMC22_Lymph_prog)	STARE (gABC, power law) (PBMC_22_CD4.M)	0.805425672580189	1	FALSE
+In element (ABC) & distance to TSS (BMMC22_Lymph_prog)	STARE (gABC, power law) (PBMC_24_CD8.CM)	0.899726288954684	1	FALSE
+In element (ABC) & distance to TSS (PBMC_20_CD4.N1)	In element (ABC) & distance to TSS (PBMC_22_CD4.M)	0.983464102687208	1	FALSE
+In element (ABC) & distance to TSS (PBMC_20_CD4.N1)	In element (ABC) & distance to TSS (PBMC_24_CD8.CM)	0.665263263161855	1	FALSE
+In element (ABC) & distance to TSS (PBMC_20_CD4.N1)	STARE (gABC, power law) (PBMC_20_CD4.N1)	0.568220049210807	1	FALSE
+In element (ABC) & distance to TSS (PBMC_20_CD4.N1)	STARE (gABC, power law) (PBMC_22_CD4.M)	0.613786875758807	1	FALSE
+In element (ABC) & distance to TSS (PBMC_20_CD4.N1)	STARE (gABC, power law) (PBMC_24_CD8.CM)	0.892624716893287	1	FALSE
+In element (ABC) & distance to TSS (PBMC_22_CD4.M)	In element (ABC) & distance to TSS (PBMC_24_CD8.CM)	0.671150962151714	1	FALSE
+In element (ABC) & distance to TSS (PBMC_22_CD4.M)	STARE (gABC, power law) (PBMC_20_CD4.N1)	0.542028991291849	1	FALSE
+In element (ABC) & distance to TSS (PBMC_22_CD4.M)	STARE (gABC, power law) (PBMC_22_CD4.M)	0.587531529506477	1	FALSE
+In element (ABC) & distance to TSS (PBMC_22_CD4.M)	STARE (gABC, power law) (PBMC_24_CD8.CM)	0.872455491585128	1	FALSE
+In element (ABC) & distance to TSS (PBMC_24_CD8.CM)	STARE (gABC, power law) (PBMC_20_CD4.N1)	0.309644981455802	1	FALSE
+In element (ABC) & distance to TSS (PBMC_24_CD8.CM)	STARE (gABC, power law) (PBMC_22_CD4.M)	0.339231911469683	1	FALSE
+In element (ABC) & distance to TSS (PBMC_24_CD8.CM)	STARE (gABC, power law) (PBMC_24_CD8.CM)	0.561726997080335	1	FALSE
+STARE (gABC, power law) (PBMC_20_CD4.N1)	STARE (gABC, power law) (PBMC_22_CD4.M)	0.939688113642378	1	FALSE
+STARE (gABC, power law) (PBMC_20_CD4.N1)	STARE (gABC, power law) (PBMC_24_CD8.CM)	0.65328194546737	1	FALSE
+STARE (gABC, power law) (PBMC_22_CD4.M)	STARE (gABC, power law) (PBMC_24_CD8.CM)	0.704180638238863	1	FALSE

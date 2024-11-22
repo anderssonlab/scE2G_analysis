@@ -1,0 +1,28 @@
+column_name	description
+chr	chromosome for element-gene pair
+start	start coordinate for element (hg38)
+end	end coordinate for element (hg38)
+name	unique identified for element, in the form of "class|chrN:start-end"
+class	category describing element location, one of: "promoter," "intergenic," "genic"
+TargetGene	HGNC symbol for target gene of element-gene pair
+TargetGeneTSS	transcription start site of target gene
+TargetGeneIsExpressed	boolean indicating whether the target gene is expressed based on promoter accessibility, should be "True" for all predictions 
+TargetGeneEnsembl_ID	Ensembl ID corresponding to target gene
+isSelfPromoter	boolean indicating whether this element-gene pair is a promoter linked to it's own gene
+CellType	description of cell cluster for these predictions
+distance	distance between the midpoint of element and transcription start site of target gene
+normalizedATAC_prom	(model feature) normalized pseudobulk scATAC-seq signal at the promoter of the target gene
+ABC.Score	(model feature for scE2G_ATAC) Activity-by-Contact (ABC) score corresponding to this element-gene pair, calculated using pseudobulk scATAC-seq  for activity and a distance-based power law estimation for contact
+ABC.Score.1	accidental column identical to "ABC.Score"
+numCandidateEnhGene	(model feature) number of elements between this element and target gene transcription start site
+numTSSEnhGene	(model feature) number of other transcription start sites between this element and the target ene transcription start site
+numNearbyEnhancers	(model feature) number of elements within 5 kb of this element
+ubiqExpressed	(model feature) boolean indicating whether this gene is classified as ubiquitously expressed across cell types
+RNA_meanLogNorm	mean log-normalized read count for this gene in this cell cluster (scE2G_Multiome only)
+RNA_pseudobulkTPM	pseudobulk transcripts per million for this target gene for this cell cluster (scE2G_Multiome only)
+RNA_percentCellsDetected	percent of cells in this cell cluster in which this gene was detected (scE2G_Multiome only)
+Kendall	Kendall correlation between accessibility at this element and expression of this gene across cells in this cluster (scE2G_Multiome only)
+ARC.E2G.Score	(model feature for scE2G_Multiome) Activity, Responsiveness and Contact (ARC)-E2G score that integrates ABC score and Kendall correlation  (scE2G_Multiome only)
+E2G.Score	raw scE2G score directly output from logistic regression model
+E2G.Score.qnorm	final scE2G score after quantile normalization to full-depth reference scores and, for scE2G_Multiome, setting scores for genes below TPM threshold to 0; score column used for thresholding
+E2G.Score.qnorm.ignoreTPM	same as E2G.Score.qnorm, but without scores for genes with TPM below threshold set to 0 (scE2G_Multiome only)
