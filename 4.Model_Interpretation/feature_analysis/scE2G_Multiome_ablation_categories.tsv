@@ -1,0 +1,12 @@
+feature	contact_distance	enhancer_atac	abc	nearby_enhancers	promoter_class	promoter_atac	ep_atac	kendall	abc_kendall	not_abc
+numTSSEnhGene	0	1	1	1	1	1	1	1	1	0
+distanceToTSS	0	1	1	1	1	1	1	1	1	0
+normalizedATAC_enh	1	0	1	1	1	1	0	1	1	0
+normalizedATAC_prom	1	1	1	1	1	0	0	1	1	0
+numNearbyEnhancers	1	1	1	0	1	1	1	1	1	0
+sumNearbyEnhancers	1	1	1	0	1	1	1	1	1	0
+ubiqExpressed	1	1	1	1	0	1	1	1	1	0
+numCandidateEnhGene	0	1	1	1	1	1	1	1	1	0
+powerlawContact	0	1	1	1	1	1	1	1	1	0
+ABC.Score	0	0	0	1	1	1	0	1	0	1
+Kendall	1	1	1	1	1	1	1	0	0	0
