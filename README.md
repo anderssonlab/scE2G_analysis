@@ -1,6 +1,6 @@
 ## scE2G manuscript analyses
 
-Scripts and notebooks for data preprocessing and analyses performed in Sheth, Qiu, et al. 2024, [`preprint`](https://www.biorxiv.org/content/10.1101/2024.11.23.624931v1)
+Scripts, notebooks, and results for data preprocessing and analyses performed in Sheth, Qiu, et al. 2024, [`preprint`](https://www.biorxiv.org/content/10.1101/2024.11.23.624931v1)
 
 * For the scE2G tool, please see to the scE2G model and pipeline [`repo`](https://github.com/EngreitzLab/sc-E2G)
 * For the scE2G prediction results, please see https://data.broadinstitute.org/scE2Gpredictions/ 
@@ -25,14 +25,14 @@ Code and results for CRISPR, eQTL and GWAS benchmarking analyses
 	* `2024_1006_hd_clusters`: results for GWAS benchmarking of enhancer predictions in fine-grained cell types
 	* `2024_1005_supergroups`: results for GWAS benchmarking of enhancer predictions in cell type supergroups, K562, and GM12878
 
-### 4.Robustness_Evaluation
-Code for evaluation of model robustness basing on downsampling data
+### 4.Model_Interpretation
+Code and results from feature analysis of scE2G, and code for evaluation of model robustness basing on downsampling data
 
 ### 5. Predictions_Properties
 Code for evaluation of properties of scE2G predictions
 
 ### 6.Cell_Type_Specificity
-Code for evaluation of cell-type specific E2G predictions
+Code and results for evaluation of cell-type specific E2G predictions
 
 ### 7.GWAS_Variant_Interpretation
 Code for analyses related to gene prioritization and interpreation of GWAS loci 
