@@ -25,7 +25,7 @@ mkdir $scratch_dir/reformatted_thresholded_predictions
 # done
 
 # intersect all pairs and correlate
-for ((idxA=39; idxA<max; idxA++)); do  
+for ((idxA=0; idxA<max; idxA++)); do  
 	echo "idxA = " $idxA " out of " $max
 	temp_int_dir=$scratch_dir/temporary_intersections_idx_$idxA
 	mkdir $temp_int_dir
