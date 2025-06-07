@@ -1,0 +1,11 @@
+group1	group2	p	p_adjust	significant
+scE2G (Multiome) (all_matches)	scE2G (scATAC) (all_matches)	5.65078962772141e-07	5.65078962772141e-06	TRUE
+scE2G (Multiome) (all_matches)	Kendall correlation (access. at E x expr. at G) (all_matches)	0	0	TRUE
+scE2G (Multiome) (all_matches)	ABC (A=scATAC, C=power law) (all_matches)	5.96927726908885e-10	5.96927726908885e-09	TRUE
+scE2G (Multiome) (all_matches)	In element (ABC (A=scATAC)) & distance to TSS (all_matches)	2.35694662218456e-07	2.35694662218456e-06	TRUE
+scE2G (scATAC) (all_matches)	Kendall correlation (access. at E x expr. at G) (all_matches)	0	0	TRUE
+scE2G (scATAC) (all_matches)	ABC (A=scATAC, C=power law) (all_matches)	0.221847471625302	1	FALSE
+scE2G (scATAC) (all_matches)	In element (ABC (A=scATAC)) & distance to TSS (all_matches)	0.848740657525015	1	FALSE
+Kendall correlation (access. at E x expr. at G) (all_matches)	ABC (A=scATAC, C=power law) (all_matches)	0	0	TRUE
+Kendall correlation (access. at E x expr. at G) (all_matches)	In element (ABC (A=scATAC)) & distance to TSS (all_matches)	0	0	TRUE
+ABC (A=scATAC, C=power law) (all_matches)	In element (ABC (A=scATAC)) & distance to TSS (all_matches)	0.304771771119625	1	FALSE

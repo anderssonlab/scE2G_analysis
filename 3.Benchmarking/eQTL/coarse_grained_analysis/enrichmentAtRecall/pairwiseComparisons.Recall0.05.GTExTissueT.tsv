@@ -1,0 +1,79 @@
+group1	group2	p	p_adjust	significant
+scE2G (Multiome) (BMMC5_T)	scE2G (Multiome) (PBMC5_T)	0.150515897110696	1	FALSE
+scE2G (Multiome) (BMMC5_T)	scE2G (scATAC) (BMMC5_T)	0.06300072373286	1	FALSE
+scE2G (Multiome) (BMMC5_T)	scE2G (scATAC) (PBMC5_T)	0.0356824139739592	1	FALSE
+scE2G (Multiome) (BMMC5_T)	Kendall correlation (access. at E x expr. at G) (BMMC5_T)	2.83934121235223e-06	0.000221468614563474	TRUE
+scE2G (Multiome) (BMMC5_T)	Kendall correlation (access. at E x expr. at G) (PBMC5_T)	2.53972006823363e-10	1.98098165322224e-08	TRUE
+scE2G (Multiome) (BMMC5_T)	ABC (A=scATAC, C=power law) (BMMC5_T)	0.029309003348485	1	FALSE
+scE2G (Multiome) (BMMC5_T)	ABC (A=scATAC, C=power law) (PBMC5_T)	0.0528849679820214	1	FALSE
+scE2G (Multiome) (BMMC5_T)	In element (ABC (A=scATAC)) & distance to TSS (BMMC5_T)	0.0397550025939235	1	FALSE
+scE2G (Multiome) (BMMC5_T)	In element (ABC (A=scATAC)) & distance to TSS (PBMC5_T)	0.0665983952603136	1	FALSE
+scE2G (Multiome) (BMMC5_T)	STARE (gABC, power law) (BMMC5_T)	0.00706994875344896	0.551456002769019	FALSE
+scE2G (Multiome) (BMMC5_T)	STARE (gABC, power law) (PBMC5_T)	0.0349636885934543	1	FALSE
+scE2G (Multiome) (BMMC5_T)	SCENT (FDR) (PBMC5_T)	0.000450476674203437	0.0351371805878681	TRUE
+scE2G (Multiome) (PBMC5_T)	scE2G (scATAC) (BMMC5_T)	0.704319137745449	1	FALSE
+scE2G (Multiome) (PBMC5_T)	scE2G (scATAC) (PBMC5_T)	0.534700930254701	1	FALSE
+scE2G (Multiome) (PBMC5_T)	Kendall correlation (access. at E x expr. at G) (BMMC5_T)	0.00369449024250254	0.288170238915198	FALSE
+scE2G (Multiome) (PBMC5_T)	Kendall correlation (access. at E x expr. at G) (PBMC5_T)	7.33211522498821e-06	0.000571904987549081	TRUE
+scE2G (Multiome) (PBMC5_T)	ABC (A=scATAC, C=power law) (BMMC5_T)	0.4961029088599	1	FALSE
+scE2G (Multiome) (PBMC5_T)	ABC (A=scATAC, C=power law) (PBMC5_T)	0.648266571476946	1	FALSE
+scE2G (Multiome) (PBMC5_T)	In element (ABC (A=scATAC)) & distance to TSS (BMMC5_T)	0.550587315514967	1	FALSE
+scE2G (Multiome) (PBMC5_T)	In element (ABC (A=scATAC)) & distance to TSS (PBMC5_T)	0.722826242541569	1	FALSE
+scE2G (Multiome) (PBMC5_T)	STARE (gABC, power law) (BMMC5_T)	0.224796811486733	1	FALSE
+scE2G (Multiome) (PBMC5_T)	STARE (gABC, power law) (PBMC5_T)	0.487444267891282	1	FALSE
+scE2G (Multiome) (PBMC5_T)	SCENT (FDR) (PBMC5_T)	0.077808904110098	1	FALSE
+scE2G (scATAC) (BMMC5_T)	scE2G (scATAC) (PBMC5_T)	0.803486582106508	1	FALSE
+scE2G (scATAC) (BMMC5_T)	Kendall correlation (access. at E x expr. at G) (BMMC5_T)	0.0104986989463037	0.818898517811685	FALSE
+scE2G (scATAC) (BMMC5_T)	Kendall correlation (access. at E x expr. at G) (PBMC5_T)	2.55954308177418e-05	0.00199644360378386	TRUE
+scE2G (scATAC) (BMMC5_T)	ABC (A=scATAC, C=power law) (BMMC5_T)	0.759827775008722	1	FALSE
+scE2G (scATAC) (BMMC5_T)	ABC (A=scATAC, C=power law) (PBMC5_T)	0.936989791830014	1	FALSE
+scE2G (scATAC) (BMMC5_T)	In element (ABC (A=scATAC)) & distance to TSS (BMMC5_T)	0.81864012521975	1	FALSE
+scE2G (scATAC) (BMMC5_T)	In element (ABC (A=scATAC)) & distance to TSS (PBMC5_T)	0.979590545504746	1	FALSE
+scE2G (scATAC) (BMMC5_T)	STARE (gABC, power law) (BMMC5_T)	0.389644012579539	1	FALSE
+scE2G (scATAC) (BMMC5_T)	STARE (gABC, power law) (PBMC5_T)	0.733110152090055	1	FALSE
+scE2G (scATAC) (BMMC5_T)	SCENT (FDR) (PBMC5_T)	0.169497137836595	1	FALSE
+scE2G (scATAC) (PBMC5_T)	Kendall correlation (access. at E x expr. at G) (BMMC5_T)	0.0241043864704256	1	FALSE
+scE2G (scATAC) (PBMC5_T)	Kendall correlation (access. at E x expr. at G) (PBMC5_T)	9.84464826740031e-05	0.00767882564857224	TRUE
+scE2G (scATAC) (PBMC5_T)	ABC (A=scATAC, C=power law) (BMMC5_T)	0.957357607798693	1	FALSE
+scE2G (scATAC) (PBMC5_T)	ABC (A=scATAC, C=power law) (PBMC5_T)	0.865180374302426	1	FALSE
+scE2G (scATAC) (PBMC5_T)	In element (ABC (A=scATAC)) & distance to TSS (BMMC5_T)	0.987296649673076	1	FALSE
+scE2G (scATAC) (PBMC5_T)	In element (ABC (A=scATAC)) & distance to TSS (PBMC5_T)	0.783762173698013	1	FALSE
+scE2G (scATAC) (PBMC5_T)	STARE (gABC, power law) (BMMC5_T)	0.540917396097705	1	FALSE
+scE2G (scATAC) (PBMC5_T)	STARE (gABC, power law) (PBMC5_T)	0.917345144597695	1	FALSE
+scE2G (scATAC) (PBMC5_T)	SCENT (FDR) (PBMC5_T)	0.281635955876607	1	FALSE
+Kendall correlation (access. at E x expr. at G) (BMMC5_T)	Kendall correlation (access. at E x expr. at G) (PBMC5_T)	0.0241490262445948	1	FALSE
+Kendall correlation (access. at E x expr. at G) (BMMC5_T)	ABC (A=scATAC, C=power law) (BMMC5_T)	0.0253440036764761	1	FALSE
+Kendall correlation (access. at E x expr. at G) (BMMC5_T)	ABC (A=scATAC, C=power law) (PBMC5_T)	0.0137957374851871	1	FALSE
+Kendall correlation (access. at E x expr. at G) (BMMC5_T)	In element (ABC (A=scATAC)) & distance to TSS (BMMC5_T)	0.025985720024653	1	FALSE
+Kendall correlation (access. at E x expr. at G) (BMMC5_T)	In element (ABC (A=scATAC)) & distance to TSS (PBMC5_T)	0.00959320832435433	0.748270249299638	FALSE
+Kendall correlation (access. at E x expr. at G) (BMMC5_T)	STARE (gABC, power law) (BMMC5_T)	0.131115111309105	1	FALSE
+Kendall correlation (access. at E x expr. at G) (BMMC5_T)	STARE (gABC, power law) (PBMC5_T)	0.0477108740830557	1	FALSE
+Kendall correlation (access. at E x expr. at G) (BMMC5_T)	SCENT (FDR) (PBMC5_T)	0.120885829662957	1	FALSE
+Kendall correlation (access. at E x expr. at G) (PBMC5_T)	ABC (A=scATAC, C=power law) (BMMC5_T)	9.13340782098876e-05	0.00712405810037123	TRUE
+Kendall correlation (access. at E x expr. at G) (PBMC5_T)	ABC (A=scATAC, C=power law) (PBMC5_T)	3.96720246147706e-05	0.00309441791995211	TRUE
+Kendall correlation (access. at E x expr. at G) (PBMC5_T)	In element (ABC (A=scATAC)) & distance to TSS (BMMC5_T)	0.000130953999974624	0.0102144119980207	TRUE
+Kendall correlation (access. at E x expr. at G) (PBMC5_T)	In element (ABC (A=scATAC)) & distance to TSS (PBMC5_T)	2.21657311678874e-05	0.00172892703109522	TRUE
+Kendall correlation (access. at E x expr. at G) (PBMC5_T)	STARE (gABC, power law) (BMMC5_T)	0.00180768160587287	0.140999165258084	FALSE
+Kendall correlation (access. at E x expr. at G) (PBMC5_T)	STARE (gABC, power law) (PBMC5_T)	0.000489798551440145	0.0382042870123313	TRUE
+Kendall correlation (access. at E x expr. at G) (PBMC5_T)	SCENT (FDR) (PBMC5_T)	0.00013616990503241	0.010621252592528	TRUE
+ABC (A=scATAC, C=power law) (BMMC5_T)	ABC (A=scATAC, C=power law) (PBMC5_T)	0.82153350785823	1	FALSE
+ABC (A=scATAC, C=power law) (BMMC5_T)	In element (ABC (A=scATAC)) & distance to TSS (BMMC5_T)	0.945145756190296	1	FALSE
+ABC (A=scATAC, C=power law) (BMMC5_T)	In element (ABC (A=scATAC)) & distance to TSS (PBMC5_T)	0.740162082375651	1	FALSE
+ABC (A=scATAC, C=power law) (BMMC5_T)	STARE (gABC, power law) (BMMC5_T)	0.571182525225852	1	FALSE
+ABC (A=scATAC, C=power law) (BMMC5_T)	STARE (gABC, power law) (PBMC5_T)	0.956810396758837	1	FALSE
+ABC (A=scATAC, C=power law) (BMMC5_T)	SCENT (FDR) (PBMC5_T)	0.301329971694594	1	FALSE
+ABC (A=scATAC, C=power law) (PBMC5_T)	In element (ABC (A=scATAC)) & distance to TSS (BMMC5_T)	0.879667363106266	1	FALSE
+ABC (A=scATAC, C=power law) (PBMC5_T)	In element (ABC (A=scATAC)) & distance to TSS (PBMC5_T)	0.916664571545498	1	FALSE
+ABC (A=scATAC, C=power law) (PBMC5_T)	STARE (gABC, power law) (BMMC5_T)	0.434679284821572	1	FALSE
+ABC (A=scATAC, C=power law) (PBMC5_T)	STARE (gABC, power law) (PBMC5_T)	0.790523828493284	1	FALSE
+ABC (A=scATAC, C=power law) (PBMC5_T)	SCENT (FDR) (PBMC5_T)	0.200751665067047	1	FALSE
+In element (ABC (A=scATAC)) & distance to TSS (BMMC5_T)	In element (ABC (A=scATAC)) & distance to TSS (PBMC5_T)	0.7991059412875	1	FALSE
+In element (ABC (A=scATAC)) & distance to TSS (BMMC5_T)	STARE (gABC, power law) (BMMC5_T)	0.536278432721447	1	FALSE
+In element (ABC (A=scATAC)) & distance to TSS (BMMC5_T)	STARE (gABC, power law) (PBMC5_T)	0.906383368088989	1	FALSE
+In element (ABC (A=scATAC)) & distance to TSS (BMMC5_T)	SCENT (FDR) (PBMC5_T)	0.283087910850448	1	FALSE
+In element (ABC (A=scATAC)) & distance to TSS (PBMC5_T)	STARE (gABC, power law) (BMMC5_T)	0.375700898662485	1	FALSE
+In element (ABC (A=scATAC)) & distance to TSS (PBMC5_T)	STARE (gABC, power law) (PBMC5_T)	0.714828933785868	1	FALSE
+In element (ABC (A=scATAC)) & distance to TSS (PBMC5_T)	SCENT (FDR) (PBMC5_T)	0.160207986384078	1	FALSE
+STARE (gABC, power law) (BMMC5_T)	STARE (gABC, power law) (PBMC5_T)	0.631879076658657	1	FALSE
+STARE (gABC, power law) (BMMC5_T)	SCENT (FDR) (PBMC5_T)	0.729000221246198	1	FALSE
+STARE (gABC, power law) (PBMC5_T)	SCENT (FDR) (PBMC5_T)	0.375961640715357	1	FALSE

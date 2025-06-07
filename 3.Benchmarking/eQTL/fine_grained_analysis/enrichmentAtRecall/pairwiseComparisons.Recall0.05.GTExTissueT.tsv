@@ -1,0 +1,742 @@
+group1	group2	p	p_adjust	significant
+scE2G (Multiome) (BMMC22_CD4_pos_T_activated)	scE2G (Multiome) (BMMC22_CD4_pos_T_naive)	0.812963080281127	1	FALSE
+scE2G (Multiome) (BMMC22_CD4_pos_T_activated)	scE2G (Multiome) (BMMC22_CD8_pos_T)	0.205445411227954	1	FALSE
+scE2G (Multiome) (BMMC22_CD4_pos_T_activated)	scE2G (Multiome) (BMMC22_CD8_pos_T_naive)	0.904146246353414	1	FALSE
+scE2G (Multiome) (BMMC22_CD4_pos_T_activated)	scE2G (Multiome) (BMMC22_Lymph_prog)	0.355378421044612	1	FALSE
+scE2G (Multiome) (BMMC22_CD4_pos_T_activated)	scE2G (Multiome) (PBMC_20_CD4.N1)	0.740260248681327	1	FALSE
+scE2G (Multiome) (BMMC22_CD4_pos_T_activated)	scE2G (Multiome) (PBMC_22_CD4.M)	0.980038462128987	1	FALSE
+scE2G (Multiome) (BMMC22_CD4_pos_T_activated)	scE2G (Multiome) (PBMC_24_CD8.CM)	0.894108442591643	1	FALSE
+scE2G (Multiome) (BMMC22_CD4_pos_T_activated)	scE2G (scATAC) (BMMC22_CD4_pos_T_activated)	0.491632524813759	1	FALSE
+scE2G (Multiome) (BMMC22_CD4_pos_T_activated)	scE2G (scATAC) (BMMC22_CD4_pos_T_naive)	0.617297036333591	1	FALSE
+scE2G (Multiome) (BMMC22_CD4_pos_T_activated)	scE2G (scATAC) (BMMC22_CD8_pos_T)	0.884551071318635	1	FALSE
+scE2G (Multiome) (BMMC22_CD4_pos_T_activated)	scE2G (scATAC) (BMMC22_CD8_pos_T_naive)	0.77911508446227	1	FALSE
+scE2G (Multiome) (BMMC22_CD4_pos_T_activated)	scE2G (scATAC) (BMMC22_Lymph_prog)	0.313408508539974	1	FALSE
+scE2G (Multiome) (BMMC22_CD4_pos_T_activated)	scE2G (scATAC) (PBMC_20_CD4.N1)	0.256649177560404	1	FALSE
+scE2G (Multiome) (BMMC22_CD4_pos_T_activated)	scE2G (scATAC) (PBMC_22_CD4.M)	0.453349373393135	1	FALSE
+scE2G (Multiome) (BMMC22_CD4_pos_T_activated)	scE2G (scATAC) (PBMC_24_CD8.CM)	0.812763312634874	1	FALSE
+scE2G (Multiome) (BMMC22_CD4_pos_T_activated)	Kendall correlation (access. at E x expr. at G) (BMMC22_CD4_pos_T_activated)	3.69264134118456e-06	0.00273624723381776	TRUE
+scE2G (Multiome) (BMMC22_CD4_pos_T_activated)	Kendall correlation (access. at E x expr. at G) (BMMC22_CD4_pos_T_naive)	8.00227333996347e-07	0.000592968454491293	TRUE
+scE2G (Multiome) (BMMC22_CD4_pos_T_activated)	Kendall correlation (access. at E x expr. at G) (BMMC22_CD8_pos_T)	1.48695952328277e-05	0.0110183700675253	TRUE
+scE2G (Multiome) (BMMC22_CD4_pos_T_activated)	Kendall correlation (access. at E x expr. at G) (BMMC22_CD8_pos_T_naive)	8.5874313769133e-08	6.36328665029276e-05	TRUE
+scE2G (Multiome) (BMMC22_CD4_pos_T_activated)	Kendall correlation (access. at E x expr. at G) (BMMC22_Lymph_prog)	2.19794552900027e-07	0.00016286776369892	TRUE
+scE2G (Multiome) (BMMC22_CD4_pos_T_activated)	Kendall correlation (access. at E x expr. at G) (PBMC_20_CD4.N1)	1.52410991205753e-07	0.000112936544483463	TRUE
+scE2G (Multiome) (BMMC22_CD4_pos_T_activated)	Kendall correlation (access. at E x expr. at G) (PBMC_22_CD4.M)	1.54236805247591e-06	0.00114289472688465	TRUE
+scE2G (Multiome) (BMMC22_CD4_pos_T_activated)	Kendall correlation (access. at E x expr. at G) (PBMC_24_CD8.CM)	5.31756440219336e-07	0.000394031522202528	TRUE
+scE2G (Multiome) (BMMC22_CD4_pos_T_activated)	ABC (A=scATAC, C=power law) (BMMC22_CD4_pos_T_activated)	0.377290304316912	1	FALSE
+scE2G (Multiome) (BMMC22_CD4_pos_T_activated)	ABC (A=scATAC, C=power law) (BMMC22_CD4_pos_T_naive)	0.391723108577501	1	FALSE
+scE2G (Multiome) (BMMC22_CD4_pos_T_activated)	ABC (A=scATAC, C=power law) (BMMC22_CD8_pos_T)	0.485977887341077	1	FALSE
+scE2G (Multiome) (BMMC22_CD4_pos_T_activated)	ABC (A=scATAC, C=power law) (BMMC22_Lymph_prog)	0.237569166835638	1	FALSE
+scE2G (Multiome) (BMMC22_CD4_pos_T_activated)	ABC (A=scATAC, C=power law) (PBMC_20_CD4.N1)	0.403100591777904	1	FALSE
+scE2G (Multiome) (BMMC22_CD4_pos_T_activated)	ABC (A=scATAC, C=power law) (PBMC_22_CD4.M)	0.506861782079258	1	FALSE
+scE2G (Multiome) (BMMC22_CD4_pos_T_activated)	ABC (A=scATAC, C=power law) (PBMC_24_CD8.CM)	0.816937042653416	1	FALSE
+scE2G (Multiome) (BMMC22_CD4_pos_T_activated)	In element (ABC (A=scATAC)) & distance to TSS (BMMC22_CD4_pos_T_activated)	0.370398765978346	1	FALSE
+scE2G (Multiome) (BMMC22_CD4_pos_T_activated)	In element (ABC (A=scATAC)) & distance to TSS (BMMC22_CD4_pos_T_naive)	0.466520632871005	1	FALSE
+scE2G (Multiome) (BMMC22_CD4_pos_T_activated)	In element (ABC (A=scATAC)) & distance to TSS (BMMC22_CD8_pos_T)	0.577025712914919	1	FALSE
+scE2G (Multiome) (BMMC22_CD4_pos_T_activated)	In element (ABC (A=scATAC)) & distance to TSS (BMMC22_CD8_pos_T_naive)	0.816491069831985	1	FALSE
+scE2G (Multiome) (BMMC22_CD4_pos_T_activated)	In element (ABC (A=scATAC)) & distance to TSS (BMMC22_Lymph_prog)	0.441465481225734	1	FALSE
+scE2G (Multiome) (BMMC22_CD4_pos_T_activated)	In element (ABC (A=scATAC)) & distance to TSS (PBMC_20_CD4.N1)	0.58290494181889	1	FALSE
+scE2G (Multiome) (BMMC22_CD4_pos_T_activated)	In element (ABC (A=scATAC)) & distance to TSS (PBMC_22_CD4.M)	0.591493209873258	1	FALSE
+scE2G (Multiome) (BMMC22_CD4_pos_T_activated)	In element (ABC (A=scATAC)) & distance to TSS (PBMC_24_CD8.CM)	0.928821093417218	1	FALSE
+scE2G (Multiome) (BMMC22_CD4_pos_T_naive)	scE2G (Multiome) (BMMC22_CD8_pos_T)	0.315627835081748	1	FALSE
+scE2G (Multiome) (BMMC22_CD4_pos_T_naive)	scE2G (Multiome) (BMMC22_CD8_pos_T_naive)	0.717458263587125	1	FALSE
+scE2G (Multiome) (BMMC22_CD4_pos_T_naive)	scE2G (Multiome) (BMMC22_Lymph_prog)	0.252245644692321	1	FALSE
+scE2G (Multiome) (BMMC22_CD4_pos_T_naive)	scE2G (Multiome) (PBMC_20_CD4.N1)	0.571479087223799	1	FALSE
+scE2G (Multiome) (BMMC22_CD4_pos_T_naive)	scE2G (Multiome) (PBMC_22_CD4.M)	0.829244414466533	1	FALSE
+scE2G (Multiome) (BMMC22_CD4_pos_T_naive)	scE2G (Multiome) (PBMC_24_CD8.CM)	0.915750981639722	1	FALSE
+scE2G (Multiome) (BMMC22_CD4_pos_T_naive)	scE2G (scATAC) (BMMC22_CD4_pos_T_activated)	0.3567301236137	1	FALSE
+scE2G (Multiome) (BMMC22_CD4_pos_T_naive)	scE2G (scATAC) (BMMC22_CD4_pos_T_naive)	0.46282974585484	1	FALSE
+scE2G (Multiome) (BMMC22_CD4_pos_T_naive)	scE2G (scATAC) (BMMC22_CD8_pos_T)	0.701813363180861	1	FALSE
+scE2G (Multiome) (BMMC22_CD4_pos_T_naive)	scE2G (scATAC) (BMMC22_CD8_pos_T_naive)	0.599711331925483	1	FALSE
+scE2G (Multiome) (BMMC22_CD4_pos_T_naive)	scE2G (scATAC) (BMMC22_Lymph_prog)	0.218526525596087	1	FALSE
+scE2G (Multiome) (BMMC22_CD4_pos_T_naive)	scE2G (scATAC) (PBMC_20_CD4.N1)	0.175587737232281	1	FALSE
+scE2G (Multiome) (BMMC22_CD4_pos_T_naive)	scE2G (scATAC) (PBMC_22_CD4.M)	0.325815168749557	1	FALSE
+scE2G (Multiome) (BMMC22_CD4_pos_T_naive)	scE2G (scATAC) (PBMC_24_CD8.CM)	0.631791118122295	1	FALSE
+scE2G (Multiome) (BMMC22_CD4_pos_T_naive)	Kendall correlation (access. at E x expr. at G) (BMMC22_CD4_pos_T_activated)	1.58736178146788e-06	0.0011762350800677	TRUE
+scE2G (Multiome) (BMMC22_CD4_pos_T_naive)	Kendall correlation (access. at E x expr. at G) (BMMC22_CD4_pos_T_naive)	3.42845859098308e-07	0.000254048781591846	TRUE
+scE2G (Multiome) (BMMC22_CD4_pos_T_naive)	Kendall correlation (access. at E x expr. at G) (BMMC22_CD8_pos_T)	6.48568606927047e-06	0.00480589337732942	TRUE
+scE2G (Multiome) (BMMC22_CD4_pos_T_naive)	Kendall correlation (access. at E x expr. at G) (BMMC22_CD8_pos_T_naive)	3.68379670352564e-08	2.7296933573125e-05	TRUE
+scE2G (Multiome) (BMMC22_CD4_pos_T_naive)	Kendall correlation (access. at E x expr. at G) (BMMC22_Lymph_prog)	9.41372818399012e-08	6.97557258433668e-05	TRUE
+scE2G (Multiome) (BMMC22_CD4_pos_T_naive)	Kendall correlation (access. at E x expr. at G) (PBMC_20_CD4.N1)	6.53477975111318e-08	4.84227179557487e-05	TRUE
+scE2G (Multiome) (BMMC22_CD4_pos_T_naive)	Kendall correlation (access. at E x expr. at G) (PBMC_22_CD4.M)	6.61868400788144e-07	0.000490444484984014	TRUE
+scE2G (Multiome) (BMMC22_CD4_pos_T_naive)	Kendall correlation (access. at E x expr. at G) (PBMC_24_CD8.CM)	2.27977106265794e-07	0.000168931035742954	TRUE
+scE2G (Multiome) (BMMC22_CD4_pos_T_naive)	ABC (A=scATAC, C=power law) (BMMC22_CD4_pos_T_activated)	0.265647230360348	1	FALSE
+scE2G (Multiome) (BMMC22_CD4_pos_T_naive)	ABC (A=scATAC, C=power law) (BMMC22_CD4_pos_T_naive)	0.276933483154207	1	FALSE
+scE2G (Multiome) (BMMC22_CD4_pos_T_naive)	ABC (A=scATAC, C=power law) (BMMC22_CD8_pos_T)	0.352137824233665	1	FALSE
+scE2G (Multiome) (BMMC22_CD4_pos_T_naive)	ABC (A=scATAC, C=power law) (BMMC22_Lymph_prog)	0.159801168717245	1	FALSE
+scE2G (Multiome) (BMMC22_CD4_pos_T_naive)	ABC (A=scATAC, C=power law) (PBMC_20_CD4.N1)	0.287117460354895	1	FALSE
+scE2G (Multiome) (BMMC22_CD4_pos_T_naive)	ABC (A=scATAC, C=power law) (PBMC_22_CD4.M)	0.369142654746457	1	FALSE
+scE2G (Multiome) (BMMC22_CD4_pos_T_naive)	ABC (A=scATAC, C=power law) (PBMC_24_CD8.CM)	0.635548644205213	1	FALSE
+scE2G (Multiome) (BMMC22_CD4_pos_T_naive)	In element (ABC (A=scATAC)) & distance to TSS (BMMC22_CD4_pos_T_activated)	0.259208081736402	1	FALSE
+scE2G (Multiome) (BMMC22_CD4_pos_T_naive)	In element (ABC (A=scATAC)) & distance to TSS (BMMC22_CD4_pos_T_naive)	0.336404665967876	1	FALSE
+scE2G (Multiome) (BMMC22_CD4_pos_T_naive)	In element (ABC (A=scATAC)) & distance to TSS (BMMC22_CD8_pos_T)	0.427155559218235	1	FALSE
+scE2G (Multiome) (BMMC22_CD4_pos_T_naive)	In element (ABC (A=scATAC)) & distance to TSS (BMMC22_CD8_pos_T_naive)	0.633125348757315	1	FALSE
+scE2G (Multiome) (BMMC22_CD4_pos_T_naive)	In element (ABC (A=scATAC)) & distance to TSS (BMMC22_Lymph_prog)	0.317648245246041	1	FALSE
+scE2G (Multiome) (BMMC22_CD4_pos_T_naive)	In element (ABC (A=scATAC)) & distance to TSS (PBMC_20_CD4.N1)	0.435596596816664	1	FALSE
+scE2G (Multiome) (BMMC22_CD4_pos_T_naive)	In element (ABC (A=scATAC)) & distance to TSS (PBMC_22_CD4.M)	0.439284515525481	1	FALSE
+scE2G (Multiome) (BMMC22_CD4_pos_T_naive)	In element (ABC (A=scATAC)) & distance to TSS (PBMC_24_CD8.CM)	0.742918559340957	1	FALSE
+scE2G (Multiome) (BMMC22_CD8_pos_T)	scE2G (Multiome) (BMMC22_CD8_pos_T_naive)	0.153018525835992	1	FALSE
+scE2G (Multiome) (BMMC22_CD8_pos_T)	scE2G (Multiome) (BMMC22_Lymph_prog)	0.0274453206971144	1	FALSE
+scE2G (Multiome) (BMMC22_CD8_pos_T)	scE2G (Multiome) (PBMC_20_CD4.N1)	0.104372629069906	1	FALSE
+scE2G (Multiome) (BMMC22_CD8_pos_T)	scE2G (Multiome) (PBMC_22_CD4.M)	0.207086840242756	1	FALSE
+scE2G (Multiome) (BMMC22_CD8_pos_T)	scE2G (Multiome) (PBMC_24_CD8.CM)	0.258072222373752	1	FALSE
+scE2G (Multiome) (BMMC22_CD8_pos_T)	scE2G (scATAC) (BMMC22_CD4_pos_T_activated)	0.0429359945686592	1	FALSE
+scE2G (Multiome) (BMMC22_CD8_pos_T)	scE2G (scATAC) (BMMC22_CD4_pos_T_naive)	0.0695794036547567	1	FALSE
+scE2G (Multiome) (BMMC22_CD8_pos_T)	scE2G (scATAC) (BMMC22_CD8_pos_T)	0.151389170323417	1	FALSE
+scE2G (Multiome) (BMMC22_CD8_pos_T)	scE2G (scATAC) (BMMC22_CD8_pos_T_naive)	0.103710589975999	1	FALSE
+scE2G (Multiome) (BMMC22_CD8_pos_T)	scE2G (scATAC) (BMMC22_Lymph_prog)	0.0207922894860185	1	FALSE
+scE2G (Multiome) (BMMC22_CD8_pos_T)	scE2G (scATAC) (PBMC_20_CD4.N1)	0.0146847094435841	1	FALSE
+scE2G (Multiome) (BMMC22_CD8_pos_T)	scE2G (scATAC) (PBMC_22_CD4.M)	0.0368391477965301	1	FALSE
+scE2G (Multiome) (BMMC22_CD8_pos_T)	scE2G (scATAC) (PBMC_24_CD8.CM)	0.117435816388414	1	FALSE
+scE2G (Multiome) (BMMC22_CD8_pos_T)	Kendall correlation (access. at E x expr. at G) (BMMC22_CD4_pos_T_activated)	1.27137384182138e-10	9.42088016789643e-08	TRUE
+scE2G (Multiome) (BMMC22_CD8_pos_T)	Kendall correlation (access. at E x expr. at G) (BMMC22_CD4_pos_T_naive)	1.7092565188901e-11	1.26655908049757e-08	TRUE
+scE2G (Multiome) (BMMC22_CD8_pos_T)	Kendall correlation (access. at E x expr. at G) (BMMC22_CD8_pos_T)	1.22637690548267e-09	9.0874528696266e-07	TRUE
+scE2G (Multiome) (BMMC22_CD8_pos_T)	Kendall correlation (access. at E x expr. at G) (BMMC22_CD8_pos_T_naive)	9.66942030814067e-13	7.16504044833224e-10	TRUE
+scE2G (Multiome) (BMMC22_CD8_pos_T)	Kendall correlation (access. at E x expr. at G) (BMMC22_Lymph_prog)	2.72602439024224e-12	2.0199840731695e-09	TRUE
+scE2G (Multiome) (BMMC22_CD8_pos_T)	Kendall correlation (access. at E x expr. at G) (PBMC_20_CD4.N1)	2.50362652804591e-12	1.85518725728202e-09	TRUE
+scE2G (Multiome) (BMMC22_CD8_pos_T)	Kendall correlation (access. at E x expr. at G) (PBMC_22_CD4.M)	4.32175491123477e-11	3.20242038922497e-08	TRUE
+scE2G (Multiome) (BMMC22_CD8_pos_T)	Kendall correlation (access. at E x expr. at G) (PBMC_24_CD8.CM)	1.1811782764971e-11	8.75253102884349e-09	TRUE
+scE2G (Multiome) (BMMC22_CD8_pos_T)	ABC (A=scATAC, C=power law) (BMMC22_CD4_pos_T_activated)	0.0262214394587786	1	FALSE
+scE2G (Multiome) (BMMC22_CD8_pos_T)	ABC (A=scATAC, C=power law) (BMMC22_CD4_pos_T_naive)	0.0280881286680417	1	FALSE
+scE2G (Multiome) (BMMC22_CD8_pos_T)	ABC (A=scATAC, C=power law) (BMMC22_CD8_pos_T)	0.0420025827506052	1	FALSE
+scE2G (Multiome) (BMMC22_CD8_pos_T)	ABC (A=scATAC, C=power law) (BMMC22_Lymph_prog)	0.0115273425875007	1	FALSE
+scE2G (Multiome) (BMMC22_CD8_pos_T)	ABC (A=scATAC, C=power law) (PBMC_20_CD4.N1)	0.0310249779143072	1	FALSE
+scE2G (Multiome) (BMMC22_CD8_pos_T)	ABC (A=scATAC, C=power law) (PBMC_22_CD4.M)	0.0455076127011221	1	FALSE
+scE2G (Multiome) (BMMC22_CD8_pos_T)	ABC (A=scATAC, C=power law) (PBMC_24_CD8.CM)	0.118722650497483	1	FALSE
+scE2G (Multiome) (BMMC22_CD8_pos_T)	In element (ABC (A=scATAC)) & distance to TSS (BMMC22_CD4_pos_T_activated)	0.024236030708665	1	FALSE
+scE2G (Multiome) (BMMC22_CD8_pos_T)	In element (ABC (A=scATAC)) & distance to TSS (BMMC22_CD4_pos_T_naive)	0.0388782171778739	1	FALSE
+scE2G (Multiome) (BMMC22_CD8_pos_T)	In element (ABC (A=scATAC)) & distance to TSS (BMMC22_CD8_pos_T)	0.0584792154082149	1	FALSE
+scE2G (Multiome) (BMMC22_CD8_pos_T)	In element (ABC (A=scATAC)) & distance to TSS (BMMC22_CD8_pos_T_naive)	0.114600511451537	1	FALSE
+scE2G (Multiome) (BMMC22_CD8_pos_T)	In element (ABC (A=scATAC)) & distance to TSS (BMMC22_Lymph_prog)	0.0366850711385688	1	FALSE
+scE2G (Multiome) (BMMC22_CD8_pos_T)	In element (ABC (A=scATAC)) & distance to TSS (PBMC_20_CD4.N1)	0.0650034422114151	1	FALSE
+scE2G (Multiome) (BMMC22_CD8_pos_T)	In element (ABC (A=scATAC)) & distance to TSS (PBMC_22_CD4.M)	0.0613921574881044	1	FALSE
+scE2G (Multiome) (BMMC22_CD8_pos_T)	In element (ABC (A=scATAC)) & distance to TSS (PBMC_24_CD8.CM)	0.168250261726114	1	FALSE
+scE2G (Multiome) (BMMC22_CD8_pos_T_naive)	scE2G (Multiome) (BMMC22_Lymph_prog)	0.405273755949965	1	FALSE
+scE2G (Multiome) (BMMC22_CD8_pos_T_naive)	scE2G (Multiome) (PBMC_20_CD4.N1)	0.826190084507711	1	FALSE
+scE2G (Multiome) (BMMC22_CD8_pos_T_naive)	scE2G (Multiome) (PBMC_22_CD4.M)	0.882116723923102	1	FALSE
+scE2G (Multiome) (BMMC22_CD8_pos_T_naive)	scE2G (Multiome) (PBMC_24_CD8.CM)	0.796691852458909	1	FALSE
+scE2G (Multiome) (BMMC22_CD8_pos_T_naive)	scE2G (scATAC) (BMMC22_CD4_pos_T_activated)	0.558708432541005	1	FALSE
+scE2G (Multiome) (BMMC22_CD8_pos_T_naive)	scE2G (scATAC) (BMMC22_CD4_pos_T_naive)	0.695277082523434	1	FALSE
+scE2G (Multiome) (BMMC22_CD8_pos_T_naive)	scE2G (scATAC) (BMMC22_CD8_pos_T)	0.978177092971374	1	FALSE
+scE2G (Multiome) (BMMC22_CD8_pos_T_naive)	scE2G (scATAC) (BMMC22_CD8_pos_T_naive)	0.871029007675249	1	FALSE
+scE2G (Multiome) (BMMC22_CD8_pos_T_naive)	scE2G (scATAC) (BMMC22_Lymph_prog)	0.358768763832263	1	FALSE
+scE2G (Multiome) (BMMC22_CD8_pos_T_naive)	scE2G (scATAC) (PBMC_20_CD4.N1)	0.294646205794955	1	FALSE
+scE2G (Multiome) (BMMC22_CD8_pos_T_naive)	scE2G (scATAC) (PBMC_22_CD4.M)	0.516347512860564	1	FALSE
+scE2G (Multiome) (BMMC22_CD8_pos_T_naive)	scE2G (scATAC) (PBMC_24_CD8.CM)	0.905517188410062	1	FALSE
+scE2G (Multiome) (BMMC22_CD8_pos_T_naive)	Kendall correlation (access. at E x expr. at G) (BMMC22_CD4_pos_T_activated)	2.37104843668652e-06	0.00175694689158471	TRUE
+scE2G (Multiome) (BMMC22_CD8_pos_T_naive)	Kendall correlation (access. at E x expr. at G) (BMMC22_CD4_pos_T_naive)	4.66546840733273e-07	0.000345711208983356	TRUE
+scE2G (Multiome) (BMMC22_CD8_pos_T_naive)	Kendall correlation (access. at E x expr. at G) (BMMC22_CD8_pos_T)	1.09462561891947e-05	0.00811117583619327	TRUE
+scE2G (Multiome) (BMMC22_CD8_pos_T_naive)	Kendall correlation (access. at E x expr. at G) (BMMC22_CD8_pos_T_naive)	4.35447807968714e-08	3.22666825704817e-05	TRUE
+scE2G (Multiome) (BMMC22_CD8_pos_T_naive)	Kendall correlation (access. at E x expr. at G) (BMMC22_Lymph_prog)	1.1510805747178e-07	8.52950705865891e-05	TRUE
+scE2G (Multiome) (BMMC22_CD8_pos_T_naive)	Kendall correlation (access. at E x expr. at G) (PBMC_20_CD4.N1)	8.29228371820935e-08	6.14458223519313e-05	TRUE
+scE2G (Multiome) (BMMC22_CD8_pos_T_naive)	Kendall correlation (access. at E x expr. at G) (PBMC_22_CD4.M)	9.46640691231341e-07	0.000701460752202424	TRUE
+scE2G (Multiome) (BMMC22_CD8_pos_T_naive)	Kendall correlation (access. at E x expr. at G) (PBMC_24_CD8.CM)	3.09530773983014e-07	0.000229362303521413	TRUE
+scE2G (Multiome) (BMMC22_CD8_pos_T_naive)	ABC (A=scATAC, C=power law) (BMMC22_CD4_pos_T_activated)	0.431555073102394	1	FALSE
+scE2G (Multiome) (BMMC22_CD8_pos_T_naive)	ABC (A=scATAC, C=power law) (BMMC22_CD4_pos_T_naive)	0.447709595563234	1	FALSE
+scE2G (Multiome) (BMMC22_CD8_pos_T_naive)	ABC (A=scATAC, C=power law) (BMMC22_CD8_pos_T)	0.552464923619511	1	FALSE
+scE2G (Multiome) (BMMC22_CD8_pos_T_naive)	ABC (A=scATAC, C=power law) (BMMC22_Lymph_prog)	0.273612558984637	1	FALSE
+scE2G (Multiome) (BMMC22_CD8_pos_T_naive)	ABC (A=scATAC, C=power law) (PBMC_20_CD4.N1)	0.459813149934084	1	FALSE
+scE2G (Multiome) (BMMC22_CD8_pos_T_naive)	ABC (A=scATAC, C=power law) (PBMC_22_CD4.M)	0.575500459768191	1	FALSE
+scE2G (Multiome) (BMMC22_CD8_pos_T_naive)	ABC (A=scATAC, C=power law) (PBMC_24_CD8.CM)	0.909922003493004	1	FALSE
+scE2G (Multiome) (BMMC22_CD8_pos_T_naive)	In element (ABC (A=scATAC)) & distance to TSS (BMMC22_CD4_pos_T_activated)	0.424340556604052	1	FALSE
+scE2G (Multiome) (BMMC22_CD8_pos_T_naive)	In element (ABC (A=scATAC)) & distance to TSS (BMMC22_CD4_pos_T_naive)	0.530945800295636	1	FALSE
+scE2G (Multiome) (BMMC22_CD8_pos_T_naive)	In element (ABC (A=scATAC)) & distance to TSS (BMMC22_CD8_pos_T)	0.652426015367725	1	FALSE
+scE2G (Multiome) (BMMC22_CD8_pos_T_naive)	In element (ABC (A=scATAC)) & distance to TSS (BMMC22_CD8_pos_T_naive)	0.910614838958394	1	FALSE
+scE2G (Multiome) (BMMC22_CD8_pos_T_naive)	In element (ABC (A=scATAC)) & distance to TSS (BMMC22_Lymph_prog)	0.502474872229483	1	FALSE
+scE2G (Multiome) (BMMC22_CD8_pos_T_naive)	In element (ABC (A=scATAC)) & distance to TSS (PBMC_20_CD4.N1)	0.656930136538074	1	FALSE
+scE2G (Multiome) (BMMC22_CD8_pos_T_naive)	In element (ABC (A=scATAC)) & distance to TSS (PBMC_22_CD4.M)	0.668197807150383	1	FALSE
+scE2G (Multiome) (BMMC22_CD8_pos_T_naive)	In element (ABC (A=scATAC)) & distance to TSS (PBMC_24_CD8.CM)	0.975829247570488	1	FALSE
+scE2G (Multiome) (BMMC22_Lymph_prog)	scE2G (Multiome) (PBMC_20_CD4.N1)	0.543557828155974	1	FALSE
+scE2G (Multiome) (BMMC22_Lymph_prog)	scE2G (Multiome) (PBMC_22_CD4.M)	0.335060477492772	1	FALSE
+scE2G (Multiome) (BMMC22_Lymph_prog)	scE2G (Multiome) (PBMC_24_CD8.CM)	0.290368403282029	1	FALSE
+scE2G (Multiome) (BMMC22_Lymph_prog)	scE2G (scATAC) (BMMC22_CD4_pos_T_activated)	0.781212238662816	1	FALSE
+scE2G (Multiome) (BMMC22_Lymph_prog)	scE2G (scATAC) (BMMC22_CD4_pos_T_naive)	0.650564288266776	1	FALSE
+scE2G (Multiome) (BMMC22_Lymph_prog)	scE2G (scATAC) (BMMC22_CD8_pos_T)	0.427342070008498	1	FALSE
+scE2G (Multiome) (BMMC22_Lymph_prog)	scE2G (scATAC) (BMMC22_CD8_pos_T_naive)	0.485833482358905	1	FALSE
+scE2G (Multiome) (BMMC22_Lymph_prog)	scE2G (scATAC) (BMMC22_Lymph_prog)	0.944871168347123	1	FALSE
+scE2G (Multiome) (BMMC22_Lymph_prog)	scE2G (scATAC) (PBMC_20_CD4.N1)	0.845079157580618	1	FALSE
+scE2G (Multiome) (BMMC22_Lymph_prog)	scE2G (scATAC) (PBMC_22_CD4.M)	0.82929118302558	1	FALSE
+scE2G (Multiome) (BMMC22_Lymph_prog)	scE2G (scATAC) (PBMC_24_CD8.CM)	0.466249256571415	1	FALSE
+scE2G (Multiome) (BMMC22_Lymph_prog)	Kendall correlation (access. at E x expr. at G) (BMMC22_CD4_pos_T_activated)	0.000626684804983196	0.464373440492548	FALSE
+scE2G (Multiome) (BMMC22_Lymph_prog)	Kendall correlation (access. at E x expr. at G) (BMMC22_CD4_pos_T_naive)	0.000185899191509127	0.137751300908263	FALSE
+scE2G (Multiome) (BMMC22_Lymph_prog)	Kendall correlation (access. at E x expr. at G) (BMMC22_CD8_pos_T)	0.00162496560577055	1	FALSE
+scE2G (Multiome) (BMMC22_Lymph_prog)	Kendall correlation (access. at E x expr. at G) (BMMC22_CD8_pos_T_naive)	3.03778760244061e-05	0.0225100061340849	TRUE
+scE2G (Multiome) (BMMC22_Lymph_prog)	Kendall correlation (access. at E x expr. at G) (BMMC22_Lymph_prog)	6.93275119287177e-05	0.0513716863391798	FALSE
+scE2G (Multiome) (BMMC22_Lymph_prog)	Kendall correlation (access. at E x expr. at G) (PBMC_20_CD4.N1)	4.49691801726867e-05	0.0333221625079608	TRUE
+scE2G (Multiome) (BMMC22_Lymph_prog)	Kendall correlation (access. at E x expr. at G) (PBMC_22_CD4.M)	0.000306598997988659	0.227189857509597	FALSE
+scE2G (Multiome) (BMMC22_Lymph_prog)	Kendall correlation (access. at E x expr. at G) (PBMC_24_CD8.CM)	0.000126593161290393	0.0938055325161814	FALSE
+scE2G (Multiome) (BMMC22_Lymph_prog)	ABC (A=scATAC, C=power law) (BMMC22_CD4_pos_T_activated)	0.93420773704364	1	FALSE
+scE2G (Multiome) (BMMC22_Lymph_prog)	ABC (A=scATAC, C=power law) (BMMC22_CD4_pos_T_naive)	0.91323764812701	1	FALSE
+scE2G (Multiome) (BMMC22_Lymph_prog)	ABC (A=scATAC, C=power law) (BMMC22_CD8_pos_T)	0.788134471426737	1	FALSE
+scE2G (Multiome) (BMMC22_Lymph_prog)	ABC (A=scATAC, C=power law) (BMMC22_Lymph_prog)	0.829271209706145	1	FALSE
+scE2G (Multiome) (BMMC22_Lymph_prog)	ABC (A=scATAC, C=power law) (PBMC_20_CD4.N1)	0.907205534049402	1	FALSE
+scE2G (Multiome) (BMMC22_Lymph_prog)	ABC (A=scATAC, C=power law) (PBMC_22_CD4.M)	0.762863721739513	1	FALSE
+scE2G (Multiome) (BMMC22_Lymph_prog)	ABC (A=scATAC, C=power law) (PBMC_24_CD8.CM)	0.462965960104561	1	FALSE
+scE2G (Multiome) (BMMC22_Lymph_prog)	In element (ABC (A=scATAC)) & distance to TSS (BMMC22_CD4_pos_T_activated)	0.93489363432275	1	FALSE
+scE2G (Multiome) (BMMC22_Lymph_prog)	In element (ABC (A=scATAC)) & distance to TSS (BMMC22_CD4_pos_T_naive)	0.812422555122124	1	FALSE
+scE2G (Multiome) (BMMC22_Lymph_prog)	In element (ABC (A=scATAC)) & distance to TSS (BMMC22_CD8_pos_T)	0.683478497826619	1	FALSE
+scE2G (Multiome) (BMMC22_Lymph_prog)	In element (ABC (A=scATAC)) & distance to TSS (BMMC22_CD8_pos_T_naive)	0.456052082127771	1	FALSE
+scE2G (Multiome) (BMMC22_Lymph_prog)	In element (ABC (A=scATAC)) & distance to TSS (BMMC22_Lymph_prog)	0.854844856990205	1	FALSE
+scE2G (Multiome) (BMMC22_Lymph_prog)	In element (ABC (A=scATAC)) & distance to TSS (PBMC_20_CD4.N1)	0.69668197982389	1	FALSE
+scE2G (Multiome) (BMMC22_Lymph_prog)	In element (ABC (A=scATAC)) & distance to TSS (PBMC_22_CD4.M)	0.668081689198633	1	FALSE
+scE2G (Multiome) (BMMC22_Lymph_prog)	In element (ABC (A=scATAC)) & distance to TSS (PBMC_24_CD8.CM)	0.395535105687416	1	FALSE
+scE2G (Multiome) (PBMC_20_CD4.N1)	scE2G (Multiome) (PBMC_22_CD4.M)	0.717050169226496	1	FALSE
+scE2G (Multiome) (PBMC_20_CD4.N1)	scE2G (Multiome) (PBMC_24_CD8.CM)	0.640686624179494	1	FALSE
+scE2G (Multiome) (PBMC_20_CD4.N1)	scE2G (scATAC) (BMMC22_CD4_pos_T_activated)	0.724163403038504	1	FALSE
+scE2G (Multiome) (PBMC_20_CD4.N1)	scE2G (scATAC) (BMMC22_CD4_pos_T_naive)	0.86807240587794	1	FALSE
+scE2G (Multiome) (PBMC_20_CD4.N1)	scE2G (scATAC) (BMMC22_CD8_pos_T)	0.849797961754938	1	FALSE
+scE2G (Multiome) (PBMC_20_CD4.N1)	scE2G (scATAC) (BMMC22_CD8_pos_T_naive)	0.947556753491934	1	FALSE
+scE2G (Multiome) (PBMC_20_CD4.N1)	scE2G (scATAC) (BMMC22_Lymph_prog)	0.491618227434893	1	FALSE
+scE2G (Multiome) (PBMC_20_CD4.N1)	scE2G (scATAC) (PBMC_20_CD4.N1)	0.414460612768742	1	FALSE
+scE2G (Multiome) (PBMC_20_CD4.N1)	scE2G (scATAC) (PBMC_22_CD4.M)	0.677327753749689	1	FALSE
+scE2G (Multiome) (PBMC_20_CD4.N1)	scE2G (scATAC) (PBMC_24_CD8.CM)	0.915726052125214	1	FALSE
+scE2G (Multiome) (PBMC_20_CD4.N1)	Kendall correlation (access. at E x expr. at G) (BMMC22_CD4_pos_T_activated)	1.57459482045131e-05	0.0116677476195442	TRUE
+scE2G (Multiome) (PBMC_20_CD4.N1)	Kendall correlation (access. at E x expr. at G) (BMMC22_CD4_pos_T_naive)	3.56278555421557e-06	0.00264002409567373	TRUE
+scE2G (Multiome) (PBMC_20_CD4.N1)	Kendall correlation (access. at E x expr. at G) (BMMC22_CD8_pos_T)	5.88118064998223e-05	0.0435795486163683	TRUE
+scE2G (Multiome) (PBMC_20_CD4.N1)	Kendall correlation (access. at E x expr. at G) (BMMC22_CD8_pos_T_naive)	4.02715618031704e-07	0.000298412272961493	TRUE
+scE2G (Multiome) (PBMC_20_CD4.N1)	Kendall correlation (access. at E x expr. at G) (BMMC22_Lymph_prog)	1.01953400164385e-06	0.000755474695218093	TRUE
+scE2G (Multiome) (PBMC_20_CD4.N1)	Kendall correlation (access. at E x expr. at G) (PBMC_20_CD4.N1)	6.97104084735165e-07	0.000516554126788757	TRUE
+scE2G (Multiome) (PBMC_20_CD4.N1)	Kendall correlation (access. at E x expr. at G) (PBMC_22_CD4.M)	6.71618809968792e-06	0.00497669538186875	TRUE
+scE2G (Multiome) (PBMC_20_CD4.N1)	Kendall correlation (access. at E x expr. at G) (PBMC_24_CD8.CM)	2.3687478216848e-06	0.00175524213586843	TRUE
+scE2G (Multiome) (PBMC_20_CD4.N1)	ABC (A=scATAC, C=power law) (BMMC22_CD4_pos_T_activated)	0.581296755023031	1	FALSE
+scE2G (Multiome) (PBMC_20_CD4.N1)	ABC (A=scATAC, C=power law) (BMMC22_CD4_pos_T_naive)	0.599842190029072	1	FALSE
+scE2G (Multiome) (PBMC_20_CD4.N1)	ABC (A=scATAC, C=power law) (BMMC22_CD8_pos_T)	0.717305096393804	1	FALSE
+scE2G (Multiome) (PBMC_20_CD4.N1)	ABC (A=scATAC, C=power law) (BMMC22_Lymph_prog)	0.392617627530208	1	FALSE
+scE2G (Multiome) (PBMC_20_CD4.N1)	ABC (A=scATAC, C=power law) (PBMC_20_CD4.N1)	0.611291423420571	1	FALSE
+scE2G (Multiome) (PBMC_20_CD4.N1)	ABC (A=scATAC, C=power law) (PBMC_22_CD4.M)	0.742534382483778	1	FALSE
+scE2G (Multiome) (PBMC_20_CD4.N1)	ABC (A=scATAC, C=power law) (PBMC_24_CD8.CM)	0.911387093675392	1	FALSE
+scE2G (Multiome) (PBMC_20_CD4.N1)	In element (ABC (A=scATAC)) & distance to TSS (BMMC22_CD4_pos_T_activated)	0.57514493551992	1	FALSE
+scE2G (Multiome) (PBMC_20_CD4.N1)	In element (ABC (A=scATAC)) & distance to TSS (BMMC22_CD4_pos_T_naive)	0.693549354552203	1	FALSE
+scE2G (Multiome) (PBMC_20_CD4.N1)	In element (ABC (A=scATAC)) & distance to TSS (BMMC22_CD8_pos_T)	0.825363618665779	1	FALSE
+scE2G (Multiome) (PBMC_20_CD4.N1)	In element (ABC (A=scATAC)) & distance to TSS (BMMC22_CD8_pos_T_naive)	0.908402632863222	1	FALSE
+scE2G (Multiome) (PBMC_20_CD4.N1)	In element (ABC (A=scATAC)) & distance to TSS (BMMC22_Lymph_prog)	0.659409751141601	1	FALSE
+scE2G (Multiome) (PBMC_20_CD4.N1)	In element (ABC (A=scATAC)) & distance to TSS (PBMC_20_CD4.N1)	0.824917891328854	1	FALSE
+scE2G (Multiome) (PBMC_20_CD4.N1)	In element (ABC (A=scATAC)) & distance to TSS (PBMC_22_CD4.M)	0.842088166276725	1	FALSE
+scE2G (Multiome) (PBMC_20_CD4.N1)	In element (ABC (A=scATAC)) & distance to TSS (PBMC_24_CD8.CM)	0.805549815998295	1	FALSE
+scE2G (Multiome) (PBMC_22_CD4.M)	scE2G (Multiome) (PBMC_24_CD8.CM)	0.912242905232341	1	FALSE
+scE2G (Multiome) (PBMC_22_CD4.M)	scE2G (scATAC) (BMMC22_CD4_pos_T_activated)	0.46790747466135	1	FALSE
+scE2G (Multiome) (PBMC_22_CD4.M)	scE2G (scATAC) (BMMC22_CD4_pos_T_naive)	0.593352836352533	1	FALSE
+scE2G (Multiome) (PBMC_22_CD4.M)	scE2G (scATAC) (BMMC22_CD8_pos_T)	0.862629551522661	1	FALSE
+scE2G (Multiome) (PBMC_22_CD4.M)	scE2G (scATAC) (BMMC22_CD8_pos_T_naive)	0.755038644344041	1	FALSE
+scE2G (Multiome) (PBMC_22_CD4.M)	scE2G (scATAC) (BMMC22_Lymph_prog)	0.293653852746745	1	FALSE
+scE2G (Multiome) (PBMC_22_CD4.M)	scE2G (scATAC) (PBMC_20_CD4.N1)	0.238608841320278	1	FALSE
+scE2G (Multiome) (PBMC_22_CD4.M)	scE2G (scATAC) (PBMC_22_CD4.M)	0.430053531405485	1	FALSE
+scE2G (Multiome) (PBMC_22_CD4.M)	scE2G (scATAC) (PBMC_24_CD8.CM)	0.789337802108345	1	FALSE
+scE2G (Multiome) (PBMC_22_CD4.M)	Kendall correlation (access. at E x expr. at G) (BMMC22_CD4_pos_T_activated)	1.67232407526779e-06	0.00123919213977343	TRUE
+scE2G (Multiome) (PBMC_22_CD4.M)	Kendall correlation (access. at E x expr. at G) (BMMC22_CD4_pos_T_naive)	3.35005291438274e-07	0.000248238920955761	TRUE
+scE2G (Multiome) (PBMC_22_CD4.M)	Kendall correlation (access. at E x expr. at G) (BMMC22_CD8_pos_T)	7.56670428698717e-06	0.0056069278766575	TRUE
+scE2G (Multiome) (PBMC_22_CD4.M)	Kendall correlation (access. at E x expr. at G) (BMMC22_CD8_pos_T_naive)	3.21921504866277e-08	2.38543835105911e-05	TRUE
+scE2G (Multiome) (PBMC_22_CD4.M)	Kendall correlation (access. at E x expr. at G) (BMMC22_Lymph_prog)	8.45005327362269e-08	6.26148947575442e-05	TRUE
+scE2G (Multiome) (PBMC_22_CD4.M)	Kendall correlation (access. at E x expr. at G) (PBMC_20_CD4.N1)	6.03868981439358e-08	4.47466915246564e-05	TRUE
+scE2G (Multiome) (PBMC_22_CD4.M)	Kendall correlation (access. at E x expr. at G) (PBMC_22_CD4.M)	6.73163189819231e-07	0.00049881392365605	TRUE
+scE2G (Multiome) (PBMC_22_CD4.M)	Kendall correlation (access. at E x expr. at G) (PBMC_24_CD8.CM)	2.22353745770024e-07	0.000164764125615588	TRUE
+scE2G (Multiome) (PBMC_22_CD4.M)	ABC (A=scATAC, C=power law) (BMMC22_CD4_pos_T_activated)	0.355237203224363	1	FALSE
+scE2G (Multiome) (PBMC_22_CD4.M)	ABC (A=scATAC, C=power law) (BMMC22_CD4_pos_T_naive)	0.369391045987948	1	FALSE
+scE2G (Multiome) (PBMC_22_CD4.M)	ABC (A=scATAC, C=power law) (BMMC22_CD8_pos_T)	0.462308623049523	1	FALSE
+scE2G (Multiome) (PBMC_22_CD4.M)	ABC (A=scATAC, C=power law) (BMMC22_Lymph_prog)	0.219497529409453	1	FALSE
+scE2G (Multiome) (PBMC_22_CD4.M)	ABC (A=scATAC, C=power law) (PBMC_20_CD4.N1)	0.380972393164572	1	FALSE
+scE2G (Multiome) (PBMC_22_CD4.M)	ABC (A=scATAC, C=power law) (PBMC_22_CD4.M)	0.482999114558188	1	FALSE
+scE2G (Multiome) (PBMC_22_CD4.M)	ABC (A=scATAC, C=power law) (PBMC_24_CD8.CM)	0.793552427597581	1	FALSE
+scE2G (Multiome) (PBMC_22_CD4.M)	In element (ABC (A=scATAC)) & distance to TSS (BMMC22_CD4_pos_T_activated)	0.348108131447439	1	FALSE
+scE2G (Multiome) (PBMC_22_CD4.M)	In element (ABC (A=scATAC)) & distance to TSS (BMMC22_CD4_pos_T_naive)	0.443063285511959	1	FALSE
+scE2G (Multiome) (PBMC_22_CD4.M)	In element (ABC (A=scATAC)) & distance to TSS (BMMC22_CD8_pos_T)	0.552752798678074	1	FALSE
+scE2G (Multiome) (PBMC_22_CD4.M)	In element (ABC (A=scATAC)) & distance to TSS (BMMC22_CD8_pos_T_naive)	0.792763081224451	1	FALSE
+scE2G (Multiome) (PBMC_22_CD4.M)	In element (ABC (A=scATAC)) & distance to TSS (BMMC22_Lymph_prog)	0.418743181244068	1	FALSE
+scE2G (Multiome) (PBMC_22_CD4.M)	In element (ABC (A=scATAC)) & distance to TSS (PBMC_20_CD4.N1)	0.559470709905156	1	FALSE
+scE2G (Multiome) (PBMC_22_CD4.M)	In element (ABC (A=scATAC)) & distance to TSS (PBMC_22_CD4.M)	0.56717855153934	1	FALSE
+scE2G (Multiome) (PBMC_22_CD4.M)	In element (ABC (A=scATAC)) & distance to TSS (PBMC_24_CD8.CM)	0.907467899995013	1	FALSE
+scE2G (Multiome) (PBMC_24_CD8.CM)	scE2G (scATAC) (BMMC22_CD4_pos_T_activated)	0.408372354081091	1	FALSE
+scE2G (Multiome) (PBMC_24_CD8.CM)	scE2G (scATAC) (BMMC22_CD4_pos_T_naive)	0.524196698743189	1	FALSE
+scE2G (Multiome) (PBMC_24_CD8.CM)	scE2G (scATAC) (BMMC22_CD8_pos_T)	0.779145424293772	1	FALSE
+scE2G (Multiome) (PBMC_24_CD8.CM)	scE2G (scATAC) (BMMC22_CD8_pos_T_naive)	0.673577476650504	1	FALSE
+scE2G (Multiome) (PBMC_24_CD8.CM)	scE2G (scATAC) (BMMC22_Lymph_prog)	0.252903745578516	1	FALSE
+scE2G (Multiome) (PBMC_24_CD8.CM)	scE2G (scATAC) (PBMC_20_CD4.N1)	0.204235897175789	1	FALSE
+scE2G (Multiome) (PBMC_24_CD8.CM)	scE2G (scATAC) (PBMC_22_CD4.M)	0.374062526558308	1	FALSE
+scE2G (Multiome) (PBMC_24_CD8.CM)	scE2G (scATAC) (PBMC_24_CD8.CM)	0.706983491009379	1	FALSE
+scE2G (Multiome) (PBMC_24_CD8.CM)	Kendall correlation (access. at E x expr. at G) (BMMC22_CD4_pos_T_activated)	1.57115858370833e-06	0.00116422851052787	TRUE
+scE2G (Multiome) (PBMC_24_CD8.CM)	Kendall correlation (access. at E x expr. at G) (BMMC22_CD4_pos_T_naive)	3.25896331340114e-07	0.000241489181523025	TRUE
+scE2G (Multiome) (PBMC_24_CD8.CM)	Kendall correlation (access. at E x expr. at G) (BMMC22_CD8_pos_T)	6.78141496830931e-06	0.00502502849151719	TRUE
+scE2G (Multiome) (PBMC_24_CD8.CM)	Kendall correlation (access. at E x expr. at G) (BMMC22_CD8_pos_T_naive)	3.29862373330183e-08	2.44428018637666e-05	TRUE
+scE2G (Multiome) (PBMC_24_CD8.CM)	Kendall correlation (access. at E x expr. at G) (BMMC22_Lymph_prog)	8.55375321016517e-08	6.33833112873239e-05	TRUE
+scE2G (Multiome) (PBMC_24_CD8.CM)	Kendall correlation (access. at E x expr. at G) (PBMC_20_CD4.N1)	6.02645565020761e-08	4.46560363680384e-05	TRUE
+scE2G (Multiome) (PBMC_24_CD8.CM)	Kendall correlation (access. at E x expr. at G) (PBMC_22_CD4.M)	6.42754217105113e-07	0.000476280874874889	TRUE
+scE2G (Multiome) (PBMC_24_CD8.CM)	Kendall correlation (access. at E x expr. at G) (PBMC_24_CD8.CM)	2.16437591975375e-07	0.000160380255653753	TRUE
+scE2G (Multiome) (PBMC_24_CD8.CM)	ABC (A=scATAC, C=power law) (BMMC22_CD4_pos_T_activated)	0.306806358786665	1	FALSE
+scE2G (Multiome) (PBMC_24_CD8.CM)	ABC (A=scATAC, C=power law) (BMMC22_CD4_pos_T_naive)	0.319472258484905	1	FALSE
+scE2G (Multiome) (PBMC_24_CD8.CM)	ABC (A=scATAC, C=power law) (BMMC22_CD8_pos_T)	0.403286023618179	1	FALSE
+scE2G (Multiome) (PBMC_24_CD8.CM)	ABC (A=scATAC, C=power law) (BMMC22_Lymph_prog)	0.186791678872693	1	FALSE
+scE2G (Multiome) (PBMC_24_CD8.CM)	ABC (A=scATAC, C=power law) (PBMC_20_CD4.N1)	0.33040386361279	1	FALSE
+scE2G (Multiome) (PBMC_24_CD8.CM)	ABC (A=scATAC, C=power law) (PBMC_22_CD4.M)	0.422102539450935	1	FALSE
+scE2G (Multiome) (PBMC_24_CD8.CM)	ABC (A=scATAC, C=power law) (PBMC_24_CD8.CM)	0.710984632714261	1	FALSE
+scE2G (Multiome) (PBMC_24_CD8.CM)	In element (ABC (A=scATAC)) & distance to TSS (BMMC22_CD4_pos_T_activated)	0.299970899287271	1	FALSE
+scE2G (Multiome) (PBMC_24_CD8.CM)	In element (ABC (A=scATAC)) & distance to TSS (BMMC22_CD4_pos_T_naive)	0.385833268178217	1	FALSE
+scE2G (Multiome) (PBMC_24_CD8.CM)	In element (ABC (A=scATAC)) & distance to TSS (BMMC22_CD8_pos_T)	0.48593953384225	1	FALSE
+scE2G (Multiome) (PBMC_24_CD8.CM)	In element (ABC (A=scATAC)) & distance to TSS (BMMC22_CD8_pos_T_naive)	0.709273953065636	1	FALSE
+scE2G (Multiome) (PBMC_24_CD8.CM)	In element (ABC (A=scATAC)) & distance to TSS (BMMC22_Lymph_prog)	0.364446348750154	1	FALSE
+scE2G (Multiome) (PBMC_24_CD8.CM)	In element (ABC (A=scATAC)) & distance to TSS (PBMC_20_CD4.N1)	0.493737494209001	1	FALSE
+scE2G (Multiome) (PBMC_24_CD8.CM)	In element (ABC (A=scATAC)) & distance to TSS (PBMC_22_CD4.M)	0.49921810076684	1	FALSE
+scE2G (Multiome) (PBMC_24_CD8.CM)	In element (ABC (A=scATAC)) & distance to TSS (PBMC_24_CD8.CM)	0.822322595427058	1	FALSE
+scE2G (scATAC) (BMMC22_CD4_pos_T_activated)	scE2G (scATAC) (BMMC22_CD4_pos_T_naive)	0.851316153583948	1	FALSE
+scE2G (scATAC) (BMMC22_CD4_pos_T_activated)	scE2G (scATAC) (BMMC22_CD8_pos_T)	0.583824373366819	1	FALSE
+scE2G (scATAC) (BMMC22_CD4_pos_T_activated)	scE2G (scATAC) (BMMC22_CD8_pos_T_naive)	0.662335896448893	1	FALSE
+scE2G (scATAC) (BMMC22_CD4_pos_T_activated)	scE2G (scATAC) (BMMC22_Lymph_prog)	0.722645349288204	1	FALSE
+scE2G (scATAC) (BMMC22_CD4_pos_T_activated)	scE2G (scATAC) (PBMC_20_CD4.N1)	0.62625391757807	1	FALSE
+scE2G (scATAC) (BMMC22_CD4_pos_T_activated)	scE2G (scATAC) (PBMC_22_CD4.M)	0.948035865033533	1	FALSE
+scE2G (scATAC) (BMMC22_CD4_pos_T_activated)	scE2G (scATAC) (PBMC_24_CD8.CM)	0.636249334526183	1	FALSE
+scE2G (scATAC) (BMMC22_CD4_pos_T_activated)	Kendall correlation (access. at E x expr. at G) (BMMC22_CD4_pos_T_activated)	4.71219994301921e-05	0.0349174015777723	TRUE
+scE2G (scATAC) (BMMC22_CD4_pos_T_activated)	Kendall correlation (access. at E x expr. at G) (BMMC22_CD4_pos_T_naive)	1.06689479404355e-05	0.00790569042386273	TRUE
+scE2G (scATAC) (BMMC22_CD4_pos_T_activated)	Kendall correlation (access. at E x expr. at G) (BMMC22_CD8_pos_T)	0.000172845005350639	0.128078148964824	FALSE
+scE2G (scATAC) (BMMC22_CD4_pos_T_activated)	Kendall correlation (access. at E x expr. at G) (BMMC22_CD8_pos_T_naive)	1.19359025108327e-06	0.0008844503760527	TRUE
+scE2G (scATAC) (BMMC22_CD4_pos_T_activated)	Kendall correlation (access. at E x expr. at G) (BMMC22_Lymph_prog)	3.03681787315222e-06	0.00225028204400579	TRUE
+scE2G (scATAC) (BMMC22_CD4_pos_T_activated)	Kendall correlation (access. at E x expr. at G) (PBMC_20_CD4.N1)	2.07586574784861e-06	0.00153821651915582	TRUE
+scE2G (scATAC) (BMMC22_CD4_pos_T_activated)	Kendall correlation (access. at E x expr. at G) (PBMC_22_CD4.M)	2.01113370766915e-05	0.0149025007738284	TRUE
+scE2G (scATAC) (BMMC22_CD4_pos_T_activated)	Kendall correlation (access. at E x expr. at G) (PBMC_24_CD8.CM)	7.08310767783341e-06	0.00524858278927456	TRUE
+scE2G (scATAC) (BMMC22_CD4_pos_T_activated)	ABC (A=scATAC, C=power law) (BMMC22_CD4_pos_T_activated)	0.837765318366047	1	FALSE
+scE2G (scATAC) (BMMC22_CD4_pos_T_activated)	ABC (A=scATAC, C=power law) (BMMC22_CD4_pos_T_naive)	0.859465042067808	1	FALSE
+scE2G (scATAC) (BMMC22_CD4_pos_T_activated)	ABC (A=scATAC, C=power law) (BMMC22_CD8_pos_T)	0.992462447605621	1	FALSE
+scE2G (scATAC) (BMMC22_CD4_pos_T_activated)	ABC (A=scATAC, C=power law) (BMMC22_Lymph_prog)	0.604769467884231	1	FALSE
+scE2G (scATAC) (BMMC22_CD4_pos_T_activated)	ABC (A=scATAC, C=power law) (PBMC_20_CD4.N1)	0.868947479723594	1	FALSE
+scE2G (scATAC) (BMMC22_CD4_pos_T_activated)	ABC (A=scATAC, C=power law) (PBMC_22_CD4.M)	0.979928941099189	1	FALSE
+scE2G (scATAC) (BMMC22_CD4_pos_T_activated)	ABC (A=scATAC, C=power law) (PBMC_24_CD8.CM)	0.632230880618065	1	FALSE
+scE2G (scATAC) (BMMC22_CD4_pos_T_activated)	In element (ABC (A=scATAC)) & distance to TSS (BMMC22_CD4_pos_T_activated)	0.834033920287132	1	FALSE
+scE2G (scATAC) (BMMC22_CD4_pos_T_activated)	In element (ABC (A=scATAC)) & distance to TSS (BMMC22_CD4_pos_T_naive)	0.966164427315962	1	FALSE
+scE2G (scATAC) (BMMC22_CD4_pos_T_activated)	In element (ABC (A=scATAC)) & distance to TSS (BMMC22_CD8_pos_T)	0.891543760860474	1	FALSE
+scE2G (scATAC) (BMMC22_CD4_pos_T_activated)	In element (ABC (A=scATAC)) & distance to TSS (BMMC22_CD8_pos_T_naive)	0.62587652909258	1	FALSE
+scE2G (scATAC) (BMMC22_CD4_pos_T_activated)	In element (ABC (A=scATAC)) & distance to TSS (BMMC22_Lymph_prog)	0.923950790205269	1	FALSE
+scE2G (scATAC) (BMMC22_CD4_pos_T_activated)	In element (ABC (A=scATAC)) & distance to TSS (PBMC_20_CD4.N1)	0.90035377789851	1	FALSE
+scE2G (scATAC) (BMMC22_CD4_pos_T_activated)	In element (ABC (A=scATAC)) & distance to TSS (PBMC_22_CD4.M)	0.874106644427587	1	FALSE
+scE2G (scATAC) (BMMC22_CD4_pos_T_activated)	In element (ABC (A=scATAC)) & distance to TSS (PBMC_24_CD8.CM)	0.544341722394029	1	FALSE
+scE2G (scATAC) (BMMC22_CD4_pos_T_naive)	scE2G (scATAC) (BMMC22_CD8_pos_T)	0.720086430162092	1	FALSE
+scE2G (scATAC) (BMMC22_CD4_pos_T_naive)	scE2G (scATAC) (BMMC22_CD8_pos_T_naive)	0.810144466579481	1	FALSE
+scE2G (scATAC) (BMMC22_CD4_pos_T_naive)	scE2G (scATAC) (BMMC22_Lymph_prog)	0.594714858643628	1	FALSE
+scE2G (scATAC) (BMMC22_CD4_pos_T_naive)	scE2G (scATAC) (PBMC_20_CD4.N1)	0.507787861888444	1	FALSE
+scE2G (scATAC) (BMMC22_CD4_pos_T_naive)	scE2G (scATAC) (PBMC_22_CD4.M)	0.801300467386264	1	FALSE
+scE2G (scATAC) (BMMC22_CD4_pos_T_naive)	scE2G (scATAC) (PBMC_24_CD8.CM)	0.780530592741957	1	FALSE
+scE2G (scATAC) (BMMC22_CD4_pos_T_naive)	Kendall correlation (access. at E x expr. at G) (BMMC22_CD4_pos_T_activated)	2.53401813948027e-05	0.0187770744135488	TRUE
+scE2G (scATAC) (BMMC22_CD4_pos_T_naive)	Kendall correlation (access. at E x expr. at G) (BMMC22_CD4_pos_T_naive)	5.7000606154859e-06	0.00422374491607505	TRUE
+scE2G (scATAC) (BMMC22_CD4_pos_T_naive)	Kendall correlation (access. at E x expr. at G) (BMMC22_CD8_pos_T)	9.46640234170855e-05	0.0701460413520604	FALSE
+scE2G (scATAC) (BMMC22_CD4_pos_T_naive)	Kendall correlation (access. at E x expr. at G) (BMMC22_CD8_pos_T_naive)	6.35690981407034e-07	0.000471047017222612	TRUE
+scE2G (scATAC) (BMMC22_CD4_pos_T_naive)	Kendall correlation (access. at E x expr. at G) (BMMC22_Lymph_prog)	1.61657238807916e-06	0.00119788013956666	TRUE
+scE2G (scATAC) (BMMC22_CD4_pos_T_naive)	Kendall correlation (access. at E x expr. at G) (PBMC_20_CD4.N1)	1.10732421437021e-06	0.000820527242848323	TRUE
+scE2G (scATAC) (BMMC22_CD4_pos_T_naive)	Kendall correlation (access. at E x expr. at G) (PBMC_22_CD4.M)	1.07792568260753e-05	0.00798742930812182	TRUE
+scE2G (scATAC) (BMMC22_CD4_pos_T_naive)	Kendall correlation (access. at E x expr. at G) (PBMC_24_CD8.CM)	3.7861336438804e-06	0.00280552503011538	TRUE
+scE2G (scATAC) (BMMC22_CD4_pos_T_naive)	ABC (A=scATAC, C=power law) (BMMC22_CD4_pos_T_activated)	0.697119077878398	1	FALSE
+scE2G (scATAC) (BMMC22_CD4_pos_T_naive)	ABC (A=scATAC, C=power law) (BMMC22_CD4_pos_T_naive)	0.717413397485805	1	FALSE
+scE2G (scATAC) (BMMC22_CD4_pos_T_naive)	ABC (A=scATAC, C=power law) (BMMC22_CD8_pos_T)	0.84402399803437	1	FALSE
+scE2G (scATAC) (BMMC22_CD4_pos_T_naive)	ABC (A=scATAC, C=power law) (BMMC22_Lymph_prog)	0.485514221455637	1	FALSE
+scE2G (scATAC) (BMMC22_CD4_pos_T_naive)	ABC (A=scATAC, C=power law) (PBMC_20_CD4.N1)	0.72825231466752	1	FALSE
+scE2G (scATAC) (BMMC22_CD4_pos_T_naive)	ABC (A=scATAC, C=power law) (PBMC_22_CD4.M)	0.870795989935242	1	FALSE
+scE2G (scATAC) (BMMC22_CD4_pos_T_naive)	ABC (A=scATAC, C=power law) (PBMC_24_CD8.CM)	0.776268234706459	1	FALSE
+scE2G (scATAC) (BMMC22_CD4_pos_T_naive)	In element (ABC (A=scATAC)) & distance to TSS (BMMC22_CD4_pos_T_activated)	0.691865836632037	1	FALSE
+scE2G (scATAC) (BMMC22_CD4_pos_T_naive)	In element (ABC (A=scATAC)) & distance to TSS (BMMC22_CD4_pos_T_naive)	0.818681315663931	1	FALSE
+scE2G (scATAC) (BMMC22_CD4_pos_T_naive)	In element (ABC (A=scATAC)) & distance to TSS (BMMC22_CD8_pos_T)	0.957674095566823	1	FALSE
+scE2G (scATAC) (BMMC22_CD4_pos_T_naive)	In element (ABC (A=scATAC)) & distance to TSS (BMMC22_CD8_pos_T_naive)	0.771565108899719	1	FALSE
+scE2G (scATAC) (BMMC22_CD4_pos_T_naive)	In element (ABC (A=scATAC)) & distance to TSS (BMMC22_Lymph_prog)	0.78032357753519	1	FALSE
+scE2G (scATAC) (BMMC22_CD4_pos_T_naive)	In element (ABC (A=scATAC)) & distance to TSS (PBMC_20_CD4.N1)	0.953384235193375	1	FALSE
+scE2G (scATAC) (BMMC22_CD4_pos_T_naive)	In element (ABC (A=scATAC)) & distance to TSS (PBMC_22_CD4.M)	0.975029697054653	1	FALSE
+scE2G (scATAC) (BMMC22_CD4_pos_T_naive)	In element (ABC (A=scATAC)) & distance to TSS (PBMC_24_CD8.CM)	0.677413140530978	1	FALSE
+scE2G (scATAC) (BMMC22_CD8_pos_T)	scE2G (scATAC) (BMMC22_CD8_pos_T_naive)	0.895273236032271	1	FALSE
+scE2G (scATAC) (BMMC22_CD8_pos_T)	scE2G (scATAC) (BMMC22_Lymph_prog)	0.380425330985039	1	FALSE
+scE2G (scATAC) (BMMC22_CD8_pos_T)	scE2G (scATAC) (PBMC_20_CD4.N1)	0.314682878114276	1	FALSE
+scE2G (scATAC) (BMMC22_CD8_pos_T)	scE2G (scATAC) (PBMC_22_CD4.M)	0.541186770937206	1	FALSE
+scE2G (scATAC) (BMMC22_CD8_pos_T)	scE2G (scATAC) (PBMC_24_CD8.CM)	0.929011249557178	1	FALSE
+scE2G (scATAC) (BMMC22_CD8_pos_T)	Kendall correlation (access. at E x expr. at G) (BMMC22_CD4_pos_T_activated)	5.01022972125881e-06	0.00371258022345278	TRUE
+scE2G (scATAC) (BMMC22_CD8_pos_T)	Kendall correlation (access. at E x expr. at G) (BMMC22_CD4_pos_T_naive)	1.06335668463921e-06	0.000787947303317657	TRUE
+scE2G (scATAC) (BMMC22_CD8_pos_T)	Kendall correlation (access. at E x expr. at G) (BMMC22_CD8_pos_T)	2.0656159800404e-05	0.0153062144120993	TRUE
+scE2G (scATAC) (BMMC22_CD8_pos_T)	Kendall correlation (access. at E x expr. at G) (BMMC22_CD8_pos_T_naive)	1.10359691172659e-07	8.17765311589402e-05	TRUE
+scE2G (scATAC) (BMMC22_CD8_pos_T)	Kendall correlation (access. at E x expr. at G) (BMMC22_Lymph_prog)	2.84965501312581e-07	0.000211159436472623	TRUE
+scE2G (scATAC) (BMMC22_CD8_pos_T)	Kendall correlation (access. at E x expr. at G) (PBMC_20_CD4.N1)	1.9908872108612e-07	0.000147524742324815	TRUE
+scE2G (scATAC) (BMMC22_CD8_pos_T)	Kendall correlation (access. at E x expr. at G) (PBMC_22_CD4.M)	2.07228605876149e-06	0.00153556396954226	TRUE
+scE2G (scATAC) (BMMC22_CD8_pos_T)	Kendall correlation (access. at E x expr. at G) (PBMC_24_CD8.CM)	7.05841400006061e-07	0.000523028477404491	TRUE
+scE2G (scATAC) (BMMC22_CD8_pos_T)	ABC (A=scATAC, C=power law) (BMMC22_CD4_pos_T_activated)	0.455426907083224	1	FALSE
+scE2G (scATAC) (BMMC22_CD8_pos_T)	ABC (A=scATAC, C=power law) (BMMC22_CD4_pos_T_naive)	0.47181185517249	1	FALSE
+scE2G (scATAC) (BMMC22_CD8_pos_T)	ABC (A=scATAC, C=power law) (BMMC22_CD8_pos_T)	0.577548019922673	1	FALSE
+scE2G (scATAC) (BMMC22_CD8_pos_T)	ABC (A=scATAC, C=power law) (BMMC22_Lymph_prog)	0.293816611283302	1	FALSE
+scE2G (scATAC) (BMMC22_CD8_pos_T)	ABC (A=scATAC, C=power law) (PBMC_20_CD4.N1)	0.483636175073569	1	FALSE
+scE2G (scATAC) (BMMC22_CD8_pos_T)	ABC (A=scATAC, C=power law) (PBMC_22_CD4.M)	0.600691648069535	1	FALSE
+scE2G (scATAC) (BMMC22_CD8_pos_T)	ABC (A=scATAC, C=power law) (PBMC_24_CD8.CM)	0.933359600540043	1	FALSE
+scE2G (scATAC) (BMMC22_CD8_pos_T)	In element (ABC (A=scATAC)) & distance to TSS (BMMC22_CD4_pos_T_activated)	0.448511441360517	1	FALSE
+scE2G (scATAC) (BMMC22_CD8_pos_T)	In element (ABC (A=scATAC)) & distance to TSS (BMMC22_CD4_pos_T_naive)	0.5558948774707	1	FALSE
+scE2G (scATAC) (BMMC22_CD8_pos_T)	In element (ABC (A=scATAC)) & distance to TSS (BMMC22_CD8_pos_T)	0.677732694722282	1	FALSE
+scE2G (scATAC) (BMMC22_CD8_pos_T)	In element (ABC (A=scATAC)) & distance to TSS (BMMC22_CD8_pos_T_naive)	0.934363275056139	1	FALSE
+scE2G (scATAC) (BMMC22_CD8_pos_T)	In element (ABC (A=scATAC)) & distance to TSS (BMMC22_Lymph_prog)	0.526757345207616	1	FALSE
+scE2G (scATAC) (BMMC22_CD8_pos_T)	In element (ABC (A=scATAC)) & distance to TSS (PBMC_20_CD4.N1)	0.681365653581788	1	FALSE
+scE2G (scATAC) (BMMC22_CD8_pos_T)	In element (ABC (A=scATAC)) & distance to TSS (PBMC_22_CD4.M)	0.693484662903491	1	FALSE
+scE2G (scATAC) (BMMC22_CD8_pos_T)	In element (ABC (A=scATAC)) & distance to TSS (PBMC_24_CD8.CM)	0.954708609322407	1	FALSE
+scE2G (scATAC) (BMMC22_CD8_pos_T_naive)	scE2G (scATAC) (BMMC22_Lymph_prog)	0.433809536666391	1	FALSE
+scE2G (scATAC) (BMMC22_CD8_pos_T_naive)	scE2G (scATAC) (PBMC_20_CD4.N1)	0.359422630046077	1	FALSE
+scE2G (scATAC) (BMMC22_CD8_pos_T_naive)	scE2G (scATAC) (PBMC_22_CD4.M)	0.615136977309444	1	FALSE
+scE2G (scATAC) (BMMC22_CD8_pos_T_naive)	scE2G (scATAC) (PBMC_24_CD8.CM)	0.965923715295855	1	FALSE
+scE2G (scATAC) (BMMC22_CD8_pos_T_naive)	Kendall correlation (access. at E x expr. at G) (BMMC22_CD4_pos_T_activated)	2.23391380528175e-06	0.00165533012971378	TRUE
+scE2G (scATAC) (BMMC22_CD8_pos_T_naive)	Kendall correlation (access. at E x expr. at G) (BMMC22_CD4_pos_T_naive)	4.09637452857397e-07	0.000303541352567331	TRUE
+scE2G (scATAC) (BMMC22_CD8_pos_T_naive)	Kendall correlation (access. at E x expr. at G) (BMMC22_CD8_pos_T)	1.14045025359994e-05	0.00845073637917554	TRUE
+scE2G (scATAC) (BMMC22_CD8_pos_T_naive)	Kendall correlation (access. at E x expr. at G) (BMMC22_CD8_pos_T_naive)	3.44686601438571e-08	2.55412771665981e-05	TRUE
+scE2G (scATAC) (BMMC22_CD8_pos_T_naive)	Kendall correlation (access. at E x expr. at G) (BMMC22_Lymph_prog)	9.30816724103475e-08	6.89735192560675e-05	TRUE
+scE2G (scATAC) (BMMC22_CD8_pos_T_naive)	Kendall correlation (access. at E x expr. at G) (PBMC_20_CD4.N1)	6.94096596815314e-08	5.14325578240147e-05	TRUE
+scE2G (scATAC) (BMMC22_CD8_pos_T_naive)	Kendall correlation (access. at E x expr. at G) (PBMC_22_CD4.M)	8.63865566377313e-07	0.000640124384685589	TRUE
+scE2G (scATAC) (BMMC22_CD8_pos_T_naive)	Kendall correlation (access. at E x expr. at G) (PBMC_24_CD8.CM)	2.72063174008592e-07	0.000201598811940366	TRUE
+scE2G (scATAC) (BMMC22_CD8_pos_T_naive)	ABC (A=scATAC, C=power law) (BMMC22_CD4_pos_T_activated)	0.519419371493097	1	FALSE
+scE2G (scATAC) (BMMC22_CD8_pos_T_naive)	ABC (A=scATAC, C=power law) (BMMC22_CD4_pos_T_naive)	0.53778581677924	1	FALSE
+scE2G (scATAC) (BMMC22_CD8_pos_T_naive)	ABC (A=scATAC, C=power law) (BMMC22_CD8_pos_T)	0.655404727115835	1	FALSE
+scE2G (scATAC) (BMMC22_CD8_pos_T_naive)	ABC (A=scATAC, C=power law) (BMMC22_Lymph_prog)	0.33639349207869	1	FALSE
+scE2G (scATAC) (BMMC22_CD8_pos_T_naive)	ABC (A=scATAC, C=power law) (PBMC_20_CD4.N1)	0.550274719804229	1	FALSE
+scE2G (scATAC) (BMMC22_CD8_pos_T_naive)	ABC (A=scATAC, C=power law) (PBMC_22_CD4.M)	0.680934206109493	1	FALSE
+scE2G (scATAC) (BMMC22_CD8_pos_T_naive)	ABC (A=scATAC, C=power law) (PBMC_24_CD8.CM)	0.961366971083605	1	FALSE
+scE2G (scATAC) (BMMC22_CD8_pos_T_naive)	In element (ABC (A=scATAC)) & distance to TSS (BMMC22_CD4_pos_T_activated)	0.512275709765501	1	FALSE
+scE2G (scATAC) (BMMC22_CD8_pos_T_naive)	In element (ABC (A=scATAC)) & distance to TSS (BMMC22_CD4_pos_T_naive)	0.631448336009625	1	FALSE
+scE2G (scATAC) (BMMC22_CD8_pos_T_naive)	In element (ABC (A=scATAC)) & distance to TSS (BMMC22_CD8_pos_T)	0.765339662667691	1	FALSE
+scE2G (scATAC) (BMMC22_CD8_pos_T_naive)	In element (ABC (A=scATAC)) & distance to TSS (BMMC22_CD8_pos_T_naive)	0.958877121368443	1	FALSE
+scE2G (scATAC) (BMMC22_CD8_pos_T_naive)	In element (ABC (A=scATAC)) & distance to TSS (BMMC22_Lymph_prog)	0.598270588593242	1	FALSE
+scE2G (scATAC) (BMMC22_CD8_pos_T_naive)	In element (ABC (A=scATAC)) & distance to TSS (PBMC_20_CD4.N1)	0.766936475445528	1	FALSE
+scE2G (scATAC) (BMMC22_CD8_pos_T_naive)	In element (ABC (A=scATAC)) & distance to TSS (PBMC_22_CD4.M)	0.782485775841536	1	FALSE
+scE2G (scATAC) (BMMC22_CD8_pos_T_naive)	In element (ABC (A=scATAC)) & distance to TSS (PBMC_24_CD8.CM)	0.84865184160622	1	FALSE
+scE2G (scATAC) (BMMC22_Lymph_prog)	scE2G (scATAC) (PBMC_20_CD4.N1)	0.897886109521861	1	FALSE
+scE2G (scATAC) (BMMC22_Lymph_prog)	scE2G (scATAC) (PBMC_22_CD4.M)	0.770506117833131	1	FALSE
+scE2G (scATAC) (BMMC22_Lymph_prog)	scE2G (scATAC) (PBMC_24_CD8.CM)	0.415848090815255	1	FALSE
+scE2G (scATAC) (BMMC22_Lymph_prog)	Kendall correlation (access. at E x expr. at G) (BMMC22_CD4_pos_T_activated)	0.00061884679392448	0.458565474298039	FALSE
+scE2G (scATAC) (BMMC22_Lymph_prog)	Kendall correlation (access. at E x expr. at G) (BMMC22_CD4_pos_T_naive)	0.000177773522937782	0.131730180496897	FALSE
+scE2G (scATAC) (BMMC22_Lymph_prog)	Kendall correlation (access. at E x expr. at G) (BMMC22_CD8_pos_T)	0.00165878977770532	1	FALSE
+scE2G (scATAC) (BMMC22_Lymph_prog)	Kendall correlation (access. at E x expr. at G) (BMMC22_CD8_pos_T_naive)	2.7650489669481e-05	0.0204890128450854	TRUE
+scE2G (scATAC) (BMMC22_Lymph_prog)	Kendall correlation (access. at E x expr. at G) (BMMC22_Lymph_prog)	6.4160512383492e-05	0.0475429396761676	TRUE
+scE2G (scATAC) (BMMC22_Lymph_prog)	Kendall correlation (access. at E x expr. at G) (PBMC_20_CD4.N1)	4.17195861725474e-05	0.0309142133538577	TRUE
+scE2G (scATAC) (BMMC22_Lymph_prog)	Kendall correlation (access. at E x expr. at G) (PBMC_22_CD4.M)	0.000297769320949792	0.220647066823796	FALSE
+scE2G (scATAC) (BMMC22_Lymph_prog)	Kendall correlation (access. at E x expr. at G) (PBMC_24_CD8.CM)	0.000120464099174853	0.0892638974885659	FALSE
+scE2G (scATAC) (BMMC22_Lymph_prog)	ABC (A=scATAC, C=power law) (BMMC22_CD4_pos_T_activated)	0.875770403077409	1	FALSE
+scE2G (scATAC) (BMMC22_Lymph_prog)	ABC (A=scATAC, C=power law) (BMMC22_CD4_pos_T_naive)	0.854643135396807	1	FALSE
+scE2G (scATAC) (BMMC22_Lymph_prog)	ABC (A=scATAC, C=power law) (BMMC22_CD8_pos_T)	0.729521026925986	1	FALSE
+scE2G (scATAC) (BMMC22_Lymph_prog)	ABC (A=scATAC, C=power law) (BMMC22_Lymph_prog)	0.883087087083962	1	FALSE
+scE2G (scATAC) (BMMC22_Lymph_prog)	ABC (A=scATAC, C=power law) (PBMC_20_CD4.N1)	0.849393775497598	1	FALSE
+scE2G (scATAC) (BMMC22_Lymph_prog)	ABC (A=scATAC, C=power law) (PBMC_22_CD4.M)	0.704445313606671	1	FALSE
+scE2G (scATAC) (BMMC22_Lymph_prog)	ABC (A=scATAC, C=power law) (PBMC_24_CD8.CM)	0.412720418533602	1	FALSE
+scE2G (scATAC) (BMMC22_Lymph_prog)	In element (ABC (A=scATAC)) & distance to TSS (BMMC22_CD4_pos_T_activated)	0.875701354600315	1	FALSE
+scE2G (scATAC) (BMMC22_Lymph_prog)	In element (ABC (A=scATAC)) & distance to TSS (BMMC22_CD4_pos_T_naive)	0.753686227773804	1	FALSE
+scE2G (scATAC) (BMMC22_Lymph_prog)	In element (ABC (A=scATAC)) & distance to TSS (BMMC22_CD8_pos_T)	0.626134829027437	1	FALSE
+scE2G (scATAC) (BMMC22_Lymph_prog)	In element (ABC (A=scATAC)) & distance to TSS (BMMC22_CD8_pos_T_naive)	0.405427090769553	1	FALSE
+scE2G (scATAC) (BMMC22_Lymph_prog)	In element (ABC (A=scATAC)) & distance to TSS (BMMC22_Lymph_prog)	0.796873993448702	1	FALSE
+scE2G (scATAC) (BMMC22_Lymph_prog)	In element (ABC (A=scATAC)) & distance to TSS (PBMC_20_CD4.N1)	0.640847980018628	1	FALSE
+scE2G (scATAC) (BMMC22_Lymph_prog)	In element (ABC (A=scATAC)) & distance to TSS (PBMC_22_CD4.M)	0.61103060346029	1	FALSE
+scE2G (scATAC) (BMMC22_Lymph_prog)	In element (ABC (A=scATAC)) & distance to TSS (PBMC_24_CD8.CM)	0.350351626232991	1	FALSE
+scE2G (scATAC) (PBMC_20_CD4.N1)	scE2G (scATAC) (PBMC_22_CD4.M)	0.671716360773724	1	FALSE
+scE2G (scATAC) (PBMC_20_CD4.N1)	scE2G (scATAC) (PBMC_24_CD8.CM)	0.344288339164321	1	FALSE
+scE2G (scATAC) (PBMC_20_CD4.N1)	Kendall correlation (access. at E x expr. at G) (BMMC22_CD4_pos_T_activated)	0.00112895691482707	0.836557073886862	FALSE
+scE2G (scATAC) (PBMC_20_CD4.N1)	Kendall correlation (access. at E x expr. at G) (BMMC22_CD4_pos_T_naive)	0.000339403882088068	0.251498276627259	FALSE
+scE2G (scATAC) (PBMC_20_CD4.N1)	Kendall correlation (access. at E x expr. at G) (BMMC22_CD8_pos_T)	0.00285797003283918	1	FALSE
+scE2G (scATAC) (PBMC_20_CD4.N1)	Kendall correlation (access. at E x expr. at G) (BMMC22_CD8_pos_T_naive)	5.61113097791141e-05	0.0415784805463235	TRUE
+scE2G (scATAC) (PBMC_20_CD4.N1)	Kendall correlation (access. at E x expr. at G) (BMMC22_Lymph_prog)	0.000127769110051941	0.0946769105484885	FALSE
+scE2G (scATAC) (PBMC_20_CD4.N1)	Kendall correlation (access. at E x expr. at G) (PBMC_20_CD4.N1)	8.27005306533794e-05	0.0612810932141541	FALSE
+scE2G (scATAC) (PBMC_20_CD4.N1)	Kendall correlation (access. at E x expr. at G) (PBMC_22_CD4.M)	0.000556370322642834	0.41227040907834	FALSE
+scE2G (scATAC) (PBMC_20_CD4.N1)	Kendall correlation (access. at E x expr. at G) (PBMC_24_CD8.CM)	0.000231322958824872	0.17141031248923	FALSE
+scE2G (scATAC) (PBMC_20_CD4.N1)	ABC (A=scATAC, C=power law) (BMMC22_CD4_pos_T_activated)	0.773030015041595	1	FALSE
+scE2G (scATAC) (PBMC_20_CD4.N1)	ABC (A=scATAC, C=power law) (BMMC22_CD4_pos_T_naive)	0.752550576644008	1	FALSE
+scE2G (scATAC) (PBMC_20_CD4.N1)	ABC (A=scATAC, C=power law) (BMMC22_CD8_pos_T)	0.632761671563687	1	FALSE
+scE2G (scATAC) (PBMC_20_CD4.N1)	ABC (A=scATAC, C=power law) (BMMC22_Lymph_prog)	0.988050946560402	1	FALSE
+scE2G (scATAC) (PBMC_20_CD4.N1)	ABC (A=scATAC, C=power law) (PBMC_20_CD4.N1)	0.748845449555292	1	FALSE
+scE2G (scATAC) (PBMC_20_CD4.N1)	ABC (A=scATAC, C=power law) (PBMC_22_CD4.M)	0.609065880911836	1	FALSE
+scE2G (scATAC) (PBMC_20_CD4.N1)	ABC (A=scATAC, C=power law) (PBMC_24_CD8.CM)	0.341504758183133	1	FALSE
+scE2G (scATAC) (PBMC_20_CD4.N1)	In element (ABC (A=scATAC)) & distance to TSS (BMMC22_CD4_pos_T_activated)	0.771665504218039	1	FALSE
+scE2G (scATAC) (PBMC_20_CD4.N1)	In element (ABC (A=scATAC)) & distance to TSS (BMMC22_CD4_pos_T_naive)	0.655696095186105	1	FALSE
+scE2G (scATAC) (PBMC_20_CD4.N1)	In element (ABC (A=scATAC)) & distance to TSS (BMMC22_CD8_pos_T)	0.535748421980694	1	FALSE
+scE2G (scATAC) (PBMC_20_CD4.N1)	In element (ABC (A=scATAC)) & distance to TSS (BMMC22_CD8_pos_T_naive)	0.334172159353845	1	FALSE
+scE2G (scATAC) (PBMC_20_CD4.N1)	In element (ABC (A=scATAC)) & distance to TSS (BMMC22_Lymph_prog)	0.698263997412476	1	FALSE
+scE2G (scATAC) (PBMC_20_CD4.N1)	In element (ABC (A=scATAC)) & distance to TSS (PBMC_20_CD4.N1)	0.551946748253728	1	FALSE
+scE2G (scATAC) (PBMC_20_CD4.N1)	In element (ABC (A=scATAC)) & distance to TSS (PBMC_22_CD4.M)	0.521728304715793	1	FALSE
+scE2G (scATAC) (PBMC_20_CD4.N1)	In element (ABC (A=scATAC)) & distance to TSS (PBMC_24_CD8.CM)	0.288127208501436	1	FALSE
+scE2G (scATAC) (PBMC_22_CD4.M)	scE2G (scATAC) (PBMC_24_CD8.CM)	0.590492314121252	1	FALSE
+scE2G (scATAC) (PBMC_22_CD4.M)	Kendall correlation (access. at E x expr. at G) (BMMC22_CD4_pos_T_activated)	6.73453087282605e-05	0.049902873767641	TRUE
+scE2G (scATAC) (PBMC_22_CD4.M)	Kendall correlation (access. at E x expr. at G) (BMMC22_CD4_pos_T_naive)	1.56029421675952e-05	0.0115617801461881	TRUE
+scE2G (scATAC) (PBMC_22_CD4.M)	Kendall correlation (access. at E x expr. at G) (BMMC22_CD8_pos_T)	0.00023871996236849	0.176891492115051	FALSE
+scE2G (scATAC) (PBMC_22_CD4.M)	Kendall correlation (access. at E x expr. at G) (BMMC22_CD8_pos_T_naive)	1.79988015960183e-06	0.00133371119826496	TRUE
+scE2G (scATAC) (PBMC_22_CD4.M)	Kendall correlation (access. at E x expr. at G) (BMMC22_Lymph_prog)	4.54570391480919e-06	0.00336836660087361	TRUE
+scE2G (scATAC) (PBMC_22_CD4.M)	Kendall correlation (access. at E x expr. at G) (PBMC_20_CD4.N1)	3.08559941080041e-06	0.0022864291634031	TRUE
+scE2G (scATAC) (PBMC_22_CD4.M)	Kendall correlation (access. at E x expr. at G) (PBMC_22_CD4.M)	2.90677812384071e-05	0.0215392258976597	TRUE
+scE2G (scATAC) (PBMC_22_CD4.M)	Kendall correlation (access. at E x expr. at G) (PBMC_24_CD8.CM)	1.0368527659444e-05	0.00768307899564801	TRUE
+scE2G (scATAC) (PBMC_22_CD4.M)	ABC (A=scATAC, C=power law) (BMMC22_CD4_pos_T_activated)	0.888992438721665	1	FALSE
+scE2G (scATAC) (PBMC_22_CD4.M)	ABC (A=scATAC, C=power law) (BMMC22_CD4_pos_T_naive)	0.910917208589556	1	FALSE
+scE2G (scATAC) (PBMC_22_CD4.M)	ABC (A=scATAC, C=power law) (BMMC22_CD8_pos_T)	0.95555974206285	1	FALSE
+scE2G (scATAC) (PBMC_22_CD4.M)	ABC (A=scATAC, C=power law) (BMMC22_Lymph_prog)	0.650994825930531	1	FALSE
+scE2G (scATAC) (PBMC_22_CD4.M)	ABC (A=scATAC, C=power law) (PBMC_20_CD4.N1)	0.91973268089561	1	FALSE
+scE2G (scATAC) (PBMC_22_CD4.M)	ABC (A=scATAC, C=power law) (PBMC_22_CD4.M)	0.928023798033399	1	FALSE
+scE2G (scATAC) (PBMC_22_CD4.M)	ABC (A=scATAC, C=power law) (PBMC_24_CD8.CM)	0.586604816349907	1	FALSE
+scE2G (scATAC) (PBMC_22_CD4.M)	In element (ABC (A=scATAC)) & distance to TSS (BMMC22_CD4_pos_T_activated)	0.885921508339944	1	FALSE
+scE2G (scATAC) (PBMC_22_CD4.M)	In element (ABC (A=scATAC)) & distance to TSS (BMMC22_CD4_pos_T_naive)	0.981846362001737	1	FALSE
+scE2G (scATAC) (PBMC_22_CD4.M)	In element (ABC (A=scATAC)) & distance to TSS (BMMC22_CD8_pos_T)	0.840288438413222	1	FALSE
+scE2G (scATAC) (PBMC_22_CD4.M)	In element (ABC (A=scATAC)) & distance to TSS (BMMC22_CD8_pos_T_naive)	0.579850706208185	1	FALSE
+scE2G (scATAC) (PBMC_22_CD4.M)	In element (ABC (A=scATAC)) & distance to TSS (BMMC22_Lymph_prog)	0.975083538177634	1	FALSE
+scE2G (scATAC) (PBMC_22_CD4.M)	In element (ABC (A=scATAC)) & distance to TSS (PBMC_20_CD4.N1)	0.850541967964029	1	FALSE
+scE2G (scATAC) (PBMC_22_CD4.M)	In element (ABC (A=scATAC)) & distance to TSS (PBMC_22_CD4.M)	0.823054661727589	1	FALSE
+scE2G (scATAC) (PBMC_22_CD4.M)	In element (ABC (A=scATAC)) & distance to TSS (PBMC_24_CD8.CM)	0.503193918330377	1	FALSE
+scE2G (scATAC) (PBMC_24_CD8.CM)	Kendall correlation (access. at E x expr. at G) (BMMC22_CD4_pos_T_activated)	2.88395512187244e-06	0.00213701074530748	TRUE
+scE2G (scATAC) (PBMC_24_CD8.CM)	Kendall correlation (access. at E x expr. at G) (BMMC22_CD4_pos_T_naive)	5.54134345350436e-07	0.000410613549904673	TRUE
+scE2G (scATAC) (PBMC_24_CD8.CM)	Kendall correlation (access. at E x expr. at G) (BMMC22_CD8_pos_T)	1.37240576724441e-05	0.0101695267352811	TRUE
+scE2G (scATAC) (PBMC_24_CD8.CM)	Kendall correlation (access. at E x expr. at G) (BMMC22_CD8_pos_T_naive)	4.98534003377015e-08	3.69413696502368e-05	TRUE
+scE2G (scATAC) (PBMC_24_CD8.CM)	Kendall correlation (access. at E x expr. at G) (BMMC22_Lymph_prog)	1.32874066563504e-07	9.84596833235562e-05	TRUE
+scE2G (scATAC) (PBMC_24_CD8.CM)	Kendall correlation (access. at E x expr. at G) (PBMC_20_CD4.N1)	9.67949273280927e-08	7.17250411501167e-05	TRUE
+scE2G (scATAC) (PBMC_24_CD8.CM)	Kendall correlation (access. at E x expr. at G) (PBMC_22_CD4.M)	1.13901438826168e-06	0.000844009661701907	TRUE
+scE2G (scATAC) (PBMC_24_CD8.CM)	Kendall correlation (access. at E x expr. at G) (PBMC_24_CD8.CM)	3.67602276942502e-07	0.000272393287214394	TRUE
+scE2G (scATAC) (PBMC_24_CD8.CM)	ABC (A=scATAC, C=power law) (BMMC22_CD4_pos_T_activated)	0.497960813186728	1	FALSE
+scE2G (scATAC) (PBMC_24_CD8.CM)	ABC (A=scATAC, C=power law) (BMMC22_CD4_pos_T_naive)	0.515689470321811	1	FALSE
+scE2G (scATAC) (PBMC_24_CD8.CM)	ABC (A=scATAC, C=power law) (BMMC22_CD8_pos_T)	0.629524396052246	1	FALSE
+scE2G (scATAC) (PBMC_24_CD8.CM)	ABC (A=scATAC, C=power law) (BMMC22_Lymph_prog)	0.321928680094064	1	FALSE
+scE2G (scATAC) (PBMC_24_CD8.CM)	ABC (A=scATAC, C=power law) (PBMC_20_CD4.N1)	0.527999569402262	1	FALSE
+scE2G (scATAC) (PBMC_24_CD8.CM)	ABC (A=scATAC, C=power law) (PBMC_22_CD4.M)	0.65430378477715	1	FALSE
+scE2G (scATAC) (PBMC_24_CD8.CM)	ABC (A=scATAC, C=power law) (PBMC_24_CD8.CM)	0.995500023080459	1	FALSE
+scE2G (scATAC) (PBMC_24_CD8.CM)	In element (ABC (A=scATAC)) & distance to TSS (BMMC22_CD4_pos_T_activated)	0.490860156971758	1	FALSE
+scE2G (scATAC) (PBMC_24_CD8.CM)	In element (ABC (A=scATAC)) & distance to TSS (BMMC22_CD4_pos_T_naive)	0.606295473833802	1	FALSE
+scE2G (scATAC) (PBMC_24_CD8.CM)	In element (ABC (A=scATAC)) & distance to TSS (BMMC22_CD8_pos_T)	0.736419687929746	1	FALSE
+scE2G (scATAC) (PBMC_24_CD8.CM)	In element (ABC (A=scATAC)) & distance to TSS (BMMC22_CD8_pos_T_naive)	0.993515542861836	1	FALSE
+scE2G (scATAC) (PBMC_24_CD8.CM)	In element (ABC (A=scATAC)) & distance to TSS (BMMC22_Lymph_prog)	0.574439392979092	1	FALSE
+scE2G (scATAC) (PBMC_24_CD8.CM)	In element (ABC (A=scATAC)) & distance to TSS (PBMC_20_CD4.N1)	0.738753092353693	1	FALSE
+scE2G (scATAC) (PBMC_24_CD8.CM)	In element (ABC (A=scATAC)) & distance to TSS (PBMC_22_CD4.M)	0.753137478418111	1	FALSE
+scE2G (scATAC) (PBMC_24_CD8.CM)	In element (ABC (A=scATAC)) & distance to TSS (PBMC_24_CD8.CM)	0.882703695769954	1	FALSE
+Kendall correlation (access. at E x expr. at G) (BMMC22_CD4_pos_T_activated)	Kendall correlation (access. at E x expr. at G) (BMMC22_CD4_pos_T_naive)	0.528332971848323	1	FALSE
+Kendall correlation (access. at E x expr. at G) (BMMC22_CD4_pos_T_activated)	Kendall correlation (access. at E x expr. at G) (BMMC22_CD8_pos_T)	0.743354139279703	1	FALSE
+Kendall correlation (access. at E x expr. at G) (BMMC22_CD4_pos_T_activated)	Kendall correlation (access. at E x expr. at G) (BMMC22_CD8_pos_T_naive)	0.146465166840387	1	FALSE
+Kendall correlation (access. at E x expr. at G) (BMMC22_CD4_pos_T_activated)	Kendall correlation (access. at E x expr. at G) (BMMC22_Lymph_prog)	0.292601978338215	1	FALSE
+Kendall correlation (access. at E x expr. at G) (BMMC22_CD4_pos_T_activated)	Kendall correlation (access. at E x expr. at G) (PBMC_20_CD4.N1)	0.183310217811529	1	FALSE
+Kendall correlation (access. at E x expr. at G) (BMMC22_CD4_pos_T_activated)	Kendall correlation (access. at E x expr. at G) (PBMC_22_CD4.M)	0.684477366765059	1	FALSE
+Kendall correlation (access. at E x expr. at G) (BMMC22_CD4_pos_T_activated)	Kendall correlation (access. at E x expr. at G) (PBMC_24_CD8.CM)	0.388699708728999	1	FALSE
+Kendall correlation (access. at E x expr. at G) (BMMC22_CD4_pos_T_activated)	ABC (A=scATAC, C=power law) (BMMC22_CD4_pos_T_activated)	0.000141458786222291	0.104820960590717	FALSE
+Kendall correlation (access. at E x expr. at G) (BMMC22_CD4_pos_T_activated)	ABC (A=scATAC, C=power law) (BMMC22_CD4_pos_T_naive)	0.000122386079163929	0.0906880846604715	FALSE
+Kendall correlation (access. at E x expr. at G) (BMMC22_CD4_pos_T_activated)	ABC (A=scATAC, C=power law) (BMMC22_CD8_pos_T)	4.96460298749436e-05	0.0367877081373332	TRUE
+Kendall correlation (access. at E x expr. at G) (BMMC22_CD4_pos_T_activated)	ABC (A=scATAC, C=power law) (BMMC22_Lymph_prog)	0.000667724172993511	0.494783612188192	FALSE
+Kendall correlation (access. at E x expr. at G) (BMMC22_CD4_pos_T_activated)	ABC (A=scATAC, C=power law) (PBMC_20_CD4.N1)	0.000168653691762914	0.124972385596319	FALSE
+Kendall correlation (access. at E x expr. at G) (BMMC22_CD4_pos_T_activated)	ABC (A=scATAC, C=power law) (PBMC_22_CD4.M)	4.09804965951068e-05	0.0303665479769741	TRUE
+Kendall correlation (access. at E x expr. at G) (BMMC22_CD4_pos_T_activated)	ABC (A=scATAC, C=power law) (PBMC_24_CD8.CM)	2.78346588349896e-06	0.00206254821967273	TRUE
+Kendall correlation (access. at E x expr. at G) (BMMC22_CD4_pos_T_activated)	In element (ABC (A=scATAC)) & distance to TSS (BMMC22_CD4_pos_T_activated)	9.99993846333739e-05	0.07409954401333	FALSE
+Kendall correlation (access. at E x expr. at G) (BMMC22_CD4_pos_T_activated)	In element (ABC (A=scATAC)) & distance to TSS (BMMC22_CD4_pos_T_naive)	5.94969219062043e-05	0.0440872191324974	TRUE
+Kendall correlation (access. at E x expr. at G) (BMMC22_CD4_pos_T_activated)	In element (ABC (A=scATAC)) & distance to TSS (BMMC22_CD8_pos_T)	2.18428364468452e-05	0.0161855418071123	TRUE
+Kendall correlation (access. at E x expr. at G) (BMMC22_CD4_pos_T_activated)	In element (ABC (A=scATAC)) & distance to TSS (BMMC22_CD8_pos_T_naive)	1.60938546013818e-06	0.00119255462596239	TRUE
+Kendall correlation (access. at E x expr. at G) (BMMC22_CD4_pos_T_activated)	In element (ABC (A=scATAC)) & distance to TSS (BMMC22_Lymph_prog)	0.000117815687685462	0.0873014245749275	FALSE
+Kendall correlation (access. at E x expr. at G) (BMMC22_CD4_pos_T_activated)	In element (ABC (A=scATAC)) & distance to TSS (PBMC_20_CD4.N1)	5.57358616745336e-05	0.0413002735008294	TRUE
+Kendall correlation (access. at E x expr. at G) (BMMC22_CD4_pos_T_activated)	In element (ABC (A=scATAC)) & distance to TSS (PBMC_22_CD4.M)	1.92307746997555e-05	0.0142500040525189	TRUE
+Kendall correlation (access. at E x expr. at G) (BMMC22_CD4_pos_T_activated)	In element (ABC (A=scATAC)) & distance to TSS (PBMC_24_CD8.CM)	3.51377954553028e-06	0.00260371064323794	TRUE
+Kendall correlation (access. at E x expr. at G) (BMMC22_CD4_pos_T_naive)	Kendall correlation (access. at E x expr. at G) (BMMC22_CD8_pos_T)	0.365761807947539	1	FALSE
+Kendall correlation (access. at E x expr. at G) (BMMC22_CD4_pos_T_naive)	Kendall correlation (access. at E x expr. at G) (BMMC22_CD8_pos_T_naive)	0.409900409197006	1	FALSE
+Kendall correlation (access. at E x expr. at G) (BMMC22_CD4_pos_T_naive)	Kendall correlation (access. at E x expr. at G) (BMMC22_Lymph_prog)	0.688401831405779	1	FALSE
+Kendall correlation (access. at E x expr. at G) (BMMC22_CD4_pos_T_naive)	Kendall correlation (access. at E x expr. at G) (PBMC_20_CD4.N1)	0.466177004315055	1	FALSE
+Kendall correlation (access. at E x expr. at G) (BMMC22_CD4_pos_T_naive)	Kendall correlation (access. at E x expr. at G) (PBMC_22_CD4.M)	0.829713604984687	1	FALSE
+Kendall correlation (access. at E x expr. at G) (BMMC22_CD4_pos_T_naive)	Kendall correlation (access. at E x expr. at G) (PBMC_24_CD8.CM)	0.800849452179273	1	FALSE
+Kendall correlation (access. at E x expr. at G) (BMMC22_CD4_pos_T_naive)	ABC (A=scATAC, C=power law) (BMMC22_CD4_pos_T_activated)	3.44417987857975e-05	0.025521372900276	TRUE
+Kendall correlation (access. at E x expr. at G) (BMMC22_CD4_pos_T_naive)	ABC (A=scATAC, C=power law) (BMMC22_CD4_pos_T_naive)	2.95050037036175e-05	0.0218632077443806	TRUE
+Kendall correlation (access. at E x expr. at G) (BMMC22_CD4_pos_T_naive)	ABC (A=scATAC, C=power law) (BMMC22_CD8_pos_T)	1.12779335964472e-05	0.00835694879496741	TRUE
+Kendall correlation (access. at E x expr. at G) (BMMC22_CD4_pos_T_naive)	ABC (A=scATAC, C=power law) (BMMC22_Lymph_prog)	0.000181970309756965	0.134839999529911	FALSE
+Kendall correlation (access. at E x expr. at G) (BMMC22_CD4_pos_T_naive)	ABC (A=scATAC, C=power law) (PBMC_20_CD4.N1)	4.28417251545588e-05	0.0317457183395281	TRUE
+Kendall correlation (access. at E x expr. at G) (BMMC22_CD4_pos_T_naive)	ABC (A=scATAC, C=power law) (PBMC_22_CD4.M)	9.19656529176644e-06	0.00681465488119893	TRUE
+Kendall correlation (access. at E x expr. at G) (BMMC22_CD4_pos_T_naive)	ABC (A=scATAC, C=power law) (PBMC_24_CD8.CM)	5.33798087835522e-07	0.000395544383086122	TRUE
+Kendall correlation (access. at E x expr. at G) (BMMC22_CD4_pos_T_naive)	In element (ABC (A=scATAC)) & distance to TSS (BMMC22_CD4_pos_T_activated)	2.30877846551734e-05	0.0171080484294835	TRUE
+Kendall correlation (access. at E x expr. at G) (BMMC22_CD4_pos_T_naive)	In element (ABC (A=scATAC)) & distance to TSS (BMMC22_CD4_pos_T_naive)	1.36740498516567e-05	0.0101324709400776	TRUE
+Kendall correlation (access. at E x expr. at G) (BMMC22_CD4_pos_T_naive)	In element (ABC (A=scATAC)) & distance to TSS (BMMC22_CD8_pos_T)	4.71432947746946e-06	0.00349331814280487	TRUE
+Kendall correlation (access. at E x expr. at G) (BMMC22_CD4_pos_T_naive)	In element (ABC (A=scATAC)) & distance to TSS (BMMC22_CD8_pos_T_naive)	2.89950475758178e-07	0.00021485330253681	TRUE
+Kendall correlation (access. at E x expr. at G) (BMMC22_CD4_pos_T_naive)	In element (ABC (A=scATAC)) & distance to TSS (BMMC22_Lymph_prog)	2.92125223494164e-05	0.0216464790609176	TRUE
+Kendall correlation (access. at E x expr. at G) (BMMC22_CD4_pos_T_naive)	In element (ABC (A=scATAC)) & distance to TSS (PBMC_20_CD4.N1)	1.36037363615634e-05	0.0100803686439185	TRUE
+Kendall correlation (access. at E x expr. at G) (BMMC22_CD4_pos_T_naive)	In element (ABC (A=scATAC)) & distance to TSS (PBMC_22_CD4.M)	4.11867300227609e-06	0.00305193669468658	TRUE
+Kendall correlation (access. at E x expr. at G) (BMMC22_CD4_pos_T_naive)	In element (ABC (A=scATAC)) & distance to TSS (PBMC_24_CD8.CM)	7.31689920300582e-07	0.000542182230942731	TRUE
+Kendall correlation (access. at E x expr. at G) (BMMC22_CD8_pos_T)	Kendall correlation (access. at E x expr. at G) (BMMC22_CD8_pos_T_naive)	0.0962586006122174	1	FALSE
+Kendall correlation (access. at E x expr. at G) (BMMC22_CD8_pos_T)	Kendall correlation (access. at E x expr. at G) (BMMC22_Lymph_prog)	0.194315305400346	1	FALSE
+Kendall correlation (access. at E x expr. at G) (BMMC22_CD8_pos_T)	Kendall correlation (access. at E x expr. at G) (PBMC_20_CD4.N1)	0.122134864476471	1	FALSE
+Kendall correlation (access. at E x expr. at G) (BMMC22_CD8_pos_T)	Kendall correlation (access. at E x expr. at G) (PBMC_22_CD4.M)	0.486872324892108	1	FALSE
+Kendall correlation (access. at E x expr. at G) (BMMC22_CD8_pos_T)	Kendall correlation (access. at E x expr. at G) (PBMC_24_CD8.CM)	0.266170333314193	1	FALSE
+Kendall correlation (access. at E x expr. at G) (BMMC22_CD8_pos_T)	ABC (A=scATAC, C=power law) (BMMC22_CD4_pos_T_activated)	0.000466661564473552	0.345796219274902	FALSE
+Kendall correlation (access. at E x expr. at G) (BMMC22_CD8_pos_T)	ABC (A=scATAC, C=power law) (BMMC22_CD4_pos_T_naive)	0.000409479518167282	0.303424322961956	FALSE
+Kendall correlation (access. at E x expr. at G) (BMMC22_CD8_pos_T)	ABC (A=scATAC, C=power law) (BMMC22_CD8_pos_T)	0.000181198193122687	0.134267861103911	FALSE
+Kendall correlation (access. at E x expr. at G) (BMMC22_CD8_pos_T)	ABC (A=scATAC, C=power law) (BMMC22_Lymph_prog)	0.00188803438305043	1	FALSE
+Kendall correlation (access. at E x expr. at G) (BMMC22_CD8_pos_T)	ABC (A=scATAC, C=power law) (PBMC_20_CD4.N1)	0.000528398018073834	0.391542931392711	FALSE
+Kendall correlation (access. at E x expr. at G) (BMMC22_CD8_pos_T)	ABC (A=scATAC, C=power law) (PBMC_22_CD4.M)	0.00015233186784071	0.112877914069966	FALSE
+Kendall correlation (access. at E x expr. at G) (BMMC22_CD8_pos_T)	ABC (A=scATAC, C=power law) (PBMC_24_CD8.CM)	1.32887440541788e-05	0.00984695934414648	TRUE
+Kendall correlation (access. at E x expr. at G) (BMMC22_CD8_pos_T)	In element (ABC (A=scATAC)) & distance to TSS (BMMC22_CD4_pos_T_activated)	0.000353388065748319	0.261860556719504	FALSE
+Kendall correlation (access. at E x expr. at G) (BMMC22_CD8_pos_T)	In element (ABC (A=scATAC)) & distance to TSS (BMMC22_CD4_pos_T_naive)	0.000213422867582019	0.158146344878276	FALSE
+Kendall correlation (access. at E x expr. at G) (BMMC22_CD8_pos_T)	In element (ABC (A=scATAC)) & distance to TSS (BMMC22_CD8_pos_T)	8.61760334703508e-05	0.0638564408015299	FALSE
+Kendall correlation (access. at E x expr. at G) (BMMC22_CD8_pos_T)	In element (ABC (A=scATAC)) & distance to TSS (BMMC22_CD8_pos_T_naive)	8.47263265499485e-06	0.00627822079735118	TRUE
+Kendall correlation (access. at E x expr. at G) (BMMC22_CD8_pos_T)	In element (ABC (A=scATAC)) & distance to TSS (BMMC22_Lymph_prog)	0.000381819367899733	0.282928151613702	FALSE
+Kendall correlation (access. at E x expr. at G) (BMMC22_CD8_pos_T)	In element (ABC (A=scATAC)) & distance to TSS (PBMC_20_CD4.N1)	0.000186239112482031	0.138003182349185	FALSE
+Kendall correlation (access. at E x expr. at G) (BMMC22_CD8_pos_T)	In element (ABC (A=scATAC)) & distance to TSS (PBMC_22_CD4.M)	7.67846545572489e-05	0.0568974290269214	FALSE
+Kendall correlation (access. at E x expr. at G) (BMMC22_CD8_pos_T)	In element (ABC (A=scATAC)) & distance to TSS (PBMC_24_CD8.CM)	1.49313607223621e-05	0.0110641382952703	TRUE
+Kendall correlation (access. at E x expr. at G) (BMMC22_CD8_pos_T_naive)	Kendall correlation (access. at E x expr. at G) (BMMC22_Lymph_prog)	0.653774168283714	1	FALSE
+Kendall correlation (access. at E x expr. at G) (BMMC22_CD8_pos_T_naive)	Kendall correlation (access. at E x expr. at G) (PBMC_20_CD4.N1)	0.948687506856505	1	FALSE
+Kendall correlation (access. at E x expr. at G) (BMMC22_CD8_pos_T_naive)	Kendall correlation (access. at E x expr. at G) (PBMC_22_CD4.M)	0.304030372939675	1	FALSE
+Kendall correlation (access. at E x expr. at G) (BMMC22_CD8_pos_T_naive)	Kendall correlation (access. at E x expr. at G) (PBMC_24_CD8.CM)	0.583317699309053	1	FALSE
+Kendall correlation (access. at E x expr. at G) (BMMC22_CD8_pos_T_naive)	ABC (A=scATAC, C=power law) (BMMC22_CD4_pos_T_activated)	4.24440267751354e-06	0.00314510238403753	TRUE
+Kendall correlation (access. at E x expr. at G) (BMMC22_CD8_pos_T_naive)	ABC (A=scATAC, C=power law) (BMMC22_CD4_pos_T_naive)	3.5884833968424e-06	0.00265906619706022	TRUE
+Kendall correlation (access. at E x expr. at G) (BMMC22_CD8_pos_T_naive)	ABC (A=scATAC, C=power law) (BMMC22_CD8_pos_T)	1.26732436109186e-06	0.000939087351569069	TRUE
+Kendall correlation (access. at E x expr. at G) (BMMC22_CD8_pos_T_naive)	ABC (A=scATAC, C=power law) (BMMC22_Lymph_prog)	2.60610961862394e-05	0.0193112722740034	TRUE
+Kendall correlation (access. at E x expr. at G) (BMMC22_CD8_pos_T_naive)	ABC (A=scATAC, C=power law) (PBMC_20_CD4.N1)	5.61875616149467e-06	0.00416349831566755	TRUE
+Kendall correlation (access. at E x expr. at G) (BMMC22_CD8_pos_T_naive)	ABC (A=scATAC, C=power law) (PBMC_22_CD4.M)	1.01681128847555e-06	0.000753457164760382	TRUE
+Kendall correlation (access. at E x expr. at G) (BMMC22_CD8_pos_T_naive)	ABC (A=scATAC, C=power law) (PBMC_24_CD8.CM)	4.79014452285612e-08	3.54949709143639e-05	TRUE
+Kendall correlation (access. at E x expr. at G) (BMMC22_CD8_pos_T_naive)	In element (ABC (A=scATAC)) & distance to TSS (BMMC22_CD4_pos_T_activated)	2.63650998181943e-06	0.0019536538965282	TRUE
+Kendall correlation (access. at E x expr. at G) (BMMC22_CD8_pos_T_naive)	In element (ABC (A=scATAC)) & distance to TSS (BMMC22_CD4_pos_T_naive)	1.56056792834697e-06	0.0011563808349051	TRUE
+Kendall correlation (access. at E x expr. at G) (BMMC22_CD8_pos_T_naive)	In element (ABC (A=scATAC)) & distance to TSS (BMMC22_CD8_pos_T)	4.94903554030726e-07	0.000366723533536768	TRUE
+Kendall correlation (access. at E x expr. at G) (BMMC22_CD8_pos_T_naive)	In element (ABC (A=scATAC)) & distance to TSS (BMMC22_CD8_pos_T_naive)	2.38343013971181e-08	1.76612173352645e-05	TRUE
+Kendall correlation (access. at E x expr. at G) (BMMC22_CD8_pos_T_naive)	In element (ABC (A=scATAC)) & distance to TSS (BMMC22_Lymph_prog)	3.70955430386145e-06	0.00274877973916133	TRUE
+Kendall correlation (access. at E x expr. at G) (BMMC22_CD8_pos_T_naive)	In element (ABC (A=scATAC)) & distance to TSS (PBMC_20_CD4.N1)	1.70137500605999e-06	0.00126071887949045	TRUE
+Kendall correlation (access. at E x expr. at G) (BMMC22_CD8_pos_T_naive)	In element (ABC (A=scATAC)) & distance to TSS (PBMC_22_CD4.M)	4.27963059523528e-07	0.000317120627106934	TRUE
+Kendall correlation (access. at E x expr. at G) (BMMC22_CD8_pos_T_naive)	In element (ABC (A=scATAC)) & distance to TSS (PBMC_24_CD8.CM)	7.40350129077034e-08	5.48599445646082e-05	TRUE
+Kendall correlation (access. at E x expr. at G) (BMMC22_Lymph_prog)	Kendall correlation (access. at E x expr. at G) (PBMC_20_CD4.N1)	0.71499748393565	1	FALSE
+Kendall correlation (access. at E x expr. at G) (BMMC22_Lymph_prog)	Kendall correlation (access. at E x expr. at G) (PBMC_22_CD4.M)	0.537167142186065	1	FALSE
+Kendall correlation (access. at E x expr. at G) (BMMC22_Lymph_prog)	Kendall correlation (access. at E x expr. at G) (PBMC_24_CD8.CM)	0.897661959059891	1	FALSE
+Kendall correlation (access. at E x expr. at G) (BMMC22_Lymph_prog)	ABC (A=scATAC, C=power law) (BMMC22_CD4_pos_T_activated)	1.05430655084281e-05	0.0078124115417452	TRUE
+Kendall correlation (access. at E x expr. at G) (BMMC22_Lymph_prog)	ABC (A=scATAC, C=power law) (BMMC22_CD4_pos_T_naive)	8.94392772265457e-06	0.00662745044248703	TRUE
+Kendall correlation (access. at E x expr. at G) (BMMC22_Lymph_prog)	ABC (A=scATAC, C=power law) (BMMC22_CD8_pos_T)	3.22101594009251e-06	0.00238677281160855	TRUE
+Kendall correlation (access. at E x expr. at G) (BMMC22_Lymph_prog)	ABC (A=scATAC, C=power law) (BMMC22_Lymph_prog)	6.21333316044837e-05	0.0460407987189225	TRUE
+Kendall correlation (access. at E x expr. at G) (BMMC22_Lymph_prog)	ABC (A=scATAC, C=power law) (PBMC_20_CD4.N1)	1.37113268476506e-05	0.0101600931941091	TRUE
+Kendall correlation (access. at E x expr. at G) (BMMC22_Lymph_prog)	ABC (A=scATAC, C=power law) (PBMC_22_CD4.M)	2.59426360406423e-06	0.00192234933061159	TRUE
+Kendall correlation (access. at E x expr. at G) (BMMC22_Lymph_prog)	ABC (A=scATAC, C=power law) (PBMC_24_CD8.CM)	1.27732586177555e-07	9.4649846357568e-05	TRUE
+Kendall correlation (access. at E x expr. at G) (BMMC22_Lymph_prog)	In element (ABC (A=scATAC)) & distance to TSS (BMMC22_CD4_pos_T_activated)	6.6832505174705e-06	0.00495228863344564	TRUE
+Kendall correlation (access. at E x expr. at G) (BMMC22_Lymph_prog)	In element (ABC (A=scATAC)) & distance to TSS (BMMC22_CD4_pos_T_naive)	3.95158287191034e-06	0.00292812290808556	TRUE
+Kendall correlation (access. at E x expr. at G) (BMMC22_Lymph_prog)	In element (ABC (A=scATAC)) & distance to TSS (BMMC22_CD8_pos_T)	1.27779335801313e-06	0.000946844878287726	TRUE
+Kendall correlation (access. at E x expr. at G) (BMMC22_Lymph_prog)	In element (ABC (A=scATAC)) & distance to TSS (BMMC22_CD8_pos_T_naive)	6.46163963750745e-08	4.78807497139302e-05	TRUE
+Kendall correlation (access. at E x expr. at G) (BMMC22_Lymph_prog)	In element (ABC (A=scATAC)) & distance to TSS (BMMC22_Lymph_prog)	9.13090911717379e-06	0.00676600365582578	TRUE
+Kendall correlation (access. at E x expr. at G) (BMMC22_Lymph_prog)	In element (ABC (A=scATAC)) & distance to TSS (PBMC_20_CD4.N1)	4.19917827160429e-06	0.00311159109925878	TRUE
+Kendall correlation (access. at E x expr. at G) (BMMC22_Lymph_prog)	In element (ABC (A=scATAC)) & distance to TSS (PBMC_22_CD4.M)	1.10748341462156e-06	0.000820645210234574	TRUE
+Kendall correlation (access. at E x expr. at G) (BMMC22_Lymph_prog)	In element (ABC (A=scATAC)) & distance to TSS (PBMC_24_CD8.CM)	1.92235526547372e-07	0.000142446525171603	TRUE
+Kendall correlation (access. at E x expr. at G) (PBMC_20_CD4.N1)	Kendall correlation (access. at E x expr. at G) (PBMC_22_CD4.M)	0.354494837283656	1	FALSE
+Kendall correlation (access. at E x expr. at G) (PBMC_20_CD4.N1)	Kendall correlation (access. at E x expr. at G) (PBMC_24_CD8.CM)	0.640771216582113	1	FALSE
+Kendall correlation (access. at E x expr. at G) (PBMC_20_CD4.N1)	ABC (A=scATAC, C=power law) (BMMC22_CD4_pos_T_activated)	7.06007792749235e-06	0.00523151774427183	TRUE
+Kendall correlation (access. at E x expr. at G) (PBMC_20_CD4.N1)	ABC (A=scATAC, C=power law) (BMMC22_CD4_pos_T_naive)	6.00445784716948e-06	0.00444930326475258	TRUE
+Kendall correlation (access. at E x expr. at G) (PBMC_20_CD4.N1)	ABC (A=scATAC, C=power law) (BMMC22_CD8_pos_T)	2.19948493688101e-06	0.00162981833822883	TRUE
+Kendall correlation (access. at E x expr. at G) (PBMC_20_CD4.N1)	ABC (A=scATAC, C=power law) (BMMC22_Lymph_prog)	4.06443461866413e-05	0.0301174605243012	TRUE
+Kendall correlation (access. at E x expr. at G) (PBMC_20_CD4.N1)	ABC (A=scATAC, C=power law) (PBMC_20_CD4.N1)	9.09385618798133e-06	0.00673854743529416	TRUE
+Kendall correlation (access. at E x expr. at G) (PBMC_20_CD4.N1)	ABC (A=scATAC, C=power law) (PBMC_22_CD4.M)	1.77835437809643e-06	0.00131776059416945	TRUE
+Kendall correlation (access. at E x expr. at G) (PBMC_20_CD4.N1)	ABC (A=scATAC, C=power law) (PBMC_24_CD8.CM)	9.31328316909467e-08	6.90114282829915e-05	TRUE
+Kendall correlation (access. at E x expr. at G) (PBMC_20_CD4.N1)	In element (ABC (A=scATAC)) & distance to TSS (BMMC22_CD4_pos_T_activated)	4.5409219814997e-06	0.00336482318829128	TRUE
+Kendall correlation (access. at E x expr. at G) (PBMC_20_CD4.N1)	In element (ABC (A=scATAC)) & distance to TSS (BMMC22_CD4_pos_T_naive)	2.6887513154543e-06	0.00199236472475164	TRUE
+Kendall correlation (access. at E x expr. at G) (PBMC_20_CD4.N1)	In element (ABC (A=scATAC)) & distance to TSS (BMMC22_CD8_pos_T)	8.87571754759764e-07	0.000657690670276985	TRUE
+Kendall correlation (access. at E x expr. at G) (PBMC_20_CD4.N1)	In element (ABC (A=scATAC)) & distance to TSS (BMMC22_CD8_pos_T_naive)	4.86299539042893e-08	3.60347958430784e-05	TRUE
+Kendall correlation (access. at E x expr. at G) (PBMC_20_CD4.N1)	In element (ABC (A=scATAC)) & distance to TSS (BMMC22_Lymph_prog)	6.08902393477885e-06	0.00451196673567112	TRUE
+Kendall correlation (access. at E x expr. at G) (PBMC_20_CD4.N1)	In element (ABC (A=scATAC)) & distance to TSS (PBMC_20_CD4.N1)	2.81170373868688e-06	0.00208347247036698	TRUE
+Kendall correlation (access. at E x expr. at G) (PBMC_20_CD4.N1)	In element (ABC (A=scATAC)) & distance to TSS (PBMC_22_CD4.M)	7.71408723495491e-07	0.000571613864110159	TRUE
+Kendall correlation (access. at E x expr. at G) (PBMC_20_CD4.N1)	In element (ABC (A=scATAC)) & distance to TSS (PBMC_24_CD8.CM)	1.35263123847553e-07	0.000100229974771037	TRUE
+Kendall correlation (access. at E x expr. at G) (PBMC_22_CD4.M)	Kendall correlation (access. at E x expr. at G) (PBMC_24_CD8.CM)	0.647348235410898	1	FALSE
+Kendall correlation (access. at E x expr. at G) (PBMC_22_CD4.M)	ABC (A=scATAC, C=power law) (BMMC22_CD4_pos_T_activated)	6.25742985758702e-05	0.0463675552447198	TRUE
+Kendall correlation (access. at E x expr. at G) (PBMC_22_CD4.M)	ABC (A=scATAC, C=power law) (BMMC22_CD4_pos_T_naive)	5.38718087227781e-05	0.0399190102635786	TRUE
+Kendall correlation (access. at E x expr. at G) (PBMC_22_CD4.M)	ABC (A=scATAC, C=power law) (BMMC22_CD8_pos_T)	2.12229897348257e-05	0.0157262353935058	TRUE
+Kendall correlation (access. at E x expr. at G) (PBMC_22_CD4.M)	ABC (A=scATAC, C=power law) (BMMC22_Lymph_prog)	0.000312744707440786	0.231743828213623	FALSE
+Kendall correlation (access. at E x expr. at G) (PBMC_22_CD4.M)	ABC (A=scATAC, C=power law) (PBMC_20_CD4.N1)	7.6195024297086e-05	0.0564605130041407	FALSE
+Kendall correlation (access. at E x expr. at G) (PBMC_22_CD4.M)	ABC (A=scATAC, C=power law) (PBMC_22_CD4.M)	1.74150024476414e-05	0.0129045168137023	TRUE
+Kendall correlation (access. at E x expr. at G) (PBMC_22_CD4.M)	ABC (A=scATAC, C=power law) (PBMC_24_CD8.CM)	1.0983592674272e-06	0.000813884217163556	TRUE
+Kendall correlation (access. at E x expr. at G) (PBMC_22_CD4.M)	In element (ABC (A=scATAC)) & distance to TSS (BMMC22_CD4_pos_T_activated)	4.30947937597027e-05	0.0319332421759397	TRUE
+Kendall correlation (access. at E x expr. at G) (PBMC_22_CD4.M)	In element (ABC (A=scATAC)) & distance to TSS (BMMC22_CD4_pos_T_naive)	2.55791488352303e-05	0.0189541492869056	TRUE
+Kendall correlation (access. at E x expr. at G) (PBMC_22_CD4.M)	In element (ABC (A=scATAC)) & distance to TSS (BMMC22_CD8_pos_T)	9.10944304059184e-06	0.00675009729307856	TRUE
+Kendall correlation (access. at E x expr. at G) (PBMC_22_CD4.M)	In element (ABC (A=scATAC)) & distance to TSS (BMMC22_CD8_pos_T_naive)	6.174612860884e-07	0.000457538812991505	TRUE
+Kendall correlation (access. at E x expr. at G) (PBMC_22_CD4.M)	In element (ABC (A=scATAC)) & distance to TSS (BMMC22_Lymph_prog)	5.25835068960679e-05	0.0389643786099863	TRUE
+Kendall correlation (access. at E x expr. at G) (PBMC_22_CD4.M)	In element (ABC (A=scATAC)) & distance to TSS (PBMC_20_CD4.N1)	2.46766845517093e-05	0.0182854232528166	TRUE
+Kendall correlation (access. at E x expr. at G) (PBMC_22_CD4.M)	In element (ABC (A=scATAC)) & distance to TSS (PBMC_22_CD4.M)	7.99057757159608e-06	0.00592101798055269	TRUE
+Kendall correlation (access. at E x expr. at G) (PBMC_22_CD4.M)	In element (ABC (A=scATAC)) & distance to TSS (PBMC_24_CD8.CM)	1.44029578302487e-06	0.00106725917522143	TRUE
+Kendall correlation (access. at E x expr. at G) (PBMC_24_CD8.CM)	ABC (A=scATAC, C=power law) (BMMC22_CD4_pos_T_activated)	2.29489112191901e-05	0.0170051432134199	TRUE
+Kendall correlation (access. at E x expr. at G) (PBMC_24_CD8.CM)	ABC (A=scATAC, C=power law) (BMMC22_CD4_pos_T_naive)	1.96475847077067e-05	0.0145588602684106	TRUE
+Kendall correlation (access. at E x expr. at G) (PBMC_24_CD8.CM)	ABC (A=scATAC, C=power law) (BMMC22_CD8_pos_T)	7.48834057179417e-06	0.00554886036369948	TRUE
+Kendall correlation (access. at E x expr. at G) (PBMC_24_CD8.CM)	ABC (A=scATAC, C=power law) (BMMC22_Lymph_prog)	0.000122381040056351	0.0906843506817561	FALSE
+Kendall correlation (access. at E x expr. at G) (PBMC_24_CD8.CM)	ABC (A=scATAC, C=power law) (PBMC_20_CD4.N1)	2.86538525724599e-05	0.0212325047561928	TRUE
+Kendall correlation (access. at E x expr. at G) (PBMC_24_CD8.CM)	ABC (A=scATAC, C=power law) (PBMC_22_CD4.M)	6.10370498515286e-06	0.00452284539399827	TRUE
+Kendall correlation (access. at E x expr. at G) (PBMC_24_CD8.CM)	ABC (A=scATAC, C=power law) (PBMC_24_CD8.CM)	3.54131172343146e-07	0.000262411198706272	TRUE
+Kendall correlation (access. at E x expr. at G) (PBMC_24_CD8.CM)	In element (ABC (A=scATAC)) & distance to TSS (BMMC22_CD4_pos_T_activated)	1.53289158716651e-05	0.0113587266609038	TRUE
+Kendall correlation (access. at E x expr. at G) (PBMC_24_CD8.CM)	In element (ABC (A=scATAC)) & distance to TSS (BMMC22_CD4_pos_T_naive)	9.08354391661244e-06	0.00673090604220982	TRUE
+Kendall correlation (access. at E x expr. at G) (PBMC_24_CD8.CM)	In element (ABC (A=scATAC)) & distance to TSS (BMMC22_CD8_pos_T)	3.12571677021898e-06	0.00231615612673227	TRUE
+Kendall correlation (access. at E x expr. at G) (PBMC_24_CD8.CM)	In element (ABC (A=scATAC)) & distance to TSS (BMMC22_CD8_pos_T_naive)	1.92751171095321e-07	0.000142828617781633	TRUE
+Kendall correlation (access. at E x expr. at G) (PBMC_24_CD8.CM)	In element (ABC (A=scATAC)) & distance to TSS (BMMC22_Lymph_prog)	1.95031988460726e-05	0.0144518703449398	TRUE
+Kendall correlation (access. at E x expr. at G) (PBMC_24_CD8.CM)	In element (ABC (A=scATAC)) & distance to TSS (PBMC_20_CD4.N1)	9.07976972407921e-06	0.00672810936554269	TRUE
+Kendall correlation (access. at E x expr. at G) (PBMC_24_CD8.CM)	In element (ABC (A=scATAC)) & distance to TSS (PBMC_22_CD4.M)	2.73042509223626e-06	0.00202324499334707	TRUE
+Kendall correlation (access. at E x expr. at G) (PBMC_24_CD8.CM)	In element (ABC (A=scATAC)) & distance to TSS (PBMC_24_CD8.CM)	4.85601143187799e-07	0.000359830447102159	TRUE
+ABC (A=scATAC, C=power law) (BMMC22_CD4_pos_T_activated)	ABC (A=scATAC, C=power law) (BMMC22_CD4_pos_T_naive)	0.977903377019927	1	FALSE
+ABC (A=scATAC, C=power law) (BMMC22_CD4_pos_T_activated)	ABC (A=scATAC, C=power law) (BMMC22_CD8_pos_T)	0.845153656304946	1	FALSE
+ABC (A=scATAC, C=power law) (BMMC22_CD4_pos_T_activated)	ABC (A=scATAC, C=power law) (BMMC22_Lymph_prog)	0.754431531674076	1	FALSE
+ABC (A=scATAC, C=power law) (BMMC22_CD4_pos_T_activated)	ABC (A=scATAC, C=power law) (PBMC_20_CD4.N1)	0.970662294716577	1	FALSE
+ABC (A=scATAC, C=power law) (BMMC22_CD4_pos_T_activated)	ABC (A=scATAC, C=power law) (PBMC_22_CD4.M)	0.818161143765199	1	FALSE
+ABC (A=scATAC, C=power law) (BMMC22_CD4_pos_T_activated)	ABC (A=scATAC, C=power law) (PBMC_24_CD8.CM)	0.494390976917614	1	FALSE
+ABC (A=scATAC, C=power law) (BMMC22_CD4_pos_T_activated)	In element (ABC (A=scATAC)) & distance to TSS (BMMC22_CD4_pos_T_activated)	0.998419781126631	1	FALSE
+ABC (A=scATAC, C=power law) (BMMC22_CD4_pos_T_activated)	In element (ABC (A=scATAC)) & distance to TSS (BMMC22_CD4_pos_T_naive)	0.87104329905399	1	FALSE
+ABC (A=scATAC, C=power law) (BMMC22_CD4_pos_T_activated)	In element (ABC (A=scATAC)) & distance to TSS (BMMC22_CD8_pos_T)	0.733025477917568	1	FALSE
+ABC (A=scATAC, C=power law) (BMMC22_CD4_pos_T_activated)	In element (ABC (A=scATAC)) & distance to TSS (BMMC22_CD8_pos_T_naive)	0.486999467232888	1	FALSE
+ABC (A=scATAC, C=power law) (BMMC22_CD4_pos_T_activated)	In element (ABC (A=scATAC)) & distance to TSS (BMMC22_Lymph_prog)	0.915332548627671	1	FALSE
+ABC (A=scATAC, C=power law) (BMMC22_CD4_pos_T_activated)	In element (ABC (A=scATAC)) & distance to TSS (PBMC_20_CD4.N1)	0.746084623743712	1	FALSE
+ABC (A=scATAC, C=power law) (BMMC22_CD4_pos_T_activated)	In element (ABC (A=scATAC)) & distance to TSS (PBMC_22_CD4.M)	0.716457682508673	1	FALSE
+ABC (A=scATAC, C=power law) (BMMC22_CD4_pos_T_activated)	In element (ABC (A=scATAC)) & distance to TSS (PBMC_24_CD8.CM)	0.420905344513666	1	FALSE
+ABC (A=scATAC, C=power law) (BMMC22_CD4_pos_T_naive)	ABC (A=scATAC, C=power law) (BMMC22_CD8_pos_T)	0.866891578202957	1	FALSE
+ABC (A=scATAC, C=power law) (BMMC22_CD4_pos_T_naive)	ABC (A=scATAC, C=power law) (BMMC22_Lymph_prog)	0.733480801837732	1	FALSE
+ABC (A=scATAC, C=power law) (BMMC22_CD4_pos_T_naive)	ABC (A=scATAC, C=power law) (PBMC_20_CD4.N1)	0.992433651539746	1	FALSE
+ABC (A=scATAC, C=power law) (BMMC22_CD4_pos_T_naive)	ABC (A=scATAC, C=power law) (PBMC_22_CD4.M)	0.839750071717826	1	FALSE
+ABC (A=scATAC, C=power law) (BMMC22_CD4_pos_T_naive)	ABC (A=scATAC, C=power law) (PBMC_24_CD8.CM)	0.51205310361318	1	FALSE
+ABC (A=scATAC, C=power law) (BMMC22_CD4_pos_T_naive)	In element (ABC (A=scATAC)) & distance to TSS (BMMC22_CD4_pos_T_activated)	0.976021995936427	1	FALSE
+ABC (A=scATAC, C=power law) (BMMC22_CD4_pos_T_naive)	In element (ABC (A=scATAC)) & distance to TSS (BMMC22_CD4_pos_T_naive)	0.892899779064253	1	FALSE
+ABC (A=scATAC, C=power law) (BMMC22_CD4_pos_T_naive)	In element (ABC (A=scATAC)) & distance to TSS (BMMC22_CD8_pos_T)	0.753972065035112	1	FALSE
+ABC (A=scATAC, C=power law) (BMMC22_CD4_pos_T_naive)	In element (ABC (A=scATAC)) & distance to TSS (BMMC22_CD8_pos_T_naive)	0.504763748914169	1	FALSE
+ABC (A=scATAC, C=power law) (BMMC22_CD4_pos_T_naive)	In element (ABC (A=scATAC)) & distance to TSS (BMMC22_Lymph_prog)	0.937016428435255	1	FALSE
+ABC (A=scATAC, C=power law) (BMMC22_CD4_pos_T_naive)	In element (ABC (A=scATAC)) & distance to TSS (PBMC_20_CD4.N1)	0.766510609410253	1	FALSE
+ABC (A=scATAC, C=power law) (BMMC22_CD4_pos_T_naive)	In element (ABC (A=scATAC)) & distance to TSS (PBMC_22_CD4.M)	0.737248302751624	1	FALSE
+ABC (A=scATAC, C=power law) (BMMC22_CD4_pos_T_naive)	In element (ABC (A=scATAC)) & distance to TSS (PBMC_24_CD8.CM)	0.436576350726128	1	FALSE
+ABC (A=scATAC, C=power law) (BMMC22_CD8_pos_T)	ABC (A=scATAC, C=power law) (BMMC22_Lymph_prog)	0.611378326610502	1	FALSE
+ABC (A=scATAC, C=power law) (BMMC22_CD8_pos_T)	ABC (A=scATAC, C=power law) (PBMC_20_CD4.N1)	0.876280559308878	1	FALSE
+ABC (A=scATAC, C=power law) (BMMC22_CD8_pos_T)	ABC (A=scATAC, C=power law) (PBMC_22_CD4.M)	0.972394669069054	1	FALSE
+ABC (A=scATAC, C=power law) (BMMC22_CD8_pos_T)	ABC (A=scATAC, C=power law) (PBMC_24_CD8.CM)	0.625524141660455	1	FALSE
+ABC (A=scATAC, C=power law) (BMMC22_CD8_pos_T)	In element (ABC (A=scATAC)) & distance to TSS (BMMC22_CD4_pos_T_activated)	0.841516061757006	1	FALSE
+ABC (A=scATAC, C=power law) (BMMC22_CD8_pos_T)	In element (ABC (A=scATAC)) & distance to TSS (BMMC22_CD4_pos_T_naive)	0.973696710306267	1	FALSE
+ABC (A=scATAC, C=power law) (BMMC22_CD8_pos_T)	In element (ABC (A=scATAC)) & distance to TSS (BMMC22_CD8_pos_T)	0.884080759701769	1	FALSE
+ABC (A=scATAC, C=power law) (BMMC22_CD8_pos_T)	In element (ABC (A=scATAC)) & distance to TSS (BMMC22_CD8_pos_T_naive)	0.619107975983299	1	FALSE
+ABC (A=scATAC, C=power law) (BMMC22_CD8_pos_T)	In element (ABC (A=scATAC)) & distance to TSS (BMMC22_Lymph_prog)	0.931348181075953	1	FALSE
+ABC (A=scATAC, C=power law) (BMMC22_CD8_pos_T)	In element (ABC (A=scATAC)) & distance to TSS (PBMC_20_CD4.N1)	0.893104260164385	1	FALSE
+ABC (A=scATAC, C=power law) (BMMC22_CD8_pos_T)	In element (ABC (A=scATAC)) & distance to TSS (PBMC_22_CD4.M)	0.866668683337906	1	FALSE
+ABC (A=scATAC, C=power law) (BMMC22_CD8_pos_T)	In element (ABC (A=scATAC)) & distance to TSS (PBMC_24_CD8.CM)	0.538275165279615	1	FALSE
+ABC (A=scATAC, C=power law) (BMMC22_Lymph_prog)	ABC (A=scATAC, C=power law) (PBMC_20_CD4.N1)	0.730073997862687	1	FALSE
+ABC (A=scATAC, C=power law) (BMMC22_Lymph_prog)	ABC (A=scATAC, C=power law) (PBMC_22_CD4.M)	0.587328119067513	1	FALSE
+ABC (A=scATAC, C=power law) (BMMC22_Lymph_prog)	ABC (A=scATAC, C=power law) (PBMC_24_CD8.CM)	0.319181078352767	1	FALSE
+ABC (A=scATAC, C=power law) (BMMC22_Lymph_prog)	In element (ABC (A=scATAC)) & distance to TSS (BMMC22_CD4_pos_T_activated)	0.752689663603651	1	FALSE
+ABC (A=scATAC, C=power law) (BMMC22_Lymph_prog)	In element (ABC (A=scATAC)) & distance to TSS (BMMC22_CD4_pos_T_naive)	0.634690933911154	1	FALSE
+ABC (A=scATAC, C=power law) (BMMC22_Lymph_prog)	In element (ABC (A=scATAC)) & distance to TSS (BMMC22_CD8_pos_T)	0.513173086711633	1	FALSE
+ABC (A=scATAC, C=power law) (BMMC22_Lymph_prog)	In element (ABC (A=scATAC)) & distance to TSS (BMMC22_CD8_pos_T_naive)	0.311459665376464	1	FALSE
+ABC (A=scATAC, C=power law) (BMMC22_Lymph_prog)	In element (ABC (A=scATAC)) & distance to TSS (BMMC22_Lymph_prog)	0.678460951725518	1	FALSE
+ABC (A=scATAC, C=power law) (BMMC22_Lymph_prog)	In element (ABC (A=scATAC)) & distance to TSS (PBMC_20_CD4.N1)	0.530531100935987	1	FALSE
+ABC (A=scATAC, C=power law) (BMMC22_Lymph_prog)	In element (ABC (A=scATAC)) & distance to TSS (PBMC_22_CD4.M)	0.499041809702324	1	FALSE
+ABC (A=scATAC, C=power law) (BMMC22_Lymph_prog)	In element (ABC (A=scATAC)) & distance to TSS (PBMC_24_CD8.CM)	0.267758660966486	1	FALSE
+ABC (A=scATAC, C=power law) (PBMC_20_CD4.N1)	ABC (A=scATAC, C=power law) (PBMC_22_CD4.M)	0.849475684811801	1	FALSE
+ABC (A=scATAC, C=power law) (PBMC_20_CD4.N1)	ABC (A=scATAC, C=power law) (PBMC_24_CD8.CM)	0.5243720845447	1	FALSE
+ABC (A=scATAC, C=power law) (PBMC_20_CD4.N1)	In element (ABC (A=scATAC)) & distance to TSS (BMMC22_CD4_pos_T_activated)	0.968717975469013	1	FALSE
+ABC (A=scATAC, C=power law) (PBMC_20_CD4.N1)	In element (ABC (A=scATAC)) & distance to TSS (BMMC22_CD4_pos_T_naive)	0.901953861046835	1	FALSE
+ABC (A=scATAC, C=power law) (PBMC_20_CD4.N1)	In element (ABC (A=scATAC)) & distance to TSS (BMMC22_CD8_pos_T)	0.764663499634688	1	FALSE
+ABC (A=scATAC, C=power law) (PBMC_20_CD4.N1)	In element (ABC (A=scATAC)) & distance to TSS (BMMC22_CD8_pos_T_naive)	0.517349065550511	1	FALSE
+ABC (A=scATAC, C=power law) (PBMC_20_CD4.N1)	In element (ABC (A=scATAC)) & distance to TSS (BMMC22_Lymph_prog)	0.945344691956029	1	FALSE
+ABC (A=scATAC, C=power law) (PBMC_20_CD4.N1)	In element (ABC (A=scATAC)) & distance to TSS (PBMC_20_CD4.N1)	0.7766660531706	1	FALSE
+ABC (A=scATAC, C=power law) (PBMC_20_CD4.N1)	In element (ABC (A=scATAC)) & distance to TSS (PBMC_22_CD4.M)	0.74810862775786	1	FALSE
+ABC (A=scATAC, C=power law) (PBMC_20_CD4.N1)	In element (ABC (A=scATAC)) & distance to TSS (PBMC_24_CD8.CM)	0.448380046696546	1	FALSE
+ABC (A=scATAC, C=power law) (PBMC_22_CD4.M)	ABC (A=scATAC, C=power law) (PBMC_24_CD8.CM)	0.650238229889787	1	FALSE
+ABC (A=scATAC, C=power law) (PBMC_22_CD4.M)	In element (ABC (A=scATAC)) & distance to TSS (BMMC22_CD4_pos_T_activated)	0.814183520847744	1	FALSE
+ABC (A=scATAC, C=power law) (PBMC_22_CD4.M)	In element (ABC (A=scATAC)) & distance to TSS (BMMC22_CD4_pos_T_naive)	0.946122114233989	1	FALSE
+ABC (A=scATAC, C=power law) (PBMC_22_CD4.M)	In element (ABC (A=scATAC)) & distance to TSS (BMMC22_CD8_pos_T)	0.911463250012748	1	FALSE
+ABC (A=scATAC, C=power law) (PBMC_22_CD4.M)	In element (ABC (A=scATAC)) & distance to TSS (BMMC22_CD8_pos_T_naive)	0.644054716825483	1	FALSE
+ABC (A=scATAC, C=power law) (PBMC_22_CD4.M)	In element (ABC (A=scATAC)) & distance to TSS (BMMC22_Lymph_prog)	0.904284932474813	1	FALSE
+ABC (A=scATAC, C=power law) (PBMC_22_CD4.M)	In element (ABC (A=scATAC)) & distance to TSS (PBMC_20_CD4.N1)	0.919698573002866	1	FALSE
+ABC (A=scATAC, C=power law) (PBMC_22_CD4.M)	In element (ABC (A=scATAC)) & distance to TSS (PBMC_22_CD4.M)	0.893966892376554	1	FALSE
+ABC (A=scATAC, C=power law) (PBMC_22_CD4.M)	In element (ABC (A=scATAC)) & distance to TSS (PBMC_24_CD8.CM)	0.56066120742091	1	FALSE
+ABC (A=scATAC, C=power law) (PBMC_24_CD8.CM)	In element (ABC (A=scATAC)) & distance to TSS (BMMC22_CD4_pos_T_activated)	0.487269444970597	1	FALSE
+ABC (A=scATAC, C=power law) (PBMC_24_CD8.CM)	In element (ABC (A=scATAC)) & distance to TSS (BMMC22_CD4_pos_T_naive)	0.602360848750758	1	FALSE
+ABC (A=scATAC, C=power law) (PBMC_24_CD8.CM)	In element (ABC (A=scATAC)) & distance to TSS (BMMC22_CD8_pos_T)	0.732171581134621	1	FALSE
+ABC (A=scATAC, C=power law) (PBMC_24_CD8.CM)	In element (ABC (A=scATAC)) & distance to TSS (BMMC22_CD8_pos_T_naive)	0.998076960194136	1	FALSE
+ABC (A=scATAC, C=power law) (PBMC_24_CD8.CM)	In element (ABC (A=scATAC)) & distance to TSS (BMMC22_Lymph_prog)	0.570657602727127	1	FALSE
+ABC (A=scATAC, C=power law) (PBMC_24_CD8.CM)	In element (ABC (A=scATAC)) & distance to TSS (PBMC_20_CD4.N1)	0.734628370944903	1	FALSE
+ABC (A=scATAC, C=power law) (PBMC_24_CD8.CM)	In element (ABC (A=scATAC)) & distance to TSS (PBMC_22_CD4.M)	0.748858440095737	1	FALSE
+ABC (A=scATAC, C=power law) (PBMC_24_CD8.CM)	In element (ABC (A=scATAC)) & distance to TSS (PBMC_24_CD8.CM)	0.887022765969876	1	FALSE
+In element (ABC (A=scATAC)) & distance to TSS (BMMC22_CD4_pos_T_activated)	In element (ABC (A=scATAC)) & distance to TSS (BMMC22_CD4_pos_T_naive)	0.867738391907178	1	FALSE
+In element (ABC (A=scATAC)) & distance to TSS (BMMC22_CD4_pos_T_activated)	In element (ABC (A=scATAC)) & distance to TSS (BMMC22_CD8_pos_T)	0.728031923350932	1	FALSE
+In element (ABC (A=scATAC)) & distance to TSS (BMMC22_CD4_pos_T_activated)	In element (ABC (A=scATAC)) & distance to TSS (BMMC22_CD8_pos_T_naive)	0.479652907562592	1	FALSE
+In element (ABC (A=scATAC)) & distance to TSS (BMMC22_CD4_pos_T_activated)	In element (ABC (A=scATAC)) & distance to TSS (BMMC22_Lymph_prog)	0.912666699209484	1	FALSE
+In element (ABC (A=scATAC)) & distance to TSS (BMMC22_CD4_pos_T_activated)	In element (ABC (A=scATAC)) & distance to TSS (PBMC_20_CD4.N1)	0.741488708894473	1	FALSE
+In element (ABC (A=scATAC)) & distance to TSS (BMMC22_CD4_pos_T_activated)	In element (ABC (A=scATAC)) & distance to TSS (PBMC_22_CD4.M)	0.711278282793113	1	FALSE
+In element (ABC (A=scATAC)) & distance to TSS (BMMC22_CD4_pos_T_activated)	In element (ABC (A=scATAC)) & distance to TSS (PBMC_24_CD8.CM)	0.41386974828357	1	FALSE
+In element (ABC (A=scATAC)) & distance to TSS (BMMC22_CD4_pos_T_naive)	In element (ABC (A=scATAC)) & distance to TSS (BMMC22_CD8_pos_T)	0.858118007942485	1	FALSE
+In element (ABC (A=scATAC)) & distance to TSS (BMMC22_CD4_pos_T_naive)	In element (ABC (A=scATAC)) & distance to TSS (BMMC22_CD8_pos_T_naive)	0.595739151251075	1	FALSE
+In element (ABC (A=scATAC)) & distance to TSS (BMMC22_CD4_pos_T_naive)	In element (ABC (A=scATAC)) & distance to TSS (BMMC22_Lymph_prog)	0.957209009572705	1	FALSE
+In element (ABC (A=scATAC)) & distance to TSS (BMMC22_CD4_pos_T_naive)	In element (ABC (A=scATAC)) & distance to TSS (PBMC_20_CD4.N1)	0.867875672986132	1	FALSE
+In element (ABC (A=scATAC)) & distance to TSS (BMMC22_CD4_pos_T_naive)	In element (ABC (A=scATAC)) & distance to TSS (PBMC_22_CD4.M)	0.840805156574764	1	FALSE
+In element (ABC (A=scATAC)) & distance to TSS (BMMC22_CD4_pos_T_naive)	In element (ABC (A=scATAC)) & distance to TSS (PBMC_24_CD8.CM)	0.517370905020405	1	FALSE
+In element (ABC (A=scATAC)) & distance to TSS (BMMC22_CD8_pos_T)	In element (ABC (A=scATAC)) & distance to TSS (BMMC22_CD8_pos_T_naive)	0.726845520599001	1	FALSE
+In element (ABC (A=scATAC)) & distance to TSS (BMMC22_CD8_pos_T)	In element (ABC (A=scATAC)) & distance to TSS (BMMC22_Lymph_prog)	0.818227580751529	1	FALSE
+In element (ABC (A=scATAC)) & distance to TSS (BMMC22_CD8_pos_T)	In element (ABC (A=scATAC)) & distance to TSS (PBMC_20_CD4.N1)	0.994387690087701	1	FALSE
+In element (ABC (A=scATAC)) & distance to TSS (BMMC22_CD8_pos_T)	In element (ABC (A=scATAC)) & distance to TSS (PBMC_22_CD4.M)	0.982373512329294	1	FALSE
+In element (ABC (A=scATAC)) & distance to TSS (BMMC22_CD8_pos_T)	In element (ABC (A=scATAC)) & distance to TSS (PBMC_24_CD8.CM)	0.635490888280287	1	FALSE
+In element (ABC (A=scATAC)) & distance to TSS (BMMC22_CD8_pos_T_naive)	In element (ABC (A=scATAC)) & distance to TSS (BMMC22_Lymph_prog)	0.563954487116989	1	FALSE
+In element (ABC (A=scATAC)) & distance to TSS (BMMC22_CD8_pos_T_naive)	In element (ABC (A=scATAC)) & distance to TSS (PBMC_20_CD4.N1)	0.729596072417213	1	FALSE
+In element (ABC (A=scATAC)) & distance to TSS (BMMC22_CD8_pos_T_naive)	In element (ABC (A=scATAC)) & distance to TSS (PBMC_22_CD4.M)	0.743721169487297	1	FALSE
+In element (ABC (A=scATAC)) & distance to TSS (BMMC22_CD8_pos_T_naive)	In element (ABC (A=scATAC)) & distance to TSS (PBMC_24_CD8.CM)	0.887427068659426	1	FALSE
+In element (ABC (A=scATAC)) & distance to TSS (BMMC22_Lymph_prog)	In element (ABC (A=scATAC)) & distance to TSS (PBMC_20_CD4.N1)	0.828860201559043	1	FALSE
+In element (ABC (A=scATAC)) & distance to TSS (BMMC22_Lymph_prog)	In element (ABC (A=scATAC)) & distance to TSS (PBMC_22_CD4.M)	0.801352537742477	1	FALSE
+In element (ABC (A=scATAC)) & distance to TSS (BMMC22_Lymph_prog)	In element (ABC (A=scATAC)) & distance to TSS (PBMC_24_CD8.CM)	0.489806894105294	1	FALSE
+In element (ABC (A=scATAC)) & distance to TSS (PBMC_20_CD4.N1)	In element (ABC (A=scATAC)) & distance to TSS (PBMC_22_CD4.M)	0.977293176786976	1	FALSE
+In element (ABC (A=scATAC)) & distance to TSS (PBMC_20_CD4.N1)	In element (ABC (A=scATAC)) & distance to TSS (PBMC_24_CD8.CM)	0.640217242414338	1	FALSE
+In element (ABC (A=scATAC)) & distance to TSS (PBMC_22_CD4.M)	In element (ABC (A=scATAC)) & distance to TSS (PBMC_24_CD8.CM)	0.650848214376137	1	FALSE

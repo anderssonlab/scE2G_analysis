@@ -1,0 +1,137 @@
+group1	group2	p	p_adjust	significant
+scE2G (Multiome) (BMMC22_CD14_pos_Mono)	scE2G (Multiome) (PBMC_11_CD14.Mono.1)	0.655293007281941	1	FALSE
+scE2G (Multiome) (BMMC22_CD14_pos_Mono)	scE2G (Multiome) (PBMC_12_CD14.Mono.2)	0.581387702107572	1	FALSE
+scE2G (Multiome) (BMMC22_CD14_pos_Mono)	scE2G (scATAC) (BMMC22_CD14_pos_Mono)	0.726708939013508	1	FALSE
+scE2G (Multiome) (BMMC22_CD14_pos_Mono)	scE2G (scATAC) (PBMC_11_CD14.Mono.1)	0.951725608588412	1	FALSE
+scE2G (Multiome) (BMMC22_CD14_pos_Mono)	Kendall correlation (access. at E x expr. at G) (BMMC22_CD14_pos_Mono)	0.00996211622225352	1	FALSE
+scE2G (Multiome) (BMMC22_CD14_pos_Mono)	Kendall correlation (access. at E x expr. at G) (PBMC_11_CD14.Mono.1)	0.0542852578392135	1	FALSE
+scE2G (Multiome) (BMMC22_CD14_pos_Mono)	ABC (A=scATAC, C=power law) (BMMC22_CD14_pos_Mono)	0.633299178840645	1	FALSE
+scE2G (Multiome) (BMMC22_CD14_pos_Mono)	ABC (A=scATAC, C=power law) (PBMC_11_CD14.Mono.1)	0.918461260286076	1	FALSE
+scE2G (Multiome) (BMMC22_CD14_pos_Mono)	ABC (A=scATAC, C=power law) (PBMC_12_CD14.Mono.2)	0.789484919715889	1	FALSE
+scE2G (Multiome) (BMMC22_CD14_pos_Mono)	In element (ABC (A=scATAC)) & distance to TSS (BMMC22_CD14_pos_Mono)	0.377776814630382	1	FALSE
+scE2G (Multiome) (BMMC22_CD14_pos_Mono)	In element (ABC (A=scATAC)) & distance to TSS (PBMC_11_CD14.Mono.1)	0.526940974767694	1	FALSE
+scE2G (Multiome) (BMMC22_CD14_pos_Mono)	In element (ABC (A=scATAC)) & distance to TSS (PBMC_12_CD14.Mono.2)	0.427947104529677	1	FALSE
+scE2G (Multiome) (BMMC22_CD14_pos_Mono)	SnapATAC (p-value) (BMMC22_CD14_pos_Mono)	0.286524963601978	1	FALSE
+scE2G (Multiome) (BMMC22_CD14_pos_Mono)	FigR (p-value) (BMMC22_CD14_pos_Mono)	0.286524963601978	1	FALSE
+scE2G (Multiome) (BMMC22_CD14_pos_Mono)	SCENIC+ (importance) (BMMC22_CD14_pos_Mono)	0.284915685421298	1	FALSE
+scE2G (Multiome) (BMMC22_CD14_pos_Mono)	ArchR (high-confidence) (BMMC22_CD14_pos_Mono)	0.286524963601978	1	FALSE
+scE2G (Multiome) (PBMC_11_CD14.Mono.1)	scE2G (Multiome) (PBMC_12_CD14.Mono.2)	0.916425128097734	1	FALSE
+scE2G (Multiome) (PBMC_11_CD14.Mono.1)	scE2G (scATAC) (BMMC22_CD14_pos_Mono)	0.426074429838627	1	FALSE
+scE2G (Multiome) (PBMC_11_CD14.Mono.1)	scE2G (scATAC) (PBMC_11_CD14.Mono.1)	0.699584535445385	1	FALSE
+scE2G (Multiome) (PBMC_11_CD14.Mono.1)	Kendall correlation (access. at E x expr. at G) (BMMC22_CD14_pos_Mono)	0.00159968241545828	0.217556808502326	FALSE
+scE2G (Multiome) (PBMC_11_CD14.Mono.1)	Kendall correlation (access. at E x expr. at G) (PBMC_11_CD14.Mono.1)	0.012752034304203	1	FALSE
+scE2G (Multiome) (PBMC_11_CD14.Mono.1)	ABC (A=scATAC, C=power law) (BMMC22_CD14_pos_Mono)	0.35574238529451	1	FALSE
+scE2G (Multiome) (PBMC_11_CD14.Mono.1)	ABC (A=scATAC, C=power law) (PBMC_11_CD14.Mono.1)	0.583147361161705	1	FALSE
+scE2G (Multiome) (PBMC_11_CD14.Mono.1)	ABC (A=scATAC, C=power law) (PBMC_12_CD14.Mono.2)	0.475598177350194	1	FALSE
+scE2G (Multiome) (PBMC_11_CD14.Mono.1)	In element (ABC (A=scATAC)) & distance to TSS (BMMC22_CD14_pos_Mono)	0.184040081754218	1	FALSE
+scE2G (Multiome) (PBMC_11_CD14.Mono.1)	In element (ABC (A=scATAC)) & distance to TSS (PBMC_11_CD14.Mono.1)	0.293142725805842	1	FALSE
+scE2G (Multiome) (PBMC_11_CD14.Mono.1)	In element (ABC (A=scATAC)) & distance to TSS (PBMC_12_CD14.Mono.2)	0.225788536279595	1	FALSE
+scE2G (Multiome) (PBMC_11_CD14.Mono.1)	SnapATAC (p-value) (BMMC22_CD14_pos_Mono)	0.147716757386787	1	FALSE
+scE2G (Multiome) (PBMC_11_CD14.Mono.1)	FigR (p-value) (BMMC22_CD14_pos_Mono)	0.147716757386787	1	FALSE
+scE2G (Multiome) (PBMC_11_CD14.Mono.1)	SCENIC+ (importance) (BMMC22_CD14_pos_Mono)	0.146721538195182	1	FALSE
+scE2G (Multiome) (PBMC_11_CD14.Mono.1)	ArchR (high-confidence) (BMMC22_CD14_pos_Mono)	0.147716757386787	1	FALSE
+scE2G (Multiome) (PBMC_12_CD14.Mono.2)	scE2G (scATAC) (BMMC22_CD14_pos_Mono)	0.367660460896057	1	FALSE
+scE2G (Multiome) (PBMC_12_CD14.Mono.2)	scE2G (scATAC) (PBMC_11_CD14.Mono.1)	0.623554442123655	1	FALSE
+scE2G (Multiome) (PBMC_12_CD14.Mono.2)	Kendall correlation (access. at E x expr. at G) (BMMC22_CD14_pos_Mono)	0.000994699646250685	0.135279151890093	FALSE
+scE2G (Multiome) (PBMC_12_CD14.Mono.2)	Kendall correlation (access. at E x expr. at G) (PBMC_11_CD14.Mono.1)	0.00869856139886346	1	FALSE
+scE2G (Multiome) (PBMC_12_CD14.Mono.2)	ABC (A=scATAC, C=power law) (BMMC22_CD14_pos_Mono)	0.3037403737799	1	FALSE
+scE2G (Multiome) (PBMC_12_CD14.Mono.2)	ABC (A=scATAC, C=power law) (PBMC_11_CD14.Mono.1)	0.513285279672187	1	FALSE
+scE2G (Multiome) (PBMC_12_CD14.Mono.2)	ABC (A=scATAC, C=power law) (PBMC_12_CD14.Mono.2)	0.413164488593293	1	FALSE
+scE2G (Multiome) (PBMC_12_CD14.Mono.2)	In element (ABC (A=scATAC)) & distance to TSS (BMMC22_CD14_pos_Mono)	0.151756594271131	1	FALSE
+scE2G (Multiome) (PBMC_12_CD14.Mono.2)	In element (ABC (A=scATAC)) & distance to TSS (PBMC_11_CD14.Mono.1)	0.250290943607087	1	FALSE
+scE2G (Multiome) (PBMC_12_CD14.Mono.2)	In element (ABC (A=scATAC)) & distance to TSS (PBMC_12_CD14.Mono.2)	0.190307691504155	1	FALSE
+scE2G (Multiome) (PBMC_12_CD14.Mono.2)	SnapATAC (p-value) (BMMC22_CD14_pos_Mono)	0.124193669555896	1	FALSE
+scE2G (Multiome) (PBMC_12_CD14.Mono.2)	FigR (p-value) (BMMC22_CD14_pos_Mono)	0.124193669555896	1	FALSE
+scE2G (Multiome) (PBMC_12_CD14.Mono.2)	SCENIC+ (importance) (BMMC22_CD14_pos_Mono)	0.123323377931083	1	FALSE
+scE2G (Multiome) (PBMC_12_CD14.Mono.2)	ArchR (high-confidence) (BMMC22_CD14_pos_Mono)	0.124193669555896	1	FALSE
+scE2G (scATAC) (BMMC22_CD14_pos_Mono)	scE2G (scATAC) (PBMC_11_CD14.Mono.1)	0.681771774273049	1	FALSE
+scE2G (scATAC) (BMMC22_CD14_pos_Mono)	Kendall correlation (access. at E x expr. at G) (BMMC22_CD14_pos_Mono)	0.0336733058986703	1	FALSE
+scE2G (scATAC) (BMMC22_CD14_pos_Mono)	Kendall correlation (access. at E x expr. at G) (PBMC_11_CD14.Mono.1)	0.138509552073381	1	FALSE
+scE2G (scATAC) (BMMC22_CD14_pos_Mono)	ABC (A=scATAC, C=power law) (BMMC22_CD14_pos_Mono)	0.898479925147887	1	FALSE
+scE2G (scATAC) (BMMC22_CD14_pos_Mono)	ABC (A=scATAC, C=power law) (PBMC_11_CD14.Mono.1)	0.804804078339457	1	FALSE
+scE2G (scATAC) (BMMC22_CD14_pos_Mono)	ABC (A=scATAC, C=power law) (PBMC_12_CD14.Mono.2)	0.93422747628115	1	FALSE
+scE2G (scATAC) (BMMC22_CD14_pos_Mono)	In element (ABC (A=scATAC)) & distance to TSS (BMMC22_CD14_pos_Mono)	0.594383789550168	1	FALSE
+scE2G (scATAC) (BMMC22_CD14_pos_Mono)	In element (ABC (A=scATAC)) & distance to TSS (PBMC_11_CD14.Mono.1)	0.760380911805945	1	FALSE
+scE2G (scATAC) (BMMC22_CD14_pos_Mono)	In element (ABC (A=scATAC)) & distance to TSS (PBMC_12_CD14.Mono.2)	0.641926032588327	1	FALSE
+scE2G (scATAC) (BMMC22_CD14_pos_Mono)	SnapATAC (p-value) (BMMC22_CD14_pos_Mono)	0.443195299875871	1	FALSE
+scE2G (scATAC) (BMMC22_CD14_pos_Mono)	FigR (p-value) (BMMC22_CD14_pos_Mono)	0.443195299875871	1	FALSE
+scE2G (scATAC) (BMMC22_CD14_pos_Mono)	SCENIC+ (importance) (BMMC22_CD14_pos_Mono)	0.441077751235018	1	FALSE
+scE2G (scATAC) (BMMC22_CD14_pos_Mono)	ArchR (high-confidence) (BMMC22_CD14_pos_Mono)	0.443195299875871	1	FALSE
+scE2G (scATAC) (PBMC_11_CD14.Mono.1)	Kendall correlation (access. at E x expr. at G) (BMMC22_CD14_pos_Mono)	0.00791585420836906	1	FALSE
+scE2G (scATAC) (PBMC_11_CD14.Mono.1)	Kendall correlation (access. at E x expr. at G) (PBMC_11_CD14.Mono.1)	0.045357951466925	1	FALSE
+scE2G (scATAC) (PBMC_11_CD14.Mono.1)	ABC (A=scATAC, C=power law) (BMMC22_CD14_pos_Mono)	0.590833733516747	1	FALSE
+scE2G (scATAC) (PBMC_11_CD14.Mono.1)	ABC (A=scATAC, C=power law) (PBMC_11_CD14.Mono.1)	0.870587630726607	1	FALSE
+scE2G (scATAC) (PBMC_11_CD14.Mono.1)	ABC (A=scATAC, C=power law) (PBMC_12_CD14.Mono.2)	0.743275045021717	1	FALSE
+scE2G (scATAC) (PBMC_11_CD14.Mono.1)	In element (ABC (A=scATAC)) & distance to TSS (BMMC22_CD14_pos_Mono)	0.345916429756664	1	FALSE
+scE2G (scATAC) (PBMC_11_CD14.Mono.1)	In element (ABC (A=scATAC)) & distance to TSS (PBMC_11_CD14.Mono.1)	0.490542945079494	1	FALSE
+scE2G (scATAC) (PBMC_11_CD14.Mono.1)	In element (ABC (A=scATAC)) & distance to TSS (PBMC_12_CD14.Mono.2)	0.395618458812314	1	FALSE
+scE2G (scATAC) (PBMC_11_CD14.Mono.1)	SnapATAC (p-value) (BMMC22_CD14_pos_Mono)	0.263754273752548	1	FALSE
+scE2G (scATAC) (PBMC_11_CD14.Mono.1)	FigR (p-value) (BMMC22_CD14_pos_Mono)	0.263754273752548	1	FALSE
+scE2G (scATAC) (PBMC_11_CD14.Mono.1)	SCENIC+ (importance) (BMMC22_CD14_pos_Mono)	0.262233589142662	1	FALSE
+scE2G (scATAC) (PBMC_11_CD14.Mono.1)	ArchR (high-confidence) (BMMC22_CD14_pos_Mono)	0.263754273752548	1	FALSE
+Kendall correlation (access. at E x expr. at G) (BMMC22_CD14_pos_Mono)	Kendall correlation (access. at E x expr. at G) (PBMC_11_CD14.Mono.1)	0.312762463054424	1	FALSE
+Kendall correlation (access. at E x expr. at G) (BMMC22_CD14_pos_Mono)	ABC (A=scATAC, C=power law) (BMMC22_CD14_pos_Mono)	0.0501673789129668	1	FALSE
+Kendall correlation (access. at E x expr. at G) (BMMC22_CD14_pos_Mono)	ABC (A=scATAC, C=power law) (PBMC_11_CD14.Mono.1)	0.014509160065485	1	FALSE
+Kendall correlation (access. at E x expr. at G) (BMMC22_CD14_pos_Mono)	ABC (A=scATAC, C=power law) (PBMC_12_CD14.Mono.2)	0.0256831194715221	1	FALSE
+Kendall correlation (access. at E x expr. at G) (BMMC22_CD14_pos_Mono)	In element (ABC (A=scATAC)) & distance to TSS (BMMC22_CD14_pos_Mono)	0.151714839117351	1	FALSE
+Kendall correlation (access. at E x expr. at G) (BMMC22_CD14_pos_Mono)	In element (ABC (A=scATAC)) & distance to TSS (PBMC_11_CD14.Mono.1)	0.125013681917377	1	FALSE
+Kendall correlation (access. at E x expr. at G) (BMMC22_CD14_pos_Mono)	In element (ABC (A=scATAC)) & distance to TSS (PBMC_12_CD14.Mono.2)	0.182001664445756	1	FALSE
+Kendall correlation (access. at E x expr. at G) (BMMC22_CD14_pos_Mono)	SnapATAC (p-value) (BMMC22_CD14_pos_Mono)	0.449470639586212	1	FALSE
+Kendall correlation (access. at E x expr. at G) (BMMC22_CD14_pos_Mono)	FigR (p-value) (BMMC22_CD14_pos_Mono)	0.449470639586212	1	FALSE
+Kendall correlation (access. at E x expr. at G) (BMMC22_CD14_pos_Mono)	SCENIC+ (importance) (BMMC22_CD14_pos_Mono)	0.452023160365925	1	FALSE
+Kendall correlation (access. at E x expr. at G) (BMMC22_CD14_pos_Mono)	ArchR (high-confidence) (BMMC22_CD14_pos_Mono)	0.449470639586212	1	FALSE
+Kendall correlation (access. at E x expr. at G) (PBMC_11_CD14.Mono.1)	ABC (A=scATAC, C=power law) (BMMC22_CD14_pos_Mono)	0.186974166028778	1	FALSE
+Kendall correlation (access. at E x expr. at G) (PBMC_11_CD14.Mono.1)	ABC (A=scATAC, C=power law) (PBMC_11_CD14.Mono.1)	0.0726948148915337	1	FALSE
+Kendall correlation (access. at E x expr. at G) (PBMC_11_CD14.Mono.1)	ABC (A=scATAC, C=power law) (PBMC_12_CD14.Mono.2)	0.112736398751053	1	FALSE
+Kendall correlation (access. at E x expr. at G) (PBMC_11_CD14.Mono.1)	In element (ABC (A=scATAC)) & distance to TSS (BMMC22_CD14_pos_Mono)	0.420169624007223	1	FALSE
+Kendall correlation (access. at E x expr. at G) (PBMC_11_CD14.Mono.1)	In element (ABC (A=scATAC)) & distance to TSS (PBMC_11_CD14.Mono.1)	0.333398711624825	1	FALSE
+Kendall correlation (access. at E x expr. at G) (PBMC_11_CD14.Mono.1)	In element (ABC (A=scATAC)) & distance to TSS (PBMC_12_CD14.Mono.2)	0.440448190009929	1	FALSE
+Kendall correlation (access. at E x expr. at G) (PBMC_11_CD14.Mono.1)	SnapATAC (p-value) (BMMC22_CD14_pos_Mono)	0.784598905852525	1	FALSE
+Kendall correlation (access. at E x expr. at G) (PBMC_11_CD14.Mono.1)	FigR (p-value) (BMMC22_CD14_pos_Mono)	0.784598905852525	1	FALSE
+Kendall correlation (access. at E x expr. at G) (PBMC_11_CD14.Mono.1)	SCENIC+ (importance) (BMMC22_CD14_pos_Mono)	0.787823406494819	1	FALSE
+Kendall correlation (access. at E x expr. at G) (PBMC_11_CD14.Mono.1)	ArchR (high-confidence) (BMMC22_CD14_pos_Mono)	0.784598905852525	1	FALSE
+ABC (A=scATAC, C=power law) (BMMC22_CD14_pos_Mono)	ABC (A=scATAC, C=power law) (PBMC_11_CD14.Mono.1)	0.70787145463357	1	FALSE
+ABC (A=scATAC, C=power law) (BMMC22_CD14_pos_Mono)	ABC (A=scATAC, C=power law) (PBMC_12_CD14.Mono.2)	0.833582587920108	1	FALSE
+ABC (A=scATAC, C=power law) (BMMC22_CD14_pos_Mono)	In element (ABC (A=scATAC)) & distance to TSS (BMMC22_CD14_pos_Mono)	0.685541848864198	1	FALSE
+ABC (A=scATAC, C=power law) (BMMC22_CD14_pos_Mono)	In element (ABC (A=scATAC)) & distance to TSS (PBMC_11_CD14.Mono.1)	0.852947984675817	1	FALSE
+ABC (A=scATAC, C=power law) (BMMC22_CD14_pos_Mono)	In element (ABC (A=scATAC)) & distance to TSS (PBMC_12_CD14.Mono.2)	0.729804768918919	1	FALSE
+ABC (A=scATAC, C=power law) (BMMC22_CD14_pos_Mono)	SnapATAC (p-value) (BMMC22_CD14_pos_Mono)	0.510746656800058	1	FALSE
+ABC (A=scATAC, C=power law) (BMMC22_CD14_pos_Mono)	FigR (p-value) (BMMC22_CD14_pos_Mono)	0.510746656800058	1	FALSE
+ABC (A=scATAC, C=power law) (BMMC22_CD14_pos_Mono)	SCENIC+ (importance) (BMMC22_CD14_pos_Mono)	0.508457502877302	1	FALSE
+ABC (A=scATAC, C=power law) (BMMC22_CD14_pos_Mono)	ArchR (high-confidence) (BMMC22_CD14_pos_Mono)	0.510746656800058	1	FALSE
+ABC (A=scATAC, C=power law) (PBMC_11_CD14.Mono.1)	ABC (A=scATAC, C=power law) (PBMC_12_CD14.Mono.2)	0.869253025649428	1	FALSE
+ABC (A=scATAC, C=power law) (PBMC_11_CD14.Mono.1)	In element (ABC (A=scATAC)) & distance to TSS (BMMC22_CD14_pos_Mono)	0.43560975574823	1	FALSE
+ABC (A=scATAC, C=power law) (PBMC_11_CD14.Mono.1)	In element (ABC (A=scATAC)) & distance to TSS (PBMC_11_CD14.Mono.1)	0.591476852622271	1	FALSE
+ABC (A=scATAC, C=power law) (PBMC_11_CD14.Mono.1)	In element (ABC (A=scATAC)) & distance to TSS (PBMC_12_CD14.Mono.2)	0.485975487202147	1	FALSE
+ABC (A=scATAC, C=power law) (PBMC_11_CD14.Mono.1)	SnapATAC (p-value) (BMMC22_CD14_pos_Mono)	0.32797197602853	1	FALSE
+ABC (A=scATAC, C=power law) (PBMC_11_CD14.Mono.1)	FigR (p-value) (BMMC22_CD14_pos_Mono)	0.32797197602853	1	FALSE
+ABC (A=scATAC, C=power law) (PBMC_11_CD14.Mono.1)	SCENIC+ (importance) (BMMC22_CD14_pos_Mono)	0.32621176031282	1	FALSE
+ABC (A=scATAC, C=power law) (PBMC_11_CD14.Mono.1)	ArchR (high-confidence) (BMMC22_CD14_pos_Mono)	0.32797197602853	1	FALSE
+ABC (A=scATAC, C=power law) (PBMC_12_CD14.Mono.2)	In element (ABC (A=scATAC)) & distance to TSS (BMMC22_CD14_pos_Mono)	0.538540696609517	1	FALSE
+ABC (A=scATAC, C=power law) (PBMC_12_CD14.Mono.2)	In element (ABC (A=scATAC)) & distance to TSS (PBMC_11_CD14.Mono.1)	0.702194971517893	1	FALSE
+ABC (A=scATAC, C=power law) (PBMC_12_CD14.Mono.2)	In element (ABC (A=scATAC)) & distance to TSS (PBMC_12_CD14.Mono.2)	0.5875525263096	1	FALSE
+ABC (A=scATAC, C=power law) (PBMC_12_CD14.Mono.2)	SnapATAC (p-value) (BMMC22_CD14_pos_Mono)	0.402366527892652	1	FALSE
+ABC (A=scATAC, C=power law) (PBMC_12_CD14.Mono.2)	FigR (p-value) (BMMC22_CD14_pos_Mono)	0.402366527892652	1	FALSE
+ABC (A=scATAC, C=power law) (PBMC_12_CD14.Mono.2)	SCENIC+ (importance) (BMMC22_CD14_pos_Mono)	0.400365801908132	1	FALSE
+ABC (A=scATAC, C=power law) (PBMC_12_CD14.Mono.2)	ArchR (high-confidence) (BMMC22_CD14_pos_Mono)	0.402366527892652	1	FALSE
+In element (ABC (A=scATAC)) & distance to TSS (BMMC22_CD14_pos_Mono)	In element (ABC (A=scATAC)) & distance to TSS (PBMC_11_CD14.Mono.1)	0.845946940818743	1	FALSE
+In element (ABC (A=scATAC)) & distance to TSS (BMMC22_CD14_pos_Mono)	In element (ABC (A=scATAC)) & distance to TSS (PBMC_12_CD14.Mono.2)	0.972665214902184	1	FALSE
+In element (ABC (A=scATAC)) & distance to TSS (BMMC22_CD14_pos_Mono)	SnapATAC (p-value) (BMMC22_CD14_pos_Mono)	0.755561309966138	1	FALSE
+In element (ABC (A=scATAC)) & distance to TSS (BMMC22_CD14_pos_Mono)	FigR (p-value) (BMMC22_CD14_pos_Mono)	0.755561309966138	1	FALSE
+In element (ABC (A=scATAC)) & distance to TSS (BMMC22_CD14_pos_Mono)	SCENIC+ (importance) (BMMC22_CD14_pos_Mono)	0.752852234845882	1	FALSE
+In element (ABC (A=scATAC)) & distance to TSS (BMMC22_CD14_pos_Mono)	ArchR (high-confidence) (BMMC22_CD14_pos_Mono)	0.755561309966138	1	FALSE
+In element (ABC (A=scATAC)) & distance to TSS (PBMC_11_CD14.Mono.1)	In element (ABC (A=scATAC)) & distance to TSS (PBMC_12_CD14.Mono.2)	0.879856293037885	1	FALSE
+In element (ABC (A=scATAC)) & distance to TSS (PBMC_11_CD14.Mono.1)	SnapATAC (p-value) (BMMC22_CD14_pos_Mono)	0.641427792391831	1	FALSE
+In element (ABC (A=scATAC)) & distance to TSS (PBMC_11_CD14.Mono.1)	FigR (p-value) (BMMC22_CD14_pos_Mono)	0.641427792391831	1	FALSE
+In element (ABC (A=scATAC)) & distance to TSS (PBMC_11_CD14.Mono.1)	SCENIC+ (importance) (BMMC22_CD14_pos_Mono)	0.638996420854344	1	FALSE
+In element (ABC (A=scATAC)) & distance to TSS (PBMC_11_CD14.Mono.1)	ArchR (high-confidence) (BMMC22_CD14_pos_Mono)	0.641427792391831	1	FALSE
+In element (ABC (A=scATAC)) & distance to TSS (PBMC_12_CD14.Mono.2)	SnapATAC (p-value) (BMMC22_CD14_pos_Mono)	0.744014190854264	1	FALSE
+In element (ABC (A=scATAC)) & distance to TSS (PBMC_12_CD14.Mono.2)	FigR (p-value) (BMMC22_CD14_pos_Mono)	0.744014190854264	1	FALSE
+In element (ABC (A=scATAC)) & distance to TSS (PBMC_12_CD14.Mono.2)	SCENIC+ (importance) (BMMC22_CD14_pos_Mono)	0.741444420441748	1	FALSE
+In element (ABC (A=scATAC)) & distance to TSS (PBMC_12_CD14.Mono.2)	ArchR (high-confidence) (BMMC22_CD14_pos_Mono)	0.744014190854264	1	FALSE
+SnapATAC (p-value) (BMMC22_CD14_pos_Mono)	FigR (p-value) (BMMC22_CD14_pos_Mono)	1	1	FALSE
+SnapATAC (p-value) (BMMC22_CD14_pos_Mono)	SCENIC+ (importance) (BMMC22_CD14_pos_Mono)	0.997473641580011	1	FALSE
+SnapATAC (p-value) (BMMC22_CD14_pos_Mono)	ArchR (high-confidence) (BMMC22_CD14_pos_Mono)	1	1	FALSE
+FigR (p-value) (BMMC22_CD14_pos_Mono)	SCENIC+ (importance) (BMMC22_CD14_pos_Mono)	0.997473641580011	1	FALSE
+FigR (p-value) (BMMC22_CD14_pos_Mono)	ArchR (high-confidence) (BMMC22_CD14_pos_Mono)	1	1	FALSE
+SCENIC+ (importance) (BMMC22_CD14_pos_Mono)	ArchR (high-confidence) (BMMC22_CD14_pos_Mono)	0.997473641580011	1	FALSE

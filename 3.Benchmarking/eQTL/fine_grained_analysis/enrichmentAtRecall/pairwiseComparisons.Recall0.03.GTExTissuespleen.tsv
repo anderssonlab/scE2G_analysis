@@ -1,0 +1,29 @@
+group1	group2	p	p_adjust	significant
+scE2G (Multiome) (K562)	scE2G (scATAC) (K562)	0.907964745309273	1	FALSE
+scE2G (Multiome) (K562)	Kendall correlation (access. at E x expr. at G) (K562)	2.92641299686612e-12	8.19395639122514e-11	TRUE
+scE2G (Multiome) (K562)	In element (ABC (A=scATAC)) & distance to TSS (K562)	0.536922270911881	1	FALSE
+scE2G (Multiome) (K562)	SnapATAC (p-value) (K562)	1.23858576454062e-11	3.46804014071373e-10	TRUE
+scE2G (Multiome) (K562)	Cicero (co-accessibility) (K562)	2.32551241659771e-14	6.51143476647359e-13	TRUE
+scE2G (Multiome) (K562)	FigR (p-value) (K562)	1.01743158992256e-12	2.84880845178315e-11	TRUE
+scE2G (Multiome) (K562)	SCENIC+ (importance) (K562)	1.25387965456025e-11	3.51086303276869e-10	TRUE
+scE2G (scATAC) (K562)	Kendall correlation (access. at E x expr. at G) (K562)	1.51269704826709e-10	4.23555173514786e-09	TRUE
+scE2G (scATAC) (K562)	In element (ABC (A=scATAC)) & distance to TSS (K562)	0.642930887069038	1	FALSE
+scE2G (scATAC) (K562)	SnapATAC (p-value) (K562)	4.18928652737048e-10	1.17300022766373e-08	TRUE
+scE2G (scATAC) (K562)	Cicero (co-accessibility) (K562)	1.53125115471212e-12	4.28750323319394e-11	TRUE
+scE2G (scATAC) (K562)	FigR (p-value) (K562)	5.87472033383708e-11	1.64492169347438e-09	TRUE
+scE2G (scATAC) (K562)	SCENIC+ (importance) (K562)	4.30931403582125e-10	1.20660793002995e-08	TRUE
+Kendall correlation (access. at E x expr. at G) (K562)	In element (ABC (A=scATAC)) & distance to TSS (K562)	2.14935783982053e-14	6.01820195149749e-13	TRUE
+Kendall correlation (access. at E x expr. at G) (K562)	SnapATAC (p-value) (K562)	0.961315110421314	1	FALSE
+Kendall correlation (access. at E x expr. at G) (K562)	Cicero (co-accessibility) (K562)	0.0733514735356857	1	FALSE
+Kendall correlation (access. at E x expr. at G) (K562)	FigR (p-value) (K562)	0.706737479779218	1	FALSE
+Kendall correlation (access. at E x expr. at G) (K562)	SCENIC+ (importance) (K562)	0.933544514584573	1	FALSE
+In element (ABC (A=scATAC)) & distance to TSS (K562)	SnapATAC (p-value) (K562)	1.11294784062527e-13	3.11625395375077e-12	TRUE
+In element (ABC (A=scATAC)) & distance to TSS (K562)	Cicero (co-accessibility) (K562)	1.66194038942133e-16	4.65343309037972e-15	TRUE
+In element (ABC (A=scATAC)) & distance to TSS (K562)	FigR (p-value) (K562)	7.22009667592834e-15	2.02162706925994e-13	TRUE
+In element (ABC (A=scATAC)) & distance to TSS (K562)	SCENIC+ (importance) (K562)	1.11604365775065e-13	3.12492224170183e-12	TRUE
+SnapATAC (p-value) (K562)	Cicero (co-accessibility) (K562)	0.0820926548467036	1	FALSE
+SnapATAC (p-value) (K562)	FigR (p-value) (K562)	0.691478796366336	1	FALSE
+SnapATAC (p-value) (K562)	SCENIC+ (importance) (K562)	0.974293544594218	1	FALSE
+Cicero (co-accessibility) (K562)	FigR (p-value) (K562)	0.148727199861355	1	FALSE
+Cicero (co-accessibility) (K562)	SCENIC+ (importance) (K562)	0.0755645359563321	1	FALSE
+FigR (p-value) (K562)	SCENIC+ (importance) (K562)	0.664717308527704	1	FALSE

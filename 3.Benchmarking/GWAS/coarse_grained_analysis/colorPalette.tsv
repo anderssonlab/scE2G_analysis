@@ -1,0 +1,17 @@
+method	pred_name_long	hex
+scE2G_multiome	scE2G (Multiome)	#792374
+scE2G_ATAC	scE2G (scATAC)	#006479
+scABC	ABC (A=scATAC, C=power law)	#0096a0
+Kendall	Kendall correlation (access. at E x expr. at G)	#d3a9ce
+ABC_distanceToTSS	In element (ABC) & distance to TSS	#96a0b3
+SnapATAC	SnapATAC (p-value)	#5e5948
+Signac	Signac (p-value)	#916953
+Cicero	Cicero (co-accessibility)	#888364
+FigR	FigR (p-value)	#bc9678
+ScenicPlus	SCENIC+ (importance)	#c5c1a5
+DIRECTNET	DIRECTNET (high-confidence)	#e0dcca
+ArchR	ArchR (high-confidence)	#dcbca1
+SCENT	SCENT (FDR)	#a5a083
+STARE	STARE (gABC, power law)	#96ced3
+PoPS	Polygenic priority score (PoPS)	#1c2a43
+distanceToTSS	Distance to TSS	#c5cad7

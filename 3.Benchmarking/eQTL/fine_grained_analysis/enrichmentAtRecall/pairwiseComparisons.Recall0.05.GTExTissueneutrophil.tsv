@@ -1,0 +1,4 @@
+group1	group2	p	p_adjust	significant
+scE2G (Multiome) (BMMC22_G_M_prog)	scE2G (scATAC) (BMMC22_G_M_prog)	0.517474986169566	1	FALSE
+scE2G (Multiome) (BMMC22_G_M_prog)	Kendall correlation (access. at E x expr. at G) (BMMC22_G_M_prog)	4.84041797069518e-13	1.45212539120855e-12	TRUE
+scE2G (scATAC) (BMMC22_G_M_prog)	Kendall correlation (access. at E x expr. at G) (BMMC22_G_M_prog)	1.24243064724676e-10	3.72729194174027e-10	TRUE

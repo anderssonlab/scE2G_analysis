@@ -1,0 +1,7 @@
+group1	group2	p	p_adjust	significant
+scE2G (Multiome) (PBMC_17_B)	scE2G (scATAC) (PBMC_17_B)	0.699180400536925	1	FALSE
+scE2G (Multiome) (PBMC_17_B)	Kendall correlation (access. at E x expr. at G) (PBMC_17_B)	0.0474923866248239	0.284954319748944	FALSE
+scE2G (Multiome) (PBMC_17_B)	In element (ABC (A=scATAC)) & distance to TSS (PBMC_17_B)	0.201148027159095	1	FALSE
+scE2G (scATAC) (PBMC_17_B)	Kendall correlation (access. at E x expr. at G) (PBMC_17_B)	0.134649373602767	0.807896241616604	FALSE
+scE2G (scATAC) (PBMC_17_B)	In element (ABC (A=scATAC)) & distance to TSS (PBMC_17_B)	0.104767623791065	0.628605742746391	FALSE
+Kendall correlation (access. at E x expr. at G) (PBMC_17_B)	In element (ABC (A=scATAC)) & distance to TSS (PBMC_17_B)	0.001453026759026	0.00871816055415601	TRUE

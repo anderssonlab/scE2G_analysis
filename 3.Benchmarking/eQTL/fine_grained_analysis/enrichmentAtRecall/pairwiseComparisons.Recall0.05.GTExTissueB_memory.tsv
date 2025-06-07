@@ -1,0 +1,11 @@
+group1	group2	p	p_adjust	significant
+scE2G (Multiome) (PBMC_17_B)	scE2G (scATAC) (PBMC_17_B)	0.699705975747774	1	FALSE
+scE2G (Multiome) (PBMC_17_B)	Kendall correlation (access. at E x expr. at G) (PBMC_17_B)	0.0154124957281387	0.154124957281387	FALSE
+scE2G (Multiome) (PBMC_17_B)	ABC (A=scATAC, C=power law) (PBMC_17_B)	0.857513526515299	1	FALSE
+scE2G (Multiome) (PBMC_17_B)	In element (ABC (A=scATAC)) & distance to TSS (PBMC_17_B)	0.753911942029637	1	FALSE
+scE2G (scATAC) (PBMC_17_B)	Kendall correlation (access. at E x expr. at G) (PBMC_17_B)	0.0506193561722132	0.506193561722132	FALSE
+scE2G (scATAC) (PBMC_17_B)	ABC (A=scATAC, C=power law) (PBMC_17_B)	0.571898769216686	1	FALSE
+scE2G (scATAC) (PBMC_17_B)	In element (ABC (A=scATAC)) & distance to TSS (PBMC_17_B)	0.942417194545337	1	FALSE
+Kendall correlation (access. at E x expr. at G) (PBMC_17_B)	ABC (A=scATAC, C=power law) (PBMC_17_B)	0.00828320624255128	0.0828320624255128	FALSE
+Kendall correlation (access. at E x expr. at G) (PBMC_17_B)	In element (ABC (A=scATAC)) & distance to TSS (PBMC_17_B)	0.0411212363707303	0.411212363707303	FALSE
+ABC (A=scATAC, C=power law) (PBMC_17_B)	In element (ABC (A=scATAC)) & distance to TSS (PBMC_17_B)	0.621994673631929	1	FALSE

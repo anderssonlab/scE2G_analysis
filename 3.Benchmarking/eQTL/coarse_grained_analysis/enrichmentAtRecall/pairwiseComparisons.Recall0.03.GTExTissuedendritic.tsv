@@ -1,0 +1,191 @@
+group1	group2	p	p_adjust	significant
+scE2G (Multiome) (BMMC5_Dendritic)	scE2G (Multiome) (PBMC5_DC)	0.493737028504037	1	FALSE
+scE2G (Multiome) (BMMC5_Dendritic)	scE2G (scATAC) (BMMC5_Dendritic)	0.498850551058407	1	FALSE
+scE2G (Multiome) (BMMC5_Dendritic)	scE2G (scATAC) (PBMC5_DC)	0.375666093259259	1	FALSE
+scE2G (Multiome) (BMMC5_Dendritic)	Kendall correlation (access. at E x expr. at G) (BMMC5_Dendritic)	0.402688616798831	1	FALSE
+scE2G (Multiome) (BMMC5_Dendritic)	Kendall correlation (access. at E x expr. at G) (PBMC5_DC)	0.255812892617871	1	FALSE
+scE2G (Multiome) (BMMC5_Dendritic)	ABC (A=scATAC, C=power law) (BMMC5_Dendritic)	0.56305538340117	1	FALSE
+scE2G (Multiome) (BMMC5_Dendritic)	ABC (A=scATAC, C=power law) (PBMC5_DC)	0.314532428301148	1	FALSE
+scE2G (Multiome) (BMMC5_Dendritic)	In element (ABC (A=scATAC)) & distance to TSS (BMMC5_Dendritic)	0.458069032175111	1	FALSE
+scE2G (Multiome) (BMMC5_Dendritic)	In element (ABC (A=scATAC)) & distance to TSS (PBMC5_DC)	0.663365315552161	1	FALSE
+scE2G (Multiome) (BMMC5_Dendritic)	SCENT (FDR) (BMMC5_Dendritic)	0.982366500608886	1	FALSE
+scE2G (Multiome) (BMMC5_Dendritic)	SCENT (FDR) (PBMC5_DC)	0.542968177338756	1	FALSE
+scE2G (Multiome) (BMMC5_Dendritic)	SnapATAC (p-value) (PBMC5_DC)	0.462804127726836	1	FALSE
+scE2G (Multiome) (BMMC5_Dendritic)	Cicero (co-accessibility) (BMMC5_Dendritic)	0.549529715426055	1	FALSE
+scE2G (Multiome) (BMMC5_Dendritic)	FigR (p-value) (BMMC5_Dendritic)	0.977505344358398	1	FALSE
+scE2G (Multiome) (BMMC5_Dendritic)	FigR (p-value) (PBMC5_DC)	0.462804127726836	1	FALSE
+scE2G (Multiome) (BMMC5_Dendritic)	SCENIC+ (importance) (BMMC5_Dendritic)	0.832517562293804	1	FALSE
+scE2G (Multiome) (BMMC5_Dendritic)	SCENIC+ (importance) (PBMC5_DC)	0.498658656556603	1	FALSE
+scE2G (Multiome) (BMMC5_Dendritic)	DIRECTNET (high-confidence) (PBMC5_DC)	0.472388482619236	1	FALSE
+scE2G (Multiome) (BMMC5_Dendritic)	ArchR (high-confidence) (PBMC5_DC)	0.463065489221651	1	FALSE
+scE2G (Multiome) (PBMC5_DC)	scE2G (scATAC) (BMMC5_Dendritic)	0.890496086593025	1	FALSE
+scE2G (Multiome) (PBMC5_DC)	scE2G (scATAC) (PBMC5_DC)	0.862123275876373	1	FALSE
+scE2G (Multiome) (PBMC5_DC)	Kendall correlation (access. at E x expr. at G) (BMMC5_Dendritic)	0.94015848819529	1	FALSE
+scE2G (Multiome) (PBMC5_DC)	Kendall correlation (access. at E x expr. at G) (PBMC5_DC)	0.998237903673943	1	FALSE
+scE2G (Multiome) (PBMC5_DC)	ABC (A=scATAC, C=power law) (BMMC5_Dendritic)	0.782021320136107	1	FALSE
+scE2G (Multiome) (PBMC5_DC)	ABC (A=scATAC, C=power law) (PBMC5_DC)	0.781817588941858	1	FALSE
+scE2G (Multiome) (PBMC5_DC)	In element (ABC (A=scATAC)) & distance to TSS (BMMC5_Dendritic)	0.851533353240897	1	FALSE
+scE2G (Multiome) (PBMC5_DC)	In element (ABC (A=scATAC)) & distance to TSS (PBMC5_DC)	0.739499411675882	1	FALSE
+scE2G (Multiome) (PBMC5_DC)	SCENT (FDR) (BMMC5_Dendritic)	0.482527078771146	1	FALSE
+scE2G (Multiome) (PBMC5_DC)	SCENT (FDR) (PBMC5_DC)	0.741738063088881	1	FALSE
+scE2G (Multiome) (PBMC5_DC)	SnapATAC (p-value) (PBMC5_DC)	0.927618738600222	1	FALSE
+scE2G (Multiome) (PBMC5_DC)	Cicero (co-accessibility) (BMMC5_Dendritic)	0.940982390717481	1	FALSE
+scE2G (Multiome) (PBMC5_DC)	FigR (p-value) (BMMC5_Dendritic)	0.429452683057593	1	FALSE
+scE2G (Multiome) (PBMC5_DC)	FigR (p-value) (PBMC5_DC)	0.927618738600222	1	FALSE
+scE2G (Multiome) (PBMC5_DC)	SCENIC+ (importance) (BMMC5_Dendritic)	0.440114663146466	1	FALSE
+scE2G (Multiome) (PBMC5_DC)	SCENIC+ (importance) (PBMC5_DC)	0.890689251302184	1	FALSE
+scE2G (Multiome) (PBMC5_DC)	DIRECTNET (high-confidence) (PBMC5_DC)	0.917579343320662	1	FALSE
+scE2G (Multiome) (PBMC5_DC)	ArchR (high-confidence) (PBMC5_DC)	0.927343283974555	1	FALSE
+scE2G (scATAC) (BMMC5_Dendritic)	scE2G (scATAC) (PBMC5_DC)	0.734453168717816	1	FALSE
+scE2G (scATAC) (BMMC5_Dendritic)	Kendall correlation (access. at E x expr. at G) (BMMC5_Dendritic)	0.927133900285394	1	FALSE
+scE2G (scATAC) (BMMC5_Dendritic)	Kendall correlation (access. at E x expr. at G) (PBMC5_DC)	0.817262233913959	1	FALSE
+scE2G (scATAC) (BMMC5_Dendritic)	ABC (A=scATAC, C=power law) (BMMC5_Dendritic)	0.86731316517215	1	FALSE
+scE2G (scATAC) (BMMC5_Dendritic)	ABC (A=scATAC, C=power law) (PBMC5_DC)	0.646194918367176	1	FALSE
+scE2G (scATAC) (BMMC5_Dendritic)	In element (ABC (A=scATAC)) & distance to TSS (BMMC5_Dendritic)	0.96259210903139	1	FALSE
+scE2G (scATAC) (BMMC5_Dendritic)	In element (ABC (A=scATAC)) & distance to TSS (PBMC5_DC)	0.809532769415421	1	FALSE
+scE2G (scATAC) (BMMC5_Dendritic)	SCENT (FDR) (BMMC5_Dendritic)	0.484926211856974	1	FALSE
+scE2G (scATAC) (BMMC5_Dendritic)	SCENT (FDR) (PBMC5_DC)	0.815911824774415	1	FALSE
+scE2G (scATAC) (BMMC5_Dendritic)	SnapATAC (p-value) (PBMC5_DC)	0.953797841105827	1	FALSE
+scE2G (scATAC) (BMMC5_Dendritic)	Cicero (co-accessibility) (BMMC5_Dendritic)	0.958715761044048	1	FALSE
+scE2G (scATAC) (BMMC5_Dendritic)	FigR (p-value) (BMMC5_Dendritic)	0.396855724087462	1	FALSE
+scE2G (scATAC) (BMMC5_Dendritic)	FigR (p-value) (PBMC5_DC)	0.953797841105827	1	FALSE
+scE2G (scATAC) (BMMC5_Dendritic)	SCENIC+ (importance) (BMMC5_Dendritic)	0.44836109195463	1	FALSE
+scE2G (scATAC) (BMMC5_Dendritic)	SCENIC+ (importance) (PBMC5_DC)	0.999758771586192	1	FALSE
+scE2G (scATAC) (BMMC5_Dendritic)	DIRECTNET (high-confidence) (PBMC5_DC)	0.966260272769326	1	FALSE
+scE2G (scATAC) (BMMC5_Dendritic)	ArchR (high-confidence) (PBMC5_DC)	0.95413944088979	1	FALSE
+scE2G (scATAC) (PBMC5_DC)	Kendall correlation (access. at E x expr. at G) (BMMC5_Dendritic)	0.772307346715152	1	FALSE
+scE2G (scATAC) (PBMC5_DC)	Kendall correlation (access. at E x expr. at G) (PBMC5_DC)	0.81284367091265	1	FALSE
+scE2G (scATAC) (PBMC5_DC)	ABC (A=scATAC, C=power law) (BMMC5_Dendritic)	0.623444442138136	1	FALSE
+scE2G (scATAC) (PBMC5_DC)	ABC (A=scATAC, C=power law) (PBMC5_DC)	0.917741283937412	1	FALSE
+scE2G (scATAC) (PBMC5_DC)	In element (ABC (A=scATAC)) & distance to TSS (BMMC5_Dendritic)	0.682679492175698	1	FALSE
+scE2G (scATAC) (PBMC5_DC)	In element (ABC (A=scATAC)) & distance to TSS (PBMC5_DC)	0.59330809259394	1	FALSE
+scE2G (scATAC) (PBMC5_DC)	SCENT (FDR) (BMMC5_Dendritic)	0.366113866880044	1	FALSE
+scE2G (scATAC) (PBMC5_DC)	SCENT (FDR) (PBMC5_DC)	0.575906490509909	1	FALSE
+scE2G (scATAC) (PBMC5_DC)	SnapATAC (p-value) (PBMC5_DC)	0.770001923918387	1	FALSE
+scE2G (scATAC) (PBMC5_DC)	Cicero (co-accessibility) (BMMC5_Dendritic)	0.804361063847396	1	FALSE
+scE2G (scATAC) (PBMC5_DC)	FigR (p-value) (BMMC5_Dendritic)	0.309354662831182	1	FALSE
+scE2G (scATAC) (PBMC5_DC)	FigR (p-value) (PBMC5_DC)	0.770001923918387	1	FALSE
+scE2G (scATAC) (PBMC5_DC)	SCENIC+ (importance) (BMMC5_Dendritic)	0.344318319331489	1	FALSE
+scE2G (scATAC) (PBMC5_DC)	SCENIC+ (importance) (PBMC5_DC)	0.734637275923772	1	FALSE
+scE2G (scATAC) (PBMC5_DC)	DIRECTNET (high-confidence) (PBMC5_DC)	0.760355060164699	1	FALSE
+scE2G (scATAC) (PBMC5_DC)	ArchR (high-confidence) (PBMC5_DC)	0.769736911321896	1	FALSE
+Kendall correlation (access. at E x expr. at G) (BMMC5_Dendritic)	Kendall correlation (access. at E x expr. at G) (PBMC5_DC)	0.884576002229606	1	FALSE
+Kendall correlation (access. at E x expr. at G) (BMMC5_Dendritic)	ABC (A=scATAC, C=power law) (BMMC5_Dendritic)	0.770487989772314	1	FALSE
+Kendall correlation (access. at E x expr. at G) (BMMC5_Dendritic)	ABC (A=scATAC, C=power law) (PBMC5_DC)	0.676831314194341	1	FALSE
+Kendall correlation (access. at E x expr. at G) (BMMC5_Dendritic)	In element (ABC (A=scATAC)) & distance to TSS (BMMC5_Dendritic)	0.869029511713292	1	FALSE
+Kendall correlation (access. at E x expr. at G) (BMMC5_Dendritic)	In element (ABC (A=scATAC)) & distance to TSS (PBMC5_DC)	0.721016727438295	1	FALSE
+Kendall correlation (access. at E x expr. at G) (BMMC5_Dendritic)	SCENT (FDR) (BMMC5_Dendritic)	0.389134267715588	1	FALSE
+Kendall correlation (access. at E x expr. at G) (BMMC5_Dendritic)	SCENT (FDR) (PBMC5_DC)	0.693435108187931	1	FALSE
+Kendall correlation (access. at E x expr. at G) (BMMC5_Dendritic)	SnapATAC (p-value) (PBMC5_DC)	0.977985199482826	1	FALSE
+Kendall correlation (access. at E x expr. at G) (BMMC5_Dendritic)	Cicero (co-accessibility) (BMMC5_Dendritic)	0.987012381660638	1	FALSE
+Kendall correlation (access. at E x expr. at G) (BMMC5_Dendritic)	FigR (p-value) (BMMC5_Dendritic)	0.270819222010604	1	FALSE
+Kendall correlation (access. at E x expr. at G) (BMMC5_Dendritic)	FigR (p-value) (PBMC5_DC)	0.977985199482826	1	FALSE
+Kendall correlation (access. at E x expr. at G) (BMMC5_Dendritic)	SCENIC+ (importance) (BMMC5_Dendritic)	0.380243840965715	1	FALSE
+Kendall correlation (access. at E x expr. at G) (BMMC5_Dendritic)	SCENIC+ (importance) (PBMC5_DC)	0.927398664082241	1	FALSE
+Kendall correlation (access. at E x expr. at G) (BMMC5_Dendritic)	DIRECTNET (high-confidence) (PBMC5_DC)	0.964241541142365	1	FALSE
+Kendall correlation (access. at E x expr. at G) (BMMC5_Dendritic)	ArchR (high-confidence) (PBMC5_DC)	0.977608224266459	1	FALSE
+Kendall correlation (access. at E x expr. at G) (PBMC5_DC)	ABC (A=scATAC, C=power law) (BMMC5_Dendritic)	0.599563286122446	1	FALSE
+Kendall correlation (access. at E x expr. at G) (PBMC5_DC)	ABC (A=scATAC, C=power law) (PBMC5_DC)	0.704784966218592	1	FALSE
+Kendall correlation (access. at E x expr. at G) (PBMC5_DC)	In element (ABC (A=scATAC)) & distance to TSS (BMMC5_Dendritic)	0.694151838606763	1	FALSE
+Kendall correlation (access. at E x expr. at G) (PBMC5_DC)	In element (ABC (A=scATAC)) & distance to TSS (PBMC5_DC)	0.579779786729501	1	FALSE
+Kendall correlation (access. at E x expr. at G) (PBMC5_DC)	SCENT (FDR) (BMMC5_Dendritic)	0.243643700530144	1	FALSE
+Kendall correlation (access. at E x expr. at G) (PBMC5_DC)	SCENT (FDR) (PBMC5_DC)	0.426286567533089	1	FALSE
+Kendall correlation (access. at E x expr. at G) (PBMC5_DC)	SnapATAC (p-value) (PBMC5_DC)	0.877994793786823	1	FALSE
+Kendall correlation (access. at E x expr. at G) (PBMC5_DC)	Cicero (co-accessibility) (BMMC5_Dendritic)	0.91710746589585	1	FALSE
+Kendall correlation (access. at E x expr. at G) (PBMC5_DC)	FigR (p-value) (BMMC5_Dendritic)	0.0749503208161243	1	FALSE
+Kendall correlation (access. at E x expr. at G) (PBMC5_DC)	FigR (p-value) (PBMC5_DC)	0.877994793786823	1	FALSE
+Kendall correlation (access. at E x expr. at G) (PBMC5_DC)	SCENIC+ (importance) (BMMC5_Dendritic)	0.287144840497909	1	FALSE
+Kendall correlation (access. at E x expr. at G) (PBMC5_DC)	SCENIC+ (importance) (PBMC5_DC)	0.817576649882796	1	FALSE
+Kendall correlation (access. at E x expr. at G) (PBMC5_DC)	DIRECTNET (high-confidence) (PBMC5_DC)	0.861514813809042	1	FALSE
+Kendall correlation (access. at E x expr. at G) (PBMC5_DC)	ArchR (high-confidence) (PBMC5_DC)	0.877542151134704	1	FALSE
+ABC (A=scATAC, C=power law) (BMMC5_Dendritic)	ABC (A=scATAC, C=power law) (PBMC5_DC)	0.536306446006633	1	FALSE
+ABC (A=scATAC, C=power law) (BMMC5_Dendritic)	In element (ABC (A=scATAC)) & distance to TSS (BMMC5_Dendritic)	0.881475846251362	1	FALSE
+ABC (A=scATAC, C=power law) (BMMC5_Dendritic)	In element (ABC (A=scATAC)) & distance to TSS (PBMC5_DC)	0.921473762114527	1	FALSE
+ABC (A=scATAC, C=power law) (BMMC5_Dendritic)	SCENT (FDR) (BMMC5_Dendritic)	0.546729106868791	1	FALSE
+ABC (A=scATAC, C=power law) (BMMC5_Dendritic)	SCENT (FDR) (PBMC5_DC)	0.958578805608821	1	FALSE
+ABC (A=scATAC, C=power law) (BMMC5_Dendritic)	SnapATAC (p-value) (PBMC5_DC)	0.81737002567211	1	FALSE
+ABC (A=scATAC, C=power law) (BMMC5_Dendritic)	Cicero (co-accessibility) (BMMC5_Dendritic)	0.852965296123677	1	FALSE
+ABC (A=scATAC, C=power law) (BMMC5_Dendritic)	FigR (p-value) (BMMC5_Dendritic)	0.44064004674187	1	FALSE
+ABC (A=scATAC, C=power law) (BMMC5_Dendritic)	FigR (p-value) (PBMC5_DC)	0.81737002567211	1	FALSE
+ABC (A=scATAC, C=power law) (BMMC5_Dendritic)	SCENIC+ (importance) (BMMC5_Dendritic)	0.499139080102578	1	FALSE
+ABC (A=scATAC, C=power law) (BMMC5_Dendritic)	SCENIC+ (importance) (PBMC5_DC)	0.867050987409023	1	FALSE
+ABC (A=scATAC, C=power law) (BMMC5_Dendritic)	DIRECTNET (high-confidence) (PBMC5_DC)	0.83078706049172	1	FALSE
+ABC (A=scATAC, C=power law) (BMMC5_Dendritic)	ArchR (high-confidence) (PBMC5_DC)	0.817737245079324	1	FALSE
+ABC (A=scATAC, C=power law) (PBMC5_DC)	In element (ABC (A=scATAC)) & distance to TSS (BMMC5_Dendritic)	0.588770233519659	1	FALSE
+ABC (A=scATAC, C=power law) (PBMC5_DC)	In element (ABC (A=scATAC)) & distance to TSS (PBMC5_DC)	0.513179189115335	1	FALSE
+ABC (A=scATAC, C=power law) (PBMC5_DC)	SCENT (FDR) (BMMC5_Dendritic)	0.306012986660213	1	FALSE
+ABC (A=scATAC, C=power law) (PBMC5_DC)	SCENT (FDR) (PBMC5_DC)	0.486400889828501	1	FALSE
+ABC (A=scATAC, C=power law) (PBMC5_DC)	SnapATAC (p-value) (PBMC5_DC)	0.680178820246441	1	FALSE
+ABC (A=scATAC, C=power law) (PBMC5_DC)	Cicero (co-accessibility) (BMMC5_Dendritic)	0.72559869694784	1	FALSE
+ABC (A=scATAC, C=power law) (PBMC5_DC)	FigR (p-value) (BMMC5_Dendritic)	0.249632953994767	1	FALSE
+ABC (A=scATAC, C=power law) (PBMC5_DC)	FigR (p-value) (PBMC5_DC)	0.680178820246441	1	FALSE
+ABC (A=scATAC, C=power law) (PBMC5_DC)	SCENIC+ (importance) (BMMC5_Dendritic)	0.294204118662465	1	FALSE
+ABC (A=scATAC, C=power law) (PBMC5_DC)	SCENIC+ (importance) (PBMC5_DC)	0.646370429035752	1	FALSE
+ABC (A=scATAC, C=power law) (PBMC5_DC)	DIRECTNET (high-confidence) (PBMC5_DC)	0.670937765477956	1	FALSE
+ABC (A=scATAC, C=power law) (PBMC5_DC)	ArchR (high-confidence) (PBMC5_DC)	0.679924768807301	1	FALSE
+In element (ABC (A=scATAC)) & distance to TSS (BMMC5_Dendritic)	In element (ABC (A=scATAC)) & distance to TSS (PBMC5_DC)	0.814775051102015	1	FALSE
+In element (ABC (A=scATAC)) & distance to TSS (BMMC5_Dendritic)	SCENT (FDR) (BMMC5_Dendritic)	0.442598410423219	1	FALSE
+In element (ABC (A=scATAC)) & distance to TSS (BMMC5_Dendritic)	SCENT (FDR) (PBMC5_DC)	0.811864640120438	1	FALSE
+In element (ABC (A=scATAC)) & distance to TSS (BMMC5_Dendritic)	SnapATAC (p-value) (PBMC5_DC)	0.908850299556749	1	FALSE
+In element (ABC (A=scATAC)) & distance to TSS (BMMC5_Dendritic)	Cicero (co-accessibility) (BMMC5_Dendritic)	0.926160948932777	1	FALSE
+In element (ABC (A=scATAC)) & distance to TSS (BMMC5_Dendritic)	FigR (p-value) (BMMC5_Dendritic)	0.307005941255222	1	FALSE
+In element (ABC (A=scATAC)) & distance to TSS (BMMC5_Dendritic)	FigR (p-value) (PBMC5_DC)	0.908850299556749	1	FALSE
+In element (ABC (A=scATAC)) & distance to TSS (BMMC5_Dendritic)	SCENIC+ (importance) (BMMC5_Dendritic)	0.424830751178846	1	FALSE
+In element (ABC (A=scATAC)) & distance to TSS (BMMC5_Dendritic)	SCENIC+ (importance) (PBMC5_DC)	0.962311015894792	1	FALSE
+In element (ABC (A=scATAC)) & distance to TSS (BMMC5_Dendritic)	DIRECTNET (high-confidence) (PBMC5_DC)	0.9233259874885	1	FALSE
+In element (ABC (A=scATAC)) & distance to TSS (BMMC5_Dendritic)	ArchR (high-confidence) (PBMC5_DC)	0.909246861122345	1	FALSE
+In element (ABC (A=scATAC)) & distance to TSS (PBMC5_DC)	SCENT (FDR) (BMMC5_Dendritic)	0.647402527765009	1	FALSE
+In element (ABC (A=scATAC)) & distance to TSS (PBMC5_DC)	SCENT (FDR) (PBMC5_DC)	0.946604467102834	1	FALSE
+In element (ABC (A=scATAC)) & distance to TSS (PBMC5_DC)	SnapATAC (p-value) (PBMC5_DC)	0.764965220199895	1	FALSE
+In element (ABC (A=scATAC)) & distance to TSS (PBMC5_DC)	Cicero (co-accessibility) (BMMC5_Dendritic)	0.805214207538049	1	FALSE
+In element (ABC (A=scATAC)) & distance to TSS (PBMC5_DC)	FigR (p-value) (BMMC5_Dendritic)	0.578659056762008	1	FALSE
+In element (ABC (A=scATAC)) & distance to TSS (PBMC5_DC)	FigR (p-value) (PBMC5_DC)	0.764965220199895	1	FALSE
+In element (ABC (A=scATAC)) & distance to TSS (PBMC5_DC)	SCENIC+ (importance) (BMMC5_Dendritic)	0.573217104512249	1	FALSE
+In element (ABC (A=scATAC)) & distance to TSS (PBMC5_DC)	SCENIC+ (importance) (PBMC5_DC)	0.809298455967482	1	FALSE
+In element (ABC (A=scATAC)) & distance to TSS (PBMC5_DC)	DIRECTNET (high-confidence) (PBMC5_DC)	0.776925499962023	1	FALSE
+In element (ABC (A=scATAC)) & distance to TSS (PBMC5_DC)	ArchR (high-confidence) (PBMC5_DC)	0.765292455141349	1	FALSE
+SCENT (FDR) (BMMC5_Dendritic)	SCENT (FDR) (PBMC5_DC)	0.52489420767624	1	FALSE
+SCENT (FDR) (BMMC5_Dendritic)	SnapATAC (p-value) (PBMC5_DC)	0.449445842000363	1	FALSE
+SCENT (FDR) (BMMC5_Dendritic)	Cicero (co-accessibility) (BMMC5_Dendritic)	0.537675627785096	1	FALSE
+SCENT (FDR) (BMMC5_Dendritic)	FigR (p-value) (BMMC5_Dendritic)	0.998859503107727	1	FALSE
+SCENT (FDR) (BMMC5_Dendritic)	FigR (p-value) (PBMC5_DC)	0.449445842000363	1	FALSE
+SCENT (FDR) (BMMC5_Dendritic)	SCENIC+ (importance) (BMMC5_Dendritic)	0.846483032189295	1	FALSE
+SCENT (FDR) (BMMC5_Dendritic)	SCENIC+ (importance) (PBMC5_DC)	0.484737211256513	1	FALSE
+SCENT (FDR) (BMMC5_Dendritic)	DIRECTNET (high-confidence) (PBMC5_DC)	0.458875241986121	1	FALSE
+SCENT (FDR) (BMMC5_Dendritic)	ArchR (high-confidence) (PBMC5_DC)	0.449702934634209	1	FALSE
+SCENT (FDR) (PBMC5_DC)	SnapATAC (p-value) (PBMC5_DC)	0.760467682758183	1	FALSE
+SCENT (FDR) (PBMC5_DC)	Cicero (co-accessibility) (BMMC5_Dendritic)	0.81686300093687	1	FALSE
+SCENT (FDR) (PBMC5_DC)	FigR (p-value) (BMMC5_Dendritic)	0.371147977260045	1	FALSE
+SCENT (FDR) (PBMC5_DC)	FigR (p-value) (PBMC5_DC)	0.760467682758183	1	FALSE
+SCENT (FDR) (PBMC5_DC)	SCENIC+ (importance) (BMMC5_Dendritic)	0.4889291158441	1	FALSE
+SCENT (FDR) (PBMC5_DC)	SCENIC+ (importance) (PBMC5_DC)	0.815619832292801	1	FALSE
+SCENT (FDR) (PBMC5_DC)	DIRECTNET (high-confidence) (PBMC5_DC)	0.775325765156704	1	FALSE
+SCENT (FDR) (PBMC5_DC)	ArchR (high-confidence) (PBMC5_DC)	0.760873962990053	1	FALSE
+SnapATAC (p-value) (PBMC5_DC)	Cicero (co-accessibility) (BMMC5_Dendritic)	0.996066387607196	1	FALSE
+SnapATAC (p-value) (PBMC5_DC)	FigR (p-value) (BMMC5_Dendritic)	0.358923628264595	1	FALSE
+SnapATAC (p-value) (PBMC5_DC)	FigR (p-value) (PBMC5_DC)	1	1	FALSE
+SnapATAC (p-value) (PBMC5_DC)	SCENIC+ (importance) (BMMC5_Dendritic)	0.420829469743776	1	FALSE
+SnapATAC (p-value) (PBMC5_DC)	SCENIC+ (importance) (PBMC5_DC)	0.95403866707827	1	FALSE
+SnapATAC (p-value) (PBMC5_DC)	DIRECTNET (high-confidence) (PBMC5_DC)	0.987522287938753	1	FALSE
+SnapATAC (p-value) (PBMC5_DC)	ArchR (high-confidence) (PBMC5_DC)	0.999657830627032	1	FALSE
+Cicero (co-accessibility) (BMMC5_Dendritic)	FigR (p-value) (BMMC5_Dendritic)	0.487936177944653	1	FALSE
+Cicero (co-accessibility) (BMMC5_Dendritic)	FigR (p-value) (PBMC5_DC)	0.996066387607196	1	FALSE
+Cicero (co-accessibility) (BMMC5_Dendritic)	SCENIC+ (importance) (BMMC5_Dendritic)	0.485198510372145	1	FALSE
+Cicero (co-accessibility) (BMMC5_Dendritic)	SCENIC+ (importance) (PBMC5_DC)	0.958910501578207	1	FALSE
+Cicero (co-accessibility) (BMMC5_Dendritic)	DIRECTNET (high-confidence) (PBMC5_DC)	0.985980154252331	1	FALSE
+Cicero (co-accessibility) (BMMC5_Dendritic)	ArchR (high-confidence) (PBMC5_DC)	0.995789793977534	1	FALSE
+FigR (p-value) (BMMC5_Dendritic)	FigR (p-value) (PBMC5_DC)	0.358923628264595	1	FALSE
+FigR (p-value) (BMMC5_Dendritic)	SCENIC+ (importance) (BMMC5_Dendritic)	0.828624424379382	1	FALSE
+FigR (p-value) (BMMC5_Dendritic)	SCENIC+ (importance) (PBMC5_DC)	0.396651710478398	1	FALSE
+FigR (p-value) (BMMC5_Dendritic)	DIRECTNET (high-confidence) (PBMC5_DC)	0.368930892982323	1	FALSE
+FigR (p-value) (BMMC5_Dendritic)	ArchR (high-confidence) (PBMC5_DC)	0.359195744683927	1	FALSE
+FigR (p-value) (PBMC5_DC)	SCENIC+ (importance) (BMMC5_Dendritic)	0.420829469743776	1	FALSE
+FigR (p-value) (PBMC5_DC)	SCENIC+ (importance) (PBMC5_DC)	0.95403866707827	1	FALSE
+FigR (p-value) (PBMC5_DC)	DIRECTNET (high-confidence) (PBMC5_DC)	0.987522287938753	1	FALSE
+FigR (p-value) (PBMC5_DC)	ArchR (high-confidence) (PBMC5_DC)	0.999657830627032	1	FALSE
+SCENIC+ (importance) (BMMC5_Dendritic)	SCENIC+ (importance) (PBMC5_DC)	0.448214820429985	1	FALSE
+SCENIC+ (importance) (BMMC5_Dendritic)	DIRECTNET (high-confidence) (PBMC5_DC)	0.428161549307958	1	FALSE
+SCENIC+ (importance) (BMMC5_Dendritic)	ArchR (high-confidence) (PBMC5_DC)	0.42102953706029	1	FALSE
+SCENIC+ (importance) (PBMC5_DC)	DIRECTNET (high-confidence) (PBMC5_DC)	0.966501287011997	1	FALSE
+SCENIC+ (importance) (PBMC5_DC)	ArchR (high-confidence) (PBMC5_DC)	0.954380272808361	1	FALSE
+DIRECTNET (high-confidence) (PBMC5_DC)	ArchR (high-confidence) (PBMC5_DC)	0.987864416616484	1	FALSE

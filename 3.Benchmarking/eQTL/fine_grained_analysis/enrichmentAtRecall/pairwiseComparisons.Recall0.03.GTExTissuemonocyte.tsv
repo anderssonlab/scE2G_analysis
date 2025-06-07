@@ -1,0 +1,211 @@
+group1	group2	p	p_adjust	significant
+scE2G (Multiome) (BMMC22_CD16_pos_Mono)	scE2G (Multiome) (BMMC22_G_M_prog)	0.633883301565424	1	FALSE
+scE2G (Multiome) (BMMC22_CD16_pos_Mono)	scE2G (Multiome) (PBMC_11_CD14.Mono.1)	0.581198172871057	1	FALSE
+scE2G (Multiome) (BMMC22_CD16_pos_Mono)	scE2G (Multiome) (PBMC_13_CD16.Mono)	0.728099502542827	1	FALSE
+scE2G (Multiome) (BMMC22_CD16_pos_Mono)	scE2G (scATAC) (BMMC22_CD14_pos_Mono)	0.0110230588771334	1	FALSE
+scE2G (Multiome) (BMMC22_CD16_pos_Mono)	scE2G (scATAC) (BMMC22_CD16_pos_Mono)	0.489130155063163	1	FALSE
+scE2G (Multiome) (BMMC22_CD16_pos_Mono)	scE2G (scATAC) (BMMC22_G_M_prog)	0.0578637368998453	1	FALSE
+scE2G (Multiome) (BMMC22_CD16_pos_Mono)	scE2G (scATAC) (PBMC_11_CD14.Mono.1)	0.619833774891904	1	FALSE
+scE2G (Multiome) (BMMC22_CD16_pos_Mono)	scE2G (scATAC) (PBMC_12_CD14.Mono.2)	0.400127491345766	1	FALSE
+scE2G (Multiome) (BMMC22_CD16_pos_Mono)	scE2G (scATAC) (PBMC_13_CD16.Mono)	0.529941886102971	1	FALSE
+scE2G (Multiome) (BMMC22_CD16_pos_Mono)	Kendall correlation (access. at E x expr. at G) (BMMC22_CD14_pos_Mono)	9.86290687715144e-36	2.0712104442018e-33	TRUE
+scE2G (Multiome) (BMMC22_CD16_pos_Mono)	Kendall correlation (access. at E x expr. at G) (BMMC22_CD16_pos_Mono)	3.2644478675214e-27	6.85534052179494e-25	TRUE
+scE2G (Multiome) (BMMC22_CD16_pos_Mono)	Kendall correlation (access. at E x expr. at G) (BMMC22_G_M_prog)	7.66829706993712e-32	1.61034238468679e-29	TRUE
+scE2G (Multiome) (BMMC22_CD16_pos_Mono)	Kendall correlation (access. at E x expr. at G) (PBMC_11_CD14.Mono.1)	7.16833524101276e-25	1.50535040061268e-22	TRUE
+scE2G (Multiome) (BMMC22_CD16_pos_Mono)	Kendall correlation (access. at E x expr. at G) (PBMC_12_CD14.Mono.2)	1.36763162440417e-30	2.87202641124877e-28	TRUE
+scE2G (Multiome) (BMMC22_CD16_pos_Mono)	Kendall correlation (access. at E x expr. at G) (PBMC_13_CD16.Mono)	1.72776042025577e-24	3.62829688253712e-22	TRUE
+scE2G (Multiome) (BMMC22_CD16_pos_Mono)	In element (ABC (A=scATAC)) & distance to TSS (BMMC22_CD14_pos_Mono)	0.161869473013315	1	FALSE
+scE2G (Multiome) (BMMC22_CD16_pos_Mono)	In element (ABC (A=scATAC)) & distance to TSS (BMMC22_CD16_pos_Mono)	0.427161312597504	1	FALSE
+scE2G (Multiome) (BMMC22_CD16_pos_Mono)	In element (ABC (A=scATAC)) & distance to TSS (BMMC22_G_M_prog)	0.269914235613417	1	FALSE
+scE2G (Multiome) (BMMC22_CD16_pos_Mono)	In element (ABC (A=scATAC)) & distance to TSS (PBMC_11_CD14.Mono.1)	0.917477241948755	1	FALSE
+scE2G (Multiome) (BMMC22_CD16_pos_Mono)	In element (ABC (A=scATAC)) & distance to TSS (PBMC_13_CD16.Mono)	0.768775506896062	1	FALSE
+scE2G (Multiome) (BMMC22_G_M_prog)	scE2G (Multiome) (PBMC_11_CD14.Mono.1)	0.298711473264597	1	FALSE
+scE2G (Multiome) (BMMC22_G_M_prog)	scE2G (Multiome) (PBMC_13_CD16.Mono)	0.407095702448378	1	FALSE
+scE2G (Multiome) (BMMC22_G_M_prog)	scE2G (scATAC) (BMMC22_CD14_pos_Mono)	0.0370600683250857	1	FALSE
+scE2G (Multiome) (BMMC22_G_M_prog)	scE2G (scATAC) (BMMC22_CD16_pos_Mono)	0.832261250955386	1	FALSE
+scE2G (Multiome) (BMMC22_G_M_prog)	scE2G (scATAC) (BMMC22_G_M_prog)	0.150978661125577	1	FALSE
+scE2G (Multiome) (BMMC22_G_M_prog)	scE2G (scATAC) (PBMC_11_CD14.Mono.1)	0.975635852573094	1	FALSE
+scE2G (Multiome) (BMMC22_G_M_prog)	scE2G (scATAC) (PBMC_12_CD14.Mono.2)	0.716461752293047	1	FALSE
+scE2G (Multiome) (BMMC22_G_M_prog)	scE2G (scATAC) (PBMC_13_CD16.Mono)	0.872964566235065	1	FALSE
+scE2G (Multiome) (BMMC22_G_M_prog)	Kendall correlation (access. at E x expr. at G) (BMMC22_CD14_pos_Mono)	1.37894124620428e-33	2.89577661702898e-31	TRUE
+scE2G (Multiome) (BMMC22_G_M_prog)	Kendall correlation (access. at E x expr. at G) (BMMC22_CD16_pos_Mono)	3.34028059115091e-25	7.01458924141692e-23	TRUE
+scE2G (Multiome) (BMMC22_G_M_prog)	Kendall correlation (access. at E x expr. at G) (BMMC22_G_M_prog)	9.4902489616152e-30	1.99295228193919e-27	TRUE
+scE2G (Multiome) (BMMC22_G_M_prog)	Kendall correlation (access. at E x expr. at G) (PBMC_11_CD14.Mono.1)	6.56699675385693e-23	1.37906931830996e-20	TRUE
+scE2G (Multiome) (BMMC22_G_M_prog)	Kendall correlation (access. at E x expr. at G) (PBMC_12_CD14.Mono.2)	1.62517705019545e-28	3.41287180541045e-26	TRUE
+scE2G (Multiome) (BMMC22_G_M_prog)	Kendall correlation (access. at E x expr. at G) (PBMC_13_CD16.Mono)	1.52901667891422e-22	3.21093502571985e-20	TRUE
+scE2G (Multiome) (BMMC22_G_M_prog)	In element (ABC (A=scATAC)) & distance to TSS (BMMC22_CD14_pos_Mono)	0.348454875519466	1	FALSE
+scE2G (Multiome) (BMMC22_G_M_prog)	In element (ABC (A=scATAC)) & distance to TSS (BMMC22_CD16_pos_Mono)	0.739120900192063	1	FALSE
+scE2G (Multiome) (BMMC22_G_M_prog)	In element (ABC (A=scATAC)) & distance to TSS (BMMC22_G_M_prog)	0.523739616182189	1	FALSE
+scE2G (Multiome) (BMMC22_G_M_prog)	In element (ABC (A=scATAC)) & distance to TSS (PBMC_11_CD14.Mono.1)	0.701785651900169	1	FALSE
+scE2G (Multiome) (BMMC22_G_M_prog)	In element (ABC (A=scATAC)) & distance to TSS (PBMC_13_CD16.Mono)	0.855782531301864	1	FALSE
+scE2G (Multiome) (PBMC_11_CD14.Mono.1)	scE2G (Multiome) (PBMC_13_CD16.Mono)	0.840100308096131	1	FALSE
+scE2G (Multiome) (PBMC_11_CD14.Mono.1)	scE2G (scATAC) (BMMC22_CD14_pos_Mono)	0.00173396053376234	0.364131712090091	FALSE
+scE2G (Multiome) (PBMC_11_CD14.Mono.1)	scE2G (scATAC) (BMMC22_CD16_pos_Mono)	0.206103516687626	1	FALSE
+scE2G (Multiome) (PBMC_11_CD14.Mono.1)	scE2G (scATAC) (BMMC22_G_M_prog)	0.0133136030906446	1	FALSE
+scE2G (Multiome) (PBMC_11_CD14.Mono.1)	scE2G (scATAC) (PBMC_11_CD14.Mono.1)	0.295305508136169	1	FALSE
+scE2G (Multiome) (PBMC_11_CD14.Mono.1)	scE2G (scATAC) (PBMC_12_CD14.Mono.2)	0.156851630118266	1	FALSE
+scE2G (Multiome) (PBMC_11_CD14.Mono.1)	scE2G (scATAC) (PBMC_13_CD16.Mono)	0.236063656250382	1	FALSE
+scE2G (Multiome) (PBMC_11_CD14.Mono.1)	Kendall correlation (access. at E x expr. at G) (BMMC22_CD14_pos_Mono)	2.26306308700163e-41	4.75243248270342e-39	TRUE
+scE2G (Multiome) (PBMC_11_CD14.Mono.1)	Kendall correlation (access. at E x expr. at G) (BMMC22_CD16_pos_Mono)	5.63964883457559e-32	1.18432625526087e-29	TRUE
+scE2G (Multiome) (PBMC_11_CD14.Mono.1)	Kendall correlation (access. at E x expr. at G) (BMMC22_G_M_prog)	4.26829005909653e-37	8.96340912410272e-35	TRUE
+scE2G (Multiome) (PBMC_11_CD14.Mono.1)	Kendall correlation (access. at E x expr. at G) (PBMC_11_CD14.Mono.1)	2.17222802663351e-29	4.56167885593036e-27	TRUE
+scE2G (Multiome) (PBMC_11_CD14.Mono.1)	Kendall correlation (access. at E x expr. at G) (PBMC_12_CD14.Mono.2)	9.8675931470621e-36	2.07219456088304e-33	TRUE
+scE2G (Multiome) (PBMC_11_CD14.Mono.1)	Kendall correlation (access. at E x expr. at G) (PBMC_13_CD16.Mono)	6.23164539879933e-29	1.30864553374786e-26	TRUE
+scE2G (Multiome) (PBMC_11_CD14.Mono.1)	In element (ABC (A=scATAC)) & distance to TSS (BMMC22_CD14_pos_Mono)	0.0493575068481245	1	FALSE
+scE2G (Multiome) (PBMC_11_CD14.Mono.1)	In element (ABC (A=scATAC)) & distance to TSS (BMMC22_CD16_pos_Mono)	0.178315464523677	1	FALSE
+scE2G (Multiome) (PBMC_11_CD14.Mono.1)	In element (ABC (A=scATAC)) & distance to TSS (BMMC22_G_M_prog)	0.0952421032100147	1	FALSE
+scE2G (Multiome) (PBMC_11_CD14.Mono.1)	In element (ABC (A=scATAC)) & distance to TSS (PBMC_11_CD14.Mono.1)	0.503084562382457	1	FALSE
+scE2G (Multiome) (PBMC_11_CD14.Mono.1)	In element (ABC (A=scATAC)) & distance to TSS (PBMC_13_CD16.Mono)	0.394281329236864	1	FALSE
+scE2G (Multiome) (PBMC_13_CD16.Mono)	scE2G (scATAC) (BMMC22_CD14_pos_Mono)	0.00369260411322439	0.775446863777121	FALSE
+scE2G (Multiome) (PBMC_13_CD16.Mono)	scE2G (scATAC) (BMMC22_CD16_pos_Mono)	0.293933225979202	1	FALSE
+scE2G (Multiome) (PBMC_13_CD16.Mono)	scE2G (scATAC) (BMMC22_G_M_prog)	0.0242309388670779	1	FALSE
+scE2G (Multiome) (PBMC_13_CD16.Mono)	scE2G (scATAC) (PBMC_11_CD14.Mono.1)	0.400286358616668	1	FALSE
+scE2G (Multiome) (PBMC_13_CD16.Mono)	scE2G (scATAC) (PBMC_12_CD14.Mono.2)	0.230270664368623	1	FALSE
+scE2G (Multiome) (PBMC_13_CD16.Mono)	scE2G (scATAC) (PBMC_13_CD16.Mono)	0.328821502760631	1	FALSE
+scE2G (Multiome) (PBMC_13_CD16.Mono)	Kendall correlation (access. at E x expr. at G) (BMMC22_CD14_pos_Mono)	1.09342263528739e-38	2.29618753410353e-36	TRUE
+scE2G (Multiome) (PBMC_13_CD16.Mono)	Kendall correlation (access. at E x expr. at G) (BMMC22_CD16_pos_Mono)	9.4947817692481e-30	1.9939041715421e-27	TRUE
+scE2G (Multiome) (PBMC_13_CD16.Mono)	Kendall correlation (access. at E x expr. at G) (BMMC22_G_M_prog)	1.29479529575446e-34	2.71907012108436e-32	TRUE
+scE2G (Multiome) (PBMC_13_CD16.Mono)	Kendall correlation (access. at E x expr. at G) (PBMC_11_CD14.Mono.1)	2.74131509263429e-27	5.75676169453201e-25	TRUE
+scE2G (Multiome) (PBMC_13_CD16.Mono)	Kendall correlation (access. at E x expr. at G) (PBMC_12_CD14.Mono.2)	2.61631028030863e-33	5.49425158864813e-31	TRUE
+scE2G (Multiome) (PBMC_13_CD16.Mono)	Kendall correlation (access. at E x expr. at G) (PBMC_13_CD16.Mono)	7.18013474985125e-27	1.50782829746876e-24	TRUE
+scE2G (Multiome) (PBMC_13_CD16.Mono)	In element (ABC (A=scATAC)) & distance to TSS (BMMC22_CD14_pos_Mono)	0.0800669695547817	1	FALSE
+scE2G (Multiome) (PBMC_13_CD16.Mono)	In element (ABC (A=scATAC)) & distance to TSS (BMMC22_CD16_pos_Mono)	0.254767767811716	1	FALSE
+scE2G (Multiome) (PBMC_13_CD16.Mono)	In element (ABC (A=scATAC)) & distance to TSS (BMMC22_G_M_prog)	0.145693814570224	1	FALSE
+scE2G (Multiome) (PBMC_13_CD16.Mono)	In element (ABC (A=scATAC)) & distance to TSS (PBMC_11_CD14.Mono.1)	0.645684836168117	1	FALSE
+scE2G (Multiome) (PBMC_13_CD16.Mono)	In element (ABC (A=scATAC)) & distance to TSS (PBMC_13_CD16.Mono)	0.519348627112013	1	FALSE
+scE2G (scATAC) (BMMC22_CD14_pos_Mono)	scE2G (scATAC) (BMMC22_CD16_pos_Mono)	0.057586464719572	1	FALSE
+scE2G (scATAC) (BMMC22_CD14_pos_Mono)	scE2G (scATAC) (BMMC22_G_M_prog)	0.523588756618678	1	FALSE
+scE2G (scATAC) (BMMC22_CD14_pos_Mono)	scE2G (scATAC) (PBMC_11_CD14.Mono.1)	0.0447401350431333	1	FALSE
+scE2G (scATAC) (BMMC22_CD14_pos_Mono)	scE2G (scATAC) (PBMC_12_CD14.Mono.2)	0.0807706023158852	1	FALSE
+scE2G (scATAC) (BMMC22_CD14_pos_Mono)	scE2G (scATAC) (PBMC_13_CD16.Mono)	0.0580874607044224	1	FALSE
+scE2G (scATAC) (BMMC22_CD14_pos_Mono)	Kendall correlation (access. at E x expr. at G) (BMMC22_CD14_pos_Mono)	3.99573602904057e-21	8.39104566098519e-19	TRUE
+scE2G (scATAC) (BMMC22_CD14_pos_Mono)	Kendall correlation (access. at E x expr. at G) (BMMC22_CD16_pos_Mono)	1.3949671744761e-14	2.92943106639982e-12	TRUE
+scE2G (scATAC) (BMMC22_CD14_pos_Mono)	Kendall correlation (access. at E x expr. at G) (BMMC22_G_M_prog)	4.39849844656599e-18	9.23684673778859e-16	TRUE
+scE2G (scATAC) (BMMC22_CD14_pos_Mono)	Kendall correlation (access. at E x expr. at G) (PBMC_11_CD14.Mono.1)	7.78661499030137e-13	1.63518914796329e-10	TRUE
+scE2G (scATAC) (BMMC22_CD14_pos_Mono)	Kendall correlation (access. at E x expr. at G) (PBMC_12_CD14.Mono.2)	4.25668601325659e-17	8.93904062783884e-15	TRUE
+scE2G (scATAC) (BMMC22_CD14_pos_Mono)	Kendall correlation (access. at E x expr. at G) (PBMC_13_CD16.Mono)	1.30843809920342e-12	2.74772000832718e-10	TRUE
+scE2G (scATAC) (BMMC22_CD14_pos_Mono)	In element (ABC (A=scATAC)) & distance to TSS (BMMC22_CD14_pos_Mono)	0.263844437596508	1	FALSE
+scE2G (scATAC) (BMMC22_CD14_pos_Mono)	In element (ABC (A=scATAC)) & distance to TSS (BMMC22_CD16_pos_Mono)	0.0898616010497466	1	FALSE
+scE2G (scATAC) (BMMC22_CD14_pos_Mono)	In element (ABC (A=scATAC)) & distance to TSS (BMMC22_G_M_prog)	0.154021073056495	1	FALSE
+scE2G (scATAC) (BMMC22_CD14_pos_Mono)	In element (ABC (A=scATAC)) & distance to TSS (PBMC_11_CD14.Mono.1)	0.0124790385131423	1	FALSE
+scE2G (scATAC) (BMMC22_CD14_pos_Mono)	In element (ABC (A=scATAC)) & distance to TSS (PBMC_13_CD16.Mono)	0.024015685683411	1	FALSE
+scE2G (scATAC) (BMMC22_CD16_pos_Mono)	scE2G (scATAC) (BMMC22_G_M_prog)	0.213964556060238	1	FALSE
+scE2G (scATAC) (BMMC22_CD16_pos_Mono)	scE2G (scATAC) (PBMC_11_CD14.Mono.1)	0.860260817245367	1	FALSE
+scE2G (scATAC) (BMMC22_CD16_pos_Mono)	scE2G (scATAC) (PBMC_12_CD14.Mono.2)	0.878093791740432	1	FALSE
+scE2G (scATAC) (BMMC22_CD16_pos_Mono)	scE2G (scATAC) (PBMC_13_CD16.Mono)	0.962560594387913	1	FALSE
+scE2G (scATAC) (BMMC22_CD16_pos_Mono)	Kendall correlation (access. at E x expr. at G) (BMMC22_CD14_pos_Mono)	1.42523658501965e-33	2.99299682854127e-31	TRUE
+scE2G (scATAC) (BMMC22_CD16_pos_Mono)	Kendall correlation (access. at E x expr. at G) (BMMC22_CD16_pos_Mono)	5.21143477220087e-25	1.09440130216218e-22	TRUE
+scE2G (scATAC) (BMMC22_CD16_pos_Mono)	Kendall correlation (access. at E x expr. at G) (BMMC22_G_M_prog)	1.1918644033232e-29	2.50291524697871e-27	TRUE
+scE2G (scATAC) (BMMC22_CD16_pos_Mono)	Kendall correlation (access. at E x expr. at G) (PBMC_11_CD14.Mono.1)	1.12611958080554e-22	2.36485111969163e-20	TRUE
+scE2G (scATAC) (BMMC22_CD16_pos_Mono)	Kendall correlation (access. at E x expr. at G) (PBMC_12_CD14.Mono.2)	2.15401783974462e-28	4.5234374634637e-26	TRUE
+scE2G (scATAC) (BMMC22_CD16_pos_Mono)	Kendall correlation (access. at E x expr. at G) (PBMC_13_CD16.Mono)	2.68927139218067e-22	5.64746992357941e-20	TRUE
+scE2G (scATAC) (BMMC22_CD16_pos_Mono)	In element (ABC (A=scATAC)) & distance to TSS (BMMC22_CD14_pos_Mono)	0.459341077815704	1	FALSE
+scE2G (scATAC) (BMMC22_CD16_pos_Mono)	In element (ABC (A=scATAC)) & distance to TSS (BMMC22_CD16_pos_Mono)	0.895963255370736	1	FALSE
+scE2G (scATAC) (BMMC22_CD16_pos_Mono)	In element (ABC (A=scATAC)) & distance to TSS (BMMC22_G_M_prog)	0.663121737370442	1	FALSE
+scE2G (scATAC) (BMMC22_CD16_pos_Mono)	In element (ABC (A=scATAC)) & distance to TSS (PBMC_11_CD14.Mono.1)	0.546803605843106	1	FALSE
+scE2G (scATAC) (BMMC22_CD16_pos_Mono)	In element (ABC (A=scATAC)) & distance to TSS (PBMC_13_CD16.Mono)	0.693070658754122	1	FALSE
+scE2G (scATAC) (BMMC22_G_M_prog)	scE2G (scATAC) (PBMC_11_CD14.Mono.1)	0.169599822507022	1	FALSE
+scE2G (scATAC) (BMMC22_G_M_prog)	scE2G (scATAC) (PBMC_12_CD14.Mono.2)	0.275119745403751	1	FALSE
+scE2G (scATAC) (BMMC22_G_M_prog)	scE2G (scATAC) (PBMC_13_CD16.Mono)	0.208917714974573	1	FALSE
+scE2G (scATAC) (BMMC22_G_M_prog)	Kendall correlation (access. at E x expr. at G) (BMMC22_CD14_pos_Mono)	3.30514340609677e-24	6.94080115280322e-22	TRUE
+scE2G (scATAC) (BMMC22_G_M_prog)	Kendall correlation (access. at E x expr. at G) (BMMC22_CD16_pos_Mono)	3.17514672806972e-17	6.66780812894641e-15	TRUE
+scE2G (scATAC) (BMMC22_G_M_prog)	Kendall correlation (access. at E x expr. at G) (BMMC22_G_M_prog)	5.59951024341944e-21	1.17589715111808e-18	TRUE
+scE2G (scATAC) (BMMC22_G_M_prog)	Kendall correlation (access. at E x expr. at G) (PBMC_11_CD14.Mono.1)	2.42766362232698e-15	5.09809360688666e-13	TRUE
+scE2G (scATAC) (BMMC22_G_M_prog)	Kendall correlation (access. at E x expr. at G) (PBMC_12_CD14.Mono.2)	6.22798057925798e-20	1.30787592164418e-17	TRUE
+scE2G (scATAC) (BMMC22_G_M_prog)	Kendall correlation (access. at E x expr. at G) (PBMC_13_CD16.Mono)	4.39538597897022e-15	9.23031055583746e-13	TRUE
+scE2G (scATAC) (BMMC22_G_M_prog)	In element (ABC (A=scATAC)) & distance to TSS (BMMC22_CD14_pos_Mono)	0.629177292583537	1	FALSE
+scE2G (scATAC) (BMMC22_G_M_prog)	In element (ABC (A=scATAC)) & distance to TSS (BMMC22_CD16_pos_Mono)	0.28607424985196	1	FALSE
+scE2G (scATAC) (BMMC22_G_M_prog)	In element (ABC (A=scATAC)) & distance to TSS (BMMC22_G_M_prog)	0.431363593514325	1	FALSE
+scE2G (scATAC) (BMMC22_G_M_prog)	In element (ABC (A=scATAC)) & distance to TSS (PBMC_11_CD14.Mono.1)	0.0661435930943809	1	FALSE
+scE2G (scATAC) (BMMC22_G_M_prog)	In element (ABC (A=scATAC)) & distance to TSS (PBMC_13_CD16.Mono)	0.107372130400602	1	FALSE
+scE2G (scATAC) (PBMC_11_CD14.Mono.1)	scE2G (scATAC) (PBMC_12_CD14.Mono.2)	0.745961877682024	1	FALSE
+scE2G (scATAC) (PBMC_11_CD14.Mono.1)	scE2G (scATAC) (PBMC_13_CD16.Mono)	0.899511446280706	1	FALSE
+scE2G (scATAC) (PBMC_11_CD14.Mono.1)	Kendall correlation (access. at E x expr. at G) (BMMC22_CD14_pos_Mono)	6.27742539331055e-31	1.31825933259522e-28	TRUE
+scE2G (scATAC) (PBMC_11_CD14.Mono.1)	Kendall correlation (access. at E x expr. at G) (BMMC22_CD16_pos_Mono)	3.31113976985984e-23	6.95339351670567e-21	TRUE
+scE2G (scATAC) (PBMC_11_CD14.Mono.1)	Kendall correlation (access. at E x expr. at G) (BMMC22_G_M_prog)	2.1715741973123e-27	4.56030581435583e-25	TRUE
+scE2G (scATAC) (PBMC_11_CD14.Mono.1)	Kendall correlation (access. at E x expr. at G) (PBMC_11_CD14.Mono.1)	4.34840267810567e-21	9.13164562402192e-19	TRUE
+scE2G (scATAC) (PBMC_11_CD14.Mono.1)	Kendall correlation (access. at E x expr. at G) (PBMC_12_CD14.Mono.2)	3.03951674972916e-26	6.38298517443123e-24	TRUE
+scE2G (scATAC) (PBMC_11_CD14.Mono.1)	Kendall correlation (access. at E x expr. at G) (PBMC_13_CD16.Mono)	9.07354465151001e-21	1.9054443768171e-18	TRUE
+scE2G (scATAC) (PBMC_11_CD14.Mono.1)	In element (ABC (A=scATAC)) & distance to TSS (BMMC22_CD14_pos_Mono)	0.375143491879004	1	FALSE
+scE2G (scATAC) (PBMC_11_CD14.Mono.1)	In element (ABC (A=scATAC)) & distance to TSS (BMMC22_CD16_pos_Mono)	0.767120647098877	1	FALSE
+scE2G (scATAC) (PBMC_11_CD14.Mono.1)	In element (ABC (A=scATAC)) & distance to TSS (BMMC22_G_M_prog)	0.552993603885336	1	FALSE
+scE2G (scATAC) (PBMC_11_CD14.Mono.1)	In element (ABC (A=scATAC)) & distance to TSS (PBMC_11_CD14.Mono.1)	0.685427075829786	1	FALSE
+scE2G (scATAC) (PBMC_11_CD14.Mono.1)	In element (ABC (A=scATAC)) & distance to TSS (PBMC_13_CD16.Mono)	0.835138676816938	1	FALSE
+scE2G (scATAC) (PBMC_12_CD14.Mono.2)	scE2G (scATAC) (PBMC_13_CD16.Mono)	0.844448161689208	1	FALSE
+scE2G (scATAC) (PBMC_12_CD14.Mono.2)	Kendall correlation (access. at E x expr. at G) (BMMC22_CD14_pos_Mono)	1.69460474306026e-32	3.55866996042655e-30	TRUE
+scE2G (scATAC) (PBMC_12_CD14.Mono.2)	Kendall correlation (access. at E x expr. at G) (BMMC22_CD16_pos_Mono)	4.3598199178286e-24	9.15562182744007e-22	TRUE
+scE2G (scATAC) (PBMC_12_CD14.Mono.2)	Kendall correlation (access. at E x expr. at G) (BMMC22_G_M_prog)	1.21699823975061e-28	2.55569630347629e-26	TRUE
+scE2G (scATAC) (PBMC_12_CD14.Mono.2)	Kendall correlation (access. at E x expr. at G) (PBMC_11_CD14.Mono.1)	8.50758694808569e-22	1.78659325909799e-19	TRUE
+scE2G (scATAC) (PBMC_12_CD14.Mono.2)	Kendall correlation (access. at E x expr. at G) (PBMC_12_CD14.Mono.2)	2.1008613077511e-27	4.4118087462773e-25	TRUE
+scE2G (scATAC) (PBMC_12_CD14.Mono.2)	Kendall correlation (access. at E x expr. at G) (PBMC_13_CD16.Mono)	1.97174916264514e-21	4.14067324155479e-19	TRUE
+scE2G (scATAC) (PBMC_12_CD14.Mono.2)	In element (ABC (A=scATAC)) & distance to TSS (BMMC22_CD14_pos_Mono)	0.555036529386784	1	FALSE
+scE2G (scATAC) (PBMC_12_CD14.Mono.2)	In element (ABC (A=scATAC)) & distance to TSS (BMMC22_CD16_pos_Mono)	0.986670960671901	1	FALSE
+scE2G (scATAC) (PBMC_12_CD14.Mono.2)	In element (ABC (A=scATAC)) & distance to TSS (BMMC22_G_M_prog)	0.775280101685533	1	FALSE
+scE2G (scATAC) (PBMC_12_CD14.Mono.2)	In element (ABC (A=scATAC)) & distance to TSS (PBMC_11_CD14.Mono.1)	0.449683617689946	1	FALSE
+scE2G (scATAC) (PBMC_12_CD14.Mono.2)	In element (ABC (A=scATAC)) & distance to TSS (PBMC_13_CD16.Mono)	0.585583638576574	1	FALSE
+scE2G (scATAC) (PBMC_13_CD16.Mono)	Kendall correlation (access. at E x expr. at G) (BMMC22_CD14_pos_Mono)	5.68576139619482e-31	1.19400989320091e-28	TRUE
+scE2G (scATAC) (PBMC_13_CD16.Mono)	Kendall correlation (access. at E x expr. at G) (BMMC22_CD16_pos_Mono)	3.91852223776791e-23	8.22889669931261e-21	TRUE
+scE2G (scATAC) (PBMC_13_CD16.Mono)	Kendall correlation (access. at E x expr. at G) (BMMC22_G_M_prog)	2.23132875802684e-27	4.68579039185637e-25	TRUE
+scE2G (scATAC) (PBMC_13_CD16.Mono)	Kendall correlation (access. at E x expr. at G) (PBMC_11_CD14.Mono.1)	5.47962039281318e-21	1.15072028249077e-18	TRUE
+scE2G (scATAC) (PBMC_13_CD16.Mono)	Kendall correlation (access. at E x expr. at G) (PBMC_12_CD14.Mono.2)	3.2366840449139e-26	6.7970364943192e-24	TRUE
+scE2G (scATAC) (PBMC_13_CD16.Mono)	Kendall correlation (access. at E x expr. at G) (PBMC_13_CD16.Mono)	1.16149163652121e-20	2.43913243669455e-18	TRUE
+scE2G (scATAC) (PBMC_13_CD16.Mono)	In element (ABC (A=scATAC)) & distance to TSS (BMMC22_CD14_pos_Mono)	0.443179088174052	1	FALSE
+scE2G (scATAC) (PBMC_13_CD16.Mono)	In element (ABC (A=scATAC)) & distance to TSS (BMMC22_CD16_pos_Mono)	0.862866237871085	1	FALSE
+scE2G (scATAC) (PBMC_13_CD16.Mono)	In element (ABC (A=scATAC)) & distance to TSS (BMMC22_G_M_prog)	0.638086805059363	1	FALSE
+scE2G (scATAC) (PBMC_13_CD16.Mono)	In element (ABC (A=scATAC)) & distance to TSS (PBMC_11_CD14.Mono.1)	0.589587503385673	1	FALSE
+scE2G (scATAC) (PBMC_13_CD16.Mono)	In element (ABC (A=scATAC)) & distance to TSS (PBMC_13_CD16.Mono)	0.735103363220601	1	FALSE
+Kendall correlation (access. at E x expr. at G) (BMMC22_CD14_pos_Mono)	Kendall correlation (access. at E x expr. at G) (BMMC22_CD16_pos_Mono)	7.96251853964043e-05	0.0167212889332449	TRUE
+Kendall correlation (access. at E x expr. at G) (BMMC22_CD14_pos_Mono)	Kendall correlation (access. at E x expr. at G) (BMMC22_G_M_prog)	0.0791793591041597	1	FALSE
+Kendall correlation (access. at E x expr. at G) (BMMC22_CD14_pos_Mono)	Kendall correlation (access. at E x expr. at G) (PBMC_11_CD14.Mono.1)	1.41084248748746e-07	2.96276922372367e-05	TRUE
+Kendall correlation (access. at E x expr. at G) (BMMC22_CD14_pos_Mono)	Kendall correlation (access. at E x expr. at G) (PBMC_12_CD14.Mono.2)	0.0149191889498376	1	FALSE
+Kendall correlation (access. at E x expr. at G) (BMMC22_CD14_pos_Mono)	Kendall correlation (access. at E x expr. at G) (PBMC_13_CD16.Mono)	2.29996745244836e-07	4.82993165014155e-05	TRUE
+Kendall correlation (access. at E x expr. at G) (BMMC22_CD14_pos_Mono)	In element (ABC (A=scATAC)) & distance to TSS (BMMC22_CD14_pos_Mono)	3.0972194528016e-26	6.50416085088337e-24	TRUE
+Kendall correlation (access. at E x expr. at G) (BMMC22_CD14_pos_Mono)	In element (ABC (A=scATAC)) & distance to TSS (BMMC22_CD16_pos_Mono)	1.18633168192002e-28	2.49129653203205e-26	TRUE
+Kendall correlation (access. at E x expr. at G) (BMMC22_CD14_pos_Mono)	In element (ABC (A=scATAC)) & distance to TSS (BMMC22_G_M_prog)	2.12407058334825e-28	4.46054822503133e-26	TRUE
+Kendall correlation (access. at E x expr. at G) (BMMC22_CD14_pos_Mono)	In element (ABC (A=scATAC)) & distance to TSS (PBMC_11_CD14.Mono.1)	5.68038006608364e-38	1.19287981387756e-35	TRUE
+Kendall correlation (access. at E x expr. at G) (BMMC22_CD14_pos_Mono)	In element (ABC (A=scATAC)) & distance to TSS (PBMC_13_CD16.Mono)	2.93323525917289e-34	6.15979404426307e-32	TRUE
+Kendall correlation (access. at E x expr. at G) (BMMC22_CD16_pos_Mono)	Kendall correlation (access. at E x expr. at G) (BMMC22_G_M_prog)	0.0272680259875566	1	FALSE
+Kendall correlation (access. at E x expr. at G) (BMMC22_CD16_pos_Mono)	Kendall correlation (access. at E x expr. at G) (PBMC_11_CD14.Mono.1)	0.202933750769448	1	FALSE
+Kendall correlation (access. at E x expr. at G) (BMMC22_CD16_pos_Mono)	Kendall correlation (access. at E x expr. at G) (PBMC_12_CD14.Mono.2)	0.113855927406845	1	FALSE
+Kendall correlation (access. at E x expr. at G) (BMMC22_CD16_pos_Mono)	Kendall correlation (access. at E x expr. at G) (PBMC_13_CD16.Mono)	0.193489600282509	1	FALSE
+Kendall correlation (access. at E x expr. at G) (BMMC22_CD16_pos_Mono)	In element (ABC (A=scATAC)) & distance to TSS (BMMC22_CD14_pos_Mono)	4.67035523150752e-19	9.80774598616579e-17	TRUE
+Kendall correlation (access. at E x expr. at G) (BMMC22_CD16_pos_Mono)	In element (ABC (A=scATAC)) & distance to TSS (BMMC22_CD16_pos_Mono)	2.75461187329423e-21	5.78468493391788e-19	TRUE
+Kendall correlation (access. at E x expr. at G) (BMMC22_CD16_pos_Mono)	In element (ABC (A=scATAC)) & distance to TSS (BMMC22_G_M_prog)	7.33302910069669e-21	1.53993611114631e-18	TRUE
+Kendall correlation (access. at E x expr. at G) (BMMC22_CD16_pos_Mono)	In element (ABC (A=scATAC)) & distance to TSS (PBMC_11_CD14.Mono.1)	8.25621609041765e-29	1.73380537898771e-26	TRUE
+Kendall correlation (access. at E x expr. at G) (BMMC22_CD16_pos_Mono)	In element (ABC (A=scATAC)) & distance to TSS (PBMC_13_CD16.Mono)	7.38933953304493e-26	1.55176130193944e-23	TRUE
+Kendall correlation (access. at E x expr. at G) (BMMC22_G_M_prog)	Kendall correlation (access. at E x expr. at G) (PBMC_11_CD14.Mono.1)	0.000443854587219995	0.0932094633161989	FALSE
+Kendall correlation (access. at E x expr. at G) (BMMC22_G_M_prog)	Kendall correlation (access. at E x expr. at G) (PBMC_12_CD14.Mono.2)	0.509903081598024	1	FALSE
+Kendall correlation (access. at E x expr. at G) (BMMC22_G_M_prog)	Kendall correlation (access. at E x expr. at G) (PBMC_13_CD16.Mono)	0.000515787366044023	0.108315346869245	FALSE
+Kendall correlation (access. at E x expr. at G) (BMMC22_G_M_prog)	In element (ABC (A=scATAC)) & distance to TSS (BMMC22_CD14_pos_Mono)	6.30057904400068e-23	1.32312159924014e-20	TRUE
+Kendall correlation (access. at E x expr. at G) (BMMC22_G_M_prog)	In element (ABC (A=scATAC)) & distance to TSS (BMMC22_CD16_pos_Mono)	2.8634733803095e-25	6.01329409864996e-23	TRUE
+Kendall correlation (access. at E x expr. at G) (BMMC22_G_M_prog)	In element (ABC (A=scATAC)) & distance to TSS (BMMC22_G_M_prog)	6.21507733704211e-25	1.30516624077884e-22	TRUE
+Kendall correlation (access. at E x expr. at G) (BMMC22_G_M_prog)	In element (ABC (A=scATAC)) & distance to TSS (PBMC_11_CD14.Mono.1)	8.62855287843982e-34	1.81199610447236e-31	TRUE
+Kendall correlation (access. at E x expr. at G) (BMMC22_G_M_prog)	In element (ABC (A=scATAC)) & distance to TSS (PBMC_13_CD16.Mono)	2.03974881905327e-30	4.28347252001186e-28	TRUE
+Kendall correlation (access. at E x expr. at G) (PBMC_11_CD14.Mono.1)	Kendall correlation (access. at E x expr. at G) (PBMC_12_CD14.Mono.2)	0.0037674314809017	0.791160610989356	FALSE
+Kendall correlation (access. at E x expr. at G) (PBMC_11_CD14.Mono.1)	Kendall correlation (access. at E x expr. at G) (PBMC_13_CD16.Mono)	0.947123176768506	1	FALSE
+Kendall correlation (access. at E x expr. at G) (PBMC_11_CD14.Mono.1)	In element (ABC (A=scATAC)) & distance to TSS (BMMC22_CD14_pos_Mono)	4.1624475134932e-17	8.74113977833572e-15	TRUE
+Kendall correlation (access. at E x expr. at G) (PBMC_11_CD14.Mono.1)	In element (ABC (A=scATAC)) & distance to TSS (BMMC22_CD16_pos_Mono)	2.85956507215051e-19	6.00508665151606e-17	TRUE
+Kendall correlation (access. at E x expr. at G) (PBMC_11_CD14.Mono.1)	In element (ABC (A=scATAC)) & distance to TSS (BMMC22_G_M_prog)	8.29237118098613e-19	1.74139794800709e-16	TRUE
+Kendall correlation (access. at E x expr. at G) (PBMC_11_CD14.Mono.1)	In element (ABC (A=scATAC)) & distance to TSS (PBMC_11_CD14.Mono.1)	2.65764194334425e-26	5.58104808102293e-24	TRUE
+Kendall correlation (access. at E x expr. at G) (PBMC_11_CD14.Mono.1)	In element (ABC (A=scATAC)) & distance to TSS (PBMC_13_CD16.Mono)	1.48417633900269e-23	3.11677031190566e-21	TRUE
+Kendall correlation (access. at E x expr. at G) (PBMC_12_CD14.Mono.2)	Kendall correlation (access. at E x expr. at G) (PBMC_13_CD16.Mono)	0.00405651958967064	0.851869113830834	FALSE
+Kendall correlation (access. at E x expr. at G) (PBMC_12_CD14.Mono.2)	In element (ABC (A=scATAC)) & distance to TSS (BMMC22_CD14_pos_Mono)	7.45110269368261e-22	1.56473156567335e-19	TRUE
+Kendall correlation (access. at E x expr. at G) (PBMC_12_CD14.Mono.2)	In element (ABC (A=scATAC)) & distance to TSS (BMMC22_CD16_pos_Mono)	3.58987802152682e-24	7.53874384520633e-22	TRUE
+Kendall correlation (access. at E x expr. at G) (PBMC_12_CD14.Mono.2)	In element (ABC (A=scATAC)) & distance to TSS (BMMC22_G_M_prog)	8.21992907777991e-24	1.72618510633378e-21	TRUE
+Kendall correlation (access. at E x expr. at G) (PBMC_12_CD14.Mono.2)	In element (ABC (A=scATAC)) & distance to TSS (PBMC_11_CD14.Mono.1)	1.86298117115049e-32	3.91226045941602e-30	TRUE
+Kendall correlation (access. at E x expr. at G) (PBMC_12_CD14.Mono.2)	In element (ABC (A=scATAC)) & distance to TSS (PBMC_13_CD16.Mono)	3.51076074939483e-29	7.37259757372915e-27	TRUE
+Kendall correlation (access. at E x expr. at G) (PBMC_13_CD16.Mono)	In element (ABC (A=scATAC)) & distance to TSS (BMMC22_CD14_pos_Mono)	7.83857906519793e-17	1.64610160369157e-14	TRUE
+Kendall correlation (access. at E x expr. at G) (PBMC_13_CD16.Mono)	In element (ABC (A=scATAC)) & distance to TSS (BMMC22_CD16_pos_Mono)	5.60987893906615e-19	1.17807457720389e-16	TRUE
+Kendall correlation (access. at E x expr. at G) (PBMC_13_CD16.Mono)	In element (ABC (A=scATAC)) & distance to TSS (BMMC22_G_M_prog)	1.65898568627044e-18	3.48386994116793e-16	TRUE
+Kendall correlation (access. at E x expr. at G) (PBMC_13_CD16.Mono)	In element (ABC (A=scATAC)) & distance to TSS (PBMC_11_CD14.Mono.1)	7.17424191152122e-26	1.50659080141946e-23	TRUE
+Kendall correlation (access. at E x expr. at G) (PBMC_13_CD16.Mono)	In element (ABC (A=scATAC)) & distance to TSS (PBMC_13_CD16.Mono)	3.48075860131189e-23	7.30959306275498e-21	TRUE
+In element (ABC (A=scATAC)) & distance to TSS (BMMC22_CD14_pos_Mono)	In element (ABC (A=scATAC)) & distance to TSS (BMMC22_CD16_pos_Mono)	0.558672854847466	1	FALSE
+In element (ABC (A=scATAC)) & distance to TSS (BMMC22_CD14_pos_Mono)	In element (ABC (A=scATAC)) & distance to TSS (BMMC22_G_M_prog)	0.76464506924127	1	FALSE
+In element (ABC (A=scATAC)) & distance to TSS (BMMC22_CD14_pos_Mono)	In element (ABC (A=scATAC)) & distance to TSS (PBMC_11_CD14.Mono.1)	0.18417216511337	1	FALSE
+In element (ABC (A=scATAC)) & distance to TSS (BMMC22_CD14_pos_Mono)	In element (ABC (A=scATAC)) & distance to TSS (PBMC_13_CD16.Mono)	0.265942194573447	1	FALSE
+In element (ABC (A=scATAC)) & distance to TSS (BMMC22_CD16_pos_Mono)	In element (ABC (A=scATAC)) & distance to TSS (BMMC22_G_M_prog)	0.770840033586106	1	FALSE
+In element (ABC (A=scATAC)) & distance to TSS (BMMC22_CD16_pos_Mono)	In element (ABC (A=scATAC)) & distance to TSS (PBMC_11_CD14.Mono.1)	0.477657680263413	1	FALSE
+In element (ABC (A=scATAC)) & distance to TSS (BMMC22_CD16_pos_Mono)	In element (ABC (A=scATAC)) & distance to TSS (PBMC_13_CD16.Mono)	0.611089486818047	1	FALSE
+In element (ABC (A=scATAC)) & distance to TSS (BMMC22_G_M_prog)	In element (ABC (A=scATAC)) & distance to TSS (PBMC_11_CD14.Mono.1)	0.305183465753594	1	FALSE
+In element (ABC (A=scATAC)) & distance to TSS (BMMC22_G_M_prog)	In element (ABC (A=scATAC)) & distance to TSS (PBMC_13_CD16.Mono)	0.415351480324869	1	FALSE
+In element (ABC (A=scATAC)) & distance to TSS (PBMC_11_CD14.Mono.1)	In element (ABC (A=scATAC)) & distance to TSS (PBMC_13_CD16.Mono)	0.844024939359001	1	FALSE

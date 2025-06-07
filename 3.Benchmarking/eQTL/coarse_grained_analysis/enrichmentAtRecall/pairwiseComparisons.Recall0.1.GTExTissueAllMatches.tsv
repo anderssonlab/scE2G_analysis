@@ -1,0 +1,46 @@
+group1	group2	p	p_adjust	significant
+scE2G (Multiome) (all_matches)	scE2G (scATAC) (all_matches)	0.575100401201349	1	FALSE
+scE2G (Multiome) (all_matches)	Kendall correlation (access. at E x expr. at G) (all_matches)	9.23502250232997e-211	4.15576012604848e-209	TRUE
+scE2G (Multiome) (all_matches)	ABC (A=scATAC, C=power law) (all_matches)	0.243411535502661	1	FALSE
+scE2G (Multiome) (all_matches)	In element (ABC (A=scATAC)) & distance to TSS (all_matches)	0.0188401844948385	0.847808302267733	FALSE
+scE2G (Multiome) (all_matches)	STARE (gABC, power law) (all_matches)	0.00148937401452968	0.0670218306538355	FALSE
+scE2G (Multiome) (all_matches)	SnapATAC (p-value) (all_matches)	3.9192591933594e-89	1.76366663701173e-87	TRUE
+scE2G (Multiome) (all_matches)	FigR (p-value) (all_matches)	2.40336421641869e-89	1.08151389738841e-87	TRUE
+scE2G (Multiome) (all_matches)	SCENIC+ (importance) (all_matches)	4.77944434812968e-79	2.15074995665835e-77	TRUE
+scE2G (Multiome) (all_matches)	ArchR (high-confidence) (all_matches)	1.69872051131882e-89	7.6442423009347e-88	TRUE
+scE2G (scATAC) (all_matches)	Kendall correlation (access. at E x expr. at G) (all_matches)	5.65059529181525e-222	2.54276788131686e-220	TRUE
+scE2G (scATAC) (all_matches)	ABC (A=scATAC, C=power law) (all_matches)	0.539663696242848	1	FALSE
+scE2G (scATAC) (all_matches)	In element (ABC (A=scATAC)) & distance to TSS (all_matches)	0.00353872358595671	0.159242561368052	FALSE
+scE2G (scATAC) (all_matches)	STARE (gABC, power law) (all_matches)	0.000172162580655236	0.0077473161294856	TRUE
+scE2G (scATAC) (all_matches)	SnapATAC (p-value) (all_matches)	7.13056740291376e-95	3.20875533131119e-93	TRUE
+scE2G (scATAC) (all_matches)	FigR (p-value) (all_matches)	4.30922856097955e-95	1.9391528524408e-93	TRUE
+scE2G (scATAC) (all_matches)	SCENIC+ (importance) (all_matches)	2.13564594887604e-84	9.61040676994217e-83	TRUE
+scE2G (scATAC) (all_matches)	ArchR (high-confidence) (all_matches)	2.99799074782028e-95	1.34909583651913e-93	TRUE
+Kendall correlation (access. at E x expr. at G) (all_matches)	ABC (A=scATAC, C=power law) (all_matches)	1.55686941387287e-226	7.00591236242792e-225	TRUE
+Kendall correlation (access. at E x expr. at G) (all_matches)	In element (ABC (A=scATAC)) & distance to TSS (all_matches)	7.88821718963555e-174	3.549697735336e-172	TRUE
+Kendall correlation (access. at E x expr. at G) (all_matches)	STARE (gABC, power law) (all_matches)	1.63476281929365e-169	7.35643268682145e-168	TRUE
+Kendall correlation (access. at E x expr. at G) (all_matches)	SnapATAC (p-value) (all_matches)	9.21136260218179e-16	4.14511317098181e-14	TRUE
+Kendall correlation (access. at E x expr. at G) (all_matches)	FigR (p-value) (all_matches)	1.23206690082804e-15	5.54430105372617e-14	TRUE
+Kendall correlation (access. at E x expr. at G) (all_matches)	SCENIC+ (importance) (all_matches)	8.62733000075799e-21	3.88229850034109e-19	TRUE
+Kendall correlation (access. at E x expr. at G) (all_matches)	ArchR (high-confidence) (all_matches)	1.36888912252619e-15	6.16000105136784e-14	TRUE
+ABC (A=scATAC, C=power law) (all_matches)	In element (ABC (A=scATAC)) & distance to TSS (all_matches)	0.000465646920351848	0.0209541114158332	TRUE
+ABC (A=scATAC, C=power law) (all_matches)	STARE (gABC, power law) (all_matches)	1.42168735890488e-05	0.000639759311507195	TRUE
+ABC (A=scATAC, C=power law) (all_matches)	SnapATAC (p-value) (all_matches)	8.7686130666003e-99	3.94587587997013e-97	TRUE
+ABC (A=scATAC, C=power law) (all_matches)	FigR (p-value) (all_matches)	5.27428122813289e-99	2.3734265526598e-97	TRUE
+ABC (A=scATAC, C=power law) (all_matches)	SCENIC+ (importance) (all_matches)	3.57932971690676e-88	1.61069837260804e-86	TRUE
+ABC (A=scATAC, C=power law) (all_matches)	ArchR (high-confidence) (all_matches)	3.65036285625962e-99	1.64266328531683e-97	TRUE
+In element (ABC (A=scATAC)) & distance to TSS (all_matches)	STARE (gABC, power law) (all_matches)	0.429345767905906	1	FALSE
+In element (ABC (A=scATAC)) & distance to TSS (all_matches)	SnapATAC (p-value) (all_matches)	3.95097676019573e-69	1.77793954208808e-67	TRUE
+In element (ABC (A=scATAC)) & distance to TSS (all_matches)	FigR (p-value) (all_matches)	2.5510527932044e-69	1.14797375694198e-67	TRUE
+In element (ABC (A=scATAC)) & distance to TSS (all_matches)	SCENIC+ (importance) (all_matches)	2.24063666959114e-60	1.00828650131601e-58	TRUE
+In element (ABC (A=scATAC)) & distance to TSS (all_matches)	ArchR (high-confidence) (all_matches)	1.90005544937155e-69	8.55024952217198e-68	TRUE
+STARE (gABC, power law) (all_matches)	SnapATAC (p-value) (all_matches)	4.2047158257525e-65	1.89212212158862e-63	TRUE
+STARE (gABC, power law) (all_matches)	FigR (p-value) (all_matches)	2.73048226072415e-65	1.22871701732587e-63	TRUE
+STARE (gABC, power law) (all_matches)	SCENIC+ (importance) (all_matches)	1.67395047669044e-56	7.53277714510697e-55	TRUE
+STARE (gABC, power law) (all_matches)	ArchR (high-confidence) (all_matches)	2.04491315923969e-65	9.2021092165786e-64	TRUE
+SnapATAC (p-value) (all_matches)	FigR (p-value) (all_matches)	0.976952882930383	1	FALSE
+SnapATAC (p-value) (all_matches)	SCENIC+ (importance) (all_matches)	0.246269153114134	1	FALSE
+SnapATAC (p-value) (all_matches)	ArchR (high-confidence) (all_matches)	0.966418461673696	1	FALSE
+FigR (p-value) (all_matches)	SCENIC+ (importance) (all_matches)	0.234820905598472	1	FALSE
+FigR (p-value) (all_matches)	ArchR (high-confidence) (all_matches)	0.989466388301759	1	FALSE
+SCENIC+ (importance) (all_matches)	ArchR (high-confidence) (all_matches)	0.229572941501001	1	FALSE

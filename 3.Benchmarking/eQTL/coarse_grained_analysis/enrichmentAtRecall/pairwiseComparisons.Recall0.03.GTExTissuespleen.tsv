@@ -1,0 +1,46 @@
+group1	group2	p	p_adjust	significant
+scE2G (Multiome) (K562)	scE2G (scATAC) (K562)	0.898729270517563	1	FALSE
+scE2G (Multiome) (K562)	Kendall correlation (access. at E x expr. at G) (K562)	2.39562416928819e-12	1.07803087617968e-10	TRUE
+scE2G (Multiome) (K562)	In element (ABC (A=scATAC)) & distance to TSS (K562)	0.561006891815546	1	FALSE
+scE2G (Multiome) (K562)	STARE (gABC, power law) (K562)	0.735345702401828	1	FALSE
+scE2G (Multiome) (K562)	SCENT (FDR) (K562)	4.22284738799874e-07	1.90028132459944e-05	TRUE
+scE2G (Multiome) (K562)	SnapATAC (p-value) (K562)	8.62175823492877e-12	3.87979120571795e-10	TRUE
+scE2G (Multiome) (K562)	Cicero (co-accessibility) (K562)	2.38427953261557e-14	1.072925789677e-12	TRUE
+scE2G (Multiome) (K562)	FigR (p-value) (K562)	1.03377214751884e-12	4.65197466383479e-11	TRUE
+scE2G (Multiome) (K562)	SCENIC+ (importance) (K562)	1.22449007073259e-11	5.51020531829668e-10	TRUE
+scE2G (scATAC) (K562)	Kendall correlation (access. at E x expr. at G) (K562)	5.32584929294637e-12	2.39663218182586e-10	TRUE
+scE2G (scATAC) (K562)	In element (ABC (A=scATAC)) & distance to TSS (K562)	0.659793509398928	1	FALSE
+scE2G (scATAC) (K562)	STARE (gABC, power law) (K562)	0.647514582833395	1	FALSE
+scE2G (scATAC) (K562)	SCENT (FDR) (K562)	4.94242717388443e-07	2.22409222824799e-05	TRUE
+scE2G (scATAC) (K562)	SnapATAC (p-value) (K562)	1.70281158411174e-11	7.66265212850285e-10	TRUE
+scE2G (scATAC) (K562)	Cicero (co-accessibility) (K562)	5.5312856350657e-14	2.48907853577956e-12	TRUE
+scE2G (scATAC) (K562)	FigR (p-value) (K562)	2.349092746559e-12	1.05709173595155e-10	TRUE
+scE2G (scATAC) (K562)	SCENIC+ (importance) (K562)	2.36836109057417e-11	1.06576249075837e-09	TRUE
+Kendall correlation (access. at E x expr. at G) (K562)	In element (ABC (A=scATAC)) & distance to TSS (K562)	8.27713847554528e-15	3.72471231399538e-13	TRUE
+Kendall correlation (access. at E x expr. at G) (K562)	STARE (gABC, power law) (K562)	5.00359597308256e-11	2.25161818788715e-09	TRUE
+Kendall correlation (access. at E x expr. at G) (K562)	SCENT (FDR) (K562)	0.00306368048861699	0.137865621987765	FALSE
+Kendall correlation (access. at E x expr. at G) (K562)	SnapATAC (p-value) (K562)	0.948848678689159	1	FALSE
+Kendall correlation (access. at E x expr. at G) (K562)	Cicero (co-accessibility) (K562)	0.0832519044734863	1	FALSE
+Kendall correlation (access. at E x expr. at G) (K562)	FigR (p-value) (K562)	0.755075162287213	1	FALSE
+Kendall correlation (access. at E x expr. at G) (K562)	SCENIC+ (importance) (K562)	0.892996011352201	1	FALSE
+In element (ABC (A=scATAC)) & distance to TSS (K562)	STARE (gABC, power law) (K562)	0.357902775811893	1	FALSE
+In element (ABC (A=scATAC)) & distance to TSS (K562)	SCENT (FDR) (K562)	6.94806337817367e-09	3.12662852017815e-07	TRUE
+In element (ABC (A=scATAC)) & distance to TSS (K562)	SnapATAC (p-value) (K562)	3.83851654896917e-14	1.72733244703613e-12	TRUE
+In element (ABC (A=scATAC)) & distance to TSS (K562)	Cicero (co-accessibility) (K562)	8.11903160065878e-17	3.65356422029645e-15	TRUE
+In element (ABC (A=scATAC)) & distance to TSS (K562)	FigR (p-value) (K562)	3.45567769391625e-15	1.55505496226231e-13	TRUE
+In element (ABC (A=scATAC)) & distance to TSS (K562)	SCENIC+ (importance) (K562)	5.69725959867293e-14	2.56376681940282e-12	TRUE
+STARE (gABC, power law) (K562)	SCENT (FDR) (K562)	3.62007461251665e-06	0.000162903357563249	TRUE
+STARE (gABC, power law) (K562)	SnapATAC (p-value) (K562)	1.57052512523388e-10	7.06736306355247e-09	TRUE
+STARE (gABC, power law) (K562)	Cicero (co-accessibility) (K562)	5.19547180093711e-13	2.3379623104217e-11	TRUE
+STARE (gABC, power law) (K562)	FigR (p-value) (K562)	2.2107762756421e-11	9.94849324038946e-10	TRUE
+STARE (gABC, power law) (K562)	SCENIC+ (importance) (K562)	2.17560287093705e-10	9.79021291921672e-09	TRUE
+SCENT (FDR) (K562)	SnapATAC (p-value) (K562)	0.00601876660066933	0.27084449703012	FALSE
+SCENT (FDR) (K562)	Cicero (co-accessibility) (K562)	3.70915363151385e-05	0.00166911913418123	TRUE
+SCENT (FDR) (K562)	FigR (p-value) (K562)	0.00146820061972694	0.0660690278877124	FALSE
+SCENT (FDR) (K562)	SCENIC+ (importance) (K562)	0.00753859367739481	0.339236715482767	FALSE
+SnapATAC (p-value) (K562)	Cicero (co-accessibility) (K562)	0.086740025204141	1	FALSE
+SnapATAC (p-value) (K562)	FigR (p-value) (K562)	0.721461279348026	1	FALSE
+SnapATAC (p-value) (K562)	SCENIC+ (importance) (K562)	0.94673880375579	1	FALSE
+Cicero (co-accessibility) (K562)	FigR (p-value) (K562)	0.149228189642035	1	FALSE
+Cicero (co-accessibility) (K562)	SCENIC+ (importance) (K562)	0.0771720294252719	1	FALSE
+FigR (p-value) (K562)	SCENIC+ (importance) (K562)	0.671474172702758	1	FALSE
