@@ -106,25 +106,26 @@ plot_trait_summary <- function(this_trait, top_n, first_sign_n, er, out_dir) {
 		theme_classic() + theme(axis.text = element_text(size = 7), axis.title = element_text(size = 8), legend.position = "none")
 
 	other  <- ggplot(filt_other, aes(x = enrichment, y = biosample_name)) +
-		geom_dots(layout = "swarm", side = "both", shape = 16, point_size = 1.5, linewidth = 0) +
+		geom_dots(layout = "swarm", side = "both", shape = 16, size = 1.5, linewidth = 0) +
 		xlab(x_label) + ylab("") +
 		xlim(c(0, enr_max+1)) + 
 		scale_fill_identity() + scale_color_identity() +
 		theme_classic() + theme(axis.text = element_text(size = 7), axis.title = element_text(size = 8), legend.position = "none")
 
 	# for glufocse: 15
-	gr <- cowplot::plot_grid(top, other, ncol = 1, rel_heights = c(1,nrow(filt_top)/5), align = "hv")
+	scale_factor <- ifelse(this_trait == "Glucose", 10, 5)
+	gr <- cowplot::plot_grid(top, other, ncol = 1, rel_heights = c(1, nrow(filt_top)/scale_factor), align = "hv")
 	ggsave2(file.path(out_dir, paste0(this_trait, "_enrichment_summary_v2.pdf")), gr, height = 3, width = 3.75)
 
 }
 
 ## MAIN
 model_id = "scE2G_multiome"
-GWAS_benchmark_id <- c("2024_0911_hd_blood", "2024_0829_pancreas")
+GWAS_benchmark_id <- c("2024_0213_scE2G_for_interpretation") #c("2024_0911_hd_blood", "2024_0829_pancreas")
 er_files = file.path("/oak/stanford/groups/engreitz/Users/sheth/GWAS_benchmarking_working/GWAS_E2G_benchmarking/results",
 	GWAS_benchmark_id, model_id, "variant_overlap", "enrichmentRecall.thresholded.traitByBiosample.tsv.gz")
-out_dir <- "/oak/stanford/groups/engreitz/Users/sheth/scE2G_analysis/2024_0623_CTS_predictions/GWAS_enrichment_specificity"
-dir.create(out_dir)
+out_dir <- "/oak/stanford/groups/engreitz/Users/sheth/scE2G_analysis/2024_0623_CTS_predictions/GWAS_enrichment_specificity/update_plots"
+dir.create(out_dir, showWarnings = FALSE)
 sample_key <- fread("/oak/stanford/groups/engreitz/Users/sheth/scE2G_analysis/2024_0916_global_properties/config/pred_sample_key.tsv")
 
 # header: trait	nVariantsOverlappingEnhancers	biosample	nVariantsTotal	bpEnhancers	nCommonVariantsOverlappingEnhancers	nCommonVariantsTotal
@@ -135,14 +136,14 @@ er <- lapply(er_files, fread) %>% rbindlist() %>% as_tibble() %>% distinct() %>%
 	mutate(p_adjust_enr = p.adjust(p_enr, method = "bonferroni"),
 		significant_enr = ifelse(p_adjust_enr < 0.05, "significant", "not_significant")) %>%
 	left_join(sample_key, by = "biosample")
-#fwrite(er, file.path(out_dir, "enrichmentRecall.thresholded.combined.tsv"), sep = "\t", row.names = FALSE, col.names = TRUE, quote = FALSE)
+fwrite(er, file.path(out_dir, "enrichmentRecall.thresholded.combined.tsv"), sep = "\t", row.names = FALSE, col.names = TRUE, quote = FALSE)
 
-traits_of_interest <- c("MCH", "MCV", "Lym")
-# lapply(traits_of_interest, plot_enrichment_across_biosamples, er, out_dir)
+traits_of_interest <- c("MCH", "MCV", "Glucose")
+lapply(traits_of_interest, plot_enrichment_across_biosamples, er, out_dir)
 
-# compare_enrichment_across_biosamples("MCH", 4, er, out_dir)
-# compare_enrichment_across_biosamples("MCV", 4, er, out_dir)
-#compare_enrichment_across_biosamples("Glucose", 2, er, out_dir) 
+compare_enrichment_across_biosamples("MCH", 4, er, out_dir)
+compare_enrichment_across_biosamples("MCV", 4, er, out_dir)
+compare_enrichment_across_biosamples("Glucose", 2, er, out_dir) 
 
 plot_trait_summary("MCH", 3, 5, er, out_dir) 
 plot_trait_summary("MCV", 3, 5, er, out_dir) 
