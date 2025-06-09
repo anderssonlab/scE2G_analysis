@@ -14,10 +14,10 @@ register(MulticoreParam(workers = 4))
 # read in arguments
 option_list <- list(
 	make_option(c("--gene"), type="character", default=NA, help="gene symbol to collect predictions from"),
-	make_option(c("--sample_key"), type="character", default="/oak/stanford/groups/engreitz/Users/sheth/scE2G_analysis/2024_0909_locus_plots/reference/sample_key.tsv", help="file with biosample,pred_file"),
-	make_option(c("--score_threshold"), type="numeric", default = 0.164, help="min score for thresholded scores"),
+	make_option(c("--sample_key"), type="character", default="/oak/stanford/groups/engreitz/Users/sheth/scE2G_analysis/2025_0126_new_locus_plots/reference/sample_key.tsv", help="file with biosample,pred_file"),
+	make_option(c("--score_threshold"), type="numeric", default = 0.177, help="min score for thresholded scores"),
 	make_option(c("--score_column"), type="character", default = "E2G.Score.qnorm", help="name of score column in prediction files"),
-	make_option(c("--out_dir"), type="character", default = "/oak/stanford/groups/engreitz/Users/sheth/scE2G_analysis/2024_0909_locus_plots/", help="output directory"))
+	make_option(c("--out_dir"), type="character", default = "/oak/stanford/groups/engreitz/Users/sheth/scE2G_analysis/2025_0126_new_locus_plots/", help="output directory"))
 
 opt = parse_args(OptionParser(option_list=option_list))
 gene = opt$gene
@@ -28,7 +28,7 @@ out_dir = file.path(opt$out_dir, gene)
 
 # get list of all samples and files
 sample_key = fread(sample_key_file)
-e2g_files = sample_key$pred_file
+e2g_files = sample_key$full_pred_file
 names(e2g_files) = sample_key$biosample
 
 # columns to save

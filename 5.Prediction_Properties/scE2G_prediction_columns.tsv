@@ -13,7 +13,6 @@ CellType	description of cell cluster for these predictions
 distance	distance between the midpoint of element and transcription start site of target gene
 normalizedATAC_prom	(model feature) normalized pseudobulk scATAC-seq signal at the promoter of the target gene
 ABC.Score	(model feature for scE2G_ATAC) Activity-by-Contact (ABC) score corresponding to this element-gene pair, calculated using pseudobulk scATAC-seq  for activity and a distance-based power law estimation for contact
-ABC.Score.1	accidental column identical to "ABC.Score"
 numCandidateEnhGene	(model feature) number of elements between this element and target gene transcription start site
 numTSSEnhGene	(model feature) number of other transcription start sites between this element and the target ene transcription start site
 numNearbyEnhancers	(model feature) number of elements within 5 kb of this element
