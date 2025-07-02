@@ -29,16 +29,13 @@ map_values_to_colors <- function(values, gradient, color_lims, na_color) {
   return(colors)
 }
 
-plot_single_correlation <- function(correlation_col) {
-	input_file <- "/oak/stanford/groups/engreitz/Users/sheth/scE2G_analysis/2024_0916_global_properties/correlation_across_clusters_threshold/correlation_across_clusters.tsv"
-	# biosampleA	biosampleB	nSharedPredAwB	nTotalPredA
-	sample_key_file <- "/oak/stanford/groups/engreitz/Users/sheth/scE2G_analysis/2024_0916_global_properties/config/pred_sample_key.tsv"
-	# biosample	n_cells	unique_fragments	dataset	biosample_name	ext_biosample_name	pred_file	ATAC_bw
-	# gex_biosample_order <- readRDS("/oak/stanford/groups/engreitz/Users/sheth/scE2G_analysis/2024_0909_locus_plots/reference/ordered_biosamples_complete.rds")
-	# out_file <- "/oak/stanford/groups/engreitz/Users/sheth/scE2G_analysis/2024_0916_global_properties/pairwise_comparisons/heatmap_jaccard_all.pdf"
-	# out_table <- "/oak/stanford/groups/engreitz/Users/sheth/scE2G_analysis/2024_0916_global_properties/pairwise_comparisons/heatmap_jaccard.tsv"
-	out_dir <- "/oak/stanford/groups/engreitz/Users/sheth/scE2G_analysis/2024_0916_global_properties/correlation_across_clusters_threshold"
-	clusters_exclude <- c("BMMC22_ID2_hi_myeloid_prog")
+plot_single_correlation <- function(correlation_col, res_id, datasets_include, clusters_exclude) {
+	input_file <- "/oak/stanford/groups/engreitz/Users/sheth/scE2G_analysis/2025_0214_new_global_properties/enhancer_similarity/correlation_across_clusters.tsv"
+	sample_key_file <- "/oak/stanford/groups/engreitz/Users/sheth/scE2G_analysis/2025_0214_new_global_properties/config/pred_sample_key.tsv"
+	# biosample	dataset	biosample_name	ext_biosample_name	pred_file	ATAC_bw
+	
+	out_dir_base <- "/oak/stanford/groups/engreitz/Users/sheth/scE2G_analysis/2025_0214_new_global_properties/enhancer_similarity"
+	out_dir <- file.path(out_dir_base, res_id); dir.create(out_dir, showWarnings = FALSE)
 	correlation_col <- correlation_cols[i]
 
 	# format input data
@@ -56,29 +53,26 @@ plot_single_correlation <- function(correlation_col) {
 	df <- rbind(df, df_copy) %>%
 		left_join(sample_key_A, by="biosampleA") %>%
 		left_join(sample_key_B, by="biosampleB") %>%
-		distinct()
+		distinct() %>% 
+		filter(datasetA %in% datasets_include, datasetB %in% datasets_include)
 
 	df[[correlation_col]] <- as.numeric(df[[correlation_col]])
 	print(head(df))
 	#fwrite(df, out_table, sep="\t", quote=FALSE, col.names=TRUE, row.names=FALSE)
 
-	# subset to just most granular clusters... or not
-	ds_include <- c("K562", "GM12878", "BMMC22", "PBMC9", "Islets")
-	#ds_include <- unique(df$datasetA)
-	df <- df %>% dplyr::filter(datasetA %in% ds_include, datasetB %in% ds_include)
-
-	# cluster biosamples by similarity 
+	# cluster biosamples by similarity; save order
 	matrix <- df %>% dplyr::select(biosampleNameA, biosampleNameB, !!sym(correlation_col)) %>%
 		pivot_wider(names_from = biosampleNameA, values_from = !!sym(correlation_col)) %>%
 		column_to_rownames("biosampleNameB")
-	dist <- dist(matrix)
-	clust <- dist %>% replace_na(0) %>% hclust(method = "average")
+	dist_mtx <- dist(matrix)
+	print(dist_mtx)
+	clust <- dist_mtx %>% replace_na(0) %>% hclust(method = "average")
 	ordered_biosample_names <- rownames(matrix)[clust$order]
+	saveRDS(ordered_biosample_names, file.path(out_dir, paste0("ordered_biosample_names_by_", correlation_col, ".rds")))
 
 	df <- mutate(df,
 		biosampleNameA =  factor(biosampleNameA, levels = ordered_biosample_names, ordered = TRUE),
 		biosampleNameB = factor(biosampleNameB, levels = ordered_biosample_names, ordered = TRUE))
-
 
 	# plotting params
 	#gradient <- c("#f6eff7","#bdc9e1", "#67a9cf","#1c9099", "#016c59") # white - teal
@@ -99,9 +93,8 @@ plot_single_correlation <- function(correlation_col) {
 	na_color <- "#ffffff" # real white
 
 	ds_cols <- c("#e96a00", "#e9c54e", "#5496ce", "#00488d", "#5eb342", "#1c6e2b", "#9b241c", "#002359", "#0e3716", "#730c0d")
-	names(ds_cols) = c("K562", "GM12878", "BMMC5", "BMMC22", "PBMC5", "PBMC9", "Islets", "BMMC_all", "PBMC_all", "Islets_all")
-	#ds_cols <- c(BMMC22="#006479", PBMC9="#49bcbc", Islets="#ca9b23", K562="#1c6e2b", GM12878="#5eb342")
-	ds_cols <- ds_cols[names(ds_cols) %in% ds_include]
+	names(ds_cols) = c("K562", "Other", "BMMC5", "BMMC22", "PBMC5", "PBMC9", "Islets", "BMMC_all", "PBMC_all", "Islets_all")
+	ds_cols <- ds_cols[names(ds_cols) %in% datasets_include]
 
 	# heatmap
 	hm <- ggplot(df, aes(x=biosampleNameB, y=biosampleNameA, fill = !!sym(correlation_col))) +
@@ -113,10 +106,12 @@ plot_single_correlation <- function(correlation_col) {
 			legend.position='top',  legend.direction='horizontal', legend.text=element_text(size=7), legend.title=element_text(size=7))
 
 	# dataset bar
-	sample_key <- dplyr::filter(sample_key, dataset %in% ds_include) %>%
-		mutate(biosample_name = factor(biosample_name, levels = ordered_biosample_names, ordered = TRUE),
-		dataset = factor(dataset, levels = c("BMMC5", "BMMC22", "BMMC_all", "PBMC5", "PBMC9", "PBMC_all", "Islets", "Islets_all", "K562", "GM12878"), ordered = TRUE)) %>%
-		dplyr::filter(dataset %in% ds_include)
+	sample_key <- dplyr::filter(sample_key, dataset %in% datasets_include, !(biosample %in% clusters_exclude)) %>%
+		mutate(biosample_name = factor(biosample_name, levels = ordered_biosample_names, ordered = TRUE))
+	print(sample_key)
+	print(sample_key$biosample_name)
+		#dataset = factor(dataset, levels = c("BMMC5", "BMMC22", "BMMC_all", "PBMC5", "PBMC9", "PBMC_all", "Islets", "Islets_all", "K562", "GM12878"), ordered = TRUE)) %>%
+		#dplyr::filter(dataset %in% datasets_include)
 	ds <- ggplot(sample_key, aes(x = 1, y = biosample_name, fill = dataset)) +
 		geom_tile() +
 		scale_fill_manual(values = ds_cols, name = "Dataset") +
@@ -125,14 +120,14 @@ plot_single_correlation <- function(correlation_col) {
 
 		# combine and save
 		assembled <- egg::ggarrange(hm, ds, nrow=1, ncol=2, widths=c(8, 0.3))
-		ggsave(file.path(out_dir, paste0(correlation_col, "_heatmap_granular_noID2.pdf")), assembled, width = 7, height = 6)
+		ggsave(file.path(out_dir, paste0(correlation_col, "_heatmap.pdf")), assembled, width = 7, height = 6)
 }
 
-plot_double_correlation <- function() {
-	input_file <- "/oak/stanford/groups/engreitz/Users/sheth/scE2G_analysis/2024_0916_global_properties/correlation_across_clusters_threshold/correlation_across_clusters.tsv"
-	sample_key_file <- "/oak/stanford/groups/engreitz/Users/sheth/scE2G_analysis/2024_0916_global_properties/config/pred_sample_key.tsv"
-	out_dir <- "/oak/stanford/groups/engreitz/Users/sheth/scE2G_analysis/2024_0916_global_properties/correlation_across_clusters_threshold"
-	clusters_exclude <- c("BMMC22_ID2_hi_myeloid_prog")
+plot_double_correlation <- function(res_id, datasets_include, clusters_exclude) {
+	input_file <- "/oak/stanford/groups/engreitz/Users/sheth/scE2G_analysis/2025_0214_new_global_properties/enhancer_similarity/correlation_across_clusters.tsv"
+	sample_key_file <- "/oak/stanford/groups/engreitz/Users/sheth/scE2G_analysis/2025_0214_new_global_properties/config/pred_sample_key.tsv"	
+	out_dir_base <- "/oak/stanford/groups/engreitz/Users/sheth/scE2G_analysis/2025_0214_new_global_properties/enhancer_similarity"
+	out_dir <- file.path(out_dir_base, res_id); dir.create(out_dir, showWarnings = FALSE)
 
 	# format input data
 	sample_key <- fread(sample_key_file) %>%
@@ -150,12 +145,10 @@ plot_double_correlation <- function() {
 		left_join(sample_key_A, by="biosampleA") %>%
 		left_join(sample_key_B, by="biosampleB") %>%
 		mutate(product = jaccard * Pearson) %>%
-		distinct()
+		distinct() %>% 
+		filter(datasetA %in% datasets_include, datasetB %in% datasets_include)
 
-	# subset to just most granular clusters... or not
-	ds_include <- c("K562", "GM12878", "BMMC22", "PBMC9", "Islets")
-	#ds_include <- unique(df$datasetA)
-	df <- df %>% dplyr::filter(datasetA %in% ds_include, datasetB %in% ds_include)
+	
 
 	# cluster biosamples by similarity 
 	matrix <- df %>% dplyr::select(biosampleNameA, biosampleNameB, product) %>%
@@ -164,6 +157,7 @@ plot_double_correlation <- function() {
 	dist <- dist(matrix)
 	clust <- dist %>% replace_na(0) %>% hclust(method = "average")
 	ordered_biosample_names <- rownames(matrix)[clust$order]
+	saveRDS(ordered_biosample_names, file.path(out_dir, paste0("ordered_biosample_names_Pearson_jaccard.rds")))
 
 	df_unique <- df %>% #dplyr::filter(df, biosampleA != biosampleB) %>%
 		mutate(biosampleNameA =  factor(biosampleNameA, levels = ordered_biosample_names, ordered = TRUE),
@@ -191,9 +185,8 @@ plot_double_correlation <- function() {
 	df_unique$fill_color[df_unique$is_diag] <- greys[3]
 
 	 ds_cols <- c("#e96a00", "#e9c54e", "#5496ce", "#00488d", "#5eb342", "#1c6e2b", "#9b241c", "#002359", "#0e3716", "#730c0d")
-	 names(ds_cols) = c("K562", "GM12878", "BMMC5", "BMMC22", "PBMC5", "PBMC9", "Islets", "BMMC_all", "PBMC_all", "Islets_all")
-#	ds_cols <- c(BMMC22="#006479", PBMC9="#49bcbc", Islets="#ca9b23", K562="#1c6e2b", GM12878="#5eb342")
-	ds_cols <- ds_cols[names(ds_cols) %in% ds_include]
+	 names(ds_cols) = c("K562", "Other", "BMMC5", "BMMC22", "PBMC5", "PBMC9", "Islets", "BMMC_all", "PBMC_all", "Islets_all")
+	ds_cols <- ds_cols[names(ds_cols) %in% datasets_include]
 
 	# heatmap
 	hm <- ggplot(df_unique, aes(x = biosampleNameA, y = biosampleNameB, fill = fill_color)) +
@@ -207,10 +200,10 @@ plot_double_correlation <- function() {
 			legend.position='none',  legend.direction='horizontal', legend.text=element_text(size=7), legend.title=element_text(size=7))
 
 	# dataset bar
-	sample_key <- dplyr::filter(sample_key, dataset %in% ds_include) %>%
-		mutate(biosample_name = factor(biosample_name, levels = ordered_biosample_names, ordered = TRUE),
-		dataset = factor(dataset, levels = c("BMMC5", "BMMC22", "BMMC_all", "PBMC5", "PBMC9", "PBMC_all", "Islets", "Islets_all", "K562", "GM12878"), ordered = TRUE)) %>%
-		dplyr::filter(dataset %in% ds_include)
+	sample_key <- dplyr::filter(sample_key, dataset %in% datasets_include, !(biosample %in% clusters_exclude)) %>%
+		mutate(biosample_name = factor(biosample_name, levels = ordered_biosample_names, ordered = TRUE))
+		#dataset = factor(dataset, levels = c("BMMC5", "BMMC22", "BMMC_all", "PBMC5", "PBMC9", "PBMC_all", "Islets", "Islets_all", "K562", "GM12878"), ordered = TRUE)) %>%
+		#dplyr::filter(dataset %in% datasets_include)
 	ds <- ggplot(sample_key, aes(x = 1, y = biosample_name, fill = dataset)) +
 		geom_tile() +
 		scale_fill_manual(values = ds_cols, name = "Dataset") +
@@ -219,15 +212,17 @@ plot_double_correlation <- function() {
 
 		# combine and save
 		assembled <- egg::ggarrange(hm, ds, nrow=1, ncol=2, widths=c(8, 0.3))
-		ggsave(file.path(out_dir, paste0("Pearson_jaccard_heatmap_granular_noID2.pdf")), assembled, width = 7, height = 6)
+		ggsave(file.path(out_dir, paste0("Pearson_jaccard_heatmap.pdf")), assembled, width = 7, height = 6)
 }
 
 
 ## MAIN
+clusters_exclude <- c("BMMC22_ID2_hi_myeloid_prog")
+datasets_include <- c("BMMC22", "PBMC9", "Islets", "K562", "Other")
+res_id <- "granular_2M"
+
 correlation_cols <- c("Pearson", "Pearson_log1p", "Spearman", "jaccard")
-
 for (i in seq_along(correlation_cols)) {
-	plot_single_correlation(correlation_cols[i])	
+	plot_single_correlation(correlation_cols[i], res_id, datasets_include, clusters_exclude)	
 }
-
-plot_double_correlation()
+plot_double_correlation(res_id, datasets_include, clusters_exclude)

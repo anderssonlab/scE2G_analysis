@@ -1,17 +1,13 @@
-sample_key=$OAK/Users/sheth/scE2G_analysis/2024_0916_global_properties/config/pred_sample_key_basic.tsv
-out_dir=$OAK/Users/sheth/scE2G_analysis/2024_0916_global_properties/correlation_across_clusters_threshold
-scratch_dir=/scratch/users/shethm/scE2G_analysis/pairwise_comparisons_correlation_threshold
+sample_key=$OAK/Users/sheth/scE2G_analysis/2025_0214_new_global_properties/config/pred_threshold_key.tsv
+out_dir=$OAK/Users/sheth/scE2G_analysis/2025_0214_new_global_properties/enhancer_similarity
+scratch_dir=/scratch/users/shethm/scE2G_analysis/enhancer_similarity
 
-# sample_key=$OAK/Users/sheth/scE2G_analysis/2024_0916_global_properties/config/pred_sample_key_BMMC_split.tsv
-# out_dir=$OAK/Users/sheth/scE2G_analysis/2024_0916_global_properties/correlation_across_clusters_threshold_BMMC_split
-# scratch_dir=/scratch/users/shethm/scE2G_analysis/pairwise_comparisons_correlation_threshold_BMMC_split
-
-scripts_dir=$OAK/Users/sheth/scE2G_analysis/2024_0916_global_properties/workflow/scripts
+scripts_dir=$OAK/Users/sheth/scE2G_analysis/2025_0214_new_global_properties/scripts
 out_file=$out_dir/correlation_across_clusters.tsv
 
 mkdir $out_dir
 mkdir -p $scratch_dir
-#echo -e "biosampleA\tbiosampleB\tnSharedPredAwB\tnTotalPredA\tnTotalPredB\tnAnotB\tnBnotA\tSpearman\tPearson\tPearson_log1p" > $out_file # header
+echo -e "biosampleA\tbiosampleB\tnSharedPredAwB\tnTotalPredA\tnTotalPredB\tnAnotB\tnBnotA\tSpearman\tPearson\tPearson_log1p" > $out_file # header
 
 pred_ids=($(cat $sample_key | sed 1d | cut -f1)) # get all biosamples
 max=${#pred_ids[@]}   # length of list
@@ -19,13 +15,13 @@ pred_files=($(cat $sample_key | sed 1d | cut -f2)) # get pred files
 
 # get file with columns TargetGene,start,end for thresholded predictions
 mkdir $scratch_dir/reformatted_thresholded_predictions
-# for ((idxA=0; idxA<max; idxA++)); do
-# 	echo "Processing file: " ${pred_files[$idxA]} 
-# 	zcat ${pred_files[$idxA]} | csvtk cut -t -f TargetGene,start,end,E2G.Score.qnorm | sed 1d | sort -k 1,1 -k2,2n | uniq | gzip > $scratch_dir/reformatted_thresholded_predictions/${pred_ids[$idxA]}_chr_start_end_score_thresholded.tsv.gz
-# done
+for ((idxA=0; idxA<max; idxA++)); do
+	echo "Processing file: " ${pred_files[$idxA]} 
+	zcat ${pred_files[$idxA]} | csvtk cut -t -f TargetGene,start,end,E2G.Score.qnorm | sed 1d | sort -k 1,1 -k2,2n | uniq | gzip > $scratch_dir/reformatted_thresholded_predictions/${pred_ids[$idxA]}_chr_start_end_score_thresholded.tsv.gz
+done
 
 # intersect all pairs and correlate
-for ((idxA=39; idxA<max; idxA++)); do  
+for ((idxA=0; idxA<max; idxA++)); do  
 	echo "idxA = " $idxA " out of " $max
 	temp_int_dir=$scratch_dir/temporary_intersections_idx_$idxA
 	mkdir $temp_int_dir
