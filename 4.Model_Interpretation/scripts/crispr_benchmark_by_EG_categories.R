@@ -3,12 +3,17 @@ library(cowplot)
 
 proj_dir <- "/oak/stanford/groups/engreitz/Users/sheth/CRISPR_comparison_v3/CRISPR_comparison"
 source(file.path(proj_dir, "workflow/scripts/crisprComparisonLoadInputData.R"))
-source(file.path(proj_dir, "workflow/scripts/crisprComparisonPlotFunctions.R"))
-source(file.path(proj_dir, "workflow/scripts/bootstrap/crisprComparisonBootstrapFunctions_weighted_trapAUC.R"))
+source(file.path(proj_dir, "workflow/scripts/scE2G_bootstrap/crisprComparisonPlotFunctions_trapAUC.R"))
+source(file.path(proj_dir, "workflow/scripts/scE2G_bootstrap/crisprComparisonBootstrapFunctions_weighted_trapAUC.R"))
 
 compare_performance_between_categories <- function(merged_training, category_name, category_column, pred_config, models, out_prefix, plot_only = FALSE) {
     ## process inputs pred config
     merged_training <- filter(merged_training, pred_uid %in% models)
+
+    # category levels
+    category_levels <- unique(merged_training[[category_column]])
+    category_levels <- rev(category_levels)
+
 
     # get colors for all models to plot
     pred_colors <- pred_config %>% 
@@ -39,7 +44,7 @@ compare_performance_between_categories <- function(merged_training, category_nam
             category = !!sym(category_column)) %>%
         pivot_longer(c(pct_regulated_in_category, pct_pairs_in_category), names_to = "metric", values_to = "pct_pairs") %>% 
         mutate(plot_label = ifelse(metric == "pct_pairs_in_category", "% pairs in category", "% regulated pairs in category")) %>% 
-        mutate(category = factor(category, levels = rev(unique(merged_training[[category_column]])), ordered = TRUE))
+        mutate(category = factor(category, levels = category_levels, ordered = TRUE))
     
     if (plot_only) { message("Plotting only (assuming results exist!)") } else {
 
@@ -81,7 +86,7 @@ compare_performance_between_categories <- function(merged_training, category_nam
     res <- read_tsv(paste0(out_prefix, "performance_summary.tsv")) %>% 
         mutate(pred_name_long = pred_key[pred_uid]) %>% 
         mutate(pred_name_long = factor(pred_name_long, levels = names(pred_colors), ordered = TRUE)) %>%
-        mutate(category = factor(category, levels = rev(unique(merged_training[[category_column]])), ordered = TRUE))
+        mutate(category = factor(category, levels = category_levels, ordered = TRUE))
 
 
     ## plot
@@ -161,12 +166,12 @@ compare_performance_between_categories <- function(merged_training, category_nam
 merged_heldout_crispr_file <- "/oak/stanford/groups/engreitz/Projects/scE2G/data/CRISPR_benchmarking/held_out_250602/expt_pred_merged_annot.txt.gz"
 merged_training_crispr_file <- "/oak/stanford/groups/engreitz/Projects/scE2G/data/CRISPR_benchmarking/sc.250425_2.K562.Xu.cv/expt_pred_merged_annot.txt.gz"
 pred_config_file <- file.path(proj_dir, "resources", "pred_config", "pred_config_scE2G_heldout.tsv")
-correct_heldout_annotations_file <- "/oak/stanford/groups/engreitz/Users/agschwin/distal_regulation_paper/CRISPR_indirect_effects/results/annotated_crispr_data/EPCrisprBenchmark_combined_heldout_element_classes_direct_effects.tsv.gz"
-correct_training_annotations_file <- "/oak/stanford/groups/engreitz/Users/agschwin/distal_regulation_paper/CRISPR_indirect_effects/results/annotated_crispr_data/EPCrisprBenchmark_combined_training_element_classes_direct_effects.tsv.gz"
+correct_annotations_file <- "/oak/stanford/groups/engreitz/Users/sheth/ENCODE_rE2G_main/2025_0227_CTCF_and_H3K27ac/results/2025_0620_revisit_categories/recategorized_v2/crispr_for_distal_regulation.recategorized.tsv.gz"
+
 cage_annot_file <- "/oak/stanford/groups/engreitz/Projects/scE2G/data/CRISPR_benchmarking/EPCrisprBenchmark_ensemble_data_GRCh38.CAGE_N_0.75.tsv.gz" # CAGE_N_0.75
 
 ## load input files
-cols_remove <- c("element_category_with_dnase", "element_category_simple", "element_category", "distance", "distanceToTSS", "Dataset", "ubiq_category")
+cols_remove <- c("element_category_with_dnase", "element_category_simple",	"element_category", "distance", "distanceToTSS", "Dataset", "data_category")
 merged_heldout <- read_tsv(merged_heldout_crispr_file, show_col_types = FALSE) %>%
     select(-any_of(cols_remove))
 
@@ -175,28 +180,29 @@ merged_training <- read_tsv(merged_training_crispr_file, show_col_types = FALSE)
     mutate(pred_uid = ifelse(pred_uid == "scE2G_ATAC.E2G.Score.cv.qnorm", "scE2G_ATAC.E2G.Score.qnorm", pred_uid),
         pred_uid = ifelse(pred_uid == "scE2G_multiome.E2G.Score.cv.qnorm", "scE2G_multiome.E2G.Score.qnorm", pred_uid),
         pred_col = ifelse(pred_col == "E2G.Score.cv.qnorm", "E2G.Score.qnorm", pred_col))
-    
 
 pred_config <- importPredConfig(pred_config_file, expr = FALSE)
 pred_key <- setNames(pred_config$pred_name_long, pred_config$pred_uid)
 
-## add new chromatin categories and direct effect rate (and CAGE); apply any filters
+pred_config <- importPredConfig(pred_config_file, expr = FALSE)
+pred_key <- setNames(pred_config$pred_name_long, pred_config$pred_uid)
+
+## read in correct annotations
 cage_annot <- fread(cage_annot_file) %>% 
     select(chrom, chromStart, chromEnd, measuredGeneSymbol, Dataset, CAGE_N_0.75)
 
-cols_select <- c("chrom", "chromStart", "chromEnd", "measuredGeneSymbol", "element_category", "direct_vs_indirect_negative", "distanceToTSS", "Dataset", "ubiq_category")
-correct_annot_heldout <- read_tsv(correct_heldout_annotations_file) %>%
-    select(ExperimentCellType = CellType, all_of(cols_select))
-correct_annot_training <- read_tsv(correct_training_annotations_file) %>%
-    select(ExperimentCellType = CellType, all_of(cols_select)) %>% 
+correct_annot <- read_tsv(correct_annotations_file) %>% 
+    select(chrom = chr, chromStart = start, chromEnd = end, measuredGeneSymbol, ExperimentCellType = cell_type,
+        element_category, direct_vs_indirect_negative, distanceToTSS, Dataset, data_category)
+
+correct_annot_heldout <- correct_annot %>% filter(data_category == "validation") %>% 
+    left_join(cage_annot, by = c("chrom", "chromStart", "chromEnd", "measuredGeneSymbol", "Dataset"))
+correct_annot_training <- correct_annot %>% filter(data_category == "training") %>% 
     left_join(cage_annot, by = c("chrom", "chromStart", "chromEnd", "measuredGeneSymbol", "Dataset"))
 
-# merged_heldout <- left_join(merged_heldout, correct_annot_heldout, by = c("chrom", "chromStart", "chromEnd", "measuredGeneSymbol", "ExperimentCellType")) %>% 
-#     filter(distanceToTSS < 1000000) %>% 
-#     mutate(Regulated = ifelse(element_category %in% c("CTCF overlap", "H3K27me3 overlap"), FALSE, Regulated))
+## merge with benchmarking data
+merged_heldout <- left_join(merged_heldout, correct_annot_heldout, by = c("chrom", "chromStart", "chromEnd", "measuredGeneSymbol", "ExperimentCellType"))
 merged_training <- left_join(merged_training, correct_annot_training, by = c("chrom", "chromStart", "chromEnd", "measuredGeneSymbol", "ExperimentCellType"))
-    #filter(distanceToTSS < 1000000) %>% 
-    #mutate(Regulated = ifelse(element_category %in% c("CTCF overlap", "H3K27me3 overlap"), FALSE, Regulated))
 
 # process merged data for benchmarking analyses, including filtering for ValidConnection == TRUE
 merged_training <- processMergedData(merged_training, pred_config = pred_config,
@@ -209,42 +215,52 @@ merged_training <- processMergedData(merged_training, pred_config = pred_config,
 
 
 ### RUN COMPARISONS
-out_dir <- file.path(proj_dir, "workflow", "results", "v2_scE2G_category_analysis"); dir.create(out_dir, showWarnings = FALSE)
+out_dir <- file.path(proj_dir, "workflow", "results", "v3_scE2G_category_analysis"); dir.create(out_dir, showWarnings = FALSE)
 models <- c("scE2G_multiome.E2G.Score.qnorm", "scE2G_ATAC.E2G.Score.qnorm", "scATAC_ABC.ABC.Score", "ARC.ARC.E2G.Score", "Kendall.Kendall")
 
 merged_training <- merged_training %>% 
-    mutate(chromatin_category = ifelse(element_category == "H3K27ac high", "H3K27ac high", "Other chromatin state"),
-        distance_category = ifelse(distanceToTSS < 100000, "Under 100 kb", "Over 100 kb"),
+    mutate(chromatin_category = ifelse(element_category == "High H3K27ac", "High H3K27ac", "Other"),
+        enhancerness = ifelse(element_category %in% c("High H3K27ac", "H3K27ac"), "H3K27ac+", "Other"),
+        distance_category = ifelse(distanceToTSS < 100000, "< 100 kb", ">= 100 kb"),
         CAGE_category = ifelse(CAGE_N_0.75, "High CAGE signal", "Low CAGE signal"))
 
 ## promoter class
-if (TRUE) {
-    category_name <- "Promoter\nclass of G"
+if (FALSE) {
+    category_name <- "Target gene\npromoter class"
     category_column <- "ubiq_category"
     out_prefix <- paste0(out_dir, "/promoter_class_")
 
-    compare_performance_between_categories(merged_training, category_name, category_column, pred_config, models, out_prefix, plot_only = TRUE)
+    compare_performance_between_categories(merged_training, category_name, category_column, pred_config, models, out_prefix, plot_only = FALSE)
 }
 
 ## H3K27ac high versus others
 if (TRUE) {
-    category_name <- "Chromatin\nstate at E"
+    category_name <- "Chromatin state\nof element"
     category_column <- "chromatin_category"
-    out_prefix <- paste0(out_dir, "/chrom_cat_")
+    out_prefix <- paste0(out_dir, "/high_h3k27ac_")
 
-    compare_performance_between_categories(merged_training, category_name, category_column, pred_config, models, out_prefix, plot_only = TRUE)
+    compare_performance_between_categories(merged_training, category_name, category_column, pred_config, models, out_prefix, plot_only = FALSE)
+}
+
+## Enhancernes
+if (TRUE) {
+    category_name <- "Chromatin state\nof element"
+    category_column <- "enhancerness"
+    out_prefix <- paste0(out_dir, "/enhancerness_")
+
+    compare_performance_between_categories(merged_training, category_name, category_column, pred_config, models, out_prefix, plot_only = FALSE)
 }
 
 ## distance
-if (TRUE) {
+if (FALSE) {
     category_name <- "Distance to TSS"
     category_column <- "distance_category"
     out_prefix <- paste0(out_dir, "/distance_")
 
-    compare_performance_between_categories(merged_training, category_name, category_column, pred_config, models, out_prefix, plot_only = TRUE)
+    compare_performance_between_categories(merged_training, category_name, category_column, pred_config, models, out_prefix, plot_only = FALSE)
 }
 
-## effect size (remove FF)
+## effect size (remove FF option)
 if (FALSE) {
     merged_training_noFF <- merged_training %>% filter(Dataset != "Nasser2021") %>% mutate(effect_size_group = "All (no FlowFISH)"); print(unique(merged_training_noFF$Dataset))
     merged_over5pct <- merged_training_noFF %>% filter(!(Regulated & abs(EffectSize) <= 0.05)) %>% mutate(effect_size_group = "Effect size >5%")
@@ -260,7 +276,7 @@ if (FALSE) {
 }
 
 ## Kendall correlation?
-if (TRUE) {
+if (FALSE) {
     kendall_annot <- merged_training %>% filter(pred_uid == "Kendall.Kendall") %>% select(pair_uid, Kendall_corr = pred_value)
     median_kendall <-  median(kendall_annot$Kendall_corr) # Median Kendall: 0.00568424430753245
     kendall_threshold <- quantile(kendall_annot$Kendall_corr, probs = 0.8) # 80th percentile: 0.02
@@ -273,16 +289,16 @@ if (TRUE) {
     category_column <- "kendall_category"
     out_prefix <- paste0(out_dir, "/kendall_")
 
-    compare_performance_between_categories(merged_training_kendall, category_name, category_column, pred_config, models, out_prefix, plot_only = TRUE)
+    compare_performance_between_categories(merged_training_kendall, category_name, category_column, pred_config, models, out_prefix, plot_only = FALSE)
 }
 
 ## CAGE signal at element
-if (TRUE) {
-    category_name <- "CAGE signal at E"
+if (FALSE) {
+    category_name <- "CAGE signal\nat element"
     category_column <- "CAGE_category"
     out_prefix <- paste0(out_dir, "/CAGE_")
 
-    compare_performance_between_categories(merged_training, category_name, category_column, pred_config, models, out_prefix, plot_only = TRUE)
+    compare_performance_between_categories(merged_training, category_name, category_column, pred_config, models, out_prefix, plot_only = FALSE)
 }
 
 
