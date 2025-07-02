@@ -61,24 +61,22 @@ get_distal_noncoding_distance_rank <- function(var, tss) {
 	return(res)
 }
 
-get_tpm_nlinks_per_cluster <- function(cell_types, pred_path_base, threshold) {
+get_tpm_nlinks_per_cluster <- function(cell_types, pred_path, e2g_threshold) {
 	cell_types_core = gsub("Islets_", "", cell_types, fixed=TRUE)
 
 	ct_list = vector("list", length(cell_types))
 	for (i in 1:length(ct_list)) {
 		ct <- cell_types[i]
-		pred_path <- ifelse(grepl("PBMC", ct, fixed = TRUE),
-			paste0(pred_path_base, "PBMC"), paste0(pred_path_base, "BMMC"))
-		file_path = file.path(pred_path, cell_types[i], "multiome_powerlaw_v2",  "encode_e2g_predictions.tsv.gz")
+		file_path = file.path(pred_path, cell_types[i], "multiome_powerlaw_v3",  "encode_e2g_predictions.tsv.gz")
 		pred =  fread(file_path, header=TRUE, sep="\t")
 		colnames(pred)[colnames(pred)=="E2G.Score.qnorm"] = "pred_score"
 
 		tpm = dplyr::select(pred, TargetGene, RNA_pseudobulkTPM) %>%
 			distinct() %>%
-			mutate(biosample=cell_types[i],
+			mutate(biosample=ct,
 				RNA_pseudobulkTPM = round(RNA_pseudobulkTPM, 1))
 		
-		n_links = dplyr::filter(pred, pred_score>=threshold) %>%
+		n_links = dplyr::filter(pred, pred_score >= e2g_threshold) %>%
 			dplyr::select(TargetGene) %>% group_by(TargetGene) %>%
 			summarize(nEnhancersPerGene = n())
 
@@ -153,7 +151,7 @@ merge_cs_annotations <- function(df, traits, cs_path) {
 
 # one row for each credible set-gene pair linked by scE2G
 # columns: CredibleSet; trait; E2GRank; bestVariantE2GScore; bestE2GCellType; nCellTypes; listCellTypes; bestDistanceToTSS; distanceRank
-make_gene_pri_table <- function(traits, cell_types, enriched_pairs, variant_file, pred_path_base, intersection_dir, tss_file, all_variants_file, cs_path, threshold, out_dir) {
+make_gene_pri_table <- function(traits, cell_types, enriched_pairs, variant_file, pred_path, intersection_dir, tss_file, all_variants_file, cs_path, threshold, out_dir) {
 	tss = fread(tss_file, header=FALSE, sep="\t") %>%
 		setNames(c("chr", "start", "end", "gene", "score", "strand")) %>%
 		mutate(TSS = (start+end)/2)
@@ -164,7 +162,7 @@ make_gene_pri_table <- function(traits, cell_types, enriched_pairs, variant_file
 		dplyr::filter((trait %in% traits))
 
 	# get tpm and num links data
-	gene_metrics = get_tpm_nlinks_per_cluster(cell_types, pred_path_base, threshold)
+	gene_metrics = get_tpm_nlinks_per_cluster(cell_types, pred_path, threshold)
 	ct_gene_tpm = dplyr::select(gene_metrics, TargetGene, biosample, RNA_pseudobulkTPM)
 	gene_nlinks = dplyr::select(gene_metrics, TargetGene, sumEnhancersPerGene) %>% distinct()
 
@@ -217,17 +215,17 @@ make_filtered_table <- function(res, lim_cell_types, lim_dist, lim_e2g_rank, out
 ### MAIN
 ## inputs to change
 model_id = "scE2G_multiome"
-GWAS_benchmark_id <- "2024_0911_hd_blood"
+GWAS_benchmark_id <- "2024_0213_scE2G_for_interpretation"
 enr_threshold <- 5
 intersection_dir = file.path("/scratch/users/shethm/GWAS_E2G_benchmarking/results", GWAS_benchmark_id, model_id, "biosamples")
-pred_path_base = "/oak/stanford/groups/engreitz/Users/sheth/sc-E2G/results/2024_0826_"
+pred_path = "/oak/stanford/groups/engreitz/Users/sheth/scE2G_temp/scE2G/results/2025_0318_all_clusters"
 er_file = file.path("/oak/stanford/groups/engreitz/Users/sheth/GWAS_benchmarking_working/GWAS_E2G_benchmarking/results",
 	GWAS_benchmark_id, model_id, "variant_overlap", "enrichmentRecall.thresholded.traitByBiosample.tsv.gz")
-out_dir ="/oak/stanford/groups/engreitz/Users/sheth/scE2G_analysis/2024_0823_GWAS_variant_interpretation/BMMC22_PBMC9"
+out_dir ="/oak/stanford/groups/engreitz/Users/sheth/scE2G_analysis/2024_0823_GWAS_variant_interpretation/BMMC22_PBMC9"; dir.create(out_dir, showWarnings = FALSE)
 traits =  c("RBC", "WBC", "Mono", "Lym", "Eosino", "Baso", "Neutro", "Plt", "MCH", "MCHC", "MCV", "Hb", "HbA1c", "Ht", "Glucose")
-cell_types_PBMC = c("PBMC9", "PBMC_10_cDC", "PBMC_11_CD14.Mono.1", "PBMC_12_CD14.Mono.2", "PBMC_13_CD16.Mono", "PBMC_17_B", "PBMC_20_CD4.N1", "PBMC_22_CD4.M", "PBMC_24_CD8.CM", "PBMC_25_NK")
+cell_types_PBMC = c("PBMC_10_cDC", "PBMC_11_CD14.Mono.1", "PBMC_12_CD14.Mono.2", "PBMC_13_CD16.Mono", "PBMC_17_B", "PBMC_20_CD4.N1", "PBMC_22_CD4.M", "PBMC_24_CD8.CM", "PBMC_25_NK")
 cell_types_BMMC = c("BMMC22_B1_B", "BMMC22_CD4_pos_T_activated", "BMMC22_CD4_pos_T_naive", "BMMC22_CD8_pos_T", "BMMC22_CD8_pos_T_naive", "BMMC22_CD14_pos_Mono",
-	"BMMC22_CD16_pos_Mono", "BMMC22_cDC2", "BMMC22_Erythroblast", "BMMC22_G_M_prog", "BMMC22_HSC", "BMMC22_ID2_hi_myeloid_prog", 
+	"BMMC22_CD16_pos_Mono", "BMMC22_cDC2", "BMMC22_Erythroblast", "BMMC22_G_M_prog", "BMMC22_HSC", 
 	"BMMC22_ILC", "BMMC22_Lymph_prog", "BMMC22_MK_E_prog", "BMMC22_Naive_CD20_pos_B", "BMMC22_NK", "BMMC22_Normoblast", "BMMC22_pDC", 
 	"BMMC22_Plasma_cell", "BMMC22_Proerythroblast", "BMMC22_Transitional_B")
 cell_types = c(cell_types_PBMC, cell_types_BMMC)
@@ -237,13 +235,13 @@ tss_file = "/oak/stanford/groups/engreitz/Users/sheth/eQTLEnrichment-integrated/
 variant_file = "/oak/stanford/groups/engreitz/Users/sheth/GWAS_benchmarking_working/GWAS_E2G_benchmarking/results/2024_0829_pancreas/variants/filteredGWASVariants.merged.sorted.tsv.gz"
 all_variants_file = "/oak/stanford/groups/engreitz/Users/rosaxma/fine_mapped_UKBioBank/liftOver_hg38_GWAS_Traits/191010_UKBB_SUSIE/variant.list.all.tsv"
 cs_path = "/oak/stanford/groups/engreitz/Users/rosaxma/fine_mapped_UKBioBank/liftOver_hg38_GWAS_Traits/191010_UKBB_SUSIE/CredibleSetsFixed/"
-threshold = 0.164 # for scE2G_Multiome
+threshold = 0.177 # for scE2G_Multiome
 # abc_anygene_file = "/oak/stanford/groups/engreitz/Users/sheth/GWAS_benchmarking_working/GWAS_E2G_benchmarking/resources/UKBiobank.ABCGene.anyabc.tsv"
 
 ## run
-# plot_enrichment_distributions(er_file, traits, cell_types, 5, out_dir)
+plot_enrichment_distributions(er_file, traits, cell_types, 5, out_dir)
 enriched_pairs <- get_enriched_pairs(er_file, traits, cell_types, enr_threshold, out_dir)
-res <- make_gene_pri_table(traits, cell_types, enriched_pairs, variant_file, pred_path_base, intersection_dir,
+res <- make_gene_pri_table(traits, cell_types, enriched_pairs, variant_file, pred_path, intersection_dir,
 	tss_file, all_variants_file, cs_path, threshold, out_dir)
 
 

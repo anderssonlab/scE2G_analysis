@@ -66,7 +66,7 @@ get_tpm_nlinks_per_cluster <- function(cell_types, pred_path, threshold) {
 
 	ct_list = vector("list", length(cell_types))
 	for (i in 1:length(ct_list)) {
-		file_path = file.path(pred_path, cell_types[i], "multiome_powerlaw_v2",  "encode_e2g_predictions.tsv.gz")
+		file_path = file.path(pred_path, cell_types[i], "multiome_powerlaw_v3",  "encode_e2g_predictions.tsv.gz")
 		pred =  fread(file_path, header=TRUE, sep="\t")
 		colnames(pred)[colnames(pred)=="E2G.Score.qnorm"] = "pred_score"
 
@@ -215,13 +215,13 @@ make_filtered_table <- function(res, lim_cell_types, lim_dist, lim_e2g_rank, out
 
 # Islets
 model_id = "scE2G_multiome"
-GWAS_benchmark_id <- "2024_0829_pancreas"
+GWAS_benchmark_id <- "2024_0213_scE2G_for_interpretation"
 enr_threshold = 5
 intersection_dir = file.path("/scratch/users/shethm/GWAS_E2G_benchmarking/results", GWAS_benchmark_id, model_id, "biosamples")
-pred_path = "/oak/stanford/groups/engreitz/Users/sheth/sc-E2G/results/2024_0826_pancreatic_islets"
+pred_path = "/oak/stanford/groups/engreitz/Users/sheth/scE2G_temp/scE2G/results/2025_0318_all_clusters"
 er_file = file.path("/oak/stanford/groups/engreitz/Users/sheth/GWAS_benchmarking_working/GWAS_E2G_benchmarking/results",
 	GWAS_benchmark_id, model_id, "variant_overlap", "enrichmentRecall.thresholded.traitByBiosample.tsv.gz")
-out_dir ="/oak/stanford/groups/engreitz/Users/sheth/scE2G_analysis/2024_0823_GWAS_variant_interpretation/pancreatic_islets"
+out_dir ="/oak/stanford/groups/engreitz/Users/sheth/scE2G_analysis/2024_0823_GWAS_variant_interpretation/pancreatic_islets"; dir.create(out_dir, showWarnings = FALSE)
 traits = c("T2D", "Glucose", "BFP", "BMI", "BW", "HbA1c", "Ht", "IGF1", "T2D_BMI", "WHRadjBMI")
 cell_types = c("Islets_beta", "Islets_alpha", "Islets_delta", "Islets_PP", "Islets_acinar", "Islets_duct", "Islets_endothelial", "Islets_immune", "Islets_mesenchymal")
 
@@ -231,7 +231,7 @@ tss_file = "/oak/stanford/groups/engreitz/Users/sheth/eQTLEnrichment-integrated/
 variant_file = "/oak/stanford/groups/engreitz/Users/sheth/GWAS_benchmarking_working/GWAS_E2G_benchmarking/results/2024_0829_pancreas/variants/filteredGWASVariants.merged.sorted.tsv.gz"
 all_variants_file = "/oak/stanford/groups/engreitz/Users/rosaxma/fine_mapped_UKBioBank/liftOver_hg38_GWAS_Traits/191010_UKBB_SUSIE/variant.list.all.tsv"
 cs_path = "/oak/stanford/groups/engreitz/Users/rosaxma/fine_mapped_UKBioBank/liftOver_hg38_GWAS_Traits/191010_UKBB_SUSIE/CredibleSetsFixed/"
-threshold = 0.164 # for scE2G_Multiome
+threshold = 0.177 # for scE2G_Multiome
 # abc_anygene_file = "/oak/stanford/groups/engreitz/Users/sheth/GWAS_benchmarking_working/GWAS_E2G_benchmarking/resources/UKBiobank.ABCGene.anyabc.tsv"
 
 ## run

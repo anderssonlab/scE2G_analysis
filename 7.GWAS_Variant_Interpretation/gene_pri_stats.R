@@ -7,7 +7,7 @@ suppressPackageStartupMessages({
 })
 
 out_dir <- "/oak/stanford/groups/engreitz/Users/sheth/scE2G_analysis/2024_0823_GWAS_variant_interpretation"
-out_file <- file.path(out_dir, "gene_prioritization_stats_v2.txt")
+out_file <- file.path(out_dir, "gene_prioritization_stats.txt")
 variant_file = "/oak/stanford/groups/engreitz/Users/sheth/GWAS_benchmarking_working/GWAS_E2G_benchmarking/results/2024_0829_pancreas/variants/filteredGWASVariants.merged.sorted.tsv.gz"
 ds <- c("BMMC22_PBMC9", "pancreatic_islets")
 input_files <- file.path(out_dir, ds, "gene_prioritization_table_enr_filter.tsv")
