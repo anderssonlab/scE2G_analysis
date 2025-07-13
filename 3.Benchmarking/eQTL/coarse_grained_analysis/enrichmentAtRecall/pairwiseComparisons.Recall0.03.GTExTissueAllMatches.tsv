@@ -1,0 +1,56 @@
+group1	group2	p	p_adjust	significant
+scE2G (Multiome) (all_matches)	scE2G (scATAC) (all_matches)	0.0292745225620504	1	FALSE
+scE2G (Multiome) (all_matches)	Kendall correlation (access. at E x expr. at G) (all_matches)	7.98021087518237e-113	4.3891159813503e-111	TRUE
+scE2G (Multiome) (all_matches)	In element (ABC (A=scATAC)) & distance to TSS (all_matches)	0.0237492220752884	1	FALSE
+scE2G (Multiome) (all_matches)	STARE (gABC, power law) (all_matches)	0.00014321077746379	0.00787659276050848	TRUE
+scE2G (Multiome) (all_matches)	SCENT (FDR) (all_matches)	1.01032601015696e-35	5.55679305586326e-34	TRUE
+scE2G (Multiome) (all_matches)	SnapATAC (p-value) (all_matches)	8.77329909037272e-79	4.825314499705e-77	TRUE
+scE2G (Multiome) (all_matches)	Cicero (co-accessibility) (all_matches)	1.97361211725761e-80	1.08548666449169e-78	TRUE
+scE2G (Multiome) (all_matches)	FigR (p-value) (all_matches)	1.71513186338403e-78	9.43322524861217e-77	TRUE
+scE2G (Multiome) (all_matches)	SCENIC+ (importance) (all_matches)	4.18642567024023e-54	2.30253411863212e-52	TRUE
+scE2G (Multiome) (all_matches)	DIRECTNET (high-confidence) (all_matches)	1.80132638475411e-92	9.90729511614762e-91	TRUE
+scE2G (scATAC) (all_matches)	Kendall correlation (access. at E x expr. at G) (all_matches)	2.42058631461886e-84	1.33132247304037e-82	TRUE
+scE2G (scATAC) (all_matches)	In element (ABC (A=scATAC)) & distance to TSS (all_matches)	0.928263318644787	1	FALSE
+scE2G (scATAC) (all_matches)	STARE (gABC, power law) (all_matches)	0.11074738141396	1	FALSE
+scE2G (scATAC) (all_matches)	SCENT (FDR) (all_matches)	7.30282418546808e-22	4.01655330200745e-20	TRUE
+scE2G (scATAC) (all_matches)	SnapATAC (p-value) (all_matches)	1.02769296976123e-56	5.65231133368675e-55	TRUE
+scE2G (scATAC) (all_matches)	Cicero (co-accessibility) (all_matches)	3.12405494170377e-59	1.71823021793707e-57	TRUE
+scE2G (scATAC) (all_matches)	FigR (p-value) (all_matches)	3.98843988667635e-56	2.19364193767199e-54	TRUE
+scE2G (scATAC) (all_matches)	SCENIC+ (importance) (all_matches)	1.66894608407917e-36	9.17920346243545e-35	TRUE
+scE2G (scATAC) (all_matches)	DIRECTNET (high-confidence) (all_matches)	1.23615637502153e-67	6.79886006261844e-66	TRUE
+Kendall correlation (access. at E x expr. at G) (all_matches)	In element (ABC (A=scATAC)) & distance to TSS (all_matches)	3.09389027353546e-82	1.7016396504445e-80	TRUE
+Kendall correlation (access. at E x expr. at G) (all_matches)	STARE (gABC, power law) (all_matches)	2.85572900351855e-69	1.5706509519352e-67	TRUE
+Kendall correlation (access. at E x expr. at G) (all_matches)	SCENT (FDR) (all_matches)	7.42986005802969e-49	4.08642303191633e-47	TRUE
+Kendall correlation (access. at E x expr. at G) (all_matches)	SnapATAC (p-value) (all_matches)	1.18000070108631e-05	0.000649000385597471	TRUE
+Kendall correlation (access. at E x expr. at G) (all_matches)	Cicero (co-accessibility) (all_matches)	0.02807391773885	1	FALSE
+Kendall correlation (access. at E x expr. at G) (all_matches)	FigR (p-value) (all_matches)	3.69030616669362e-07	2.02966839168149e-05	TRUE
+Kendall correlation (access. at E x expr. at G) (all_matches)	SCENIC+ (importance) (all_matches)	8.13938473699664e-21	4.47666160534815e-19	TRUE
+Kendall correlation (access. at E x expr. at G) (all_matches)	DIRECTNET (high-confidence) (all_matches)	0.005207833100662	0.28643082053641	FALSE
+In element (ABC (A=scATAC)) & distance to TSS (all_matches)	STARE (gABC, power law) (all_matches)	0.134283746510404	1	FALSE
+In element (ABC (A=scATAC)) & distance to TSS (all_matches)	SCENT (FDR) (all_matches)	3.9271507811579e-21	2.15993292963684e-19	TRUE
+In element (ABC (A=scATAC)) & distance to TSS (all_matches)	SnapATAC (p-value) (all_matches)	2.95795631109449e-55	1.62687597110197e-53	TRUE
+In element (ABC (A=scATAC)) & distance to TSS (all_matches)	Cicero (co-accessibility) (all_matches)	7.80919214701649e-58	4.29505568085907e-56	TRUE
+In element (ABC (A=scATAC)) & distance to TSS (all_matches)	FigR (p-value) (all_matches)	1.20656306064638e-54	6.6360968335551e-53	TRUE
+In element (ABC (A=scATAC)) & distance to TSS (all_matches)	SCENIC+ (importance) (all_matches)	1.85110939123755e-35	1.01811016518065e-33	TRUE
+In element (ABC (A=scATAC)) & distance to TSS (all_matches)	DIRECTNET (high-confidence) (all_matches)	6.58612192550851e-66	3.62236705902968e-64	TRUE
+STARE (gABC, power law) (all_matches)	SCENT (FDR) (all_matches)	1.30876449712352e-14	7.19820473417937e-13	TRUE
+STARE (gABC, power law) (all_matches)	SnapATAC (p-value) (all_matches)	8.90944883327887e-45	4.90019685830338e-43	TRUE
+STARE (gABC, power law) (all_matches)	Cicero (co-accessibility) (all_matches)	1.39590985552591e-47	7.67750420539253e-46	TRUE
+STARE (gABC, power law) (all_matches)	FigR (p-value) (all_matches)	4.37040323133095e-44	2.40372177723202e-42	TRUE
+STARE (gABC, power law) (all_matches)	SCENIC+ (importance) (all_matches)	5.08321211838307e-27	2.79576666511069e-25	TRUE
+STARE (gABC, power law) (all_matches)	DIRECTNET (high-confidence) (all_matches)	2.50430252929968e-54	1.37736639111482e-52	TRUE
+SCENT (FDR) (all_matches)	SnapATAC (p-value) (all_matches)	1.35597440433408e-20	7.45785922383743e-19	TRUE
+SCENT (FDR) (all_matches)	Cicero (co-accessibility) (all_matches)	1.70385215325338e-23	9.37118684289359e-22	TRUE
+SCENT (FDR) (all_matches)	FigR (p-value) (all_matches)	7.08438965452294e-20	3.89641430998762e-18	TRUE
+SCENT (FDR) (all_matches)	SCENIC+ (importance) (all_matches)	4.84269771833312e-06	0.000266348374508321	TRUE
+SCENT (FDR) (all_matches)	DIRECTNET (high-confidence) (all_matches)	1.44396127199171e-30	7.94178699595441e-29	TRUE
+SnapATAC (p-value) (all_matches)	Cicero (co-accessibility) (all_matches)	0.112903207539462	1	FALSE
+SnapATAC (p-value) (all_matches)	FigR (p-value) (all_matches)	0.627830423797138	1	FALSE
+SnapATAC (p-value) (all_matches)	SCENIC+ (importance) (all_matches)	4.47908109151177e-06	0.000246349460033148	TRUE
+SnapATAC (p-value) (all_matches)	DIRECTNET (high-confidence) (all_matches)	0.0941877234233298	1	FALSE
+Cicero (co-accessibility) (all_matches)	FigR (p-value) (all_matches)	0.0391287610019002	1	FALSE
+Cicero (co-accessibility) (all_matches)	SCENIC+ (importance) (all_matches)	1.00132467597204e-08	5.5072857178462e-07	TRUE
+Cicero (co-accessibility) (all_matches)	DIRECTNET (high-confidence) (all_matches)	0.883067807054888	1	FALSE
+FigR (p-value) (all_matches)	SCENIC+ (importance) (all_matches)	2.10206007629262e-05	0.00115613304196094	TRUE
+FigR (p-value) (all_matches)	DIRECTNET (high-confidence) (all_matches)	0.0248440360012859	1	FALSE
+SCENIC+ (importance) (all_matches)	DIRECTNET (high-confidence) (all_matches)	9.56879186951887e-11	5.26283552823538e-09	TRUE

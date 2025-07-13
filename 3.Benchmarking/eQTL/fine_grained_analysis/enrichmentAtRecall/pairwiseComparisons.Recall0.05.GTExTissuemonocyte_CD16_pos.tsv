@@ -1,0 +1,37 @@
+group1	group2	p	p_adjust	significant
+scE2G (Multiome) (BMMC22_CD16_pos_Mono)	scE2G (Multiome) (PBMC_13_CD16.Mono)	0.542970363454254	1	FALSE
+scE2G (Multiome) (BMMC22_CD16_pos_Mono)	scE2G (scATAC) (BMMC22_CD16_pos_Mono)	0.701579396924424	1	FALSE
+scE2G (Multiome) (BMMC22_CD16_pos_Mono)	scE2G (scATAC) (PBMC_13_CD16.Mono)	0.822529241154487	1	FALSE
+scE2G (Multiome) (BMMC22_CD16_pos_Mono)	Kendall correlation (access. at E x expr. at G) (BMMC22_CD16_pos_Mono)	1.04632156598415e-08	3.76675763754296e-07	TRUE
+scE2G (Multiome) (BMMC22_CD16_pos_Mono)	ABC (A=scATAC, C=power law) (BMMC22_CD16_pos_Mono)	0.342357556699574	1	FALSE
+scE2G (Multiome) (BMMC22_CD16_pos_Mono)	ABC (A=scATAC, C=power law) (PBMC_13_CD16.Mono)	0.414135002255329	1	FALSE
+scE2G (Multiome) (BMMC22_CD16_pos_Mono)	In element (ABC (A=scATAC)) & distance to TSS (BMMC22_CD16_pos_Mono)	0.648366109585975	1	FALSE
+scE2G (Multiome) (BMMC22_CD16_pos_Mono)	In element (ABC (A=scATAC)) & distance to TSS (PBMC_13_CD16.Mono)	0.43660097760391	1	FALSE
+scE2G (Multiome) (PBMC_13_CD16.Mono)	scE2G (scATAC) (BMMC22_CD16_pos_Mono)	0.318369019978781	1	FALSE
+scE2G (Multiome) (PBMC_13_CD16.Mono)	scE2G (scATAC) (PBMC_13_CD16.Mono)	0.412751389355542	1	FALSE
+scE2G (Multiome) (PBMC_13_CD16.Mono)	Kendall correlation (access. at E x expr. at G) (BMMC22_CD16_pos_Mono)	6.82606229154369e-11	2.45738242495573e-09	TRUE
+scE2G (Multiome) (PBMC_13_CD16.Mono)	ABC (A=scATAC, C=power law) (BMMC22_CD16_pos_Mono)	0.116380454509269	1	FALSE
+scE2G (Multiome) (PBMC_13_CD16.Mono)	ABC (A=scATAC, C=power law) (PBMC_13_CD16.Mono)	0.154168194569696	1	FALSE
+scE2G (Multiome) (PBMC_13_CD16.Mono)	In element (ABC (A=scATAC)) & distance to TSS (BMMC22_CD16_pos_Mono)	0.287166164283428	1	FALSE
+scE2G (Multiome) (PBMC_13_CD16.Mono)	In element (ABC (A=scATAC)) & distance to TSS (PBMC_13_CD16.Mono)	0.161939217995398	1	FALSE
+scE2G (scATAC) (BMMC22_CD16_pos_Mono)	scE2G (scATAC) (PBMC_13_CD16.Mono)	0.882371022256845	1	FALSE
+scE2G (scATAC) (BMMC22_CD16_pos_Mono)	Kendall correlation (access. at E x expr. at G) (BMMC22_CD16_pos_Mono)	1.04667069350455e-07	3.76801449661636e-06	TRUE
+scE2G (scATAC) (BMMC22_CD16_pos_Mono)	ABC (A=scATAC, C=power law) (BMMC22_CD16_pos_Mono)	0.569592936157659	1	FALSE
+scE2G (scATAC) (BMMC22_CD16_pos_Mono)	ABC (A=scATAC, C=power law) (PBMC_13_CD16.Mono)	0.658555769875031	1	FALSE
+scE2G (scATAC) (BMMC22_CD16_pos_Mono)	In element (ABC (A=scATAC)) & distance to TSS (BMMC22_CD16_pos_Mono)	0.938172473719793	1	FALSE
+scE2G (scATAC) (BMMC22_CD16_pos_Mono)	In element (ABC (A=scATAC)) & distance to TSS (PBMC_13_CD16.Mono)	0.692674699362305	1	FALSE
+scE2G (scATAC) (PBMC_13_CD16.Mono)	Kendall correlation (access. at E x expr. at G) (BMMC22_CD16_pos_Mono)	1.82863375734896e-07	6.58308152645627e-06	TRUE
+scE2G (scATAC) (PBMC_13_CD16.Mono)	ABC (A=scATAC, C=power law) (BMMC22_CD16_pos_Mono)	0.484620090848887	1	FALSE
+scE2G (scATAC) (PBMC_13_CD16.Mono)	ABC (A=scATAC, C=power law) (PBMC_13_CD16.Mono)	0.565871267877406	1	FALSE
+scE2G (scATAC) (PBMC_13_CD16.Mono)	In element (ABC (A=scATAC)) & distance to TSS (BMMC22_CD16_pos_Mono)	0.824644582309964	1	FALSE
+scE2G (scATAC) (PBMC_13_CD16.Mono)	In element (ABC (A=scATAC)) & distance to TSS (PBMC_13_CD16.Mono)	0.595214562958212	1	FALSE
+Kendall correlation (access. at E x expr. at G) (BMMC22_CD16_pos_Mono)	ABC (A=scATAC, C=power law) (BMMC22_CD16_pos_Mono)	3.1841140173849e-06	0.000114628104625856	TRUE
+Kendall correlation (access. at E x expr. at G) (BMMC22_CD16_pos_Mono)	ABC (A=scATAC, C=power law) (PBMC_13_CD16.Mono)	3.36591490546955e-06	0.000121172936596904	TRUE
+Kendall correlation (access. at E x expr. at G) (BMMC22_CD16_pos_Mono)	In element (ABC (A=scATAC)) & distance to TSS (BMMC22_CD16_pos_Mono)	3.01933542507558e-07	1.08696075302721e-05	TRUE
+Kendall correlation (access. at E x expr. at G) (BMMC22_CD16_pos_Mono)	In element (ABC (A=scATAC)) & distance to TSS (PBMC_13_CD16.Mono)	1.0180626405959e-06	3.66502550614523e-05	TRUE
+ABC (A=scATAC, C=power law) (BMMC22_CD16_pos_Mono)	ABC (A=scATAC, C=power law) (PBMC_13_CD16.Mono)	0.90737305293366	1	FALSE
+ABC (A=scATAC, C=power law) (BMMC22_CD16_pos_Mono)	In element (ABC (A=scATAC)) & distance to TSS (BMMC22_CD16_pos_Mono)	0.62820377888752	1	FALSE
+ABC (A=scATAC, C=power law) (BMMC22_CD16_pos_Mono)	In element (ABC (A=scATAC)) & distance to TSS (PBMC_13_CD16.Mono)	0.860929008670708	1	FALSE
+ABC (A=scATAC, C=power law) (PBMC_13_CD16.Mono)	In element (ABC (A=scATAC)) & distance to TSS (BMMC22_CD16_pos_Mono)	0.718393951251502	1	FALSE
+ABC (A=scATAC, C=power law) (PBMC_13_CD16.Mono)	In element (ABC (A=scATAC)) & distance to TSS (PBMC_13_CD16.Mono)	0.955963144967084	1	FALSE
+In element (ABC (A=scATAC)) & distance to TSS (BMMC22_CD16_pos_Mono)	In element (ABC (A=scATAC)) & distance to TSS (PBMC_13_CD16.Mono)	0.754520576348995	1	FALSE

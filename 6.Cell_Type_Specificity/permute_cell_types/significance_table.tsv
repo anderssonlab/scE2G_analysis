@@ -1,0 +1,4 @@
+group1	group2	group1_mean	group2_mean	delta_group1_minus_groups2	p	p_stars
+L3_real_total	L3_from_L2_total	837899.75	810052.5	27847.25	0.0170915142304862	*
+L3_real_total	L3_from_L1_total	837899.75	475502.4	362397.35	1.97399208126351e-18	***
+L3_from_L2_total	L3_from_L1_total	810052.5	475502.4	334550.1	1.05677053154474e-16	***

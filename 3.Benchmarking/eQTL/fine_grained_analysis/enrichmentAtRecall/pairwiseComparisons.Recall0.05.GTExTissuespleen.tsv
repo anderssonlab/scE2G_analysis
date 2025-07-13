@@ -1,0 +1,29 @@
+group1	group2	p	p_adjust	significant
+scE2G (Multiome) (K562)	scE2G (scATAC) (K562)	0.656489091397468	1	FALSE
+scE2G (Multiome) (K562)	Kendall correlation (access. at E x expr. at G) (K562)	7.03756667604017e-16	1.97051866929125e-14	TRUE
+scE2G (Multiome) (K562)	In element (ABC (A=scATAC)) & distance to TSS (K562)	0.32189053940295	1	FALSE
+scE2G (Multiome) (K562)	SnapATAC (p-value) (K562)	3.3357376397455e-15	9.3400653912874e-14	TRUE
+scE2G (Multiome) (K562)	FigR (p-value) (K562)	3.66844161835294e-15	1.02716365313882e-13	TRUE
+scE2G (Multiome) (K562)	SCENIC+ (importance) (K562)	8.53262182513504e-14	2.38913411103781e-12	TRUE
+scE2G (Multiome) (K562)	DIRECTNET (high-confidence) (K562)	1.97701060447716e-16	5.53562969253603e-15	TRUE
+scE2G (scATAC) (K562)	Kendall correlation (access. at E x expr. at G) (K562)	8.11343539307167e-17	2.27176191006007e-15	TRUE
+scE2G (scATAC) (K562)	In element (ABC (A=scATAC)) & distance to TSS (K562)	0.593585062747455	1	FALSE
+scE2G (scATAC) (K562)	SnapATAC (p-value) (K562)	3.80370681405657e-16	1.06503790793584e-14	TRUE
+scE2G (scATAC) (K562)	FigR (p-value) (K562)	4.18052310039183e-16	1.17054646810971e-14	TRUE
+scE2G (scATAC) (K562)	SCENIC+ (importance) (K562)	9.66707712782689e-15	2.70678159579153e-13	TRUE
+scE2G (scATAC) (K562)	DIRECTNET (high-confidence) (K562)	2.28731340095301e-17	6.40447752266842e-16	TRUE
+Kendall correlation (access. at E x expr. at G) (K562)	In element (ABC (A=scATAC)) & distance to TSS (K562)	2.0660097671012e-19	5.78482734788336e-18	TRUE
+Kendall correlation (access. at E x expr. at G) (K562)	SnapATAC (p-value) (K562)	0.862580067273263	1	FALSE
+Kendall correlation (access. at E x expr. at G) (K562)	FigR (p-value) (K562)	0.860026361868503	1	FALSE
+Kendall correlation (access. at E x expr. at G) (K562)	SCENIC+ (importance) (K562)	0.566346953885982	1	FALSE
+Kendall correlation (access. at E x expr. at G) (K562)	DIRECTNET (high-confidence) (K562)	0.694946916068328	1	FALSE
+In element (ABC (A=scATAC)) & distance to TSS (K562)	SnapATAC (p-value) (K562)	1.16023096465638e-18	3.24864670103785e-17	TRUE
+In element (ABC (A=scATAC)) & distance to TSS (K562)	FigR (p-value) (K562)	1.29356126984523e-18	3.62197155556664e-17	TRUE
+In element (ABC (A=scATAC)) & distance to TSS (K562)	SCENIC+ (importance) (K562)	4.25144921894393e-17	1.1904057813043e-15	TRUE
+In element (ABC (A=scATAC)) & distance to TSS (K562)	DIRECTNET (high-confidence) (K562)	5.66764185714288e-20	1.58693972000001e-18	TRUE
+SnapATAC (p-value) (K562)	FigR (p-value) (K562)	0.997077066476361	1	FALSE
+SnapATAC (p-value) (K562)	SCENIC+ (importance) (K562)	0.689789299884603	1	FALSE
+SnapATAC (p-value) (K562)	DIRECTNET (high-confidence) (K562)	0.581399311315065	1	FALSE
+FigR (p-value) (K562)	SCENIC+ (importance) (K562)	0.693126113388817	1	FALSE
+FigR (p-value) (K562)	DIRECTNET (high-confidence) (K562)	0.57993306742189	1	FALSE
+SCENIC+ (importance) (K562)	DIRECTNET (high-confidence) (K562)	0.354457930840097	1	FALSE

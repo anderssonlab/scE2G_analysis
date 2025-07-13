@@ -1,0 +1,11 @@
+group1	group2	p	p_adjust	significant
+scE2G (Multiome) (BMMC22_G_M_prog)	scE2G (scATAC) (BMMC22_G_M_prog)	0.178222610675845	1	FALSE
+scE2G (Multiome) (BMMC22_G_M_prog)	Kendall correlation (access. at E x expr. at G) (BMMC22_G_M_prog)	2.96782009392917e-32	2.96782009392917e-31	TRUE
+scE2G (Multiome) (BMMC22_G_M_prog)	ABC (A=scATAC, C=power law) (BMMC22_G_M_prog)	0.380504834301903	1	FALSE
+scE2G (Multiome) (BMMC22_G_M_prog)	In element (ABC (A=scATAC)) & distance to TSS (BMMC22_G_M_prog)	0.204067838668637	1	FALSE
+scE2G (scATAC) (BMMC22_G_M_prog)	Kendall correlation (access. at E x expr. at G) (BMMC22_G_M_prog)	2.42457285097023e-24	2.42457285097023e-23	TRUE
+scE2G (scATAC) (BMMC22_G_M_prog)	ABC (A=scATAC, C=power law) (BMMC22_G_M_prog)	0.637937764567449	1	FALSE
+scE2G (scATAC) (BMMC22_G_M_prog)	In element (ABC (A=scATAC)) & distance to TSS (BMMC22_G_M_prog)	0.948062970137603	1	FALSE
+Kendall correlation (access. at E x expr. at G) (BMMC22_G_M_prog)	ABC (A=scATAC, C=power law) (BMMC22_G_M_prog)	4.71626080120832e-27	4.71626080120832e-26	TRUE
+Kendall correlation (access. at E x expr. at G) (BMMC22_G_M_prog)	In element (ABC (A=scATAC)) & distance to TSS (BMMC22_G_M_prog)	4.14625153455898e-24	4.14625153455898e-23	TRUE
+ABC (A=scATAC, C=power law) (BMMC22_G_M_prog)	In element (ABC (A=scATAC)) & distance to TSS (BMMC22_G_M_prog)	0.68805609141569	1	FALSE

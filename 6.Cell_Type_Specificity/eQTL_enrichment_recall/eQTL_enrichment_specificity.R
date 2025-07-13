@@ -10,9 +10,9 @@ suppressPackageStartupMessages({
   library(cowplot)
 })
 
-make_enr_recall_table <- function(result_dir, key_file) {
-	enr_file <- file.path("/oak/stanford/groups/engreitz/Users/sheth/eQTLEnrichment-integrated/eQTLEnrichment/results", result_dir, "scE2G_multiome", "enrichmentTables/enrichmentTable.0to30000Kb.tsv")
-	recall_file <- file.path("/oak/stanford/groups/engreitz/Users/sheth/eQTLEnrichment-integrated/eQTLEnrichment/results", result_dir, "scE2G_multiome", "recallTables/recallTable.byDistance.tsv")
+make_enr_recall_table <- function(result_dir, key_file, category_group, biosamples_exclude) {
+	enr_file <- file.path("/oak/stanford/groups/engreitz/Users/sheth/eQTLEnrichment-integrated/eQTLEnrichment/results", result_dir, "scE2G_multiome", "enrichmentTables", "enrichmentTable.0to30000Kb.tsv")
+	recall_file <- file.path("/oak/stanford/groups/engreitz/Users/sheth/eQTLEnrichment-integrated/eQTLEnrichment/results", result_dir, "scE2G_multiome", "recallTables", "recallTable.byDistance.tsv")
 
 	# enr file: Biosample	GTExTissue	nVariantsOverlappingEnhancers	nVariantsGTExTissue	nCommonVariantsOverlappingEnhancers	nCommonVariants	enrichment	CI_enr_low	CI_enr_high	SE_log_enr	p_adjust_enr	method	distance_min	distance_max
 	# recall file (need to filter) GTExTissue	nVariantGenePairsOverlappingEnhancers	nVariantsOverlappingEnhancersCorrectGene	Biosample	distance_min	distance_max	total.variants	recall.total	recall.linking	correctGene.ifOverlap	method
@@ -21,15 +21,20 @@ make_enr_recall_table <- function(result_dir, key_file) {
 	key <- fread(key_file)
 	clust_map <- dplyr::select(key, Biosample, clustering) %>% distinct()
 
-	any_exact <- c("exact", "almost_exact")
+	if (category_group == "any_exact") {
+		category_values <- c("exact", "almost_exact")
+	} else if (category_group == "not_unmatched") {
+		category_values <-  c("exact", "almost_exact", "similar")
+	}
+
 	res <- left_join(enr, recall, by=c("GTExTissue", "Biosample", "distance_min", "distance_max", "method")) %>%
-		dplyr::filter(nVariantsGTExTissue >= 35,
-			!is.na(enrichment), !is.na(recall.linking)) %>%
+		dplyr::filter(nVariantsGTExTissue >= 35,!is.na(enrichment), !is.na(recall.linking)) %>%
+		dplyr::filter(!(Biosample %in% biosamples_exclude)) %>%
 		left_join(key, by = c("GTExTissue", "Biosample")) %>%
 		dplyr::select(-clustering) %>%
 		mutate(category = replace_na(category, "unmatched"),
-			category = ifelse(category %in%  any_exact, "any_exact", category),
-			category = factor(category, levels = c("exact", "almost_exact", "any_exact", "similar", "unmatched"), ordered = TRUE)) %>%
+			category = ifelse(category %in%  category_values, category_group, category),
+			category = factor(category, levels = c("exact", "almost_exact", "any_exact", "similar", "not_unmatched", "unmatched"), ordered = TRUE)) %>%
 		left_join(clust_map, by = "Biosample") %>% 
 		dplyr::filter(!is.na(clustering))
 
@@ -130,18 +135,21 @@ compare_metric_across_groups <- function(er, metric, out_dir) {
 }
 
 plot_main_comparison <- function(er, enr_sign, rec_sign, out_dir) {
-	groups <- c("granular_any_exact", "granular_similar", "granular_unmatched")
+	groups <- c("granular_any_exact", "granular_similar", "granular_not_unmatched", "granular_unmatched")
 	
 	# format for plotting
 	er_groups <- group_by(er, category) %>%
 		summarize(n_points = n(), mean_enr = mean(enrichment), mean_rec = mean(recall.linking)) %>%
 		mutate(category_name = case_when(category == "any_exact" ~ "Same cell type",
+																		category == "not_unmatched" ~ "Same cell type\nor lineage",
 																		category == "similar" ~ "Same lineage",
 																		category == "unmatched" ~ "Unmatched"),
 					category_alpha = case_when(category == "any_exact" ~ 0.75,
+																		category == "not_unmatched" ~ 0.75,
 																		category == "similar" ~ 0.75,
 																		category == "unmatched" ~ 0.33),
 					category_color = case_when(category == "any_exact" ~ "#430b4e",
+																		category == "not_unmatched" ~ "#430b4e",
 																		category == "similar" ~ "#a64791",
 																		category == "unmatched" ~ "#96a0b3"),
 					category_label = paste0(category_name, "\n(N = ", n_points, ")"),
@@ -175,41 +183,43 @@ plot_main_comparison <- function(er, enr_sign, rec_sign, out_dir) {
 	s <- ggplot(er, aes(x = recall.linking, y = enrichment, color = category_label, alpha = category_alpha)) +
 		geom_point(shape = 16, size = 2) +
 		ylim(enr_lim) +
-		scale_color_manual(values = cp, name = "Prediction/eQTL category") +
+		scale_color_manual(values = cp, name = "Prediction cell type/\neQTL biosample category") +
 		scale_alpha_identity() +
 		#scale_y_log10() + 
-		labs(x = "Recall (Fraction of eQTLs in enhancer linked to eGene)", y = "Enrichment (eQTLs versus common variants)") +
+		labs(x = "Recall\nFraction of eQTLs in enhancer linked to correct eGene", y = "Enrichment\neQTLs versus common variants") +
 		theme_classic() + theme( axis.text = element_text(size = 7), axis.title = element_text(size = 8), axis.ticks = element_line(color = "#000000"), legend.position = "right",
 			legend.text = element_text(size = 7), legend.title = element_text(size = 8), aspect.ratio=1)
-	ggsave(file.path(out_dir, "granular_scatter.pdf"), s, height = 4, width = 4)
+	ggsave(file.path(out_dir, "granular_scatter.pdf"), s, height = 4, width = 4.5)
 
 	er$category_label <- factor(er$category_label, levels = cat_key[names(enr_rank)], ordered = TRUE)
 	e <- ggplot(er, aes(x = category_label, y = enrichment)) +
 		stat_eye(aes(fill = category_label), side = "both", shape = 16, point_size = 2, slab_linewidth = 0) +
 		ylim(enr_lim) +
-		scale_fill_manual(values = cp, name = "Prediction/eQTL category") +
+		scale_fill_manual(values = cp, name = "Prediction cell type/eQTL biosample category") +
 		geom_signif(xmin = enr_sign$loc1, xmax = enr_sign$loc2,
 			annotations = enr_sign$stars, y_position = enr_sign$y_position, tip_length = 0.01,
 			size = 0.25, extend_line = -0.02, vjust = 0.7, textsize = 2.5) +
-		labs(x = "Prediction cluster/eQTL biosample category", y = "Enrichment (eQTLs versus common variants)") +
-		coord_flip() +
-		theme_classic() + theme( axis.text = element_text(size = 7), axis.title = element_text(size = 8), axis.ticks = element_line(color = "#000000"), legend.position = "none")
+		labs(x = "Prediction cluster/eQTL biosample category", y = "Enrichment\neQTLs versus common variants") +
+		#coord_flip() +
+		theme_classic() + theme(axis.text = element_text(size = 7, color = "#000000"), axis.title = element_text(size = 8),
+			axis.ticks = element_line(color = "#000000"), legend.position = "none")
 
 	er$category_label <- factor(er$category_label, levels = cat_key[names(rec_rank)], ordered = TRUE)
 	r <- ggplot(er, aes(x = category_label, y = recall.linking)) +
 		stat_eye(aes(fill = category_label), side = "both", shape = 16, point_size = 2, slab_linewidth = 0) +
 		#ylim(enr_lim) +
-		scale_fill_manual(values = cp, name = "Prediciton/eQTL category") +
+		scale_fill_manual(values = cp, name = "Prediction cell type/eQTL biosample category") +
 		geom_signif(xmin = rec_sign$loc1, xmax = rec_sign$loc2,
 			annotations = rec_sign$stars, y_position = rec_sign$y_position, tip_length = 0.01,
 			size = 0.25, extend_line = -0.02, vjust = 0.7, textsize = 2.5) +
-		labs(x = "Prediction cluster/eQTL biosample category", y = "Recall (Fraction of eQTLs in enhancer linked to eGene)") +
-		coord_flip() +
-		theme_classic() + theme( axis.text = element_text(size = 7), axis.title = element_text(size = 8), axis.ticks = element_line(color = "#000000"), legend.position = "none")
+		labs(x = "Prediction cluster/eQTL biosample category", y = "Recall\nFraction of eQTLs in enhancer linked to correct eGene") +
+		#coord_flip() +
+		theme_classic() + theme( axis.text = element_text(size = 7, color = "#000000"), axis.title = element_text(size = 8),
+			axis.ticks = element_line(color = "#000000"), legend.position = "none")
 
 		
-	grid <- cowplot::plot_grid(e,r, nrow = 2, ncol = 1, align = "hv", rel_widths = c(1, 1))
-	ggsave2(file.path(out_dir, "granular_violins_h.pdf"), grid, height = 4, width = 4)
+	grid <- cowplot::plot_grid(e,r, nrow = 1, ncol = 2, align = "hv", rel_widths = c(1, 1))
+	ggsave2(file.path(out_dir, "granular_violins_v.pdf"), grid, height = 4, width = 6)
 
 	grid2 <- cowplot::plot_grid(s + theme(legend.position = "none"), e, r, nrow = 1, ncol = 3, align = "vh", rel_widths = c(0.85, 0.7, 0.7))
 	# ggsave2(file.path(out_dir, "granular_scatter_and_violins.pdf"), grid2, height = 3.5, width = 8.5)
@@ -225,14 +235,18 @@ plot_main_comparison <- function(er, enr_sign, rec_sign, out_dir) {
 # hd_recall_file = "/oak/stanford/groups/engreitz/Users/sheth/eQTLEnrichment-integrated/eQTLEnrichment/results/2024_1004_hd_pred_fine_eQTL/scE2G_multiome/recallTables/recallTable.byDistance.tsv"
 # hd_key_file ="/oak/stanford/groups/engreitz/Users/sheth/scE2G_analysis/2024_0623_CTS_predictions/config/hd_pred_fine_eQTL_key.tsv"
 
-result_dirs <- c("2024_1004_hd_pred_fine_eQTL", "2024_1115_islets_combined_fine_eQTL", "2024_1109_sg_pred_fine_eQTL")
-key_file <- "/oak/stanford/groups/engreitz/Users/sheth/scE2G_analysis/2024_0623_CTS_predictions/config/all_pred_eQTL_key.tsv"
+result_dirs <- c("2025_0224_scE2G_only")
+key_file <- "/oak/stanford/groups/engreitz/Users/sheth/scE2G_analysis/2024_0623_CTS_predictions/config/biosample_matching_hd_pred_fine_eQTL.tsv"
+biosamples_exclude <- c("Islets_endothelial", "Islets_immune", "Islets_mesenchymal")
+out_dir = "/oak/stanford/groups/engreitz/Users/sheth/scE2G_analysis/2024_0623_CTS_predictions/eQTL_enrichment_specificity"; dir.create(out_dir)
 
-out_dir = "/oak/stanford/groups/engreitz/Users/sheth/scE2G_analysis/2024_0623_CTS_predictions/eQTL_enrichment_specificity_v2/"
-dir.create(out_dir)
-
-er <- lapply(result_dirs, make_enr_recall_table, key_file) %>%
+er <- lapply(result_dirs, make_enr_recall_table, key_file, "any_exact", biosamples_exclude) %>%
 	rbindlist() %>% distinct(GTExTissue, Biosample, .keep_all = TRUE) %>% as_tibble()
+fwrite(er, file.path(out_dir, "annotated_enrichment_recall.tsv"), sep = "\t", col.names = TRUE, row.names = FALSE, quote = FALSE)
+
+message("Unique prediction cell types: ", length(unique(er$Biosample)))
+message("Unique eQTL biosamples: ", length(unique(er$GTExTissue)))
+
 
 plot_enrichment_recall_scatter(er, out_dir)
 plot_enrichment_recall_distributions(er, out_dir)

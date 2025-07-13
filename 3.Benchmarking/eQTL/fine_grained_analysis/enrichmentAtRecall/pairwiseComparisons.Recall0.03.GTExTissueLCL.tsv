@@ -1,0 +1,37 @@
+group1	group2	p	p_adjust	significant
+scE2G (Multiome) (GM12878)	scE2G (scATAC) (GM12878)	0.156325617636202	1	FALSE
+scE2G (Multiome) (GM12878)	Kendall correlation (access. at E x expr. at G) (GM12878)	4.41751355941271e-34	1.59030488138858e-32	TRUE
+scE2G (Multiome) (GM12878)	In element (ABC (A=scATAC)) & distance to TSS (GM12878)	0.138573378646516	1	FALSE
+scE2G (Multiome) (GM12878)	SnapATAC (p-value) (GM12878)	4.56070734217815e-18	1.64185464318413e-16	TRUE
+scE2G (Multiome) (GM12878)	Cicero (co-accessibility) (GM12878)	1.01157881858852e-19	3.64168374691867e-18	TRUE
+scE2G (Multiome) (GM12878)	FigR (p-value) (GM12878)	1.04777163908787e-27	3.77197790071632e-26	TRUE
+scE2G (Multiome) (GM12878)	SCENIC+ (importance) (GM12878)	1.14991152032484e-24	4.13968147316943e-23	TRUE
+scE2G (Multiome) (GM12878)	ArchR (high-confidence) (GM12878)	2.63735727405533e-17	9.49448618659919e-16	TRUE
+scE2G (scATAC) (GM12878)	Kendall correlation (access. at E x expr. at G) (GM12878)	4.60866524285827e-24	1.65911948742898e-22	TRUE
+scE2G (scATAC) (GM12878)	In element (ABC (A=scATAC)) & distance to TSS (GM12878)	0.908835568895682	1	FALSE
+scE2G (scATAC) (GM12878)	SnapATAC (p-value) (GM12878)	8.23766463269738e-12	2.96555926777106e-10	TRUE
+scE2G (scATAC) (GM12878)	Cicero (co-accessibility) (GM12878)	9.43734605720385e-13	3.39744458059339e-11	TRUE
+scE2G (scATAC) (GM12878)	FigR (p-value) (GM12878)	6.37362365393911e-19	2.29450451541808e-17	TRUE
+scE2G (scATAC) (GM12878)	SCENIC+ (importance) (GM12878)	2.26443277903924e-16	8.15195800454128e-15	TRUE
+scE2G (scATAC) (GM12878)	ArchR (high-confidence) (GM12878)	4.73281278890696e-11	1.70381260400651e-09	TRUE
+Kendall correlation (access. at E x expr. at G) (GM12878)	In element (ABC (A=scATAC)) & distance to TSS (GM12878)	4.54605357949392e-21	1.63657928861781e-19	TRUE
+Kendall correlation (access. at E x expr. at G) (GM12878)	SnapATAC (p-value) (GM12878)	0.000167690498260482	0.00603685793737735	TRUE
+Kendall correlation (access. at E x expr. at G) (GM12878)	Cicero (co-accessibility) (GM12878)	1.63856162899608e-05	0.000589882186438588	TRUE
+Kendall correlation (access. at E x expr. at G) (GM12878)	FigR (p-value) (GM12878)	0.0570600946998852	1	FALSE
+Kendall correlation (access. at E x expr. at G) (GM12878)	SCENIC+ (importance) (GM12878)	0.00101036398380693	0.0363731034170495	TRUE
+Kendall correlation (access. at E x expr. at G) (GM12878)	ArchR (high-confidence) (GM12878)	3.3244749760771e-06	0.000119681099138776	TRUE
+In element (ABC (A=scATAC)) & distance to TSS (GM12878)	SnapATAC (p-value) (GM12878)	1.92075157737379e-10	6.91470567854566e-09	TRUE
+In element (ABC (A=scATAC)) & distance to TSS (GM12878)	Cicero (co-accessibility) (GM12878)	3.71919713321553e-11	1.33891096795759e-09	TRUE
+In element (ABC (A=scATAC)) & distance to TSS (GM12878)	FigR (p-value) (GM12878)	1.52897426785755e-16	5.50430736428718e-15	TRUE
+In element (ABC (A=scATAC)) & distance to TSS (GM12878)	SCENIC+ (importance) (GM12878)	3.02648946429448e-14	1.08953620714601e-12	TRUE
+In element (ABC (A=scATAC)) & distance to TSS (GM12878)	ArchR (high-confidence) (GM12878)	1.03290884017374e-09	3.71847182462546e-08	TRUE
+SnapATAC (p-value) (GM12878)	Cicero (co-accessibility) (GM12878)	0.932551483129368	1	FALSE
+SnapATAC (p-value) (GM12878)	FigR (p-value) (GM12878)	0.0343056491764493	1	FALSE
+SnapATAC (p-value) (GM12878)	SCENIC+ (importance) (GM12878)	0.288583032184005	1	FALSE
+SnapATAC (p-value) (GM12878)	ArchR (high-confidence) (GM12878)	0.559677859603832	1	FALSE
+Cicero (co-accessibility) (GM12878)	FigR (p-value) (GM12878)	0.0136464787489371	0.491273234961734	FALSE
+Cicero (co-accessibility) (GM12878)	SCENIC+ (importance) (GM12878)	0.194159254245883	1	FALSE
+Cicero (co-accessibility) (GM12878)	ArchR (high-confidence) (GM12878)	0.579802423454806	1	FALSE
+FigR (p-value) (GM12878)	SCENIC+ (importance) (GM12878)	0.19114924623614	1	FALSE
+FigR (p-value) (GM12878)	ArchR (high-confidence) (GM12878)	0.00367941390962825	0.132458900746617	FALSE
+SCENIC+ (importance) (GM12878)	ArchR (high-confidence) (GM12878)	0.0698548558480852	1	FALSE

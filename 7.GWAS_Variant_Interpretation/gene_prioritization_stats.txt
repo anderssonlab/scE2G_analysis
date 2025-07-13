@@ -1,0 +1,15 @@
+Number of  traits  considered: 18
+Number of nc cs considered: 1743
+Number of nc cs - trait pairs considered: 1892
+Number of variants considered: 3686
+Number of variants prioritized: 1450
+Number of genes prioritized: 1351
+Number of nc cs-trait pairs prioritized: 1892
+Number of nc cs  prioritized: 1743
+Number of variant-gene predictions: 2169
+Number of variant-gene-best cell type predictions: 2314
+Number of cs-gene predictions: 2715
+Number of cs-gene-best cell type predictions: 2840
+Number of cs-gene pairs linked to closest gene: 1479
+Number of cs-gene pairs NOT linked to closest gene: 1258
+Number of cs-gene pairs with E2G Rank 1 not linked to closest gene: 458

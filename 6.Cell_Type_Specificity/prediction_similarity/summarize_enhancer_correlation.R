@@ -9,132 +9,8 @@ suppressPackageStartupMessages({
   library(cowplot)
   library(ggpubr)
   library(ggdist)
-  library(egg)
 })
 
-process_BMMC_split_input <- function(input_file, sample_key_file, correlation_col) {
-	sample_key <- fread(sample_key_file) %>%
-		dplyr::select(cluster_id, cluster, supergroup, lineage)
-	sample_key_A <- sample_key %>% setNames(c("biosampleA", "clusterA", "supergroupA", "lineageA"))
-	sample_key_B <- sample_key %>% setNames(c("biosampleB", "clusterB", "supergroupB", "lineageB"))
-
-	res <- fread(input_file) %>%
-		mutate(jaccard = nSharedPredAwB / (nTotalPredA + nTotalPredB - nSharedPredAwB)) %>%
-		dplyr::filter(biosampleA != biosampleB, biosampleA != "ID2_hi_myeloid_prog", biosampleB != "ID2_hi_myeloid_prog") %>%
-		dplyr::select(biosampleA, biosampleB, !!sym(correlation_col)) %>%
-		left_join(sample_key_A, by="biosampleA") %>%
-		left_join(sample_key_B, by="biosampleB") %>%
-		distinct()
-
-	# all samples
-	full <- res %>%
-		summarise(n_pairs = n(), n_clusters = length(unique(c(biosampleA, biosampleB))),
-			average_cor = mean(!!sym(correlation_col)), sd_cor = sd(!!sym(correlation_col))) %>%
-		mutate(CI_low_cor = average_cor - 1.96*sd_cor, CI_high_cor = average_cor + 1.96*sd_cor,
-			dataset= "BMMC_split", group = "all", color = "#5496ce")
-
-	# matching lineage
-	lineage <- res %>%
-		dplyr::filter(lineageA == lineageB, lineageA %in% c("Lineage_Lymphoid", "Lineage_Myeloid")) %>%
-		summarise(n_pairs = n(), n_clusters = length(unique(c(biosampleA, biosampleB))),
-			average_cor = mean(!!sym(correlation_col)), sd_cor = sd(!!sym(correlation_col))) %>%
-		mutate(CI_low_cor = average_cor - 1.96*sd_cor, CI_high_cor = average_cor + 1.96*sd_cor,
-			dataset = "BMMC_split", group = "lineage", color = "#006eae")
-
-	# matching supergroups
-	sg <- res %>%
-		dplyr::filter(supergroupA == supergroupB, supergroupA != "Supergroup_Other") %>%
-		summarise(n_pairs = n(), n_clusters = length(unique(c(biosampleA, biosampleB))),
-			average_cor = mean(!!sym(correlation_col)), sd_cor = sd(!!sym(correlation_col))) %>%
-		mutate(CI_low_cor = average_cor - 1.96*sd_cor, CI_high_cor = average_cor + 1.96*sd_cor,
-			dataset = "BMMC_split", group = "supergroup", color = "#00488d")
-
-	# matching cluster
-	cluster <- res %>%
-		dplyr::filter(clusterA == clusterB) %>%
-		summarise(n_pairs = n(), n_clusters = length(unique(c(biosampleA, biosampleB))),
-			average_cor = mean(!!sym(correlation_col)), sd_cor = sd(!!sym(correlation_col))) %>%
-		mutate(CI_low_cor = average_cor - 1.96*sd_cor, CI_high_cor = average_cor + 1.96*sd_cor,
-			dataset = "BMMC_split", group = "cluster", color = "#002359")
-
-	df <- rbind(full, lineage, sg, cluster)
-}
-
-process_BMMC_cluster_input <- function(input_file, sample_key_file, correlation_col) {
-	exclude_biosamples <- c("BMMC22_combined", "BMMC22_ID2_hi_myeloid_prog")
-
-	sample_key <- fread(sample_key_file) %>%
-		dplyr::select(cluster, supergroup, lineage) %>%
-		distinct()
-	sample_key_A <- sample_key %>% setNames(c("clusterA", "supergroupA", "lineageA")) %>% distinct()
-	sample_key_B <- sample_key %>% setNames(c("clusterB", "supergroupB", "lineageB")) %>% distinct()
-
-	bmmc22 <- fread(input_file) %>%
-		dplyr::filter(startsWith(biosampleA, "BMMC22_"), startsWith(biosampleB, "BMMC22_"),
-			!(biosampleA %in% exclude_biosamples), !(biosampleB %in% exclude_biosamples)) %>%
-		mutate(jaccard = nSharedPredAwB / (nTotalPredA + nTotalPredB - nSharedPredAwB),
-			biosampleA = gsub("BMMC22_", "", biosampleA), biosampleB = gsub("BMMC22_", "", biosampleB)) %>%
-		dplyr::filter(biosampleA != biosampleB) %>% #, biosampleA != "ID2_hi_myeloid_prog", biosampleB != "ID2_hi_myeloid_prog") %>%
-		dplyr::select(biosampleA, biosampleB, !!sym(correlation_col)) %>%
-		rename(clusterA = biosampleA, clusterB = biosampleB) %>%
-		left_join(sample_key_A, by="clusterA") %>%
-		left_join(sample_key_B, by="clusterB") %>%
-		distinct()
-
-	# all samples
-	full22 <- bmmc22 %>%
-		summarise(n_pairs = n(), n_clusters = length(unique(c(clusterA, clusterB))),
-			average_cor = mean(!!sym(correlation_col)), sd_cor = sd(!!sym(correlation_col))) %>%
-		mutate(CI_low_cor = average_cor - 1.96*sd_cor, CI_high_cor = average_cor + 1.96*sd_cor,
-			dataset= "BMMC22", group = "all", color = "#b778b3")
-
-	# matching lineage
-	lineage22 <- bmmc22 %>%
-		dplyr::filter(lineageA == lineageB, lineageA %in% c("Lineage_Lymphoid", "Lineage_Myeloid")) %>%
-		summarise(n_pairs = n(), n_clusters = length(unique(c(clusterA, clusterB))),
-			average_cor = mean(!!sym(correlation_col)), sd_cor = sd(!!sym(correlation_col))) %>%
-		mutate(CI_low_cor = average_cor - 1.96*sd_cor, CI_high_cor = average_cor + 1.96*sd_cor,
-			dataset = "BMMC22", group = "lineage", color = "#a64791")
-
-	# matching sg
-	sg22 <- bmmc22 %>%
-		dplyr::filter(supergroupA == supergroupB, supergroupA != "Supergroup_Other") %>%
-		summarise(n_pairs = n(), n_clusters = length(unique(c(clusterA, clusterB))),
-			average_cor = mean(!!sym(correlation_col)), sd_cor = sd(!!sym(correlation_col))) %>%
-		mutate(CI_low_cor = average_cor - 1.96*sd_cor, CI_high_cor = average_cor + 1.96*sd_cor,
-			dataset = "BMMC22", group = "supergroup", color = "#792374")
-
-	sample_key_A <- sample_key_A %>% dplyr::select(supergroupA, lineageA) %>% distinct()
-	sample_key_B <- sample_key_B %>% dplyr::select(supergroupB, lineageB) %>% distinct()
-
-	bmmc5 <- fread(input_file) %>%
-		dplyr::filter(startsWith(biosampleA, "BMMC5_"), startsWith(biosampleB, "BMMC5_")) %>%
-		mutate(jaccard = nSharedPredAwB / (nTotalPredA + nTotalPredB - nSharedPredAwB),
-			biosampleA = gsub("BMMC5_", "Supergroup_", biosampleA), biosampleB = gsub("BMMC5_", "Supergroup_", biosampleB)) %>%
-		dplyr::filter(biosampleA != biosampleB, biosampleA != "Supergroup_Other", biosampleB != "Supergroup_Other") %>%
-		dplyr::select(biosampleA, biosampleB, !!sym(correlation_col)) %>%
-		rename(supergroupA = biosampleA, supergroupB = biosampleB) %>%
-		left_join(sample_key_A, by="supergroupA") %>%
-		left_join(sample_key_B, by="supergroupB") %>%
-		distinct()
-
-	# all samples
-	full5 <- bmmc5 %>%
-		summarise(n_pairs = n(), n_clusters = length(unique(c(supergroupA, supergroupB))),
-			average_cor = mean(!!sym(correlation_col)), sd_cor = sd(!!sym(correlation_col))) %>%
-		mutate(CI_low_cor = average_cor - 1.96*sd_cor, CI_high_cor = average_cor + 1.96*sd_cor,
-			dataset= "BMMC5", group = "all", color = "#dc6464")
-
-	# matching lineage
-	lineage5 <- bmmc5 %>% 
-		dplyr::filter(lineageA == lineageB, lineageA %in% c("Lineage_Lymphoid", "Lineage_Myeloid")) %>%
-		summarise(n_pairs = n(), n_clusters = length(unique(c(supergroupA, supergroupB))),
-			average_cor = mean(!!sym(correlation_col)), sd_cor = sd(!!sym(correlation_col))) %>%
-		mutate(CI_low_cor = average_cor - 1.96*sd_cor, CI_high_cor = average_cor + 1.96*sd_cor,
-			dataset = "BMMC5", group = "lineage", color = "#c5373d")
-
-	df <- rbind(full22, lineage22, sg22, full5, lineage5)
-}
 
 get_distinct_combinations_sorted <- function(df, col1, col2) {
 	 df <- df %>%
@@ -244,12 +120,15 @@ plot_cluster_grouping_comparisons <- function(cluster_res, j_signif, p_signif, o
 	cp_j <- c(`Same cell type, same dataset`="#00488d", `Same dataset`="#5496ce", `Same cell type, different dataset`="#006eae", `Different dataset`="#9bcae9")
 	cp_p <- c(`Same cell type, same dataset`="#9b241c", `Same dataset`="#dc6464", `Same cell type, different dataset`="#c5373d", `Different dataset`="#e9a0a5")
 	summ <- summarize_groups(cluster_res, out_dir)
+	
 	n_pairs_key <- setNames(summ$n_pairs, summ$group)
+	label_key <- c(`Same cell type, same dataset`="Same cell type group,\nsame dataset", `Same dataset`="Same dataset",
+		`Same cell type, different dataset`="Same cell type group,\ndifferent dataset", `Different dataset`="Different dataset")
 
 	cluster_res <- mutate(cluster_res,
 			n_pairs = n_pairs_key[group], jaccard_col = cp_j[group], Pearson_col = cp_p[group],
 			n_pairs_text = paste0(n_pairs, " pairs"),
-			group_label = paste0(group, "\n", n_pairs_text),
+			group_label = paste0(label_key[group], "\n", n_pairs_text),
 			group = factor(group, levels = names(cp_j), ordered = TRUE)) %>%
 		arrange(group) 
 	cp_j <- setNames(unique(cluster_res$jaccard_col), unique(cluster_res$group_label))
@@ -258,51 +137,41 @@ plot_cluster_grouping_comparisons <- function(cluster_res, j_signif, p_signif, o
 
 	j <- ggplot(cluster_res, aes(x = group_label, y = jaccard)) +
 		stat_eye(aes(fill = group_label), side = "both", shape = 16, point_size = 2, slab_linewidth = 0) +
-#		ylim(enr_lim) +
 		scale_fill_manual(values = cp_j) +
 		geom_signif(xmin = c(1,3), xmax = c(2,4),
-		 	annotations = c("***", "***"), y_position = c(0.56, 0.56), tip_length = 0.01,
+		 	annotations = c("***", "***"), y_position = c(0.58, 0.58), tip_length = 0.02,
 			size = 0.25, extend_line = -0.02, vjust = 0.7, textsize = 2.5) +
-		labs(x = "Category of cluster pair", y = "Jaccard similarity") +
-		#coord_flip() +
-		theme_classic() + theme( axis.text = element_text(size = 7), axis.title = element_text(size = 8),
+		scale_y_continuous(limits = c(0, 0.7), breaks = c(0, 0.2, 0.4, 0.6)) +
+		labs(x = "Category of cell type pair", y = "Jaccard similarity") +
+		theme_classic() + theme(axis.text = element_text(size = 6, color = "#000000"), axis.title = element_text(size = 8),
+			axis.text.x = element_blank(), axis.title.x = element_blank(),
 			axis.ticks = element_line(color = "#000000"), legend.position = "none")
 
 	p <- ggplot(cluster_res, aes(x = group_label, y =Pearson)) +
 		stat_eye(aes(fill = group_label), side = "both", shape = 16, point_size = 2, slab_linewidth = 0) +
-#		ylim(enr_lim) +
 		scale_fill_manual(values = cp_p) +
 		geom_signif(xmin = c(1,3), xmax = c(2,4),
-		 	annotations = c("***", "***"), y_position = c(0.67, 0.67), tip_length = 0.01,
+		 	annotations = c("***", "***"), y_position = c(0.67, 0.67), tip_length = 0.02,
 			size = 0.25, extend_line = -0.02, vjust = 0.7, textsize = 2.5) +
-		labs(x = "Category of cluster pair", y = "Pearson correlation") +
-		#coord_flip() +
-		theme_classic() + theme( axis.text = element_text(size = 7), axis.title = element_text(size = 8),
+		scale_y_continuous(limits = c(0, 0.7), breaks = c(0, 0.2, 0.4, 0.6)) +
+		labs(x = "Category of cell type pair", y = "Pearson correlation") +
+		theme_classic() + theme(axis.text = element_text(size = 6, color = "#000000"), axis.title = element_text(size = 8),
 			axis.ticks = element_line(color = "#000000"), legend.position = "none")
 
 	
-	grid <- plot_grid(j, p, nrow = 2, rel_heights = c(1, 1), align = "hv")
-	ggsave2(file.path(out_dir, paste0("jaccard_pearson_between groups.pdf")), grid, height = 4.5, width = 4)
+	grid <- plot_grid(j, p, nrow = 2, axis = "lr", align = "hv")
+	ggsave2(file.path(out_dir, paste0("jaccard_pearson_between_groups.pdf")), grid, height = 4.5, width = 3.5)
 	# fwrite(res, file.path(out_dir, paste0(corr_col, "_summarized_across_BMMC.tsv")), row.names = FALSE, col.names = TRUE, sep = "\t", quote = FALSE)
 }
 
-BMMC_split_res_file <- "/oak/stanford/groups/engreitz/Users/sheth/scE2G_analysis/2024_0916_global_properties/correlation_across_clusters_threshold_BMMC_split/correlation_across_clusters.tsv"
-BMMC_sample_key_file <- "/oak/stanford/groups/engreitz/Users/sheth/scE2G_analysis/2024_0916_global_properties/config/pred_sample_key_exp_BMMC_split.tsv"
-cluster_res_file <- "/oak/stanford/groups/engreitz/Users/sheth/scE2G_analysis/2024_0916_global_properties/correlation_across_clusters_threshold/correlation_across_clusters.tsv"
-cluster_sample_key_file <- "/oak/stanford/groups/engreitz/Users/sheth/scE2G_analysis/2024_0916_global_properties/config/cell_type_groups.tsv"
+cluster_res_file <- "/oak/stanford/groups/engreitz/Users/sheth/scE2G_analysis/2025_0214_new_global_properties/enhancer_similarity/correlation_across_clusters.tsv"
+cluster_sample_key_file <- "/oak/stanford/groups/engreitz/Users/sheth/scE2G_analysis/2025_0214_new_global_properties/config/cell_type_groups.tsv"
 
-out_dir <- "/oak/stanford/groups/engreitz/Users/sheth/scE2G_analysis/2024_0916_global_properties/correlation_summary"
+out_dir <- "/oak/stanford/groups/engreitz/Users/sheth/scE2G_analysis/2025_0214_new_global_properties/enhancer_similarity"
 correlation_cols <- c("jaccard", "Pearson", "Pearson_log1p", "Spearman") #"Pearson_log1p" #"Pearson_log1p" #\tPearson\tPearson_log1p""
 
-dir.create(out_dir)
+dir.create(out_dir, showWarnings = FALSE)
 res <- process_all_cluster_input(cluster_res_file, cluster_sample_key_file)
 j_signif <- pairwise_comparisons(res, "jaccard", out_dir)
 p_signif <- pairwise_comparisons(res, "Pearson", out_dir)
 plot_cluster_grouping_comparisons(res, j_signif, p_signif, out_dir)
-# format input data
-# for (i in seq_along(correlation_cols)) {
-# 	correlation_col <- correlation_cols[i]
-# 	BMMC_res <- process_BMMC_split_input(BMMC_split_res_file, BMMC_sample_key_file, correlation_col)
-# 	cluster_res <- process_cluster_input(cluster_res_file, BMMC_sample_key_file, correlation_col)
-# 	plot_all_categories(BMMC_res, cluster_res, correlation_col, out_dir)
-# }

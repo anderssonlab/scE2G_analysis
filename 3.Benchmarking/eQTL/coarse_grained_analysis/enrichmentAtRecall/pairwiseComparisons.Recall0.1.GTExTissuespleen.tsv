@@ -1,0 +1,37 @@
+group1	group2	p	p_adjust	significant
+scE2G (Multiome) (K562)	scE2G (scATAC) (K562)	2.54351048562468e-07	9.15663774824886e-06	TRUE
+scE2G (Multiome) (K562)	Kendall correlation (access. at E x expr. at G) (K562)	0.0185013346919415	0.666048048909894	FALSE
+scE2G (Multiome) (K562)	ABC (A=scATAC, C=power law) (K562)	9.34511755950883e-08	3.36424232142318e-06	TRUE
+scE2G (Multiome) (K562)	In element (ABC (A=scATAC)) & distance to TSS (K562)	2.98699461440502e-06	0.000107531806118581	TRUE
+scE2G (Multiome) (K562)	STARE (gABC, power law) (K562)	3.43912508937687e-09	1.23808503217567e-07	TRUE
+scE2G (Multiome) (K562)	SnapATAC (p-value) (K562)	0.0392807454121113	1	FALSE
+scE2G (Multiome) (K562)	FigR (p-value) (K562)	0.0386975290249239	1	FALSE
+scE2G (Multiome) (K562)	SCENIC+ (importance) (K562)	0.0487851064789697	1	FALSE
+scE2G (scATAC) (K562)	Kendall correlation (access. at E x expr. at G) (K562)	3.4942156906983e-15	1.25791764865139e-13	TRUE
+scE2G (scATAC) (K562)	ABC (A=scATAC, C=power law) (K562)	0.825563561520908	1	FALSE
+scE2G (scATAC) (K562)	In element (ABC (A=scATAC)) & distance to TSS (K562)	0.679628634358282	1	FALSE
+scE2G (scATAC) (K562)	STARE (gABC, power law) (K562)	0.502105222968064	1	FALSE
+scE2G (scATAC) (K562)	SnapATAC (p-value) (K562)	8.18302472944512e-14	2.94588890260024e-12	TRUE
+scE2G (scATAC) (K562)	FigR (p-value) (K562)	7.83363897238882e-14	2.82011003005998e-12	TRUE
+scE2G (scATAC) (K562)	SCENIC+ (importance) (K562)	1.55145010754223e-13	5.58522038715203e-12	TRUE
+Kendall correlation (access. at E x expr. at G) (K562)	ABC (A=scATAC, C=power law) (K562)	9.04650824118966e-16	3.25674296682828e-14	TRUE
+Kendall correlation (access. at E x expr. at G) (K562)	In element (ABC (A=scATAC)) & distance to TSS (K562)	2.77473039808046e-13	9.98902943308965e-12	TRUE
+Kendall correlation (access. at E x expr. at G) (K562)	STARE (gABC, power law) (K562)	2.32116913224897e-18	8.35620887609629e-17	TRUE
+Kendall correlation (access. at E x expr. at G) (K562)	SnapATAC (p-value) (K562)	0.794092485327094	1	FALSE
+Kendall correlation (access. at E x expr. at G) (K562)	FigR (p-value) (K562)	0.799527217503407	1	FALSE
+Kendall correlation (access. at E x expr. at G) (K562)	SCENIC+ (importance) (K562)	0.71523580635118	1	FALSE
+ABC (A=scATAC, C=power law) (K562)	In element (ABC (A=scATAC)) & distance to TSS (K562)	0.529886773414515	1	FALSE
+ABC (A=scATAC, C=power law) (K562)	STARE (gABC, power law) (K562)	0.657501629022088	1	FALSE
+ABC (A=scATAC, C=power law) (K562)	SnapATAC (p-value) (K562)	2.22265764936021e-14	8.00156753769676e-13	TRUE
+ABC (A=scATAC, C=power law) (K562)	FigR (p-value) (K562)	2.12673160544539e-14	7.65623377960339e-13	TRUE
+ABC (A=scATAC, C=power law) (K562)	SCENIC+ (importance) (K562)	4.244444127021e-14	1.52799988572756e-12	TRUE
+In element (ABC (A=scATAC)) & distance to TSS (K562)	STARE (gABC, power law) (K562)	0.279366450938466	1	FALSE
+In element (ABC (A=scATAC)) & distance to TSS (K562)	SnapATAC (p-value) (K562)	4.50731316451246e-12	1.62263273922449e-10	TRUE
+In element (ABC (A=scATAC)) & distance to TSS (K562)	FigR (p-value) (K562)	4.33007899969924e-12	1.55882843989173e-10	TRUE
+In element (ABC (A=scATAC)) & distance to TSS (K562)	SCENIC+ (importance) (K562)	8.11411458304731e-12	2.92108124989703e-10	TRUE
+STARE (gABC, power law) (K562)	SnapATAC (p-value) (K562)	9.72414134274066e-17	3.50069088338664e-15	TRUE
+STARE (gABC, power law) (K562)	FigR (p-value) (K562)	9.26012537414885e-17	3.33364513469359e-15	TRUE
+STARE (gABC, power law) (K562)	SCENIC+ (importance) (K562)	1.99213781351476e-16	7.17169612865314e-15	TRUE
+SnapATAC (p-value) (K562)	FigR (p-value) (K562)	0.994574941620084	1	FALSE
+SnapATAC (p-value) (K562)	SCENIC+ (importance) (K562)	0.920130230437006	1	FALSE
+FigR (p-value) (K562)	SCENIC+ (importance) (K562)	0.914734215040556	1	FALSE

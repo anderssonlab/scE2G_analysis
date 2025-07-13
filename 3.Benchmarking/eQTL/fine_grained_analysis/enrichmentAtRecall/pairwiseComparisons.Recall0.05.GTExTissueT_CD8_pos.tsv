@@ -1,0 +1,106 @@
+group1	group2	p	p_adjust	significant
+scE2G (Multiome) (BMMC22_CD8_pos_T)	scE2G (Multiome) (BMMC22_CD8_pos_T_naive)	0.688293490927105	1	FALSE
+scE2G (Multiome) (BMMC22_CD8_pos_T)	scE2G (Multiome) (PBMC_24_CD8.CM)	0.722951557523067	1	FALSE
+scE2G (Multiome) (BMMC22_CD8_pos_T)	scE2G (scATAC) (BMMC22_CD8_pos_T)	0.110292427956145	1	FALSE
+scE2G (Multiome) (BMMC22_CD8_pos_T)	scE2G (scATAC) (BMMC22_CD8_pos_T_naive)	0.134796292894161	1	FALSE
+scE2G (Multiome) (BMMC22_CD8_pos_T)	scE2G (scATAC) (PBMC_24_CD8.CM)	0.442218315081936	1	FALSE
+scE2G (Multiome) (BMMC22_CD8_pos_T)	Kendall correlation (access. at E x expr. at G) (BMMC22_CD8_pos_T)	7.99956248244085e-14	8.39954060656289e-12	TRUE
+scE2G (Multiome) (BMMC22_CD8_pos_T)	Kendall correlation (access. at E x expr. at G) (BMMC22_CD8_pos_T_naive)	8.85367084243794e-15	9.29635438455984e-13	TRUE
+scE2G (Multiome) (BMMC22_CD8_pos_T)	Kendall correlation (access. at E x expr. at G) (PBMC_24_CD8.CM)	2.66272953923687e-13	2.79586601619871e-11	TRUE
+scE2G (Multiome) (BMMC22_CD8_pos_T)	ABC (A=scATAC, C=power law) (BMMC22_CD8_pos_T)	0.0425151674847558	1	FALSE
+scE2G (Multiome) (BMMC22_CD8_pos_T)	ABC (A=scATAC, C=power law) (BMMC22_CD8_pos_T_naive)	0.140194230393422	1	FALSE
+scE2G (Multiome) (BMMC22_CD8_pos_T)	ABC (A=scATAC, C=power law) (PBMC_24_CD8.CM)	0.162810441272883	1	FALSE
+scE2G (Multiome) (BMMC22_CD8_pos_T)	In element (ABC (A=scATAC)) & distance to TSS (BMMC22_CD8_pos_T)	0.0472862756931648	1	FALSE
+scE2G (Multiome) (BMMC22_CD8_pos_T)	In element (ABC (A=scATAC)) & distance to TSS (BMMC22_CD8_pos_T_naive)	0.0936940557218221	1	FALSE
+scE2G (Multiome) (BMMC22_CD8_pos_T)	In element (ABC (A=scATAC)) & distance to TSS (PBMC_24_CD8.CM)	0.281726649369932	1	FALSE
+scE2G (Multiome) (BMMC22_CD8_pos_T_naive)	scE2G (Multiome) (PBMC_24_CD8.CM)	0.457023002395092	1	FALSE
+scE2G (Multiome) (BMMC22_CD8_pos_T_naive)	scE2G (scATAC) (BMMC22_CD8_pos_T)	0.23556664377881	1	FALSE
+scE2G (Multiome) (BMMC22_CD8_pos_T_naive)	scE2G (scATAC) (BMMC22_CD8_pos_T_naive)	0.278850415842997	1	FALSE
+scE2G (Multiome) (BMMC22_CD8_pos_T_naive)	scE2G (scATAC) (PBMC_24_CD8.CM)	0.715032302213744	1	FALSE
+scE2G (Multiome) (BMMC22_CD8_pos_T_naive)	Kendall correlation (access. at E x expr. at G) (BMMC22_CD8_pos_T)	4.55292205463348e-12	4.78056815736515e-10	TRUE
+scE2G (Multiome) (BMMC22_CD8_pos_T_naive)	Kendall correlation (access. at E x expr. at G) (BMMC22_CD8_pos_T_naive)	7.72647090987784e-13	8.11279445537173e-11	TRUE
+scE2G (Multiome) (BMMC22_CD8_pos_T_naive)	Kendall correlation (access. at E x expr. at G) (PBMC_24_CD8.CM)	1.67985180024974e-11	1.76384439026222e-09	TRUE
+scE2G (Multiome) (BMMC22_CD8_pos_T_naive)	ABC (A=scATAC, C=power law) (BMMC22_CD8_pos_T)	0.104614211523611	1	FALSE
+scE2G (Multiome) (BMMC22_CD8_pos_T_naive)	ABC (A=scATAC, C=power law) (BMMC22_CD8_pos_T_naive)	0.287943349311232	1	FALSE
+scE2G (Multiome) (BMMC22_CD8_pos_T_naive)	ABC (A=scATAC, C=power law) (PBMC_24_CD8.CM)	0.322848350948134	1	FALSE
+scE2G (Multiome) (BMMC22_CD8_pos_T_naive)	In element (ABC (A=scATAC)) & distance to TSS (BMMC22_CD8_pos_T)	0.116259130157225	1	FALSE
+scE2G (Multiome) (BMMC22_CD8_pos_T_naive)	In element (ABC (A=scATAC)) & distance to TSS (BMMC22_CD8_pos_T_naive)	0.205867413635019	1	FALSE
+scE2G (Multiome) (BMMC22_CD8_pos_T_naive)	In element (ABC (A=scATAC)) & distance to TSS (PBMC_24_CD8.CM)	0.500440002836257	1	FALSE
+scE2G (Multiome) (PBMC_24_CD8.CM)	scE2G (scATAC) (BMMC22_CD8_pos_T)	0.0559425523727712	1	FALSE
+scE2G (Multiome) (PBMC_24_CD8.CM)	scE2G (scATAC) (BMMC22_CD8_pos_T_naive)	0.0696569159263683	1	FALSE
+scE2G (Multiome) (PBMC_24_CD8.CM)	scE2G (scATAC) (PBMC_24_CD8.CM)	0.270477167989155	1	FALSE
+scE2G (Multiome) (PBMC_24_CD8.CM)	Kendall correlation (access. at E x expr. at G) (BMMC22_CD8_pos_T)	2.43664574612258e-14	2.5584780334287e-12	TRUE
+scE2G (Multiome) (PBMC_24_CD8.CM)	Kendall correlation (access. at E x expr. at G) (BMMC22_CD8_pos_T_naive)	3.0039283014203e-15	3.15412471649132e-13	TRUE
+scE2G (Multiome) (PBMC_24_CD8.CM)	Kendall correlation (access. at E x expr. at G) (PBMC_24_CD8.CM)	8.29854913991228e-14	8.71347659690789e-12	TRUE
+scE2G (Multiome) (PBMC_24_CD8.CM)	ABC (A=scATAC, C=power law) (BMMC22_CD8_pos_T)	0.0199221306503849	1	FALSE
+scE2G (Multiome) (PBMC_24_CD8.CM)	ABC (A=scATAC, C=power law) (BMMC22_CD8_pos_T_naive)	0.0727707599964655	1	FALSE
+scE2G (Multiome) (PBMC_24_CD8.CM)	ABC (A=scATAC, C=power law) (PBMC_24_CD8.CM)	0.0865847036116042	1	FALSE
+scE2G (Multiome) (PBMC_24_CD8.CM)	In element (ABC (A=scATAC)) & distance to TSS (BMMC22_CD8_pos_T)	0.0220991760357042	1	FALSE
+scE2G (Multiome) (PBMC_24_CD8.CM)	In element (ABC (A=scATAC)) & distance to TSS (BMMC22_CD8_pos_T_naive)	0.0467183570690854	1	FALSE
+scE2G (Multiome) (PBMC_24_CD8.CM)	In element (ABC (A=scATAC)) & distance to TSS (PBMC_24_CD8.CM)	0.161336872462141	1	FALSE
+scE2G (scATAC) (BMMC22_CD8_pos_T)	scE2G (scATAC) (BMMC22_CD8_pos_T_naive)	0.91181967126779	1	FALSE
+scE2G (scATAC) (BMMC22_CD8_pos_T)	scE2G (scATAC) (PBMC_24_CD8.CM)	0.412865378426534	1	FALSE
+scE2G (scATAC) (BMMC22_CD8_pos_T)	Kendall correlation (access. at E x expr. at G) (BMMC22_CD8_pos_T)	3.17790034310382e-08	3.33679536025901e-06	TRUE
+scE2G (scATAC) (BMMC22_CD8_pos_T)	Kendall correlation (access. at E x expr. at G) (BMMC22_CD8_pos_T_naive)	1.15742396750986e-08	1.21529516588535e-06	TRUE
+scE2G (scATAC) (BMMC22_CD8_pos_T)	Kendall correlation (access. at E x expr. at G) (PBMC_24_CD8.CM)	1.29932798048328e-07	1.36429437950744e-05	TRUE
+scE2G (scATAC) (BMMC22_CD8_pos_T)	ABC (A=scATAC, C=power law) (BMMC22_CD8_pos_T)	0.64474970890741	1	FALSE
+scE2G (scATAC) (BMMC22_CD8_pos_T)	ABC (A=scATAC, C=power law) (BMMC22_CD8_pos_T_naive)	0.895673655288133	1	FALSE
+scE2G (scATAC) (BMMC22_CD8_pos_T)	ABC (A=scATAC, C=power law) (PBMC_24_CD8.CM)	0.848030501392883	1	FALSE
+scE2G (scATAC) (BMMC22_CD8_pos_T)	In element (ABC (A=scATAC)) & distance to TSS (BMMC22_CD8_pos_T)	0.698867013832347	1	FALSE
+scE2G (scATAC) (BMMC22_CD8_pos_T)	In element (ABC (A=scATAC)) & distance to TSS (BMMC22_CD8_pos_T_naive)	0.936757546051837	1	FALSE
+scE2G (scATAC) (BMMC22_CD8_pos_T)	In element (ABC (A=scATAC)) & distance to TSS (PBMC_24_CD8.CM)	0.6163472200009	1	FALSE
+scE2G (scATAC) (BMMC22_CD8_pos_T_naive)	scE2G (scATAC) (PBMC_24_CD8.CM)	0.475530777559696	1	FALSE
+scE2G (scATAC) (BMMC22_CD8_pos_T_naive)	Kendall correlation (access. at E x expr. at G) (BMMC22_CD8_pos_T)	1.10356755574117e-08	1.15874593352823e-06	TRUE
+scE2G (scATAC) (BMMC22_CD8_pos_T_naive)	Kendall correlation (access. at E x expr. at G) (BMMC22_CD8_pos_T_naive)	3.55531441458506e-09	3.73308013531431e-07	TRUE
+scE2G (scATAC) (BMMC22_CD8_pos_T_naive)	Kendall correlation (access. at E x expr. at G) (PBMC_24_CD8.CM)	4.48806385045612e-08	4.71246704297893e-06	TRUE
+scE2G (scATAC) (BMMC22_CD8_pos_T_naive)	ABC (A=scATAC, C=power law) (BMMC22_CD8_pos_T)	0.567096448306336	1	FALSE
+scE2G (scATAC) (BMMC22_CD8_pos_T_naive)	ABC (A=scATAC, C=power law) (BMMC22_CD8_pos_T_naive)	0.98364033866668	1	FALSE
+scE2G (scATAC) (BMMC22_CD8_pos_T_naive)	ABC (A=scATAC, C=power law) (PBMC_24_CD8.CM)	0.934118562172996	1	FALSE
+scE2G (scATAC) (BMMC22_CD8_pos_T_naive)	In element (ABC (A=scATAC)) & distance to TSS (BMMC22_CD8_pos_T)	0.617180093083469	1	FALSE
+scE2G (scATAC) (BMMC22_CD8_pos_T_naive)	In element (ABC (A=scATAC)) & distance to TSS (BMMC22_CD8_pos_T_naive)	0.848876322872647	1	FALSE
+scE2G (scATAC) (BMMC22_CD8_pos_T_naive)	In element (ABC (A=scATAC)) & distance to TSS (PBMC_24_CD8.CM)	0.69320955079497	1	FALSE
+scE2G (scATAC) (PBMC_24_CD8.CM)	Kendall correlation (access. at E x expr. at G) (BMMC22_CD8_pos_T)	9.53376560494318e-11	1.00104538851903e-08	TRUE
+scE2G (scATAC) (PBMC_24_CD8.CM)	Kendall correlation (access. at E x expr. at G) (BMMC22_CD8_pos_T_naive)	2.13451927676403e-11	2.24124524060223e-09	TRUE
+scE2G (scATAC) (PBMC_24_CD8.CM)	Kendall correlation (access. at E x expr. at G) (PBMC_24_CD8.CM)	3.70600012431757e-10	3.89130013053345e-08	TRUE
+scE2G (scATAC) (PBMC_24_CD8.CM)	ABC (A=scATAC, C=power law) (BMMC22_CD8_pos_T)	0.206836413462242	1	FALSE
+scE2G (scATAC) (PBMC_24_CD8.CM)	ABC (A=scATAC, C=power law) (BMMC22_CD8_pos_T_naive)	0.488154037962023	1	FALSE
+scE2G (scATAC) (PBMC_24_CD8.CM)	ABC (A=scATAC, C=power law) (PBMC_24_CD8.CM)	0.532945331176039	1	FALSE
+scE2G (scATAC) (PBMC_24_CD8.CM)	In element (ABC (A=scATAC)) & distance to TSS (BMMC22_CD8_pos_T)	0.228824440683579	1	FALSE
+scE2G (scATAC) (PBMC_24_CD8.CM)	In element (ABC (A=scATAC)) & distance to TSS (BMMC22_CD8_pos_T_naive)	0.369328561347477	1	FALSE
+scE2G (scATAC) (PBMC_24_CD8.CM)	In element (ABC (A=scATAC)) & distance to TSS (PBMC_24_CD8.CM)	0.755856280807216	1	FALSE
+Kendall correlation (access. at E x expr. at G) (BMMC22_CD8_pos_T)	Kendall correlation (access. at E x expr. at G) (BMMC22_CD8_pos_T_naive)	0.839265091587599	1	FALSE
+Kendall correlation (access. at E x expr. at G) (BMMC22_CD8_pos_T)	Kendall correlation (access. at E x expr. at G) (PBMC_24_CD8.CM)	0.455426547510838	1	FALSE
+Kendall correlation (access. at E x expr. at G) (BMMC22_CD8_pos_T)	ABC (A=scATAC, C=power law) (BMMC22_CD8_pos_T)	1.38286449128768e-06	0.000145200771585206	TRUE
+Kendall correlation (access. at E x expr. at G) (BMMC22_CD8_pos_T)	ABC (A=scATAC, C=power law) (BMMC22_CD8_pos_T_naive)	9.53421701688175e-09	1.00109278677258e-06	TRUE
+Kendall correlation (access. at E x expr. at G) (BMMC22_CD8_pos_T)	ABC (A=scATAC, C=power law) (PBMC_24_CD8.CM)	1.0989762398238e-08	1.15392505181499e-06	TRUE
+Kendall correlation (access. at E x expr. at G) (BMMC22_CD8_pos_T)	In element (ABC (A=scATAC)) & distance to TSS (BMMC22_CD8_pos_T)	4.1578448638579e-07	4.36573710705079e-05	TRUE
+Kendall correlation (access. at E x expr. at G) (BMMC22_CD8_pos_T)	In element (ABC (A=scATAC)) & distance to TSS (BMMC22_CD8_pos_T_naive)	5.47987995410836e-08	5.75387395181378e-06	TRUE
+Kendall correlation (access. at E x expr. at G) (BMMC22_CD8_pos_T)	In element (ABC (A=scATAC)) & distance to TSS (PBMC_24_CD8.CM)	1.56036671149874e-09	1.63838504707368e-07	TRUE
+Kendall correlation (access. at E x expr. at G) (BMMC22_CD8_pos_T_naive)	Kendall correlation (access. at E x expr. at G) (PBMC_24_CD8.CM)	0.530368194346088	1	FALSE
+Kendall correlation (access. at E x expr. at G) (BMMC22_CD8_pos_T_naive)	ABC (A=scATAC, C=power law) (BMMC22_CD8_pos_T)	7.40034706990213e-07	7.77036442339723e-05	TRUE
+Kendall correlation (access. at E x expr. at G) (BMMC22_CD8_pos_T_naive)	ABC (A=scATAC, C=power law) (BMMC22_CD8_pos_T_naive)	3.03096591608815e-09	3.18251421189256e-07	TRUE
+Kendall correlation (access. at E x expr. at G) (BMMC22_CD8_pos_T_naive)	ABC (A=scATAC, C=power law) (PBMC_24_CD8.CM)	3.75057940262312e-09	3.93810837275427e-07	TRUE
+Kendall correlation (access. at E x expr. at G) (BMMC22_CD8_pos_T_naive)	In element (ABC (A=scATAC)) & distance to TSS (BMMC22_CD8_pos_T)	1.89346269499166e-07	1.98813582974124e-05	TRUE
+Kendall correlation (access. at E x expr. at G) (BMMC22_CD8_pos_T_naive)	In element (ABC (A=scATAC)) & distance to TSS (BMMC22_CD8_pos_T_naive)	2.09373690534388e-08	2.19842375061107e-06	TRUE
+Kendall correlation (access. at E x expr. at G) (BMMC22_CD8_pos_T_naive)	In element (ABC (A=scATAC)) & distance to TSS (PBMC_24_CD8.CM)	4.63649947320103e-10	4.86832444686108e-08	TRUE
+Kendall correlation (access. at E x expr. at G) (PBMC_24_CD8.CM)	ABC (A=scATAC, C=power law) (BMMC22_CD8_pos_T)	5.53040244385269e-06	0.000580692256604532	TRUE
+Kendall correlation (access. at E x expr. at G) (PBMC_24_CD8.CM)	ABC (A=scATAC, C=power law) (BMMC22_CD8_pos_T_naive)	3.87373255952315e-08	4.06741918749931e-06	TRUE
+Kendall correlation (access. at E x expr. at G) (PBMC_24_CD8.CM)	ABC (A=scATAC, C=power law) (PBMC_24_CD8.CM)	4.47729025337927e-08	4.70115476604823e-06	TRUE
+Kendall correlation (access. at E x expr. at G) (PBMC_24_CD8.CM)	In element (ABC (A=scATAC)) & distance to TSS (BMMC22_CD8_pos_T)	1.69489146893111e-06	0.000177963604237767	TRUE
+Kendall correlation (access. at E x expr. at G) (PBMC_24_CD8.CM)	In element (ABC (A=scATAC)) & distance to TSS (BMMC22_CD8_pos_T_naive)	2.24285221771684e-07	2.35499482860268e-05	TRUE
+Kendall correlation (access. at E x expr. at G) (PBMC_24_CD8.CM)	In element (ABC (A=scATAC)) & distance to TSS (PBMC_24_CD8.CM)	6.28614977413197e-09	6.60045726283857e-07	TRUE
+ABC (A=scATAC, C=power law) (BMMC22_CD8_pos_T)	ABC (A=scATAC, C=power law) (BMMC22_CD8_pos_T_naive)	0.553625016504538	1	FALSE
+ABC (A=scATAC, C=power law) (BMMC22_CD8_pos_T)	ABC (A=scATAC, C=power law) (PBMC_24_CD8.CM)	0.51793109331347	1	FALSE
+ABC (A=scATAC, C=power law) (BMMC22_CD8_pos_T)	In element (ABC (A=scATAC)) & distance to TSS (BMMC22_CD8_pos_T)	0.93515113004343	1	FALSE
+ABC (A=scATAC, C=power law) (BMMC22_CD8_pos_T)	In element (ABC (A=scATAC)) & distance to TSS (BMMC22_CD8_pos_T_naive)	0.701580077849937	1	FALSE
+ABC (A=scATAC, C=power law) (BMMC22_CD8_pos_T)	In element (ABC (A=scATAC)) & distance to TSS (PBMC_24_CD8.CM)	0.343301845033774	1	FALSE
+ABC (A=scATAC, C=power law) (BMMC22_CD8_pos_T_naive)	ABC (A=scATAC, C=power law) (PBMC_24_CD8.CM)	0.950242022524281	1	FALSE
+ABC (A=scATAC, C=power law) (BMMC22_CD8_pos_T_naive)	In element (ABC (A=scATAC)) & distance to TSS (BMMC22_CD8_pos_T)	0.602899264664723	1	FALSE
+ABC (A=scATAC, C=power law) (BMMC22_CD8_pos_T_naive)	In element (ABC (A=scATAC)) & distance to TSS (BMMC22_CD8_pos_T_naive)	0.83293623313409	1	FALSE
+ABC (A=scATAC, C=power law) (BMMC22_CD8_pos_T_naive)	In element (ABC (A=scATAC)) & distance to TSS (PBMC_24_CD8.CM)	0.708129915684079	1	FALSE
+ABC (A=scATAC, C=power law) (PBMC_24_CD8.CM)	In element (ABC (A=scATAC)) & distance to TSS (BMMC22_CD8_pos_T)	0.564504296070168	1	FALSE
+ABC (A=scATAC, C=power law) (PBMC_24_CD8.CM)	In element (ABC (A=scATAC)) & distance to TSS (BMMC22_CD8_pos_T_naive)	0.786773819455767	1	FALSE
+ABC (A=scATAC, C=power law) (PBMC_24_CD8.CM)	In element (ABC (A=scATAC)) & distance to TSS (PBMC_24_CD8.CM)	0.757494451288778	1	FALSE
+In element (ABC (A=scATAC)) & distance to TSS (BMMC22_CD8_pos_T)	In element (ABC (A=scATAC)) & distance to TSS (BMMC22_CD8_pos_T_naive)	0.758459387587849	1	FALSE
+In element (ABC (A=scATAC)) & distance to TSS (BMMC22_CD8_pos_T)	In element (ABC (A=scATAC)) & distance to TSS (PBMC_24_CD8.CM)	0.377137077151539	1	FALSE
+In element (ABC (A=scATAC)) & distance to TSS (BMMC22_CD8_pos_T_naive)	In element (ABC (A=scATAC)) & distance to TSS (PBMC_24_CD8.CM)	0.562308711702193	1	FALSE

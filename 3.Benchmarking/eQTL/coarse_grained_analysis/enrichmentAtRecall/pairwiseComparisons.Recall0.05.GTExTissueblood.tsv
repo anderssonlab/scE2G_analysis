@@ -1,0 +1,137 @@
+group1	group2	p	p_adjust	significant
+scE2G (Multiome) (K562)	scE2G (Multiome) (BMMC5_Erythroid)	0.60650683244786	1	FALSE
+scE2G (Multiome) (K562)	scE2G (scATAC) (K562)	0.576969468963274	1	FALSE
+scE2G (Multiome) (K562)	scE2G (scATAC) (BMMC5_Erythroid)	0.843931518509732	1	FALSE
+scE2G (Multiome) (K562)	Kendall correlation (access. at E x expr. at G) (K562)	8.95589932844812e-66	1.21800230866895e-63	TRUE
+scE2G (Multiome) (K562)	Kendall correlation (access. at E x expr. at G) (BMMC5_Erythroid)	1.95485861909738e-38	2.65860772197243e-36	TRUE
+scE2G (Multiome) (K562)	ABC (A=scATAC, C=power law) (K562)	0.907462697929166	1	FALSE
+scE2G (Multiome) (K562)	ABC (A=scATAC, C=power law) (BMMC5_Erythroid)	0.811836901005404	1	FALSE
+scE2G (Multiome) (K562)	In element (ABC (A=scATAC)) & distance to TSS (K562)	0.897012903265854	1	FALSE
+scE2G (Multiome) (K562)	In element (ABC (A=scATAC)) & distance to TSS (BMMC5_Erythroid)	0.466072683459813	1	FALSE
+scE2G (Multiome) (K562)	STARE (gABC, power law) (K562)	0.012379484325407	1	FALSE
+scE2G (Multiome) (K562)	STARE (gABC, power law) (BMMC5_Erythroid)	0.0394366301597699	1	FALSE
+scE2G (Multiome) (K562)	SCENT (FDR) (K562)	1.3630453566238e-28	1.85374168500837e-26	TRUE
+scE2G (Multiome) (K562)	SnapATAC (p-value) (K562)	1.51628557772519e-55	2.06214838570626e-53	TRUE
+scE2G (Multiome) (K562)	Cicero (co-accessibility) (K562)	8.70142942224378e-63	1.18339440142515e-60	TRUE
+scE2G (Multiome) (K562)	FigR (p-value) (K562)	2.14235669735531e-57	2.91360510840323e-55	TRUE
+scE2G (Multiome) (K562)	SCENIC+ (importance) (K562)	4.76771954862339e-50	6.48409858612781e-48	TRUE
+scE2G (Multiome) (BMMC5_Erythroid)	scE2G (scATAC) (K562)	0.291722156043891	1	FALSE
+scE2G (Multiome) (BMMC5_Erythroid)	scE2G (scATAC) (BMMC5_Erythroid)	0.485051816225381	1	FALSE
+scE2G (Multiome) (BMMC5_Erythroid)	Kendall correlation (access. at E x expr. at G) (K562)	2.5496677928422e-67	3.46754819826539e-65	TRUE
+scE2G (Multiome) (BMMC5_Erythroid)	Kendall correlation (access. at E x expr. at G) (BMMC5_Erythroid)	3.14771247544894e-40	4.28088896661056e-38	TRUE
+scE2G (Multiome) (BMMC5_Erythroid)	ABC (A=scATAC, C=power law) (K562)	0.532196536655676	1	FALSE
+scE2G (Multiome) (BMMC5_Erythroid)	ABC (A=scATAC, C=power law) (BMMC5_Erythroid)	0.788472176260979	1	FALSE
+scE2G (Multiome) (BMMC5_Erythroid)	In element (ABC (A=scATAC)) & distance to TSS (K562)	0.707485673132214	1	FALSE
+scE2G (Multiome) (BMMC5_Erythroid)	In element (ABC (A=scATAC)) & distance to TSS (BMMC5_Erythroid)	0.830528001659405	1	FALSE
+scE2G (Multiome) (BMMC5_Erythroid)	STARE (gABC, power law) (K562)	0.00291243880093001	0.396091676926481	FALSE
+scE2G (Multiome) (BMMC5_Erythroid)	STARE (gABC, power law) (BMMC5_Erythroid)	0.0110267742988043	1	FALSE
+scE2G (Multiome) (BMMC5_Erythroid)	SCENT (FDR) (K562)	2.39741962971653e-30	3.26049069641448e-28	TRUE
+scE2G (Multiome) (BMMC5_Erythroid)	SnapATAC (p-value) (K562)	3.08173637207481e-57	4.19116146602174e-55	TRUE
+scE2G (Multiome) (BMMC5_Erythroid)	Cicero (co-accessibility) (K562)	1.67239171738524e-64	2.27445273564392e-62	TRUE
+scE2G (Multiome) (BMMC5_Erythroid)	FigR (p-value) (K562)	4.58900286027503e-59	6.24104388997404e-57	TRUE
+scE2G (Multiome) (BMMC5_Erythroid)	SCENIC+ (importance) (K562)	8.61814718732692e-52	1.17206801747646e-49	TRUE
+scE2G (scATAC) (K562)	scE2G (scATAC) (BMMC5_Erythroid)	0.723947654961254	1	FALSE
+scE2G (scATAC) (K562)	Kendall correlation (access. at E x expr. at G) (K562)	5.98532011079406e-57	8.14003535067993e-55	TRUE
+scE2G (scATAC) (K562)	Kendall correlation (access. at E x expr. at G) (BMMC5_Erythroid)	1.46930811151186e-32	1.99825903165613e-30	TRUE
+scE2G (scATAC) (K562)	ABC (A=scATAC, C=power law) (K562)	0.660906283893171	1	FALSE
+scE2G (scATAC) (K562)	ABC (A=scATAC, C=power law) (BMMC5_Erythroid)	0.436522862046527	1	FALSE
+scE2G (scATAC) (K562)	In element (ABC (A=scATAC)) & distance to TSS (K562)	0.501908277066288	1	FALSE
+scE2G (scATAC) (K562)	In element (ABC (A=scATAC)) & distance to TSS (BMMC5_Erythroid)	0.207450328034016	1	FALSE
+scE2G (scATAC) (K562)	STARE (gABC, power law) (K562)	0.05846502496431	1	FALSE
+scE2G (scATAC) (K562)	STARE (gABC, power law) (BMMC5_Erythroid)	0.144195803207472	1	FALSE
+scE2G (scATAC) (K562)	SCENT (FDR) (K562)	4.0620686856059e-24	5.52441341242403e-22	TRUE
+scE2G (scATAC) (K562)	SnapATAC (p-value) (K562)	6.17931649990007e-48	8.4038704398641e-46	TRUE
+scE2G (scATAC) (K562)	Cicero (co-accessibility) (K562)	2.2105077507312e-55	3.00629054099443e-53	TRUE
+scE2G (scATAC) (K562)	FigR (p-value) (K562)	1.46213271498596e-49	1.98850049238091e-47	TRUE
+scE2G (scATAC) (K562)	SCENIC+ (importance) (K562)	4.82223480038974e-43	6.55823932853005e-41	TRUE
+scE2G (scATAC) (BMMC5_Erythroid)	Kendall correlation (access. at E x expr. at G) (K562)	8.46358862582964e-60	1.15104805311283e-57	TRUE
+scE2G (scATAC) (BMMC5_Erythroid)	Kendall correlation (access. at E x expr. at G) (BMMC5_Erythroid)	9.64154656835217e-35	1.3112503332959e-32	TRUE
+scE2G (scATAC) (BMMC5_Erythroid)	ABC (A=scATAC, C=power law) (K562)	0.935241511342733	1	FALSE
+scE2G (scATAC) (BMMC5_Erythroid)	ABC (A=scATAC, C=power law) (BMMC5_Erythroid)	0.670554972072959	1	FALSE
+scE2G (scATAC) (BMMC5_Erythroid)	In element (ABC (A=scATAC)) & distance to TSS (K562)	0.749744541231904	1	FALSE
+scE2G (scATAC) (BMMC5_Erythroid)	In element (ABC (A=scATAC)) & distance to TSS (BMMC5_Erythroid)	0.364670866961859	1	FALSE
+scE2G (scATAC) (BMMC5_Erythroid)	STARE (gABC, power law) (K562)	0.0244551221243005	1	FALSE
+scE2G (scATAC) (BMMC5_Erythroid)	STARE (gABC, power law) (BMMC5_Erythroid)	0.0690204494687583	1	FALSE
+scE2G (scATAC) (BMMC5_Erythroid)	SCENT (FDR) (K562)	6.30496770221823e-26	8.57475607501679e-24	TRUE
+scE2G (scATAC) (BMMC5_Erythroid)	SnapATAC (p-value) (K562)	1.56886252748521e-50	2.13365303737988e-48	TRUE
+scE2G (scATAC) (BMMC5_Erythroid)	Cicero (co-accessibility) (K562)	6.02705694557549e-58	8.19679744598267e-56	TRUE
+scE2G (scATAC) (BMMC5_Erythroid)	FigR (p-value) (K562)	3.32005578646384e-52	4.51527586959082e-50	TRUE
+scE2G (scATAC) (BMMC5_Erythroid)	SCENIC+ (importance) (K562)	1.67542621758173e-45	2.27857965591116e-43	TRUE
+Kendall correlation (access. at E x expr. at G) (K562)	Kendall correlation (access. at E x expr. at G) (BMMC5_Erythroid)	6.07873497417542e-10	8.26707956487857e-08	TRUE
+Kendall correlation (access. at E x expr. at G) (K562)	ABC (A=scATAC, C=power law) (K562)	9.01351295371053e-63	1.22583776170463e-60	TRUE
+Kendall correlation (access. at E x expr. at G) (K562)	ABC (A=scATAC, C=power law) (BMMC5_Erythroid)	4.76487050744549e-63	6.48022389012587e-61	TRUE
+Kendall correlation (access. at E x expr. at G) (K562)	In element (ABC (A=scATAC)) & distance to TSS (K562)	4.5956466209565e-62	6.25007940450084e-60	TRUE
+Kendall correlation (access. at E x expr. at G) (K562)	In element (ABC (A=scATAC)) & distance to TSS (BMMC5_Erythroid)	5.99692253611092e-68	8.15581464911084e-66	TRUE
+Kendall correlation (access. at E x expr. at G) (K562)	STARE (gABC, power law) (K562)	7.93376267013061e-45	1.07899172313776e-42	TRUE
+Kendall correlation (access. at E x expr. at G) (K562)	STARE (gABC, power law) (BMMC5_Erythroid)	4.56789247180913e-48	6.21233376166041e-46	TRUE
+Kendall correlation (access. at E x expr. at G) (K562)	SCENT (FDR) (K562)	2.56656880798975e-13	3.49053357886606e-11	TRUE
+Kendall correlation (access. at E x expr. at G) (K562)	SnapATAC (p-value) (K562)	0.0836254241459827	1	FALSE
+Kendall correlation (access. at E x expr. at G) (K562)	Cicero (co-accessibility) (K562)	0.0596558544847063	1	FALSE
+Kendall correlation (access. at E x expr. at G) (K562)	FigR (p-value) (K562)	0.154230130409572	1	FALSE
+Kendall correlation (access. at E x expr. at G) (K562)	SCENIC+ (importance) (K562)	0.00445684902161551	0.60613146693971	FALSE
+Kendall correlation (access. at E x expr. at G) (BMMC5_Erythroid)	ABC (A=scATAC, C=power law) (K562)	1.51618603046926e-36	2.06201300143819e-34	TRUE
+Kendall correlation (access. at E x expr. at G) (BMMC5_Erythroid)	ABC (A=scATAC, C=power law) (BMMC5_Erythroid)	2.60348531639224e-37	3.54074003029345e-35	TRUE
+Kendall correlation (access. at E x expr. at G) (BMMC5_Erythroid)	In element (ABC (A=scATAC)) & distance to TSS (K562)	1.44159842271242e-36	1.96057385488889e-34	TRUE
+Kendall correlation (access. at E x expr. at G) (BMMC5_Erythroid)	In element (ABC (A=scATAC)) & distance to TSS (BMMC5_Erythroid)	5.71092316114164e-41	7.76685549915263e-39	TRUE
+Kendall correlation (access. at E x expr. at G) (BMMC5_Erythroid)	STARE (gABC, power law) (K562)	4.40860912027398e-23	5.99570840357262e-21	TRUE
+Kendall correlation (access. at E x expr. at G) (BMMC5_Erythroid)	STARE (gABC, power law) (BMMC5_Erythroid)	2.0506227578966e-25	2.78884695073938e-23	TRUE
+Kendall correlation (access. at E x expr. at G) (BMMC5_Erythroid)	SCENT (FDR) (K562)	0.0783281401052273	1	FALSE
+Kendall correlation (access. at E x expr. at G) (BMMC5_Erythroid)	SnapATAC (p-value) (K562)	2.15375016108987e-05	0.00292910021908223	TRUE
+Kendall correlation (access. at E x expr. at G) (BMMC5_Erythroid)	Cicero (co-accessibility) (K562)	1.14281584659626e-11	1.55422955137092e-09	TRUE
+Kendall correlation (access. at E x expr. at G) (BMMC5_Erythroid)	FigR (p-value) (K562)	4.25102492882543e-06	0.000578139390320258	TRUE
+Kendall correlation (access. at E x expr. at G) (BMMC5_Erythroid)	SCENIC+ (importance) (K562)	0.00199756679834819	0.271669084575353	FALSE
+ABC (A=scATAC, C=power law) (K562)	ABC (A=scATAC, C=power law) (BMMC5_Erythroid)	0.72687633626235	1	FALSE
+ABC (A=scATAC, C=power law) (K562)	In element (ABC (A=scATAC)) & distance to TSS (K562)	0.8090465710894	1	FALSE
+ABC (A=scATAC, C=power law) (K562)	In element (ABC (A=scATAC)) & distance to TSS (BMMC5_Erythroid)	0.403269911602972	1	FALSE
+ABC (A=scATAC, C=power law) (K562)	STARE (gABC, power law) (K562)	0.0182578025923364	1	FALSE
+ABC (A=scATAC, C=power law) (K562)	STARE (gABC, power law) (BMMC5_Erythroid)	0.0544398052626314	1	FALSE
+ABC (A=scATAC, C=power law) (K562)	SCENT (FDR) (K562)	3.25880167346935e-27	4.43197027591832e-25	TRUE
+ABC (A=scATAC, C=power law) (K562)	SnapATAC (p-value) (K562)	5.18052353973603e-53	7.045512014041e-51	TRUE
+ABC (A=scATAC, C=power law) (K562)	Cicero (co-accessibility) (K562)	2.37201497956312e-60	3.22594037220584e-58	TRUE
+ABC (A=scATAC, C=power law) (K562)	FigR (p-value) (K562)	8.91961954276428e-55	1.21306825781594e-52	TRUE
+ABC (A=scATAC, C=power law) (K562)	SCENIC+ (importance) (K562)	9.61513395264107e-48	1.30765821755919e-45	TRUE
+ABC (A=scATAC, C=power law) (BMMC5_Erythroid)	In element (ABC (A=scATAC)) & distance to TSS (K562)	0.915542420085399	1	FALSE
+ABC (A=scATAC, C=power law) (BMMC5_Erythroid)	In element (ABC (A=scATAC)) & distance to TSS (BMMC5_Erythroid)	0.632113324680275	1	FALSE
+ABC (A=scATAC, C=power law) (BMMC5_Erythroid)	STARE (gABC, power law) (K562)	0.00742015869519509	1	FALSE
+ABC (A=scATAC, C=power law) (BMMC5_Erythroid)	STARE (gABC, power law) (BMMC5_Erythroid)	0.0246605361456702	1	FALSE
+ABC (A=scATAC, C=power law) (BMMC5_Erythroid)	SCENT (FDR) (K562)	4.32235497965512e-28	5.87840277233096e-26	TRUE
+ABC (A=scATAC, C=power law) (BMMC5_Erythroid)	SnapATAC (p-value) (K562)	1.59396601041894e-53	2.16779377416976e-51	TRUE
+ABC (A=scATAC, C=power law) (BMMC5_Erythroid)	Cicero (co-accessibility) (K562)	6.72732733043914e-61	9.14916516939723e-59	TRUE
+ABC (A=scATAC, C=power law) (BMMC5_Erythroid)	FigR (p-value) (K562)	3.01019394289287e-55	4.0938637623343e-53	TRUE
+ABC (A=scATAC, C=power law) (BMMC5_Erythroid)	SCENIC+ (importance) (K562)	2.34699082934786e-48	3.19190752791308e-46	TRUE
+In element (ABC (A=scATAC)) & distance to TSS (K562)	In element (ABC (A=scATAC)) & distance to TSS (BMMC5_Erythroid)	0.558557518635063	1	FALSE
+In element (ABC (A=scATAC)) & distance to TSS (K562)	STARE (gABC, power law) (K562)	0.0102159286802114	1	FALSE
+In element (ABC (A=scATAC)) & distance to TSS (K562)	STARE (gABC, power law) (BMMC5_Erythroid)	0.0325250366074133	1	FALSE
+In element (ABC (A=scATAC)) & distance to TSS (K562)	SCENT (FDR) (K562)	1.76702723135474e-27	2.40315703464244e-25	TRUE
+In element (ABC (A=scATAC)) & distance to TSS (K562)	SnapATAC (p-value) (K562)	1.23723337732612e-52	1.68263739316352e-50	TRUE
+In element (ABC (A=scATAC)) & distance to TSS (K562)	Cicero (co-accessibility) (K562)	5.03831003121025e-60	6.85210164244594e-58	TRUE
+In element (ABC (A=scATAC)) & distance to TSS (K562)	FigR (p-value) (K562)	2.43452208032726e-54	3.31095002924507e-52	TRUE
+In element (ABC (A=scATAC)) & distance to TSS (K562)	SCENIC+ (importance) (K562)	1.62566391964715e-47	2.21090293072012e-45	TRUE
+In element (ABC (A=scATAC)) & distance to TSS (BMMC5_Erythroid)	STARE (gABC, power law) (K562)	0.00150333219656158	0.204453178732375	FALSE
+In element (ABC (A=scATAC)) & distance to TSS (BMMC5_Erythroid)	STARE (gABC, power law) (BMMC5_Erythroid)	0.0061097289064236	0.830923131273609	FALSE
+In element (ABC (A=scATAC)) & distance to TSS (BMMC5_Erythroid)	SCENT (FDR) (K562)	4.43741480842152e-31	6.03488413945327e-29	TRUE
+In element (ABC (A=scATAC)) & distance to TSS (BMMC5_Erythroid)	SnapATAC (p-value) (K562)	6.25344167496294e-58	8.5046806779496e-56	TRUE
+In element (ABC (A=scATAC)) & distance to TSS (BMMC5_Erythroid)	Cicero (co-accessibility) (K562)	3.31149283895475e-65	4.50363026097846e-63	TRUE
+In element (ABC (A=scATAC)) & distance to TSS (BMMC5_Erythroid)	FigR (p-value) (K562)	9.53268436039857e-60	1.29644507301421e-57	TRUE
+In element (ABC (A=scATAC)) & distance to TSS (BMMC5_Erythroid)	SCENIC+ (importance) (K562)	1.65769678988541e-52	2.25446763424416e-50	TRUE
+STARE (gABC, power law) (K562)	STARE (gABC, power law) (BMMC5_Erythroid)	0.660634402694349	1	FALSE
+STARE (gABC, power law) (K562)	SCENT (FDR) (K562)	3.23689374786719e-16	4.40217549709938e-14	TRUE
+STARE (gABC, power law) (K562)	SnapATAC (p-value) (K562)	9.21419426378457e-37	1.2531304198747e-34	TRUE
+STARE (gABC, power law) (K562)	Cicero (co-accessibility) (K562)	3.02872034325706e-44	4.11905966682961e-42	TRUE
+STARE (gABC, power law) (K562)	FigR (p-value) (K562)	3.33706397815448e-38	4.53840701029009e-36	TRUE
+STARE (gABC, power law) (K562)	SCENIC+ (importance) (K562)	2.09500139406296e-32	2.84920189592563e-30	TRUE
+STARE (gABC, power law) (BMMC5_Erythroid)	SCENT (FDR) (K562)	4.43824681578828e-18	6.03601566947205e-16	TRUE
+STARE (gABC, power law) (BMMC5_Erythroid)	SnapATAC (p-value) (K562)	1.16260917332435e-39	1.58114847572111e-37	TRUE
+STARE (gABC, power law) (BMMC5_Erythroid)	Cicero (co-accessibility) (K562)	3.79193994568324e-47	5.1570383261292e-45	TRUE
+STARE (gABC, power law) (BMMC5_Erythroid)	FigR (p-value) (K562)	3.6298887771838e-41	4.93664873696997e-39	TRUE
+STARE (gABC, power law) (BMMC5_Erythroid)	SCENIC+ (importance) (K562)	4.03234956357676e-35	5.48399540646439e-33	TRUE
+SCENT (FDR) (K562)	SnapATAC (p-value) (K562)	2.73614627864055e-08	3.72115893895114e-06	TRUE
+SCENT (FDR) (K562)	Cicero (co-accessibility) (K562)	7.19294932231527e-15	9.78241107834877e-13	TRUE
+SCENT (FDR) (K562)	FigR (p-value) (K562)	4.15435074040967e-09	5.64991700695715e-07	TRUE
+SCENT (FDR) (K562)	SCENIC+ (importance) (K562)	6.59820569507618e-06	0.00089735597453036	TRUE
+SnapATAC (p-value) (K562)	Cicero (co-accessibility) (K562)	0.00128099754971608	0.174215666761387	FALSE
+SnapATAC (p-value) (K562)	FigR (p-value) (K562)	0.757863548657584	1	FALSE
+SnapATAC (p-value) (K562)	SCENIC+ (importance) (K562)	0.275140604620825	1	FALSE
+Cicero (co-accessibility) (K562)	FigR (p-value) (K562)	0.00286123447331661	0.389127888371059	FALSE
+Cicero (co-accessibility) (K562)	SCENIC+ (importance) (K562)	3.96639859461269e-05	0.00539430208867326	TRUE
+FigR (p-value) (K562)	SCENIC+ (importance) (K562)	0.159999519892665	1	FALSE
