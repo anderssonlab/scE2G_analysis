@@ -6,14 +6,10 @@ source(file.path(proj_dir, "workflow/scripts/crisprComparisonLoadInputData.R"))
 source(file.path(proj_dir, "workflow/scripts/scE2G_bootstrap/crisprComparisonPlotFunctions_trapAUC.R"))
 source(file.path(proj_dir, "workflow/scripts/scE2G_bootstrap/crisprComparisonBootstrapFunctions_weighted_trapAUC.R"))
 
-compare_performance_between_categories <- function(merged_training, category_name, category_column, pred_config, models, out_prefix, plot_only = FALSE) {
+compare_performance_between_categories <- function(merged_training, category_name, category_column, pred_config, models, out_prefix,
+    plot_only = FALSE, n_positives_total = 461) {
     ## process inputs pred config
     merged_training <- filter(merged_training, pred_uid %in% models)
-
-    # category levels
-    category_levels <- unique(merged_training[[category_column]])
-    category_levels <- rev(category_levels)
-
 
     # get colors for all models to plot
     pred_colors <- pred_config %>% 
@@ -39,11 +35,23 @@ compare_performance_between_categories <- function(merged_training, category_nam
         distinct() %>% mutate(n_total = n()) %>% 
         group_by(!!sym(category_column), n_total) %>% 
         summarize(n_category = n(), n_regulated_in_category = sum(Regulated), .groups = "drop") %>% 
-        mutate(pct_regulated_in_category = n_regulated_in_category / n_category * 100,
+        mutate(n_regulated_total = n_positives_total,
+            pct_category_is_regulated = n_regulated_in_category / n_category * 100,
+            pct_regulated_in_category = n_regulated_in_category / n_regulated_total * 100,
             pct_pairs_in_category = n_category / n_total * 100,
-            category = !!sym(category_column)) %>%
-        pivot_longer(c(pct_regulated_in_category, pct_pairs_in_category), names_to = "metric", values_to = "pct_pairs") %>% 
-        mutate(plot_label = ifelse(metric == "pct_pairs_in_category", "% pairs in category", "% regulated pairs in category")) %>% 
+            category = !!sym(category_column)) %>% 
+        arrange(pct_regulated_in_category)
+
+    # category levels
+    category_levels <- unique(group_counts$category)
+            
+    # save group counts
+    write_tsv(group_counts, paste0(out_prefix, "_counts.tsv"))
+
+    # reformat group counts
+    group_counts <- group_counts %>%
+        #pivot_longer(c(pct_regulated_in_category, pct_pairs_in_category), names_to = "metric", values_to = "pct_pairs") %>% 
+        #mutate(plot_label = ifelse(metric == "pct_pairs_in_category", "% pairs in category", "% regulated pairs in category")) %>% 
         mutate(category = factor(category, levels = category_levels, ordered = TRUE))
     
     if (plot_only) { message("Plotting only (assuming results exist!)") } else {
@@ -52,38 +60,36 @@ compare_performance_between_categories <- function(merged_training, category_nam
         message("Calculating AUPRC for each category...")
         auprc_res_list <- lapply(merged_bs_split, bootstrapPerformanceIntervals, metric = "auprc", R = 1000)
 
-        message("Calculating precision for each category...")
-        prec_res_list <- lapply(merged_bs_split, bootstrapPerformanceIntervals, metric = "precision", thresholds = thresholds, R = 1000)
+        #message("Calculating precision for each category...")
+        #prec_res_list <- lapply(merged_bs_split, bootstrapPerformanceIntervals, metric = "precision", thresholds = thresholds, R = 1000)
 
         auprc_res <- rbindlist(auprc_res_list, idcol = "category") %>%
             mutate(metric = "AUPRC") %>%
             select(pred_uid = id, category, metric, full, lower, upper)
 
-        prec_res <- rbindlist(prec_res_list, idcol = "category") %>%
-            mutate(metric = "precision") %>%
-            select(pred_uid = id, category, metric, full, lower, upper)
+        # prec_res <- rbindlist(prec_res_list, idcol = "category") %>%
+        #     mutate(metric = "precision") %>%
+        #     select(pred_uid = id, category, metric, full, lower, upper)
 
         if (n_categories == 2) {
             message("Calculating delta AUPRC between categories...")
             delta_auprc <- bootstrapDeltaPerformanceDatasets(merged_bs_split[[1]], merged_bs_split[[2]], metric = "auprc", R = 1000)
             write_tsv(delta_auprc, paste0(out_prefix, "delta_auprc_significance.tsv"))
 
-            message("Calculating delta precision between categories...")
-            delta_prec <- bootstrapDeltaPerformanceDatasets(merged_bs_split[[1]], merged_bs_split[[2]], metric = "precision", thresholds = thresholds, R = 1000)
-            write_tsv(delta_prec, paste0(out_prefix, "delta_precision_significance.tsv"))
+            # message("Calculating delta precision between categories...")
+            # delta_prec <- bootstrapDeltaPerformanceDatasets(merged_bs_split[[1]], merged_bs_split[[2]], metric = "precision", thresholds = thresholds, R = 1000)
+            # write_tsv(delta_prec, paste0(out_prefix, "delta_precision_significance.tsv"))
         }
 
         # combine tables and save
-        res <- rbind(auprc_res, prec_res) %>% 
-            mutate(pred_uid = factor(pred_uid, levels = models, ordered = TRUE),
-                pred_name_long = pred_key[pred_uid]) %>% 
-            arrange(pred_uid) %>% 
-            mutate(pred_name_long = factor(pred_name_long, levels = names(pred_colors), ordered = TRUE))
+        res <- auprc_res %>% #rbind(auprc_res, prec_res) %>% 
+            mutate(pred_name_long = pred_key[pred_uid])
+
         write_tsv(res, paste0(out_prefix, "performance_summary.tsv"))
         message("Saved performance summary table...")
     }
     
-    res <- read_tsv(paste0(out_prefix, "performance_summary.tsv")) %>% 
+    res <- read_tsv(paste0(out_prefix, "performance_summary.tsv"), show_col_types = FALSE) %>% 
         mutate(pred_name_long = pred_key[pred_uid]) %>% 
         mutate(pred_name_long = factor(pred_name_long, levels = names(pred_colors), ordered = TRUE)) %>%
         mutate(category = factor(category, levels = category_levels, ordered = TRUE))
@@ -91,36 +97,52 @@ compare_performance_between_categories <- function(merged_training, category_nam
 
     ## plot
     # aesthetics
-    alpha_key <- setNames((seq(0.4, 1, length.out = n_categories)), rev(unique(merged_training[[category_column]])))
-    cat_key <- c(`% pairs in category` ="#96a0b3", `% regulated pairs in category` = "#435369")
+    alpha_key <- setNames((seq(0, 1, length.out = n_categories)), category_levels)
+    all_colors <- c(pred_colors,
+        pct_pairs_in_category ="#6e788d",
+        pct_category_is_regulated = "#435369",
+        pct_regulated_in_category = "#435369")
+    pct_labs <- c(pct_pairs_in_category = "% tested pairs in category",
+        pct_category_is_regulated = "% category that is positive",
+        pct_regulated_in_category = "% of positive pairs in category")
+    pct_titles <- c(pct_pairs_in_category = "% tested ",
+        pct_category_is_regulated = "Positive rate",
+        pct_regulated_in_category = "% positives")
+    pct_maxes <- c(pct_pairs_in_category = 90, pct_category_is_regulated = 25, pct_regulated_in_category = 100)
 
-    pct_pairs <- ggplot(group_counts, aes(x = pct_pairs, y = category)) +
-        #geom_col(aes(fill = plot_label)) +
-        geom_col(aes(alpha = category), fill = "#435369") +
-        facet_wrap(~ plot_label, ncol = 1, strip.position = "bottom", scales = "free") +
-        scale_alpha_manual(values = alpha_key) + #scale_fill_manual(values = cat_key) +
-        labs(y = "Element-gene pair category") + 
-        theme_classic() + theme(strip.placement = "outside", strip.background = element_blank(), axis.title.x = element_blank(), # facet label is x axis title
-            axis.text = element_text(size = 7, color = "#000000"), axis.title.y = element_text(size = 9),
+    base_theme <- theme_classic() + theme(
+            axis.text.x = element_blank(), axis.title.x = element_blank(), 
+            axis.text.y = element_text(size = 7, color = "#000000"), axis.title.y = element_text(size = 8),
+            plot.title = element_text(color = "#000000", size=10),
             axis.ticks = element_line(color = "#000000"), legend.position = "none")
 
+    pct_list <- list()
+    for (i in seq_along(pct_labs)) {
+        this_metric <- names(pct_labs)[i]
+
+        pct_list[[this_metric]] <- ggplot(group_counts, aes(x = category, y = !!sym(this_metric))) +
+            geom_col(aes(alpha = category), color = all_colors[this_metric], fill = all_colors[this_metric]) +
+            scale_alpha_manual(values = alpha_key) + 
+            ylim(c(0, pct_maxes[this_metric])) +
+            labs(y = pct_labs[this_metric], title = pct_titles[this_metric]) + 
+            base_theme
+    }
+    
     res <- mutate(res, metric_name = ifelse(metric == "AUPRC", "AUPRC", "Precision at threshold"))
 
     # annotate significance stars per model if delta files exist
     sig_annotations <- NULL
     if (n_categories == 2) {
-        delta_files <- c(auprc = paste0(out_prefix, "delta_auprc_significance.tsv"),
-                        precision = paste0(out_prefix, "delta_precision_significance.tsv"))
+        delta_files <- c(auprc = paste0(out_prefix, "delta_auprc_significance.tsv"))
         if (all(file.exists(delta_files))) {
             sig_df <- bind_rows(
-                read_tsv(delta_files["auprc"], show_col_types = FALSE) %>% mutate(metric = "AUPRC"),
-                read_tsv(delta_files["precision"], show_col_types = FALSE) %>% mutate(metric = "precision")
+                read_tsv(delta_files["auprc"], show_col_types = FALSE) %>% mutate(metric = "AUPRC")
             ) %>%
                 mutate(pval_label = case_when(
                     pvalue < 0.001 ~ "***",
                     pvalue < 0.01 ~ "**",
                     pvalue < 0.05 ~ "*",
-                    TRUE ~ ""
+                    TRUE ~ "n.s."
                 )) %>%
                 filter(pval_label != "") %>%
                 mutate(metric_name = ifelse(metric == "AUPRC", "AUPRC", "Precision at threshold"))
@@ -129,34 +151,45 @@ compare_performance_between_categories <- function(merged_training, category_nam
             sig_annotations <- res %>%
                 distinct(pred_uid, pred_name_long, metric, metric_name) %>%
                 inner_join(sig_df, by = c("pred_uid" = "id", "metric", "metric_name")) %>%
-                mutate(y = as.numeric(pred_name_long),
-                    x = ifelse(metric == "AUPRC", 0.85, 0.8))  # Fixed position near right edge
+                mutate(x_stars = 1.5,
+                    y_stars = ifelse(metric == "AUPRC", 0.9, 0.8))  # Fixed position near right edge
         }
     }
+    
+    models <- unique(res$pred_name_long)
+    perf_list <- list()
+    for (i in seq_along(models)) {
+        this_pred <- models[i]
+        res_filt <- res %>% filter(pred_name_long == this_pred)
 
-    perf <- ggplot(res, aes(y = pred_name_long, x = full, fill = pred_name_long, alpha = category)) +
-        geom_bar(stat = "identity", position = "dodge") +
-        geom_errorbar(aes(xmin = lower, xmax = upper, group = category),
-                        position = position_dodge(0.9), width = 0.4, color = "black", alpha = 1) +
-        { if (!is.null(sig_annotations)) geom_text(data = sig_annotations,
-            aes(x = x, y = y, label = pval_label),
-            inherit.aes = FALSE, size = 3.2, hjust = 1, vjust = 0.5) else NULL } +
-        facet_wrap(~ metric_name, ncol = 2, strip.position = "bottom") +
-        labs(alpha = category_name) +
-        scale_fill_manual(values = pred_colors, na.value = NA) + scale_alpha_manual(values = alpha_key) +
-        scale_x_continuous(limits = c(0, 1)) +
-        guides(fill = "none") +
-        theme_classic() + theme(strip.placement = "outside", strip.background = element_blank(), axis.title = element_blank(), # facet label is x axis title
-            axis.text = element_text(size = 7, color = "#000000"), 
-            axis.ticks = element_line(color = "#000000"), legend.position = "none")
+        perf_list[[this_pred]] <- ggplot(res_filt, aes(x = category, y = full)) +
+            geom_col(aes(alpha = category), color = all_colors[this_pred], fill = all_colors[this_pred]) +
+            geom_errorbar(aes(ymin = lower, ymax = upper), width = 0.4, color = "black", alpha = 1) +
+            { if (!is.null(sig_annotations)) geom_text(data = filter(sig_annotations, pred_name_long == this_pred),
+                aes(x = x_stars, y = y_stars, label = pval_label),
+                inherit.aes = FALSE, size = 3.2, hjust = 0.5, vjust = 0.5) else NULL } +
+            scale_alpha_manual(values = alpha_key) + 
+            ylim(c(0, 1)) +
+            labs(y = "AUPRC", title = this_pred) + 
+            base_theme
+    }
 
-    perf_with_legend <- perf + theme(legend.position = "right", legend.title = element_text(size = 9), legend.text = element_text(size = 7)) +
+    # save legend
+    perf_with_legend <- perf_list[[1]] + theme(legend.position = "right", legend.title = element_text(size = 9), legend.text = element_text(size = 7)) +
         guides(fill = "none", alpha = guide_legend(order = 1, reverse = TRUE))
     legend <- cowplot::get_legend(perf_with_legend)
+    ggsave2(paste0(out_prefix, "legend.pdf"), legend, height = 3.5, width = 2)
 
-    left <- plot_grid(NULL, pct_pairs, NULL, ncol = 1, rel_heights = c(0.75, 3, 0.75))
-    grid <- plot_grid(pct_pairs, perf, legend, nrow = 1, rel_widths = c(0.95, 1.55, 0.4))
-    ggsave2(paste0(out_prefix, "performance_summary.pdf"), height = 3.5 * 2/3, width = 9)
+    # save grid
+    if (category_column == "effect_size_group") {
+        pct_list[[1]] <- pct_list[[2]]
+        pct_list[[2]] <- pct_list[[3]]
+    }
+
+    grid <- plot_grid(pct_list[[1]], pct_list[[2]], perf_list[[2]], perf_list[[1]],
+        nrow = 1, align = "hv")
+
+    ggsave2(paste0(out_prefix, "performance_summary.pdf"), grid, height = 3, width = 6.5)
     message("Saved performance summary plots!")
 }
 
@@ -184,24 +217,19 @@ merged_training <- read_tsv(merged_training_crispr_file, show_col_types = FALSE)
 pred_config <- importPredConfig(pred_config_file, expr = FALSE)
 pred_key <- setNames(pred_config$pred_name_long, pred_config$pred_uid)
 
-pred_config <- importPredConfig(pred_config_file, expr = FALSE)
-pred_key <- setNames(pred_config$pred_name_long, pred_config$pred_uid)
-
 ## read in correct annotations
-cage_annot <- fread(cage_annot_file) %>% 
+cage_annot <- read_tsv(cage_annot_file, show_col_types = FALSE) %>% 
     select(chrom, chromStart, chromEnd, measuredGeneSymbol, Dataset, CAGE_N_0.75)
 
-correct_annot <- read_tsv(correct_annotations_file) %>% 
+correct_annot <- read_tsv(correct_annotations_file, show_col_types = FALSE) %>% 
     select(chrom = chr, chromStart = start, chromEnd = end, measuredGeneSymbol, ExperimentCellType = cell_type,
-        element_category, direct_vs_indirect_negative, distanceToTSS, Dataset, data_category)
+        element_category, direct_vs_indirect_negative, distanceToTSS, Dataset, data_category, ubiq_category)
 
-correct_annot_heldout <- correct_annot %>% filter(data_category == "validation") %>% 
-    left_join(cage_annot, by = c("chrom", "chromStart", "chromEnd", "measuredGeneSymbol", "Dataset"))
-correct_annot_training <- correct_annot %>% filter(data_category == "training") %>% 
-    left_join(cage_annot, by = c("chrom", "chromStart", "chromEnd", "measuredGeneSymbol", "Dataset"))
+#correct_annot_heldout <- correct_annot %>% filter(data_category == "validation") %>% left_join(cage_annot, by = c("chrom", "chromStart", "chromEnd", "measuredGeneSymbol", "Dataset"))
+correct_annot_training <- correct_annot %>% filter(data_category == "training") %>% left_join(cage_annot, by = c("chrom", "chromStart", "chromEnd", "measuredGeneSymbol", "Dataset"))
 
 ## merge with benchmarking data
-merged_heldout <- left_join(merged_heldout, correct_annot_heldout, by = c("chrom", "chromStart", "chromEnd", "measuredGeneSymbol", "ExperimentCellType"))
+#merged_heldout <- left_join(merged_heldout, correct_annot_heldout, by = c("chrom", "chromStart", "chromEnd", "measuredGeneSymbol", "ExperimentCellType"))
 merged_training <- left_join(merged_training, correct_annot_training, by = c("chrom", "chromStart", "chromEnd", "measuredGeneSymbol", "ExperimentCellType"))
 
 # process merged data for benchmarking analyses, including filtering for ValidConnection == TRUE
@@ -215,8 +243,8 @@ merged_training <- processMergedData(merged_training, pred_config = pred_config,
 
 
 ### RUN COMPARISONS
-out_dir <- file.path(proj_dir, "workflow", "results", "v3_scE2G_category_analysis"); dir.create(out_dir, showWarnings = FALSE)
-models <- c("scE2G_multiome.E2G.Score.qnorm", "scE2G_ATAC.E2G.Score.qnorm", "scATAC_ABC.ABC.Score", "ARC.ARC.E2G.Score", "Kendall.Kendall")
+out_dir <- file.path(proj_dir, "workflow", "results", "v4_scE2G_category_analysis"); dir.create(out_dir, showWarnings = FALSE)
+models <- c("scE2G_multiome.E2G.Score.qnorm", "baseline.distToTSS")
 
 merged_training <- merged_training %>% 
     mutate(chromatin_category = ifelse(element_category == "High H3K27ac", "High H3K27ac", "Other"),
@@ -225,12 +253,12 @@ merged_training <- merged_training %>%
         CAGE_category = ifelse(CAGE_N_0.75, "High CAGE signal", "Low CAGE signal"))
 
 ## promoter class
-if (FALSE) {
+if (TRUE) {
     category_name <- "Target gene\npromoter class"
     category_column <- "ubiq_category"
     out_prefix <- paste0(out_dir, "/promoter_class_")
 
-    compare_performance_between_categories(merged_training, category_name, category_column, pred_config, models, out_prefix, plot_only = FALSE)
+    compare_performance_between_categories(merged_training, category_name, category_column, pred_config, models, out_prefix, plot_only = TRUE)
 }
 
 ## H3K27ac high versus others
@@ -239,7 +267,7 @@ if (TRUE) {
     category_column <- "chromatin_category"
     out_prefix <- paste0(out_dir, "/high_h3k27ac_")
 
-    compare_performance_between_categories(merged_training, category_name, category_column, pred_config, models, out_prefix, plot_only = FALSE)
+    compare_performance_between_categories(merged_training, category_name, category_column, pred_config, models, out_prefix, plot_only = TRUE)
 }
 
 ## Enhancernes
@@ -248,35 +276,37 @@ if (TRUE) {
     category_column <- "enhancerness"
     out_prefix <- paste0(out_dir, "/enhancerness_")
 
-    compare_performance_between_categories(merged_training, category_name, category_column, pred_config, models, out_prefix, plot_only = FALSE)
+    compare_performance_between_categories(merged_training, category_name, category_column, pred_config, models, out_prefix, plot_only = TRUE)
 }
 
 ## distance
-if (FALSE) {
+if (TRUE) {
     category_name <- "Distance to TSS"
     category_column <- "distance_category"
     out_prefix <- paste0(out_dir, "/distance_")
 
-    compare_performance_between_categories(merged_training, category_name, category_column, pred_config, models, out_prefix, plot_only = FALSE)
+    compare_performance_between_categories(merged_training, category_name, category_column, pred_config, models, out_prefix, plot_only = TRUE)
 }
 
 ## effect size (remove FF option)
-if (FALSE) {
-    merged_training_noFF <- merged_training %>% filter(Dataset != "Nasser2021") %>% mutate(effect_size_group = "All (no FlowFISH)"); print(unique(merged_training_noFF$Dataset))
+if (TRUE) {
+    #merged_training_noFF <- merged_training %>% filter(Dataset != "Nasser2021") %>% mutate(effect_size_group = "All (no FlowFISH)"); print(unique(merged_training_noFF$Dataset))
+    merged_training_noFF <- merged_training %>% mutate(effect_size_group = "All")
+    merged_below5pct <- merged_training_noFF %>% filter(!(Regulated & abs(EffectSize) > 0.05)) %>% mutate(effect_size_group = "Effect size <=5%")
     merged_over5pct <- merged_training_noFF %>% filter(!(Regulated & abs(EffectSize) <= 0.05)) %>% mutate(effect_size_group = "Effect size >5%")
     merged_over10pct <- merged_training_noFF %>% filter(!(Regulated & abs(EffectSize) <= 0.1)) %>% mutate(effect_size_group = "Effect size >10%")
 
-    merged_effect_size <- rbind(merged_training_noFF, merged_over5pct, merged_over10pct)
+    merged_effect_size <- rbind(merged_below5pct, merged_over5pct)
 
     category_name <- "Effect size\ngroup"
     category_column <- "effect_size_group"
-    out_prefix <- paste0(out_dir, "/effect_size_")
+    out_prefix <- paste0(out_dir, "/effect_size_overunder5")
 
-    compare_performance_between_categories(merged_effect_size, category_name, category_column, pred_config, models, out_prefix)
+    compare_performance_between_categories(merged_effect_size, category_name, category_column, pred_config, models, out_prefix, plot_only = TRUE)
 }
 
 ## Kendall correlation?
-if (FALSE) {
+if (TRUE) {
     kendall_annot <- merged_training %>% filter(pred_uid == "Kendall.Kendall") %>% select(pair_uid, Kendall_corr = pred_value)
     median_kendall <-  median(kendall_annot$Kendall_corr) # Median Kendall: 0.00568424430753245
     kendall_threshold <- quantile(kendall_annot$Kendall_corr, probs = 0.8) # 80th percentile: 0.02
@@ -289,16 +319,16 @@ if (FALSE) {
     category_column <- "kendall_category"
     out_prefix <- paste0(out_dir, "/kendall_")
 
-    compare_performance_between_categories(merged_training_kendall, category_name, category_column, pred_config, models, out_prefix, plot_only = FALSE)
+    compare_performance_between_categories(merged_training_kendall, category_name, category_column, pred_config, models, out_prefix, plot_only = TRUE)
 }
 
 ## CAGE signal at element
-if (FALSE) {
+if (TRUE) {
     category_name <- "CAGE signal\nat element"
     category_column <- "CAGE_category"
     out_prefix <- paste0(out_dir, "/CAGE_")
 
-    compare_performance_between_categories(merged_training, category_name, category_column, pred_config, models, out_prefix, plot_only = FALSE)
+    compare_performance_between_categories(merged_training, category_name, category_column, pred_config, models, out_prefix, plot_only = TRUE)
 }
 
 
