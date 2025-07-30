@@ -1,0 +1,58 @@
+Warning messages:
+1: package ‘data.table’ was built under R version 4.1.3 
+2: package ‘dplyr’ was built under R version 4.1.3 
+3: package ‘GenomicRanges’ was built under R version 4.1.3 
+4: package ‘S4Vectors’ was built under R version 4.1.3 
+5: package ‘IRanges’ was built under R version 4.1.3 
+6: package ‘GenomeInfoDb’ was built under R version 4.1.3 
+Reading experimental data in: resources/crispr_data/EPCrisprBenchmark_ensemble_data_GRCh38.intGENCODEv43.1Mb.tsv.gz
+	Loaded experimental data with 9781 rows.
+
+Loading prediction files:
+	Loading predictions for: scE2G_multiome_K562_single_cell
+		Reading: /maps/projects/ralab_nnfc-AUDIT/people/lpm537/software/CRISPR_comparison_pipeline/240506/CRISPR_comparison/resources/2025_0318_5x_K562_fix_gene_matching/K562_Xu_pl/multiome_powerlaw_v3/encode_e2g_predictions.tsv.gz
+	Loaded predictions with a total of 11411834 rows.
+	Loading predictions for: scE2G_multiome_K562_PBMC_single_cell
+		Reading: /maps/projects/ralab_nnfc-AUDIT/people/lpm537/software/scE2G_pipeline/250319/scE2G/test/results/K562_Xu_PBMC/K562/multiome_powerlaw_v3/encode_e2g_predictions.tsv.gz
+	Loaded predictions with a total of 11411834 rows.
+	Loading predictions for: scE2G_ATAC_K562_single_cell
+		Reading: /maps/projects/ralab_nnfc-AUDIT/people/lpm537/software/CRISPR_comparison_pipeline/240506/CRISPR_comparison/resources/2025_0318_5x_K562_fix_gene_matching/K562_Xu_pl/scATAC_powerlaw_v3/encode_e2g_predictions.tsv.gz
+	Loaded predictions with a total of 11411834 rows.
+	Loading predictions for: scE2G_multiome_K562_meta_cell
+		Reading: /maps/projects/ralab_nnfc-AUDIT/people/lpm537/software/scE2G_pipeline/250319/scE2G/test/results/training_K562_Xu_ABC_Kendall_SEACELL_250416/K562/model_multiome/model/training_predictions.tsv
+	Loaded predictions with a total of 9267 rows.
+	Loading predictions for: Kendall_K562_single_cell
+		Reading: /maps/projects/ralab_nnfc-AUDIT/people/lpm537/software/CRISPR_comparison_pipeline/240506/CRISPR_comparison/resources/2025_0318_5x_K562_fix_gene_matching/K562_Xu_pl/multiome_powerlaw_v3/encode_e2g_predictions.tsv.gz
+	Loaded predictions with a total of 11411834 rows.
+	Loading predictions for: Kendall_K562_PBMC_single_cell
+		Reading: /maps/projects/ralab_nnfc-AUDIT/people/lpm537/software/scE2G_pipeline/250319/scE2G/test/results/K562_Xu_PBMC/K562/multiome_powerlaw_v3/encode_e2g_predictions.tsv.gz
+	Loaded predictions with a total of 11411834 rows.
+	Loading predictions for: Kendall_K562_meta_cell
+		Reading: /maps/projects/ralab_nnfc-AUDIT/people/lpm537/software/scE2G_pipeline/250319/scE2G/test/results/training_K562_Xu_ABC_Kendall_SEACELL_250416/K562/model_multiome/model/training_predictions.tsv
+	Loaded predictions with a total of 9267 rows.
+Running QC on pred_config file
+Done
+Running QC on predictions:
+Done
+Running QC on experimental data:
+Filtering out 81 case(s) with Regulated == NA
+Done
+cre-gene pairs in experimental data missing from gene universe: 14
+Mapping cell types in predictions to cell types in experimental data
+
+Merging experimentals data and predictions:
+Overlapping predictions with experimental data for: scE2G_multiome_K562_single_cell
+Overlapping predictions with experimental data for: scE2G_multiome_K562_PBMC_single_cell
+Overlapping predictions with experimental data for: scE2G_ATAC_K562_single_cell
+Overlapping predictions with experimental data for: scE2G_multiome_K562_meta_cell
+Overlapping predictions with experimental data for: Kendall_K562_single_cell
+Overlapping predictions with experimental data for: Kendall_K562_PBMC_single_cell
+Overlapping predictions with experimental data for: Kendall_K562_meta_cell
+Computing baseline predictors:
+	distToTSS
+	distToGene
+	nearestTSS
+	nearestGene
+	within100kbTSS
+
+All done!

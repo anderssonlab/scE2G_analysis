@@ -1,0 +1,86 @@
+Warning messages:
+1: package ‘data.table’ was built under R version 4.1.3 
+2: package ‘dplyr’ was built under R version 4.1.3 
+3: package ‘GenomicRanges’ was built under R version 4.1.3 
+4: package ‘S4Vectors’ was built under R version 4.1.3 
+5: package ‘IRanges’ was built under R version 4.1.3 
+6: package ‘GenomeInfoDb’ was built under R version 4.1.3 
+Reading experimental data in: resources/crispr_data/EPCrisprBenchmark_ensemble_data_GRCh38.intGENCODEv43.1Mb.tsv.gz
+	Loaded experimental data with 9781 rows.
+
+Loading prediction files:
+	Loading predictions for: scE2G_multiome
+		Reading: /maps/projects/ralab_nnfc-AUDIT/people/lpm537/software/CRISPR_comparison_pipeline/240506/CRISPR_comparison/resources/2025_0318_5x_K562_fix_gene_matching/K562_Xu_pl/multiome_powerlaw_v3/encode_e2g_predictions.tsv.gz
+	Loaded predictions with a total of 11411834 rows.
+	Loading predictions for: scE2G_ATAC
+		Reading: /maps/projects/ralab_nnfc-AUDIT/people/lpm537/software/CRISPR_comparison_pipeline/240506/CRISPR_comparison/resources/2025_0318_5x_K562_fix_gene_matching/K562_Xu_pl/scATAC_powerlaw_v3/encode_e2g_predictions.tsv.gz
+	Loaded predictions with a total of 11411834 rows.
+	Loading predictions for: ARC
+		Reading: /maps/projects/ralab_nnfc-AUDIT/people/lpm537/software/CRISPR_comparison_pipeline/240506/CRISPR_comparison/resources/2025_0318_5x_K562_fix_gene_matching/K562_Xu_pl/multiome_powerlaw_v3/encode_e2g_predictions.tsv.gz
+	Loaded predictions with a total of 11411834 rows.
+	Loading predictions for: Kendall
+		Reading: /maps/projects/ralab_nnfc-AUDIT/people/lpm537/software/CRISPR_comparison_pipeline/240506/CRISPR_comparison/resources/2025_0318_5x_K562_fix_gene_matching/K562_Xu_pl/multiome_powerlaw_v3/encode_e2g_predictions.tsv.gz
+	Loaded predictions with a total of 11411834 rows.
+	Loading predictions for: scATAC_ABC
+		Reading: /maps/projects/ralab_nnfc-AUDIT/people/lpm537/software/CRISPR_comparison_pipeline/240506/CRISPR_comparison/resources/2025_0318_5x_K562_fix_gene_matching/K562_Xu_pl/multiome_powerlaw_v3/encode_e2g_predictions.tsv.gz
+	Loaded predictions with a total of 11411834 rows.
+	Loading predictions for: STARE
+		Reading: /maps/projects/ralab_nnfc-AUDIT/people/lpm537/software/CRISPR_comparison_pipeline/240506/CRISPR_comparison/resources/Genome_wide_1Mb_prediction_250405/K562_Xu/STARE/pairs.STARE.res.tsv.gz
+	Loaded predictions with a total of 15219805 rows.
+	Loading predictions for: SCENT
+		Reading: /maps/projects/ralab_nnfc-AUDIT/people/lpm537/software/CRISPR_comparison_pipeline/240506/CRISPR_comparison/resources/Genome_wide_1Mb_prediction_250405/K562_Xu/SCENT/pairs.E2G.res.tsv.gz
+	Loaded predictions with a total of 870021 rows.
+	Loading predictions for: SnapATAC
+		Reading: /maps/projects/ralab_nnfc-AUDIT/people/lpm537/software/CRISPR_comparison_pipeline/240506/CRISPR_comparison/resources/Genome_wide_1Mb_prediction_250405/K562_Xu/SnapATAC/pairs.E2G.res.tsv.gz
+	Loaded predictions with a total of 3046227 rows.
+	Loading predictions for: Signac
+		Reading: /maps/projects/ralab_nnfc-AUDIT/people/lpm537/software/CRISPR_comparison_pipeline/240506/CRISPR_comparison/resources/Genome_wide_1Mb_prediction_250405/K562_Xu/Signac/pairs.E2G.res.tsv.gz
+	Loaded predictions with a total of 11714081 rows.
+	Loading predictions for: FigR
+		Reading: /maps/projects/ralab_nnfc-AUDIT/people/lpm537/software/CRISPR_comparison_pipeline/240506/CRISPR_comparison/resources/Genome_wide_1Mb_prediction_250405/K562_Xu/FigR/pairs.E2G.res.tsv.gz
+	Loaded predictions with a total of 3046227 rows.
+	Loading predictions for: Cicero
+		Reading: /maps/projects/ralab_nnfc-AUDIT/people/lpm537/software/CRISPR_comparison_pipeline/240506/CRISPR_comparison/resources/Genome_wide_1Mb_prediction_250405/K562_Xu/Cicero/pairs.E2G.res.tsv.gz
+	Loaded predictions with a total of 1167791 rows.
+	Loading predictions for: ArchR
+		Reading: /maps/projects/ralab_nnfc-AUDIT/people/lpm537/software/CRISPR_comparison_pipeline/240506/CRISPR_comparison/resources/Genome_wide_1Mb_prediction_250405/K562_Xu/ArchR/pairs.E2G.res.tsv.gz
+	Loaded predictions with a total of 3138687 rows.
+	Loading predictions for: DIRECTNET
+		Reading: /maps/projects/ralab_nnfc-AUDIT/people/lpm537/software/CRISPR_comparison_pipeline/240506/CRISPR_comparison/resources/Genome_wide_1Mb_prediction_250405/K562_Xu/DIRECTNET/pairs.E2G.res.tsv.gz
+	Loaded predictions with a total of 2210477 rows.
+	Loading predictions for: ScenicPlus
+		Reading: /maps/projects/ralab_nnfc-AUDIT/people/lpm537/software/CRISPR_comparison_pipeline/240506/CRISPR_comparison/resources/Genome_wide_1Mb_prediction_250405/K562_Xu/ScenicPlus/pairs.E2G.res.tsv.gz
+	Loaded predictions with a total of 3812644 rows.
+Running QC on pred_config file
+Done
+Running QC on predictions:
+Done
+Running QC on experimental data:
+Filtering out 81 case(s) with Regulated == NA
+Done
+cre-gene pairs in experimental data missing from gene universe: 14
+Mapping cell types in predictions to cell types in experimental data
+
+Merging experimentals data and predictions:
+Overlapping predictions with experimental data for: scE2G_multiome
+Overlapping predictions with experimental data for: scE2G_ATAC
+Overlapping predictions with experimental data for: ARC
+Overlapping predictions with experimental data for: Kendall
+Overlapping predictions with experimental data for: scATAC_ABC
+Overlapping predictions with experimental data for: STARE
+Overlapping predictions with experimental data for: SCENT
+Overlapping predictions with experimental data for: SnapATAC
+Overlapping predictions with experimental data for: Signac
+Overlapping predictions with experimental data for: FigR
+Overlapping predictions with experimental data for: Cicero
+Overlapping predictions with experimental data for: ArchR
+Overlapping predictions with experimental data for: DIRECTNET
+Overlapping predictions with experimental data for: ScenicPlus
+Computing baseline predictors:
+	distToTSS
+	distToGene
+	nearestTSS
+	nearestGene
+	within100kbTSS
+
+All done!
