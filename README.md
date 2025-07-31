@@ -9,20 +9,18 @@ Scripts, notebooks, and results for data preprocessing and analyses performed in
 ## Contents:
 
 ### 1.Preprocess_Data
-Code for generating input files for E2G prediction models
-Each directory corresponds to a dataset listed in Table S10
+Code for generating input files for E2G prediction models. Each directory corresponds to a dataset listed in Table S10
 
 ### 2.Prediction
-Code for applying published models for E2G prediction
-The file structure is organized as [dataset]/[method]
+Code for applying published models for E2G prediction. The file structure is organized as [dataset]/[method]
 
 ### 3.Benchmarking
 Code and results for CRISPR, eQTL and GWAS benchmarking analyses
 * CRISPR
 	* `Fig.2/K562_Xu/sc.250425_2.K562.Xu.cv`: benchmarking with training CRISPR data < 1 Mb for Xu _et al._ K562 dataset (Fig. 2b,c)
-	* `Fig.2/K562_Xu/sc.250425.K562.Xu.cv.ignore_TPM`: benchmarking with training CRISPR data < 1 Mb for Xu _et al._ K562 dataset, including scE2G<sup>multiome</sup> predictions that ignore gene expression filtering (Fig. 6a)
-	* `Fig.2/K562_Wang/sc.250425.K562.Wang.ignore_TPM`: benchmarking with training CRISPR data < 1 Mb for Wang _et al._ K562 dataset, including scE2G<sup>multiome</sup> predictions that ignore gene expression filtering (Fig. 6b)
-	* `Fig.2/K562_This_Study/sc.250425.K562.IGVF.ignore_TPM`: benchmarking with training CRISPR data < 1 Mb for K562 dataset in this study, including scE2G<sup>multiome</sup> predictions that ignore gene expression filtering (Fig. 6c)
+	* `Fig.2/K562_Xu/sc.250425.K562.Xu.cv.ignore_TPM`: benchmarking with training CRISPR data < 1 Mb for Xu _et al._ K562 dataset, including scE2G<sup>multiome</sup> predictions that ignore gene expression filtering (Fig. S6a)
+	* `Fig.2/K562_Wang/sc.250425.K562.Wang.ignore_TPM`: benchmarking with training CRISPR data < 1 Mb for Wang _et al._ K562 dataset, including scE2G<sup>multiome</sup> predictions that ignore gene expression filtering (Fig. S6b)
+	* `Fig.2/K562_This_Study/sc.250425.K562.IGVF.ignore_TPM`: benchmarking with training CRISPR data < 1 Mb for K562 dataset in this study, including scE2G<sup>multiome</sup> predictions that ignore gene expression filtering (Fig. S6c)
 	* `Fig.2/K562_Xu_all_distances/sc.250425_2.K562.Xu.cv.5M`: benchmarking with training CRISPR data covering all distances for Xu _et al._ K562 dataset (Fig. S6d)
 	* `Fig.2/K562_Xu_default/sc.250425.K562.default.Xu.cv`: benchmarking with training CRISPR data < 1 Mb for Xu _et al._ K562 dataset, using existing models with their default settings (Fig. S7)
 	* `Fig.3/sc.250425.K562.SEACell90_PBMC`: benchmarking with training CRISPR data < 1 Mb for Xu _et al._ K562 dataset, using three approaches to calculating Kendall correlation and corresponding scE2G models (Fig. 3c)
