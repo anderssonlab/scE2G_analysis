@@ -1,6 +1,6 @@
 ## scE2G manuscript analyses
 
-Scripts, notebooks, and results for data preprocessing and analyses performed in Sheth, Qiu, _et al._ 2024, [`preprint`](https://www.biorxiv.org/content/10.1101/2024.11.23.624931v1)
+Scripts, notebooks, and results for data preprocessing and analyses performed in Sheth, Qiu, _et al._ 2025, [`preprint`](https://www.biorxiv.org/content/10.1101/2024.11.23.624931v1)
 
 * For the scE2G tool, please see to the scE2G model and pipeline [`repo`](https://github.com/EngreitzLab/scE2G)
 * For the scE2G prediction results, please see https://data.broadinstitute.org/scE2Gpredictions/ 
