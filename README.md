@@ -1,10 +1,26 @@
 ## scE2G manuscript analyses
 
-Scripts, notebooks, and results for data preprocessing and analyses performed in Sheth, Qiu, _et al._ 2025, [`preprint`](https://www.biorxiv.org/content/10.1101/2024.11.23.624931v1)
+Scripts, notebooks, and results for data preprocessing and analyses performed in Sheth, Qiu, _et al._ 2024, [`preprint`](https://www.biorxiv.org/content/10.1101/2024.11.23.624931v1)
 
 * For the scE2G tool, please see to the scE2G model and pipeline [`repo`](https://github.com/EngreitzLab/scE2G)
 * For the scE2G prediction results, please see https://data.broadinstitute.org/scE2Gpredictions/ 
 * For the benchmarking pipelines, please see to the individual benchmarking repos for [`CRISPR`](https://github.com/EngreitzLab/CRISPR_comparison/tree/main), [`eQTL`](https://github.com/EngreitzLab/eQTLEnrichment/tree/integrated), and [`GWAS`](https://github.com/EngreitzLab/GWAS_E2G_benchmarking)
+
+<hr>
+
+## System requirements
+
+### Hardware requirements
+
+For the analyses, a standard computer equipped with 32+ GB RAM is necessary.
+
+### Software requirements
+
+The analyses were conducted on Linux systems.
+
+The versions of the software tested are listed in the Methods section of Sheth, Qiu, _et al._ 2024
+
+<hr>
 
 ## Contents:
 
